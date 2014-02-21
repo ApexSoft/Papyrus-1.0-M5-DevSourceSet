@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: GMF-specific control mode behavior (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.controlmode;sin
+ gleton:=true
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.controlmode.Activa
+ tor
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.common,org.eclipse.emf.ecore,org.eclipse.gmf.runtime.common.core,or
+ g.eclipse.gmf.runtime.emf.commands.core,org.eclipse.papyrus.infra.ser
+ vices.controlmode;bundle-version="1.0.0",org.eclipse.papyrus.infra.co
+ re;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.common;bu
+ ndle-version="1.0.0",org.eclipse.papyrus.infra.emf;bundle-version="1.
+ 0.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/controlmode/GMFDiagramControlP
+ articipant.class
+SHA1-Digest: dyQ3R1DRQN8bsYLZVMHrhb2B39Q=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/controlmode/Activator.class
+SHA1-Digest: mlFyY7yt02D77ZTJLTjOUMDgLvU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/controlmode/ControlDiagramsCom
+ mand.class
+SHA1-Digest: mw0IEfLpqtykgIB4yhVeIdgDAqE=
+
+Name: plugin.xml
+SHA1-Digest: xixK3Dl9DnshUNrJleADXh/IWtM=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+

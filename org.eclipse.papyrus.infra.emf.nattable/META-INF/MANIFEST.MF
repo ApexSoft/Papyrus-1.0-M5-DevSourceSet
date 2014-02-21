@@ -1,0 +1,123 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.emf.nattable;singleton:
+ =true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.nebula.widget
+ s.nattable.core;bundle-version="1.0.0",org.eclipse.emf.ecore;bundle-v
+ ersion="2.9.0",org.eclipse.papyrus.infra.nattable.model;bundle-versio
+ n="1.0.0",org.eclipse.papyrus.infra.nattable;bundle-version="1.0.0",o
+ rg.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.papyr
+ us.infra.services.labelprovider;bundle-version="1.0.0",org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.wid
+ gets;bundle-version="1.0.0",org.eclipse.emf.edit,org.eclipse.papyrus.
+ infra.services.edit;bundle-version="1.0.0",org.eclipse.gmf.runtime.em
+ f.type.core,org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version
+ ="1.0.0",org.eclipse.papyrus.infra.tools;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.emf.nattable.Activator
+Export-Package: org.eclipse.papyrus.infra.emf.nattable,org.eclipse.pap
+ yrus.infra.emf.nattable.celleditor.config,org.eclipse.papyrus.infra.e
+ mf.nattable.manager.axis,org.eclipse.papyrus.infra.emf.nattable.manag
+ er.cell,org.eclipse.papyrus.infra.emf.nattable.provider,org.eclipse.p
+ apyrus.infra.emf.nattable.registry,org.eclipse.papyrus.infra.emf.natt
+ able.validator
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: EMF Nattable (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/emf/nattable/celleditor/config/EStruct
+ uralFeatureEditorConfig.class
+SHA1-Digest: nAp5N/+1lqTvS+1933ztAk3KWnc=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/manager/cell/EMFFeatureVa
+ lueCellManager.class
+SHA1-Digest: 0fmDKTukRhQdH6+x4QwShySbfxg=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/registry/EStructuralFeatu
+ reImageRegistry.class
+SHA1-Digest: iZpjFSFd0u4UlfcIRYz9L61+5/A=
+
+Name: icons/attributes.gif
+SHA1-Digest: 0mnjb9VnRH6s8+79en39co0v0sY=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/provider/EMFEObjectHeader
+ LabelProvider.class
+SHA1-Digest: c9Qw9+TE1XHwXBQElPKGJRvNKRI=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/manager/axis/AbstractSync
+ hronizedOnEStructuralFeatureAxisManager.class
+SHA1-Digest: 30UpF4C6zwkEg76dtFr3LrZwT0M=
+
+Name: icons/aggreg_unidir.gif
+SHA1-Digest: 19H+5i4+C6id4pUIQANhouDo+EU=
+
+Name: icons/opposite_links.gif
+SHA1-Digest: Od/uXnTFY0q26mMicLFi3N8iUuk=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/celleditor/config/EStruct
+ uralFeatureEditorConfig$1.class
+SHA1-Digest: paVyHiKtBYyZt2BgHWlYhn0wPmo=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/celleditor/config/EStruct
+ uralFeatureEditorConfig$2.class
+SHA1-Digest: 1plReuJuMDGRspHJ3i0oS9T9iHE=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/manager/cell/EMFFeatureVa
+ lueCellManager$1.class
+SHA1-Digest: DqtIDYfB/IOWdptLafordBs0yBY=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/provider/EMFFeatureHeader
+ LabelProvider.class
+SHA1-Digest: 0WywdQRG/xjN/LW+Lc9dPq+O5Pg=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/messages/Messages.class
+SHA1-Digest: 7pDM1rOB681JmEDhp0b6+8kvVsI=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/manager/axis/AbstractSync
+ hronizedOnEStructuralFeatureAxisManager$1.class
+SHA1-Digest: TepeeHBOibEVaAfvbabe9s9NuAU=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/manager/axis/EObjectAxisM
+ anager.class
+SHA1-Digest: /B1sG09OdLuE1kPxpDngwjIqW70=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/messages/messages.propert
+ ies
+SHA1-Digest: PlWGzwsEYQ6UZee3heDbPpPxysk=
+
+Name: plugin.xml
+SHA1-Digest: 8+VD4vRPVKBBfmkX/YysmRJGVik=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/manager/axis/EStructuralF
+ eatureAxisManager.class
+SHA1-Digest: blaKx9pFpp+XP1P0+L0jZYg90u0=
+
+Name: icons/aggreg.gif
+SHA1-Digest: eY8Ungak1A2icoOlBEwyc184JQk=
+
+Name: icons/link_unidir.gif
+SHA1-Digest: LA8fuqF6UK8KvrnUOaN9tAlo4tU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: icons/link.gif
+SHA1-Digest: inIU7DCDs8NDiF47Qq8TlVqSCAE=
+
+Name: icons/inv_aggreg.gif
+SHA1-Digest: K2gAEG9jwDAmSI7RVPLeZY1wzAw=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/validator/IntegerDataVali
+ dator.class
+SHA1-Digest: ub4iHqCJHBf5mhc73j8KIVe9LZc=
+
+Name: org/eclipse/papyrus/infra/emf/nattable/Activator.class
+SHA1-Digest: WFECYJ02XZZvUijUxJc1cgdgrPI=
+

@@ -1,0 +1,70 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.eclipse.papyrus.cdo.ui.doc;singleton:=true
+Require-Bundle: org.eclipse.help;bundle-version="3.6.0",org.eclipse.pa
+ pyrus.infra.doc;bundle-version="1.0.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: resource/team/remotely_locked.png
+SHA1-Digest: ilAsVMZAjBlQXIxzi0Xjt2TExjE=
+
+Name: resource/start/addrepo.png
+SHA1-Digest: hOr7xGUf5CEATfQ0siWRMx+i1ds=
+
+Name: resource/start/discovery_dialog.png
+SHA1-Digest: 8TLsvMIEFkvarXGYJ+WTzetAJIM=
+
+Name: resource/start/validation.png
+SHA1-Digest: GF9310NWAdWuuz5yALik3UKUQlg=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: resource/start/cdo-start.html
+SHA1-Digest: Z4cSBzKPObraIed9FHIQVjz2hO8=
+
+Name: resource/start/modelreposview.png
+SHA1-Digest: K4NxoWDyFhrpinC+qhUsatvBkKA=
+
+Name: resource/team/cdo-team.html
+SHA1-Digest: wjiFywMHv2tl0dVntdqItX88Zqo=
+
+Name: about.html
+SHA1-Digest: 2D3bb4QkwRTOjVP0deohSdlSr2Y=
+
+Name: resource/bugs/cdo-bugs.html
+SHA1-Digest: +bNXTbt3IRX9DhVYEFwPO214nvw=
+
+Name: plugin.properties
+SHA1-Digest: bRPCWOAZV6JV+PtrSU5euM2b2LQ=
+
+Name: resource/team/cdo-team-toc.xml
+SHA1-Digest: NwXCJbOfXynNrS8VMeuSqGfu2Fk=
+
+Name: resource/bugs/cdo-bugs-toc.xml
+SHA1-Digest: kgqinr1CD+ZSGGEqLyYyZxwoIrk=
+
+Name: resource/team/locked.png
+SHA1-Digest: IdeEr6cTg2odLgJnOhvjVzqI7FI=
+
+Name: resource/start/importmodels.png
+SHA1-Digest: zX2TOjlfJfPrVi0K42PdU9WX+0M=
+
+Name: resource/start/cdo-start-toc.xml
+SHA1-Digest: xhbjhqe+SVZtKtH2rXSAO8yaVW8=
+
+Name: plugin.xml
+SHA1-Digest: YvW4WOMG3toMvLkT2dDw85f3WhA=
+
+Name: resource/cdo-main-toc.xml
+SHA1-Digest: COiaKFqJpWHRyUi7fnZsAruE+Xs=
+
+Name: resource/team/conflict.png
+SHA1-Digest: yyv/hX1U3NpN3PCqpcLuYS+NefY=
+

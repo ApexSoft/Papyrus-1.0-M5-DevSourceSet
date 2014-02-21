@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composite xmlns:x="http://www.eclipse.org/xwt" xmlns="http://www.eclipse.org/xwt/presentation"
+	xmlns:ppe="clr-namespace:org.eclipse.papyrus.views.properties.widgets"
+	xmlns:ppel="clr-namespace:org.eclipse.papyrus.views.properties.widgets.layout"
+	xmlns:j="clr-namespace:java.lang">
+	<Composite.layout>
+		<ppel:PropertiesLayout></ppel:PropertiesLayout>
+	</Composite.layout>
+	<Group text="Shape Decoration">
+		<Group.layout>
+			<ppel:PropertiesLayout numColumns="2"></ppel:PropertiesLayout>
+		</Group.layout>
+		<ppe:BooleanRadio input="{Binding}"
+			property="decoratedElement:ShapeDecorableElement:shapeVisibility"
+			customLabel="Visible"></ppe:BooleanRadio>
+		<ppe:ReferenceCombo input="{Binding}"
+			property="decoratedElement:ShapeDecorableElement:shapeDirection"
+			customLabel="Position"></ppe:ReferenceCombo>
+	</Group>
+</Composite>

@@ -1,0 +1,226 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.xtext.glue;sing
+ leton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.common;bundle-version="2.5.0",org.eclipse.xtext;bundle-version="1.0
+ .1",org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.2.1",org.ecl
+ ipse.ui.ide;bundle-version="3.5.0",org.eclipse.xtext.ui;bundle-versio
+ n="0.8.0",org.eclipse.core.expressions;bundle-version="3.4.100",org.e
+ clipse.xtext.ui.shared;bundle-version="1.0.1",org.apache.log4j;bundle
+ -version="1.2.15",org.eclipse.papyrus.extensionpoints.editors;bundle-
+ version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-ver
+ sion="1.0.0",org.eclipse.uml2.uml;bundle-version="4.1.0",org.eclipse.
+ papyrus.infra.core;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.xtext.glue.Activat
+ or
+Export-Package: org.eclipse.papyrus.infra.gmfdiag.xtext.glue,org.eclip
+ se.papyrus.infra.gmfdiag.xtext.glue.concurrency,org.eclipse.papyrus.i
+ nfra.gmfdiag.xtext.glue.contentassist,org.eclipse.papyrus.infra.gmfdi
+ ag.xtext.glue.edit.part,org.eclipse.papyrus.infra.gmfdiag.xtext.glue.
+ editingdomain,org.eclipse.papyrus.infra.gmfdiag.xtext.glue.partialEdi
+ ting
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: XText GMF Glue (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/IAct
+ ionContributor$CompositeImpl.class
+SHA1-Digest: lh8y8yokWHNes/DS/HlUeDBbC6g=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Xtext
+ NodeModelReconciler.class
+SHA1-Digest: 1Jlf21YXgM+mrRc+He/HDrZpMF0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Sour
+ ceViewerHandleFactory.class
+SHA1-Digest: zXNd3y/SVoFhebozQuTaLzWC2S4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/PopupEditorConfigur
+ ation.class
+SHA1-Digest: VvZ4w4t/v/wVMb8D/EaZULpdxBo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/Concurr
+ entModificationObserver$Initializer.class
+SHA1-Digest: XtPsPqDnM/asgHegk8X1UKzjG5s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Part
+ ialModelEditor.class
+SHA1-Digest: zuQJs81wPNQ0gkmwgPQRqNkoU+0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Sour
+ ceViewerHandleFactory$2.class
+SHA1-Digest: +jS2k4wd91tQln81tdZ5FrN5srg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Synt
+ heticResourceProvider.class
+SHA1-Digest: O9PgL3adtJc5amFviA4LIeTLEtQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/Editing
+ DomainAdapter$DialogPrompter.class
+SHA1-Digest: DNUCSWvYAFPO3Rkutnd/h5D5oCQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/IXtextEMF
+ Reconciler.class
+SHA1-Digest: +TjNBtVblOsD8KcPz6Cl+adxnKk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/IPar
+ tialContentAssistParser.class
+SHA1-Digest: p3Qu0cYk6JR/+elKT61L7UDoAGA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/High
+ lightingHelper.class
+SHA1-Digest: cDU+TPw8sURU21ofHdCpUlYyz6s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Part
+ ialContentAssistContextFactory.class
+SHA1-Digest: IWA+8CsWqp29DAV7ETD22TcITaA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/contentassist/Compl
+ etionProposalUtils.class
+SHA1-Digest: U2maXkn4g6wjTRmrA/FBPAkEfec=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorKeyListener.class
+SHA1-Digest: kDNOfJESc6fdH3C7S8RAJuYWXeg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Updat
+ eXtextResourceTextCommand$1.class
+SHA1-Digest: zDB+WSSCM6dEio9TiQ6ZW2Jvr6A=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Oper
+ ationHistoryListener.class
+SHA1-Digest: 1ENmzX2bKmoFvW7p0+pUVD0ZOME=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorHelper$1.class
+SHA1-Digest: HkB2Wq95fwZVuep7jrLn9RMPSNo=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorHelper$3.class
+SHA1-Digest: wxQl+BMQFKk71JC5s7UJoj8bHvI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorHelper$5.class
+SHA1-Digest: 2vGqXAsCNjkQOL82c8pKzZh6Oqc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorKeyListener$1.class
+SHA1-Digest: jeHYybPQyN69q9ANMv6fxyl53vg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Chang
+ eAggregatorAdapter.class
+SHA1-Digest: rlWa2HsWoHhn1IIeG386jBjVIsU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/Editing
+ DomainAdapter$Factory.class
+SHA1-Digest: lTagc80izYXHDkWPD3N0ZNx/0M0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Updat
+ eXtextResourceTextCommand.class
+SHA1-Digest: Dtq+hphFrUR9cCIZWF2i/Og87DI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/High
+ lightingReconciler.class
+SHA1-Digest: f/bu8Bwvj9dMeLlPY7elNFuHcLk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/StringUti
+ l.class
+SHA1-Digest: neVBjcj8TguaKWBzBkXJJAJSrr8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Sour
+ ceViewerHandleFactory$1.class
+SHA1-Digest: viANTvPBAl/n513APdSEfxajdJc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorHelper.class
+SHA1-Digest: x/AWc8M7GVSsWZeAJARHN6iZaXc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/contentassist/Custo
+ mCompletionProposal.class
+SHA1-Digest: tvNRLAueQ/tTTk4rUj7df3qnaeM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Seman
+ ticRootUnloadListener.class
+SHA1-Digest: nm19p1UcVhSGSiEHmpN7HHeNZH0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/DefaultXt
+ extSemanticValidator.class
+SHA1-Digest: jeBVOiWGAzUi61qtzRwiRzpJnGQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/Concurr
+ entModificationObserver$Initializer$1.class
+SHA1-Digest: tzVsRdMSmxFxtD6yyM4f3WpvTCo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/SimpleD
+ irtyResource.class
+SHA1-Digest: kyJVoGt2ZWzAFyTyLOGphJN6gXE=
+
+Name: plugin.xml
+SHA1-Digest: 9L7ndt3TuZow9zdUkkQvMisUBhQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Updat
+ eXtextResourceTextCommand$2.class
+SHA1-Digest: zxug0mm4Ssf6I6GnR0h8hLu92CQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/High
+ lightingReconciler$1.class
+SHA1-Digest: A6cCi9gLVXPFMRMU428LLePfgN0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/IXTextSem
+ anticValidator.class
+SHA1-Digest: DEATA6zlkR0fxfOySoWFtghqro8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorHelper$2.class
+SHA1-Digest: F+iv7Tf90yGuKcu2KbH1CquLLrQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/PopupXtex
+ tEditorHelper$4.class
+SHA1-Digest: tJpIs8Yt4fzPOB2fjmhSZke8SHM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/editingdomain/Seman
+ ticRootUnloadListener$1.class
+SHA1-Digest: Mh512/OTIbwKnefQV+vKRdVFt6U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/edit/part/AntlrPars
+ erWrapper.class
+SHA1-Digest: VVghoI/2CZlfdhaeSuOuDLbRwCQ=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/Concurr
+ entModificationObserver.class
+SHA1-Digest: ah+D+csZMIcq3bAzfwBWRbPLx6U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Cust
+ omXtextSourceViewer.class
+SHA1-Digest: fvVr92QgdwBsJg8Vo4n0US8MeHc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/Sour
+ ceViewerHandle.class
+SHA1-Digest: LlYXxsPH9a+wN2Fj1rnwqGI+3B8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/concurrency/Editing
+ DomainAdapter.class
+SHA1-Digest: jc3a5jDDXlJ4kf5GXWjX/y3MgWc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/ISyn
+ theticResourceProvider.class
+SHA1-Digest: kumwbfkgFkvx2I4VeSOta5au7Og=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/partialEditing/IAct
+ ionContributor.class
+SHA1-Digest: lEOQGgXspxhaYkiz5s//vRdESUQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/xtext/glue/Activator.class
+SHA1-Digest: RzccNUHqIHRGVyvfxUR0oPFewQc=
+

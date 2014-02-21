@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.modelexplorer;sin
+ gleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.ui.navigator;bundle-version
+ ="3.4.0",org.eclipse.emf.transaction;bundle-version="1.4.0",org.eclip
+ se.uml2.uml.editor;bundle-version="3.1.0",org.eclipse.papyrus.uml.ser
+ vice.types;bundle-version="1.0.0",org.eclipse.papyrus.infra.services.
+ edit;bundle-version="1.0.0",org.eclipse.emf.facet.infra.facet;bundle-
+ version="0.1.0",org.eclipse.papyrus.views.modelexplorer;bundle-versio
+ n="1.0.0",org.eclipse.emf.facet.infra.browser.uicore;bundle-version="
+ 0.1.0",org.eclipse.emf.ecore,org.eclipse.gmf.runtime.notation,org.ecl
+ ipse.emf.facet.infra.query.core,org.eclipse.ui.views.properties.tabbe
+ d;bundle-version="3.5.200",org.eclipse.papyrus.infra.emf;bundle-versi
+ on="1.0.0",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",
+ org.eclipse.papyrus.infra.core.sasheditor;bundle-version="1.0.0",org.
+ eclipse.papyrus.infra.core.sasheditor.di;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.
+ infra.gmfdiag.common;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .services.labelprovider;bundle-version="1.0.0",org.eclipse.papyrus.um
+ l.tools;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.modelexplorer.Activa
+ tor
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/modelexplorer/provider/DiagramCo
+ ntentProvider.class
+SHA1-Digest: Q31C77ch7iLgVRjRkKV3Zh7BAiU=
+
+Name: org/eclipse/papyrus/uml/diagram/modelexplorer/Activator.class
+SHA1-Digest: fDGWmKvTdJA5Ewh79+0jqCnJakQ=
+
+Name: org/eclipse/papyrus/uml/diagram/modelexplorer/handler/DiagramVie
+ wHandler.class
+SHA1-Digest: Ui5R+06pKQm8L3wId7PUMwd61pc=
+
+Name: plugin.xml
+SHA1-Digest: ieJiM/ZGoxWdpv19HpfJtFCDYdc=
+
+Name: icon/diagrams.gif
+SHA1-Digest: m7CoejyO/BwL1K8nsf+3iF2nYsg=
+
+Name: documentation.pdoc
+SHA1-Digest: 0eIy61tpn0IaSBG+HKjCQCP/vpA=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: plugin.properties
+SHA1-Digest: cEKIYu1aGX/aFYSlz8EkBm5v4Vo=
+

@@ -1,0 +1,254 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.constraints;singleton:=
+ true
+Bundle-Activator: org.eclipse.papyrus.infra.constraints.Activator
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore,org.ecl
+ ipse.ui;bundle-version="3.7.0",org.eclipse.emf.facet.infra.query;bund
+ le-version="0.1.0",org.eclipse.emf.facet.infra.query.core;bundle-vers
+ ion="0.1.0",org.eclipse.emf.facet.infra.common.core;bundle-version="0
+ .1.0",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.papyrus.i
+ nfra.tools;bundle-version="1.0.0";visibility:=reexport,org.eclipse.pa
+ pyrus.infra.widgets;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.infra.constraints,org.eclipse.papy
+ rus.infra.constraints.constraints,org.eclipse.papyrus.infra.constrain
+ ts.environment,org.eclipse.papyrus.infra.constraints.environment.impl
+ ,org.eclipse.papyrus.infra.constraints.environment.util,org.eclipse.p
+ apyrus.infra.constraints.impl,org.eclipse.papyrus.infra.constraints.p
+ roviders,org.eclipse.papyrus.infra.constraints.runtime,org.eclipse.pa
+ pyrus.infra.constraints.util
+Bundle-Version: 1.0.0.v201401290914
+Eclipse-BuddyPolicy: dependent
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/constraints/runtime/ConstraintEngine.c
+ lass
+SHA1-Digest: kOuCKOdkPqTDMifcZ0IUtmNDxHU=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/Constraint.cla
+ ss
+SHA1-Digest: G3OaskR2WJhrFyZSo5uKQWZxI9c=
+
+Name: schema/ConstraintEnvironment.exsd
+SHA1-Digest: AKWihf3E+x2GDWL6J364SwuNmlQ=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/JavaQuery$Fals
+ eQuery.class
+SHA1-Digest: Vu+gblhyYTMzwT70snFzVEADdqI=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/util/Environme
+ ntAdapterFactory.class
+SHA1-Digest: m0NY9yd0onfNDRfzU/JB00cbSgQ=
+
+Name: org/eclipse/papyrus/infra/constraints/util/ClassLoader.class
+SHA1-Digest: I/U/Lz6Yfi2Mh1xJbCyYx4uvOYc=
+
+Name: org/eclipse/papyrus/infra/constraints/providers/ConstraintTypeCo
+ ntentProvider.class
+SHA1-Digest: s4DpR36GbNaZ6HjB0upZpojwx70=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/util/Environme
+ ntAdapterFactory$1.class
+SHA1-Digest: XDHLqep9gd5uYU7CNOSbSda9myY=
+
+Name: org/eclipse/papyrus/infra/constraints/SimpleConstraint.class
+SHA1-Digest: 4x0cx7h+s5ScFw9iMQvfF5Kguxw=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/EnvironmentPac
+ kage.class
+SHA1-Digest: dM2ettT8D0yCyGgduH6rgNam7qg=
+
+Name: org/eclipse/papyrus/infra/constraints/ConstraintsPackage$Literal
+ s.class
+SHA1-Digest: 6AqY1Hin5NpcSASEmYGmZWYWrqg=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/ConstraintType
+ .class
+SHA1-Digest: UsZXhYRZEm67o3PKw0iFwokyjC8=
+
+Name: org/eclipse/papyrus/infra/constraints/ConstraintsFactory.class
+SHA1-Digest: 8PjYpChlhZN2j+aMaTUW2J02/x4=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/SimpleConstraintImpl.
+ class
+SHA1-Digest: tILQqm2QYL+reZXwK/2uu4dUOLI=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/ValuePropertyImpl.cla
+ ss
+SHA1-Digest: 35dN6Zs2hFT6mlVReRba1aoucF0=
+
+Name: org/eclipse/papyrus/infra/constraints/ConfigProperty.class
+SHA1-Digest: gSydku5QtEb5P4ka+o3S3BxRm4g=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/ConstraintsPackageImp
+ l.class
+SHA1-Digest: tCdEncxVNW9CApsOaTcmKwtFgBI=
+
+Name: org/eclipse/papyrus/infra/constraints/ReferenceProperty.class
+SHA1-Digest: KVybB9KlcfQJsrtCb0nrDGoQknE=
+
+Name: Model/Constraints.ecore
+SHA1-Digest: 9Ba2C45sPy+urBv7ah4Tg6E1PjI=
+
+Name: org/eclipse/papyrus/infra/constraints/CompositeConstraint.class
+SHA1-Digest: 0WWAXhfOE92hPMVG/kNQTbnFUtk=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/impl/Environme
+ ntFactoryImpl.class
+SHA1-Digest: gnW4QFyc5fZ/CmCj98cvxqFu3uw=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/impl/Constrain
+ tEnvironmentImpl.class
+SHA1-Digest: pVEJW2tr6NeidWy2/MQDaDVAXQI=
+
+Name: org/eclipse/papyrus/infra/constraints/util/ConstraintsAdapterFac
+ tory.class
+SHA1-Digest: jfDHbr9oPoYYcN0+gNQ9vdvh+sc=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/TrueConstraint
+ .class
+SHA1-Digest: 2fBojwwmAf+vX2eyiKK/3koTquA=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/EMFInstanceOfC
+ onstraint.class
+SHA1-Digest: n77A9O43EpJkwUg6qYMqD5LIXAE=
+
+Name: custom/constraints.uiCustom
+SHA1-Digest: OCF0C4eTyd2Xr/Qye6B7hrO0LlE=
+
+Name: org/eclipse/papyrus/infra/constraints/Activator.class
+SHA1-Digest: Cw/bb/S5WzR8ucDFMBcDYvHaLaI=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/EnvironmentPac
+ kage$Literals.class
+SHA1-Digest: HfpAY45tVATtoH3VDJi7Hr7tjRo=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/CompositeConstraintIm
+ pl.class
+SHA1-Digest: po/vL4LXYMv0zMQbMZB3RlvDf/E=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/util/Environme
+ ntSwitch.class
+SHA1-Digest: SKRVl24p7x1PmsgKufVJqV+skx8=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/AbstractConstr
+ aint.class
+SHA1-Digest: 8YvSVkXis3WELsuPv9rh3m8y1No=
+
+Name: org/eclipse/papyrus/infra/constraints/ValueProperty.class
+SHA1-Digest: BeYa+3xtyiacxj9ACPRWFR+yxRA=
+
+Name: org/eclipse/papyrus/infra/constraints/DisplayUnit.class
+SHA1-Digest: tzeF+3ATW3FWMAKB7p8mn6kKkRI=
+
+Name: plugin.properties
+SHA1-Digest: 4QwrY5Lc41F8DCSDhrf6klRfa1g=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/EMFQueryConstr
+ aint.class
+SHA1-Digest: 28viaVph1P79FY0YrPS/ZJNsvE8=
+
+Name: org/eclipse/papyrus/infra/constraints/runtime/DefaultConstraintE
+ ngine.class
+SHA1-Digest: gcTNAOe+AsJQtLZkK5NmjhtpbvU=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/CompoundConstr
+ aint.class
+SHA1-Digest: D7Zw0ltsWZjBaQSGj43klqU11No=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/JavaQueryConst
+ raint.class
+SHA1-Digest: el7HCfVZfNKaJ4a/wy44dpO1pqg=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/JavaQuery.clas
+ s
+SHA1-Digest: HLz+gGWGj26jjBDhjwwrr39yQFI=
+
+Name: org/eclipse/papyrus/infra/constraints/ConstraintDescriptor.class
+SHA1-Digest: ODF+e8py2oKmSPtdSIAzc60Q4z8=
+
+Name: org/eclipse/papyrus/infra/constraints/runtime/ConstraintsManager
+ .class
+SHA1-Digest: WurL0TYk+qcO/P2CptqEByrC9Ss=
+
+Name: org/eclipse/papyrus/infra/constraints/runtime/ConstraintFactory.
+ class
+SHA1-Digest: AQJgT5Mi0a5NTUiV0fC/f66DfAM=
+
+Name: plugin.xml
+SHA1-Digest: 8EtLjpPbEdQtnHLrEIUBq98ZhUg=
+
+Name: org/eclipse/papyrus/infra/constraints/ConstraintsPackage.class
+SHA1-Digest: JIhUuccO0XhG2vV5/FKr0Gj6Wsg=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/HasEAnnotation
+ Constraint.class
+SHA1-Digest: l9J8XnuIrHwIroKts6mHYnPvI0o=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/ConstraintEnvi
+ ronment.class
+SHA1-Digest: KH9Pb0QKLFoNRiY5yit8PIm2DcI=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/EnvironmentFac
+ tory.class
+SHA1-Digest: 06ICIUZ0hWPWXJVKvI4yV/YN1nw=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/ConstraintDescriptorI
+ mpl.class
+SHA1-Digest: 8Hye72+MbkiUnoyY0aG3na4zvfI=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/DisplayUnitImpl.class
+SHA1-Digest: Vgcb+olcZP+zoh9zXcwG9/c4fgc=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/ConstraintsFactoryImp
+ l.class
+SHA1-Digest: 49Og3uo5hVa9UgHyUl6OrR0beZY=
+
+Name: org/eclipse/papyrus/infra/constraints/util/ConstraintsSwitch.cla
+ ss
+SHA1-Digest: RPM+aC2ri4cAKi8osq3n97gcKLg=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/impl/Environme
+ ntPackageImpl.class
+SHA1-Digest: 665HGZBVnz8ytst967zhpdjRcUQ=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/ConfigPropertyImpl.cl
+ ass
+SHA1-Digest: bCumP/+0E32MECYeln0phjqJaJw=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/impl/Constrain
+ tTypeImpl.class
+SHA1-Digest: UDdJvCCh+IM6oMQmkj/uvRzCQaM=
+
+Name: org/eclipse/papyrus/infra/constraints/constraints/JavaInstanceOf
+ .class
+SHA1-Digest: Judo+YpD4qikmJvAqSG13Fty75k=
+
+Name: Model/ConstraintEnvironment.xmi
+SHA1-Digest: GPXXcC2pXCK8U72P4Kj2CwnVqrc=
+
+Name: Model/Constraints.genmodel
+SHA1-Digest: iaQFZtRFGJuIKcwClZ5tGtO8dz4=
+
+Name: org/eclipse/papyrus/infra/constraints/util/ConstraintsAdapterFac
+ tory$1.class
+SHA1-Digest: bT9aHhTN9qTKMbVetjT/7QqFuKU=
+
+Name: org/eclipse/papyrus/infra/constraints/impl/ReferencePropertyImpl
+ .class
+SHA1-Digest: mC82pnykgmhFy+1ZEeOckQsP1/g=
+

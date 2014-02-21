@@ -1,0 +1,103 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.import;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.views.modelexplorer;bundle-version="1.0.0",org.eclipse.uml2.uml
+ ;bundle-version="3.2.0",org.eclipse.uml2.common.edit,org.eclipse.papy
+ rus.uml.extensionpoints;bundle-version="1.0.0",org.eclipse.papyrus.um
+ l.tools;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools.utils;bu
+ ndle-version="1.0.0",org.eclipse.papyrus.uml.profile;bundle-version="
+ 1.0.0",org.eclipse.emf.transaction;bundle-version="1.4.0",org.eclipse
+ .papyrus.infra.widgets;bundle-version="1.0.0",org.eclipse.core.databi
+ nding;bundle-version="1.4.1",org.eclipse.ui.ide;bundle-version="3.8.0
+ ",org.eclipse.papyrus.infra.core;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.importt.Activator
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportPackageFromUserMo
+ delHandler.class
+SHA1-Digest: VI1Rvi6zQAy3kB9iEmkkC+3CjCs=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportRegisteredPackage
+ Handler$ImportLibraryFromRepositoryCommand.class
+SHA1-Digest: WVWrnmqd+Ca6EDudZ2Fpqkknz/I=
+
+Name: org/eclipse/papyrus/uml/importt/ui/PackageImportDialog.class
+SHA1-Digest: TOdRYhYI0b3JGZeH0Xy5T+JGofM=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportPackageFromUserMo
+ delHandler$ImportFromFileCommand$1.class
+SHA1-Digest: sDER8Crsx0EcGr+fYMyxB+ryWZY=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: plugin.properties
+SHA1-Digest: 4KqngjGPggYlB58IgSKKycFPkaQ=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/AbstractImportHandler$A
+ bstractImportCommand.class
+SHA1-Digest: 4RVup9cihwJk//x2Caekl5MH15I=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/AbstractImportHandler.c
+ lass
+SHA1-Digest: GK4qOyfGuoNmSz3G+LOAUyKaJIU=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportRegisteredProfile
+ Handler$ImportProfileCommand.class
+SHA1-Digest: qGqViFv8FBLP99k7WMDBstxCDxs=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportRegisteredProfile
+ Handler.class
+SHA1-Digest: 0jRPsVSiiG/wD1mo3xs3XbZnNz8=
+
+Name: org/eclipse/papyrus/uml/importt/messages/Messages.class
+SHA1-Digest: AKPhr1i09JvGcdVVNAKb0hkj4AQ=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportRegisteredPackage
+ Handler$ImportLibraryFromRepositoryCommand$1.class
+SHA1-Digest: VtsHjr6NMMEtUPQkF1+uYYQkIKk=
+
+Name: icons/import_wiz_16x16-papyrusColor.gif
+SHA1-Digest: lWdEZrKmMBLQeIpGp+Rhdq4Unko=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportRegisteredPackage
+ Handler.class
+SHA1-Digest: /EJ8pn4iExWW68JDahpHRPvlEmw=
+
+Name: org/eclipse/papyrus/uml/importt/ui/PackageImportDialog$1.class
+SHA1-Digest: 3VRKavbs9FtvQWlFoYXIK7thqHA=
+
+Name: org/eclipse/papyrus/uml/importt/ui/PackageImportDialog$2.class
+SHA1-Digest: k7wCD2WffVrycGZpgkyXjKU9cto=
+
+Name: org/eclipse/papyrus/uml/importt/ui/PackageImportDialog$3.class
+SHA1-Digest: Hfce8azl2iEYg9RqCx0FgFDSN5k=
+
+Name: org/eclipse/papyrus/uml/importt/Activator.class
+SHA1-Digest: /+xHeKvwqL9TUr6O3QXrdwnC6og=
+
+Name: org/eclipse/papyrus/uml/importt/messages/messages.properties
+SHA1-Digest: nOUDQq7P5HI+40k/ddDsPnGs8bY=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportRegisteredProfile
+ Handler$ImportProfileCommand$1.class
+SHA1-Digest: jJhATNI6bOgZvshW3WAnJfm24oQ=
+
+Name: plugin.xml
+SHA1-Digest: s7/SVvubB/h7NhO2y5U8t23px5I=
+
+Name: org/eclipse/papyrus/uml/importt/handlers/ImportPackageFromUserMo
+ delHandler$ImportFromFileCommand.class
+SHA1-Digest: gWwI39fQyrL2P5q049iUl2I4/Js=
+

@@ -1,0 +1,68 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.nattable.controlmode;si
+ ngleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.ser
+ vices.controlmode;bundle-version="1.0.0",org.eclipse.papyrus.infra.em
+ f;bundle-version="1.0.0",org.eclipse.gmf.runtime.emf.commands.core,or
+ g.eclipse.papyrus.infra.nattable.model;bundle-version="1.0.0",org.ecl
+ ipse.uml2.uml,org.eclipse.papyrus.infra.gmfdiag.common;bundle-version
+ ="1.0.0",com.google.guava;bundle-version="11.0.0",org.eclipse.papyrus
+ .infra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.papyrus.in
+ fra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra.nattabl
+ e.common;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.nattable.controlmode.Activ
+ ator
+Export-Package: org.eclipse.papyrus.infra.nattable.controlmode,org.ecl
+ ipse.papyrus.infra.nattable.controlmode.commands,org.eclipse.papyrus.
+ infra.nattable.controlmode.helpers
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: plugin.pdoc
+SHA1-Digest: JHKhkNfYNk5/fYrgZGw7WKmxf/k=
+
+Name: build.properties
+SHA1-Digest: +9kKkTFHocbPO6ZkhYS0Xx6BkPQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/nattable/controlmode/helpers/TableCont
+ rolModeHelper$1.class
+SHA1-Digest: +HsAbQd4J5yRlGWnLGaXcCIxeXQ=
+
+Name: org/eclipse/papyrus/infra/nattable/controlmode/helpers/TableCont
+ rolModeHelper$2.class
+SHA1-Digest: bAlIVyIO6FL5OM/avn4oxtCHwdM=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: vPI304y9qWb4Nk9mG9DX01QOtHo=
+
+Name: org/eclipse/papyrus/infra/nattable/controlmode/Activator.class
+SHA1-Digest: UkwrOCh3xDYLBdk58vtRLM4f+M8=
+
+Name: org/eclipse/papyrus/infra/nattable/controlmode/helpers/TableCont
+ rolModeHelper.class
+SHA1-Digest: dAipBK7+PjdYn670r+SOdyP70vk=
+
+Name: org/eclipse/papyrus/infra/nattable/controlmode/commands/PapyrusN
+ attableControlCommand.class
+SHA1-Digest: F04gNp++DAipmg6iLrl0xLTrvwE=
+
+Name: plugin.xml
+SHA1-Digest: Ak/LgW1cLYs35zjYOtBdPaNwdvQ=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/nattable/controlmode/commands/PapyrusN
+ attableControlModeParticipant.class
+SHA1-Digest: wopY/y0L26FOc8JnsHZ1RB02CTo=
+

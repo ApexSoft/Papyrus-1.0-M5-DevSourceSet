@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders">
+      <editpolicyProvider
+            class="org.eclipse.papyrus.infra.gmfdiag.hyperlink.providers.HyperlinkEditPolicyProvider">
+         <Priority
+               name="Lowest">
+         </Priority>
+      </editpolicyProvider>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.gmfdiag.dnd.dropStrategy">
+      <strategy
+            strategy="org.eclipse.papyrus.infra.gmfdiag.hyperlink.dnd.HyperlinkDropStrategy">
+      </strategy>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.hyperlink.specificHyperLinks">
+      <specificHyperLink
+            contentProvider="org.eclipse.papyrus.infra.gmfdiag.hyperlink.providers.SpecificViewContentProvider">
+      </specificHyperLink>
+      
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.services.navigation.navigationContributor">
+      <contributor
+            contributor="org.eclipse.papyrus.infra.gmfdiag.hyperlink.navigation.DiagramNavigationProvider"
+            description="Navigates to the current element&apos;s diagram(s)"
+            id="org.eclipse.papyrus.infra.gmfdiag.hyperlink.diagram"
+            label="Automatic Diagram Navigation">
+      </contributor>
+   </extension>
+
+</plugin>

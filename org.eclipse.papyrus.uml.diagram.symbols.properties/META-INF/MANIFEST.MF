@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: Symbols Properties (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.symbols.propertie
+ s;singleton:=true
+Require-Bundle: org.eclipse.papyrus.uml.properties;bundle-version="1.0
+ .0",org.eclipse.papyrus.views.properties;bundle-version="1.0.0",org.e
+ clipse.papyrus.uml.diagram.symbols;bundle-version="1.0.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: propertyView/symbols/ui/SingleTypeSymbolDefinition.xwt
+SHA1-Digest: 3sopX13Dd6yYGM278QbV85Ti1PI=
+
+Name: propertyView/symbols/symbols.ctx
+SHA1-Digest: y49evAuNCMQyAUXZ9DKC/AxpxNA=
+
+Name: plugin.xml
+SHA1-Digest: BOvxQZsK4K2oPLgkt5bdnoih2II=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: propertyView/symbols/ui/MultipleTypeSymbolDefinition.xwt
+SHA1-Digest: rWysSdDjUICdydeMvHKYQELw8MY=
+

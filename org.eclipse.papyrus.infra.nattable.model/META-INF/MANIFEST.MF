@@ -1,0 +1,686 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.nattable.model;singleto
+ n:=true
+Bundle-Activator: org.eclipse.papyrus.infra.nattable.model.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.ecore;visibility:=reexport
+Export-Package: org.eclipse.papyrus.infra.nattable.model,org.eclipse.p
+ apyrus.infra.nattable.model.nattable,org.eclipse.papyrus.infra.nattab
+ le.model.nattable.impl,org.eclipse.papyrus.infra.nattable.model.natta
+ ble.nattableaxis,org.eclipse.papyrus.infra.nattable.model.nattable.na
+ ttableaxis.impl,org.eclipse.papyrus.infra.nattable.model.nattable.nat
+ tableaxis.util,org.eclipse.papyrus.infra.nattable.model.nattable.natt
+ ableaxisconfiguration,org.eclipse.papyrus.infra.nattable.model.nattab
+ le.nattableaxisconfiguration.impl,org.eclipse.papyrus.infra.nattable.
+ model.nattable.nattableaxisconfiguration.util,org.eclipse.papyrus.inf
+ ra.nattable.model.nattable.nattableaxisprovider,org.eclipse.papyrus.i
+ nfra.nattable.model.nattable.nattableaxisprovider.impl,org.eclipse.pa
+ pyrus.infra.nattable.model.nattable.nattableaxisprovider.util,org.ecl
+ ipse.papyrus.infra.nattable.model.nattable.nattablecell,org.eclipse.p
+ apyrus.infra.nattable.model.nattable.nattablecell.impl,org.eclipse.pa
+ pyrus.infra.nattable.model.nattable.nattablecell.util,org.eclipse.pap
+ yrus.infra.nattable.model.nattable.nattableconfiguration,org.eclipse.
+ papyrus.infra.nattable.model.nattable.nattableconfiguration.impl,org.
+ eclipse.papyrus.infra.nattable.model.nattable.nattableconfiguration.u
+ til,org.eclipse.papyrus.infra.nattable.model.nattable.nattablelabelpr
+ ovider,org.eclipse.papyrus.infra.nattable.model.nattable.nattablelabe
+ lprovider.impl,org.eclipse.papyrus.infra.nattable.model.nattable.natt
+ ablelabelprovider.util,org.eclipse.papyrus.infra.nattable.model.natta
+ ble.nattableproblem,org.eclipse.papyrus.infra.nattable.model.nattable
+ .nattableproblem.impl,org.eclipse.papyrus.infra.nattable.model.nattab
+ le.nattableproblem.util,org.eclipse.papyrus.infra.nattable.model.natt
+ able.nattabletester,org.eclipse.papyrus.infra.nattable.model.nattable
+ .nattabletester.impl,org.eclipse.papyrus.infra.nattable.model.nattabl
+ e.nattabletester.util,org.eclipse.papyrus.infra.nattable.model.nattab
+ le.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/impl/MasterObjectAxisProviderImpl.class
+SHA1-Digest: tYJyag0b/eak7ACSzV94Qu+Q7xI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /impl/AbstractTableTesterImpl.class
+SHA1-Digest: eIVpRrJ90qTEA56wA0kBScEjT3U=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/I
+ dAxisWrapper.class
+SHA1-Digest: Aep8GX7oVnotZayHJoLMXP7qxfs=
+
+Name: model/nattableonfiguration.ecorediag
+SHA1-Digest: 6CBaPiZkHqV1iB2k1X4TweVdnA4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/TableHeaderAxisConfigurationImpl.class
+SHA1-Digest: fyLMywqoz6gSoJCyecZY7CwuXBw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/util/NattableproblemAdapterFactory.class
+SHA1-Digest: 645QyzhpNJEw/dUDZqror33gdp0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/AbstractHeaderAxisConfigurationImpl.class
+SHA1-Digest: xR1KAqn4wQm1AsN2v5x4e79yAig=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/impl/NattableaxisproviderPackageImpl.class
+SHA1-Digest: 6ahLTxG9kp1ap6aKTwTM4d4Zg68=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/impl/NattablelabelproviderFactoryImpl.class
+SHA1-Digest: QBe7+34ktrRLE3t6w6LE/B5Jv5E=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/NattableaxisconfigurationFactoryImpl.class
+SHA1-Digest: f/fULLU+cqUizY95Dnq8CIFq6AQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/TableHeaderAxisConfiguration.class
+SHA1-Digest: JTnQoL266FPFL6OnR+z0Oyr7Fkw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/E
+ ObjectAxisWrapper.class
+SHA1-Digest: h7/SbjAmpGzVzYSP6HhZO1b3SNk=
+
+Name: model/nattableaxis.ecorediag
+SHA1-Digest: 99iuNA9PK3+aXMue6+TT5OlFTN8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/ISlaveAxisProvider.class
+SHA1-Digest: fSVNOc5JCdlLawE0//2G5lZ3DrI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/ObjectLabelProviderConfiguration.class
+SHA1-Digest: /FgfXheGAMISvUx1iBIivNx9YyE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/NattableconfigurationFactory.class
+SHA1-Digest: ujRF5BtYdoTYoouJLLKr6kdA++w=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/N
+ attableaxisPackage$Literals.class
+SHA1-Digest: Kdr4iwPr6FBYjkagwMIJrVfjQ7k=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/AxisManagerRepresentation.class
+SHA1-Digest: ZaZqAuDeUa96kEFKtaagyOPkaLM=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /util/NattabletesterSwitch.class
+SHA1-Digest: 0G++Wt1oRGbSgP0tnFqSh2Cvgy4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/util/NattablelabelproviderAdapterFactory$1.class
+SHA1-Digest: n2M7X3E5seZNIYsUq5xGqWTuCIs=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/util/NattableaxisconfigurationAdapterFactory$1.class
+SHA1-Digest: hwHQ4RhqoNydF+UUjw6Pe2o5koA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/u
+ til/NattablecellSwitch.class
+SHA1-Digest: I/lEbvlwgvom+3bvPkiU7T1AMU8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/Activator.class
+SHA1-Digest: GssU2KX2qkwh53/1hq63mDMUr4M=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/impl/AbstractAxisProviderImpl.class
+SHA1-Digest: xr1k7VSyOt/voMBalrv8jLO/t20=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/u
+ til/NattableaxisAdapterFactory.class
+SHA1-Digest: Wc9XMEE41x8mbucvLPqDa5ibtIc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/Problem.class
+SHA1-Digest: 1RXN4Nx9CQ3QMSiDzAFrxU9QjB4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/N
+ attableaxisFactory.class
+SHA1-Digest: sdFLTeTYk40hM0zcNryPyhtDwoA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/util/NattableconfigurationAdapterFactory.class
+SHA1-Digest: E72zSrkfSAAtrG1YfzVjGFCjcro=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/i
+ mpl/NattablecellFactoryImpl.class
+SHA1-Digest: M2lL0SuVARZw0WWXjdW3qhDDoe0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/util/NattableS
+ witch.class
+SHA1-Digest: dC6Qr1urMgI+ArGB+bgrsJM20+o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /impl/NattabletesterPackageImpl.class
+SHA1-Digest: ESLesjve601t6Kh63rUXSr4WcN8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/NattableaxisFactoryImpl.class
+SHA1-Digest: ok+DdM5uDO2MdNsqNo4s5pXIiX8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/IPasteConfigurationImpl.class
+SHA1-Digest: 8mvKZOdYAygat70vTjKdaBx9KSQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/u
+ til/NattablecellAdapterFactory$1.class
+SHA1-Digest: CVTAaeSeRv8+P7bEQchAyFdXIXY=
+
+Name: model/nattable.ecorediag
+SHA1-Digest: ayRKPvYOqdm3reo+DX1Pkp+zyIQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/util/NattableaxisconfigurationValidator.class
+SHA1-Digest: ZgeA06YkNwQfaKT+ZvlLIwn9FwE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/NattablelabelproviderFactory.class
+SHA1-Digest: OCRgojSYeJcA3vhGl1SZFF5sBu0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/util/NattableA
+ dapterFactory$1.class
+SHA1-Digest: dh2IsFLsfcpz/z+oDZZxKeYt86E=
+
+Name: model/nattable.ecore
+SHA1-Digest: tdOjwSY+BAGV6GVO3l1mmgLqKcg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/impl/NattablelabelproviderPackageImpl.class
+SHA1-Digest: aVew9dU0DEAz3lBwRqtY5mWuFQg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/NattableaxisconfigurationPackageImpl.class
+SHA1-Digest: c0lTaFGZZupfg0QRhEXP8HDfT7U=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/PasteEObjectConfigurationImpl.class
+SHA1-Digest: s0BkF0WV1E0tZkFiWseWGvbvf4k=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/I
+ CellAxisWrapper.class
+SHA1-Digest: Sk89TcFj+4fNEa0KyD9dR18GXHc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/impl/NattableproblemFactoryImpl.class
+SHA1-Digest: NQZVh3U0FZey9Z/zIMHK1uIZQms=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/NattableconfigurationPackage.class
+SHA1-Digest: GUKzkYeirZzPNmGHHxy4AGQu0Gc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/FeatureLabelProviderConfiguration.class
+SHA1-Digest: X9D9J+eFtGxaYnA1Or4eAbyNsA8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/impl/TableNamedElementImpl.class
+SHA1-Digest: UMaHC1uFr2aEg7ZSw5MfPRRrSTg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/util/NattableproblemAdapterFactory$1.class
+SHA1-Digest: 1c0fxhbayAZ62eiuixTKG0LqWsQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/IdAxisImpl.class
+SHA1-Digest: 5PCsy5XcPjrmJFJrFJeiQHMQPkk=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/TableConfiguration.class
+SHA1-Digest: W/6iwg3975RXpwoN1OU3WqR/gaU=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /util/NattabletesterAdapterFactory.class
+SHA1-Digest: 1fZaFNf4VfNtLwB4AWvEExFNCF4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/impl/AxisProviderImpl.class
+SHA1-Digest: aPSVdzQZwVrdFHLryIZZF7gg2M4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/O
+ bjectIdAxis.class
+SHA1-Digest: LOo3pDvGol9WtpI0V2kq1kbSv0Q=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/N
+ attableaxisPackage.class
+SHA1-Digest: n+zbpir20TsTk/tpP3rK4DDeJCA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/u
+ til/NattablecellAdapterFactory.class
+SHA1-Digest: kzwc+CbmiTNLEHNKasQlYEfxle8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/SlaveObjectAxisProvider.class
+SHA1-Digest: EHv6y/4dPHaju5jNqqrG5CBfgyE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/NattableaxisconfigurationPackage$Literals.class
+SHA1-Digest: PvrW+H8URgg5/p46YURfh2FyM/g=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/MasterObjectAxisProvider.class
+SHA1-Digest: F4xcDD2CoAT79dzOp1Dl8gXIprs=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/impl/ObjectLabelProviderConfigurationImpl.class
+SHA1-Digest: 0pWZ2vaAUcoKX0P6gGsbi3T5Cq8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/i
+ mpl/NattablecellPackageImpl.class
+SHA1-Digest: QvS8UJ1cK9S0dSbE7pnPMK2M7ck=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/FeatureAxisImpl.class
+SHA1-Digest: rmqyfmZYHugQLKFto4Fa8+L+iu0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/NattableaxisPackageImpl.class
+SHA1-Digest: Cim4TWsr/P5/46Pp2RSoAcpXZ2g=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/u
+ til/NattableaxisAdapterFactory$1.class
+SHA1-Digest: 6tbbLJHO2zwkOZp8vlTVjCQoEXw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/E
+ ObjectAxis.class
+SHA1-Digest: j+SAW60ZqhkhMfqP+AlDct3Yn3c=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/Table.class
+SHA1-Digest: IrSoQ7ADjtqOzhocmPBE73GCgrk=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/NattablelabelproviderPackage.class
+SHA1-Digest: wkLhYBvEH7a9maMPKAYngn3gQ8o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/impl/NattableconfigurationPackageImpl$1.class
+SHA1-Digest: NmapRnm2TY9oQFyio/jhEExIF+o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/ObjectIdAxisImpl.class
+SHA1-Digest: Nb4fC/6i4mBLE+N5Z/BbA4Qkk1Y=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/util/NattableconfigurationAdapterFactory$1.class
+SHA1-Digest: bPpmzsdThTaadsqbRw+bSGBLJxs=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/util/NattableA
+ dapterFactory.class
+SHA1-Digest: ADrVJPZ6mVlq4HLT/9QMqpphFfE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/EStructuralFeatureValueFillingConfigurationImpl.clas
+ s
+SHA1-Digest: wMyAnR7XjAqj6RMt2MZcIqFt1kc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/util/NattableaxisproviderSwitch.class
+SHA1-Digest: +F27oqCrr63bjyZyCZOqWv689cY=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/AxisManagerConfiguration.class
+SHA1-Digest: qmbBA7GAbnhkN7fW7yeJlyMieyI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/AxisManagerRepresentationImpl.class
+SHA1-Digest: 2vIhF/66FdjRgbJNHgC8eM+adCw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/I
+ dAxis.class
+SHA1-Digest: 2MJwMEWpMlCvR6+uB1hcDQ4ZyRU=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/LocalTableHeaderAxisConfiguration.class
+SHA1-Digest: VTzNDlDAWAjM8ac2UVlH4Mqlwp8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /impl/JavaTableTesterImpl.class
+SHA1-Digest: oPCKhZx553yGrqC0ZJPaJHOATbw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/NattableproblemFactory.class
+SHA1-Digest: f7zD6StJf2HxjVirL95NCJmN1tg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/util/NattablelabelproviderSwitch.class
+SHA1-Digest: 82zWzmetzw/mdo8TWftk2ic5OWg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/util/NattableaxisconfigurationSwitch.class
+SHA1-Digest: qlo7iEbPtmS12nLq3tKn3K/ReOE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/AbstractAxisProvider.class
+SHA1-Digest: fdhvdczh5z+YBQyL+NH5H+pCTdo=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/StringResolutionProblem.class
+SHA1-Digest: i5KMEVvlMiIJX+A3FUjVY21MXbg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/IPasteConfiguration.class
+SHA1-Digest: +uM2sGp4fudjhzeHwp1Qus+mto0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/NattableaxisproviderFactory.class
+SHA1-Digest: oSC5SfuWyV+c1SKObJ4Uex+YnBg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/N
+ attablecellFactory.class
+SHA1-Digest: +TWcEPX+/qkJb1xOhUA0jDqijUk=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/impl/NattableproblemPackageImpl.class
+SHA1-Digest: meP4Q5FCDCMEbZ8aeyCWLHvS54o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/i
+ mpl/EObjectAxisWrapperImpl.class
+SHA1-Digest: OJgtwmraurPzJvi6PGEtB1JeUp4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/util/NattableaxisproviderAdapterFactory$1.class
+SHA1-Digest: HVcIyxZgsUPw/t3zzYflKnhR3U0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /NattabletesterPackage$Literals.class
+SHA1-Digest: 64cPsFM7AeHP04ZwBpRq7y2GUM4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/NattableaxisconfigurationFactory.class
+SHA1-Digest: tCIqZZEGlHiphzf0Aul8fgeKpVs=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/I
+ Axis.class
+SHA1-Digest: 2/lwiduCHEgnRz/5WEaLtymsxqo=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/E
+ StructuralFeatureAxis.class
+SHA1-Digest: 0u6GLuUFTaJe2xIp6mDIqgyN/zo=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/impl/NattableF
+ actoryImpl.class
+SHA1-Digest: avRbNwxoYXom//clD6BmEZ2EhoE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/NattablePackag
+ e$Literals.class
+SHA1-Digest: p5tPdKVfV5OncaHzOXO2xeKU4BA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/impl/StringResolutionProblemImpl.class
+SHA1-Digest: mfowB4iNWw+JguCsBq3rH5Kk3Kc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/NattableFactor
+ y.class
+SHA1-Digest: +vYYehgKYaxKs7GCgwu21Lkg0c8=
+
+Name: plugin.pdoc
+SHA1-Digest: q4H/YCdKC7hYgjUvdyDAPpCoQw4=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/O
+ bjectAxis.class
+SHA1-Digest: sRe1ASkVi6JYxd72d61WTPDnLr4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/C
+ ell.class
+SHA1-Digest: JtjKyF/eBkVKH+LSFtzzhd7C9wA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/FeatureIdAxisImpl.class
+SHA1-Digest: SOMzZRfDetQx9B60BxxXVUFA0ZQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /NattabletesterFactory.class
+SHA1-Digest: vVDhj+YYYOCFLWrV+K/AsvuEN5k=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/NattableconfigurationPackage$Literals.class
+SHA1-Digest: 6kzMZqRBGka4K4whND9oZQHkDlA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/FeatureAxisConfigurationImpl.class
+SHA1-Digest: oZdnkYTZrJxEXQsvmuumsbwfKds=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /util/NattabletesterAdapterFactory$1.class
+SHA1-Digest: EkY9Fb2jneBqZheBMPxeJltGz+o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/impl/TableImpl
+ .class
+SHA1-Digest: l8oPrTOPiaevvYucRmqJnILwi/s=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/impl/SlaveObjectAxisProviderImpl.class
+SHA1-Digest: 7var6mr6qDuH5i8eu5cZs1eTzks=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/impl/NattableconfigurationFactoryImpl.class
+SHA1-Digest: s82ErMWiXSO8zYif3jPpl373A6E=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/FeatureAxisConfiguration.class
+SHA1-Digest: vAsamG55nhpUa3HoS6VN3TNxXtc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/impl/TableConfigurationImpl.class
+SHA1-Digest: DT7U670kgjUfBboZNdm52WmiZX0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/NattableaxisproviderPackage$Literals.class
+SHA1-Digest: LpfzrqUh0w6o34aaLpwXVawDpac=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/N
+ attablecellPackage$Literals.class
+SHA1-Digest: macGD7dZSL79+KSQQo2h5R3/Ja0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/impl/ProblemImpl.class
+SHA1-Digest: uA6aGTyrHtkcxwGA+6FnjdwHn3w=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/NattableproblemPackage.class
+SHA1-Digest: rKrkkGANvitNqgtsc1pw+BRqY0o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/util/NattableproblemSwitch.class
+SHA1-Digest: 0NG7nP/U6ej9Q/J+lOmIpHdIVLo=
+
+Name: model/nattableaxisprovider.ecorediag
+SHA1-Digest: sgEFJ7dDsoJws6vwWxCdEBSSTic=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/NattableaxisproviderPackage.class
+SHA1-Digest: Ahv2tIRLfotMXWkGqMz0lIPLeCc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/util/NattableaxisproviderAdapterFactory.class
+SHA1-Digest: SwRY4DhFKR3VY3cBd9TICiP7Ku0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/N
+ attablecellPackage.class
+SHA1-Digest: WD8s/V9KwpPIs0Sq8RIoA8Af2Y4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/util/NattableV
+ alidator.class
+SHA1-Digest: KKR0WNaG8bsSM64MszvU/jTpR84=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/AxisProvider.class
+SHA1-Digest: MO3u8YeV5/5tgA3T+H3UR3WeBmQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/NattablelabelproviderPackage$Literals.class
+SHA1-Digest: WDw3qNZ5jJl5Xsz922e4oltWulE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/ILabelProviderConfiguration.class
+SHA1-Digest: 1oU3WOseQ7J3Df4LQJUxsbFU3EE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/util/NattablelabelproviderAdapterFactory.class
+SHA1-Digest: Labf/tiboHbr0UZH/RzfPjxYdGE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/util/NattableaxisconfigurationAdapterFactory.class
+SHA1-Digest: EWjBJBvtIVT1bEvC7zgiw96cCuE=
+
+Name: plugin.properties
+SHA1-Digest: Z502q9dVS1aMzBX18I8UKVjoLpc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/TableNamedElement.class
+SHA1-Digest: TVFbcZQl0iYNdbM0mEtnPWH5bNw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/impl/NattableaxisproviderFactoryImpl.class
+SHA1-Digest: tk00D1QQiCnTRi16KphBXe7xHoY=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/EStructuralFeatureValueFillingConfiguration.class
+SHA1-Digest: mzNhieJIPGvePAk7qVjS4dqWYEk=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/NattableaxisconfigurationPackage.class
+SHA1-Digest: NDKWAUv8H91FoYyaiJUdufiJKtA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/util/NattableconfigurationValidator.class
+SHA1-Digest: Icu3LsHFF05NYz3W1+LJW9It03s=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/NattableaxisconfigurationPackageImpl$1.class
+SHA1-Digest: 6oE3l5OYn2fL3PuKBb6wUS6LxL4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/impl/NattableP
+ ackageImpl.class
+SHA1-Digest: p1w8Q8cdhsv8skagsf7W/fEz2uw=
+
+Name: plugin.xml
+SHA1-Digest: MTLNhSh6X2ISRv1Bnirlpwo04Mk=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/IMasterAxisProvider.class
+SHA1-Digest: QwyX7ac1NoF5FI5fUTOw/3Rg488=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/u
+ til/NattableaxisSwitch.class
+SHA1-Digest: EpVDoV440kY6mNsyrWux58zQO9U=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/impl/FeatureLabelProviderConfigurationImpl.class
+SHA1-Digest: yzg0NoGRmnhBu3D7q0EmzuqapnQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/IFillingConfiguration.class
+SHA1-Digest: lN0yd9TNZRpWKdOcHl/xdMehrKM=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/NattablePackag
+ e.class
+SHA1-Digest: 8vize92GemaSjwWHPCeYQScCKYo=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/F
+ eatureIdAxis.class
+SHA1-Digest: oCQnN+cOy6rQeS9eIXAiNeaDAqw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/i
+ mpl/CellImpl.class
+SHA1-Digest: KB/vZkciAnAKJnrI9F9nME+bE10=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/IAxisConfiguration.class
+SHA1-Digest: GYHPeXlq4IYpFx96obSew8gWxSY=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/PasteEObjectConfiguration.class
+SHA1-Digest: wAQRyBccq5bTVZYVjnx3g08NZjE=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/AbstractHeaderAxisConfiguration.class
+SHA1-Digest: zaN55Trcuy1gXuxEDBESshLuavU=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/util/NattableconfigurationSwitch.class
+SHA1-Digest: KkvHzwNzNNgkwCKvXzf5noar84o=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/F
+ eatureAxis.class
+SHA1-Digest: P9t4yFM1ttwkw1zo+dnxjFME/t8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /NattabletesterPackage.class
+SHA1-Digest: gRmXbavsT6AVfue5zpQHQ+bSqbM=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/impl/NattableP
+ ackageImpl$1.class
+SHA1-Digest: +jRYJ6rvpOYBHLvAxPVylCIWgt8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/CellEditorDeclaration.class
+SHA1-Digest: zJWNIJIscFDPFhZB5Fic9RZK+gs=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/impl/NattableconfigurationPackageImpl.class
+SHA1-Digest: pCNL0PKmboaPRoHTMlRnsVuBGp8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/LocalTableHeaderAxisConfigurationImpl.class
+SHA1-Digest: 3sGZHlqxRap9U5eQvHy6vHevfqI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/i
+ mpl/IdAxisWrapperImpl.class
+SHA1-Digest: QDH+IFBe/X0EP35CVLVKSymIoHc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/EStructuralFeatureAxisImpl.class
+SHA1-Digest: Dctx0ZgGJvmy+UQcdt/z5vG3ieI=
+
+Name: model/nattable.genmodel
+SHA1-Digest: Mr+d39lHozTbq16S9la8NW8UrY0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/AxisIndexStyle.class
+SHA1-Digest: CtQrWns0Z4JykGAvxbpzgXRoh9s=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /impl/NattabletesterFactoryImpl.class
+SHA1-Digest: 7YBKdT4u+cn9khqsW3TfOMwse5U=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /JavaTableTester.class
+SHA1-Digest: uYfH1i5+zm82NooUmKwsh8PyIFY=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /AbstractTableTester.class
+SHA1-Digest: I0QEe+hTu+cpKL5XC3yMpw13o1Q=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/impl/AxisManagerConfigurationImpl.class
+SHA1-Digest: WF8/OhkPxnORE1OvPFXFI0jecRY=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/NattableproblemPackage$Literals.class
+SHA1-Digest: 3v4ciD65RPuSny0UV3bcW2Lu4qQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/EObjectAxisImpl.class
+SHA1-Digest: n7QqA12s7NQwUIj+hKlbzm8kNN8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/i
+ mpl/ObjectAxisImpl.class
+SHA1-Digest: ToGQn50FKBdoPhWwPfNROYt3moA=
+

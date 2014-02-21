@@ -1,0 +1,42 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: XText integration Core (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.uml.xtext.integration.core
+Require-Bundle: org.eclipse.xtext;bundle-version="2.4.2"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Export-Package: org.eclipse.papyrus.uml.xtext.integration.core
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/xtext/integration/core/IXtextFakeContext
+ ResourcesProvider$1.class
+SHA1-Digest: U1cQD4MzQlrCwoEp6dCBr2GJw50=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/core/CloningBasedFakeC
+ ontextResourcesProvider.class
+SHA1-Digest: nCTTCTvjlloE/JCPDcThD9F+Y0Q=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/core/IXtextFakeContext
+ ResourcesProvider.class
+SHA1-Digest: XnfSxyMsPWDadlJujkfxNgLgDrM=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/core/ContextElementAda
+ pter.class
+SHA1-Digest: 2tbisDzGz/CoTO6K+XUAKKqJFaQ=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/core/ContextElementAda
+ pter$IContextElementProvider.class
+SHA1-Digest: jOIVSNKkfQB9MziuPE8r8Rk01tE=
+
+Name: about.html
+SHA1-Digest: SghNuLOZ1xBD4DWkMOOVaXIW1tk=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/core/ContextElementUti
+ l.class
+SHA1-Digest: o41SGi4EHJ7OaA5+euunamJVrgU=
+

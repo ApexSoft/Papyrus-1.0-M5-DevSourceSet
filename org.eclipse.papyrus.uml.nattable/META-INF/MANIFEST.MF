@@ -1,0 +1,271 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.uml.nattable;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.um
+ l2.uml;bundle-version="4.1.0",org.eclipse.papyrus.infra.core.log;bund
+ le-version="1.0.0",org.eclipse.nebula.widgets.nattable.core;bundle-ve
+ rsion="1.0.0",org.eclipse.papyrus.infra.nattable;bundle-version="1.0.
+ 0",org.eclipse.papyrus.infra.widgets;bundle-version="1.0.0",org.eclip
+ se.papyrus.uml.tools;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .emf;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf.nattable;bu
+ ndle-version="1.0.0",org.eclipse.papyrus.infra.nattable.model;bundle-
+ version="1.0.0",org.eclipse.papyrus.uml.tools.utils;bundle-version="1
+ .0.0",org.eclipse.papyrus.infra.services.labelprovider;bundle-version
+ ="1.0.0",org.eclipse.papyrus.infra.nattable;bundle-version="1.0.0",or
+ g.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyr
+ us.infra.services.edit;bundle-version="1.0.0",org.eclipse.papyrus.inf
+ ra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.gmf.runtime.em
+ f.type.core,org.eclipse.papyrus.infra.tools;bundle-version="1.0.0",or
+ g.eclipse.jface,org.eclipse.core.expressions,org.eclipse.swt,org.ecli
+ pse.emf.facet.infra.browser.uicore;bundle-version="0.4.0"
+Bundle-Activator: org.eclipse.papyrus.uml.nattable.Activator
+Export-Package: org.eclipse.papyrus.uml.nattable,org.eclipse.papyrus.u
+ ml.nattable.config,org.eclipse.papyrus.uml.nattable.dataprovider,org.
+ eclipse.papyrus.uml.nattable.editor,org.eclipse.papyrus.uml.nattable.
+ manager.axis,org.eclipse.papyrus.uml.nattable.manager.cell,org.eclips
+ e.papyrus.uml.nattable.messages,org.eclipse.papyrus.uml.nattable.prov
+ ider,org.eclipse.papyrus.uml.nattable.tester,org.eclipse.papyrus.uml.
+ nattable.utils,org.eclipse.papyrus.uml.nattable.validator,org.eclipse
+ .papyrus.uml.nattable.widget
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/nattable/provider/StereotypePropertyCell
+ LabelProvider.class
+SHA1-Digest: 6waK59Tefzb/mvN9AOYwDwWmvHE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/CreateRowStereotypePropert
+ yMenuFactory.class
+SHA1-Digest: h5bqWj3OwYNxaD2uPoFtLs0gNxA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/CreateColumnStereotypeProp
+ ertyMenuFactory.class
+SHA1-Digest: Rks5pVyognd0qk1OBxh8+5laaA8=
+
+Name: icons/stereotypePropertyColumn.gif
+SHA1-Digest: fmNmpj8meEAyJ/URjmtIE40p6lw=
+
+Name: org/eclipse/papyrus/uml/nattable/utils/UMLTableUtils.class
+SHA1-Digest: rBmVQktGs1EoYpWbvwo1oPQlPX0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/AbstractCreateStereotypePr
+ opertyMenuFactory$1.class
+SHA1-Digest: Dzj4NY1pj9/e4yllYmwVKw4IUV8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/AbstractCreateStereotypePr
+ opertyMenuFactory$3.class
+SHA1-Digest: 70X2umeOH1HZtY936Ra7yybLzw0=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiEnumCellEditor.clas
+ s
+SHA1-Digest: HTgmw9Dm36iN6YQjFyZ0cxcpeJw=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiBooleanCellEditor.c
+ lass
+SHA1-Digest: qzzwsNDgDxKCyd0lfdU7XhfjEiE=
+
+Name: org/eclipse/papyrus/uml/nattable/validator/UnlimitedNaturalDataV
+ alidator.class
+SHA1-Digest: mgjlxoWAx6lh/0I0nQIXZ22uXfI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/CreateRowStereotypePropert
+ yMenuFactory$1.class
+SHA1-Digest: v3Y2GoEjBIMHqFzYBHkcj8EDlIQ=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiUnlimitedNaturalCel
+ lEditor.class
+SHA1-Digest: X2MS7TGuELgn42L5JczgyOBvYOY=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/StereotypeApplierDialogC
+ ellEditorWrapper.class
+SHA1-Digest: +eOt7Q06g7Yys4Yby+NQsWqvKw8=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/AbstractUMLSynchro
+ nizedOnFeatureAxisManager.class
+SHA1-Digest: h42XXvnl1T6wMYGjssm1jQ6ANo4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/CreateColumnStereotypeProp
+ ertyMenuFactory$1.class
+SHA1-Digest: 2Ab5/PXH+dRzZmFk49OgloZjnwA=
+
+Name: org/eclipse/papyrus/uml/nattable/paste/StereotypeApplicationStru
+ cture.class
+SHA1-Digest: P89OfofbEjWTbmqPS4iKc5fInMU=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/AbstractStereotype
+ dElementUMLSynchronizedOnFeatureAxisManager$1.class
+SHA1-Digest: d8Bfw4eO8HYV3HTL5/R9wOk42YM=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiStringCellEditor.cl
+ ass
+SHA1-Digest: GaGMHDV0nrVKZ3tp4XLiWMrdOUU=
+
+Name: org/eclipse/papyrus/uml/nattable/config/UMLFeatureCellEditorConf
+ ig$2.class
+SHA1-Digest: HSMI/MI7Q/Cy7zRS2bcWlch91os=
+
+Name: org/eclipse/papyrus/uml/nattable/messages/Messages.class
+SHA1-Digest: tMXI2aoJgKAPkmgcXOVfc30ZoOs=
+
+Name: org/eclipse/papyrus/uml/nattable/widget/UMLDialogComboAction.cla
+ ss
+SHA1-Digest: S9cu/0sTquqJDqqNgd9mwjBn+ac=
+
+Name: plugin.pdoc
+SHA1-Digest: 4viUxxJx87xHlImcE7qIR1F53N8=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/UMLFeatureAxisMana
+ ger.class
+SHA1-Digest: AsKdmjHY/Mg9wTcolpVLb9Ezd2w=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiIntegerCellEditor.c
+ lass
+SHA1-Digest: ZbtZAkFdz5pY7fy0HleRE+YZLH8=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiRealCellEditor.clas
+ s
+SHA1-Digest: LafM2LiGvZx+yGkfbUL/I7MXmSk=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/AbstractUMLMultiValueCel
+ lEditor$1.class
+SHA1-Digest: pVxXQYfIaL9k5b/hhKduDR8CdV0=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/SingleReferenceValueCell
+ Editor.class
+SHA1-Digest: yLUlXMxjm/WQO5QvqKb8CGlMRjA=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/MultiReferenceCellEditor
+ .class
+SHA1-Digest: Qiwci6JypPE1xGwqNcBAyLJkx8E=
+
+Name: org/eclipse/papyrus/uml/nattable/provider/UMLFeatureRestrictedCo
+ ntentProvider.class
+SHA1-Digest: Cljo1vl5vDchosCj+fkh1pHeXag=
+
+Name: org/eclipse/papyrus/uml/nattable/provider/UMLUnlimitedNaturalLab
+ elProvider.class
+SHA1-Digest: mTg4IxtMVRNAg1JAU6ESDYdzOAU=
+
+Name: org/eclipse/papyrus/uml/nattable/validator/RealDataValidator.cla
+ ss
+SHA1-Digest: GhhusVGZaFKpdDSkaTSWVrv9K6I=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/cell/StereotypeProperty
+ CellManager.class
+SHA1-Digest: I31H23UUCKKF13pdalSdt1smaj8=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/cell/UMLFeatureCellMana
+ ger.class
+SHA1-Digest: NvMIFqUwGNc2lQpIcWWyacVLCcw=
+
+Name: org/eclipse/papyrus/uml/nattable/Activator.class
+SHA1-Digest: 4qZIUSxYP8MFdSZ0vM9HvuYRy2E=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: 0zqw4oNDKAExDwSMPpJRfp5AyE4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/AbstractCreateStereotypePr
+ opertyMenuFactory$2.class
+SHA1-Digest: FlPLc5naP4Q2v8sBCVd0jZmi1X4=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/AbstractStereotype
+ dElementUMLSynchronizedOnFeatureAxisManager.class
+SHA1-Digest: DXwY7nKj3p2vp47snCQOdYKhefc=
+
+Name: org/eclipse/papyrus/uml/nattable/paste/ApplyStereotypePastePostA
+ ction.class
+SHA1-Digest: 0RvV4V2kPpndHAX5Tp9/Bfs2NCA=
+
+Name: org/eclipse/papyrus/uml/nattable/config/UMLFeatureCellEditorConf
+ ig.class
+SHA1-Digest: aQ/nlRx7qEuDmkvS7P7KIfk1ivw=
+
+Name: org/eclipse/papyrus/uml/nattable/provider/AbstractUMLNattableCel
+ lLabelProvider.class
+SHA1-Digest: DGb0Ih3yNE/LwLLNy9BqqC14yAE=
+
+Name: icons/aggreg_shared.gif
+SHA1-Digest: v1/cBImbd4eoerLZf5h/7B2yd/I=
+
+Name: icons/stereotypePropertyRow.gif
+SHA1-Digest: qu0MsbCRzezFd1IhhPz68gPQbLs=
+
+Name: org/eclipse/papyrus/uml/nattable/dataprovider/UMLStereotypeSingl
+ eEnumerationComboBoxDataProvider.class
+SHA1-Digest: fjx/VoXMIzRn8iGmEARFF3ozeHk=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/AbstractStereotype
+ dElementUMLSynchronizedOnFeatureAxisManager$2.class
+SHA1-Digest: 3uatN2c2bT7FSKvWppLIq2+qRXw=
+
+Name: plugin.xml
+SHA1-Digest: tU1oHRD8IeE2uZKuEevORqF6A2k=
+
+Name: org/eclipse/papyrus/uml/nattable/config/UMLFeatureCellEditorConf
+ ig$1.class
+SHA1-Digest: 8wl/QYorq8+g1s+PZZG8Lq6EQVc=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/AbstractUMLMultiValueCel
+ lEditor.class
+SHA1-Digest: UB0zvjt3HEaOIGGMfjldJ2nguc0=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/UMLElementAxisMana
+ ger.class
+SHA1-Digest: 2TWD8tXMsFNPAJ0b62eqTvN1eqY=
+
+Name: org/eclipse/papyrus/uml/nattable/config/UMLFeatureCellEditorConf
+ ig$3.class
+SHA1-Digest: xCB3Cc9IuA2J2CHghiNZpbvlMxg=
+
+Name: org/eclipse/papyrus/uml/nattable/utils/Constants.class
+SHA1-Digest: myy0AkDvW84qs+kOnSliweWaUzs=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/AbstractUMLSynchro
+ nizedOnFeatureAxisManager$1.class
+SHA1-Digest: z3XsASfHbNs/eBmGMGajNoNoBrw=
+
+Name: org/eclipse/papyrus/uml/nattable/provider/UMLStereotypeRestricte
+ dPropertyContentProvider.class
+SHA1-Digest: 6BI3PT/D2Ixj+6L2kHk7VqKVV1w=
+
+Name: org/eclipse/papyrus/uml/nattable/dataprovider/UMLSingleReference
+ ComboBoxDataProvider.class
+SHA1-Digest: RUOxoqNNdQHjPHB7LSdOgXhK1fI=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: org/eclipse/papyrus/uml/nattable/manager/axis/UMLStereotypePrope
+ rtyAxisManager.class
+SHA1-Digest: r0/iyWGnNdyCapJfq18m2ikVGxc=
+
+Name: org/eclipse/papyrus/uml/nattable/messages/messages.properties
+SHA1-Digest: +8FkoyIayoSmh6WA9kOMOmbJTGM=
+
+Name: org/eclipse/papyrus/uml/nattable/tester/IsUMLElementTester.class
+SHA1-Digest: RABVSkL5cmC23TdtHMTK6unhbi4=
+
+Name: org/eclipse/papyrus/uml/nattable/provider/StereotypePropertyHead
+ erLabelProvider.class
+SHA1-Digest: yx+ubOnYuB8MR8FOx+7zoujbTPw=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/SingleReferenceValueCell
+ Editor$1.class
+SHA1-Digest: YvpSC++gbjhpJVa33GBljUxO8eg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/AbstractCreateStereotypePr
+ opertyMenuFactory.class
+SHA1-Digest: aEG4ejCyfvD08wn4gsCtGOB//1E=
+
+Name: org/eclipse/papyrus/uml/nattable/editor/StereotypeApplierCellEdi
+ torWrapper.class
+SHA1-Digest: obt7HMM7LaHby9LRe6+++bLcO/I=
+

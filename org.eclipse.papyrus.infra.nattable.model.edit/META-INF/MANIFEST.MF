@@ -1,0 +1,651 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.nattable.model.edit;sin
+ gleton:=true
+Bundle-Activator: org.eclipse.papyrus.infra.nattable.model.nattable.pr
+ ovider.NattableEditPlugin$Implementation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.edit;visibili
+ ty:=reexport,org.eclipse.emf.ecore;visibility:=reexport,org.eclipse.e
+ mf.ecore.edit;visibility:=reexport,org.eclipse.papyrus.infra.nattable
+ .model;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.infra.nattable.model.nattable.natt
+ ableaxis.provider,org.eclipse.papyrus.infra.nattable.model.nattable.n
+ attableaxisconfiguration.provider,org.eclipse.papyrus.infra.nattable.
+ model.nattable.nattableaxisprovider.provider,org.eclipse.papyrus.infr
+ a.nattable.model.nattable.nattablecell.provider,org.eclipse.papyrus.i
+ nfra.nattable.model.nattable.nattableconfiguration.provider,org.eclip
+ se.papyrus.infra.nattable.model.nattable.nattablelabelprovider.provid
+ er,org.eclipse.papyrus.infra.nattable.model.nattable.nattableproblem.
+ provider,org.eclipse.papyrus.infra.nattable.model.nattable.nattablete
+ ster.provider,org.eclipse.papyrus.infra.nattable.model.nattable.provi
+ der
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/provider/ObjectLabelProviderConfigurationItemProvider.class
+SHA1-Digest: DA2tvdVRoSFe+APjsNI7ZhrEiGQ=
+
+Name: icons/full/obj16/JavaTableCreationTester.gif
+SHA1-Digest: geCi1ofnq5obJShghQN1sk0ACoI=
+
+Name: icons/full/ctool16/CreateObjectAxis_localLabelConfiguration_Feat
+ ureLabelProviderConfiguration.gif
+SHA1-Digest: Arm+S7kht/84PM/i2MgZCCW01pc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/provider/Table
+ ItemProvider.class
+SHA1-Digest: apqTcGGztFhzx2qp/Kx0ZPH+pbU=
+
+Name: icons/full/obj16/IPasteConfiguration.gif
+SHA1-Digest: W91ply/2wuUeqvZOwUawmGbBCJs=
+
+Name: icons/full/ctool16/CreateTable_rowAxisProvidersHistory_SlaveObje
+ ctAxisProvider.gif
+SHA1-Digest: vCiprIkd779PA8/eOtL3kg3WADc=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_horizontalAxis
+ Provider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: p6krptWLR87DduhVruPGFd5K2ho=
+
+Name: icons/full/ctool16/CreateTableHeaderAxisConfiguration_axisManage
+ rs_AxisManagerRepresentation.gif
+SHA1-Digest: aDDzKqaaDr7X1tB/fKHmNAiXpAE=
+
+Name: icons/full/ctool16/CreateTable_horizontalContentProvider_EMFFeat
+ ureContentProvider.gif
+SHA1-Digest: VJUXZTS+VBGWRmvuroraYY6306c=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/provider/TableConfigurationItemProvider.class
+SHA1-Digest: aUwPod879Atb0mVKoMivf1Us9sU=
+
+Name: icons/full/obj16/FeatureIdAxis.gif
+SHA1-Digest: 59H3ODrYoaDre6eQfrM5DakTSmk=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultVertica
+ lContentProvider_DefaultAxisProvider.gif
+SHA1-Digest: hC/HIp5xfXgk1JAXRD5tRKHueCg=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/provider/Natta
+ bleEditPlugin.class
+SHA1-Digest: RX9lfoM5g3la/JmmmiwMg3Frp54=
+
+Name: icons/full/ctool16/CreateFeatureAxis_localLabelConfiguration_Fea
+ tureLabelProviderConfiguration.gif
+SHA1-Digest: uPbNm59Vmpzf3rsZ7MBgtjBDmQs=
+
+Name: icons/full/ctool16/CreateAbstractTableConfiguration_rowAxisProvi
+ der_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: UO8MCWrzpboYF3vq9N1yLZ5bW/w=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/EObjectAxisItemProvider.class
+SHA1-Digest: rG+P2ft/vv2HyC3li5ry5Vnz3mQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/provider/MasterObjectAxisProviderItemProvider.class
+SHA1-Digest: XvJuzboK8nQDCtwCOKA8Tb2vurc=
+
+Name: icons/full/ctool16/CreateCell_problems_StringResolutionProblem.g
+ if
+SHA1-Digest: G4pB9siR3grOyURzdOAe2+BGD40=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultHorizon
+ talContentProvider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: p6krptWLR87DduhVruPGFd5K2ho=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /provider/JavaTableTesterItemProvider.class
+SHA1-Digest: 7U+RZGvW0eBrr5nubaOQPF56CRU=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /provider/AbstractTableTesterItemProvider.class
+SHA1-Digest: RDzj0znzUDYxzfZCY74sQmrca3s=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedLa
+ belConfigurations_FeatureLabelProviderConfiguration.gif
+SHA1-Digest: janS7PuCo4yAQhrYx9Kx7XBdzT0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/TableHeaderAxisConfigurationItemProvider.class
+SHA1-Digest: 9Rx6XklwSCex8LagHoC63ZHsJmU=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/p
+ rovider/NattablecellItemProviderAdapterFactory.class
+SHA1-Digest: mfCk8vxmQ8B18PBBjrphNZE0C5E=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfiguration_PasteEObjectConfiguration.gif
+SHA1-Digest: sw44Gzhj5IV/fExBmXW0ezSVdBI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/provider/Natta
+ bleEditPlugin$Implementation.class
+SHA1-Digest: CjzT0iOAd4XHxUIlxMtt2CcmWqI=
+
+Name: icons/full/obj16/PasteEObjectConfiguration.gif
+SHA1-Digest: zZKriD2tvFNl9gXo4VTok78u59w=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/provider/NattableconfigurationItemProviderAdapterFactory.clas
+ s
+SHA1-Digest: C0Czo5lI0o8zHHRrnD//CsLxisY=
+
+Name: icons/full/obj16/FeatureLabelProviderConfiguration.gif
+SHA1-Digest: BJCtscbUk19s32t6I6uea8UxX3Q=
+
+Name: icons/full/ctool16/CreateTable_editorConfiguration_LocalTableEdi
+ torConfiguration.gif
+SHA1-Digest: SShhwwlZOQNa9Vyz9uaTOR8K9Y0=
+
+Name: icons/full/ctool16/CreateTable_horizontalAxisProvider_EMFFeature
+ ValueAxisProvider.gif
+SHA1-Digest: x05uF1Na8uLtvsIGt3NL1j8zZQ0=
+
+Name: icons/full/ctool16/CreateTableConfiguration_rowAxisProviders_Mas
+ terObjectAxisProvider.gif
+SHA1-Digest: LIrfV/cy8nqSkF7GXWjDlGIb/fI=
+
+Name: icons/full/ctool16/CreateTableConfiguration_creationTester_JavaT
+ ableCreationTester.gif
+SHA1-Digest: 1m1TBCp59XXi4CR3PHXasaXXLqQ=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_verticalAxisPr
+ ovider_DefaultAxisProvider.gif
+SHA1-Digest: hC/HIp5xfXgk1JAXRD5tRKHueCg=
+
+Name: icons/full/ctool16/CreateAbstractAxisProvider_axisConfiguration_
+ AbstractAxisConfiguration.gif
+SHA1-Digest: FIwQf1J2TXOEjEKNQmK9Ow5+4nE=
+
+Name: icons/full/ctool16/CreateTable_localColumnHeaderAxisConfiguratio
+ n_LocalTableHeaderAxisConfiguration.gif
+SHA1-Digest: Lfm2DqSiJiaED98b/o5G/bhCxuw=
+
+Name: icons/full/obj16/EMFFeatureContentProvider.gif
+SHA1-Digest: 3bV6lK60oVFzdFNiaq5Fl3GjR5U=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableconfig
+ uration/provider/TableNamedElementItemProvider.class
+SHA1-Digest: WIHEKcxo2B9Arvyx3jtiMkdop0A=
+
+Name: icons/full/ctool16/CreateTable_localRowHeaderAxisConfiguration_L
+ ocalTableHeaderAxisConfiguration.gif
+SHA1-Digest: Lfm2DqSiJiaED98b/o5G/bhCxuw=
+
+Name: icons/full/obj16/IdAxisWrapper.gif
+SHA1-Digest: CAPyOkGpEey0FGNKjB35mmhLhN4=
+
+Name: icons/full/obj16/IdAxis.gif
+SHA1-Digest: vZ1a624msmwR47nBzw3lzfZbPfU=
+
+Name: icons/full/ctool16/CreateTable_verticalAxisProvider_EMFFeatureVa
+ lueAxisProvider.gif
+SHA1-Digest: x05uF1Na8uLtvsIGt3NL1j8zZQ0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/provider/FeatureLabelProviderConfigurationItemProvider.class
+SHA1-Digest: X9p+WBmiSsRhKQFqbuCV/NhNwQA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/provider/StringResolutionProblemItemProvider.class
+SHA1-Digest: yTsC7ZrZkMLAdiisC3cVWC8Hphk=
+
+Name: icons/full/ctool16/CreateAxisProvider_axis_EObjectAxis.gif
+SHA1-Digest: vPfP5mQa6e2BXQKhMZsE80EXNTU=
+
+Name: icons/full/ctool16/CreateTable_verticalContentProvider_EMFFeatur
+ eContentProvider.gif
+SHA1-Digest: VJUXZTS+VBGWRmvuroraYY6306c=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablelabelp
+ rovider/provider/NattablelabelproviderItemProviderAdapterFactory.clas
+ s
+SHA1-Digest: rDT1P9pJfpPE4//U2XunhHfsZXI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/FeatureAxisConfigurationItemProvider.class
+SHA1-Digest: sNzruR1f9cefplU66r3hEZn1/iw=
+
+Name: icons/full/ctool16/CreateTable_horizontalContentProvider_Default
+ ContentProvider.gif
+SHA1-Digest: Yy7hkDh+T929hbXdiu+r2zlllVI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/LocalTableHeaderAxisConfigurationItemProvider.cl
+ ass
+SHA1-Digest: zhWfnvXkgZjVhBq8me5dVOEVXhY=
+
+Name: icons/full/ctool16/CreateAbstractAxisConfiguration_labelConfigur
+ ation_ObjectLabelProviderConfiguration.gif
+SHA1-Digest: E0lGEM91cmJ/lyZhKjs9ciMrFYQ=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/p
+ rovider/IdAxisWrapperItemProvider.class
+SHA1-Digest: aKZfYRu0tGw2aa5JQsLieUyeGs8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/EStructuralFeatureAxisItemProvider.class
+SHA1-Digest: oGAoLf8l8x4cEvAxsVw25etxYcI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/IPasteConfigurationItemProvider.class
+SHA1-Digest: 5+euqHvY+c3nHixVILxdXVh7rPg=
+
+Name: icons/full/ctool16/CreateAbstractAxisProvider_axisConfiguration_
+ DefaultAxisConfiguration.gif
+SHA1-Digest: p9Lqv4WcWJ/N0QiwJFu/U0Rmu4M=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultHorizon
+ talAxisProvider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: p6krptWLR87DduhVruPGFd5K2ho=
+
+Name: icons/full/obj16/EStructuralFeatureValueFillingConfiguration.gif
+SHA1-Digest: eNtcdZQNPwQhrG2rgRpclYKXImU=
+
+Name: icons/full/ctool16/CreateCell_columnWrapper_EObjectAxisWrapper.g
+ if
+SHA1-Digest: 2nKfmSOWJGpJvCK76aI8LHQReQY=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_horizontalAxis
+ Provider_DefaultAxisProvider.gif
+SHA1-Digest: hC/HIp5xfXgk1JAXRD5tRKHueCg=
+
+Name: icons/full/obj16/ObjectIdAxis.gif
+SHA1-Digest: W91ply/2wuUeqvZOwUawmGbBCJs=
+
+Name: icons/full/ctool16/CreateDefaultContentProvider_axis_IdAxis.gif
+SHA1-Digest: Knqe2nhleO2BJ1eGaXxKEUyk7kw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/provider/ProblemItemProvider.class
+SHA1-Digest: hg7QnK/UZnxL2O3ybzZPTDkfkXI=
+
+Name: icons/full/obj16/AxisManagerRepresentation.gif
+SHA1-Digest: eNtcdZQNPwQhrG2rgRpclYKXImU=
+
+Name: icons/full/obj16/FeatureAxisConfiguration.gif
+SHA1-Digest: rw4VY33aZuUltGDueBzQiVgy5M0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattabletester
+ /provider/NattabletesterItemProviderAdapterFactory.class
+SHA1-Digest: z9bcI0ghcHWaH2lCWSnmLU9vdTQ=
+
+Name: icons/full/ctool16/CreateAbstractTableConfiguration_rowAxisProvi
+ der_DefaultAxisProvider.gif
+SHA1-Digest: biCx9HQt8LFNInAWUWiO2HoZOi4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/NattableaxisItemProviderAdapterFactory.class
+SHA1-Digest: sr9S65BF7vAS1+3EeLooUbmBKjk=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultHorizon
+ talContentProvider_EMFFeatureContentProvider.gif
+SHA1-Digest: 4ZUcA1WnFnoQ5s/EylbZj7hCRpI=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultHorizon
+ talContentProvider_DefaultAxisProvider.gif
+SHA1-Digest: hC/HIp5xfXgk1JAXRD5tRKHueCg=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultVertica
+ lAxisProvider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: p6krptWLR87DduhVruPGFd5K2ho=
+
+Name: icons/full/obj16/DefaultContentProvider.gif
+SHA1-Digest: sp33IwukHB8+lYxsOTbjRb/sMDI=
+
+Name: icons/full/obj16/SlaveObjectAxisProvider.gif
+SHA1-Digest: 6rFSuAHnNB54QQ1XYMtkFALb+R4=
+
+Name: icons/full/ctool16/CreateAbstractAxisConfiguration_labelConfigur
+ ation_FeatureLabelProviderConfiguration.gif
+SHA1-Digest: TaPBeq+fa/2iRik9Tjm5j5bIHWc=
+
+Name: icons/full/ctool16/CreateTable_rowAxisProvidersHistory_MasterObj
+ ectAxisProvider.gif
+SHA1-Digest: 1tMrmEnxHpls6yoMv60EQ4UgFGw=
+
+Name: icons/full/obj16/EMFFeatureValueAxisProvider.gif
+SHA1-Digest: yRtIW2Gtqc3RabP3cax2nwuHtn8=
+
+Name: icons/full/obj16/MasterObjectAxisProvider.gif
+SHA1-Digest: MZEqK/VaeXNzV8AsLlg4P+pDqDQ=
+
+Name: icons/full/ctool16/CreateTable_horizontalAxisProvider_DefaultAxi
+ sProvider.gif
+SHA1-Digest: YFBwOOof7kMA0WfiL+PlCmTrO5E=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultHorizon
+ talContentProvider_DefaultContentProvider.gif
+SHA1-Digest: Dg1MYOTmaoMQwY6Ep7jKFW0Gffw=
+
+Name: icons/full/obj16/AbstractAxisConfiguration.gif
+SHA1-Digest: 59H3ODrYoaDre6eQfrM5DakTSmk=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: icons/full/ctool16/CreateTable_cells_Cell.gif
+SHA1-Digest: ofmeNDJ7GGhdcgmWr+V4kzRLATA=
+
+Name: icons/full/obj16/TableHeaderAxisConfiguration.gif
+SHA1-Digest: 3bV6lK60oVFzdFNiaq5Fl3GjR5U=
+
+Name: icons/full/ctool16/CreateTable_editorConfiguration_TableEditorCo
+ nfiguration.gif
+SHA1-Digest: x05uF1Na8uLtvsIGt3NL1j8zZQ0=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfigurations_PasteEObjectConfiguration.gif
+SHA1-Digest: sw44Gzhj5IV/fExBmXW0ezSVdBI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/p
+ rovider/CellItemProvider.class
+SHA1-Digest: 6YUD8n0bzWSS0n8rCvA+iNcThpg=
+
+Name: icons/full/ctool16/CreateTable_verticalAxisProvider_DefaultAxisP
+ rovider.gif
+SHA1-Digest: YFBwOOof7kMA0WfiL+PlCmTrO5E=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/provider/NattableaxisproviderItemProviderAdapterFactory.class
+SHA1-Digest: 1KMnyWHkrgFMAvTmN7/GVBFYso0=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/FeatureIdAxisItemProvider.class
+SHA1-Digest: yoZCLU571TfwnCgR7k5YUPUo8K0=
+
+Name: icons/full/obj16/LocalTableEditorConfiguration.gif
+SHA1-Digest: YBdOs4ChXEsGRWKobNWQb1FXZ3c=
+
+Name: icons/full/ctool16/CreateTableConfiguration_rowHeaderAxisConfigu
+ ration_TableHeaderAxisConfiguration.gif
+SHA1-Digest: +kr6lElKAl4lNleRTRIWDtEtzVs=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfiguration_IPasteConfiguration.gif
+SHA1-Digest: wo/7WcSjGyn5SyoilNsSILWyF3c=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/FeatureAxisItemProvider.class
+SHA1-Digest: vNKKZ1hJCj0/4r+RIArQqf+oNsI=
+
+Name: icons/full/ctool16/CreateLocalTableHeaderAxisConfiguration_axisM
+ anagerConfigurations_AxisManagerConfiguration.gif
+SHA1-Digest: oGjLwGcsh068DrFnCU0Mjtutg2k=
+
+Name: icons/full/ctool16/CreateTableConfiguration_rowAxisProviders_Sla
+ veObjectAxisProvider.gif
+SHA1-Digest: xD2zkK4aG1cJQS/q5Cq6FfOO5io=
+
+Name: icons/full/obj16/EStructuralFeatureAxis.gif
+SHA1-Digest: 5s2tkcFEwBdYJd1Q2aqbgzSkZuA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/AxisManagerConfigurationItemProvider.class
+SHA1-Digest: iNor4XsghEiLqi2IEJTemJ+zflk=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultVertica
+ lContentProvider_EMFFeatureContentProvider.gif
+SHA1-Digest: 4ZUcA1WnFnoQ5s/EylbZj7hCRpI=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/ObjectIdAxisItemProvider.class
+SHA1-Digest: d/4EXLLkvvuDa7WtFJi1XuD/jgk=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedLa
+ belConfiguration_ObjectLabelProviderConfiguration.gif
+SHA1-Digest: TMsgsXfVgt6q5kfozfq0Dy3cH1A=
+
+Name: icons/full/ctool16/CreateCell_rowWrapper_IdAxisWrapper.gif
+SHA1-Digest: G4pB9siR3grOyURzdOAe2+BGD40=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/EStructuralFeatureValueFillingConfigurationItemP
+ rovider.class
+SHA1-Digest: 7j/FUtMloIuuead3HVO0Jmda5UU=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultHorizon
+ talAxisProvider_DefaultAxisProvider.gif
+SHA1-Digest: hC/HIp5xfXgk1JAXRD5tRKHueCg=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfiguration_FeatureAxisConfiguration.gif
+SHA1-Digest: 9Z7wfwxRFAEAMzL1nzUNmbmqel8=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedLa
+ belConfiguration_FeatureLabelProviderConfiguration.gif
+SHA1-Digest: janS7PuCo4yAQhrYx9Kx7XBdzT0=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfigurations_IPasteConfiguration.gif
+SHA1-Digest: wo/7WcSjGyn5SyoilNsSILWyF3c=
+
+Name: icons/full/ctool16/CreateTable_editorConfiguration_TableConfigur
+ ation.gif
+SHA1-Digest: kc5adxoDJB6z5GupwR9DID6TFZc=
+
+Name: icons/full/obj16/TableConfiguration.gif
+SHA1-Digest: 8wQpjQRHUIE/3rJfgOLg1Ime+jY=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfigurations_FeatureAxisConfiguration.gif
+SHA1-Digest: 9Z7wfwxRFAEAMzL1nzUNmbmqel8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/PasteEObjectConfigurationItemProvider.class
+SHA1-Digest: cAuhl7/sbvXH5JNKkW7ZDjJmd28=
+
+Name: icons/full/ctool16/CreateObjectAxis_localLabelConfiguration_Obje
+ ctLabelProviderConfiguration.gif
+SHA1-Digest: 9ew8TQaKSCr5ebuMrARQaF1fx94=
+
+Name: icons/full/ctool16/CreateAxisProvider_axis_FeatureIdAxis.gif
+SHA1-Digest: 3qnwtYxgHv/+oYuN35IGGXiWflc=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/AbstractHeaderAxisConfigurationItemProvider.clas
+ s
+SHA1-Digest: GfYOEoCROmSGJyL5YT5dXUdgyTA=
+
+Name: plugin.pdoc
+SHA1-Digest: q4H/YCdKC7hYgjUvdyDAPpCoQw4=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultVertica
+ lAxisProvider_DefaultAxisProvider.gif
+SHA1-Digest: hC/HIp5xfXgk1JAXRD5tRKHueCg=
+
+Name: icons/full/ctool16/CreateAbstractTableConfiguration_columnAxisPr
+ ovider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: UO8MCWrzpboYF3vq9N1yLZ5bW/w=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedLa
+ belConfigurations_ObjectLabelProviderConfiguration.gif
+SHA1-Digest: TMsgsXfVgt6q5kfozfq0Dy3cH1A=
+
+Name: icons/full/obj16/DefaultAxisProvider.gif
+SHA1-Digest: G6zho+wW7esPg77zqC/aH06dFy8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/IdAxisItemProvider.class
+SHA1-Digest: ALYuG74Pl4HLwP7fr651zB6nHa4=
+
+Name: icons/full/obj16/EObjectLabelProviderConfiguration.gif
+SHA1-Digest: ughyu2sf9tjdSsux4ArtI6B9UPY=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/provider/Natta
+ bleItemProviderAdapterFactory.class
+SHA1-Digest: cglhLgYRRhz7IivacemQkea1Zp4=
+
+Name: icons/full/obj16/TableEditorConfiguration.gif
+SHA1-Digest: yRtIW2Gtqc3RabP3cax2nwuHtn8=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/provider/AbstractAxisProviderItemProvider.class
+SHA1-Digest: PF1h+kMwkmWfuuQpDi+Kgwa/0Gg=
+
+Name: icons/full/obj16/Cell.gif
+SHA1-Digest: AUyZYH7KuCJQIePO6lB59JW3UfM=
+
+Name: icons/full/obj16/Problem.gif
+SHA1-Digest: zQtjXniQvLE/hL1niFuMWxxoe0o=
+
+Name: icons/full/ctool16/CreateTable_columnAxisProvidersHistory_Master
+ ObjectAxisProvider.gif
+SHA1-Digest: 1tMrmEnxHpls6yoMv60EQ4UgFGw=
+
+Name: icons/full/obj16/LocalTableHeaderAxisConfiguration.gif
+SHA1-Digest: 59H3ODrYoaDre6eQfrM5DakTSmk=
+
+Name: icons/full/ctool16/CreateDefaultContentProvider_axis_EObjectAxis
+ .gif
+SHA1-Digest: fqUxMtI+FPK+gkgPSY+xU3y3Ivw=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableproble
+ m/provider/NattableproblemItemProviderAdapterFactory.class
+SHA1-Digest: iUm8QurWBNdmaseYG/ljZ49/LXs=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/NattableaxisconfigurationItemProviderAdapterFact
+ ory.class
+SHA1-Digest: qPQg36sGNk3MUPqg97tjG6i9qJA=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/provider/SlaveObjectAxisProviderItemProvider.class
+SHA1-Digest: ijzTQvMtWr3F7J1WlOC6gPo+JoA=
+
+Name: icons/full/obj16/JavaTableTester.gif
+SHA1-Digest: YOl3x9Xxy/tnV3hFuy0Bwm/Q5UQ=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultVertica
+ lContentProvider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: p6krptWLR87DduhVruPGFd5K2ho=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfiguration_EStructuralFeatureValueFillingConfiguration.gif
+SHA1-Digest: okn84zp1LFpUUl8dABPimtbnUBk=
+
+Name: plugin.properties
+SHA1-Digest: Ruqe9aPdLWwbNaverSlaLhjf9Mk=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxis/p
+ rovider/ObjectAxisItemProvider.class
+SHA1-Digest: nWiUfBpc4cVqYv7QstlKi3LtUOE=
+
+Name: icons/full/ctool16/CreateTable_verticalContentProvider_DefaultCo
+ ntentProvider.gif
+SHA1-Digest: Yy7hkDh+T929hbXdiu+r2zlllVI=
+
+Name: icons/full/ctool16/CreateAxisProvider_axis_EStructuralFeatureAxi
+ s.gif
+SHA1-Digest: D1oqwC1pw+Qdu/ZrNHzpMW8HqlU=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxisco
+ nfiguration/provider/AxisManagerRepresentationItemProvider.class
+SHA1-Digest: 1SHbdkvjjp9h0J0He65jdeMPO1s=
+
+Name: icons/full/ctool16/CreateAxisProvider_axis_ObjectIdAxis.gif
+SHA1-Digest: V9kCON0PMYTgN6eKVUwyO6NHiWs=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_verticalAxisPr
+ ovider_EMFFeatureValueAxisProvider.gif
+SHA1-Digest: p6krptWLR87DduhVruPGFd5K2ho=
+
+Name: icons/full/obj16/StringResolutionProblem.gif
+SHA1-Digest: CAPyOkGpEey0FGNKjB35mmhLhN4=
+
+Name: plugin.xml
+SHA1-Digest: 5DhQy0pIk+JHpV58DIpBSnV/k54=
+
+Name: icons/full/obj16/EObjectAxis.gif
+SHA1-Digest: ExDwgmzoyWIpYPfyaPhwa/4HL9E=
+
+Name: icons/full/ctool16/CreateTableConfiguration_columnHeaderAxisConf
+ iguration_TableHeaderAxisConfiguration.gif
+SHA1-Digest: +kr6lElKAl4lNleRTRIWDtEtzVs=
+
+Name: icons/full/obj16/AxisManagerConfiguration.gif
+SHA1-Digest: B+jg93rgQRB9oABTjUOTS3rSA/4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattablecell/p
+ rovider/EObjectAxisWrapperItemProvider.class
+SHA1-Digest: TtRNZL3vFZhxhklxSbRR38wj1jE=
+
+Name: icons/full/ctool16/CreateDefaultAxisProvider_axis_EObjectAxis.gi
+ f
+SHA1-Digest: Dn+9qbS5rkKVdEdOG/7molvjbEk=
+
+Name: icons/full/ctool16/CreateAbstractHeaderAxisConfiguration_ownedAx
+ isConfigurations_EStructuralFeatureValueFillingConfiguration.gif
+SHA1-Digest: okn84zp1LFpUUl8dABPimtbnUBk=
+
+Name: icons/full/ctool16/CreateTableConfiguration_creationTester_JavaT
+ ableTester.gif
+SHA1-Digest: quw5hO8X5AekLzjJUJ7AtE8PZhc=
+
+Name: icons/full/obj16/EObjectAxisWrapper.gif
+SHA1-Digest: k6QiLCZYrVmMJ6A2ZM7y663F7w0=
+
+Name: icons/full/ctool16/CreateCell_rowWrapper_EObjectAxisWrapper.gif
+SHA1-Digest: 2nKfmSOWJGpJvCK76aI8LHQReQY=
+
+Name: icons/full/obj16/ObjectLabelProviderConfiguration.gif
+SHA1-Digest: zQtjXniQvLE/hL1niFuMWxxoe0o=
+
+Name: icons/full/ctool16/CreateCell_columnWrapper_IdAxisWrapper.gif
+SHA1-Digest: G4pB9siR3grOyURzdOAe2+BGD40=
+
+Name: icons/full/obj16/Table.gif
+SHA1-Digest: 5sswQTiyRrUqbfxCKAM7S9QSEus=
+
+Name: icons/full/obj16/DefaultAxisConfiguration.gif
+SHA1-Digest: jJvbEj/AnQDDiWrvW+EYo4EE5co=
+
+Name: icons/full/ctool16/CreateTableConfiguration_columnAxisProviders_
+ SlaveObjectAxisProvider.gif
+SHA1-Digest: xD2zkK4aG1cJQS/q5Cq6FfOO5io=
+
+Name: icons/full/ctool16/CreateDefaultAxisProvider_axis_IdAxis.gif
+SHA1-Digest: hXpTFEtDzGHdMKrPTAL40Y4HhbI=
+
+Name: icons/full/ctool16/CreateTable_columnAxisProvidersHistory_SlaveO
+ bjectAxisProvider.gif
+SHA1-Digest: vCiprIkd779PA8/eOtL3kg3WADc=
+
+Name: icons/full/ctool16/CreateAbstractAxisConfiguration_labelConfigur
+ ation_EObjectLabelProviderConfiguration.gif
+SHA1-Digest: WjwScck4tofScuymkdRm3nvlbmY=
+
+Name: icons/full/ctool16/CreateCell_problems_Problem.gif
+SHA1-Digest: S/Dnylo0ByKpurl3XPJRugbxRtE=
+
+Name: icons/full/ctool16/CreateAbstractTableConfiguration_columnAxisPr
+ ovider_DefaultAxisProvider.gif
+SHA1-Digest: biCx9HQt8LFNInAWUWiO2HoZOi4=
+
+Name: org/eclipse/papyrus/infra/nattable/model/nattable/nattableaxispr
+ ovider/provider/AxisProviderItemProvider.class
+SHA1-Digest: Jw8BKKKQd5VRT0pBlvmGQ6Y+pzA=
+
+Name: icons/full/ctool16/CreateAbstractAxisProvider_labelConfiguration
+ _FeatureLabelProviderConfiguration.gif
+SHA1-Digest: 6oev3p10CWmAC/cqQlwhqVkysK4=
+
+Name: icons/full/ctool16/CreateTableEditorConfiguration_defaultVertica
+ lContentProvider_DefaultContentProvider.gif
+SHA1-Digest: Dg1MYOTmaoMQwY6Ep7jKFW0Gffw=
+
+Name: icons/full/ctool16/CreateTableConfiguration_columnAxisProviders_
+ MasterObjectAxisProvider.gif
+SHA1-Digest: LIrfV/cy8nqSkF7GXWjDlGIb/fI=
+

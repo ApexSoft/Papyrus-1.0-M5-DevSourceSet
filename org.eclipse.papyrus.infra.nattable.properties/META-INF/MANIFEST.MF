@@ -1,0 +1,537 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.nattable.properties;sin
+ gleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.views.properties;bundle-version="1.0.0",org.eclipse.emf.ecore,o
+ rg.eclipse.emf.edit,org.eclipse.papyrus.infra.widgets;bundle-version=
+ "1.0.0",org.eclipse.core.databinding;bundle-version="1.4.1",org.eclip
+ se.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .nattable;bundle-version="1.0.0",org.eclipse.papyrus.views.properties
+ .model;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bund
+ le-version="1.0.0",org.eclipse.papyrus.infra.nattable.model;bundle-ve
+ rsion="1.0.0",org.eclipse.gmf.runtime.emf.commands.core;bundle-versio
+ n="1.4.0",org.eclipse.gmf.runtime.emf.type.core,org.eclipse.papyrus.i
+ nfra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.papyrus.infr
+ a.constraints;bundle-version="1.0.0",org.eclipse.papyrus.infra.core;b
+ undle-version="1.0.0",org.eclipse.papyrus.infra.services.edit;bundle-
+ version="1.0.0",org.eclipse.nebula.widgets.nattable.core;bundle-versi
+ on="1.0.0",org.eclipse.emf.databinding,org.eclipse.core.databinding.p
+ roperty;bundle-version="1.4.200"
+Bundle-Activator: org.eclipse.papyrus.infra.nattable.properties.Activa
+ tor
+Export-Package: org.eclipse.papyrus.infra.nattable.properties.constrai
+ nts
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: model/ui/SingleFeatureAxis.xwt
+SHA1-Digest: jIUkfIvf2oLouQRq5pPk/Fr3ZNw=
+
+Name: model/ui/SingleILabelProviderConfiguration.xwt
+SHA1-Digest: lXDSd7Q2+3b8lZBKh5a4ZudKAsE=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowObje
+ ctLabelDisplayLabelObservableValue.class
+SHA1-Digest: TRDdbrv5C54yFEQUTR2PNgfEydk=
+
+Name: model/ui/MultipleTableHeaderAxisConfiguration.xwt
+SHA1-Digest: Ky4FK4SK3gLloE0LIByxYMWA048=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnP
+ asteEObjectContainmentFeatureObservableValue.class
+SHA1-Digest: pQCCSLhUMbAnp4UMPTbgSBv5T/4=
+
+Name: model/ui/MultiplePasteEObjectConfiguration.xwt
+SHA1-Digest: YXxe1/rUGJAdqWhj4DbzXl03T/g=
+
+Name: model/ui/MultipleIdAxis.xwt
+SHA1-Digest: 45unsiLS3vH/Ky7unfRLIioJIcU=
+
+Name: model/ui/MultipleAbstractHeaderAxisConfiguration.xwt
+SHA1-Digest: MF88tWNZjiPo37tar9bTjz8mofY=
+
+Name: model/ui/RowFeatureLabelProviderConfiguration.xwt
+SHA1-Digest: Kqkdo8liM9giHYsL+Y8Jxta/w0k=
+
+Name: model/ui/MultipleFeatureLabelProviderConfiguration.xwt
+SHA1-Digest: zrs5CHy/6LEsWHjn+GyjuBEVYso=
+
+Name: model/ui/CanPasteEObjectColumnSection.xwt
+SHA1-Digest: j4cWzuO4h1Yxyv4Jkzo5onhd+RQ=
+
+Name: model/ui/SingleEObjectAxis.xwt
+SHA1-Digest: QQybPOqQe12KOVKi9nrvkKpooNU=
+
+Name: model/ui/SingleIAxisConfiguration.xwt
+SHA1-Digest: gkznkmkxaX2OHY1NVtejQQzjbls=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/modelelement/NatTa
+ bleFactory.class
+SHA1-Digest: /TxUzEuC/o5XQrjySVflDZtsQLc=
+
+Name: model/ui/SingleSlaveObjectAxisProvider.xwt
+SHA1-Digest: +39U3XA8CY8WRiB/mDlNsSCexTc=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnP
+ asteEObjectElementTypeIdObservableValue.class
+SHA1-Digest: FEivEUJavedVhtjBeQ9Ij25SlnU=
+
+Name: model/ui/SingleAxisProvider.xwt
+SHA1-Digest: gKrcacJuhEdGh5k66unpIQmohwg=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnF
+ eatureLabelDisplayTypeObservableValue.class
+SHA1-Digest: qBgQwN71fpTw/XbEO+NIXJ4IlUs=
+
+Name: model/ui/SingleTableAppearance.xwt
+SHA1-Digest: fM/G2dDB7qmHmjWU8+33QVDdCXM=
+
+Name: model/ui/PasteRowConfiguration.xwt
+SHA1-Digest: /ND4kT8orLHHMD0WH/burTyKLlM=
+
+Name: model/ui/SingleObjectAxis.xwt
+SHA1-Digest: kGtPjUGsYA6dMrEdQCih3vbNcHY=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowDisp
+ layLabelHeaderObservableValue.class
+SHA1-Digest: PmNOP8aWoKNXkfH9FsDyNQZCo9k=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowPast
+ eEObjectElementTypeIdObservableValue.class
+SHA1-Digest: TOvg2t++ffPq2WaBVvfMAIH1CO8=
+
+Name: model/nattable.ctx
+SHA1-Digest: s0F0C/OsRCuprcNgVBoA9547r9k=
+
+Name: model/ui/MultipleIAxis.xwt
+SHA1-Digest: GaNcxO8KfuJhOVX37nU9VrepF90=
+
+Name: model/ui/SingleLocalTableHeaderAxisConfiguration.xwt
+SHA1-Digest: 5rZA0fN2OAUsjl/5h+wc7XicrHM=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/ColumnEle
+ mentTypeIdContentProvider.class
+SHA1-Digest: kids5KT9gReVm8d/8AtU/04hV5c=
+
+Name: model/ui/SingleIPasteConfiguration.xwt
+SHA1-Digest: gkznkmkxaX2OHY1NVtejQQzjbls=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tRowObjectLabelProviderConfigurationObservableValue.class
+SHA1-Digest: jQaN0TMyG29ir7hC6CfuDl4Ew5w=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnF
+ eatureLabelDisplayIconObservableValue.class
+SHA1-Digest: sB4ifGz69HBcsi1VwoBJqNOhOf8=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/Activator.class
+SHA1-Digest: oa/GVhqGKcTcCsGEh/icJLOLw3Y=
+
+Name: model/ui/MultipleAxisManagerRepresentation.xwt
+SHA1-Digest: 7uxKMXbY7ScTTo7P1S8RZd6eHGs=
+
+Name: model/ui/CantPasteEObjectRowSection.xwt
+SHA1-Digest: 0ydzqfWvBaPIlEXd2BZfa8A/xS4=
+
+Name: model/ui/MultipleIMasterAxisProvider.xwt
+SHA1-Digest: gkznkmkxaX2OHY1NVtejQQzjbls=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tRowHeaderAxisConfigurationObservableValue.class
+SHA1-Digest: SJWp6gZIjrgBdZ8wgAJEqYNuWJA=
+
+Name: model/ui/MultipleIFillingConfiguration.xwt
+SHA1-Digest: 45unsiLS3vH/Ky7unfRLIioJIcU=
+
+Name: model/ui/ColumnFeatureLabelProviderConfiguration.xwt
+SHA1-Digest: h4tTn+OFrzlMn6AHjuMF75Z2jrY=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tPasteObjectPostActionsObservableValue.class
+SHA1-Digest: jWFXXqqju4Tfi3dIMyCuc+U/enI=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tColumnObjectLabelProviderConfigurationObservableValue.class
+SHA1-Digest: cqJBK6MVvp2cmzYtSF6jsvfNXsg=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnF
+ eatureLabelDisplayLabelObservableValue.class
+SHA1-Digest: fi3QO7aknCHfG9uAOxSu13uw/sA=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnP
+ asteObjectDetachedModeObservableValue.class
+SHA1-Digest: 3hDUxUZ+ku/Z1M8+wsGafw7Ym38=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/RowContai
+ nmentFeatureContentProvider.class
+SHA1-Digest: DOXbf5mDneevxO38eq+dzpEX/Qs=
+
+Name: model/ui/MultipleTable.xwt
+SHA1-Digest: 5Cr0pvmUox5ex6GXUsIft7kRrXM=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/utils/Constants.cl
+ ass
+SHA1-Digest: Q8ps3059LKy1E+FypZ8hSUit9Tw=
+
+Name: model/ui/SingleAbstractAxisProvider.xwt
+SHA1-Digest: YnfEA+OGUfTqCGeuUZOFxVpKA8I=
+
+Name: model/ui/SingleObjectIdAxis.xwt
+SHA1-Digest: NYMJ1idNzLMjzFCqba+vhEkkEt0=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowObje
+ ctLabelDisplayIconObservableValue.class
+SHA1-Digest: 9No5RvbezXmp4ZhAaCepgcqiApw=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/CanCre
+ ateColumnElementContraint.class
+SHA1-Digest: gEmlInNOezoowOxqpoWno0ppsaQ=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/modelelement/NatTa
+ bleModelElement.class
+SHA1-Digest: 4JBTgUGrDE9HcISfvG/Dig2Gvk4=
+
+Name: model/ui/MultipleEStructuralFeatureAxis.xwt
+SHA1-Digest: tXK3yVb9JDSkTefIONX20ILckWM=
+
+Name: model/ui/SingleISlaveAxisProvider.xwt
+SHA1-Digest: HjIsuztxQuKz6eZt/nNq6Wyy92E=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tRowPasteEObjectConfigurationObservableValue.class
+SHA1-Digest: Xvu7ktFNidGrXlwzQiszmS39nXU=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnF
+ eatureLabelDisplayNameObservableValue.class
+SHA1-Digest: yhXZ+FgTrm16Zc1SxcQf0PtTBEc=
+
+Name: model/ui/MultipleFeatureAxisConfiguration.xwt
+SHA1-Digest: 9oFhZ7vBwSxdcLRls6w8Aon0qxQ=
+
+Name: model/ui/SingleTableConfiguration.xwt
+SHA1-Digest: BqV935ejA97vgQRi/0X8NinUSCA=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: model/ui/MultipleAbstractTableTester.xwt
+SHA1-Digest: rNxnU8obA4uqEyuqwD+Uje0AOK8=
+
+Name: model/ui/SingleAxisManagerConfiguration.xwt
+SHA1-Digest: ociSdewpqCddC3XXpCyeFgb8vy4=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnO
+ bjectLabelDisplayLabelObservableValue.class
+SHA1-Digest: etkJgYCJa9mvrlb/z6e1SSmuFQQ=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/modelelement/NatTa
+ bleModelElement$1.class
+SHA1-Digest: tC3Wf6wc+cw9RvxiEQDTu8lxsoU=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/CantCr
+ eateColumnElementContraint.class
+SHA1-Digest: 4v5+evq1U4bkrSpzgUwVGXCAAPc=
+
+Name: model/ui/SingleObjectLabelProviderConfiguration.xwt
+SHA1-Digest: th9ZmVignKLz16FC+pqv2Bcxto4=
+
+Name: model/ui/MultipleFeatureIdAxis.xwt
+SHA1-Digest: lXDSd7Q2+3b8lZBKh5a4ZudKAsE=
+
+Name: model/ui/SingleJavaTableTester.xwt
+SHA1-Digest: PsaLAtoqHVa+uoN3cLbIFqt2YVs=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowFeat
+ ureLabelDisplayLabelObservableValue.class
+SHA1-Digest: qSKAKKx+x4UjDpHKtmSBkmX6PYk=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/CantCr
+ eateRowElementContraint.class
+SHA1-Digest: 0XuvCiUE77IP/6f7dhquuhzGAEI=
+
+Name: model/ui/MultipleFeatureAxis.xwt
+SHA1-Digest: gkznkmkxaX2OHY1NVtejQQzjbls=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowPast
+ eObjectPostActionsObservableValue.class
+SHA1-Digest: cmvOaRQZBBj/69ZIAbUc2eOPBIE=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnD
+ isplayLabelHeaderObservableValue.class
+SHA1-Digest: ocow3dLx/jxNQrKb8xJvmRQSQvw=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/RowPostAc
+ tionIdsProvider.class
+SHA1-Digest: O56bxAo59t9RsXLacJ6MC6ArBFM=
+
+Name: model/ui/MultipleILabelProviderConfiguration.xwt
+SHA1-Digest: 36tsmmwSELp6WvjJhuR2n2hPOXE=
+
+Name: model/ui/SingleTableHeaderAxisConfiguration.xwt
+SHA1-Digest: P0ljXMj8G3qLlq/eWkIG5QEoVro=
+
+Name: model/ui/SingleEStructuralFeatureValueFillingConfiguration.xwt
+SHA1-Digest: Ebi1WIapUhdLD4VKnZrDkIAwd3A=
+
+Name: model/ui/MultipleMasterObjectAxisProvider.xwt
+SHA1-Digest: gkznkmkxaX2OHY1NVtejQQzjbls=
+
+Name: model/ui/SingleIdAxis.xwt
+SHA1-Digest: 4w/JeTEZOmV/XGJZaVGkyB6R1RY=
+
+Name: model/ui/ColumnObjectLabelProviderConfiguration.xwt
+SHA1-Digest: 3a+Sy145O0Ac8YBVvYaWZOnmSrk=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/HasRow
+ ObjectLabelConfigurationConstraint.class
+SHA1-Digest: lcWmHvAEbRndPA8mGIC969P9Olk=
+
+Name: model/ui/MultipleEObjectAxis.xwt
+SHA1-Digest: IumTEEZooX1V2mJjK+LSY5UaA2s=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowFeat
+ ureLabelDisplayMultiplicityObservableValue.class
+SHA1-Digest: +FGlMV5cfQGLiWEYUSItqY4h49o=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowDisp
+ layIndexHeaderObservableValue.class
+SHA1-Digest: s0mnkraHAryxiQ0t6Z5EjDTy5pE=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/CanCre
+ ateRowElementContraint.class
+SHA1-Digest: sKS4GyoqXXKGRPybO4SkrxXNtSs=
+
+Name: model/ui/MultipleSlaveObjectAxisProvider.xwt
+SHA1-Digest: bZpHw1qUay1FwO+rkom97pEYozg=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnF
+ eatureLabelDisplayIsDerivedObservableValue.class
+SHA1-Digest: dMF1sstO8hRVLOgn0vg6OrHhqDY=
+
+Name: model/ui/SinglePasteEObjectConfiguration.xwt
+SHA1-Digest: CSiZUOg4rG8RGiXUL4G3O65gNqw=
+
+Name: model/ui/SingleAbstractHeaderAxisConfiguration.xwt
+SHA1-Digest: TAJjezdggbG2dow6lebuKTowS6E=
+
+Name: model/ui/SingleFeatureLabelProviderConfiguration.xwt
+SHA1-Digest: hUvxnA7gJE7pEP/lSw6ci0yPleA=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tColumnPasteEObjectConfigurationObservableValue.class
+SHA1-Digest: fQxfbc6L2bFxe+oqH3Y97gSv754=
+
+Name: model/ui/MultipleIAxisConfiguration.xwt
+SHA1-Digest: Xc9V97+zK1IwIWDyvC/VU8CuQ7k=
+
+Name: model/ui/CanPasteEObjectRowSection.xwt
+SHA1-Digest: vIueVMjCve1tH4AS5JQoofplaP8=
+
+Name: model/ui/MultipleAxisProvider.xwt
+SHA1-Digest: 7uxKMXbY7ScTTo7P1S8RZd6eHGs=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tRowFeatureLabelProviderConfigurationObservableValue.class
+SHA1-Digest: VzlHd10eazAiL/XkN2Ho9rtIWy8=
+
+Name: plugin.pdoc
+SHA1-Digest: mox+JJkaENymmvRdM7iWTbJUdwM=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: model/ui/MultipleLocalTableHeaderAxisConfiguration.xwt
+SHA1-Digest: Zr3Vo6Swxm1IeHAdcrJn0SalIi4=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnI
+ ndexHeaderStyleObservableValue.class
+SHA1-Digest: m6Aq5a6nbhSKY5OV2UkSg4tpHEo=
+
+Name: model/ui/MultipleObjectAxis.xwt
+SHA1-Digest: rNxnU8obA4uqEyuqwD+Uje0AOK8=
+
+Name: model/ui/CantPasteEObjectColumnSection.xwt
+SHA1-Digest: 1WD0choxbjFwmmK3mpEoqeGVK7c=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowFeat
+ ureLabelDisplayTypeObservableValue.class
+SHA1-Digest: F0pmDsf5A1eci0YxhLPL/K6eYkg=
+
+Name: model/ui/MultipleIPasteConfiguration.xwt
+SHA1-Digest: zW+pwsQgQ0bl30+ZUPM8DkyTOUA=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/modelelement/NatTa
+ bleModelElement$2.class
+SHA1-Digest: 4ijYh30XukfxKpgsHtFAUF2r58g=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowPast
+ eEObjectContainmentFeatureObservableValue.class
+SHA1-Digest: kgY1+KnX/x8ylfxyYMeqz1CkRJE=
+
+Name: model/Environment.xmi
+SHA1-Digest: FnPMt2T0/jOBqn8tkbUbqNb6Qco=
+
+Name: model/ui/SingleIAxis.xwt
+SHA1-Digest: gI+IKUcpivdok3daW/5ebcuSOwo=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnO
+ bjectLabelDisplayIconObservableValue.class
+SHA1-Digest: fhwLCXblbGVaSICGHC8Alb5tm4s=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/AbstractC
+ ontainmentFeatureContentProvider.class
+SHA1-Digest: Tl8WfLqVyqhfRqZhFpNrNGrqTHw=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowFeat
+ ureLabelDisplayIsDerivedObservableValue.class
+SHA1-Digest: pNdU3iRJEoC0G9m3lLCF2LBA64U=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/AbstractE
+ lementTypeIdContentProvider.class
+SHA1-Digest: Ab8uY07NJB6/uetPWejsJQHmizk=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/HasRow
+ FeatureLabelConfigurationConstraint.class
+SHA1-Digest: x8AlJ/4E4O8ExdWMt3GAJXJLDOY=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/ColumnCon
+ tainmentFeatureContentProvider.class
+SHA1-Digest: RmH0/WxE4qoMzNcgL/vCc3pktIE=
+
+Name: model/ui/SingleAxisManagerRepresentation.xwt
+SHA1-Digest: HSaLipL+mn7hWy2XjIVjp+oEAcc=
+
+Name: model/ui/SingleIMasterAxisProvider.xwt
+SHA1-Digest: BJAQNN+yn4EqDNDRswsIQ9lkux8=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: ehFgf1D9cv4O7yR4l4CU6Le+S8g=
+
+Name: model/ui/SingleIFillingConfiguration.xwt
+SHA1-Digest: 36tsmmwSELp6WvjJhuR2n2hPOXE=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/HasCol
+ umnFeatureLabelConfigurationConstraint.class
+SHA1-Digest: 6y4XIyrY38uf3xE3WXXuyOZCrSc=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowFeat
+ ureLabelDisplayIconObservableValue.class
+SHA1-Digest: cip/pQE06WsfEs5lnWjHkZmsjkA=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnD
+ isplayFilterHeaderObservableValue.class
+SHA1-Digest: jJA+BvnrwlWgZSvmrLi7MIlhlsE=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnP
+ asteObjectPostActionsObservableValue.class
+SHA1-Digest: 6tzoyYJBzlIWCyn4lIDOAeQEBd8=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tColumnFeatureLabelProviderConfigurationObservableValue.class
+SHA1-Digest: IM2bslaej+hO/NOLpDfbrbnWY2c=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowInde
+ xHeaderStyleObservableValue.class
+SHA1-Digest: piJsuMniracxJLezMLX3VN/Wp/Y=
+
+Name: model/ui/SingleTable.xwt
+SHA1-Digest: J2onRtat3L3LSkHORKEVmeB+hbU=
+
+Name: model/ui/SingleEStructuralFeatureAxis.xwt
+SHA1-Digest: 7XgpJW9kTRFicVHkwzVxAdgWJPE=
+
+Name: plugin.xml
+SHA1-Digest: bvQ10O1hlO2u9sQzwmliMoCtSzs=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnD
+ isplayIndexHeaderObservableValue.class
+SHA1-Digest: f/OI6u0nvbXF6NWF9d79CT9OqHw=
+
+Name: model/ui/MultipleAbstractAxisProvider.xwt
+SHA1-Digest: 5LgNp6txx7RRZOhlMgnbDCx/yxA=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/AbstractP
+ ostActionIdsProvider.class
+SHA1-Digest: M15QNROVTQfqhkzTGsK8rDJ7Oug=
+
+Name: model/ui/SingleFeatureAxisConfiguration.xwt
+SHA1-Digest: rk/BJf3Jj2htqtPDVGfoCAND8N4=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowPast
+ eObjectDetachedModeObservableValue.class
+SHA1-Digest: E+UOP3rzX6KJSnyzrkZNGUA27VQ=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/RowElemen
+ tTypeIdContentProvider.class
+SHA1-Digest: wWVyVH7+D/C/UCcBDxhZEKr0XSo=
+
+Name: model/ui/MultipleObjectIdAxis.xwt
+SHA1-Digest: tXK3yVb9JDSkTefIONX20ILckWM=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tConfigurationElementObservableValue.class
+SHA1-Digest: VUQeSSGRBPZoFEgmUnoNO0GxBUY=
+
+Name: model/ui/MultipleISlaveAxisProvider.xwt
+SHA1-Digest: tXK3yVb9JDSkTefIONX20ILckWM=
+
+Name: model/ui/MultipleJavaTableTester.xwt
+SHA1-Digest: 2Kkd1v8wO8vH1mnuVXOuAXVda0k=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/provider/ColumnPos
+ tActionIdsProvider.class
+SHA1-Digest: UdGV6BPvn1mKgyq1TPgjh8EbBs8=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tColumnHeaderAxisConfigurationObservableValue.class
+SHA1-Digest: SuixODd+LTGCTlTRB7bXCUGaUh8=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/ColumnF
+ eatureLabelDisplayMultiplicityObservableValue.class
+SHA1-Digest: ptwTOOhI0HcGMnTypaNtZu+E/EU=
+
+Name: model/ui/MultipleTableConfiguration.xwt
+SHA1-Digest: 3nKZjnULbpvAiZmwiZiB09XXxgQ=
+
+Name: model/ui/SingleAbstractTableTester.xwt
+SHA1-Digest: gkznkmkxaX2OHY1NVtejQQzjbls=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/Abstrac
+ tConfigurationElementObservableValue$1.class
+SHA1-Digest: Z+LKjfterNRVUyoKRZDZGNGivko=
+
+Name: model/ui/MultipleAxisManagerConfiguration.xwt
+SHA1-Digest: gTzagOXkJ8sxoWFoGZlBSJS0tiM=
+
+Name: model/ui/MultipleEStructuralFeatureValueFillingConfiguration.xwt
+SHA1-Digest: Vt5D9VzZ9FUoQo1MVW0uOTqRaMw=
+
+Name: model/ui/SingleMasterObjectAxisProvider.xwt
+SHA1-Digest: bPV/G+UZX2ND9IBN0EhcMtCXPus=
+
+Name: model/ui/PasteEObjectRowSection.xwt
+SHA1-Digest: fs0tVwDSS84x0lE5X9AiOTi/KdQ=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/constraints/HasCol
+ umnObjectLabelConfigurationConstraint.class
+SHA1-Digest: cTmXZCaPHy+ht7qedOHcN/ZYe3I=
+
+Name: model/ui/SingleFeatureIdAxis.xwt
+SHA1-Digest: 7kJYtLEZoQN9fFsqfFb+frpYDms=
+
+Name: model/ui/RowObjectLabelProviderConfiguration.xwt
+SHA1-Digest: D1nzY/Y1bCIpNHPzvj5JbKAErqw=
+
+Name: model/ui/MultipleObjectLabelProviderConfiguration.xwt
+SHA1-Digest: kDB+vF5NJT6D2A4EQ11BPMHdtuQ=
+
+Name: org/eclipse/papyrus/infra/nattable/properties/observable/RowFeat
+ ureLabelDisplayNameObservableValue.class
+SHA1-Digest: UownSR3ZIzZ+7X/UzEsmI4Xa7fs=
+

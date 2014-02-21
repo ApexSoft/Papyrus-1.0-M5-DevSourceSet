@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %Bundle-Vendor
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.eclipse.papyrus.sysml.nattable.requirement.co
+ nfig;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.sysml.nattable.requirement.confi
+ g.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.sysml.nattable;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .nattable.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.nat
+ table;bundle-version="1.0.0",org.eclipse.gmf.runtime.emf.type.core,or
+ g.eclipse.papyrus.sysml.service.types;bundle-version="1.0.0",org.ecli
+ pse.papyrus.sysml;bundle-version="1.0.0",org.eclipse.papyrus.infra.to
+ ols;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools.utils;bundle
+ -version="1.0.0",org.eclipse.uml2.uml;bundle-version="4.1.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: configs/requirement.nattableconfiguration
+SHA1-Digest: 0EdqhDurwIRRTBFp4KUroLN0PY4=
+
+Name: org/eclipse/papyrus/sysml/nattable/requirement/config/Activator.
+ class
+SHA1-Digest: 5xbDTup9Auns+BA+49hkXGxSNN8=
+
+Name: plugin.pdoc
+SHA1-Digest: qs3cEwrpDXrIz7/LQi0oaScFhdU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/sysml/nattable/requirement/tester/Requiremen
+ tTableTester.class
+SHA1-Digest: Uey1Z6Cf+Jg8k3DdLPAJ4ThzobA=
+
+Name: icons/table_SysML_Requirement.png
+SHA1-Digest: ijAi/aMNdDR1ldiLs43uA9l08GM=
+
+Name: icons/old/table_SysML_Requirement.gif
+SHA1-Digest: qE2G3gxotioS1jI6AYvM6CnUKOA=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: KVQba4BZkLSp9V87gaFOQSuRne4=
+
+Name: plugin.xml
+SHA1-Digest: L8nPyjoI/xCREOpLFeUMkJO4dUM=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+

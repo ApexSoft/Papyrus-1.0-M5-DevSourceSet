@@ -1,0 +1,88 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.alf.common;singleton:=tru
+ e
+Require-Bundle: org.eclipse.xtext;visibility:=reexport,org.eclipse.xte
+ xt.xbase;resolution:=optional;visibility:=reexport,org.eclipse.xtext.
+ generator;resolution:=optional,org.apache.commons.logging;bundle-vers
+ ion="1.0.4";resolution:=optional,org.eclipse.emf.codegen.ecore;resolu
+ tion:=optional,org.eclipse.emf.mwe.utils;resolution:=optional,org.ecl
+ ipse.emf.mwe2.launch;resolution:=optional,org.eclipse.xtext.util,org.
+ antlr.runtime,org.eclipse.papyrus.uml.extensionpoints;bundle-version=
+ "1.0.0"
+Export-Package: org.eclipse.papyrus.uml.alf,org.eclipse.papyrus.uml.al
+ f.naming,org.eclipse.papyrus.uml.alf.serializer,org.eclipse.papyrus.u
+ ml.alf.services,org.eclipse.papyrus.uml.alf.validation
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Import-Package: org.apache.log4j
+
+Name: org/eclipse/papyrus/uml/alf/naming/ALFIDConverter.class
+SHA1-Digest: yo0saHIREtV4CpmP7/QPWUGATKo=
+
+Name: resources/ActionLanguage-Profile.profile.notation
+SHA1-Digest: VzN6fU4yGOSTfk29YmRjOlO0UXM=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: resources/ActionLanguage-Profile.profile.di
+SHA1-Digest: 0EaO4KtAcsBQm8drJYkk85f9lRs=
+
+Name: org/eclipse/papyrus/uml/alf/AbstractCommonRuntimeModule.class
+SHA1-Digest: KDH4DFv9NwTKjtebE7TMcXmPv3U=
+
+Name: org/eclipse/papyrus/uml/alf/CommonStandaloneSetupGenerated.class
+SHA1-Digest: oZa9fXBuQv5Z9WMeA4RH18EJxJo=
+
+Name: org/eclipse/papyrus/uml/alf/serializer/CommonSyntacticSequencer.
+ class
+SHA1-Digest: Eg3kANr60Ts1LKwDiz6ojxFKEdc=
+
+Name: org/eclipse/papyrus/uml/alf/serializer/CommonSemanticSequencer.c
+ lass
+SHA1-Digest: BBC87A4/YsnkEZDwi3PELLHxSxE=
+
+Name: org/eclipse/papyrus/uml/alf/CommonRuntimeModule.class
+SHA1-Digest: WaQNLrwzyj881b93PomoVRfJoPY=
+
+Name: org/eclipse/papyrus/uml/alf/GenerateCommon.mwe2
+SHA1-Digest: DG63J2x6zXuYeKS+s0L4IdK0IFI=
+
+Name: org/eclipse/papyrus/uml/alf/Common.xtextbin
+SHA1-Digest: l11e0in5kxz8NYtgfQ0sTLpzRjo=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: plugin.properties
+SHA1-Digest: qpAOICL3jNIKwPARI4cX81IBGhg=
+
+Name: org/eclipse/papyrus/uml/alf/validation/AbstractCommonJavaValidat
+ or.class
+SHA1-Digest: TzJPyrerrDzq84Mye8iZi24IoyY=
+
+Name: org/eclipse/papyrus/uml/alf/validation/CommonJavaValidator.class
+SHA1-Digest: 10SqU7jwR3qS2bIYZoGx1WZ7ZPo=
+
+Name: org/eclipse/papyrus/uml/alf/services/CommonGrammarAccess.class
+SHA1-Digest: mlw/Cc7REKSWh3r//EZsK9QhH1E=
+
+Name: resources/ActionLanguage-Profile.profile.uml
+SHA1-Digest: 9b/mYB+i8H1HT3vMOkMT9qYWbIU=
+
+Name: plugin.xml
+SHA1-Digest: 5ZIU3FAsx7n+NlZenzKIaCImSM4=
+
+Name: org/eclipse/papyrus/uml/alf/CommonStandaloneSetup.class
+SHA1-Digest: PYO3Z1g7VCiWc++BUcZhkg2nOfs=
+
+Name: org/eclipse/papyrus/uml/alf/Common.xtext
+SHA1-Digest: SoKzarHoqqpNui4a9Ffhmw2Sfmc=
+

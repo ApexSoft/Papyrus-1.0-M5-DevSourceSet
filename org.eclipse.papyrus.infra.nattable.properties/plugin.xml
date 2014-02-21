@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.papyrus.views.properties.context">
+      <context
+            contextModel="model/nattable.ctx"
+            isCustomizable="true">
+      </context>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.views.properties.environment">
+      <environment
+            environmentModel="model/Environment.xmi">
+      </environment>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.views.properties.labelprovider">
+      <labelProvider
+            labelProvider="org.eclipse.papyrus.infra.nattable.properties.labelprovider.TablePropertyLabelProvider"
+            priority="45">
+      </labelProvider>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.services.labelprovider.labelProvider">
+      <labelProvider
+            priority="10"
+            provider="org.eclipse.papyrus.infra.nattable.provider.TableLabelProvider">
+         <labelProviderContext
+               context="org.eclipse.papyrus.views.properties.header.labelProvider.context">
+         </labelProviderContext>
+      </labelProvider>
+   </extension>
+
+</plugin>

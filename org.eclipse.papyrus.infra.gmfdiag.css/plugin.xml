@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="theme" name="CSS Theme" schema="schema/theme.exsd"/>
+   <extension-point id="markertopseudoselectormappingprovider" name="MarkerToPseudoSelectorMappingProvider" schema="schema/markertopseudoselectormappingprovider.exsd"/>
+   <extension-point id="domElementAdapter" name="domElementAdapter" schema="schema/domElementAdapter.exsd"/>
+	<extension point="org.eclipse.emf.ecore.factory_override">
+		<factory
+			class="org.eclipse.papyrus.infra.gmfdiag.css.factory.CSSNotationFactory"
+			uri="http://www.eclipse.org/gmf/runtime/1.0.2/notation">
+		</factory>
+	</extension>
+ <extension
+       point="org.eclipse.papyrus.infra.emf.appearance.styleProvider">
+    <styleprovider
+          priority="40"
+          styleProvider="org.eclipse.papyrus.infra.gmfdiag.css.provider.CSSAppearanceProvider">
+    </styleprovider>
+ </extension>
+ <extension
+       point="org.eclipse.ui.preferencePages">
+    <page
+          category="org.eclipse.papyrus.infra.core.sasheditor.preferences.generalcategory"
+          class="org.eclipse.papyrus.infra.gmfdiag.css.preferences.ThemePreferencesPage"
+          id="org.eclipse.papyrus.infra.gmfdiag.css.theme"
+          name="CSS Theme">
+    </page>
+ </extension>
+ <extension
+       point="org.eclipse.core.runtime.preferences">
+    <initializer
+          class="org.eclipse.papyrus.infra.gmfdiag.css.preferences.ThemePreferenceInitializer">
+    </initializer>
+ </extension>
+ <extension
+       point="org.eclipse.papyrus.infra.gmfdiag.common.initializeView">
+    <initializeView
+          initializeView="org.eclipse.papyrus.infra.gmfdiag.css.provider.CSSThemeInitializer">
+    </initializeView>
+ </extension>
+ <extension
+       point="org.eclipse.papyrus.infra.core.model">
+    <model
+          classname="org.eclipse.papyrus.infra.gmfdiag.css.resource.CSSNotationModel"
+          description="A model for Notation resources with CSS support">
+    </model>
+ </extension>
+ <extension
+       point="org.eclipse.papyrus.infra.services.markerlistener.markereventlistener">
+    <listener
+          class="org.eclipse.papyrus.infra.gmfdiag.css.service.CssMarkerEventManagerService"></listener>
+ </extension>
+ <extension
+       point="org.eclipse.papyrus.infra.core.service">
+    <service
+          classname="org.eclipse.papyrus.infra.gmfdiag.css.service.CssMarkerEventManagerService"
+          priority="1"
+          startKind="lazy">
+    </service>
+ </extension>
+ <extension
+       point="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders">
+    <editpolicyProvider
+          class="org.eclipse.papyrus.infra.gmfdiag.css.editpolicies.MarkerEventListenerEditPolicyProvider">
+       <Priority
+             name="Lowest">
+       </Priority>
+    </editpolicyProvider>
+ </extension>
+ <extension
+       point="org.eclipse.papyrus.infra.core.service">
+    <service
+          classname="org.eclipse.papyrus.infra.gmfdiag.css.service.MarkerToPseudoSelectorMappingService"
+          priority="1"
+          startKind="lazy">
+    </service>
+ </extension>
+ <extension
+       point="org.eclipse.papyrus.infra.gmfdiag.common.svgPostProcessors">
+    <postProcessor
+          implementation="org.eclipse.papyrus.infra.gmfdiag.css.CssSvgPostProcessor">
+    </postProcessor>
+ </extension>
+</plugin>

@@ -1,0 +1,346 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.textedit.port.xtext;singl
+ eton:=true
+Require-Bundle: org.eclipse.xtext,org.eclipse.xtext.xbase;resolution:=
+ optional,org.eclipse.xtext.generator;resolution:=optional,org.apache.
+ commons.logging;bundle-version="1.0.4";resolution:=optional,org.eclip
+ se.emf.codegen.ecore;resolution:=optional,org.eclipse.emf.mwe.utils;r
+ esolution:=optional,org.eclipse.emf.mwe2.launch;resolution:=optional,
+ org.eclipse.uml2.uml;bundle-version="4.1.0",org.eclipse.uml2.codegen.
+ ecore;bundle-version="1.9.0",org.eclipse.xtext.util,org.eclipse.emf.e
+ core,org.eclipse.emf.common,org.antlr.runtime,org.eclipse.papyrus.inf
+ ra.gmfdiag.xtext.glue;bundle-version="1.0.0",org.apache.log4j;bundle-
+ version="1.2.15",org.eclipse.papyrus.uml.alf.common;bundle-version="1
+ .0.0",org.eclipse.papyrus.uml.xtext.integration.core;bundle-version="
+ 1.0.0"
+Export-Package: org.eclipse.papyrus.uml.textedit.port.xtext,org.eclips
+ e.papyrus.uml.textedit.port.xtext.formatting,org.eclipse.papyrus.uml.
+ textedit.port.xtext.generator,org.eclipse.papyrus.uml.textedit.port.x
+ text.parser.antlr,org.eclipse.papyrus.uml.textedit.port.xtext.parser.
+ antlr.internal,org.eclipse.papyrus.uml.textedit.port.xtext.scoping,or
+ g.eclipse.papyrus.uml.textedit.port.xtext.serializer,org.eclipse.papy
+ rus.uml.textedit.port.xtext.services,org.eclipse.papyrus.uml.textedit
+ .port.xtext.umlPort,org.eclipse.papyrus.uml.textedit.port.xtext.umlPo
+ rt.impl,org.eclipse.papyrus.uml.textedit.port.xtext.umlPort.util,org.
+ eclipse.papyrus.uml.textedit.port.xtext.validation
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Import-Package: org.apache.log4j,org.eclipse.xtext.xbase.lib
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/UmlPortPacka
+ ge$Literals.class
+SHA1-Digest: jLNqzik6Rk7ZSyHFgbU6w1zO1gg=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/UmlPortFacto
+ ry.class
+SHA1-Digest: XFraLwY8yWNdCmkRP7WdBrjRvzg=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPortRuntimeModule
+ .class
+SHA1-Digest: 7dtlGklqdzP3VPG6caBlXmmSreE=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/TypeRule.cla
+ ss
+SHA1-Digest: oC5UKIP3BL9dNx2zA5qqz83/Eec=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Qualifi
+ edNameImpl.class
+SHA1-Digest: w0CRjRnDjX84ul8Y77HhmfI/cIg=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/Multiplicity
+ Rule.class
+SHA1-Digest: pFxMiCpikw8n9pIwZ0E1oHwAulI=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/PortRule.cla
+ ss
+SHA1-Digest: wDgivNTb2D5Wf2QFFitkPW/BdcA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/GenerateUmlPort.mwe2
+SHA1-Digest: E4R9K4hHqA0tHZTmJ86O+uwv9O8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/QualifiedNam
+ e.class
+SHA1-Digest: jlDYxZNOWh/zvmoLg3R9OhGzSs4=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/generator/UmlPortGen
+ erator.xtend
+SHA1-Digest: BC4+6Avam0nFnss++uHVnqMGgZY=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$UnlimitedLiteralElements.class
+SHA1-Digest: +wDP3K9C3J4xiYrBnxolmn33g6E=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/validation/UmlPortJa
+ vaValidator.class
+SHA1-Digest: qCKkkJSUO7xFShzIwIE4zwz/cP8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Modifie
+ rsRuleImpl.class
+SHA1-Digest: n4pUE7oJy7+Lo/BpWz4QKHi2pkE=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/interna
+ l/InternalUmlPort.tokens
+SHA1-Digest: /fYuuE/DctaBVYjQWBG5A7dYFpE=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/interna
+ l/InternalUmlPortParser.class
+SHA1-Digest: gxtMEZewI5jQTAKUWhNI6WWe5gU=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/serializer/UmlPortSy
+ ntacticSequencer.class
+SHA1-Digest: nSxOnYLjp4L6BVV9iRJf2fKOJ5Q=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/scoping/UmlPortScope
+ Provider$Visitor_GetImportedNamespaces.class
+SHA1-Digest: 4HqBOqJbk0eXN/HpXLYNRA++sUs=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$RedefinesRuleElements.class
+SHA1-Digest: yYcd09D5nWmto/mYzZ5+5wQXxOY=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/ModifiersRul
+ e.class
+SHA1-Digest: Lz4Iteyn/NhlYc+CWpTUh6QJ1Qc=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/interna
+ l/InternalUmlPortLexer$DFA24.class
+SHA1-Digest: 7SlX7XHy7bxT6IDI8z3lt5G3bs0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/formatting/UmlPortFo
+ rmatter.class
+SHA1-Digest: 1FeYZXLXfRUN0iFT3BaLU0ttpmo=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPort.xtextbin
+SHA1-Digest: R+LfVYoQUgCIxZ1OvXg0scfev50=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Default
+ ValueRuleImpl.class
+SHA1-Digest: COQiOIE1QJi4QtE8ug4fot1cxrA=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPort.ecore
+SHA1-Digest: CGYH8mzhARBPymXHmCp/uXBfBAw=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/UmlPort
+ PackageImpl.class
+SHA1-Digest: d4Z7F7FHx7s0xWembSEnCVRtDT8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$ModifierSpecificationElements.class
+SHA1-Digest: KADqBsSiIZWUUN6zyGPfioLTLRU=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$SubsetsRuleElements.class
+SHA1-Digest: nLntOd8JfWOwHg9d+wUnO3NOFaU=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess.class
+SHA1-Digest: H/kHZ4w8DQMdbFyLOt7m2NAfPAU=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/generator/UmlPortGen
+ eratorMWE.mwe2
+SHA1-Digest: ctoE18P++ABP3wyIjvaGumx42XA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/generator/UmlPortGen
+ erator.class
+SHA1-Digest: fbsrDeYBv2mSlhhQ5L/4VeL7xC4=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/util/UmlPort
+ AdapterFactory.class
+SHA1-Digest: oSPdlsQVDYHtEz8u/gq+NSpC8UI=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/TypeRul
+ eImpl.class
+SHA1-Digest: X9n6oOhzW9oGfkn8wP0QptjHOzw=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPortStandaloneSet
+ upGenerated.class
+SHA1-Digest: FeRG90xIvdef46pEuMabEYI8rHA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/VisibilityKi
+ nd.class
+SHA1-Digest: nT2VhX7YFh5UfuUh59sj+dYcW1U=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Multipl
+ icityRuleImpl.class
+SHA1-Digest: Rid8gr9aR56FplNC3HFBCNiMVgQ=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/PortRul
+ eImpl.class
+SHA1-Digest: 01f/Ndg6rmaupl7AKX4y5GlEVN0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/SubsetsRule.
+ class
+SHA1-Digest: nqZ/zpDlgnBbE3yzntuwwIbMHTQ=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPort.genmodel
+SHA1-Digest: B2UiwLde3+I93ZcY9Ej3EhFe4kg=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/UmlPortPacka
+ ge.class
+SHA1-Digest: 6D2gZg6QkTwsT9SSrXnNMAFwdSw=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/BoundSp
+ ecificationImpl.class
+SHA1-Digest: fmZp1F+M6aLS64ww4/fjVASSk4Q=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/util/UmlPort
+ ResourceImpl.class
+SHA1-Digest: 7KIUdOFj6b6yBeO3rJIfa/UpryE=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/AbstractUmlPortRunti
+ meModule.class
+SHA1-Digest: J7L9M/GTG9rGksSjWAOiYyCE+Pc=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$QualifiedNameElements.class
+SHA1-Digest: 8hasfDUpGSvHybxHUbnXyg8yxD8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/interna
+ l/InternalUmlPortLexer.class
+SHA1-Digest: OuTG4OeT8UqRrSfb+h6iGeRg1c0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPort.xtext
+SHA1-Digest: PDJ0rjkpMaKZXOY2DFHGnJlI8pI=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/generator/Main.class
+SHA1-Digest: Ub/RZlxX/m6ypI/LoIdpIDErwko=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/interna
+ l/InternalUmlPort.g
+SHA1-Digest: LsPIeWQ+gZTz8TXqU0/4JzryB5o=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$VisibilityKindElements.class
+SHA1-Digest: U3aJEaXl/dl2eBPUyz+a+dp62kE=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/UmlPort
+ AntlrTokenFileProvider.class
+SHA1-Digest: /AcmARbzdMvbC5P57vSlEAzh8Ks=
+
+Name: plugin.properties
+SHA1-Digest: 6bneqavofFhys1DuPBSiThik1SA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/scoping/UmlPortScope
+ Provider$Visitor_GetOwnedAndImportedClassifiers.class
+SHA1-Digest: 7fIZ2NA/z7b1Mrji8GVXqF8BKGk=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$ModifierKindElements.class
+SHA1-Digest: Lr6+CZEvwe0hAZ/Fu/xOhOvsRoA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/BoundSpecifi
+ cation.class
+SHA1-Digest: Xv83sHBsdkyWlzBvqE7WfToCyw8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$DefaultValueRuleElements.class
+SHA1-Digest: zjx9oPYCwkxFIk98zpRTwYV4JpE=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/UmlPortStandaloneSet
+ up.class
+SHA1-Digest: lwCzYO1IcihVkUsVmLm8m4hG5r8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$ModifiersRuleElements.class
+SHA1-Digest: k7lMz6SWrFuT3+gvEFd5ivgBMh0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/validation/AbstractU
+ mlPortJavaValidator.class
+SHA1-Digest: RRaML/0DrQgONKw+pxkrWMuMxSY=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/scoping/UmlPortScope
+ Provider$Visitor_GetOwnedNamespacesAndImportedNamespaces.class
+SHA1-Digest: 3l2DJROAQrKOvciP/KVrF3UJKg4=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$TypeRuleElements.class
+SHA1-Digest: 7Zc28llG+IaluXE0KVQpA4dBPuU=
+
+Name: plugin.xml
+SHA1-Digest: vgt0WWjQpb8moM//GOXcMTsB334=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/util/UmlPort
+ ResourceFactoryImpl.class
+SHA1-Digest: Bxk3OOqq82hzxhGtruuMMhn45ps=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Redefin
+ esRuleImpl.class
+SHA1-Digest: ftCkzTxXsWcX5+LZfT0Ku5eZ2pA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$MultiplicityRuleElements.class
+SHA1-Digest: xs3j6Z/OBh3Sh9lDQihyAL0nfL0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$PortRuleElements.class
+SHA1-Digest: IHFEGA9CRp9xAAlDnZhIPZo38Lo=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/util/UmlPort
+ Switch.class
+SHA1-Digest: dYhckDJetKTIuDqp5zikRqOclR0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Modifie
+ rSpecificationImpl.class
+SHA1-Digest: EZImtkOtszZwds8/K3jtauklHbA=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/Subsets
+ RuleImpl.class
+SHA1-Digest: HQDMpFtp/LJ2lIlDiTrxPztyBa0=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/RedefinesRul
+ e.class
+SHA1-Digest: APQU+FR37NK97dA1qf98gN6zhsY=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/services/UmlPortGram
+ marAccess$BoundSpecificationElements.class
+SHA1-Digest: J1lhxxqaJFI5jLivBCSRIls7rVw=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/impl/UmlPort
+ FactoryImpl.class
+SHA1-Digest: 7Hud8pJiqLFop9miQ8qYKtiDIrM=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/util/UmlPort
+ XMLProcessor.class
+SHA1-Digest: sO8cpIn62PM57di8HzN5vyQVQac=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/parser/antlr/UmlPort
+ Parser.class
+SHA1-Digest: 3PNvmkgROPlliVukQVYgsBC14vs=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/ModifierSpec
+ ification.class
+SHA1-Digest: qDo4VyY71ncXP1alzAX94X+o8oM=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/serializer/UmlPortSe
+ manticSequencer.class
+SHA1-Digest: sffC6AVInYVr2RvOwhbaXoFezQQ=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/ModifierKind
+ .class
+SHA1-Digest: 9eD1mj0ZUqjWJPZ7kv+1pX+inkM=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/DefaultValue
+ Rule.class
+SHA1-Digest: ewIQyCVyT1LGKubrJvSO+cYGQLg=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/umlPort/util/UmlPort
+ AdapterFactory$1.class
+SHA1-Digest: 4VtOapqfm6avH2xqTbk7qUcKZW8=
+
+Name: org/eclipse/papyrus/uml/textedit/port/xtext/scoping/UmlPortScope
+ Provider.class
+SHA1-Digest: xm3xzTsV39Nryo1VrSS7fZlVzFw=
+

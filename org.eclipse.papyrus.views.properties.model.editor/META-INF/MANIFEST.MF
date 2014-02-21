@@ -1,0 +1,498 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.views.properties.model.editor
+ ;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.views.properties.environment.pre
+ sentation.PropertiesEditorPlugin$Implementation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.core.resources,or
+ g.eclipse.papyrus.views.properties.model.edit;bundle-version="1.0.0";
+ visibility:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport,o
+ rg.eclipse.emf.edit.ui;visibility:=reexport,org.eclipse.ui.ide;visibi
+ lity:=reexport,org.eclipse.emf.ecore.editor;bundle-version="2.7.0",or
+ g.eclipse.papyrus.infra.constraints;bundle-version="1.0.0",org.eclips
+ e.papyrus.infra.constraints.editor;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.views.properties.contexts.presenta
+ tion,org.eclipse.papyrus.views.properties.environment.presentation,or
+ g.eclipse.papyrus.views.properties.ui.presentation
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsModelWizard.class
+SHA1-Digest: YAfaqgv191bVoLQLB6jYPYOKgJM=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$1.
+ class
+SHA1-Digest: lacvUZpbwW5/2/Czdj8Q2l6InKI=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$10.class
+SHA1-Digest: RNWQoiNpY8rS02GJPx1aRdxwm+8=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentModelWizard$2.class
+SHA1-Digest: RxP8wCyn6kIvTBabAfs3vUHU/dg=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$5.
+ class
+SHA1-Digest: KtJusD4J+kKEYkizFTPggmPq9bk=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$14.class
+SHA1-Digest: xTvs4QB3ZgzMrcH8sNHt32hUeAs=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiModelWiza
+ rd$UiModelWizardInitialObjectCreationPage.class
+SHA1-Digest: k2U0EKTSoTGaroGupiQXO3YTX5A=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$9.
+ class
+SHA1-Digest: wvy3t4DdAPzqEgSiy+Acge9M038=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$18.class
+SHA1-Digest: u2JFkRwGTvYp80uRhsWDGGOA8NQ=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsModelWizard$1.class
+SHA1-Digest: OY9di3s3pW1wh1uD2pPlgV+rEME=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$2$
+ 1.class
+SHA1-Digest: wM+brWUQnVGJxfjreWISRfskqnE=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$3$
+ 1.class
+SHA1-Digest: s4AR8IREQmOTNviSUQnDLVlPcA0=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$4$
+ 1.class
+SHA1-Digest: kzhy1ZeE6sh0J4A9ce0JO6/u1d4=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$1MyContentOutlinePage.class
+SHA1-Digest: 3HxA/qhoOQbZv2Iuxr7dsDME/ow=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$3$1ResourceDeltaVisitor.class
+SHA1-Digest: vMcLYR56bUPGS5IRUdBqJew0EcQ=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsActionBarContributor$3.class
+SHA1-Digest: IL/2cZjq8CUS/ZmrcT5YCbXbaNs=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiModelWiza
+ rd.class
+SHA1-Digest: NtrnQmhl7GQACIwZnFwtm+bGfWk=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiModelWiza
+ rd$UiModelWizardNewFileCreationPage.class
+SHA1-Digest: ex14kDLbst9fuBRoh2+oz/9+GyI=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$1.class
+SHA1-Digest: fMDbtlGPgUJjNPyL0/HpEcDMaUQ=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$10
+ .class
+SHA1-Digest: OX0voDV9u5vV4bKdfdbRlp1rQJs=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$1M
+ yContentOutlinePage.class
+SHA1-Digest: ZtihIkY8fR7NSRLBp8ggPWTlUTg=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$5.class
+SHA1-Digest: MZbG++aiWWglOH75dtVz9l3s+cE=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/Pr
+ opertiesEditorPlugin.class
+SHA1-Digest: JGU0fLfMXkATbdHCp0Sb4R9S4+c=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$14
+ .class
+SHA1-Digest: a8R+hHyiiD+fL748dlm6A2fffXg=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$9.class
+SHA1-Digest: 7TdLL4qOso/Wexh6g5pWOhNlY84=
+
+Name: icons/full/obj16/UiModelFile.gif
+SHA1-Digest: iGABDw3x8llf5NNRKbTxPhevLog=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$18
+ .class
+SHA1-Digest: TiEIyc0vbot9CDnu0iApsNpW0xQ=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiModelWiza
+ rd$1.class
+SHA1-Digest: hAR+loLi1IFDY0YYC8EVjbf0jR8=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$2.class
+SHA1-Digest: kXM1asNOfJMwd4xKO0iQoCX9OJQ=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$2$1.class
+SHA1-Digest: WKs2GFLiVNPZGdL3XGG83DHnS2k=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$3$1.class
+SHA1-Digest: el7LQwdep64BdgOOzjKD81ahy/E=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$4$1.class
+SHA1-Digest: p8btBWRiDNzJFhzAyLoqsbWpYrk=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$6.class
+SHA1-Digest: cAEHZbN/TRah/rc1zTemYiclsKQ=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$12.class
+SHA1-Digest: fYDBzFQbAzYRo3PjUxAZ/ZwocUU=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentModelWizard$EnvironmentModelWizardNewFileCreationPage.class
+SHA1-Digest: rRakmC4zKY1dWjictQNS1YZKTnk=
+
+Name: icons/full/wizban/NewContexts.gif
+SHA1-Digest: JmVVS9Svl6v98xuOpM1Cqi5eU/w=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$16.class
+SHA1-Digest: I7BVE8vXnl9uEZ63zwUBbAHAI0o=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$3$2.class
+SHA1-Digest: +n/q1Nq47o598irObXbN642MVzU=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$2.
+ class
+SHA1-Digest: rgNSIjWm6Q3cBMs5GpJgjyL5wb4=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$11.class
+SHA1-Digest: mLWpidvL85umy/nEfSxgKyET5t0=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$1MyContentOutlinePage.class
+SHA1-Digest: oHYCiB9QarNNoneyZGTJsDBNwtg=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$ReverseAdapterFactoryContentProvider.class
+SHA1-Digest: XE5SIs0ALQpgciehSOpHMEAqSV4=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$6.
+ class
+SHA1-Digest: tHb6trWx+afMHK8UKdGl9QVuq/0=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$15.class
+SHA1-Digest: Ko7OaV7e3xcsEHMpcXugPR/RUEU=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsModelWizard$2.class
+SHA1-Digest: 1yUbQptD4KIJNctM+42z01FCvkE=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$3$
+ 2.class
+SHA1-Digest: zkWS5f/sZmZ7ZpXvrgZnfME5S1g=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentActionBarContributor.class
+SHA1-Digest: yUbGSQ9Av3GQMzVk/V2EtUAXZLA=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiModelWiza
+ rd$UiModelWizardInitialObjectCreationPage$1.class
+SHA1-Digest: w0UVYLGRWQal2c1s1li2BeOvo8A=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentActionBarContributor$1.class
+SHA1-Digest: kICnF/qPe/E0qpJpWZ2TYtNGt+8=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentModelWizard$EnvironmentModelWizardInitialObjectCreationPage.
+ class
+SHA1-Digest: ld9u+MOLgqbpuPLKHmDtdKGwzGg=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$2.class
+SHA1-Digest: pte8pIjWG78wGb+XIeVeNyysik8=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$11
+ .class
+SHA1-Digest: HEu5hDzpMRIvn9v461PY8wjRUcA=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiActionBar
+ Contributor.class
+SHA1-Digest: V7ujwGKTJBZRXaaEarxJ/7TNeWY=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$6.class
+SHA1-Digest: 2txfStGs793EXRWmzZaRsAgqBhA=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$15
+ .class
+SHA1-Digest: T7lV0ePc/TKsUzzRt7F0TWIdLK0=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: icons/full/wizban/NewUi.gif
+SHA1-Digest: Kr4pwwDpEtTKUYGsmbeyS1K7WHE=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentModelWizard$EnvironmentModelWizardInitialObjectCreationPage$
+ 1.class
+SHA1-Digest: rdtfFugqK/hSm9UHYZTeHxtAKBA=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiModelWiza
+ rd$2.class
+SHA1-Digest: Z04inMj33mESvpiQZ2Z4qQICM9g=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$3.class
+SHA1-Digest: AMpuEAcIhAyVp9PHldZs14JuXI4=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$3$2.class
+SHA1-Digest: k8qwc6T9KWwW4o7GkzOSf2SVtu8=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiActionBar
+ Contributor$1.class
+SHA1-Digest: yB+3GJj9dilF243XvvpO3CIJP0E=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$7.class
+SHA1-Digest: kqspMlH9aRn/GAMe4Wcx4HobdDU=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsModelWizard$ContextsModelWizardInitialObjectCreationPage.class
+SHA1-Digest: vvyen6Lra8vd9jqlzmrgR4sGzDI=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$13.class
+SHA1-Digest: LYpWd6KY0Jj6EYTxmUBavSMtH7I=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$17.class
+SHA1-Digest: 5etxdTjLnWmIOEJhh+oOOzxRIlo=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$3.
+ class
+SHA1-Digest: 5HcqynNoIoTSjJ5nc2migfUq03g=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsActionBarContributor.class
+SHA1-Digest: lXTyTPj2mx3aMwn13sr6m8GMRTI=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$12.class
+SHA1-Digest: S5pAcpf25xNaN8wzJLRcUWU6/7Q=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$7.
+ class
+SHA1-Digest: T/Mc8c+p3cZLCOO/OpxpcKaEZIU=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$16.class
+SHA1-Digest: r2inIu0kWdvZ9uZdUkmygQ5fGT8=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsModelWizard$ContextsModelWizardNewFileCreationPage.class
+SHA1-Digest: i1eAKpTFzztQXdmNVjHlr37jhJM=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$ReverseAdapterFactoryContentProvider.class
+SHA1-Digest: iGwmJyK7mBniCtrREjY5Q3BYmoc=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsActionBarContributor$1.class
+SHA1-Digest: HYVYgeVEDCEU5TpLZ5be8qeA/bU=
+
+Name: icons/full/obj16/ContextsModelFile.gif
+SHA1-Digest: fI3ACuBBvgKT+499hy92QJKm4aQ=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentActionBarContributor$2.class
+SHA1-Digest: 6IjcjzuqRT/gN/HOrRs33Lh+fes=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor.class
+SHA1-Digest: zGjDAOOZgT2iOKGoTpLqgO83qO4=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$3.class
+SHA1-Digest: zIeAuzfTgHgFL+eQL3rJXhHCj7g=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$12
+ .class
+SHA1-Digest: 2HTO4HPKk5XwoNXS/kGi+H4VOSs=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$7.class
+SHA1-Digest: I+i4wBs3Hni3V/EnOoGZwYU58LI=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$16
+ .class
+SHA1-Digest: IrFF8ejfE0Q4CihR2cdmQe82xQI=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$4.class
+SHA1-Digest: d4IpkJBy2Zz1GvrF/1+RlU8jAGA=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$Re
+ verseAdapterFactoryContentProvider.class
+SHA1-Digest: FQTNfpMpjy54MZdWwEpYBl8Htmk=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiActionBar
+ Contributor$2.class
+SHA1-Digest: FOfR77Cjc6gGWqCpg89PGKLlugY=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor.cl
+ ass
+SHA1-Digest: XpMRQIDbFvA+VsF+IV/EG4hK8Nk=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$8.class
+SHA1-Digest: JRebUL702NI7kXQpt+/56HUzM7M=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentModelWizard.class
+SHA1-Digest: pfPNKOItiMGb3kxGOBqULY+eMNQ=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$10.class
+SHA1-Digest: Cdjtg66+2RiWojNH010AA3umSgI=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$14.class
+SHA1-Digest: EXZ65UzwXUEZsq+TnyPd/BGUXnc=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$18.class
+SHA1-Digest: xnN49zwr+Vq1+3kpmnlbRIA9D8U=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentModelWizard$1.class
+SHA1-Digest: MJh4Oo++ggFlZKgXrCUe6LiRxaY=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/Pr
+ opertiesEditorPlugin$Implementation.class
+SHA1-Digest: mX/LAF5Hj1SprzOd8zg/d8r9Sk8=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$4.
+ class
+SHA1-Digest: 3Wg4VKBbS5Ip007Hkeu2MORAtXU=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsModelWizard$ContextsModelWizardInitialObjectCreationPage$1.class
+SHA1-Digest: wKfRy0AiPuK5cjrqu1JgbuSjM6M=
+
+Name: icons/full/wizban/NewEnvironment.gif
+SHA1-Digest: V9KXQzETCn7Fnt2RiqisQYUWkeE=
+
+Name: icons/full/obj16/EnvironmentModelFile.gif
+SHA1-Digest: ibCudXJqKpPufLBQyBr1RRfkpMY=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$13.class
+SHA1-Digest: QSYdmowe9v7O7jm1JLb2TNJnbUY=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$8.
+ class
+SHA1-Digest: jGXLfF1lDZ57WO/6bAze4jXMHkI=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$17.class
+SHA1-Digest: c804+0BkhSW1cqlMJ4i0XAMf3UE=
+
+Name: plugin.properties
+SHA1-Digest: Vv7VOVRG9gJKxkWNhfEvB8Qgz5w=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsActionBarContributor$2.class
+SHA1-Digest: XnZa21vLrj12Zn8VBM6lT7iqVJg=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor.class
+SHA1-Digest: omVuG4pmalfoBZn1+yIVJMTtKhU=
+
+Name: plugin.xml
+SHA1-Digest: 69GfJ8QyM3TSXuAGVfP2hqTBMEY=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentActionBarContributor$3.class
+SHA1-Digest: qZFkDwlUhpKvZ241XYh9leKjQWU=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$3$1ResourceDeltaVisitor.class
+SHA1-Digest: xuonmr28tm4E1+gBr17YItm81OY=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$4.class
+SHA1-Digest: tATijst36NTzYXGvg7p3VwU9HF0=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$13
+ .class
+SHA1-Digest: RMV3NrwHNVO+nsCOSN5FR9MZmoQ=
+
+Name: org/eclipse/papyrus/views/properties/contexts/presentation/Conte
+ xtsEditor$8.class
+SHA1-Digest: HT/GNqi5SLZSgZRQyTb5f5AEUec=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$17
+ .class
+SHA1-Digest: cH0ZLuX7gz151blbOW8EhloMbvw=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$1.class
+SHA1-Digest: 3nV3kiqYFiAKVBT7Kd0pFFq/noU=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$5.class
+SHA1-Digest: hy1Cclt0yWrKa+zN9wLHgp/Ekkg=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiEditor$3$
+ 1ResourceDeltaVisitor.class
+SHA1-Digest: nJOIez1+ZglgEmx9bhuhg6FSwg8=
+
+Name: org/eclipse/papyrus/views/properties/ui/presentation/UiActionBar
+ Contributor$3.class
+SHA1-Digest: k5/xdoryM2tCZUXQG+dD9YpMTZY=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$9.class
+SHA1-Digest: wzjRsygMS1FWI6e0SNDlDDc7RVE=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$11.class
+SHA1-Digest: eJ/aLbOGwfM5tjHCz/FMbrMWPK0=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$2$1.class
+SHA1-Digest: K3l4XWHyo25v+SV6c5Nqri+MCLU=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$15.class
+SHA1-Digest: mkocyBNM4ZZQ6v4kfT824asD4bw=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$3$1.class
+SHA1-Digest: pNzCtw158pANzhhNURICixUB5mM=
+
+Name: org/eclipse/papyrus/views/properties/environment/presentation/En
+ vironmentEditor$4$1.class
+SHA1-Digest: qpuukFnXihr3NxCYVuhEFulcnAY=
+

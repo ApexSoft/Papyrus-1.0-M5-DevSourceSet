@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Composite
+	xmlns:css="clr-namespace:org.eclipse.papyrus.infra.gmfdiag.css.properties.widgets"
+	xmlns="http://www.eclipse.org/xwt/presentation"
+	xmlns:ppel="clr-namespace:org.eclipse.papyrus.views.properties.widgets.layout"
+	xmlns:ppe="clr-namespace:org.eclipse.papyrus.views.properties.widgets"
+	xmlns:x="http://www.eclipse.org/xwt">
+	<Composite.layout>
+		<GridLayout numColumns="1"></GridLayout>
+	</Composite.layout>
+	<css:ResetStyleWidget input="{Binding}"></css:ResetStyleWidget>
+</Composite>

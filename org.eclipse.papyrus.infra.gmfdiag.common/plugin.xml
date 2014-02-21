@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<plugin>
+   <extension-point id="nestedEditor" name="NestedEditor" schema="schema/nestedEditor.exsd"/>
+   <extension-point id="initializeView" name="initializeView" schema="schema/initializeView.exsd"/>
+   <extension-point id="shapeProvider" name="ShapeProvider" schema="schema/shapeProvider.exsd"/>
+   <extension-point id="notationTypesMapping" name="notationTypesMapping" schema="schema/notationTypesMapping.exsd"/>
+   <extension-point id="svgPostProcessors" name="svgPostProcessors" schema="schema/svgPostProcessors.exsd"/>
+
+<extension
+      point="org.eclipse.papyrus.infra.core.papyrusDiagram">
+   <editorContext
+         contextClass="org.eclipse.papyrus.infra.gmfdiag.common.GmfEditorContext"
+         id="com.cea.papyrus.gmf.editor.context">
+   </editorContext>
+   </extension>
+<extension
+      point="org.eclipse.ui.handlers">
+   <handler
+         class="org.eclipse.papyrus.infra.gmfdiag.common.handler.RefreshHandler"
+         commandId="org.eclipse.ui.file.refresh">
+      <activeWhen>
+         <with
+               variable="activePartId">
+            <equals
+                  value="org.eclipse.papyrus.infra.core.papyrusEditor">
+            </equals>
+         </with>
+      </activeWhen>
+   </handler>
+</extension>
+<extension
+      point="org.eclipse.ui.menus">
+   <menuContribution
+         allPopups="false"
+         locationURI="toolbar:org.eclipes.papyrus.menu.toolbar">
+      <command
+            commandId="org.eclipse.ui.file.refresh"
+            icon="icons/refresh.gif"
+            label="Refresh"
+            style="push"
+            tooltip="Refresh the current diagram">
+         <visibleWhen
+               checkEnabled="false">
+            <with
+                  variable="activeEditorId">
+               <equals
+                     value="org.eclipse.papyrus.infra.core.papyrusEditor">
+               </equals>
+            </with>
+         </visibleWhen>
+      </command>
+   </menuContribution>
+</extension>
+<extension
+      point="org.eclipse.ui.preferencePages">
+   <page
+         category="org.eclipse.papyrus.infra.core.sasheditor.preferences.generalcategory"
+         class="org.eclipse.papyrus.infra.gmfdiag.common.preferences.ConnectionToolPreferencePage"
+         id="org.eclipse.papyrus.infra.gmfdiag.common.connectionTools"
+         name="Connection Tools">
+   </page>
+</extension>
+<extension
+      point="org.eclipse.core.runtime.preferences">
+   <initializer
+         class="org.eclipse.papyrus.infra.gmfdiag.common.preferences.ConnectionToolPreferenceInitializer">
+   </initializer>
+</extension>
+   <extension
+         point="org.eclipse.papyrus.infra.core.model">
+      <model
+            classname="org.eclipse.papyrus.infra.gmfdiag.common.model.NotationModel"
+            description="Model for notation">
+      </model>
+  </extension>
+
+
+   <extension
+         point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            class="org.eclipse.gmf.runtime.emf.core.resources.GMFResourceFactory"
+            type="notation">
+      </parser>
+   </extension>
+<extension
+         point="org.eclipse.papyrus.infra.core.service">
+      <serviceFactory
+            classname="org.eclipse.papyrus.infra.gmfdiag.common.undocontext.UndoContextServiceFactory"
+            description="The shared IUndoContext used to tag command in the CommandStack"
+            id="org.eclipse.core.commands.operations.IUndoContext"
+            priority="1"
+            startKind="lazy">
+         <dependsOn
+               serviceKeyRef="org.eclipse.emf.transaction.TransactionalEditingDomain">
+         </dependsOn>
+      </serviceFactory>
+      <service
+            classname="org.eclipse.papyrus.infra.gmfdiag.common.DefaultGraphicalEditorSupport"
+            description="The default diagram editor support implementation."
+            id="org.eclipse.papyrus.infra.gmfdiag.common.IGraphicalEditorSupport"
+            priority="1"
+            startKind="lazy">
+      </service>
+   </extension>
+<extension
+      point="org.eclipse.papyrus.infra.services.labelprovider.labelProvider">
+   <labelProvider
+         priority="40"
+         provider="org.eclipse.papyrus.infra.gmfdiag.common.providers.NotationFilteredLabelProvider">
+   </labelProvider>
+</extension>
+<extension
+      point="org.eclipse.gmf.runtime.diagram.ui.decoratorProviders">
+   <decoratorProvider
+         class="org.eclipse.papyrus.infra.gmfdiag.common.providers.ShapeDecoratorProvider">
+      <Priority
+            name="Lowest">
+      </Priority>
+   </decoratorProvider>
+</extension>
+<extension
+      point="org.eclipse.core.runtime.adapters">
+   <factory
+         adaptableType="org.eclipse.gmf.runtime.notation.Diagram"
+         class="org.eclipse.papyrus.infra.gmfdiag.common.adapter.DiagramAdapterFactory">
+      <adapter
+            type="org.eclipse.papyrus.infra.core.sasheditor.di.contentprovider.IOpenable">
+      </adapter>
+   </factory>
+</extension>
+
+<!-- ElementType bindings for diagram duplication with paste command -->
+ <extension
+         point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+      <metamodel
+            nsURI="http://www.eclipse.org/emf/2002/Ecore">
+         <adviceBinding
+               class="org.eclipse.papyrus.infra.gmfdiag.common.advice.GMFDiagramDuplicateEditHelperAdvice"
+               id="org.eclipse.papyrus.infra.gmfdiag.common.advice.GMFDiagramDuplicateEditHelperAdvice"
+               inheritance="none"
+               typeId="*">
+         </adviceBinding>
+      </metamodel>
+   </extension>
+   
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+
+	<!-- Bindings declaration -->
+	<binding context="org.eclipse.papyrus.infra.services.edit.TypeContext">
+		<advice ref="org.eclipse.papyrus.infra.gmfdiag.common.advice.GMFDiagramDuplicateEditHelperAdvice" />
+	</binding>
+</extension>
+<extension
+      point="org.eclipse.core.expressions.propertyTesters">
+   <propertyTester
+         class="org.eclipse.papyrus.infra.gmfdiag.common.utils.DiagramPropertyTester"
+         id="org.eclipse.papyrus.infra.gmfdiag.common.diagram.tester"
+         namespace="org.eclipse.papyrus.infra.gmfdiag.common.diagram.tester"
+         properties="isDiagramEditor"
+         type="org.eclipse.jface.viewers.IStructuredSelection">
+   </propertyTester>
+   <propertyTester
+         class="org.eclipse.papyrus.infra.gmfdiag.common.utils.DiagramPropertyTester"
+         id="org.eclipse.papyrus.infra.gmfdiag.common.diagram.context.tester"
+         namespace="org.eclipse.papyrus.infra.gmfdiag.common.diagram.context.tester"
+         properties="isGmfDiagramContextActive"
+         type="java.util.Collection">
+   </propertyTester>
+</extension>
+<extension
+      point="org.eclipse.papyrus.infra.gmfdiag.common.shapeProvider">
+   <shapeProvider
+         class="org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider"
+         description="Provides shapes based on the applied styles."
+         id="org.eclipse.papyrus.infra.gmfdiag.common.providers.StyleBasedShapeProvider"
+         name="StyleBasedShapeProvider">
+      <Priority
+            name="Low"></Priority>
+   </shapeProvider>
+</extension>
+</plugin>

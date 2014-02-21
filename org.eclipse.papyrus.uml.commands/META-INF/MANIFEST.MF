@@ -1,0 +1,79 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.commands;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.common;bundle-version="2.7.0",org.eclipse.emf.ecore;bundle-version=
+ "2.7.0",org.eclipse.emf;bundle-version="2.6.0",org.eclipse.papyrus.in
+ fra.services.edit;bundle-version="1.0.0",org.eclipse.uml2.uml;bundle-
+ version="3.2.0",org.eclipse.papyrus.views.modelexplorer;bundle-versio
+ n="1.0.0",org.eclipse.core.expressions,org.eclipse.emf.transaction;bu
+ ndle-version="1.4.0",org.eclipse.gmf.runtime.common.core;bundle-versi
+ on="1.4.1",org.eclipse.gmf.runtime.emf.type.core;bundle-version="1.4.
+ 0",org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.p
+ apyrus.uml.tools.utils;bundle-version="1.0.0",org.eclipse.papyrus.inf
+ ra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.papyrus.infra.
+ core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra.core;bundle
+ -version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.commands.Activator
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/commands/handler/AbstractEMFCommandHandl
+ er.class
+SHA1-Digest: iAMDrL0ejaQSamZ6SZfQ44pdbGg=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/commands/handler/PasteHandler.class
+SHA1-Digest: sG9h1cS1zgG+HlfCzexSSr3WoLw=
+
+Name: org/eclipse/papyrus/uml/commands/handler/tester/UMLPropertyTeste
+ r.class
+SHA1-Digest: SOh5UPFvuZJFujyp11weBYFets0=
+
+Name: org/eclipse/papyrus/uml/commands/command/PasteElementCommand.cla
+ ss
+SHA1-Digest: 6+9kyMAzPYGEbOar9SQgX1bRF1I=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/commands/handler/AbstractEMFCommandHandl
+ er$1.class
+SHA1-Digest: yW/C3JUACYasuRc3TfCjwzEWiw4=
+
+Name: plugin.properties
+SHA1-Digest: 0SXZPOU6SrZYynKPISO+zMOPees=
+
+Name: org/eclipse/papyrus/uml/commands/handler/RenameNamedElementHandl
+ er.class
+SHA1-Digest: JvSyI4An5Edq7PcTNKJN8ww4BN4=
+
+Name: org/eclipse/papyrus/uml/commands/command/GMFtoEMFCommandWrapper.
+ class
+SHA1-Digest: iIxz6qOiIRYm0fzg3NawmMeSzO8=
+
+Name: org/eclipse/papyrus/uml/commands/handler/CopyHandler.class
+SHA1-Digest: t2BKiGiExUsQ0OOHkBUSDaDGiIY=
+
+Name: org/eclipse/papyrus/uml/commands/handler/RenameNamedElementHandl
+ er$1.class
+SHA1-Digest: O8zLWNLL0unTwAR5g23WIfURTBk=
+
+Name: plugin.xml
+SHA1-Digest: GZXSuaYTxeVeDscqNFvQFanp13A=
+
+Name: org/eclipse/papyrus/uml/commands/Activator.class
+SHA1-Digest: zGypnmXv0QZa4lDZO+whqAYvjfM=
+
+Name: org/eclipse/papyrus/uml/commands/handler/CopyHandler$PutInClipbo
+ ardCommand.class
+SHA1-Digest: vNORzDPIek3noFjV9/2XVBhFQ5c=
+

@@ -1,0 +1,123 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.newchild;singleton:=tru
+ e
+Bundle-Activator: org.eclipse.papyrus.infra.newchild.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f;bundle-version="2.6.0",org.eclipse.emf.ecore,org.eclipse.osgi,org.e
+ clipse.emf.ecore.xmi,org.eclipse.papyrus.infra.queries.core.configura
+ tion;bundle-version="1.0.0",org.eclipse.papyrus.infra.extendedtypes;b
+ undle-version="1.0.0",org.eclipse.papyrus.infra.services.resourceload
+ ing;bundle-version="1.0.0",org.eclipse.emf.transaction,org.eclipse.gm
+ f.runtime.emf.type.core,org.eclipse.papyrus.infra.services.edit;bundl
+ e-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-v
+ ersion="1.0.0"
+Export-Package: org.eclipse.papyrus.infra.newchild,org.eclipse.papyrus
+ .infra.newchild.ElementCreationMenuModel,org.eclipse.papyrus.infra.ne
+ wchild.ElementCreationMenuModel.impl,org.eclipse.papyrus.infra.newchi
+ ld.ElementCreationMenuModel.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/impl
+ /MenuImpl.class
+SHA1-Digest: fpD0l2XhJkf6ZhgRXBc54FsuydI=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/util
+ /ElementCreationMenuModelResourceFactoryImpl.class
+SHA1-Digest: Is0SZ7XWFaFATRo+z62r55JBW+4=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/Elem
+ entCreationMenuModelPackage.class
+SHA1-Digest: WCX2mbjH1T4pRNIPuIkYvUW9Drs=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/impl
+ /ElementCreationMenuModelPackageImpl.class
+SHA1-Digest: YP6NTXhnBP5FuPBj4dvt6bPb8r8=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/Elem
+ entCreationMenuModelFactory.class
+SHA1-Digest: bQk6YFEVfJWasjqRu6yoC9M8LMU=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/impl
+ /ElementCreationMenuModelFactoryImpl.class
+SHA1-Digest: xkFFlDsq8vNEfKAU2DQE1BjF5uo=
+
+Name: plugin.properties
+SHA1-Digest: IkBCI7bEOkrFSqkI+SN5QMvTsEQ=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/impl
+ /FolderImpl.class
+SHA1-Digest: XdhutmJtGcWyoiIbcqRhfKcS7kM=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/Elem
+ entCreationMenuModelPackage$Literals.class
+SHA1-Digest: pBM6IAjbskLXuasHCaYcCycKLdk=
+
+Name: plugin.xml
+SHA1-Digest: +Rbq4X6A7STDt0Xpvs1H8XLIBjI=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/Crea
+ tionMenu.class
+SHA1-Digest: zkTbdnIyP/KKV/Uhlg63gtyPhpI=
+
+Name: schema/org.eclipse.papyrus.infra.newchild.exsd
+SHA1-Digest: qPDiHGO1UVTrBo0LKvJLEINU/P4=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/Menu
+ .class
+SHA1-Digest: y1nCgKUGIoCAqwxMW4pQosIt4uQ=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/util
+ /ElementCreationMenuModelSwitch.class
+SHA1-Digest: BxcxCeUnH7Su5OUx1UMd6/XZ6ZQ=
+
+Name: org/eclipse/papyrus/infra/newchild/CreationMenuListener.class
+SHA1-Digest: W0AvGo8kYSpJfdfahvN4EM2T6L4=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/util
+ /ElementCreationMenuModelAdapterFactory.class
+SHA1-Digest: KPSNtU6OmLeQIO5XrLwsClvzREk=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/util
+ /ElementCreationMenuModelXMLProcessor.class
+SHA1-Digest: YPQwUE9J6wlHGdYOpJYwG8LcI0k=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/newchild/CreationMenuRegistry.class
+SHA1-Digest: K1f32KQvi4und3xeZZ3zFoSQYQw=
+
+Name: org/eclipse/papyrus/infra/newchild/CreationMenuFactory.class
+SHA1-Digest: slfwWcZaYGHV2JWezWmFRUyCyy0=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/Fold
+ er.class
+SHA1-Digest: F9lYq6NOHw2itNBoXROebe2vOj0=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/util
+ /ElementCreationMenuModelAdapterFactory$1.class
+SHA1-Digest: 9nQFBtyZVTV1kd8UT2lO/mmXs3A=
+
+Name: org/eclipse/papyrus/infra/newchild/Activator.class
+SHA1-Digest: bFMvaM6DPQp7xa77pQbkU+TxPY0=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/util
+ /ElementCreationMenuModelResourceImpl.class
+SHA1-Digest: UKPodJ6U2vDNHWRVCFkeBEPQBS8=
+
+Name: org/eclipse/papyrus/infra/newchild/ElementCreationMenuModel/impl
+ /CreationMenuImpl.class
+SHA1-Digest: uz13LPLo5u9IZnURw3AcOk1dgtU=
+

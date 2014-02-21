@@ -1,0 +1,135 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.hyperlink;singl
+ eton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.hyperlink;bundle-version="1.0.0",org.eclipse.papyrus.infr
+ a.gmfdiag.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmf
+ diag.navigation;bundle-version="1.0.0",org.eclipse.gmf.runtime.common
+ .core;bundle-version="1.4.1",org.eclipse.gmf.runtime.notation;bundle-
+ version="1.5.0",org.eclipse.emf.transaction;bundle-version="1.4.0",or
+ g.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyr
+ us.infra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.papyrus.
+ infra.emf;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;b
+ undle-version="1.0.0",org.eclipse.gmf.runtime.diagram.ui;bundle-versi
+ on="1.6.0",org.eclipse.papyrus.infra.services.labelprovider;bundle-ve
+ rsion="1.0.0",org.eclipse.papyrus.infra.gmfdiag.dnd;bundle-version="1
+ .0.0",org.eclipse.papyrus.infra.widgets;bundle-version="1.0.0",org.ec
+ lipse.papyrus.infra.services.navigation;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.hyperlink.Activato
+ r
+Export-Package: org.eclipse.papyrus.infra.gmfdiag.hyperlink,org.eclips
+ e.papyrus.infra.gmfdiag.hyperlink.editpolicies,org.eclipse.papyrus.in
+ fra.gmfdiag.hyperlink.ui
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: GMF Diagram Hyperlink (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/HyperLi
+ nkPopupBarEditPolicy$PopupBarLabelPlusHandle.class
+SHA1-Digest: ZwIEf1yT0W1lQ1uSajq/LD7/JuM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/HyperLi
+ nkPopupBarEditPolicy$PopupBarMouseListener.class
+SHA1-Digest: XosC0rkbKxZq+p2xr+Gb4hWPPHg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/dnd/HyperlinkDropStr
+ ategy.class
+SHA1-Digest: le/YFlcP9GcZtoVDlaLz/ZA/8j8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/HyperLi
+ nkPopupBarEditPolicy$PopupBarLabelHandle.class
+SHA1-Digest: gmCXNRatSbY4xX6fFHy680GKdtA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/Activator.class
+SHA1-Digest: mXGW5wpKXszx4tYP8WAKoaFSoJ8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/navigation/DiagramNa
+ vigableElement$1.class
+SHA1-Digest: s+25qbsw9+UN9Hw0mR8RqV8/Pyo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/ui/HyperLinkDiagramC
+ onstants.class
+SHA1-Digest: PJKrfpEn+9HBID2Hvj2IhYGdfw8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/ui/AdvancedHLManager
+ .class
+SHA1-Digest: XYBmdFAAsNfqLuvqq/OJFB8lsHE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/HyperLi
+ nkPopupBarEditPolicy$PopupBarMouseListener$1.class
+SHA1-Digest: qnig+J9x2Nzs4TNQr4oE01JjLDM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/dnd/HyperlinkDropStr
+ ategy$1.class
+SHA1-Digest: SCj83q5uoAE74gX0DGLvmPruJs8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/HyperLi
+ nkPopupBarEditPolicy.class
+SHA1-Digest: GcrVVeCTp6XwkLIhDYCj+RxlhcY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/Navigat
+ ionEditPolicy.class
+SHA1-Digest: KrnFaiucz0wfdyjFIss+RllS33M=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/providers/SpecificVi
+ ewContentProvider.class
+SHA1-Digest: pRXPB0Jbjx9g/6j2FcAR0z0R3Kc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/HyperLi
+ nkPopupBarEditPolicy$RoundedRectangleWithTail.class
+SHA1-Digest: 9lHLs+uLyq6aJ7egHWHy31K3RGk=
+
+Name: plugin.xml
+SHA1-Digest: SlGTmVI36mlcwsAFQtyvauzYC8c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/ui/LocalDefaultLinkD
+ iagramTab.class
+SHA1-Digest: YJrnooNOan5Y5kR/EDeDebvcMgw=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/Navigat
+ ionEditPolicy$1.class
+SHA1-Digest: xQRyyxxgW3XB/vb0q8kHVbpKmZs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/Navigat
+ ionEditPolicy$2.class
+SHA1-Digest: aHCW/rnLkWPqVTuSXqtCuq9Ff/g=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/ui/LocalDefaultLinkD
+ iagramTab$1.class
+SHA1-Digest: V9jKhQ1DwnqVwkgBGrb+vv9SQLs=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/Navigat
+ ionEditPolicy$1$1.class
+SHA1-Digest: Mqa3yg22fAF3qENJ0mN03uuyvrE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/editpolicies/Navigat
+ ionEditPolicy$2$1.class
+SHA1-Digest: 7b27M/lHx+929Bkze+AYpA6bhJA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/ui/LocalDefaultLinkD
+ iagramTab$NavigableGroupKey.class
+SHA1-Digest: YqxBjJ5yie1SJ75/yQsRH30INgg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/providers/HyperlinkE
+ ditPolicyProvider.class
+SHA1-Digest: y3jTa+sDKR3CGgTVjLta4uaoZ3A=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/navigation/DiagramNa
+ vigableElement.class
+SHA1-Digest: 25RzxLErTK1JgB0XFesd3PBB524=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/hyperlink/navigation/DiagramNa
+ vigationProvider.class
+SHA1-Digest: HGLM3qWKEdKi23jE3pK6xxpqHnM=
+

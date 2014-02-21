@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.alf.common.ui;singleton:=
+ true
+Bundle-Activator: org.eclipse.papyrus.uml.alf.ui.internal.CommonActiva
+ tor
+Require-Bundle: org.eclipse.papyrus.uml.alf.common;bundle-version="1.0
+ .0";visibility:=reexport,org.eclipse.xtext.ui,org.eclipse.ui.editors;
+ bundle-version="3.5.0",org.eclipse.ui.ide;bundle-version="3.5.0",org.
+ eclipse.xtext.ui.shared,org.eclipse.ui,org.antlr.runtime
+Export-Package: org.eclipse.papyrus.uml.alf.ui.contentassist
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Import-Package: org.apache.log4j
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/alf/ui/internal/CommonActivator.class
+SHA1-Digest: gX3yaVjLYN7ERuuHdDRlsAnTVb8=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/alf/ui/contentassist/CommonProposalProvi
+ der.class
+SHA1-Digest: Qb+lUC+qM6sLWE36P6vlE2cwt58=
+
+Name: org/eclipse/papyrus/uml/alf/ui/CommonUiModule.class
+SHA1-Digest: JW8bEICyRq7qogLhfSZe7QswGrw=
+
+Name: org/eclipse/papyrus/uml/alf/ui/contentassist/AbstractCommonPropo
+ salProvider.class
+SHA1-Digest: x5Xp9/3Ofx0f4Ai7QYqAA03KQsk=
+
+Name: org/eclipse/papyrus/uml/alf/ui/AbstractCommonUiModule.class
+SHA1-Digest: QwEZBNhPw3U9CB7UefAhcodF4hQ=
+
+Name: org/eclipse/papyrus/uml/alf/ui/CommonExecutableExtensionFactory.
+ class
+SHA1-Digest: hq3zbwnhAqQe8UzIDaqwEiJEIvk=
+
+Name: plugin.xml
+SHA1-Digest: R+E+46QUMfzdx3WWNFIsQQP4vNo=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: plugin.properties
+SHA1-Digest: xG2uDfEw7Z7FQKKVGoU++ZgWzmA=
+

@@ -1,0 +1,675 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.css;singleton:=
+ true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.e4
+ .ui.css.core;bundle-version="0.10.0",org.eclipse.emf.ecore;bundle-ver
+ sion="2.8.0",org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org
+ .eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.gm
+ f.runtime.diagram.ui;bundle-version="1.5.0",org.w3c.css.sac;bundle-ve
+ rsion="1.3.1",org.eclipse.papyrus.infra.emf.appearance;bundle-version
+ ="1.0.0",org.eclipse.papyrus.infra.tools;bundle-version="1.0.0",org.e
+ clipse.core.databinding;bundle-version="1.4.1",org.eclipse.papyrus.in
+ fra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.
+ css.model;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.co
+ mmon;bundle-version="1.0.0",org.eclipse.papyrus.infra.core;bundle-ver
+ sion="1.0.0",org.eclipse.papyrus.infra.services.markerlistener;bundle
+ -version="1.0.0",org.eclipse.gmf.runtime.notation.edit;bundle-version
+ ="1.7.0",org.w3c.dom.svg;bundle-version="1.1.0"
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.css.Activator
+Export-Package: org.eclipse.papyrus.infra.gmfdiag.css,org.eclipse.papy
+ rus.infra.gmfdiag.css.converters,org.eclipse.papyrus.infra.gmfdiag.cs
+ s.dom,org.eclipse.papyrus.infra.gmfdiag.css.engine,org.eclipse.papyru
+ s.infra.gmfdiag.css.engine.enginecopy,org.eclipse.papyrus.infra.gmfdi
+ ag.css.handler,org.eclipse.papyrus.infra.gmfdiag.css.helper,org.eclip
+ se.papyrus.infra.gmfdiag.css.listener,org.eclipse.papyrus.infra.gmfdi
+ ag.css.lists,org.eclipse.papyrus.infra.gmfdiag.css.notation,org.eclip
+ se.papyrus.infra.gmfdiag.css.preferences,org.eclipse.papyrus.infra.gm
+ fdiag.css.provider,org.eclipse.papyrus.infra.gmfdiag.css.resource,org
+ .eclipse.papyrus.infra.gmfdiag.css.service,org.eclipse.papyrus.infra.
+ gmfdiag.css.style.impl,org.eclipse.papyrus.infra.gmfdiag.css.theme
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSConnectorSty
+ leDelegate.class
+SHA1-Digest: 00ZjBUOutpyq0WuyhecEs6BjMBc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ElementProviderWrap
+ per.class
+SHA1-Digest: WPXHkQ5ygXqnhFY+nMT0rgy5B64=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSPageStyleDel
+ egate.class
+SHA1-Digest: ifQJI/HLoleXLWtQKU5Fe4wWZiw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ExtendedCSSEngine.c
+ lass
+SHA1-Digest: AFhEa27pER+BEJYlIRJK7uWiTLM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSDescriptionStyleImpl.cl
+ ass
+SHA1-Digest: pKH0q3QQtrMzx+yucbrTSp0GGw8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSGuideStyleImpl.class
+SHA1-Digest: V0aDhpRYX5bTfI0yB0ZLsu1jAts=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/CSSDiagram.class
+SHA1-Digest: UZGO2uz0w+EqstMvjzd20YhdqR0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/theme/ThemeManager.class
+SHA1-Digest: SRW/LHHxcGaqkeTJ8Yt//CO5AKo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSCanonicalStyleImpl.clas
+ s
+SHA1-Digest: Jnz3DXGt3IhnqdZM7M7CNX6dPVg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/provider/CSSCustomStyleDel
+ egate.class
+SHA1-Digest: XaEhNhwSPC/a48C7ttjaYV6M6Yg=
+
+Name: resources/base.css
+SHA1-Digest: Qh2Fq7HCb5Tomk60OxYiF9woxDI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSSemanticListCompartment
+ Impl.class
+SHA1-Digest: ABATZ/w0RFC9gMg4SVQw3qYPfOM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSNamedStyleDe
+ legate.class
+SHA1-Digest: qlyAMfCdbwXZx4cKXa3WeDfqwak=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/command/ResetStyleCommand.
+ class
+SHA1-Digest: ZZSvFn8Kjzpmn/zL0nScVNfVZdA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSPropertiesSetStyl
+ e.class
+SHA1-Digest: WXD6i2yfBgJdOb/LzvGw8VkOWuw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/listener/StyleSheetChangeL
+ istener.class
+SHA1-Digest: 2L7WvWbYqsf13qXwgkUWoapds/E=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/provider/CSSClassContentPr
+ ovider.class
+SHA1-Digest: /pQr+aSFGu+bOgmmRobiOFFHNm4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/CSSAnnotations.cl
+ ass
+SHA1-Digest: zc2nRfym1X34DqgDQk5HgYLr8Qc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/CSSStyles.class
+SHA1-Digest: 6u7CwEUEJsLXdBxdrjdKRlG/4Cw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSHintedDiagramLink
+ Style.class
+SHA1-Digest: T6UrnaK+ZVnhd+OexQmYsxjNL2c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/enginecopy/StyleWra
+ pper$StyleWrapperComparator.class
+SHA1-Digest: ceFJjYHh9TKXPaIGF+5wfQ1F8B0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSSortingStyle.clas
+ s
+SHA1-Digest: ZcIzdvJYrVaGauZpOnTjPVgVoTY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSFontStyle.class
+SHA1-Digest: 13TlyF2E409LXiGdG316p+RHyjs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/service/IMarkerToPseudoSel
+ ectorMappingProvider.class
+SHA1-Digest: m1gxLo4PRqDY7glf+fEt/DMuhqE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSRoutingStyle
+ Delegate.class
+SHA1-Digest: ChYd0B6BNcPnfQZ4GDDl6z9m0W0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/resource/CSSNotationResour
+ ceFactory.class
+SHA1-Digest: WxtRuXEbkzdBpjFC51+XoL5enG4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/helper/SemanticElementHelp
+ er.class
+SHA1-Digest: 9FUq12Prej7S7PJWn8Y8go73c34=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSGuideStyle.class
+SHA1-Digest: +G11FEyWM7bgEYckHEndaWFJU20=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSNamedStyleImpl.class
+SHA1-Digest: dlkda9slolMETVaurdYs8736q7w=
+
+Name: schema/domElementAdapter.exsd
+SHA1-Digest: Vp0kD0eiyTlE4z+zYArblGpJxVg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/editpolicies/EventListener
+ EditPolicyProvider.class
+SHA1-Digest: UQFxmRldoOAEvLWjCeqGlheZxVY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSTitleStyleImpl.class
+SHA1-Digest: YydIEKXklKqkxyxee/ZBFq5tQI8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSDataTypeStyleImpl.class
+SHA1-Digest: r5O+ghhP8wMyMYhyIjn4PRofsaI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/factory/CSSNotationFactory
+ .class
+SHA1-Digest: 9CwzI0vehpm9eZfdWz0A4nzp/DU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/helper/StringHelper.class
+SHA1-Digest: bGu1NeG9vZ3V+QsrPfCMN54fnXA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSCanonicalStyle.cl
+ ass
+SHA1-Digest: 8sE2N3mqqThiBgaBEBF2dFKCsso=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ICSSElementProvider
+ Factory.class
+SHA1-Digest: uRuLr0X18+Ga9hfc+zOBSGHg14M=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSCompartmentImpl.class
+SHA1-Digest: Y8nkIWnA05NeevYlZZyQ0X+3kyI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSListCompartmentImpl.cla
+ ss
+SHA1-Digest: GoQ02y5LkIKCRbdhJ8+EoabDT+w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSConnectorStyle.cl
+ ass
+SHA1-Digest: ClIOQlgWKjbRtB7UrbEqH4/Olxg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/resource/CSSNotationResour
+ ce$ResourceDisposeListener.class
+SHA1-Digest: gyp1EUrHqeubDMeQyKDiUCxrHvA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/converters/StringConverter
+ .class
+SHA1-Digest: 1+7ka2BNBt6WgSGYWP6PdWqQBZY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSStandardDiagramImpl.cla
+ ss
+SHA1-Digest: /Yc2dg6KoKEYepAv/+0hXF7MmvQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSView.class
+SHA1-Digest: RhFLAJQpR64psEQCsuZrlmlw7qk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/lists/ExtendedCSSRuleList.
+ class
+SHA1-Digest: dBwv5SUYZiE4MFNTiuaGEdQJWyE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/helper/ParserHelper.class
+SHA1-Digest: Q6J1xhugqH4dVzQUGhQ0bKMevX8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSLineStyleImpl.class
+SHA1-Digest: RAkSqvso79FTL+ks4NxqBScF0kk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/editpolicies/MarkerEventLi
+ stenerEditPolicy.class
+SHA1-Digest: fo5Pt1sCxGGUWb/VEtpoyaParb0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CssSvgPostProcessor.class
+SHA1-Digest: tl1NDXvV+8E6Gn9NEFmrcCpQ0YM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/helper/ResetStyleHelper.cl
+ ass
+SHA1-Digest: 0mKWvlhw+eg9HcpLvctN/AlXieY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSRoundedCorne
+ rsStyleDelegate.class
+SHA1-Digest: y3FVnYbfcew/cKyXXjXVXSMxky0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSRoundedCornersStyleImpl
+ .class
+SHA1-Digest: U6E+6jV+MwVPHgfoBq1IPj2A4JA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/provider/CSSThemeInitializ
+ er.class
+SHA1-Digest: b1Ld6oaXD0tskVO3grEJUCYGrQM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSFontStyleDel
+ egate.class
+SHA1-Digest: pWgDz77qHps+DH2tr+ifK2u/AMk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSArrowStyleDe
+ legate.class
+SHA1-Digest: N1su3Uxh7rCY1UkNvSK2VNjdwhA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSPageStyleImpl.class
+SHA1-Digest: NNtPXGy+qDcjLvldfKVM5AYBG4U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ExtendedCSSEngineIm
+ pl.class
+SHA1-Digest: wZzSSmktF3w5PC6diuWPfNyNJP4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ProjectCSSEngine.cl
+ ass
+SHA1-Digest: sLcLHw/b0Sf0aia9Ytea+4uHs38=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/CSSDiagramImpl.cl
+ ass
+SHA1-Digest: jeVz8cmhFnBhJ+BvdK//f91DVw8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSTitleStyle.class
+SHA1-Digest: eWX2YzL2QpwmQllspqwvKCPRT3M=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSDataTypeStyle.cla
+ ss
+SHA1-Digest: qZpNa367mFdfN10H8zm67kvwY2I=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/DiagramCSSEngine.cl
+ ass
+SHA1-Digest: kyKdTqEDkNKvRAUt6ECePErjM8s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/helper/GradientHelper.clas
+ s
+SHA1-Digest: uQ9786wrunK4wZUJAmNsXOYtyKM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSBasicSemanticCompartmen
+ tImpl.class
+SHA1-Digest: PUnHC9rmurN4frB1MjMee02AR4w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSDiagramStyleImpl.class
+SHA1-Digest: LnD0i0AQK14uHV1DGthGeMmqEcY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/enginecopy/StyleWra
+ pper.class
+SHA1-Digest: tpZALLlWiUsnC0AuXVa/6SQhr28=
+
+Name: schema/markertopseudoselectormappingprovider.exsd
+SHA1-Digest: kVnzn007JMlK87Jsp5Ym5zU1Kk8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/helper/CSSHelper.class
+SHA1-Digest: I0cCJJWjZGFsYOGJv9qMk60vSgE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSArrowStyleImpl.class
+SHA1-Digest: KrBExZRPn8lZsk2txoWedYwdm3s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/preferences/ThemePreferenc
+ eInitializer.class
+SHA1-Digest: rloeK4C1jFmzC1NUsM4d8pS3U/U=
+
+Name: icons/papyrus.png
+SHA1-Digest: qRVOaQq19Qq/T2+hjrQ+xwWOo8k=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSLineStyle.class
+SHA1-Digest: 3zUNlK2nivT9lzq97fRTzDoOMHM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSPropertiesSe
+ tStyleDelegate.class
+SHA1-Digest: s9szy4acNUwOpyCN3gTL0bUfQVg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/provider/CSSAppearanceProv
+ ider.class
+SHA1-Digest: THBUlmf/FUYZFXrLI8jFt3wrJkU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSRoundedCornersSty
+ le.class
+SHA1-Digest: gzLiW9LbRu0XYvgxfUELUDWum6c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/converters/BooleanConverte
+ r.class
+SHA1-Digest: IxployBmxkTe0IdMJaD1jEoL/0Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSShapeStyle.class
+SHA1-Digest: j2g1hcDwmCIeZYX6xu1MamZtTzE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSLineTypeStyl
+ eDelegate.class
+SHA1-Digest: M9hUQZsxYB9Ba38Cawcaaecmplc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/LazyCSSEngine.class
+SHA1-Digest: n4xJc/FcM3FGM1PKuijQDtlzQtc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSImageStyle.class
+SHA1-Digest: ImqBVukm7icV95N9wC5h5rwmkfw=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/BaseCSSEngine.class
+SHA1-Digest: VC8Z49B1Hm8ECd2kHz/8JVXUgXo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/CSSDiagramImpl$Di
+ agramDisposeListener.class
+SHA1-Digest: KO0Ke6PB/XcBES1a87bfzGUgF9Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSFillStyle.class
+SHA1-Digest: lElcIxaNA3C3mgiVqH0/yHox7uA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSConnectorImpl.class
+SHA1-Digest: +bn/OWKGK05btalbup2CtxoXP+w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ProjectCSSEngine$1$
+ 1$1.class
+SHA1-Digest: QpH0RbnHe/6Yfylh+FOSDZgFfJE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSGuideStyleDe
+ legate.class
+SHA1-Digest: S6ATeqAVOZM9djUP7O/VqAXuIIc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSDiagramStyle.clas
+ s
+SHA1-Digest: B4y6s9FEF9oy1fPffPTQBc83gYc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSPropertiesSetStyleImpl.
+ class
+SHA1-Digest: Vg0Np2lMTMz7iGuFkKK7eYkLNzA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSDiagramLinkStyleImpl.cl
+ ass
+SHA1-Digest: 9TEJG06ajoIE7MvfLEYGKAIdYrQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSBasicCompartmentImpl.cl
+ ass
+SHA1-Digest: WdFnPcq4X7PSAi4VMBHar5YFCBU=
+
+Name: schema/theme.exsd
+SHA1-Digest: 9FQc2nLCzg2C2s9UM8pfYQHgCOw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSHintedDiagramLinkStyleI
+ mpl.class
+SHA1-Digest: A7qRAOeygFNPoMms3qDgQEzrvqE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSMultiDiagram
+ LinkStyleDelegate.class
+SHA1-Digest: E2BQeysjuAyEn28P8/E1ZzeugWg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSLineStyleDel
+ egate.class
+SHA1-Digest: StKWEzb5S0miB6Oovc6cDJviyYk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSSortingStyleImpl.class
+SHA1-Digest: yYImkcY5qUsv4n+Ufckco7zGUNg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSTextStyle.class
+SHA1-Digest: Vxa3M4hQ3q9pD7/rbz2ZYetgf50=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSFontStyleImpl.class
+SHA1-Digest: kRhzd1BLEEOUyeLOD+sGTWCqeeQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/converters/ColorToGMFConve
+ rter.class
+SHA1-Digest: X6tr+0GHggUZYHH85BxshDZ1w7I=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/provider/CustomStyle.class
+SHA1-Digest: gfUV+DtjzHiTIbqsH1O/cdXrk3I=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/theme/ThemeManager$ThemeCo
+ mparator.class
+SHA1-Digest: jKkzssBoYvwQVDfN/cZRmuRLQm0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/converters/IntegerConverte
+ r.class
+SHA1-Digest: QwEIlmf1dERbGtwU8cVl8r74cF0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/StatefulView.clas
+ s
+SHA1-Digest: No5C99cLsVWVmj4tYqh/g/Gmk7w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSFillStyleDel
+ egate.class
+SHA1-Digest: lGCycsTIxXVNNC2NIfhQC4vW25U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/editpolicies/MarkerEventLi
+ stenerEditPolicyProvider.class
+SHA1-Digest: XNbcJBoGopePy9jw9OrXpKSPTh4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ExtendedCSSEngineIm
+ pl$1.class
+SHA1-Digest: 8F40LUSTYuL9q6tc4EL2uwg/FBM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/enginecopy/CSSCompu
+ tedStyleImpl.class
+SHA1-Digest: eQm2geU9cx852CGD3ILFY/KZ2rQ=
+
+Name: icons/sourceEditor.gif
+SHA1-Digest: hgfaPYE2g2ags3P37ChbfzhezDY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSTitleStyleDe
+ legate.class
+SHA1-Digest: fL4ZeBcrjPgj/ofAqLjBaRYZ9Q8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ProjectCSSEngine$1.
+ class
+SHA1-Digest: O/OMcnRG6KcnXzkQotaEsuonl0g=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/lists/ExtendedSelectorList
+ .class
+SHA1-Digest: /a5J+BJZcPJF2DUMGvjM4WQUf2Q=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSConnectorStyleImpl.clas
+ s
+SHA1-Digest: Ily9ln4l/OKy4UvN62mVAG/zLRU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSDiagramLinkStyle.
+ class
+SHA1-Digest: 82UEvdJJF/xhYbyVbLRy1ZlmtdU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/service/MarkerToPseudoSele
+ ctorMappingService.class
+SHA1-Digest: JU30kLKKHUQwHJtSHjKw0CR7QkU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/GMFErrorHandler.cla
+ ss
+SHA1-Digest: Q9/uIiKfnnhFjW6fDeIHrGEThmI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSRoutingStyle.clas
+ s
+SHA1-Digest: nyq7O3iQ1Z0DaDEPSHPEN3JkifA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSDiagramLinkS
+ tyleDelegate.class
+SHA1-Digest: bb1tEElnicERzjlgb3ciEqJZcQY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSDrawerStyleD
+ elegate.class
+SHA1-Digest: JEDWJBBqrR9XzCSw6q6jSCCYCng=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSDrawerStyleImpl.class
+SHA1-Digest: XLfq+Z/oQvAXK+PtyNfUPfK9OB0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ProjectCSSEngine$1$
+ 1.class
+SHA1-Digest: AokXFpzDWwSQcYG9sSAyvNC4UFA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/service/CssMarkerEventMana
+ gerService.class
+SHA1-Digest: q6J9hPFy4E/XyC+BQdF4cKHgrjk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/Activator.class
+SHA1-Digest: 9E5xkdlvtiJKEroh6Iyn4JDOs/w=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/lists/ExtendedStyleSheetLi
+ st.class
+SHA1-Digest: gi5hYc12owE7K8Xk0IJrYCzfkVI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/theme/ThemeManager$EmptyTh
+ eme.class
+SHA1-Digest: JlhT5BfsfVeCfcZM1FDl/Ejs2fM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSLineTypeStyleImpl.class
+SHA1-Digest: pttBf4pHdUJEsMehgiULmd1GtOU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSTextStyleDel
+ egate.class
+SHA1-Digest: 4hwcD4ByEYsIuZH51NwNIaZd5j0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSImageBufferStyleImpl.cl
+ ass
+SHA1-Digest: 7O14Q2bKFl3FlZ+FoEMzRrihkzc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSSortingStyle
+ Delegate.class
+SHA1-Digest: o+C9s+XUrRDTw7GzHd+X1QiMt74=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSDescriptionStyle.
+ class
+SHA1-Digest: JLTso3REINIG33hBcHDjOxHzFlQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/GMFElementProvider.
+ class
+SHA1-Digest: 8gB7wYx4KPV72UHi+s6FRgMiC3w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSShapeStyleDe
+ legate.class
+SHA1-Digest: xPfveh8/3y/rtpIMHAX02KRkXdg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/resource/CSSNotationResour
+ ceAdapter.class
+SHA1-Digest: VDAdS5G78TISULbRFQI/xJXWVEw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSDescriptionS
+ tyleDelegate.class
+SHA1-Digest: g09D55sec7ERRBBr9VyKET8Azog=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSImageStyleDe
+ legate.class
+SHA1-Digest: M0OYYWPVdgy4XUL235Ua3t8o1QM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/resource/CSSNotationModel.
+ class
+SHA1-Digest: WsyyK/X/4aBl1PM3MLv8ekhc2+Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/resource/CSSNotationResour
+ ce.class
+SHA1-Digest: 4x0CrJc1+XUqASi5kC/Kli+ZrwA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/ModelCSSEngine.clas
+ s
+SHA1-Digest: +GO3u3vPeZf8FUbwPXf5/7vi14c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/preferences/ThemePreferenc
+ esPage.class
+SHA1-Digest: ZsfWMTHra+nnHJ+KtE5H3wViAbU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSMultiDiagramLinkStyleIm
+ pl.class
+SHA1-Digest: I9ac0yfr8xNbYtuaxlBs8KS46f8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSDrawerStyle.class
+SHA1-Digest: LSIlYHvywoAOiQQ2ElRazhbekok=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSViewDelegate
+ .class
+SHA1-Digest: e1blT1/KXnFfXyutfzcoiXKhTtk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSShapeStyleImpl.class
+SHA1-Digest: 5NJ15UINys14iLofZef91/QHgNM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSFilteringSty
+ leDelegate.class
+SHA1-Digest: Ztc+0sJnOBxiZsIBzxrAXBR1PkI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSLineTypeStyle.cla
+ ss
+SHA1-Digest: GFI1XgJC6zyBIcyth4hyL6hSbKY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSShapeImpl.class
+SHA1-Digest: sddSGYcW+tIYoIZ6i0UB4OvFEME=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/dom/StyleListener.class
+SHA1-Digest: 9C71lgQMxDly74iWO2NAaLvZHnM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSImageStyleImpl.class
+SHA1-Digest: aX398eBOpWZjOOLuBR/Lcifvbxo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/enginecopy/Extended
+ ViewCSSImpl.class
+SHA1-Digest: ye3XMyvGdYZjZi1c2sQ2rvGq6OM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSImageBufferStyle.
+ class
+SHA1-Digest: mZZ48PZSRKlgQgSWecpDRRVPL+o=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/preferences/ThemePreferenc
+ es.class
+SHA1-Digest: b2ufnbCM8LfaMXsO0v3KQTG+w7g=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSNamedStyle.class
+SHA1-Digest: Ey8FjNvukLJzOxtbROQozaaJ8KE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/engine/WorkspaceCSSEngine.
+ class
+SHA1-Digest: lYrU/Xf4khAb8qqgeq4E2E/bK3I=
+
+Name: plugin.properties
+SHA1-Digest: hxbyJLpzuT9EwRWTcXH2OZSIn9c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSFillStyleImpl.class
+SHA1-Digest: 7+oChw1iIdJMIuxbTEm761OJRRM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/notation/ForceValueHelper.
+ class
+SHA1-Digest: c5v1optkilqKFA8yLIFqrW124Yw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/theme/Theme.class
+SHA1-Digest: 8nbgjqBXShF5jH7SsVrsX2rBUsU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSImageBufferS
+ tyleDelegate.class
+SHA1-Digest: b5H/o57ZB+Xi4sSrR4WMIjD2vF8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/handler/ResetStyleHandler.
+ class
+SHA1-Digest: 5l/DNx8neyUfT8VUZpf+qU+y4wU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/dom/GMFElementAdapter.clas
+ s
+SHA1-Digest: DEMOEhVUJqy5IEbnXWd3JmJgWg8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSFilteringStyleImpl.clas
+ s
+SHA1-Digest: ks2JWpvAJUJPFYXesjUlPKpFMCw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/editpolicies/EventListener
+ EditPolicy.class
+SHA1-Digest: xyU/sPYsr5hav+isF+yg04oOYQ8=
+
+Name: plugin.xml
+SHA1-Digest: xW5YcbJkOf9f9QUDUYXsEEF/IXo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSMultiDiagramLinkS
+ tyle.class
+SHA1-Digest: aosNcH+LS0Vcn7ij4ne9Zzdir38=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSPageStyle.class
+SHA1-Digest: REAbHT6YLjGyftv3+74yxWL40B8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSHintedDiagra
+ mLinkStyleDelegate.class
+SHA1-Digest: SBdzP2HZnWyOCDarjD2ohKnVi64=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSTextStyleImpl.class
+SHA1-Digest: nk9yNLk4HwO1IUmUQwSMOvjtTxI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSDataTypeStyl
+ eDelegate.class
+SHA1-Digest: n8Wz5zZVCuq4zh0tTqv/qolYcjg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSCanonicalSty
+ leDelegate.class
+SHA1-Digest: UUue6E5Gx2i5uwtNZ1CJ1KOI1O8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/impl/CSSDiagramStyle
+ Delegate.class
+SHA1-Digest: sKB/H7LhsMyzZrCY5iNdubGpcVU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSFilteringStyle.cl
+ ass
+SHA1-Digest: 7J126xFX+06FdeAJDmV+Y4bikeY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/style/CSSArrowStyle.class
+SHA1-Digest: ig4ZYQiEmi3zEjteCQP5i5ES5dg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/CSSRoutingStyleImpl.class
+SHA1-Digest: 9sEizOkZmK4PV+7QT31L6stlAHg=
+

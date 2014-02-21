@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="operationApprover" name="operationApprover" schema="schema/operationApprover.exsd"/>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="org.eclipse.papyrus.commands.RenameDiagramHandler"
+            commandId="org.eclipse.papyrus.infra.core.sasheditor.command.tabdoubleclick">
+         <activeWhen>
+            <with
+                  variable="activeEditor">
+               <adapt
+                     type="org.eclipse.gmf.runtime.notation.Diagram">
+               </adapt>
+            </with>
+         </activeWhen>
+      </handler>
+   </extension>
+
+</plugin>

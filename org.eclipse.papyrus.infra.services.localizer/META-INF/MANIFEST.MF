@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.localizer;sing
+ leton:=true
+Bundle-Activator: org.eclipse.papyrus.infra.services.localizer.interna
+ l.Activator
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.papyrus.infra.cor
+ e;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bundle-ve
+ rsion="1.0.0",org.eclipse.emf.ecore;bundle-version="[2.9.0,3.0.0)",or
+ g.eclipse.papyrus.infra.emf;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.infra.services.localizer,org.eclip
+ se.papyrus.infra.services.localizer.internal;x-internal:=true,org.ecl
+ ipse.papyrus.infra.services.localizer.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Import-Package: com.google.common.base;version="10.0.0",com.google.com
+ mon.collect;version="10.0.0"
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/localizer/util/LocalizerUtil.
+ class
+SHA1-Digest: x2ISZTIa5a1MSBXZKJ1+xawrpSI=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/localizer/AbstractObjectLocal
+ izer.class
+SHA1-Digest: 2rOYIdXyO0HsfdfF8BC9bX/6Lso=
+
+Name: org/eclipse/papyrus/infra/services/localizer/IObjectLocalizer.cl
+ ass
+SHA1-Digest: YXl8f6QGbNosoem2cd3FWcaoDhY=
+
+Name: org/eclipse/papyrus/infra/services/localizer/internal/Activator.
+ class
+SHA1-Digest: jG1E0/Aex3XE7hs9RgcoLiiqdrs=
+
+Name: org/eclipse/papyrus/infra/services/localizer/util/DefaultObjectL
+ ocalizerFactory.class
+SHA1-Digest: OUTecO6/YzOtSSxZc4ep6k09meg=
+
+Name: plugin.xml
+SHA1-Digest: hL/OrDu7HL07PxSwh2xxUDmcbxc=
+
+Name: about.html
+SHA1-Digest: 0/JRSIkACj5oq5T752LvziiAlhA=
+
+Name: plugin.properties
+SHA1-Digest: E412MWOREOTFq9uOxwDTishWNU8=
+
+Name: org/eclipse/papyrus/infra/services/localizer/DefaultObjectLocali
+ zer.class
+SHA1-Digest: 5yaShEFkaFg122M0gmsrrsiPvZY=
+

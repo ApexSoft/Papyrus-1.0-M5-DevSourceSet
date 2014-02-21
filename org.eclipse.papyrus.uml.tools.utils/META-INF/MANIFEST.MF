@@ -1,0 +1,160 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.tools.utils;singleton:=tr
+ ue
+Require-Bundle: org.eclipse.uml2.uml,org.eclipse.jface;bundle-version=
+ "3.4.1",org.eclipse.emf.transaction;bundle-version="1.2.1",org.eclips
+ e.gmf.runtime.emf.type.core;bundle-version="1.4.0",org.eclipse.papyru
+ s.infra.emf;bundle-version="1.0.0",org.eclipse.gmf.runtime.notation;b
+ undle-version="1.5.0",org.eclipse.papyrus.infra.core;bundle-version="
+ 1.0.0",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.
+ eclipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0",o
+ rg.eclipse.ui.workbench;bundle-version="3.105.0",org.eclipse.papyrus.
+ infra.tools;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.tools.utils.Activator
+Export-Package: org.eclipse.papyrus.uml.tools.utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %pluginProvider
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/tools/utils/InstanceSpecificationUtil.cl
+ ass
+SHA1-Digest: HQbHAljBOvvuRrxhHSfbIoBNQDg=
+
+Name: org/eclipse/papyrus/uml/tools/utils/UMLStringValueConverter.clas
+ s
+SHA1-Digest: bKz5MRX5bHXqEf7u3qjRAMLvVPs=
+
+Name: org/eclipse/papyrus/uml/tools/utils/Activator.class
+SHA1-Digest: RPWg6xwMW9Kuf64rS5HynE9fPbg=
+
+Name: org/eclipse/papyrus/uml/tools/utils/PrimitivesTypesUtils.class
+SHA1-Digest: heD1yuzsDGB7EQZgz7tsbxSWBCs=
+
+Name: org/eclipse/papyrus/uml/tools/utils/CustomElementOperations.clas
+ s
+SHA1-Digest: sJ9KRiOuepelk/UVysLrbw14eqs=
+
+Name: org/eclipse/papyrus/uml/tools/utils/NameResolutionUtils.class
+SHA1-Digest: Ytpf5LRrfR1hfaqwZxQMWoWjb/k=
+
+Name: org/eclipse/papyrus/uml/tools/utils/SignalUtil.class
+SHA1-Digest: 9OJ1E303IAGXuoMHOxJ5/DiI2R0=
+
+Name: plugin.properties
+SHA1-Digest: 2z9wGFhMa5DUPvr+ohL+cJIRHu8=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ElementUtil.class
+SHA1-Digest: 8xXNgqdvE+eBNPMTBkcY5ySXpt8=
+
+Name: org/eclipse/papyrus/uml/tools/utils/MultiplicityElementUtil.clas
+ s
+SHA1-Digest: d50m0e9c95hdUBIVH5Zc7RjwBvw=
+
+Name: org/eclipse/papyrus/uml/tools/utils/TypedElementUtil.class
+SHA1-Digest: ZW7CVqrZ3zQcJARMT37FW2Xe6Hs=
+
+Name: org/eclipse/papyrus/uml/tools/utils/StereotypeUtil.class
+SHA1-Digest: jGPp0lSZcgRhgOxko19kmzpal+o=
+
+Name: org/eclipse/papyrus/uml/tools/utils/PackageUtil.class
+SHA1-Digest: M25qML2ftM2/DNdKhy7CLVSocho=
+
+Name: org/eclipse/papyrus/uml/tools/utils/EnumerationUtil.class
+SHA1-Digest: YO0l/osFz4vZnxXruZfAMqbpyuc=
+
+Name: org/eclipse/papyrus/uml/tools/utils/TypeUtil.class
+SHA1-Digest: wmtHSyXSreR6NC8NSjJsu9WuZUM=
+
+Name: org/eclipse/papyrus/uml/tools/utils/messages/Messages.class
+SHA1-Digest: Xh5fGgmLfI5GRUwHxaJs1UUBc1o=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/tools/utils/PortUtil.class
+SHA1-Digest: pNAapu1Y1YmnoxPPKjUVbqDSqWQ=
+
+Name: org/eclipse/papyrus/uml/tools/utils/UMLUtil.class
+SHA1-Digest: 2xkIOlsO3lbgT87e2MnhV27wYPI=
+
+Name: org/eclipse/papyrus/uml/tools/utils/CollaborationUseUtil.class
+SHA1-Digest: dHMpJ8wmFmVdz7YNZib6wFU166I=
+
+Name: org/eclipse/papyrus/uml/tools/utils/NameResolutionHelper.class
+SHA1-Digest: dypTYoXrkJCkxz0tDlraSAU955Y=
+
+Name: org/eclipse/papyrus/uml/tools/utils/NamedElementUtil.class
+SHA1-Digest: XnHFFna19s+ylPCEjQepdcrRBgc=
+
+Name: org/eclipse/papyrus/uml/tools/utils/DataTypeUtil.class
+SHA1-Digest: tmfRXm1F8qZRIU2nCzOCvoZsu30=
+
+Name: org/eclipse/papyrus/uml/tools/utils/messages/messages.properties
+SHA1-Digest: 3Oul4wx59+NmQR3srEfoWowmhKE=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ICustomAppearence.class
+SHA1-Digest: qVLxZPIVwFUDRPRjKHcXPtMjg3M=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ImageUtil.class
+SHA1-Digest: ryFAHVQQOTlVqRY/UgytqWE0vFI=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ExecutionSpecificationUtil.c
+ lass
+SHA1-Digest: H0L03envGShtDtBChdobR6moTC4=
+
+Name: org/eclipse/papyrus/uml/tools/utils/TemplateSignatureUtil.class
+SHA1-Digest: agQ71dBR0ynDO2DEz71D/UHZH3c=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ObjectFlowUtil.class
+SHA1-Digest: r+/Ioa5r1cww0bLPAJfXsBMjolk=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ActivityUtil.class
+SHA1-Digest: swun7jk4aMMeR8SrAmqfXXS04TM=
+
+Name: org/eclipse/papyrus/uml/tools/utils/CustomUMLUtil.class
+SHA1-Digest: plMR5UsWZ3laJL9bgPuWby1qcEw=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ExtensionPointUtil.class
+SHA1-Digest: xAsrLtJSUy1NQsDVtqO+orGPrOw=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ValueSpecificationUtil.class
+SHA1-Digest: mY4Bo0JBQb6TemxPIaCyXx5YjUM=
+
+Name: org/eclipse/papyrus/uml/tools/utils/OpaqueBehaviorUtil.class
+SHA1-Digest: vnXSBqSNm5901P1vfNXN+LIPl6M=
+
+Name: org/eclipse/papyrus/uml/tools/utils/PropertyUtil.class
+SHA1-Digest: qLbxKL0LDkIas1L4QwyUcYLr+oA=
+
+Name: org/eclipse/papyrus/uml/tools/utils/PackageUtil$TypeNameComparat
+ or.class
+SHA1-Digest: bq7fZ9sIm9hc0dj/+SXjYl6O6b8=
+
+Name: org/eclipse/papyrus/uml/tools/utils/OperationUtil.class
+SHA1-Digest: bzDx1d0QtfWOjA3b3/SmOhdTTuQ=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ProfileUtil.class
+SHA1-Digest: t+pUhCmTWgwxMUKhf5bSBC2i9iE=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ParameterUtil.class
+SHA1-Digest: +32YUCIf6eU03PFTn2AgLmZGAyg=
+
+Name: org/eclipse/papyrus/uml/tools/utils/OpaqueExpressionUtil.class
+SHA1-Digest: kDrXmXuxa3NdvkS6jkt9dw9cGYA=
+
+Name: org/eclipse/papyrus/uml/tools/utils/CustomUMLUtil$StereotypeAppl
+ icationHelper.class
+SHA1-Digest: EKlDYukl5Z4SuT+V1gj1SxzQkwc=
+
+Name: org/eclipse/papyrus/uml/tools/utils/ControlFlowUtil.class
+SHA1-Digest: JZpuq10BbQs/mCFObmcufvFA1W4=
+

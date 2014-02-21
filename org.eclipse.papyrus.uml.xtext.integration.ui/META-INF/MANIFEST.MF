@@ -1,0 +1,251 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.xtext.integration.ui;sing
+ leton:=true
+Require-Bundle: org.eclipse.gef;bundle-version="3.9.0",org.eclipse.cor
+ e.runtime;bundle-version="3.9.0",org.eclipse.gmf.runtime.common.core;
+ bundle-version="1.7.0",org.eclipse.gmf.runtime.diagram.ui;bundle-vers
+ ion="1.7.0",org.eclipse.xtext;bundle-version="2.4.2",org.eclipse.xtex
+ t.ui;bundle-version="2.4.2",org.eclipse.ui.ide;bundle-version="3.9.0"
+ ,org.eclipse.papyrus.uml.xtext.integration.core;bundle-version="1.0.0
+ ";visibility:=reexport,org.eclipse.papyrus.extensionpoints.editors;bu
+ ndle-version="1.0.0";visibility:=reexport,org.eclipse.uml2.uml;bundle
+ -version="4.1.0",org.eclipse.papyrus.uml.tools.utils;bundle-version="
+ 1.0.0",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.xtext.integration.ui.Activat
+ or
+Export-Package: org.eclipse.papyrus.uml.xtext.integration
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: GMF Xtext Integration (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Import-Package: org.eclipse.papyrus.infra.services.validation,org.ecli
+ pse.papyrus.infra.services.validation.commands,org.eclipse.papyrus.um
+ l.extensionpoints.profile,org.eclipse.papyrus.uml.extensionpoints.sta
+ ndard
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$1.class
+SHA1-Digest: yyIGYHiucfB/voO5B3N3PmQVhIE=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$3.class
+SHA1-Digest: PgXG9+yNZVFwG1ysWKza/pHDQLM=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx.cl
+ ass
+SHA1-Digest: gdjhAYgA0b5M0c0XwncXujkduY4=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$5.class
+SHA1-Digest: OUKuy2czLEQq7RCwetuYvVqdZVM=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$2$1.class
+SHA1-Digest: DBnDX6MW4paJXN8g/ZhEZ6HMQ7I=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx$1.
+ class
+SHA1-Digest: T/6DPbwH9kuZ+mFMuAfKkjKr76M=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$5$1.class
+SHA1-Digest: T8fn0vW1Hp5EtpUlFzlUifPlK9w=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx$3.
+ class
+SHA1-Digest: 1l0nJuVHNcYwe+LEWlgGt9GyCXY=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextHighlig
+ htingHelper.class
+SHA1-Digest: 3vt/iL/R+fUx88j8Xoss0xpL7n8=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/CompletionProposalAdap
+ ter.class
+SHA1-Digest: JQrueSbdzelXk/nO+5Ny4YXVh3Q=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextCellEdi
+ tor$1.class
+SHA1-Digest: o8AYawwioJitAToiVpGs6/pQRaU=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextCellEdi
+ tor$3.class
+SHA1-Digest: Kgj2wa8PwQc1tI6gd+RATnATjXE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor.c
+ lass
+SHA1-Digest: St1c2J/iBclkzB4/p45Ygm6q/zY=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/ICompletionProposalLis
+ tener.class
+SHA1-Digest: XSzuly8W58JOuS0XkdCM2sU1NJ0=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/InvalidSyntaxAdapter.c
+ lass
+SHA1-Digest: foKgtPOR35Zi1nMfzUatX1esVH0=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/CompletionProposalAdap
+ ter$1.class
+SHA1-Digest: XMsWXj2Q2Nzoj14/82PXwBY1lYU=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextXtextAdapter
+ $1.class
+SHA1-Digest: P1SUkTjqM91FQvftxfF5j4b1LiY=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/CompletionProposalAdap
+ ter$3.class
+SHA1-Digest: GmtQjjK91gWjA+enyh8h6FJmG98=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextXtextAdapter
+ $3.class
+SHA1-Digest: v5xbygfs+/hNqqQPBjXgGHfuNBk=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor$1
+ .class
+SHA1-Digest: SBVF6icnjAx25f6Ko6DLFDdBKwU=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor$3
+ .class
+SHA1-Digest: M7whDQd4xWrjH1KczHqIWFOALtk=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor$5
+ .class
+SHA1-Digest: 5dyyJ0cj1azzkjzxNm7bKoKbkV4=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextDirectEditManager
+ $2.class
+SHA1-Digest: ic98xHZ8+Xqqdngg0Zo3MRsGDCc=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration.class
+SHA1-Digest: kruuRRcbDJnEOG2cVQ0KvRBYl2s=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextDirectEditManager
+ $4.class
+SHA1-Digest: 3Q4G040PApgtZdein0WV3H0l1eE=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextFakeResourceConte
+ xt.class
+SHA1-Digest: g5XRJtSklVAOs6OnIQK5JFln3/g=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/ActiveEditorTracker.cl
+ ass
+SHA1-Digest: G6x5lC8g6Nes1HB++L1lV1A5vvA=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextSourceViewerEx.cl
+ ass
+SHA1-Digest: Sp8zPbhNQJq7PseHCVf9H7CUkSY=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/content_assist_cue.gif
+SHA1-Digest: 0o8s1UeeKm1GacltBXgr5J/yWqM=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$2.class
+SHA1-Digest: 0bAvIkoeid+qyi0uOd9CLHV4sgQ=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DefaultXtextDirectEdit
+ orConfiguration$4.class
+SHA1-Digest: T3hz6lDZpB1yN4fQaWM2op09MoU=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx$Di
+ rectEditBorder.class
+SHA1-Digest: i3/0Nt4Qxk/r0RD76Pn8Rw/NB+s=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/ui/Activator.class
+SHA1-Digest: ru1ct8UHxgQ2F3d3Y8B/5EuqA50=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextCellEdi
+ tor.class
+SHA1-Digest: GwbzR+Fd7d3D95rPON6g1UWmAWY=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextHighlig
+ htingReconciler.class
+SHA1-Digest: Aya2KTFVv9dlvkgVdsQNjBnfrlM=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx$2.
+ class
+SHA1-Digest: M/VYXpWJ+O3uJrk9QQTw4j8IBJ4=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx$4.
+ class
+SHA1-Digest: +txu6XIQYbCc6t6bQR2P37aNW8s=
+
+Name: plugin.xml
+SHA1-Digest: lla9HhoHfeKPAamfVuBUbF62EUI=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextXtextAdapter
+ .class
+SHA1-Digest: enp7C62k+lpqyDDPJT8CgX9dsnc=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextCellEdi
+ tor$2.class
+SHA1-Digest: 3fH30XJRHJzoYyLp2VFOnV1krl0=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextHighlig
+ htingReconciler$1.class
+SHA1-Digest: f177plcRy0maocB6YU2YO5X0v2g=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextCellEdi
+ tor$4.class
+SHA1-Digest: qt12Re5IcFMUaFX2b098MMheoso=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextStyledTextCellEdi
+ torEx.class
+SHA1-Digest: fls2SJo713s2pfyv95PsmbxR7lk=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/DirectEditManagerEx$2$
+ 1.class
+SHA1-Digest: PMLYB5CKzPF7OYoEYZCyJjkCXuk=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/InvalidStringUtil.clas
+ s
+SHA1-Digest: Ne/2S4SaJ5t/50CIqAUJsI7kaKU=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextDirectEditManager
+ .class
+SHA1-Digest: 3zbvkByLM+9nT0AUq3HRAsA43tg=
+
+Name: about.html
+SHA1-Digest: SghNuLOZ1xBD4DWkMOOVaXIW1tk=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/CompletionProposalAdap
+ ter$2.class
+SHA1-Digest: EiNYJbNweMbJpsg2ZAyjBZBB2Is=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextXtextAdapter
+ $2.class
+SHA1-Digest: /4M9cUtGriBu0RaZwY57VFFkAVI=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor$2
+ .class
+SHA1-Digest: trG3csXH01Wnfx87gG6yQw/fCVw=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor$4
+ .class
+SHA1-Digest: frwSXuUnSiw0Q4wgxYu6uKQwnDE=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/StyledTextCellEditor$6
+ .class
+SHA1-Digest: hbixmbg5iOdpjrhcW7cpID/cv8w=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextDirectEditManager
+ $1.class
+SHA1-Digest: d8FadwSc8Lqh97TQPSGU9lYVchA=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/CompletionProposalAdap
+ ter$2$1.class
+SHA1-Digest: RgQFpcledggDw+cX9ls1iKxJh/c=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextDirectEditManager
+ $3.class
+SHA1-Digest: RPSTOdPDw1hQGWxsktJUrtHKNWc=
+
+Name: org/eclipse/papyrus/uml/xtext/integration/XtextDirectEditManager
+ $5.class
+SHA1-Digest: zqKG7YSuOGe+aDVlfrsz8/dL4ns=
+

@@ -1,0 +1,586 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.profile;singleton:=true
+Require-Bundle: org.eclipse.emf.facet.infra.browser.uicore;bundle-vers
+ ion="0.1.0",org.eclipse.papyrus.uml.tools.utils;bundle-version="1.0.0
+ ",org.eclipse.core.runtime;bundle-version="3.8.0",org.eclipse.emf.tra
+ nsaction;bundle-version="1.4.0",org.eclipse.papyrus.infra.widgets;bun
+ dle-version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-version="1.0
+ .0",org.eclipse.papyrus.infra.emf.readonly;bundle-version="1.0.0",org
+ .eclipse.papyrus.infra.services.validation;bundle-version="1.0.0",org
+ .eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.uml2.uml;bundle-v
+ ersion="4.0.0",org.eclipse.ui,org.eclipse.ui.ide;bundle-version="3.8.
+ 0",org.eclipse.papyrus.uml.extensionpoints;bundle-version="1.0.0",org
+ .eclipse.uml2.uml.editor;bundle-version="4.0.0",org.eclipse.papyrus.i
+ nfra.emf;bundle-version="1.0.0",org.eclipse.ui.views.properties.tabbe
+ d;bundle-version="3.5.300",org.eclipse.papyrus.infra.services.labelpr
+ ovider;bundle-version="1.0.0",com.google.guava;bundle-version="11.0.0
+ "
+Bundle-Activator: org.eclipse.papyrus.uml.profile.Activator
+Export-Package: org.eclipse.papyrus.uml.profile,org.eclipse.papyrus.um
+ l.profile.constraints,org.eclipse.papyrus.uml.profile.definition,org.
+ eclipse.papyrus.uml.profile.preference,org.eclipse.papyrus.uml.profil
+ e.providers,org.eclipse.papyrus.uml.profile.structure,org.eclipse.pap
+ yrus.uml.profile.tree,org.eclipse.papyrus.uml.profile.tree.objects,or
+ g.eclipse.papyrus.uml.profile.ui.dialogs,org.eclipse.papyrus.uml.prof
+ ile.ui.items,org.eclipse.papyrus.uml.profile.utils,org.eclipse.papyru
+ s.uml.profile.validation,org.eclipse.papyrus.uml.profile.wizard
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: resources/icons/Profile.gif
+SHA1-Digest: 2BrPAL4VTeHCF1D6WzqNb55JVzE=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/IChooseDialog.class
+SHA1-Digest: CIzSUm8vQ1VLVdkAyT8fsCfw5vs=
+
+Name: org/eclipse/papyrus/uml/profile/service/ReapplyProfilesService.c
+ lass
+SHA1-Digest: xiA2LEhRZgvBw5wGAbVy67MVPEk=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/MetaclassValueTreeO
+ bject.class
+SHA1-Digest: IMIhOPNVnfSNlZJBS2fdviQGjGQ=
+
+Name: org/eclipse/papyrus/uml/profile/structure/AppliedStereotypePrope
+ rty.class
+SHA1-Digest: GiqiHO0OhSe3ndEJfW73Laa0nB4=
+
+Name: org/eclipse/papyrus/uml/profile/readonly/AppliedProfileReadOnlyH
+ andler.class
+SHA1-Digest: /Q6sD4uqQDlROgDGGSR9eprNy4A=
+
+Name: org/eclipse/papyrus/uml/profile/tree/ProfileElementTreeViewerFil
+ ter.class
+SHA1-Digest: 99aZVtZwAAAJt6zeu7pZ4IMdzAY=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og$2.class
+SHA1-Digest: dfu4bCflgbQxm9c1HVDx4dvzfJ4=
+
+Name: org/eclipse/papyrus/uml/profile/service/ReapplyProfilesService$1
+ .class
+SHA1-Digest: V02ZM0o4WNvDRAJVVuyjWHk4IMk=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og$6.class
+SHA1-Digest: pZWnd4JclyYvENCqouOCOIwjXPE=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$KeyTextListener.class
+SHA1-Digest: zmnsTnAIjdQW53CJnWAR/r2SCFM=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/StereotypedElementT
+ reeObject.class
+SHA1-Digest: h+7h4LOlULgQVIDZ2GIMWoNNUx8=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/ParentTreeObject.cl
+ ass
+SHA1-Digest: x6LKyjkuwMNt5AAS9MdCdPayjUQ=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/EnumerationValueTre
+ eObject.class
+SHA1-Digest: /lCNdKlB30ZWpZqIK+1V396AEY8=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/IListViewer.class
+SHA1-Digest: cEGiBGCF3xgX94INShbzP9QFXV8=
+
+Name: org/eclipse/papyrus/uml/profile/service/ui/RefreshProfileDialog.
+ class
+SHA1-Digest: hWzlGpPctUtNxD8MiS4QQVZSqqY=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/PrimitiveTypeValueT
+ reeObject.class
+SHA1-Digest: 0Z1xq/U9TdLBpCxK+YIzCrGRRCg=
+
+Name: org/eclipse/papyrus/uml/profile/constraints/ClientSelector.class
+SHA1-Digest: HfKZzvkRDD/jh0VQ44mljHBo55k=
+
+Name: resources/icons/Package.gif
+SHA1-Digest: Nj4okV19tPb9FWIZ5og/YsrJ++I=
+
+Name: org/eclipse/papyrus/uml/profile/tree/ProfileElementContentProvid
+ er.class
+SHA1-Digest: 7DiYPd7t+UbbtZ3vR8W5fSyWCqQ=
+
+Name: resources/icons/Enumeration.gif
+SHA1-Digest: 4XlgKbbMUmmc37H3/3uOQikI0C0=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$2.class
+SHA1-Digest: VOlM3/w7AOKO6QfiwDWOknxDtzs=
+
+Name: org/eclipse/papyrus/uml/profile/constraints/PropertyHasTypeConst
+ raint.class
+SHA1-Digest: 8OzgQDlh/nID8XMtyc85n4/DKDA=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$6.class
+SHA1-Digest: 4/NtOSY35O1emUoWyBbaNdSg7hE=
+
+Name: resources/icons/ConsoleViewTest.gif
+SHA1-Digest: ei7tNz5ri/xAlnp1qUi3i4BXXMA=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$ImportActionEditingSupport$2.class
+SHA1-Digest: ExlQzssxqsecqPIZYFfd/DMrEKs=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$ImportSpec.class
+SHA1-Digest: 9+Y9hlJSemck60vxCI1D+XBbsho=
+
+Name: resources/icons/LiteralNull.gif
+SHA1-Digest: Wz3Kc0vslXeNyCATtm3WB6wBgHk=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$DownButtonListener.class
+SHA1-Digest: jWo7CzjELTllKMfHmeLQj0iIX3k=
+
+Name: resources/icons/LiteralUnlimitedNatural.gif
+SHA1-Digest: Al+o1xlyc8rZiqr6Q46Lmml/B/o=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$InputOperation$1.class
+SHA1-Digest: 2gn34rHJ1pTio6kZsGZ2AqUrwlE=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$RemoveItemListener.class
+SHA1-Digest: LsNulA9xCHbsAf9c5DR6yAlkgJo=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/AlphabeticalViewerSor
+ ter.class
+SHA1-Digest: yaQ6mGUDGJSg5QNWAPooFfT5S7E=
+
+Name: org/eclipse/papyrus/uml/profile/Activator.class
+SHA1-Digest: cPbBBkZ50JObcCbulUoUdytZgkM=
+
+Name: org/eclipse/papyrus/uml/profile/utils/Util.class
+SHA1-Digest: RMpBZ3k8CiDFtkKkCWRMM9JSvT0=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$AddItemListener.class
+SHA1-Digest: vKhmFE6blM51igUXexVgq/V762c=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$DecoratedContentProposal.class
+SHA1-Digest: V66pRIPtCyTyVZi2Hg/eBs4Fmf8=
+
+Name: resources/icons/Manifestation.gif
+SHA1-Digest: NvgiNfTZMRH3hyMCaXeIt/hpcrQ=
+
+Name: org/eclipse/papyrus/uml/profile/wizard/UMLModelWithProfileWizard
+ $UMLModelWizardProfilesPage.class
+SHA1-Digest: EfrFQLwVUPCbZzCyhsKtRE+Jwzg=
+
+Name: org/eclipse/papyrus/uml/profile/providers/AppliedStereotypePrope
+ rtyLabelProvider.class
+SHA1-Digest: XpnxKeDIezpLRuscx69q5irOCY8=
+
+Name: resources/icons/ArrowLeft.gif
+SHA1-Digest: qx89HZcOfCNP8URrsbXsnJSbNro=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/PackageImportTreeSele
+ ctionDialog.class
+SHA1-Digest: yBoSwPY3qAotAwFhhUEV8xykWlk=
+
+Name: resources/icons/ArrowRight.gif
+SHA1-Digest: SUSocWQGQBuR4g6KB7Ttf3f3Kss=
+
+Name: resources/icons/Property.gif
+SHA1-Digest: tkutZ6OGa7t+eJfCkSBDMLReiRs=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og$3.class
+SHA1-Digest: kBbD7ZXYLk0Ed1AMPczPSfEEaP8=
+
+Name: org/eclipse/papyrus/uml/profile/wizard/UMLModelWithProfileWizard
+ .class
+SHA1-Digest: x4f64pd7pz8tpHeIVUW8Oi/IRvw=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/BooleanValueTreeObj
+ ect.class
+SHA1-Digest: R7kc6VDhEdXb7L+CiiXzw9ckMJk=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$RemoveButtonListener.class
+SHA1-Digest: iJsU8aGDkxXpFIGv7Zx7SzEUIDQ=
+
+Name: resources/icons/ConsoleViewQN.gif
+SHA1-Digest: aT1p1a8/RjN1xduoKJe08F6lxgk=
+
+Name: org/eclipse/papyrus/uml/profile/wizard/UMLModelWithProfileWizard
+ $UMLModelWizardProfilesPage$1.class
+SHA1-Digest: L+6wPFRNdddVfNZ9foRdjrA8fAs=
+
+Name: org/eclipse/papyrus/uml/profile/ui/items/MetaclassItems.class
+SHA1-Digest: ABISfMi3wkJ0I17uIwFn1wfaqcc=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/DataTypeValueTreeOb
+ ject.class
+SHA1-Digest: YUF/sFv1TCBRDsE9gxMaI0+zBro=
+
+Name: resources/icons/PrimitiveType.gif
+SHA1-Digest: 8WT1WWlmB1aXdiU3FLew/pPPlwI=
+
+Name: resources/icons/Association.gif
+SHA1-Digest: u2j94uXU3F+28e1j0bFlEvLIMlc=
+
+Name: resources/icons/ArrowUp.gif
+SHA1-Digest: nUGy85EowQLrI5hDomzojsZItS4=
+
+Name: org/eclipse/papyrus/uml/profile/preference/ProfilePreferenceCons
+ tants.class
+SHA1-Digest: HN3LKTwQCl4YAQkNp64FNR8OKO4=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$3.class
+SHA1-Digest: pIr0Ao+CcKPrrzjnJotZIbw9jnY=
+
+Name: org/eclipse/papyrus/uml/profile/service/ui/RefreshProfileDialog$
+ 1.class
+SHA1-Digest: BgoY7IvZ3hrQU9FAKb/pLtTE62w=
+
+Name: resources/icons/ArrowDown.gif
+SHA1-Digest: RQXpLCwGwO2SKbD5h5J894Eotis=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$InputOperation.class
+SHA1-Digest: h7cwmGnbrCEG4p6rmkDRsx7vygw=
+
+Name: org/eclipse/papyrus/uml/profile/Message.class
+SHA1-Digest: urex8IwsBoa2RV8gSKIfLKMYD9M=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$UpButtonListener.class
+SHA1-Digest: yw7bv6HDPWycftq8XpP1mwAhVEk=
+
+Name: resources/icons/Stereotype.gif
+SHA1-Digest: bUkbSqAYwbqh7DD7QWbn6B3VfZI=
+
+Name: resources/icons/DisplayedStereotypeQN.gif
+SHA1-Digest: B0/9Hy4S+rp73tW++D3dN4FCzrY=
+
+Name: resources/icons/AddReg.gif
+SHA1-Digest: FT+yMU/XrBGk25OwgZC0vvpreSk=
+
+Name: org/eclipse/papyrus/uml/profile/ui/items/DataTypeItems.class
+SHA1-Digest: 4FiuFDd83cnPkOlBRdpI/x6C2NA=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileTreeSelectionD
+ ialog.class
+SHA1-Digest: FlV8mNIS18wvzqX+ntZoextrF7I=
+
+Name: org/eclipse/papyrus/uml/profile/providers/AppliedProfileLabelPro
+ vider.class
+SHA1-Digest: Px/36FoGCEnv9DsUO569WbcPGvo=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: resources/icons/DisplayedProperty.gif
+SHA1-Digest: 1XHQWmyC1v6BFrLAH+gMy1BsJ4Y=
+
+Name: resources/icons/wizban/Annotation.gif
+SHA1-Digest: xmWybJHsEfBVz7ToQEBveMSCiaw=
+
+Name: resources/icons/Project.gif
+SHA1-Digest: +qtPrDKpe6LoIvP44rxgsSmCEJ4=
+
+Name: org/eclipse/papyrus/uml/profile/constraints/PropertyHasNameConst
+ raint.class
+SHA1-Digest: L8V9oaDsJX7O0jpZRAnWa431s5E=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$PossibleElementsContentProvider.class
+SHA1-Digest: /Zw7p0cdndfxNN9xkxT4Dvoxmws=
+
+Name: org/eclipse/papyrus/uml/profile/tree/PropertyValueTreeViewer.cla
+ ss
+SHA1-Digest: WhK0ilaNWbDKa2HZ6MKOVej1LwU=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementList.class
+SHA1-Digest: D27vIO8t+r4zYv8bwHVbLZ5Jhn8=
+
+Name: org/eclipse/papyrus/uml/profile/definition/Version.class
+SHA1-Digest: DUchmhOTO7MTLZhIbU/O4TJEzJg=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileTreeSelectionD
+ ialog$1.class
+SHA1-Digest: uKsfbQVOJIO2MflECfoRM5OGCzY=
+
+Name: resources/icons/Add.gif
+SHA1-Digest: yoxjmqMtVphUpFQAd45TKQuy8gU=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og.class
+SHA1-Digest: 2x3dDuNuvD2CKYRqe3nlq520C8g=
+
+Name: org/eclipse/papyrus/uml/profile/tree/DisplayedProfileElementLabe
+ lProvider.class
+SHA1-Digest: wFn3XtjfGCsFSmaMBeXt13nzWlQ=
+
+Name: resources/icons/InstanceSpecification.gif
+SHA1-Digest: HvK0tP/mbU4cF1Min4kwo3k1s+A=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/TreeObject.class
+SHA1-Digest: pZZlPcSw5LlzTrgNiip0xFvZEws=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$SelectedElementsContentProvider.class
+SHA1-Digest: 5rbHm7s4/B43V9J3qE/Y/4EUXSg=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$DecoratedContentProposalProvider.class
+SHA1-Digest: 2Xqz++T2E4HTr3LaA1DMtm0ifhE=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/InputDialogPrimitiveT
+ ype.class
+SHA1-Digest: GNH9urEq0NQhQ6M0AjgFoVQucJ8=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/AppliedStereotypePr
+ opertyTreeObject.class
+SHA1-Digest: DwlKTTYupAM0P0BlYygXpTQlZGw=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og$4.class
+SHA1-Digest: zW5R7/GVIwHWoQcZ4fEbQYDSVUk=
+
+Name: resources/icons/Class.gif
+SHA1-Digest: ENhiRLa+biShqwPi0dlyixqHNyk=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/CompositeValueTreeO
+ bject.class
+SHA1-Digest: /t9XUjBTTSsoBGP9S+QGTlEZ+Ro=
+
+Name: org/eclipse/papyrus/uml/profile/validation/ProfileValidationHelp
+ er.class
+SHA1-Digest: 3tfA9r7wvCIORJxfxTPxI5a9E+A=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/InputDialogEnumeratio
+ n.class
+SHA1-Digest: p0r4959+PMlUmhLjJGkqyxNiPB8=
+
+Name: org/eclipse/papyrus/uml/profile/constraints/PropertyHasDefaultVa
+ lueConstraint.class
+SHA1-Digest: toljE+Epu/RD0TBnQ+W9kobZCpY=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og$AddButtonListener.class
+SHA1-Digest: /zWERChJwRKbOLd2kJXDSbe8ODU=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/AppliedStereotypeTr
+ eeObject.class
+SHA1-Digest: YUaL2QCalQ+DfK/Y6vqwerjv5AQ=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$ElementTreeContentProvider.class
+SHA1-Digest: txqzgCiKVUVcMTVcby2uH6R6BDU=
+
+Name: resources/icons/Default.gif
+SHA1-Digest: bGpWOmBYKAIbfGbJVFVBcuFfjck=
+
+Name: org/eclipse/papyrus/uml/profile/tree/ProfileElementLabelProvider
+ .class
+SHA1-Digest: OVBRnk+rfN+BzLKNDVvqPhv9Fmc=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseDialog.class
+SHA1-Digest: ipczNBldFxjv9MnKejjE0Qhb+Oo=
+
+Name: org/eclipse/papyrus/uml/profile/validation/ProfileValidationHelp
+ er$1.class
+SHA1-Digest: gkCiPSBHDJlriyz/0c3GyNFApNw=
+
+Name: org/eclipse/papyrus/uml/profile/utils/ProfileConstraintUtils.cla
+ ss
+SHA1-Digest: 47LzTKRSri+6FSPjoTJObxYJeyM=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$4.class
+SHA1-Digest: DB3RHL/HIgXtsNlZodrDkR8JcbA=
+
+Name: org/eclipse/papyrus/uml/profile/constraints/PropertyHasUniqueNam
+ eConstraint.class
+SHA1-Digest: SndxCot+v0wVaabRP9wL6a0IEG0=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ComboSelectionDialog.
+ class
+SHA1-Digest: EmdvqIsL90Vc3x85Vr64VP0wZbs=
+
+Name: resources/icons/DisplayedStereotype_16x16.gif
+SHA1-Digest: zDveg3zlZB6latZpArQISyAK+Ak=
+
+Name: resources/icons/Clause.gif
+SHA1-Digest: WZJ6GIGB45aoYiT53jqJ2utrmSY=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/StereotypeValueTree
+ Object.class
+SHA1-Digest: 4YN7yA5vWr1saBK/3DDFfPawBKY=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/StringValueTreeObje
+ ct.class
+SHA1-Digest: Ted2zEtPqhQz1KXnm9qHutR0G74=
+
+Name: org/eclipse/papyrus/uml/profile/ImageManager.class
+SHA1-Digest: UNwcfBfKM1ziYbQ77qVxitADw7g=
+
+Name: resources/icons/LiteralBoolean.gif
+SHA1-Digest: 5rHsu5FqxQYSjUXUnS+Xl7f8LU8=
+
+Name: org/eclipse/papyrus/uml/profile/constraints/PropertyMultiplicity
+ LowerConstraint.class
+SHA1-Digest: qHvQ4kA+WyPp9crYEDjgscM7cGk=
+
+Name: org/eclipse/papyrus/uml/profile/providers/AppliedProfileContentP
+ rovider.class
+SHA1-Digest: Gp+JB6T2FluHqPtgb2STVblkukc=
+
+Name: org/eclipse/papyrus/uml/profile/providers/AppliedStereotypePrope
+ rtyFilteredLabelProvider.class
+SHA1-Digest: YBytNkfOAPvGcs2/qnaDybLaj/0=
+
+Name: org/eclipse/papyrus/uml/profile/tree/ProfileElementTreeViewer.cl
+ ass
+SHA1-Digest: DcWfTpy+dTqCzHOLdgUEYnUaY2k=
+
+Name: org/eclipse/papyrus/uml/profile/definition/PapyrusDefinitionAnno
+ tation.class
+SHA1-Digest: Z4FNaTtZaOEz1NABQrk8K3vngCA=
+
+Name: resources/icons/LiteralString.gif
+SHA1-Digest: mTnjiHa4CKQZMgV+453++qLeAfM=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileTreeSelectionD
+ ialog$2.class
+SHA1-Digest: wvyymDnuD72LQMEVrSyUPT4yylc=
+
+Name: org/eclipse/papyrus/uml/profile/ui/items/StereotypeItems.class
+SHA1-Digest: f+gHBR3hY7JQsRLqObaP95ndBCA=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/UserPrimitiveTypeVa
+ lueTreeObject.class
+SHA1-Digest: JaPIhudwIyuhXID2O+SaboXTXGo=
+
+Name: resources/icons/LiteralInteger.gif
+SHA1-Digest: 8ZulhO+jLVrxbKwSnjIGkvNPBVs=
+
+Name: org/eclipse/papyrus/uml/profile/preference/ProfileDefinitionPref
+ erenceConstants.class
+SHA1-Digest: nmHv1C3uWbYZG61yjxjhEF/QqcM=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og$1.class
+SHA1-Digest: h4z10HLpWU7yf0fVEG9aCIl6M34=
+
+Name: resources/icons/DisplayedStereotype.gif
+SHA1-Digest: zDveg3zlZB6latZpArQISyAK+Ak=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ProfileDefinitionDial
+ og$5.class
+SHA1-Digest: pQ8wPFGTgMDcTtc3w0ZHtkwNa3g=
+
+Name: plugin.properties
+SHA1-Digest: U6NDNAzOusO32ZqxzkyE4cUhkPc=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/UnlimitedNaturalVal
+ ueTreeObject.class
+SHA1-Digest: sffiOzij0UQt/gPEcVBE6gHenk0=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog.class
+SHA1-Digest: JoazZLG8hdazaDULtHL+0HIlHBY=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ChooseSetAssistedDial
+ og.class
+SHA1-Digest: 49cHU/oV4R5eWvm4Xo24995NaD4=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/AppliedStereotypePr
+ opertyTreeObject$1.class
+SHA1-Digest: yWMkb2i/HyxPohOCz9mz6cYN7cs=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$ImportActionEditingSupport.class
+SHA1-Digest: 6StLiO1nOrxWdRw5fGUvEOXZ0Sc=
+
+Name: plugin.xml
+SHA1-Digest: yBH3Z6CSPPDmKzP1QaarZ3jtNwA=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$1.class
+SHA1-Digest: 02Xt47tFYi1skbjD589VfSCka/8=
+
+Name: resources/icons/wizban/NewDefinition.gif
+SHA1-Digest: xmWybJHsEfBVz7ToQEBveMSCiaw=
+
+Name: resources/icons/Delete.gif
+SHA1-Digest: ORJe0sG1BDPf20zkd9DI+HUjfk8=
+
+Name: org/eclipse/papyrus/uml/profile/ui/items/EnumerationItems.class
+SHA1-Digest: eKKD6TzRKhUiQhz1FnEIDcVE8uc=
+
+Name: org/eclipse/papyrus/uml/profile/ui/items/CompositeItems.class
+SHA1-Digest: DUsvR0qSd70OarivGrV7nKSovyk=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$5.class
+SHA1-Digest: IiOpZRoJrLRqmugRvx2WKdyl7Qc=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$ImportAction.class
+SHA1-Digest: 0P3529XN9dQTZKAejG3bRxGyx2E=
+
+Name: org/eclipse/papyrus/uml/profile/ui/items/PrimitiveTypeItems.clas
+ s
+SHA1-Digest: TA/66tw4I9qyBHl9PKWnvuhGZOc=
+
+Name: org/eclipse/papyrus/uml/profile/ui/dialogs/ElementImportTreeSele
+ ctionDialog$ImportActionEditingSupport$1.class
+SHA1-Digest: yw9wkUBhPMH/bONfrB0XK1C3ZQ8=
+
+Name: resources/icons/ProfileRepository.gif
+SHA1-Digest: 6V8t5YGkRhcycz2iLOdOe7lR0dQ=
+
+Name: org/eclipse/papyrus/uml/profile/definition/ProfileRedefinition.c
+ lass
+SHA1-Digest: FPoBO6rRZvyKFWLCqdpZTcWqzQQ=
+
+Name: org/eclipse/papyrus/uml/profile/providers/ProfileDefinitionLabel
+ Provider.class
+SHA1-Digest: RBjBsN86aIO6aKC3caJ2tcQU9gU=
+
+Name: resources/icons/Substitution.gif
+SHA1-Digest: xPrX6MFEEIK2B7KaivQxwmjrA4g=
+
+Name: resources/icons/ConsoleView.gif
+SHA1-Digest: zUZzXRRtecdO63atvZ4XveqZ878=
+
+Name: resources/icons/DataType.gif
+SHA1-Digest: H6RyYlPlc6lL+O14DuG6GZ6FtiU=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/IntegerValueTreeObj
+ ect.class
+SHA1-Digest: BuLsgmF9tyieoFbOUNrPxxVMhcA=
+
+Name: org/eclipse/papyrus/uml/profile/tree/objects/ValueTreeObject.cla
+ ss
+SHA1-Digest: 5VxrwJCyqi2SZgn1/ipjudhqCgI=
+
+Name: org/eclipse/papyrus/uml/profile/FontManager.class
+SHA1-Digest: 1dynon8OQheqW9RKPcoJPjIfTE8=
+
+Name: org/eclipse/papyrus/uml/profile/definition/IPapyrusVersionConsta
+ nts.class
+SHA1-Digest: rlh1G9Z+TQZE/VkTgEx3F/7tBxY=
+
+Name: resources/icons/StringExpression.gif
+SHA1-Digest: 1N2nxlDd/Bqadra/vsm5VKIcxcs=
+

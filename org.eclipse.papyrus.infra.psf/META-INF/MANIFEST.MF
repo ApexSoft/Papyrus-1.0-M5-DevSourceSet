@@ -1,0 +1,82 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: Papyrus PSF support (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.infra.psf;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.infra.psf.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.te
+ am.core;bundle-version="3.7.0",org.eclipse.core.resources;bundle-vers
+ ion="3.8.100",org.eclipse.team.ui;bundle-version="3.7.0",org.eclipse.
+ papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.ui.ide;bund
+ le-version="3.9.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ProjectSetImporter$1.class
+SHA1-Digest: J/nefFdqjk7/did0lVYrYmpLVlM=
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ProjectSetImporter$2.class
+SHA1-Digest: OckaO/X2yKXQgSTY6TRl1oIBjzI=
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ProjectSetImporter$3.class
+SHA1-Digest: K6qkuFkaRMYb7SudR8tvSbeMziA=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ProjectSetImporter$AdviceD
+ ialog.class
+SHA1-Digest: JSyDdGAAgc2xJQpI1Trw01Po4rQ=
+
+Name: org/eclipse/papyrus/infra/psf/handler/ImportPSFHandler$ImportPro
+ jectSetOperation.class
+SHA1-Digest: OU4EQI5RFPbMA3/JvXbq53YuFjw=
+
+Name: org/eclipse/papyrus/infra/psf/ui/FilterProjectsDialog.class
+SHA1-Digest: TXcl48qo98bTMS69e17kVnDtuvI=
+
+Name: org/eclipse/papyrus/infra/psf/Activator.class
+SHA1-Digest: sqSSG3L0WU9PUa3+pogoKYsK3p4=
+
+Name: about.html
+SHA1-Digest: ejOZra0kypGLQQ2bJtGTX+LI8tU=
+
+Name: org/eclipse/papyrus/infra/psf/ui/FilterProjectsDialog$PSFLabelPr
+ ovider.class
+SHA1-Digest: VO7i1W1Q0nwWYCBBxN/QEPPksHs=
+
+Name: org/eclipse/papyrus/infra/psf/handler/ImportPSFHandler.class
+SHA1-Digest: VXLAz1Qc1CtUrb8Um2scT+oLZMM=
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ProjectSetImporter$AdviceD
+ ialog$1.class
+SHA1-Digest: qj2Nqkl5eW0teY4fI/mR8eZ7wX0=
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ProjectSetImporter.class
+SHA1-Digest: qB53nBKqBbgaM1RMAV/1a3B8ibc=
+
+Name: org/eclipse/papyrus/infra/psf/ui/FilterProjectsDialog$1.class
+SHA1-Digest: gL/qT6Y5W3jZooNd49ON0dshY/E=
+
+Name: org/eclipse/papyrus/infra/psf/ui/FilterProjectsDialog$2.class
+SHA1-Digest: mxfIPGFJoSjsC/H48hYMBIPS86U=
+
+Name: org/eclipse/papyrus/infra/psf/ui/FilterProjectsDialog$3.class
+SHA1-Digest: gdJCRbX+zvvoGi9eoE/JQNLLMTE=
+
+Name: org/eclipse/papyrus/infra/psf/runtime/ImportResult.class
+SHA1-Digest: CZpnozVR0SYRHsgpAf5Il6cuZjk=
+
+Name: plugin.xml
+SHA1-Digest: 4n3wHz9g92MrI+AS9d3dTk0gBS4=
+
+Name: org/eclipse/papyrus/infra/psf/ui/FilterProjectsDialog$MapContent
+ Provider.class
+SHA1-Digest: fLT1+6OCTf5pMTODOm+c1U/dbQI=
+
+Name: org/eclipse/papyrus/infra/psf/handler/ImportPSFHandler$1.class
+SHA1-Digest: LW7v2gEdmtJb2W078UWFnfsqVaM=
+

@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.views.modelexplorer.widgets;s
+ ingleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.views.
+ modelexplorer;bundle-version="1.0.0",org.eclipse.papyrus.infra.servic
+ es.edit;bundle-version="1.0.0",org.eclipse.gmf.runtime.notation;bundl
+ e-version="1.5.0",org.eclipse.gmf.runtime.emf.core;bundle-version="1.
+ 4.1",org.eclipse.gmf.runtime.emf.type.core;bundle-version="1.4.0",org
+ .eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.views.modelexplorer.widgets.Acti
+ vator
+Export-Package: org.eclipse.papyrus.views.modelexplorer.widgets
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/MetaclassLabelPr
+ ovider.class
+SHA1-Digest: h67SBtX8hE1bmhW5c79Ftsjp6UI=
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/MetaclassViewerF
+ ilter.class
+SHA1-Digest: JcYA9WI/bUaYUnrl/pRhqMWbbNc=
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/MetamodelContent
+ Provider.class
+SHA1-Digest: q20lRqq4HhlsucALqEhv4Om4ozk=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/MetaclassContent
+ Provider.class
+SHA1-Digest: 8YKZB2ex7qWbYKCcF4Z4mQGKTp0=
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/EclassComparator
+ .class
+SHA1-Digest: XMBKLq28nEgUywYd2goM694ofyk=
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/MetamodelContent
+ Filter.class
+SHA1-Digest: PBB8XhJB50uKP7vgLBA+uf6AOnU=
+
+Name: org/eclipse/papyrus/views/modelexplorer/widgets/Activator.class
+SHA1-Digest: SxEfEFfchAusv5oJ7aGAs7QYE9U=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: plugin.properties
+SHA1-Digest: pyeZfk0OLC2APMSLTIlJ1QjLMH8=
+

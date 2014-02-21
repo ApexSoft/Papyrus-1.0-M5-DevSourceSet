@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+<!--We declare the model used for the Papyrus Table Editor  -->
+   <extension point="org.eclipse.papyrus.infra.core.model">
+      <model classname="org.eclipse.papyrus.infra.nattable.common.modelresource.PapyrusNattableModel" description="Model for Papyrus Nattable editors">
+      </model>
+   </extension>
+ <extension id="papyrus.table.menuspapyrus.table.menu" name="Papyrus Table Menus" point="org.eclipse.ui.menus">
+      <menuContribution allPopups="false" locationURI="popup:org.eclipse.papyrus.views.modelexplorer.modelexplorer.popup?after=org.eclipse.papyrus.views.modelexplorer.popupmenu.creatediagram">
+         <menu icon="icons/table.gif" id="org.eclipse.papyrus.infra.nattable.popupmenu.createnattable" label="New Table (New version)" mnemonic="&amp;T" tooltip="The Papyrus Table Menu">
+         </menu>
+      </menuContribution>
+      <menuContribution allPopups="false" locationURI="menu:org.eclipse.papyrus.ui.menu?after=org.eclipse.papyrus.uml.diagram.ui.menu.diagrams">
+         <menu
+               icon="icons/table.gif"
+               id="org.eclipse.papyrus.infra.nattable.menu.createnattable"
+               label="New Table (New version)"
+               mnemonic="&amp;T"
+               tooltip="The Papyrus Table Menu">
+         </menu>
+      </menuContribution>
+      
+      <menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar?endof=org.eclipse.papyrus.uml.diagram.ui.toolbar">
+         <toolbar id="org.eclipse.papyrus.infra.nattable.toolbar.createnattable" label="New Table Toolbar (New Version)">
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.papyrus.infra.nattable.menu.createnattable">
+         <command
+               commandId="org.eclipse.papyrus.infra.nattable.createFromCatalog.command"
+               mnemonic="&amp;G"
+               style="push">
+            <visibleWhen>
+               <with
+                     variable="activeEditorId">
+                  <equals
+                        value="org.eclipse.papyrus.infra.core.papyrusEditor">
+                  </equals>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.papyrus.infra.nattable.toolbar.createnattable">
+         <command
+               commandId="org.eclipse.papyrus.infra.nattable.createFromCatalog.command"
+               mnemonic="&amp;G"
+               style="push">
+            <visibleWhen>
+               <with
+                     variable="activeEditorId">
+                  <equals
+                        value="org.eclipse.papyrus.infra.core.papyrusEditor">
+                  </equals>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="popup:org.eclipse.papyrus.infra.nattable.popupmenu.createnattable">
+         <command
+               commandId="org.eclipse.papyrus.infra.nattable.createFromCatalog.command"
+               mnemonic="&amp;G"
+               style="push">
+            <visibleWhen>
+               <with
+                     variable="activeEditorId">
+                  <equals
+                        value="org.eclipse.papyrus.infra.core.papyrusEditor">
+                  </equals>
+               </with>
+            </visibleWhen>
+         </command>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            categoryId="org.eclipse.papyrus.editor.category"
+            description="Create a NatTable from Configurations Catalog"
+            id="org.eclipse.papyrus.infra.nattable.createFromCatalog.command"
+            name="Create a new Table from the Configurations Catalog">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="org.eclipse.papyrus.infra.nattable.createFromCatalog.command">
+         <class
+               class="org.eclipse.papyrus.infra.nattable.common.handlers.CreateNatTableFromCatalogHandler">
+         </class>
+      </handler>
+   </extension>
+
+ <extension
+       point="org.eclipse.papyrus.infra.core.papyrusDiagram">
+    <editorDiagram
+          factoryClass="org.eclipse.papyrus.infra.nattable.common.factory.NattableEditorFactory"
+          icon="icons/table.gif">
+    </editorDiagram>
+ </extension>
+ <extension
+       point="org.eclipse.ui.handlers">
+    <handler
+          class="org.eclipse.papyrus.infra.nattable.common.handlers.RenameTableHandler"
+          commandId="org.eclipse.papyrus.infra.core.sasheditor.command.tabdoubleclick">
+       <activeWhen>
+          <and>
+             <with
+                   variable="selection">
+                <test
+                      property="org.eclipse.papyrus.infra.nattable.tester.isNattableWidget"
+                      value="true">
+                </test>
+             </with>
+          </and>
+       </activeWhen>
+    </handler>
+ </extension>
+     <!-- ElementType bindings for diagram duplication with paste command -->
+ <extension
+         point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+         <!--metamodel
+            nsURI="http://www.eclipse.org/uml2/4.0.0/UML"-->
+      <metamodel
+            nsURI="http://www.eclipse.org/uml2/4.0.0/UML">
+         <adviceBinding
+               class="org.eclipse.papyrus.infra.nattable.common.helper.advice.NatTableDuplicateEditHelperAdvice"
+               id="org.eclipse.papyrus.infra.nattable.common.helper.advice.NatTableDuplicateEditHelperAdvice"
+               inheritance="all"
+               typeId="org.eclipse.papyrus.uml.Element">
+               <!--typeId="org.eclipse.papyrus.uml.Element"-->
+         </adviceBinding>
+      </metamodel>
+   </extension>
+   
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+
+	<!-- Bindings declaration -->
+	<binding context="org.eclipse.papyrus.infra.services.edit.TypeContext">
+		<advice ref="org.eclipse.papyrus.infra.nattable.common.helper.advice.NatTableDuplicateEditHelperAdvice" />
+	</binding>
+</extension>
+<extension
+      point="org.eclipse.ui.commandImages">
+   <image
+         commandId="org.eclipse.papyrus.infra.nattable.createFromCatalog.command"
+         icon="icons/tableCatalog.png">
+   </image>
+</extension>
+</plugin>

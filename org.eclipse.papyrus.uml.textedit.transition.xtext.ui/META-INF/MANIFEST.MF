@@ -1,0 +1,139 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.textedit.transition.xtext
+ .ui;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.uml.textedit.transition.xtext.ui
+ .internal.UmlTransitionActivator
+Require-Bundle: org.eclipse.papyrus.uml.textedit.transition.xtext;bund
+ le-version="1.0.0";visibility:=reexport,org.eclipse.xtext.ui,org.ecli
+ pse.ui.editors;bundle-version="3.5.0",org.eclipse.ui.ide;bundle-versi
+ on="3.5.0",org.eclipse.xtext.ui.shared,org.eclipse.ui,org.eclipse.xte
+ xt.builder,org.antlr.runtime,org.eclipse.uml2.uml;bundle-version="3.1
+ .0",org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.4.0",org.ecl
+ ipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.core.expre
+ ssions;bundle-version="3.4.200",org.eclipse.papyrus.infra.gmfdiag.xte
+ xt.glue;bundle-version="1.0.0",org.apache.log4j;bundle-version="1.2.1
+ 5",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",
+ org.eclipse.papyrus.uml.alf.common.ui;bundle-version="1.0.0",org.ecli
+ pse.papyrus.uml.xtext.integration.ui;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.uml.textedit.transition.xtext.ui,o
+ rg.eclipse.papyrus.uml.textedit.transition.xtext.ui.contentassist,org
+ .eclipse.papyrus.uml.textedit.transition.xtext.ui.contentassist.antlr
+ ,org.eclipse.papyrus.uml.textedit.transition.xtext.ui.contentassist.a
+ ntlr.internal,org.eclipse.papyrus.uml.textedit.transition.xtext.ui.co
+ ntributions,org.eclipse.papyrus.uml.textedit.transition.xtext.ui.edit
+ or,org.eclipse.papyrus.uml.textedit.transition.xtext.ui.internal,org.
+ eclipse.papyrus.uml.textedit.transition.xtext.ui.labeling,org.eclipse
+ .papyrus.uml.textedit.transition.xtext.ui.outline,org.eclipse.papyrus
+ .uml.textedit.transition.xtext.ui.quickfix
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Import-Package: org.apache.log4j
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/UmlTransitionProposalProvider.class
+SHA1-Digest: nJcXY4215QH/EHfNMoOrMvdC6GY=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/internal/InternalUmlTransitionLexer$DFA24.class
+SHA1-Digest: 2i4mY2n6fuyDHAorzaSrb1U1Q2c=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/labeling/Um
+ lTransitionDescriptionLabelProvider.class
+SHA1-Digest: FJ9Npa0PaDjUk9/GJZtRVEGM2nk=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/outline/Uml
+ TransitionOutlineTreeProvider.class
+SHA1-Digest: CVAk5b4gssxeIbvDkpv2txfmQBU=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/UmlTransitionParser$1.class
+SHA1-Digest: WeoCyQtn52XnJAN1s8Lu2KsH3jY=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/AbstractUml
+ TransitionUiModule.class
+SHA1-Digest: F6MJem4MavTvh/IXWUfhrTS8nPM=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/UmlTransiti
+ onUiModule.class
+SHA1-Digest: 6gVcbWeHRF/EySBHTQy+HO79WZ8=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/quickfix/Um
+ lTransitionQuickfixProvider.class
+SHA1-Digest: Dvn/YLPP7wQuYKK90QgRn8kAw6c=
+
+Name: plugin.properties
+SHA1-Digest: ndBbGI9nXmZ+cmZf72nNTD7IgLY=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/editor/Cont
+ extEditorUtil.class
+SHA1-Digest: 13MddiWeIpULt7Ix/mqvYWbHAOo=
+
+Name: plugin.xml
+SHA1-Digest: 5bD4fFx67s1qo60bN0n3c1LaOIY=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/UmlTransiti
+ onExecutableExtensionFactory.class
+SHA1-Digest: GR33v3EojZsBD8Pj5ho/RyacRLw=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contributio
+ ns/TransitionPopupEditorConfigurationContribution.class
+SHA1-Digest: 0n+IIZLI7/hcg78oaZllqXnDlHI=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/internal/Um
+ lTransitionActivator.class
+SHA1-Digest: K2I9Ofp4k2NDVfNzmR1FOyY2TLU=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contributio
+ ns/TransitionPopupEditorConfigurationContribution$UpdateUMLTransition
+ Command.class
+SHA1-Digest: 2IEY+/hRsi6sa0WInrXt8KTOQNs=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/internal/InternalUmlTransitionLexer.class
+SHA1-Digest: i2yzjCCSDT9b4wwGBUAD/8JjAPo=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/UmlTransitionContentAssistHandler.class
+SHA1-Digest: irOFbFoGhvxzoMJqPhESonNObPI=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/internal/InternalUmlTransition.g
+SHA1-Digest: cO88SVPjuxL33AFcD8kJ3Uvbunw=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contributio
+ ns/TransitionPopupEditorConfigurationContribution$1.class
+SHA1-Digest: YtuUICcr2Do1JulHgTRcSnPboTE=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/internal/InternalUmlTransition.tokens
+SHA1-Digest: 1WbHgnjxIEqLE/VUaYLq1C5nrTY=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/internal/InternalUmlTransitionParser.class
+SHA1-Digest: GkqP/f4+I4Du/bihD4srxmZyl+c=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/antlr/UmlTransitionParser.class
+SHA1-Digest: ps1zrzrppov5xE6dLxsC/mK+dZk=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/contentassi
+ st/AbstractUmlTransitionProposalProvider.class
+SHA1-Digest: D4u+yZ6YQa1oGaklN/lHl0D5PoQ=
+
+Name: org/eclipse/papyrus/uml/textedit/transition/xtext/ui/labeling/Um
+ lTransitionLabelProvider.class
+SHA1-Digest: maXztviAbq4vYv5vza9V+UDE53E=
+

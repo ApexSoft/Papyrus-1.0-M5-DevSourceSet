@@ -1,0 +1,140 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.textedit.stereotypeproper
+ ty.xtext.ui;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.uml.textedit.stereotypeproperty.
+ xtext.ui.internal.AppliedStereotypePropertyActivator
+Require-Bundle: org.eclipse.papyrus.uml.textedit.stereotypeproperty.xt
+ ext;bundle-version="1.0.0",org.eclipse.xtext.ui,org.eclipse.ui.editor
+ s;bundle-version="3.5.0",org.eclipse.ui.ide;bundle-version="3.5.0",or
+ g.eclipse.xtext.ui.shared,org.eclipse.ui,org.eclipse.xtext.builder,or
+ g.antlr.runtime,org.eclipse.papyrus.uml.alf.ui;bundle-version="1.0.0"
+ ,org.eclipse.papyrus.infra.gmfdiag.xtext.glue;bundle-version="1.0.0",
+ org.eclipse.uml2.uml;bundle-version="4.0.0",org.eclipse.papyrus.uml.c
+ ommands;bundle-version="1.0.0",org.eclipse.gmf.runtime.diagram.ui;bun
+ dle-version="1.4.0",org.eclipse.papyrus.uml.tools.utils;bundle-versio
+ n="1.0.0",org.eclipse.core.expressions;bundle-version="3.4.200",org.e
+ clipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.
+ infra.services.edit;bundle-version="1.0.0",org.eclipse.papyrus.uml.pr
+ ofile;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-ver
+ sion="1.0.0",org.eclipse.papyrus.uml.alf;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.widgets;bundle-version="1.0.0",org.eclipse.papyr
+ us.uml.xtext.integration.ui;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.uml.textedit.stereotypeproperty.xt
+ ext.ui,org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.ui.c
+ ontentassist,org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtex
+ t.ui.contentassist.antlr,org.eclipse.papyrus.uml.textedit.stereotypep
+ roperty.xtext.ui.contentassist.antlr.internal,org.eclipse.papyrus.uml
+ .textedit.stereotypeproperty.xtext.ui.contributions,org.eclipse.papyr
+ us.uml.textedit.stereotypeproperty.xtext.ui.internal,org.eclipse.papy
+ rus.uml.textedit.stereotypeproperty.xtext.ui.labeling,org.eclipse.pap
+ yrus.uml.textedit.stereotypeproperty.xtext.ui.outline,org.eclipse.pap
+ yrus.uml.textedit.stereotypeproperty.xtext.ui.quickfix
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Import-Package: org.apache.log4j
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tributions/StereotypePropertyPopupEditorConfigurationContribution.cla
+ ss
+SHA1-Digest: vxhzCofq1t+0K6Z3ttyWJMcB/fU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/AppliedStereotypePropertyParser.class
+SHA1-Digest: vV1Z3tvsTPm/k5cclFnMZaaz5iI=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/internal/InternalAppliedStereotypePropertyParser.cla
+ ss
+SHA1-Digest: 9lknsihetWOYuOVYfXtfc/W58Lo=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/internal/InternalAppliedStereotypePropertyParser$DFA
+ 17.class
+SHA1-Digest: q4bzl2B588pR2FDXf3scMtJl5Do=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/AbstractAppliedStereotypePropertyProposalProvider.class
+SHA1-Digest: VpJhPDs9n14ylDmfZydyzsGCpq4=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/App
+ liedStereotypePropertyExecutableExtensionFactory.class
+SHA1-Digest: WEYFKenkVusxqdCtyBLZeOaXCtg=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/AppliedStereotypePropertyProposalProvider.class
+SHA1-Digest: ehBqfQwyn5FXnw21WAEmVHbEMaM=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/internal/InternalAppliedStereotypeProperty.tokens
+SHA1-Digest: lQVS54kWa0+gJK4XFYXghBpM2v0=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: plugin.properties
+SHA1-Digest: UKeCZsmDunZHVUB5BYrV7bh4Kt8=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/lab
+ eling/AppliedStereotypePropertyDescriptionLabelProvider.class
+SHA1-Digest: ALrrKvH4hKQuPZbkDbjweiYERxU=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tributions/StereotypePropertyPopupEditorConfigurationContribution$1.c
+ lass
+SHA1-Digest: nAmeGKctSSUCbQQfB8gUfivRqh0=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/AppliedStereotypePropertyParser$1.class
+SHA1-Digest: /3PutSBItAeKPtq/HEu3fkUWYIw=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/lab
+ eling/AppliedStereotypePropertyLabelProvider.class
+SHA1-Digest: VyKUNHCP+ctUC9Advk+cpioam8g=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/Abs
+ tractAppliedStereotypePropertyUiModule.class
+SHA1-Digest: jytGeyasMYI+Cd4EPfw3zrf0dUs=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/int
+ ernal/AppliedStereotypePropertyActivator.class
+SHA1-Digest: hU/2cJAkF7WAOlY/Ivkega4fUsk=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/App
+ liedStereotypePropertyUiModule.class
+SHA1-Digest: Efx5kPEcdjGTtC2kUE9MNKxdvU0=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/internal/InternalAppliedStereotypePropertyLexer$DFA2
+ 4.class
+SHA1-Digest: mqrT1rKiEZ9ClNAm8zFPeRFuuWA=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/internal/InternalAppliedStereotypeProperty.g
+SHA1-Digest: 2uSXO/udVf9Q8IJP39F/vSEbzKY=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/con
+ tentassist/antlr/internal/InternalAppliedStereotypePropertyLexer.clas
+ s
+SHA1-Digest: SReofOMqHRVslLxih4vRAwAv7vk=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/qui
+ ckfix/AppliedStereotypePropertyQuickfixProvider.class
+SHA1-Digest: 8xQzFuaZ2sFaCUjJNHT+HLVuyss=
+
+Name: plugin.xml
+SHA1-Digest: fmsJzJ0yzDsjLvDtvZ1hKcfLHXY=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/ui/out
+ line/AppliedStereotypePropertyOutlineTreeProvider.class
+SHA1-Digest: K8OBF3U3jYQ9pWxBwDTVPzVBrM8=
+

@@ -1,0 +1,265 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.emf;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f.ecore;bundle-version="2.7.0",org.eclipse.emf.edit;bundle-version="2
+ .7.1",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.widgets;bundle-version="1.0.0",org.eclipse.emf.e
+ dit.ui;bundle-version="2.8.0",org.eclipse.core.databinding;bundle-ver
+ sion="1.4.1",org.eclipse.core.databinding.property;bundle-version="1.
+ 4.0",org.eclipse.emf.databinding;bundle-version="1.2.0",org.eclipse.e
+ mf.facet.infra.browser.uicore;bundle-version="0.2.0",org.eclipse.emf.
+ facet.infra.facet;bundle-version="0.2.0",org.eclipse.emf.facet.infra.
+ browser.custom;bundle-version="0.2.0",org.eclipse.emf.facet.infra.fac
+ et.core;bundle-version="0.2.0",org.eclipse.emf.facet.infra.browser.cu
+ stom.core;bundle-version="0.2.0",org.eclipse.papyrus.infra.tools;bund
+ le-version="1.0.0",org.eclipse.emf.transaction;bundle-version="1.4.0"
+ ,org.eclipse.emf.ecore.xmi,org.eclipse.emf.facet.custom.metamodel;bun
+ dle-version="0.2.0",org.eclipse.emf.facet.custom.ui;bundle-version="0
+ .2.0",org.eclipse.emf.facet.util.emf.core,com.ibm.icu;bundle-version=
+ "4.4.2",org.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.ecl
+ ipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0",org.
+ eclipse.gmf.runtime.notation;bundle-version="1.5.0",org.eclipse.core.
+ expressions;bundle-version="3.4.400",org.eclipse.gmf.runtime.common.c
+ ore;bundle-version="1.7.0",org.eclipse.gmf.runtime.emf.commands.core;
+ bundle-version="1.4.0",org.eclipse.gmf.runtime.emf.type.core;bundle-v
+ ersion="1.7.0",com.google.guava;bundle-version="11.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.emf.Activator
+Export-Package: org.eclipse.papyrus.infra.emf,org.eclipse.papyrus.infr
+ a.emf.commands,org.eclipse.papyrus.infra.emf.databinding,org.eclipse.
+ papyrus.infra.emf.dialog,org.eclipse.papyrus.infra.emf.providers,org.
+ eclipse.papyrus.infra.emf.providers.strategy,org.eclipse.papyrus.infr
+ a.emf.resource,org.eclipse.papyrus.infra.emf.utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: EMF Tools (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/emf/dialog/CommandCreationProgressMoni
+ torDialog.class
+SHA1-Digest: YG86lkvXMnyjfk8vWfdx48IuI9I=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ProviderHelper.class
+SHA1-Digest: H3GpC6PPBpoMMtY87lwRsD8ev8U=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/AnnotationObservableVa
+ lue$1.class
+SHA1-Digest: OSOy48sIt1XJrSG/TckLFTGA5KE=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForResourceSet.c
+ lass
+SHA1-Digest: cyUm6VqnohSOMC2ZhmXwOF1uDrM=
+
+Name: org/eclipse/papyrus/infra/emf/utils/EMFContants.class
+SHA1-Digest: nIfqJ7FRFqDpSRDBdWV5b/xDRpg=
+
+Name: org/eclipse/papyrus/infra/emf/utils/EMFFileUtil.class
+SHA1-Digest: agki3ljze9cmTwPbGzovvNMr6iQ=
+
+Name: org/eclipse/papyrus/infra/emf/utils/EMFStringValueConverter.clas
+ s
+SHA1-Digest: XhlzM2iTyc2yjc2VfBHEWg0b88M=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ENamedElementComparator.clas
+ s
+SHA1-Digest: Xa6Zk+2sgKS3I25NuzUXr37KzYY=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ResourceUtils.class
+SHA1-Digest: h7XkYCpDEk664YL+OL+ilIjELLU=
+
+Name: org/eclipse/papyrus/infra/emf/commands/AddToResourceCommand.clas
+ s
+SHA1-Digest: Z+G2b7OMvPBXWuO8toD+Je5mNJ0=
+
+Name: org/eclipse/papyrus/infra/emf/advice/DeletePageAdvice.class
+SHA1-Digest: pvvYjnykyEcwHXlqUCDppl3E2Mk=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/EMFObservableList.clas
+ s
+SHA1-Digest: qiAI4Ye8kiz9bRYgazruB5VbYQ8=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForEObject.class
+SHA1-Digest: EvM9DFgWlw+jAJpjCKvJ3W5E5g0=
+
+Name: org/eclipse/papyrus/infra/emf/utils/EMFHelper.class
+SHA1-Digest: iz/ZPHsjet7F3CF3H3pgnHxfF8w=
+
+Name: org/eclipse/papyrus/infra/emf/messages/Messages.class
+SHA1-Digest: tJFyVU3R9Nk+thC6tzHbAy8AsJ0=
+
+Name: plugin.pdoc
+SHA1-Digest: oEwBqqG+OaiKu2ugJ7ZPiBuqbSw=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFGraphicalContentProvi
+ der$1.class
+SHA1-Digest: jWzYaihodPhRmRzzfO42HEZtfck=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/EMFObservableList$1.cl
+ ass
+SHA1-Digest: qHK92WbBnH9tjKazeDzbQGQDOBQ=
+
+Name: org/eclipse/papyrus/infra/emf/advice/RemovePageHelper.class
+SHA1-Digest: s2ZdPQPNJKZE0AD/qgaIKNEyu+8=
+
+Name: org/eclipse/papyrus/infra/emf/utils/TextReferencesHelper.class
+SHA1-Digest: OUhCGZf7S6yB1xcbq6eS7hpPb3A=
+
+Name: org/eclipse/papyrus/infra/emf/commands/CreateEAnnotationCommand.
+ class
+SHA1-Digest: sLSF/VoHNx2rLECWQJg/S1u51Cc=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForResource.clas
+ s
+SHA1-Digest: Q1RI1v7u1fMiLqNT75gQ/Q7aZwE=
+
+Name: org/eclipse/papyrus/infra/emf/commands/RemoveEAnnotationCommand.
+ class
+SHA1-Digest: jMrKnCOA4l2U5dfWsP/GwVms7io=
+
+Name: build.properties
+SHA1-Digest: gtZUQircfC8Jp8FW95kfoGqoQsc=
+
+Name: org/eclipse/papyrus/infra/emf/resource/Replacement.class
+SHA1-Digest: tBG0nWAVGT33T3WsTywuwKVX2cc=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFEnumeratorContentProv
+ ider.class
+SHA1-Digest: to5KBMDEgUBPnSoY8rlxfdg3rkM=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceRegistryAdapterFactor
+ y.class
+SHA1-Digest: t+yjzyYyW4lPyQcKPZt6rVJaDUM=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForResourceIniti
+ alizerService.class
+SHA1-Digest: hWq3WY9C+pvwjeO4QZjnaRE1RWY=
+
+Name: org/eclipse/papyrus/infra/emf/utils/BusinessModelResolver.class
+SHA1-Digest: OEkjr3J1dhjzjb2tuLR+N0f9YzM=
+
+Name: org/eclipse/papyrus/infra/emf/Activator.class
+SHA1-Digest: dAc8vx8jRe8r/l4nGtNj/sR9gU4=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFFilteredLabelProvider
+ .class
+SHA1-Digest: obojRVB8vhkMyC9Dy4Q5G+jLJiY=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForHandlers.clas
+ s
+SHA1-Digest: aNghVl2BzCTXYkRlzb9TJ/RirZE=
+
+Name: org/eclipse/papyrus/infra/emf/providers/strategy/ContainmentBrow
+ seStrategy.class
+SHA1-Digest: 73qxLHdk5USoUPhSEQsI2tV+KMM=
+
+Name: org/eclipse/papyrus/infra/emf/utils/HistoryUtil.class
+SHA1-Digest: NNuyMfXEr5oQfbiXY4nyc7ZAy08=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForIEvaluationCo
+ ntext.class
+SHA1-Digest: DiiBew88E9JVlSB2VuviIx+3U+I=
+
+Name: org/eclipse/papyrus/infra/emf/providers/HistoryContentProvider.c
+ lass
+SHA1-Digest: HwwmJgH+KT0ZPduVbaulfTtr1Ig=
+
+Name: org/eclipse/papyrus/infra/emf/resource/DependencyManagementHelpe
+ r.class
+SHA1-Digest: vUxSerP0qANjcpehSMtNV8bwA9Y=
+
+Name: org/eclipse/papyrus/infra/emf/messages/messages.properties
+SHA1-Digest: NV2DD3+dydrf3k3wF7Vrs69J0TQ=
+
+Name: org/eclipse/papyrus/infra/emf/utils/TransactionalUnsetter.class
+SHA1-Digest: 8WF9+h2keWXJQh4Rh39bLFp2kLQ=
+
+Name: org/eclipse/papyrus/infra/emf/providers/AnyTypeLabelProvider.cla
+ ss
+SHA1-Digest: ffjCMpDnIyDEOYsYEpGqDOGnS2M=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFGraphicalContentProvi
+ der.class
+SHA1-Digest: fWo+pgYH57bO5/f7WyV7ddFq0Cs=
+
+Name: org/eclipse/papyrus/infra/emf/providers/SemanticFromModelExplore
+ r.class
+SHA1-Digest: C0KQ4zzHCvXicNHRftmdA0otOPA=
+
+Name: org/eclipse/papyrus/infra/emf/resource/DependencyManagementHelpe
+ r$ReplacementImpl.class
+SHA1-Digest: M+ypE6Q0hfQhXCSgQpVPgLrtgxA=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFLabelProvider.class
+SHA1-Digest: aXC1Z/b8MpE0YBu82XbIv2GKTzk=
+
+Name: plugin.xml
+SHA1-Digest: oTqQDolOxaKTmpESYsFsOMiWWfA=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/AnnotationObservableVa
+ lue$RemoveEntryCommand.class
+SHA1-Digest: BSbitENEkmhsJrGhffLhD3uTJQg=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFContentProvider.class
+SHA1-Digest: XqFi0Kgi5Muu5rKak/Mgiz+0r0E=
+
+Name: org/eclipse/papyrus/infra/emf/commands/IPapyrusDuplicateCommandC
+ onstants.class
+SHA1-Digest: +1cqjxwDPJo2TZbve5gGf/lmsaY=
+
+Name: org/eclipse/papyrus/infra/emf/utils/ServiceUtilsForSelection.cla
+ ss
+SHA1-Digest: 5axGApPvxcojmAANt4I4+KR0sJc=
+
+Name: org/eclipse/papyrus/infra/emf/providers/EMFGraphicalContentProvi
+ der$2.class
+SHA1-Digest: a74+5wv9JJOOt8ZvFDJsX73vDiw=
+
+Name: org/eclipse/papyrus/infra/emf/providers/MoDiscoContentProvider.c
+ lass
+SHA1-Digest: HM4AcvJcs5QQZq9KlNVs9zapfQg=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/EMFObservableValue.cla
+ ss
+SHA1-Digest: whR7UTtzfMjU7BJgxISnw0NHxdY=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/emf/commands/RemoveFromResourcecommand
+ .class
+SHA1-Digest: 3V2p1lLn6x0ruVJr1lmYwuBiI5A=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/AnnotationObservableVa
+ lue$AddEntryCommand.class
+SHA1-Digest: rbbyr80i5YpfuOY3GI9vSZJ/KRM=
+
+Name: org/eclipse/papyrus/infra/emf/providers/strategy/SemanticEMFCont
+ entProvider.class
+SHA1-Digest: AtdqiMENx16scr+g9mxEiGNl5Ns=
+
+Name: org/eclipse/papyrus/infra/emf/advice/RemovePageHelper$1.class
+SHA1-Digest: 1GXVODmUGibWIurNAg3OMD9DJls=
+
+Name: org/eclipse/papyrus/infra/emf/advice/DeletePageEditHelper.class
+SHA1-Digest: cys7soLMDOYNLy1UdCBnK9FqyfI=
+
+Name: org/eclipse/papyrus/infra/emf/commands/UnsetCommand.class
+SHA1-Digest: kVNPj725bItGpus1b2S9KYckybE=
+
+Name: org/eclipse/papyrus/infra/emf/providers/StandardEMFLabelProvider
+ .class
+SHA1-Digest: RWRgmER5J89Xnz/yN9YqGfh9e4w=
+
+Name: org/eclipse/papyrus/infra/emf/utils/EClassNameComparator.class
+SHA1-Digest: fwOt3OqjamVn7zOt4N1HdeVdeyU=
+
+Name: org/eclipse/papyrus/infra/emf/databinding/AnnotationObservableVa
+ lue.class
+SHA1-Digest: wNLsQhmfcbISiN920AdugSBAeOg=
+

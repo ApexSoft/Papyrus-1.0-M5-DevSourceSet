@@ -1,0 +1,179 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.controlmode;si
+ ngleton:=true
+Require-Bundle: org.eclipse.emf.edit.ui,org.eclipse.papyrus.infra.core
+ ;bundle-version="1.0.0",org.eclipse.core.expressions;bundle-version="
+ 3.4.400",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",co
+ m.google.guava;bundle-version="11.0.0",org.eclipse.equinox.registry,o
+ rg.eclipse.emf.workspace,org.eclipse.gmf.runtime.common.core,org.ecli
+ pse.gmf.runtime.emf.commands.core,org.eclipse.gmf.runtime.emf.type.co
+ re,org.eclipse.papyrus.views.modelexplorer;bundle-version="1.0.0",org
+ .eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",org.ec
+ lipse.papyrus.infra.widgets.toolbox;bundle-version="1.0.0",org.eclips
+ e.papyrus.infra.emf;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.controlmode.Contr
+ olModePlugin
+Export-Package: org.eclipse.papyrus.infra.services.controlmode,org.ecl
+ ipse.papyrus.infra.services.controlmode.commands,org.eclipse.papyrus.
+ infra.services.controlmode.handlers,org.eclipse.papyrus.infra.service
+ s.controlmode.participants,org.eclipse.papyrus.infra.services.control
+ mode.ui,org.eclipse.papyrus.infra.services.controlmode.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ui/OptionalMessag
+ eDialog$1.class
+SHA1-Digest: 5tdUg2bZOGfV3rc6UYwZ7VTWCeM=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/participants/ICon
+ trolCommandParticipant.class
+SHA1-Digest: 2YG+tgkuJLxHjfNwKITAxwIh7EE=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/RemoveCo
+ ntrolResourceCommand.class
+SHA1-Digest: Na9DftrMfh/gosK3jcn0dv5T4ew=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/participants/IUnc
+ ontrolCommandParticipant.class
+SHA1-Digest: YOdi0qxYZaFZ6XMEybjrPpVMtI4=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/participants/ICon
+ trolModeParticipant.class
+SHA1-Digest: RGhnaw5rWEuhmx/Gn+ApwVamkZE=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/Abstract
+ ControlCommand.class
+SHA1-Digest: YoTNPgq+nNzfDuP7eqR0r0yEFr8=
+
+Name: schema/participant.exsd
+SHA1-Digest: 0VgF9ZzFjdPRMsNysBXE7z0KhMQ=
+
+Name: icons/ReintegrateSubModel_16.png
+SHA1-Digest: 70uC2+qaIIIPB9pPjHp8J/f9Ksg=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/BasicUnc
+ ontrolCommand.class
+SHA1-Digest: GaQgTM4kL2PxijwVN1ArRir5f/Y=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ControlModeReques
+ t.class
+SHA1-Digest: cvXB7Ya2OxLkgKwJ/FSMpBHtJSg=
+
+Name: plugin.properties
+SHA1-Digest: xRLN1v4gVPq2XtWBJ4RNNVuH/6g=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/participants/Abst
+ ractSatelliteResourceParticipant.class
+SHA1-Digest: LxbKX4GLGA/uIWJ4F5EwEMEBGW4=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/participants/Sash
+ ControlParticipant$ClearDiCommand.class
+SHA1-Digest: BKqt9++9NvvivcpNY7IgiIaZVqs=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/handlers/ControlC
+ ommandHandler.class
+SHA1-Digest: Ay80o+aTJeJnaMwJK8hQAS5F+Ug=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ControlModeReques
+ tParameters.class
+SHA1-Digest: amOs4gJuwBF3xvquUoNdZf7zeAg=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/handlers/Uncontro
+ lCommandHandler.class
+SHA1-Digest: 92XwGJkwA9xxoI+sbOmj0axnhSw=
+
+Name: plugin.xml
+SHA1-Digest: 8DTS19udmu57lE8hKkQ+ZtGl9Do=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/util/ControlHelpe
+ r.class
+SHA1-Digest: VGvad3+EN3ZSUgZ+YS4m0UBikK8=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/participants/Sash
+ ControlParticipant.class
+SHA1-Digest: CfAL9FbZAo/LjypmIboQAM0emNU=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/Abstract
+ ControlResourceCommand.class
+SHA1-Digest: h0SuXYrxOClvsUS/n12NitRtwLk=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/AskUserC
+ ommand.class
+SHA1-Digest: ATiJeLfDsX8LN0Cp3l9OqmHulB8=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: icons/CreateSubModel_16.png
+SHA1-Digest: Ueb/mx2mFCCjskCUo1/zPJApXhk=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/IsControlledFragm
+ entTester.class
+SHA1-Digest: zXi1r4ZPz8e894TiAWbhWtR6lPQ=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/CreateCo
+ ntrolResource.class
+SHA1-Digest: mkvBo4OTFXwgO5HiYiCcXMwzVYM=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ControlModePlugin
+ .class
+SHA1-Digest: K4ogebrYM1yv+ag/s1hgXsbMjA8=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ui/CreateModelFra
+ gmentDialog.class
+SHA1-Digest: XSU13Ft/QM7IanEmbX+4ZpSxFvc=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ControlModeManage
+ r$PartipantComparator.class
+SHA1-Digest: 4Kp/wwnWsvvLg5si/EbcyRhfYv8=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/IControlModeManag
+ er.class
+SHA1-Digest: gog5qw9NaJvnnpxzJUPLR9bA5Vg=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ControlModeManage
+ r.class
+SHA1-Digest: 01Cm6qGEZQhz2U+zv5EJywsztIo=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ui/IControlModeFr
+ agmentDialogProvider.class
+SHA1-Digest: ssGZQ50oRsEEeQwwri4M+tn8iog=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/Initiali
+ zeSashCommand.class
+SHA1-Digest: +pmuP7dR9Gpct0lNRTDH99/wFqQ=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ui/OptionalMessag
+ eDialog.class
+SHA1-Digest: DG7kEQux37s5C+AAbm8SmV8pmIs=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/util/LabelHelper.
+ class
+SHA1-Digest: mN8qC7QFPYAJ/Q5GDKt+pTNdprc=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/commands/BasicCon
+ trolCommand.class
+SHA1-Digest: 7KCCgJI4JEPB6r+11VYlCWqLI5c=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ui/ControlResourc
+ eDialog.class
+SHA1-Digest: qmqeft7HFqNQc6d8HnO5M0Oeau0=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ui/IControlModeFr
+ agmentDialogProvider$1.class
+SHA1-Digest: UF7HplRQUEe/As61w0zlPX2K6iY=
+
+Name: org/eclipse/papyrus/infra/services/controlmode/ControlModeManage
+ r$SingletonHolder.class
+SHA1-Digest: QU0JGC8IxjLcddXkHmlL42PjYRQ=
+

@@ -1,0 +1,1373 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.sysml.diagram.common;singleto
+ n:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.emf;bundle-versio
+ n="2.6.0",org.eclipse.uml2.uml;bundle-version="3.1.0",org.eclipse.pap
+ yrus.sysml;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools.utils
+ ;bundle-version="1.0.0",org.eclipse.core.expressions,org.eclipse.papy
+ rus.uml.diagram.common;bundle-version="1.0.0",org.eclipse.papyrus.edi
+ tor;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.preferen
+ ces;bundle-version="1.0.0",org.eclipse.papyrus.extensionpoints.editor
+ s;bundle-version="1.0.0",org.eclipse.papyrus.infra.services.edit;bund
+ le-version="1.0.0",org.eclipse.papyrus.uml.service.types;bundle-versi
+ on="1.0.0",org.eclipse.papyrus.sysml.service.types;bundle-version="1.
+ 0.0",org.eclipse.papyrus.infra.widgets.toolbox;bundle-version="1.0.0"
+ ,org.eclipse.papyrus.infra.widgets;bundle-version="1.0.0",org.eclipse
+ .papyrus.uml.modelexplorer.widgets;bundle-version="1.0.0",org.eclipse
+ .draw2d;bundle-version="3.7.1",org.eclipse.gmf.runtime.diagram.core;b
+ undle-version="1.4.1",org.eclipse.gmf.runtime.diagram.ui;bundle-versi
+ on="1.5.0",org.eclipse.papyrus.uml.tools;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.papyrus.i
+ nfra.gmfdiag.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.
+ emf.appearance;bundle-version="1.0.0",org.eclipse.papyrus.uml.pastema
+ nager;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bundl
+ e-version="1.0.0",org.eclipse.uml2.common.edit;bundle-version="1.6.0"
+ ,org.eclipse.uml2.uml.edit;bundle-version="4.0.0",org.eclipse.papyrus
+ .infra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.emf.edit.u
+ i;bundle-version="2.8.0",org.eclipse.emf.facet.infra.browser.uicore;b
+ undle-version="0.2.0",org.eclipse.papyrus.infra.services.labelprovide
+ r;bundle-version="1.0.0",org.eclipse.gmf.tooling.runtime;bundle-versi
+ on="3.1.0",org.eclipse.papyrus.uml.diagram.composite;bundle-version="
+ 1.0.0"
+Bundle-Activator: org.eclipse.papyrus.sysml.diagram.common.Activator
+Export-Package: org.eclipse.papyrus.gmf.diagram.common.commands,org.ec
+ lipse.papyrus.gmf.diagram.common.compatibility,org.eclipse.papyrus.gm
+ f.diagram.common.edit.part,org.eclipse.papyrus.gmf.diagram.common.edi
+ t.policy,org.eclipse.papyrus.gmf.diagram.common.factory,org.eclipse.p
+ apyrus.gmf.diagram.common.figure,org.eclipse.papyrus.gmf.diagram.comm
+ on.locator,org.eclipse.papyrus.gmf.diagram.common.parser,org.eclipse.
+ papyrus.gmf.diagram.common.provider,org.eclipse.papyrus.sysml.diagram
+ .common,org.eclipse.papyrus.sysml.diagram.common.commands,org.eclipse
+ .papyrus.sysml.diagram.common.dialogs,org.eclipse.papyrus.sysml.diagr
+ am.common.edit.part,org.eclipse.papyrus.sysml.diagram.common.edit.pol
+ icy,org.eclipse.papyrus.sysml.diagram.common.factory,org.eclipse.papy
+ rus.sysml.diagram.common.figure,org.eclipse.papyrus.sysml.diagram.com
+ mon.messages,org.eclipse.papyrus.sysml.diagram.common.parser,org.ecli
+ pse.papyrus.sysml.diagram.common.preferences,org.eclipse.papyrus.sysm
+ l.diagram.common.utils,org.eclipse.papyrus.uml.diagram.common.dnd.hel
+ per,org.eclipse.papyrus.uml.diagram.common.edit.part,org.eclipse.papy
+ rus.uml.diagram.common.edit.policy,org.eclipse.papyrus.uml.diagram.co
+ mmon.factory,org.eclipse.papyrus.uml.diagram.common.figure,org.eclips
+ e.papyrus.uml.diagram.common.parser,org.eclipse.papyrus.uml.diagram.c
+ ommon.utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ParameterComp
+ artmentEditPart.class
+SHA1-Digest: Wfktofm0W13K1P7yiLY0ycTjBd8=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowSpecifica
+ tionLabelNameEditPart.class
+SHA1-Digest: 4XFcr2swXR4pdQkKFDi5fwU+QzQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/DimensionFigure.
+ class
+SHA1-Digest: tkSH9cSLdkX/yZncEe6Hysf0GM0=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/TextNonResiza
+ bleEditPolicy$1.class
+SHA1-Digest: 2Zrs5rR3Ae8LbthQmnsOfqJD3Z8=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/locator/LabelCellEditorLo
+ cator.class
+SHA1-Digest: E5tsU94I+c83FbAWmP83XtcaIe0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintCompa
+ rtmentEditPart.class
+SHA1-Digest: CFe3zbFwZUVCQbSgmufKTa7A34g=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockEditPart
+ .class
+SHA1-Digest: tiJ2czAoEqm4pbObmIgZn/yuVT0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/Activator.class
+SHA1-Digest: Qx3nZdYBsdxUO6egi1KBx4GCDOg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/InterfaceEditPa
+ rt.class
+SHA1-Digest: VgG+X5vND9UpuwR/7dQ8jBLOjRM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/NamedElementNod
+ eLabelNameEditPart.class
+SHA1-Digest: phf8OPUybUANkffwLaK1YtxFc2o=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConnectorLinkLa
+ belEditPart.class
+SHA1-Digest: GbtQJZaF5fBgt5alkUgpjuda+HY=
+
+Name: icons/flowports/FlowPort_IN_A_SOUTH_EAST.gif
+SHA1-Digest: QDSVlSAM571qwzHXkmWeDSRNRac=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateSysMLMod
+ elCommand.class
+SHA1-Digest: I2WeiydHrJpPS9+gx6+06ZKA8Xc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ValueTypeEdit
+ Part$1.class
+SHA1-Digest: b6gTDsiVqh3p6bEcPKc7KzOWId4=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/ConstraintLabelPar
+ ser.class
+SHA1-Digest: iqBtcvvBpbazeu8i3EBF6o2128k=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ActorEditPart$1
+ .class
+SHA1-Digest: T8yLpg9USvlWZhzom+dw1lVCgIU=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart$1$1.class
+SHA1-Digest: P0C8fGLsH0meHExPoqBG64ZZFrY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateActorPar
+ tWithTypeConfigureCommandFactory.class
+SHA1-Digest: 4glzcJQwSUot6J0Q+/eDLLNYjeg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart$2.class
+SHA1-Digest: fpH4VWw6x7o7C15lX14CkEQzM40=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/GeneralizationFigu
+ re.class
+SHA1-Digest: xKxr3nMNWb17VGTBP4iJnJTa+hs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateValueWit
+ hTypeConfigureCommandFactory$1.class
+SHA1-Digest: rdEmiWw/hiAGIrGyd9wkOB1X+wI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/BlockCompositeC
+ lassifierViewFactory.class
+SHA1-Digest: vjOyzob0PunwX84yKoJMX3AxFJQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateFlowPort
+ WithFlowSpecificationConfigureCommandFactory.class
+SHA1-Digest: YBfFCWqtCRsbZ46ib/H4hPGvzYo=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/CompartmentSe
+ manticEditPolicy.class
+SHA1-Digest: SuBXXwCqZbIiF0sSV5awxnzZX64=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConnectorEditPa
+ rt.class
+SHA1-Digest: 3M55BlVr+FI8E6xw9w4IkV9Xfg4=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/IGraphicalTypeRe
+ gistry.class
+SHA1-Digest: xPQ5tL3iTdLbXYs4TCRhgKnptO4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/ConstraintBlock
+ ClassifierViewFactory.class
+SHA1-Digest: fl9xzm9DCMRbS4NxRqG+OtI8u3I=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/ValueTypeClassi
+ fierViewFactory.class
+SHA1-Digest: cMDXEHL+AvZLQzTcafUEF5JB0lQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/DimensionClassi
+ fierViewFactory.class
+SHA1-Digest: YoN1dHUSyqBC6e5Y2Xzq/shIMgQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/SignalEditPart.
+ class
+SHA1-Digest: A3BFaPQIcXJX0T05fjAaVTQP9fc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectV
+ aluePropertyTypeDialog$1.class
+SHA1-Digest: ts3fck5R205yKL1aoWUJ22Oesuo=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart$3.class
+SHA1-Digest: ov6mD2xKfBoOo+lMbz73143TsyM=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/ILinkMappingH
+ elper.class
+SHA1-Digest: oKM+91zZ+BXvpHtPFZGLBihv5rc=
+
+Name: icons/flowports/FlowPort_INOUT_A_SOUTH_EAST.gif
+SHA1-Digest: UXieSFM7ewgCxMm0R3m2JPQNpkM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/policy/EncapsulatedC
+ lassifierResizableShapeEditPolicy.class
+SHA1-Digest: Oi8J0fUYtQ62RfUq6BYQchiZEGo=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/DefaultXYLayo
+ utEditPolicy.class
+SHA1-Digest: Sb1IeebCFCwwrrhXTZy7/Rt2c+w=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateReferenc
+ eWithTypeConfigureCommandFactory.class
+SHA1-Digest: TpxWFFdF9nQpv9CMkLNHS2gFHR4=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/commands/IdentityCommandW
+ ithNotification.class
+SHA1-Digest: Q+x501ivIm584vLg48j41lsehxM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintParam
+ eterAffixedNodeEditPart$1.class
+SHA1-Digest: Id7ZEYPECw2ABL9kEdL3aumJC98=
+
+Name: icons/flowports/FlowPort_OUT_A_SOUTH_WEST.gif
+SHA1-Digest: umhlixdgJX2yPXeLexhIOLj+Ups=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/TextNonResiza
+ bleEditPolicy.class
+SHA1-Digest: iLlkEXDxP+7uNMRSxyR5k10IN4o=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart.class
+SHA1-Digest: hWNNBrfXTeFsYonRAjtz42pMcvQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PortAffixedNode
+ EditPart$1$1.class
+SHA1-Digest: KBRYcFrrbqU6qCsn3Xbs82zxPoc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowSpecifica
+ tionEditPart$1.class
+SHA1-Digest: n/qqF5khe05vr7jM7PehOJzpONY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/PartCompart
+ mentSemanticEditPolicy.class
+SHA1-Digest: gZmPwNrytHUgh7N5Qh2yp3uo2r4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/StructureCo
+ mpartmentSemanticEditPolicy.class
+SHA1-Digest: hg+MsL09m0WfbE0gtjbKRk4mdGk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintParam
+ eterAffixedNodeEditPart$2$1.class
+SHA1-Digest: Ptv8m61+vc5isz5A6HvrGPnGp8k=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/SignalFigure.class
+SHA1-Digest: HcmUikzr4MNHrs24PsdGBKOaadA=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/policy/MaskManagedLa
+ belEditPolicy.class
+SHA1-Digest: ADpzfqRWylCEjlmHX5SrKVhNNUc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/BlockProper
+ tyCompositeSemanticEditPolicy.class
+SHA1-Digest: 02QgbfOSCSqEPLIdSAseGsl4qvU=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/SysMLDiagramFram
+ eFigure.class
+SHA1-Digest: T4w5K1dQZgeHD441ftYjMoLA80w=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/CustomAbstractVi
+ ewProvider.class
+SHA1-Digest: 07/BVJnRltO73gqiQvVyZEotifc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart$3.class
+SHA1-Digest: ItpaBksufsY83/b+JHv36kVVD9o=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockProperty
+ CompartmentEditPart.class
+SHA1-Digest: o8fQc7uXwA5SF6QfpzjbM9caiEs=
+
+Name: icons/flowports/FlowPort_NA_NORTH_EAST.gif
+SHA1-Digest: jVQUKh99+ts963C1MfROxS0kDBM=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/ElementTypeLabel
+ Provider.class
+SHA1-Digest: 65tGswkgpJK83np6ZQA3aa5MsCw=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/TextSelection
+ EditPolicy$1.class
+SHA1-Digest: 2ubFpIk2MFIIQ4tjeoxEq3e1Bec=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PortAffixedLabe
+ lNameEditPart.class
+SHA1-Digest: 13tEY9zT4/3oIKpG8OVlxKk55Fc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/SysMLDiagramFram
+ eFigure$2.class
+SHA1-Digest: QcKN4XPpec9TIqUe2AKzCycBlT0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockEditPart
+ $1.class
+SHA1-Digest: tJx4VBT26/CQ0UMU/vVdVww+rfo=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPropertyC
+ hildLabelEditPart.class
+SHA1-Digest: zViWOucR+wrQAKzAcstEEGl9eds=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectT
+ ypeDialog$3.class
+SHA1-Digest: tvcVcdpapmDr2awKjDhibu8A6q8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/utils/AssociationViewUtil
+ s.class
+SHA1-Digest: FXOCTIjxS+CoZm41C5OOWy4zf30=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/NestedBlock
+ PropertyCompositeSemanticEditPolicy.class
+SHA1-Digest: yNdF7kBg1Yb7mXQUKBHCH8zGy3c=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/AssociationLinkVi
+ ewFactory.class
+SHA1-Digest: FhiizpEqR/4zGRv72KsPGeRAl+k=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/commands/CreateViewComman
+ d.class
+SHA1-Digest: UkuFKDajFDLNWVC3EHBbWYGZCso=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/ReceptionLabelPars
+ er.class
+SHA1-Digest: QjpWYZrFtbK9kHvWP/dA1mJ6LaM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/FlowPortCom
+ partmentSemanticEditPolicy.class
+SHA1-Digest: ne9U9tmIy4ONWcezdhDa/50sE1k=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PortAffixedNode
+ EditPart.class
+SHA1-Digest: H5CHD+siFD96jn4DxJWZuVvhH0M=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart.class
+SHA1-Digest: CbGQNOCMJXcYUEbcnIP24XrpIBc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/EnumerationEdit
+ Part$1.class
+SHA1-Digest: bdXEGJeAkgVKGkvPzzbDYjk1D1U=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/ConstraintExte
+ ndedDirectEditionDialog.class
+SHA1-Digest: Ygm2TrQS/Q5LQ7FUhCWkPFdbQ+k=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/messages/messages.prope
+ rties
+SHA1-Digest: SEtHi52CnPM+iOEm8BaSIgPRtv0=
+
+Name: icons/flowports/FlowPort_IN_A_WEST.gif
+SHA1-Digest: Cnd571qC3Q81Ks3hX/9A7yABj+M=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/policy/StructuredCla
+ ssifierCreationEditPolicy.class
+SHA1-Digest: h6JvO59pFbvTaeFcPSDrQLSXypE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/UsageEditPart.c
+ lass
+SHA1-Digest: lEQC/jGCtLaaYZvImaBtWtExfKU=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/CompartmentListVi
+ ewFactory.class
+SHA1-Digest: jwyq1gbW5PQDaqBoarUtHF3AEpk=
+
+Name: icons/flowports/FlowPort_OUT_A_EAST.gif
+SHA1-Digest: Cnd571qC3Q81Ks3hX/9A7yABj+M=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractShapeCo
+ mpartmentEditPart.class
+SHA1-Digest: FYR9JgWygarrJHH9IHmoqPnt1Gw=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreatePartWith
+ TypeConfigureCommandFactory.class
+SHA1-Digest: XuH+vKEo4tueW3CHXr7lWWAqeso=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$5.class
+SHA1-Digest: Mzw3yFJ/YKwpEvT4jEapWk7bRlM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateConstrai
+ ntPropertyWithTypeConfigureCommandFactory.class
+SHA1-Digest: oZ63RZ93IKthuhcXFhqugs1m1SQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/AssociationEndLabe
+ lParser.class
+SHA1-Digest: O2TgYV1GtqCn7QGc2iOfGcjYtKg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ConstraintBlo
+ ckEditPart$1.class
+SHA1-Digest: 0GDb4Hm3i39+Vnt7DCL7SQtbroI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectC
+ onstraintPropertyTypeDialog.class
+SHA1-Digest: qHY4Qw4+0Bf01izba64OEBj6eaU=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectB
+ lockPropertyTypeDialog.class
+SHA1-Digest: RzG+Anq71h6yRlWz5nO6OIBjhng=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectA
+ ctorPartTypeDialog.class
+SHA1-Digest: TdsbQl3tPnsN5CUQ/jKOPuGbpG8=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockConstrai
+ ntCompartmentEditPart.class
+SHA1-Digest: S4AaSrXMdf4u8m3fOuznFwxmO64=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/DefaultGraphi
+ calNodeEditPolicy.class
+SHA1-Digest: rSQk+EIlJB2ZYFTVYO+ydlylmLc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractShapeCo
+ mpartmentEditPart$2.class
+SHA1-Digest: zzfJxHNYISGImrrzA/rXnPApuH4=
+
+Name: icons/flowports/FlowPort_NA_SOUTH_EAST.gif
+SHA1-Digest: LueGSCWd8aiRYltOpYijRANvMHg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/InterfaceRealizat
+ ionLinkViewFactory.class
+SHA1-Digest: Wn9vRrTrbixOT97gPpYUVp0QqQw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/DataTypeEditPar
+ t.class
+SHA1-Digest: Q+VdkCx5HsddxBbLaIMeWtishBw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AppliedStereoty
+ peAffixedLabelEditPart.class
+SHA1-Digest: ttFL7vY/CYKu92zoJjH3aF6tIMY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/DependencyLinkVie
+ wFactory.class
+SHA1-Digest: ARvFQtyu8dxgT3Ux1drhtDhw944=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart.class
+SHA1-Digest: TqWg9aEqrkERPtQOcsCt6Sop13Y=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/PrimitiveTypeFigur
+ e.class
+SHA1-Digest: qFG3/cBSQYo1bF4CKrZgW1txJsE=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortAffix
+ edNodeEditPart$1.class
+SHA1-Digest: UA3UQ0cOuXEiuF0QwYMG4xevyXM=
+
+Name: icons/flowports/FlowPort_IN_A_NORTH_WEST.gif
+SHA1-Digest: vV6HVWLo1P5GgXB1U8a73roYC2s=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/DefaultSemant
+ icEditPolicy.class
+SHA1-Digest: B5LurSjZAHnIx+IPUBwMsuRKxXY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AppliedStereoty
+ peLinkLabelEditPart.class
+SHA1-Digest: zZKlWSLUHivUEZRRLcMpAFm8xtw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/EnumerationFigure.
+ class
+SHA1-Digest: W6Sox/rLaR7HzNGq+FrAwFG8GS0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/BlockPropertyCo
+ mpositeClassifierViewFactory.class
+SHA1-Digest: mKPT6V1BpZbeu5v+yLJGm/6FJXo=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/FlowSpecificatio
+ nFigure.class
+SHA1-Digest: N9lSk2ONmBXGfqZ2R+96KBoEJ7E=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/utils/ConstraintBlockHe
+ lper.class
+SHA1-Digest: 3JIEoon/3G1g35zyn6nT4DJdG0g=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/DefaultSnapBa
+ ckEditPolicy.class
+SHA1-Digest: 22RVvtD6EvAe8Uk39TQGTBd3nus=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart$4.class
+SHA1-Digest: Inj77jao9bGlDUd4mo3cHJnEcGI=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/EnumerationEdit
+ Part.class
+SHA1-Digest: RN0p/BW6BWHKnwn3TYXI8sgBzSk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart.class
+SHA1-Digest: df8hKYnFyQSF/ZyquRRGOtjoCGY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConnectorLinkLa
+ belTargetMultiplicityEditPart.class
+SHA1-Digest: wtn7T4aftx2KI0T+SQuPDsuJEO0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/ConnectorLabelPars
+ er.class
+SHA1-Digest: K2fZQdMp1I1e9bvYwKf0G/vfF+A=
+
+Name: icons/flowports/FlowPort_INOUT_A_NORTH_WEST.gif
+SHA1-Digest: UXieSFM7ewgCxMm0R3m2JPQNpkM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/parser/FlowPropertyLabe
+ lParser.class
+SHA1-Digest: 6QZr5AxNW+bsMqrGYugU9F6oZvk=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/InterfaceRealizati
+ onFigure.class
+SHA1-Digest: Xbfl1mqnF0HSntNgBUEMMapjvPU=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConnectorLinkLa
+ belSourceMultiplicityEditPart.class
+SHA1-Digest: xWatunp8o0Cbx/g6fZ/UHv3+jI0=
+
+Name: icons/flowports/FlowPort_NA_SOUTH.gif
+SHA1-Digest: M5DBFnOeRyykuphRVpHCDMB+wwI=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/OperationCompar
+ tmentEditPart.class
+SHA1-Digest: 2CHEo9o3l+aRJ+5XIJhzIERcqFw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart$5.class
+SHA1-Digest: zpHpm9POHH6N751FoF9+84UWn1Y=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/locator/CellEditorLocator
+ Util.class
+SHA1-Digest: ZZSco4RIKPcC6v5x6QjLEd82+u8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$2.class
+SHA1-Digest: JWmdJOPs8iykrurXT+4TE0emhbE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintParam
+ eterAffixedNodeEditPart$3.class
+SHA1-Digest: CAjIm1jz/Xg8gH+B+46/YxBqQF8=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/part/ITextAwareEditP
+ art.class
+SHA1-Digest: DpLC7bsiIDxFHii/nQN+2rt6OL4=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/AbstractViewProv
+ ider.class
+SHA1-Digest: cLUe8a1IEVDzjDbMh3rs3EkixEM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ConstraintBlo
+ ckPropertyCompositeEditPart.class
+SHA1-Digest: vKtGakuWr741DoT/DeTK4iOJOrg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/BlockCompositeFi
+ gure.class
+SHA1-Digest: 0ppfm652J9kzB0omG13Sr11xGBk=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/DiagramEditorUti
+ l.class
+SHA1-Digest: 47blREqYY4S9mxxoTgVpUgcbaz0=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/CustomAbstractEd
+ itPartProvider.class
+SHA1-Digest: ZvYxAForahH6H0VDk2lAUO6iVhI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/NestedBlockPrope
+ rtyCompositeFigure.class
+SHA1-Digest: aukRKcdIh1olgCB+VxFonIwL1PY=
+
+Name: icons/flowports/FlowPort_IN_A_SOUTH_WEST.gif
+SHA1-Digest: gpkGj7EcWSrC//D14Q+ZGTmqAgk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/ParameterLabelPars
+ er.class
+SHA1-Digest: 6tRw+38HCkVyX+7nJF+/FyRZMQ8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/OperationLabelPars
+ er.class
+SHA1-Digest: UhtkmRp7ZOXrHh7P74NJJG99Klk=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/utils/SysMLGraphicalTyp
+ es.class
+SHA1-Digest: Vvh67DvWsJ4DrWzc7WWrp6fOZfM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/ClassifierViewFac
+ tory.class
+SHA1-Digest: fRee16R263VIIU1nL8CRDnPBZ1Q=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart$5.class
+SHA1-Digest: CU1RbqvkWVoAAOKCD8KAk0qELzc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateValueWit
+ hTypeConfigureCommandFactory.class
+SHA1-Digest: MYSZG9yifwrnQU1onmmgHcMG73c=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/compatibility/DiagramVers
+ ioningUtils.class
+SHA1-Digest: ufcLUf3pv3AYBXndgKsiqQpHvY8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/InterfaceRealiz
+ ationEditPart.class
+SHA1-Digest: 7uJ9uoM+os4FOSkt+IeKoNU85Rc=
+
+Name: plugin.properties
+SHA1-Digest: CDFhlgZaSu4TF6sgAjFEA26eRIU=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/CompartmentShapeV
+ iewFactory.class
+SHA1-Digest: amZAabHNVlgAzGEc8i/Jl119R4c=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/AbstractViewProv
+ ider$ClassToCreationMethodMap.class
+SHA1-Digest: YFQNinVBhzaUp9N7KIDEIXHeTOI=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/SlotLabelParser.cl
+ ass
+SHA1-Digest: 1CxmNaiUO9nMGF2RF31d9lrdS1Y=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart$1.class
+SHA1-Digest: 4dRBgFeKED+ElZjhB6G1j8+kvlY=
+
+Name: icons/flowports/FlowPort_IN_A_NORTH.gif
+SHA1-Digest: ijZRDSIRv2HKIcEtgZPA/Ej/zic=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/NestedBlockPr
+ opertyCompositeEditPart.class
+SHA1-Digest: v6QyYqnhNu1o769EtQ1MScghAwE=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/NestedBlockProp
+ ertyCompositeClassifierViewFactory.class
+SHA1-Digest: rp5qSZJfMfp+xExkItLNSmLslo8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/SlotChildLabelE
+ ditPart.class
+SHA1-Digest: wuM8E7sKrx0lqrLUA1nXHZoWe2Y=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectT
+ ypeDialog$5.class
+SHA1-Digest: apIPKPUqYpq2xCHUfxNFu5Edfxk=
+
+Name: icons/flowports/FlowPort_INOUT_A_EAST.gif
+SHA1-Digest: jWxGFUU3hMW7qpO2vLHb8wA8wEE=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/preferences/LabelPrefer
+ enceHelper.class
+SHA1-Digest: dkQmSMUX4T7vQxhOAPnQlxEutME=
+
+Name: icons/flowports/FlowPort_INOUT_A_SOUTH_WEST.gif
+SHA1-Digest: WRa8IhtvyeNwI74rJtWI5csrQhY=
+
+Name: plugin.xml
+SHA1-Digest: yMJ2/s8cfsVkYITaPjAOPDlgK40=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PrimitiveTypeEd
+ itPart$1.class
+SHA1-Digest: qwt9XDq5/yYLKLtj945QlB/Vqhs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockComposit
+ eEditPart$1.class
+SHA1-Digest: 9///PeO+Z0lcG3UaVFqEAEKQWjo=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/LabelDirectEd
+ itPolicy.class
+SHA1-Digest: wSGcFGJCYZT6nD3cTEG1mSSy5bk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/DefaultParserHintA
+ dapter.class
+SHA1-Digest: bpAQURGbYpc+6svtnW5KwOcSORg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/BlockPropertyCom
+ positeFigure.class
+SHA1-Digest: LDiWBbAF6+X++Sme+ssyzbnR6GM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart$2.class
+SHA1-Digest: Qu/yRQ9y6nG3MX8c2h+bqxyqVBg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ConstraintBlo
+ ckEditPart.class
+SHA1-Digest: P9qrqlvemH34pv38YYBruQPZ35o=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AssociationLink
+ LabelTargetMultiplicityEditPart.class
+SHA1-Digest: g8gN3Mnv3XQjsgX2+WKEf/l+c5o=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockLabelNam
+ eEditPart.class
+SHA1-Digest: Fiv8f4gJs3xCbqwfvAGuIJmBQLY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/NamedElementLabelP
+ arser.class
+SHA1-Digest: wLGO/FIkTnRMwl8zQ91hfMkspG4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/FlowPortAffixed
+ NodeViewFactory.class
+SHA1-Digest: ocyDRXlRcQUoa/dpN52qbqiyoOA=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/DefaultContai
+ nerNodeEditPolicy.class
+SHA1-Digest: 7Imuvt/PGZtyQrRPp5UxJB78Rks=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AssociationLink
+ LabelSourceMultiplicityEditPart.class
+SHA1-Digest: Wg7hv/akBPxTS2ymG/MnFVjV4ic=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/GeneralizationLin
+ kViewFactory.class
+SHA1-Digest: QD8yhc2W/UN7488q5HWl1CHb3sI=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$7.class
+SHA1-Digest: 4KaY8K4JK6OtyCYzNW6otAhwdJQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/parser/FlowPortLabelPar
+ ser.class
+SHA1-Digest: V7U4n3auuQOAL5aqH72d/hBmAns=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/NamedElementEdgeFi
+ gure.class
+SHA1-Digest: l+0rlM9msHVdvbB/0wWQUO2A5SQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/AssociationEd
+ itPart.class
+SHA1-Digest: Uuu4GqR3qNOyQF6d+tm5k5dgXn4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortCompa
+ rtmentEditPart.class
+SHA1-Digest: AmTRVUk309sLOnRNDNeglBhG5TA=
+
+Name: icons/flowports/FlowPort_NA_NORTH_WEST.gif
+SHA1-Digest: LueGSCWd8aiRYltOpYijRANvMHg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/GeneralizationE
+ ditPart.class
+SHA1-Digest: Uo1E77f+xmbhAiLe7RCuMB+fkEw=
+
+Name: icons/flowports/FlowPort_OUT_A_NORTH.gif
+SHA1-Digest: eVgyHdTssLdlbjhNTPxDW9uj0R0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateConstrai
+ ntPropertyWithTypeConfigureCommandFactory$1.class
+SHA1-Digest: u3tA0J5EZMTXDCGCZAwZHfqdUGM=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/TextSelection
+ EditPolicy.class
+SHA1-Digest: fYGpCx9UjWjVmSFUbrgxPJg9buM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ConstraintPro
+ pertyChildLabelEditPart.class
+SHA1-Digest: coEzO5bgP3N0TwEpcme4ZLMEeCw=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/PartPropertyC
+ ompartmentEditPart.class
+SHA1-Digest: NgMultQB4Ud4pEHeON0LvznQajQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/preferences/ILabelPrefe
+ renceConstants.class
+SHA1-Digest: un2lMfTLG+w5anrKJpWojR0/7lg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/utils/UMLGraphicalTypes.c
+ lass
+SHA1-Digest: +16qRDq9F/pFucvZ2Hwe/ukoGao=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart$2.class
+SHA1-Digest: weZzN2U5MzWXEegcuh4LnG163es=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortAffix
+ edNodeEditPart$3.class
+SHA1-Digest: PwxuYt2RK+zSPBLh2Z22faT0bb0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$FigureDescriptor.class
+SHA1-Digest: je83zxQC0rEzqSzqVsGs8z60k/s=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PropertyCompart
+ mentEditPart.class
+SHA1-Digest: HPU8J+iMITRqEnWedeoex9xYd/0=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/figure/SelectableBordered
+ NodeFigure.class
+SHA1-Digest: 8aLADiniTbKNvgpgn/DosOS+0pA=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/FlowPortFigure.c
+ lass
+SHA1-Digest: 8ZK/4XywA3aOrCdlfOo2hgZG3H0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/SysMLDiagramFram
+ eFigure$1.class
+SHA1-Digest: o4N8dVoQw4i6GBHzypTd/fUqbwE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/DataTypeEditPar
+ t$1.class
+SHA1-Digest: DwlY1zjt7bGT+beoVZo6o28uuZY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/NamedElementLin
+ kLabelNameEditPart.class
+SHA1-Digest: ghgVXCDaCnBOfYCvNgFonchdkmg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectT
+ ypeDialog$2.class
+SHA1-Digest: 1O/erf1Xf8z2yLD8hebZMRUSc3Y=
+
+Name: icons/category_sysml.gif
+SHA1-Digest: Mt9Zu99XKiwvhlgdWXcD6Hs35P8=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/ConnectorLabelVie
+ wFactory.class
+SHA1-Digest: Jzl5JRME/ts3Gtf6zM2YkzdJVIE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/DataTypeFigure.cla
+ ss
+SHA1-Digest: Vup4qgZ9uFGkVT/HR8jA23FeW70=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/parser/IMaskManagedSemant
+ icParser.class
+SHA1-Digest: x8z1LAHc3gTBmrWuiQbxrDqjzVs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/DimensionEdit
+ Part.class
+SHA1-Digest: C6cH9vRv+PC27ntjTALeKl/zMVs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/AssociationFigur
+ e.class
+SHA1-Digest: Mx9kiKCfIUbvE+EcETqZqDooPQY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateActorPar
+ tWithTypeConfigureCommandFactory$1.class
+SHA1-Digest: coeTk2FGnDrki5kkEtOTBzDId+0=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/LabelDefaultS
+ emanticEditPolicy.class
+SHA1-Digest: DmBPs8BYwZmcM5iPQYoMH3Jn+WE=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/ConstraintBlockP
+ ropertyCompositeFigure.class
+SHA1-Digest: ka74UxF0WRvm/RXDDnvNYJAAf8k=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LinkEditPart.class
+SHA1-Digest: W4Q0+LKNCauR/aj32+6lio0Mhqo=
+
+Name: icons/flowports/FlowPort_OUT_A_WEST.gif
+SHA1-Digest: kXzbdchWdUdWUowm9YIpXGX1nAk=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateFlowPort
+ WithFlowSpecificationConfigureCommandFactory$1.class
+SHA1-Digest: En+s0FxUheMa8kKzfnWi3L3Rju4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPropertyC
+ ompartmentEditPart.class
+SHA1-Digest: RKfxr9FghNUhIbKqQpMyGzdY940=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/DefaultChildLab
+ elEditPart.class
+SHA1-Digest: IDHGNxX6DXrAn325Z38X/sAWbWA=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/locator/MultilineCellEdit
+ orLocator.class
+SHA1-Digest: oGFaJeEq//G9X+5Sb4vllMJv+Hs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/DimensionEdit
+ Part$1.class
+SHA1-Digest: uS4hS4hboxgJ/ZMI30ULYygaU7A=
+
+Name: icons/flowports/FlowPort_NA_EAST.gif
+SHA1-Digest: 2cUHnJF8PIIFh6HQlQfAApnRBbs=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$4.class
+SHA1-Digest: vZ8Zrdefew+/VzLnfxiftDdBx8Q=
+
+Name: icons/flowports/FlowPort_NA_SOUTH_WEST.gif
+SHA1-Digest: jVQUKh99+ts963C1MfROxS0kDBM=
+
+Name: icons/flowports/FlowPort_INOUT_A_NORTH.gif
+SHA1-Digest: 3znwNmb/xQVxj9dGDaEFSoefdjw=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/LabelDirectEd
+ itPolicy$EObjectAdapterEx.class
+SHA1-Digest: N8fI6gbU3G10C/NFtLJhqpPud24=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/AffixedLabelViewF
+ actory.class
+SHA1-Digest: QjWScYQGQl9UqJpPfG/AwGMKkxo=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectN
+ onAtomicFlowPortTypeDialog.class
+SHA1-Digest: h0BUv0R1ferku1tQdFn/Buhj6eg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$1$1.class
+SHA1-Digest: 2TDqZZo/h47Q2Lx313nW9l/AlF0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockProperty
+ CompositeEditPart.class
+SHA1-Digest: GSvbbsEZoiU+Bbhw/WhqjCi+KSk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractShapeCo
+ mpartmentEditPart$1.class
+SHA1-Digest: KnfLW1KedL7iTyn89qet+3Hbgeg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreatePartWith
+ TypeConfigureCommandFactory$1.class
+SHA1-Digest: QaWcvxODsgvwJv4RKkkfVDakOCg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ValueTypeEdit
+ Part.class
+SHA1-Digest: 4F3U1KR773e2OqdaUVHOnO+JH40=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/TextNonResiza
+ bleEditPolicy$2.class
+SHA1-Digest: FVxjtl/NRWLRlm4IR8kDSh+ZWys=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/UnitFigure.class
+SHA1-Digest: mJ8Q72LELpog8LOoUWBwi3jWnAQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/PortAffixedNodeVi
+ ewFactory.class
+SHA1-Digest: iL6Al53NWBogABe9WAgvAQo1beo=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ReferenceProp
+ ertyCompartmentEditPart.class
+SHA1-Digest: Z2xtCbPiDgdJuL7sg3rNWVapXCY=
+
+Name: icons/flowports/FlowPort_OUT_A_NORTH_EAST.gif
+SHA1-Digest: gpkGj7EcWSrC//D14Q+ZGTmqAgk=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/UnitClassifierV
+ iewFactory.class
+SHA1-Digest: uVvZjbmXHNj8Y2E2I2xKhyVczwM=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/ExternalLabel
+ PrimaryDragRoleEditPolicy.class
+SHA1-Digest: b5FGnCuz3n7OCScxmVB5r8GlfKE=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/AbstractLabelView
+ Factory.class
+SHA1-Digest: X7I1qPUJN1WOcBcLC3z3Td1nuaA=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/parser/RequirementLabel
+ Parser.class
+SHA1-Digest: F/GD6anWetBv9Gr7GE98QMLp+KA=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart$3.class
+SHA1-Digest: haDnE2D2pSiOmwH4Tdg7cpo3RAw=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/ConnectorViewFact
+ ory.class
+SHA1-Digest: O0+cZYWSeuMKybi6nS3GHNDh6hM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortAffix
+ edNodeEditPart$2$1.class
+SHA1-Digest: KYEDAQVHEg+Y2MGkHNXUvBT6EAk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/InterfaceEditPa
+ rt$1.class
+SHA1-Digest: Q/CBx2lMHB0wzIc6dn8alD/jwiQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ BorderEditPart.class
+SHA1-Digest: TQhX8XdIP7IaQMy2z9os9EUcSYc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/utils/SysMLCreateOrShow
+ ExistingElementHelper.class
+SHA1-Digest: 1ylCF9YBgEJpRPs2FTVsH5XF9Ds=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/PropertyLabelParse
+ r.class
+SHA1-Digest: xWPmLE2BF0AkmBkx60plOjkJwbI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectV
+ aluePropertyTypeDialog.class
+SHA1-Digest: mD45P3SCShzu7hXuT6BmAqiQ94Q=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/UnitEditPart.
+ class
+SHA1-Digest: Z9MhXzndX1NM/qh5dCfl+EzXSkw=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/InnerLabelViewFac
+ tory.class
+SHA1-Digest: +laP9+I+yVUhZqoC3PmPeQ1VXk4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/NestedBlockPr
+ opertyCompositeEditPart$1.class
+SHA1-Digest: 4W8hj/DR+oJ/0BYvkvVONaqXgeI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/messages/Messages.class
+SHA1-Digest: 0MJJ2i4dpxinxLi87yePZUO7VyQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/dnd/helper/LinkMappingHel
+ per.class
+SHA1-Digest: 0BIcuNR7sD4KIL/nr0XCf6y/YeI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/parser/UnitLabelParser.
+ class
+SHA1-Digest: f0qg7QMYHGm8+XcjOA7cZR0IX0E=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/ReferenceCo
+ mpartmentSemanticEditPolicy.class
+SHA1-Digest: rrj0crFGr9enzzAvQlm0NEhmUQ0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ConstraintBlo
+ ckLabelNameEditPart.class
+SHA1-Digest: mw/4vVP/0T7mr0uicJahSjm4jas=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/ValueTypeFigure.
+ class
+SHA1-Digest: ScScA2/3/WsvUs1dM/19gG8i4fc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart$4.class
+SHA1-Digest: 6eblYjCk+ZRnfAN8OukeO/1hpGQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ValueTypeLabe
+ lNameEditPart.class
+SHA1-Digest: Lonf0WtkMSM57oiwR/M0UCL2o+w=
+
+Name: about.html
+SHA1-Digest: mLkmRLtG3amkcY0I7KSYZX6qKhs=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$1.class
+SHA1-Digest: mZDMKjTGkuc0MeFP+qLOSQ22/kk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintParam
+ eterAffixedNodeEditPart$2.class
+SHA1-Digest: DxNSA7+EI+0mls1iIuLqNUd3ykg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/UnitLabelName
+ EditPart.class
+SHA1-Digest: N2TSGDPq5kOl5yezskRIJgGZahE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart$1$1.class
+SHA1-Digest: uZNwhmh5XHoUBgaRwdJbvXz8eW8=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortAffix
+ edLabelNameEditPart.class
+SHA1-Digest: KvSGzADmYDgYQWOr+hgiuY15oak=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/StructureComp
+ artmentEditPart.class
+SHA1-Digest: 64FeyoxsgFkSjXjxgTdJjke+5g0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortAffix
+ edNodeEditPart.class
+SHA1-Digest: auPARdUwGqVmbt5D9ysJU5shl3s=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/ShapeViewFactory.
+ class
+SHA1-Digest: BmiImdstSke0pxuygbMmqSmNtFY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/ConstraintP
+ arameterCompartmentSemanticEditPolicy.class
+SHA1-Digest: jWZRcDbXSd9SLKpSz/W80t6vqVE=
+
+Name: icons/flowports/FlowPort_OUT_A_SOUTH_EAST.gif
+SHA1-Digest: vV6HVWLo1P5GgXB1U8a73roYC2s=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectT
+ ypeDialog.class
+SHA1-Digest: 4IJ1BX+UWpOnYPxP726mMUgQfM0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart$4.class
+SHA1-Digest: ZvamFpIUk8s7nQTE4gJIo44rJbU=
+
+Name: icons/flowports/FlowPort_INOUT_A_WEST.gif
+SHA1-Digest: jWxGFUU3hMW7qpO2vLHb8wA8wEE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ EditPart.class
+SHA1-Digest: MTq9nXyKmvf+Wn/c2WB290DmNdc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockProperty
+ CompositeEditPart$1.class
+SHA1-Digest: adjUzmwbDnWdRP/tvsuErp9Sn2I=
+
+Name: org/eclipse/papyrus/uml/diagram/common/dnd/helper/LinkMappingHel
+ per$CommonTargetUMLSwitch.class
+SHA1-Digest: 8MIUMb2KzJgwFkpRJ+eaX09PPBg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/DependencyEditP
+ art.class
+SHA1-Digest: qUU3QxzfmZpdlCWMhpC6xGu/Fwg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PropertyNodeLab
+ elEditPart.class
+SHA1-Digest: qsbSsfeS9JJAKGMK8BhWQa3WnM0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/ConnectorLinkView
+ Factory.class
+SHA1-Digest: EcoYNNir7o7UlU9u76Hp+umspPA=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/TextSelection
+ EditPolicy$2.class
+SHA1-Digest: GJwGkeDWmkuVwUOaX7jW3QbWEoo=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/LinkLabelDrag
+ EditPolicy.class
+SHA1-Digest: maWlDyyYF6evHwMH+kVd4QBR2XA=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PrimitiveTypeEd
+ itPart.class
+SHA1-Digest: sgjfml4WK7UMjlwzsrLZpgxbOIY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/CustomDupli
+ catePasteEditPolicy.class
+SHA1-Digest: ZQporv/pGna52eMUOx/bLY1Mtsg=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/ServiceEditCont
+ entProvider.class
+SHA1-Digest: 5BfLbGZmpHupE6sX6TKNBg92xfE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/PrimitiveTypeClas
+ sifierViewFactory.class
+SHA1-Digest: QKl1fSF7So6PWnYtmKh8aVf1DO4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectT
+ ypeDialog$4.class
+SHA1-Digest: TsuV0uQUbCfEOzaUektBTgFCWUk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/ConstraintPropert
+ yAffixedNodeViewFactory.class
+SHA1-Digest: rxyffMoPrtWlMf+dyL44RG/XueA=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/BlockCompos
+ iteSemanticEditPolicy.class
+SHA1-Digest: crWWbycBfJpJtqR+8vn4r0AZkGs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/PropertyCom
+ partmentSemanticEditPolicy.class
+SHA1-Digest: QTfmdh5nun91EQLNVbjtmitwwTQ=
+
+Name: icons/flowports/FlowPort_IN_A_SOUTH.gif
+SHA1-Digest: eVgyHdTssLdlbjhNTPxDW9uj0R0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/BlockProper
+ tyStructureCompartmentSemanticEditPolicy.class
+SHA1-Digest: ir7/s9O4PaATrerk0NoOZm3TBlw=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/commands/SemanticElementA
+ dapter.class
+SHA1-Digest: V0HQ1uHJtvljPoUW+5OXhFZEAvo=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/locator/TextCellEditorLoc
+ ator.class
+SHA1-Digest: 3chQdcsyNK9qMkNWR6pHgftWL/g=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AssociationLink
+ LabelTargetRoleEditPart.class
+SHA1-Digest: GMQtRQ7s9BbASiGDLvPi/NSG3eU=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/BlockClassifier
+ ViewFactory.class
+SHA1-Digest: IVmy1TK1dS5MAve8oBaKOR183+k=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/DefaultCreati
+ onEditPolicy.class
+SHA1-Digest: uMm5Ea3t8QEPJxfnMCeVdjIi0uY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/SysMLDiagramFram
+ eFigure$SysMLLayoutLayoutManager.class
+SHA1-Digest: SlSE/1khITWjiSOI/YvbUZh+1es=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ LabelEditPart$1.class
+SHA1-Digest: lXPvXwA1GsqVTVoCz8eskVnb9gg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AssociationLink
+ LabelSourceRoleEditPart.class
+SHA1-Digest: mAuo0fPgPhGC3DA2mN55ZBN70C8=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/BlockFigure.clas
+ s
+SHA1-Digest: WvlSdUnw4OoEOtAcyRkbVIep7vI=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/ConstraintBlock
+ PropertyCompositeClassifierViewFactory.class
+SHA1-Digest: YzGrJylXbnTdaA4dzBkdXMzTels=
+
+Name: org/eclipse/papyrus/uml/diagram/common/parser/MultiplicityElemen
+ tLabelParser.class
+SHA1-Digest: 29B+37j0Gbn5c4dDxTsTu98p2v4=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/compatibility/IDiagramVer
+ sionUpdater.class
+SHA1-Digest: p+4ctb3kBRcgDSujztaGJvLQqUM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$6.class
+SHA1-Digest: yHgwuxWrd8glU6tCTFcHjDPTLrk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/SignalEditPart$
+ 1.class
+SHA1-Digest: 5KdcmcA4WxtGYHOJnQ0u4syxl4M=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/factory/FlowSpecificati
+ onClassifierViewFactory.class
+SHA1-Digest: QxtM2UN3AF1UvBWQqtXqKKjLJyM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/ActorFigure.class
+SHA1-Digest: pdf1W59mtTH9tJsGPs/uYlIudPM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/UsageLinkViewFact
+ ory.class
+SHA1-Digest: 85ywKNTkUcSaGyCrwTk64TdwOik=
+
+Name: icons/flowports/FlowPort_IN_A_EAST.gif
+SHA1-Digest: kXzbdchWdUdWUowm9YIpXGX1nAk=
+
+Name: org/eclipse/papyrus/uml/diagram/common/dnd/helper/LinkMappingHel
+ per$CommonSourceUMLSwitch.class
+SHA1-Digest: is4kUgwHICqTMgAtMPIMZJG66GY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/utils/SysMLSelectionTes
+ ter.class
+SHA1-Digest: ewugEhYAtmVstglerOHbpEgWZ/M=
+
+Name: icons/flowports/FlowPort_OUT_A_SOUTH.gif
+SHA1-Digest: ijZRDSIRv2HKIcEtgZPA/Ej/zic=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ActorEditPart.c
+ lass
+SHA1-Digest: duACRLBUBsEmgVqRYHPSNEm+Rwg=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ NodeLabelEditPart$1.class
+SHA1-Digest: 5m3RqkY7kqwjlY/+xpKHVmrXyOM=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ConstraintBlo
+ ckPropertyCompositeEditPart$1.class
+SHA1-Digest: jxy9uXdAkgKaA8Uh7UdlQ8pDWmY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortAffix
+ edNodeEditPart$2.class
+SHA1-Digest: gNCvo4pyhQ1MvtoijhAvlH6Qmp0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/ConstraintBlockF
+ igure.class
+SHA1-Digest: B1GyaexxHl1BZzCDy6whw0ok4d8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/factory/EnumerationClassi
+ fierViewFactory.class
+SHA1-Digest: 6ag0hZqScfyVuoB2upmgl/x5Sx0=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockComposit
+ eEditPart.class
+SHA1-Digest: mww+UsScolme6BCiputjg6ZrYi4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/dialogs/CreateOrSelectT
+ ypeDialog$1.class
+SHA1-Digest: 8rC5pvG+YnfGV2tv9vuxnUt9cZw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/NamedElementAff
+ ixedLabelNameEditPart.class
+SHA1-Digest: bNvwSMQzTW0DWWhA3Q2CCgdfYCc=
+
+Name: icons/flowports/FlowPort_IN_A_NORTH_EAST.gif
+SHA1-Digest: umhlixdgJX2yPXeLexhIOLj+Ups=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart$5.class
+SHA1-Digest: VsC+50p27FjEbufODXqLMCpUQT0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/EnumerationLite
+ ralCompartmentEditPart.class
+SHA1-Digest: FUBRTGJwxc8PzW/mijiILdLfGEM=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintNodeL
+ abelEditPart$1$1.class
+SHA1-Digest: bnO7gEo/DrnWZJ4Pks/DfVPBVMY=
+
+Name: icons/flowports/FlowPort_NA_NORTH.gif
+SHA1-Digest: M5DBFnOeRyykuphRVpHCDMB+wwI=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PortCompartment
+ EditPart.class
+SHA1-Digest: P6UNpJWcwhxMZ5XeGX//yNCunxo=
+
+Name: icons/flowports/FlowPort_NA_WEST.gif
+SHA1-Digest: 2cUHnJF8PIIFh6HQlQfAApnRBbs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/ValueProperty
+ CompartmentEditPart.class
+SHA1-Digest: FfuanmcXDuX62V6ztd1zCTBH0o8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/ConstraintParam
+ eterAffixedNodeEditPart.class
+SHA1-Digest: +kDMdMQSX7grewMM5gDpZ7UY3Es=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/factory/ShapeChildLabelVi
+ ewFactory.class
+SHA1-Digest: eJQFO1rjows5sxcFyXi8JkDGDSQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/UnitEditPart$
+ 1.class
+SHA1-Digest: 0GozWc79SIyKiwdfgauIdCxq9to=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/PortAffixedNode
+ EditPart$1.class
+SHA1-Digest: EWnRbX95m8DUtfRWTsemejkbtI8=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/edit/policy/CommonDiagram
+ DragDropEditPolicy.class
+SHA1-Digest: MbNr0e/hGDEZ9JUvODRzqUUdoHw=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowSpecifica
+ tionEditPart.class
+SHA1-Digest: Fsi5wAZSy6AyDA9q0kGOkCJ7yYE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/ConnectorEdgeFigur
+ e.class
+SHA1-Digest: Yx4A+Pu9CcfeyvIkrnBp+lo5LS4=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/figure/ConstraintBlockP
+ ropertyCompositeFigure$1.class
+SHA1-Digest: oOLbvGK5VR68dGfGMeT3rdIaugA=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateConstrai
+ ntPropertyWithTypeConfigureCommandFactory.java.rej
+SHA1-Digest: aKchHtQ6x4dkYifI4n5BynrjLgs=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/DimensionLabe
+ lNameEditPart.class
+SHA1-Digest: gHUxi62cBX76PW3Uw3Rwr4FvrZA=
+
+Name: org/eclipse/papyrus/uml/diagram/common/edit/part/AbstractElement
+ ChildLabelEditPart$3.class
+SHA1-Digest: B8CdT/u2zDQ9yqcrklLgocHow90=
+
+Name: icons/flowports/FlowPort_INOUT_A_NORTH_EAST.gif
+SHA1-Digest: WRa8IhtvyeNwI74rJtWI5csrQhY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/BlockProperty
+ StructureCompartmentEditPart.class
+SHA1-Digest: ZLJKF6V4we124IWU+5ilwxgCuDw=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/provider/MarkerNavigation
+ Provider.class
+SHA1-Digest: ZRLLHdCQ7BJ6QAvBmkP0snvt6hI=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/EdgeDecorationType
+ .class
+SHA1-Digest: +aqvtpeO6F5rJd6RRdgkQy0bSAc=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/commands/CreateReferenc
+ eWithTypeConfigureCommandFactory$1.class
+SHA1-Digest: UxTnPZ8Kgoh0er1xcLjxohJq0PU=
+
+Name: org/eclipse/papyrus/uml/diagram/common/figure/InterfaceFigure.cl
+ ass
+SHA1-Digest: LBgKaKLGyz1hek+ksJNgLaCJ6HA=
+
+Name: org/eclipse/papyrus/gmf/diagram/common/commands/ISemanticHintAda
+ pter.class
+SHA1-Digest: sNbnG2nazv+bMaGrisHdb7BL/ko=
+
+Name: icons/flowports/FlowPort_OUT_A_NORTH_WEST.gif
+SHA1-Digest: QDSVlSAM571qwzHXkmWeDSRNRac=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/part/FlowPortChild
+ LabelEditPart.class
+SHA1-Digest: Rx7cWrmM2t9KignxzvzxsrvTnyY=
+
+Name: org/eclipse/papyrus/sysml/diagram/common/edit/policy/ValueCompar
+ tmentSemanticEditPolicy.class
+SHA1-Digest: s56H4gviyiP4hfOTrc9Wb5VgSr4=
+
+Name: icons/flowports/FlowPort_INOUT_A_SOUTH.gif
+SHA1-Digest: 3znwNmb/xQVxj9dGDaEFSoefdjw=
+

@@ -1,0 +1,63 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.sysml.nattable;singleton:=tru
+ e
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.uml.n
+ attable;bundle-version="1.0.0",org.eclipse.papyrus.infra.nattable;bun
+ dle-version="1.0.0",org.eclipse.papyrus.infra.emf.nattable;bundle-ver
+ sion="1.0.0",org.eclipse.nebula.widgets.nattable.core;bundle-version=
+ "1.0.0",org.eclipse.uml2.uml;bundle-version="4.1.0",org.eclipse.papyr
+ us.infra.services.labelprovider;bundle-version="1.0.0",org.eclipse.pa
+ pyrus.sysml.service.types;bundle-version="1.0.0",org.eclipse.emf.edit
+ ;bundle-version="2.9.0",org.eclipse.papyrus.infra.nattable.model;bund
+ le-version="1.0.0",org.eclipse.papyrus.infra.widgets;bundle-version="
+ 1.0.0",org.eclipse.gmf.runtime.emf.type.core,org.eclipse.papyrus.infr
+ a.services.edit;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfd
+ iag.commands;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;bun
+ dle-version="1.0.0",org.eclipse.papyrus.infra.tools;bundle-version="1
+ .0.0",org.eclipse.papyrus.sysml;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.sysml.nattable.Activator
+Export-Package: org.eclipse.papyrus.sysml.nattable.manager.axis
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/sysml/nattable/provider/SysMLFlowPortDirecti
+ onLabelProvider.class
+SHA1-Digest: hFGmiXnDppqtPrjdSVV9Pc3M7m8=
+
+Name: org/eclipse/papyrus/sysml/nattable/manager/axis/AllocateAxisMana
+ ger.class
+SHA1-Digest: cZUZMWMRI1avOmaQVlSgPSl8GDo=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/sysml/nattable/utils/Constants.class
+SHA1-Digest: mDP2lwWtsuR9bLF3AREC+cYrFC0=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: 64F5i2tyb7LxPptBvHI5K0/SPy4=
+
+Name: org/eclipse/papyrus/sysml/nattable/manager/cell/SysMLStereotypeP
+ ropertyCellManager.class
+SHA1-Digest: MEF6woMyniKoH2lLkcD2+IJ5l/g=
+
+Name: org/eclipse/papyrus/sysml/nattable/manager/axis/RequirementAxisM
+ anager.class
+SHA1-Digest: rHMni4T5QxmRMOVSuIuh36fUSls=
+
+Name: org/eclipse/papyrus/sysml/nattable/Activator.class
+SHA1-Digest: xwK3teVqcnO9hp/fNLWXLtwW1fk=
+
+Name: plugin.xml
+SHA1-Digest: 4Nvra/0FUJ6vJ7TLKUVP/pW2fVw=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+

@@ -1,0 +1,120 @@
+In this documentation, we will use this UML model to illustrate the search features. 
+
+[[image:search-model1.png]]
+
+=Search elements=
+The search feature of Papyrus helps the user to find elements in the models. The user can choose between a text search and an OCL search.
+
+As it is shown in the following image the user chooses the query kind he wants to use: 
+
+[[image:query_kind.png]] 
+
+=Text search=
+
+The user can do a simple search or an advanced search.
+The user makes his choice in the A area of the following image which represents the text search dialog.
+
+[[image:search_kind.png]] 
+
+==Simple search==
+The following image illustrates a simple text search dialog:
+
+[[image:simple_search.png]] 
+
+* The user can specify the string pattern he/she is looking for in the A area. 
+** Check the "Case sensitive" if case must be considered. 
+** The user may also want to use regular expression to express the query. Then check "Regular expression" button. The regular expression must respect Java Regex.
+*The user chooses whether he wants to search only in the name attribute of instances of UML::NamedElement or in all string attributes of instances of UML metaClasses, in B area.
+
+For instance, the following search: 
+
+[[image:C-search.png]]
+
+will provide the following results: 
+
+[[image:C-result.png]]
+
+The comment is not returned because we were note looking for all string attributes. 
+
+However, this search:
+
+[[image:comment-search.png]]
+
+will return : 
+
+[[image:comment-result.png]]
+
+==Advanced search==
+The following image shows the advanced text search dialog.
+
+[[image:advanced_search.png]]
+
+* As in the simple search the user can specify the string pattern he/she is looking for, and may indicate if he uses regular expression or if he wants to consider case, in the A area. 
+* The user can filter the types of elements to search the string pattern in by selecting the UML metaClasses or applied stereotypes in area B . He can also choose in which attributes he wants to do the research. The stereotypes displayed in the B area are the stereotypes which can be applied on elements from the model(s) corresponding to the selected scope, for example if the selected scope is "Selected resources" only the stereotypes defined in the profiles applied on the current model will be displayed, but if the selected scope is "Workspace" the stereotypes defined in all the profiles applied on models from the current workspace will be displayed.
+* In the C area, the user can select all subelements of the actual selected element. For example, if the user selects "NamedElement" and clicks on "Select subelements",all metaClasses which inherit of UML::NamedElement will be checked. If the name attribute of "NamedElement" is checked and the user selects "NamedElement" and then clicks on "Select subelements",all metaClasses which inherit UML::NamedElement and their name attribute will be checked.    If the user changes the selected scope he should click on the refresh types button, this will update the list of stereotypes displayed.
+*The user can specify, in the D area, if he wants to search for model elements with all the specified stereotype (the ones checked in the B area).
+
+
+
+In the following image we search the pattern "my"  in the attribute body of the metaClass "Comment". The research will give us all the instances of "Comment" having an attribute body matching with the string pattern. 
+
+[[Image:body_search.png]]
+
+The result will be
+
+[[Image:body_result.png]]
+
+
+If the user select a stereotype or an UML metaClass without indicating a string pattern, the research will give him all the instances of the metaClasses he checked and all the elements having the applied stereotypes he checked.
+
+For example the result of this research:
+
+ [[Image:requirement_search.png]]
+ 
+will be
+ 
+ [[Image:requirement_result.png]]
+ 
+=OCL search=
+    
+The following image shows an OCL search dialog
+
+[[Image:OCL.png]]
+
+The user writes his OCL query in the A area.
+The scope must be "Selected resources" if the user wants to do this kind of query.
+
+
+=Replace String=
+Should the user want to replace the matches of your search with another string, he/she may click on the "Replace" button in the search dialog. A new dialog will popup:
+
+[[Image:replace.png]]
+
+More details about the refactoring tool in the Model Refactor Wizard page.
+
+=Filter=
+The user can filter the results of the search by selecting the types of the elements he/she wants to show.
+
+For instance, on the following search (we use the model 1): 
+
+[[image:a-search.png]]
+
+the user may filter the results by clicking on the icon identified in a red rectangle in the following picture: 
+
+[[image:a-results.png]]
+
+this will open a new dialog where the user can select the metaclasses he/she want to show: 
+
+[[image:filter.png]]
+
+then, the result page will show only the matches of the selected type: 
+
+[[image:my-filtered.png]]
+
+If the user wants to remove this filtering, he/she may click on the Filters button as illustrated in previous picture. This will open the following dialog: 
+
+[[image:select-filters.png]]
+
+----
+This work is developed by [http://www-list.cea.fr CEA LIST] and sponsored by [http://www.ericsson.com Ericsson] in the context of Polarsys [http://wiki.eclipse.org/Polarsys]
+

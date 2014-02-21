@@ -1,0 +1,1039 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.service.types;singleton:=
+ true
+Require-Bundle: org.eclipse.papyrus.uml.diagram.common;bundle-version=
+ "1.0.0",org.eclipse.papyrus.infra.services.edit;bundle-version="1.0.0
+ ",org.eclipse.uml2.uml.profile.l2;bundle-version="1.0.0",org.eclipse.
+ papyrus.infra.core.log;bundle-version="1.0.0",com.google.guava;bundle
+ -version="11.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-v
+ ersion="1.0.0",org.eclipse.papyrus.infra.core;bundle-version="1.0.0",
+ org.eclipse.papyrus.uml.tools;bundle-version="1.0.0",org.eclipse.papy
+ rus.uml.tools.utils;bundle-version="1.0.0",org.eclipse.gmf.runtime.co
+ mmon.core;bundle-version="1.4.1",org.eclipse.gmf.runtime.emf.type.cor
+ e;bundle-version="1.4.0",org.eclipse.gmf.runtime.notation;bundle-vers
+ ion="1.5.0",org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.
+ eclipse.gmf.runtime.diagram.core;bundle-version="1.6.0",org.eclipse.u
+ i.workbench,org.eclipse.core.expressions,org.eclipse.jface,org.eclips
+ e.uml2.uml.edit;bundle-version="4.0.100",org.eclipse.papyrus.infra.to
+ ols;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.service.types.Activator
+Export-Package: org.eclipse.papyrus.uml.service.types,org.eclipse.papy
+ rus.uml.service.types.command,org.eclipse.papyrus.uml.service.types.e
+ lement,org.eclipse.papyrus.uml.service.types.filter,org.eclipse.papyr
+ us.uml.service.types.handlers,org.eclipse.papyrus.uml.service.types.h
+ elper,org.eclipse.papyrus.uml.service.types.helper.advice,org.eclipse
+ .papyrus.uml.service.types.menu,org.eclipse.papyrus.uml.service.types
+ .utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/SubstitutionEdi
+ tHelper.class
+SHA1-Digest: BjUzeg/2jGsoD4/ZBIAH4q4CKuI=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ObjectNodeHelpe
+ r$DestroyActivityNode.class
+SHA1-Digest: z2AxFOom4jH07bXYnN6jo0xZbfo=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ExceptionHandlerRe
+ orientCommand.class
+SHA1-Digest: Vpnd7aC1qOAzD4gl27OEPn3/By0=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/GeneralizationEditH
+ elper.class
+SHA1-Digest: OzZJBvl+tz5Fg1A70t2v0o+g7EY=
+
+Name: org/eclipse/papyrus/uml/service/types/command/CreateEditBasedEle
+ mentCommand.class
+SHA1-Digest: 00ARyKUdhgxQuUsJo6cL705lUsM=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageAsyncReorie
+ ntCommand.class
+SHA1-Digest: IntqBIUavgT5sKR51o0Z0SBPKcc=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageLostReorien
+ tCommand.class
+SHA1-Digest: tPM1xz4b8zoNTtLZvVXDy7VYrjM=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/UseCaseEditHelper.c
+ lass
+SHA1-Digest: hd1usX8d42VI+RTgO7cOXmai4Ms=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/LiteralIntegerE
+ ditHelper.class
+SHA1-Digest: AlfGcsDjvexRuAlqGkYBxgg0ogk=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ActivityNodeHelper.
+ class
+SHA1-Digest: 9BpmaIcxf6PBHUCyczApLqUm2zY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/OccurrenceSp
+ ecificationHelperAdvice.class
+SHA1-Digest: xpRdi3rCTecf3O1t5LqcAR/wzQI=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageLostReo
+ rientCommand.class
+SHA1-Digest: tPM1xz4b8zoNTtLZvVXDy7VYrjM=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/UseCaseEditHelp
+ er.class
+SHA1-Digest: hd1usX8d42VI+RTgO7cOXmai4Ms=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/TraceEdi
+ tHelperAdvice$1.class
+SHA1-Digest: radYdzQ740SavHp7HqbJs/44kHE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/InterfaceRealizatio
+ nEditHelper.class
+SHA1-Digest: uW3ibU6NMp6IzuEcE28rZ/KUbgA=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/AssociationE
+ ditHelperAdvice$1.class
+SHA1-Digest: bN6QHCXyy4uChuXhSPfVeUbpsAs=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/MessageHelpe
+ rAdvice.class
+SHA1-Digest: oBfTg6IoqzEre3dbagiPyJhiJUI=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/RequestParameterUtil
+ s.class
+SHA1-Digest: boSYoHNjVL8WC6ulOOfYdPhiqCU=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/ConnectorHel
+ perAdvice.class
+SHA1-Digest: O+qyXdnmPhcjyQGUpN0ulPnWZmU=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ProtocolStateMa
+ chineEditHelper.class
+SHA1-Digest: ddl06daD4rTOqkhjc7ga8SzuoNo=
+
+Name: icons/Association_none_directed.gif
+SHA1-Digest: GJz3pXxrxtAd4AqmIDFg2hPuc3I=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/AbstractSter
+ eotypedElementEditHelperAdvice.class
+SHA1-Digest: TtpDKVCKE0bfUZOeKndxXtikGus=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageCreateReori
+ entCommand.class
+SHA1-Digest: BIiP3+/yWHJK6Roq+QU9AhdRvyY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ComponentEditHelper
+ .class
+SHA1-Digest: 34cGBVjax7fsRmvsGnYkmevGvCE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Abstract
+ StereotypedElementEditHelperAdvice.class
+SHA1-Digest: TtpDKVCKE0bfUZOeKndxXtikGus=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ProtocolConformanc
+ eReorientCommand.class
+SHA1-Digest: yZyj+LuQogJgI13QYt0YDT/r1AE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/filter/ICommandFilter.
+ class
+SHA1-Digest: y6IeBGeaVjtrUc/I4dHcg7dux6g=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageCreateR
+ eorientCommand.class
+SHA1-Digest: BIiP3+/yWHJK6Roq+QU9AhdRvyY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ComponentEditHe
+ lper.class
+SHA1-Digest: 34cGBVjax7fsRmvsGnYkmevGvCE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ProtocolConfor
+ manceReorientCommand.class
+SHA1-Digest: yZyj+LuQogJgI13QYt0YDT/r1AE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/AssociationE
+ ditHelperAdvice.class
+SHA1-Digest: xkvYuqbFoPw4mA/exk67Mb5/oWM=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/NamedElement
+ InitializerHelperAdvice$1.class
+SHA1-Digest: b70AQuZluUqEidFCUryNCMDIr+Q=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/TraceEditHel
+ perAdvice.class
+SHA1-Digest: +DC+RtnbCs0QHqfIb91WFlP0pKM=
+
+Name: org/eclipse/papyrus/uml/service/types/handlers/AbstractCreateCom
+ mandHandler.class
+SHA1-Digest: U+uSOvBUno06E4oPy+ixeKuyqjY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ActivityNodeHelper$
+ DestroyActivityNode.class
+SHA1-Digest: jk3dWkbu4qLjJHO5lRzRFBJKPzk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/Generalization
+ ReorientCommand.class
+SHA1-Digest: mFrHu0SHW353galXZeX2BSbU1mk=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageReplyReorie
+ ntCommand.class
+SHA1-Digest: ljUDPIwtmTN5kDujzc2nzvbcF1o=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/DestructionE
+ ventHelperAdvice.class
+SHA1-Digest: H916ym4I9ZWtCl4UXSohDSV+ecU=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/InteractionConstrain
+ tUtil.class
+SHA1-Digest: 1ibJkC4qMnp/fO1vYEfWWfDdvag=
+
+Name: org/eclipse/papyrus/uml/service/types/Activator.class
+SHA1-Digest: iQzj/D3KAqv9Jln24PtiLeyXcHc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ActivityHelper.
+ class
+SHA1-Digest: xnzXr6jdd123HEK/qZysdWWV54g=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ConstraintEditHelpe
+ r.class
+SHA1-Digest: 6DYJYZDbRwk/zdykO9mw7IHJZoE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Destruct
+ ionEventHelperAdvice.class
+SHA1-Digest: H916ym4I9ZWtCl4UXSohDSV+ecU=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ConstraintEditH
+ elper$1.class
+SHA1-Digest: BdT3aST1POGiSRIOCaFL4TsPhzY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ControlFlowEditHelp
+ er$1.class
+SHA1-Digest: vtwiTm0p1aXBQEZEER3qW+m5Vyo=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/matcher/RefineMatcher.
+ class
+SHA1-Digest: Le15e9PZo7Ozg66YM8YW8U2wlG8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/BehavioredClass
+ ifierEditHelper.class
+SHA1-Digest: 95qx3Ymh1/CayblxmGB65X0E9SA=
+
+Name: org/eclipse/papyrus/uml/service/types/command/DependencyReorient
+ Command.class
+SHA1-Digest: 5gMqZLfN35Y7QUA75c09ZmCQFzY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ControlFlowEdit
+ Helper$1.class
+SHA1-Digest: vtwiTm0p1aXBQEZEER3qW+m5Vyo=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ComponentRealizati
+ onReorientCommand.class
+SHA1-Digest: xRnXkmYvnWL8ir0dO1MD56hOwyc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/NamedEle
+ mentInitializerHelperAdvice.class
+SHA1-Digest: ArSnV5pgdqqa5Gd0WO0nDofizJA=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/ActivityGrou
+ pEditHelperAdvice.class
+SHA1-Digest: tVbl2/fjbsswyfxPEQBRU/i/vuU=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/CollaborationEditHe
+ lper.class
+SHA1-Digest: f5pdnhypy5PP88uRgBGWCGn7NNw=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/CollaborationEd
+ itHelper.class
+SHA1-Digest: f5pdnhypy5PP88uRgBGWCGn7NNw=
+
+Name: org/eclipse/papyrus/uml/service/types/menu/AbstractCreateUmlChil
+ dMenu.class
+SHA1-Digest: Xs7ftdoivDGElVIsq4KAIEY6LKc=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ExtendReorientComm
+ and.class
+SHA1-Digest: e9EqTqLy4BzOZN9jsrRRY8u8OGc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/element/UMLElementType
+ s.class
+SHA1-Digest: AxQJBp0cH8KS9Gnf9Qeqk8F4siU=
+
+Name: icons/Association_composite_directed.gif
+SHA1-Digest: g0O9D7VHZOR1/bXuqTQciUSjAQo=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/PortEditHelper.clas
+ s
+SHA1-Digest: 00NjCQehvNT2ZDERGf4Rpfh1wJQ=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/EMFUtil.class
+SHA1-Digest: aTpgQvjbGU55NfSRv2sW39L7Cuc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ObjectFlowEditH
+ elper.class
+SHA1-Digest: 5xao0f++AOQTOqoEX/DB/QvrVCk=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ExceptionHandlerEdi
+ tHelper$1.class
+SHA1-Digest: o48JxOJF1ppX3hTeZWou5LTdRY4=
+
+Name: org/eclipse/papyrus/uml/service/types/command/CreateEditBasedEle
+ mentCommand$1.class
+SHA1-Digest: d8nEKO0VRSbbHRestrOfIP9kvkw=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/PortEditHelper$1.cl
+ ass
+SHA1-Digest: b5LssqKvvK6nUvWleSAWKzd2HK0=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/ICommandContext.
+ class
+SHA1-Digest: Omo8Xlc0NH5Ttg/f3fs/3X42Qdk=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/NamedElement
+ HelperAdvice.class
+SHA1-Digest: TAhzD/TiX6sBMrjyiWe62JUrGLE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ObjectFlowEditHelpe
+ r$1.class
+SHA1-Digest: 9xdmj1ENsWb9Zg2yCg5dY0qHdAQ=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ExtendEditHelper.cl
+ ass
+SHA1-Digest: icwMv5VaOShr1KrnFiwV8Zf0cQE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/Collaboratio
+ nHelperAdvice.class
+SHA1-Digest: W8vnBhDUSVj9eMtIJKpcYa4sMmQ=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/NamedEle
+ mentHelperAdvice.class
+SHA1-Digest: TAhzD/TiX6sBMrjyiWe62JUrGLE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/FeatureNameI
+ nitializerHelperAdvice$1.class
+SHA1-Digest: xNJ8OUDq1gyBaTNdcQo3OEj2T2U=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/DirectedRelationshi
+ pEditHelper.class
+SHA1-Digest: BtzeMDvTgiycR2I5H68b+oWAfh0=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/StructuredCl
+ assifierHelperAdvice.class
+SHA1-Digest: DP0Q5ikL+tfvuDyhavOqhENiDt4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/FeatureN
+ ameInitializerHelperAdvice$1.class
+SHA1-Digest: xNJ8OUDq1gyBaTNdcQo3OEj2T2U=
+
+Name: org/eclipse/papyrus/uml/service/types/command/InterfaceRealizati
+ onReorientCommand.class
+SHA1-Digest: TYfJUBqr544CbN34Fhzn73oL7VM=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Structur
+ edClassifierHelperAdvice.class
+SHA1-Digest: DP0Q5ikL+tfvuDyhavOqhENiDt4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/messages/Messages.clas
+ s
+SHA1-Digest: e0DR2QcLqqJPiLF74RdRqRg73eo=
+
+Name: org/eclipse/papyrus/uml/service/types/command/UnapplyAllStereoty
+ pesCommand.class
+SHA1-Digest: p8XKe7aTYZcanKksWtOy/Hv5Xwk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/ClassifierUtils.
+ class
+SHA1-Digest: lSH+nvIKXyOECYQRjf1pEuy46sc=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ActivityGroupHelper
+ .class
+SHA1-Digest: qRT2tudAKOTvyffHife3eVCSXf0=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/MessageEditHelper.c
+ lass
+SHA1-Digest: dveBEBvGBhFisQdIACvJU1PW938=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/RequestParameter
+ Constants.class
+SHA1-Digest: x20ubYgbQr05DvCQFFYnxyvjfHo=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ObjectNodeHelper.cl
+ ass
+SHA1-Digest: oALx7DfDudefT6Q3KLtT79+FFzQ=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/UnapplyAllSter
+ eotypesCommand.class
+SHA1-Digest: p8XKe7aTYZcanKksWtOy/Hv5Xwk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/ClassifierUtils$
+ AddOwnedAttributeSwitch.class
+SHA1-Digest: CoKy9Oivydi+jPc3C/JTQZhtQr8=
+
+Name: org/eclipse/papyrus/uml/service/types/command/SubstitutionReorie
+ ntCommand.class
+SHA1-Digest: cup1fsr4A22JfJuaTfYD6id58bs=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ActivityGroupHe
+ lper.class
+SHA1-Digest: qRT2tudAKOTvyffHife3eVCSXf0=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/MessageEditHelp
+ er.class
+SHA1-Digest: dveBEBvGBhFisQdIACvJU1PW938=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageFoundReorie
+ ntCommand.class
+SHA1-Digest: 2CI3mpJxbkQ1YLYF+429sg+4a7w=
+
+Name: org/eclipse/papyrus/uml/service/types/handlers/AbstractUmlCreate
+ CommandHandler.class
+SHA1-Digest: oo5ZZVUxEfHb41bsHdJuKRodncs=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ComponentRealiz
+ ationEditHelper.class
+SHA1-Digest: jkmyYtCNlFJ1wcp8WiChhF9n6hc=
+
+Name: plugin.properties
+SHA1-Digest: LmbOrREnEMDwH2ut+z5U08rDcmw=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/DependencyEditH
+ elper.class
+SHA1-Digest: yVzHddRspB04/LX0HozbK2Tt4As=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/handlers/AbstractUmlCr
+ eateCommandHandler.class
+SHA1-Digest: oo5ZZVUxEfHb41bsHdJuKRodncs=
+
+Name: org/eclipse/papyrus/uml/service/types/command/IncludeReorientCom
+ mand.class
+SHA1-Digest: UuOiBDuGNeEvYwgtjKcuiLAa68Q=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/CreateEditBase
+ dElementCommand$2.class
+SHA1-Digest: aF9ET9BNz5YueM8jd+TpjHdu3AM=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/ElementUtil.class
+SHA1-Digest: HLgEUaNGldJg28Wik3RxNZLOIf8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/IncludeReorien
+ tCommand.class
+SHA1-Digest: UuOiBDuGNeEvYwgtjKcuiLAa68Q=
+
+Name: plugin.xml
+SHA1-Digest: 6bb4N03w5SMwvTF8wC52buVANvs=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/FeatureNameI
+ nitializerHelperAdvice.class
+SHA1-Digest: Y/WoAbAtLPz9P0weNVJLMTaFVX0=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/CommandContext.class
+SHA1-Digest: IVfRDacKcxDK5PJRYBoRSudXzw8=
+
+Name: icons/Association_shared_directed.gif
+SHA1-Digest: QFQVDq5RdLuI94mWeeJC7gVH2V8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/FeatureN
+ ameInitializerHelperAdvice.class
+SHA1-Digest: Y/WoAbAtLPz9P0weNVJLMTaFVX0=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageDeleteReori
+ entCommand.class
+SHA1-Digest: FYFHXOXVNKRIF7NB/MM3RkJzNX8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/CommandContext.c
+ lass
+SHA1-Digest: IVfRDacKcxDK5PJRYBoRSudXzw8=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/ClassifierUtils$GetO
+ wnedAttributesSwitch.class
+SHA1-Digest: pQdzK8zbECV0cu70FdaYQ3qSdxk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ObjectFlowReor
+ ientCommand.class
+SHA1-Digest: 8DtrkfaAjiy/DbpuxdOP/xkzx0Q=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageDeleteR
+ eorientCommand.class
+SHA1-Digest: FYFHXOXVNKRIF7NB/MM3RkJzNX8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/PartDeco
+ mpositionHelperAdvice.class
+SHA1-Digest: DifpcRtz0Gs9HS8hdX9zIrJk1cE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/PropertyHelp
+ erAdvice.class
+SHA1-Digest: r+QfeonsBABfb22Ys1SSWmpBWnY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/handlers/AbstractComma
+ ndHandler.class
+SHA1-Digest: I0FwLCyvDsVhEo3Hhj5xG1n/024=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/ClassifierUtils$
+ GetOwnedAttributesSwitch.class
+SHA1-Digest: pQdzK8zbECV0cu70FdaYQ3qSdxk=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageSyncReorien
+ tCommand.class
+SHA1-Digest: PDwOGH5bd/gBNCGuEnaTvOt/004=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/DefaultEditHelper.c
+ lass
+SHA1-Digest: StMEB6eBZP+bOWdMb3PfNl6C3xE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/DirectedRelationshi
+ pEditHelper$1.class
+SHA1-Digest: dnlW6dZg0ZVsdDvyL72i6cFPCWg=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Property
+ HelperAdvice.class
+SHA1-Digest: r+QfeonsBABfb22Ys1SSWmpBWnY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/ClassifierHe
+ lperAdvice.class
+SHA1-Digest: zwrt2U+NIgUB8KA/sZOmG5w1gBs=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageSyncReo
+ rientCommand.class
+SHA1-Digest: PDwOGH5bd/gBNCGuEnaTvOt/004=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ExceptionHandl
+ erReorientCommand.class
+SHA1-Digest: Vpnd7aC1qOAzD4gl27OEPn3/By0=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/GeneralizationE
+ ditHelper.class
+SHA1-Digest: OzZJBvl+tz5Fg1A70t2v0o+g7EY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/DefaultEditHelp
+ er.class
+SHA1-Digest: StMEB6eBZP+bOWdMb3PfNl6C3xE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/CreateEditBase
+ dElementCommand.class
+SHA1-Digest: 00ARyKUdhgxQuUsJo6cL705lUsM=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageAsyncRe
+ orientCommand.class
+SHA1-Digest: IntqBIUavgT5sKR51o0Z0SBPKcc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Classifi
+ erHelperAdvice.class
+SHA1-Digest: zwrt2U+NIgUB8KA/sZOmG5w1gBs=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ExceptionHandlerEdi
+ tHelper.class
+SHA1-Digest: kbUucEOCcL9p/gDPptD/t0wP8W4=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/SubstitutionEditHel
+ per.class
+SHA1-Digest: BjUzeg/2jGsoD4/ZBIAH4q4CKuI=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ObjectNodeHelper$De
+ stroyActivityNode.class
+SHA1-Digest: z2AxFOom4jH07bXYnN6jo0xZbfo=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ActivityNodeHel
+ per.class
+SHA1-Digest: 9BpmaIcxf6PBHUCyczApLqUm2zY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Occurren
+ ceSpecificationHelperAdvice.class
+SHA1-Digest: xpRdi3rCTecf3O1t5LqcAR/wzQI=
+
+Name: org/eclipse/papyrus/uml/service/types/matcher/AssociationMatcher
+ .class
+SHA1-Digest: ZWqaSDPXZ63DP3MZtidRVI0bzsM=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/InterfaceRealiz
+ ationEditHelper.class
+SHA1-Digest: uW3ibU6NMp6IzuEcE28rZ/KUbgA=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Associat
+ ionEditHelperAdvice$1.class
+SHA1-Digest: bN6QHCXyy4uChuXhSPfVeUbpsAs=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/matcher/AssociationMat
+ cher.class
+SHA1-Digest: ZWqaSDPXZ63DP3MZtidRVI0bzsM=
+
+Name: org/eclipse/papyrus/uml/service/types/command/AssociationReorien
+ tCommand.class
+SHA1-Digest: tH6MbVbRd1SzUnaYARCpd6uhla0=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/LiteralIntegerEditH
+ elper.class
+SHA1-Digest: AlfGcsDjvexRuAlqGkYBxgg0ogk=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/TraceEditHel
+ perAdvice$1.class
+SHA1-Digest: radYdzQ740SavHp7HqbJs/44kHE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/AssociationReo
+ rientCommand.class
+SHA1-Digest: tH6MbVbRd1SzUnaYARCpd6uhla0=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/MessageH
+ elperAdvice.class
+SHA1-Digest: oBfTg6IoqzEre3dbagiPyJhiJUI=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/RequestParameter
+ Utils.class
+SHA1-Digest: boSYoHNjVL8WC6ulOOfYdPhiqCU=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Connecto
+ rHelperAdvice.class
+SHA1-Digest: O+qyXdnmPhcjyQGUpN0ulPnWZmU=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/InformationFlowEdit
+ Helper.class
+SHA1-Digest: faBxTgX7f4CEK40hJBsUDsbezh4=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ProtocolStateMachin
+ eEditHelper.class
+SHA1-Digest: ddl06daD4rTOqkhjc7ga8SzuoNo=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/InformationFlow
+ EditHelper.class
+SHA1-Digest: faBxTgX7f4CEK40hJBsUDsbezh4=
+
+Name: org/eclipse/papyrus/uml/service/types/command/InformationFlowReo
+ rientCommand.class
+SHA1-Digest: CtEXyGer0PLTKkDZomtDGapP/do=
+
+Name: org/eclipse/papyrus/uml/service/types/filter/ICommandFilter.clas
+ s
+SHA1-Digest: y6IeBGeaVjtrUc/I4dHcg7dux6g=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Associat
+ ionEditHelperAdvice.class
+SHA1-Digest: xkvYuqbFoPw4mA/exk67Mb5/oWM=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/InformationFlo
+ wReorientCommand.class
+SHA1-Digest: CtEXyGer0PLTKkDZomtDGapP/do=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/NamedEle
+ mentInitializerHelperAdvice$1.class
+SHA1-Digest: b70AQuZluUqEidFCUryNCMDIr+Q=
+
+Name: org/eclipse/papyrus/uml/service/types/messages/messages.properti
+ es
+SHA1-Digest: Hj3OGxhXAyjNO7LRtVVTihPwKFE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/TraceEdi
+ tHelperAdvice.class
+SHA1-Digest: +DC+RtnbCs0QHqfIb91WFlP0pKM=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/LifelineHelp
+ erAdvice.class
+SHA1-Digest: /gz7igh9oe4u8ZMsptlPtAxw9yY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/PinEditHelper.class
+SHA1-Digest: 0Ar+5CpbvgIhr1SfUBHMKNcQ3yY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/ActivityNode
+ HelperAdvice.class
+SHA1-Digest: rk4PNvmtXVcQotGqMWTXggYu+mY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/handlers/AbstractCreat
+ eCommandHandler.class
+SHA1-Digest: U+uSOvBUno06E4oPy+ixeKuyqjY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/messages/messages.prop
+ erties
+SHA1-Digest: Hj3OGxhXAyjNO7LRtVVTihPwKFE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ActivityNodeHel
+ per$DestroyActivityNode.class
+SHA1-Digest: jk3dWkbu4qLjJHO5lRzRFBJKPzk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Lifeline
+ HelperAdvice.class
+SHA1-Digest: /gz7igh9oe4u8ZMsptlPtAxw9yY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/PinEditHelper.c
+ lass
+SHA1-Digest: 0Ar+5CpbvgIhr1SfUBHMKNcQ3yY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Activity
+ NodeHelperAdvice.class
+SHA1-Digest: rk4PNvmtXVcQotGqMWTXggYu+mY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageReplyRe
+ orientCommand.class
+SHA1-Digest: ljUDPIwtmTN5kDujzc2nzvbcF1o=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/InteractionConst
+ raintUtil.class
+SHA1-Digest: 1ibJkC4qMnp/fO1vYEfWWfDdvag=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/Activator.class
+SHA1-Digest: iQzj/D3KAqv9Jln24PtiLeyXcHc=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/IncludeEditHelper.c
+ lass
+SHA1-Digest: 8Trd8DmaZdnDGl0C7kChEdhr7nw=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ConstraintEditH
+ elper.class
+SHA1-Digest: 6DYJYZDbRwk/zdykO9mw7IHJZoE=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/ConnectorUtils.class
+SHA1-Digest: PZO12MgJxDjlgmplqYOPqxrT1x8=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ConnectorReorientS
+ emanticCommand.class
+SHA1-Digest: EXRjrcliLzk2jlNR1vY5gNr+btE=
+
+Name: org/eclipse/papyrus/uml/service/types/command/GeneralizationReor
+ ientCommand.class
+SHA1-Digest: mFrHu0SHW353galXZeX2BSbU1mk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/IncludeEditHelp
+ er.class
+SHA1-Digest: 8Trd8DmaZdnDGl0C7kChEdhr7nw=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/ConnectorUtils.c
+ lass
+SHA1-Digest: PZO12MgJxDjlgmplqYOPqxrT1x8=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ConnectorReori
+ entSemanticCommand.class
+SHA1-Digest: EXRjrcliLzk2jlNR1vY5gNr+btE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/DependencyReor
+ ientCommand.class
+SHA1-Digest: 5gMqZLfN35Y7QUA75c09ZmCQFzY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/MessageEndHe
+ lperAdvice.class
+SHA1-Digest: +kvv1JnP/pF0zbTsJMlaqEkJvR4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ComponentReali
+ zationReorientCommand.class
+SHA1-Digest: xRnXkmYvnWL8ir0dO1MD56hOwyc=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ActivityHelper.clas
+ s
+SHA1-Digest: xnzXr6jdd123HEK/qZysdWWV54g=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/RefineEditHe
+ lperAdvice.class
+SHA1-Digest: 4m/mBW7Y6tE690CpzQ1UI69quz4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Activity
+ GroupEditHelperAdvice.class
+SHA1-Digest: tVbl2/fjbsswyfxPEQBRU/i/vuU=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ConstraintEditHelpe
+ r$1.class
+SHA1-Digest: BdT3aST1POGiSRIOCaFL4TsPhzY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/MessageE
+ ndHelperAdvice.class
+SHA1-Digest: +kvv1JnP/pF0zbTsJMlaqEkJvR4=
+
+Name: org/eclipse/papyrus/uml/service/types/matcher/RefineMatcher.clas
+ s
+SHA1-Digest: Le15e9PZo7Ozg66YM8YW8U2wlG8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/RefineEd
+ itHelperAdvice.class
+SHA1-Digest: 4m/mBW7Y6tE690CpzQ1UI69quz4=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/DirectedRela
+ tionshipHelperAdvice.class
+SHA1-Digest: tAzr30BSuqOh4lufB9IyB9wAvPY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/BehavioredClassifie
+ rEditHelper.class
+SHA1-Digest: 95qx3Ymh1/CayblxmGB65X0E9SA=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ExtendReorient
+ Command.class
+SHA1-Digest: e9EqTqLy4BzOZN9jsrRRY8u8OGc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/menu/AbstractCreateUml
+ ChildMenu.class
+SHA1-Digest: Xs7ftdoivDGElVIsq4KAIEY6LKc=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/NamedElement
+ InitializerHelperAdvice.class
+SHA1-Digest: ArSnV5pgdqqa5Gd0WO0nDofizJA=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Directed
+ RelationshipHelperAdvice.class
+SHA1-Digest: tAzr30BSuqOh4lufB9IyB9wAvPY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/PortEditHelper.
+ class
+SHA1-Digest: 00NjCQehvNT2ZDERGf4Rpfh1wJQ=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ActivityGroupHelper
+ $DestroyActivityNode.class
+SHA1-Digest: 6bd0QcxuIGVy8wEHcCcbasSlBd4=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ConnectorEditHelper
+ .class
+SHA1-Digest: vBtXLp0Yf9AUs5A+XwbNWXiquy4=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ConnectorReorientC
+ ommand.class
+SHA1-Digest: EQMuQ4x+q2dqb9Oe/0lO3q7MsLE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ExceptionHandle
+ rEditHelper$1.class
+SHA1-Digest: o48JxOJF1ppX3hTeZWou5LTdRY4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ConnectorEditHe
+ lper.class
+SHA1-Digest: vBtXLp0Yf9AUs5A+XwbNWXiquy4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ActivityGroupHe
+ lper$DestroyActivityNode.class
+SHA1-Digest: 6bd0QcxuIGVy8wEHcCcbasSlBd4=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/CreateEditBase
+ dElementCommand$1.class
+SHA1-Digest: d8nEKO0VRSbbHRestrOfIP9kvkw=
+
+Name: org/eclipse/papyrus/uml/service/types/element/UMLElementTypes.cl
+ ass
+SHA1-Digest: AxQJBp0cH8KS9Gnf9Qeqk8F4siU=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/PortEditHelper$
+ 1.class
+SHA1-Digest: b5LssqKvvK6nUvWleSAWKzd2HK0=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ConnectorEditHelper
+ $1.class
+SHA1-Digest: VFCHCi+2+g6tOmsFWucVxKqeZBI=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ConnectorReori
+ entCommand.class
+SHA1-Digest: EQMuQ4x+q2dqb9Oe/0lO3q7MsLE=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/EMFUtil.class
+SHA1-Digest: aTpgQvjbGU55NfSRv2sW39L7Cuc=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ProtocolConformance
+ EditHelper.class
+SHA1-Digest: iFXOD3c6ai6Y4GVN7HR3vPzrZ/c=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ObjectFlowEditHelpe
+ r.class
+SHA1-Digest: 5xao0f++AOQTOqoEX/DB/QvrVCk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ConnectorEditHe
+ lper$1.class
+SHA1-Digest: VFCHCi+2+g6tOmsFWucVxKqeZBI=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ProtocolConform
+ anceEditHelper.class
+SHA1-Digest: iFXOD3c6ai6Y4GVN7HR3vPzrZ/c=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ObjectFlowEditH
+ elper$1.class
+SHA1-Digest: 9xdmj1ENsWb9Zg2yCg5dY0qHdAQ=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ExtendEditHelpe
+ r.class
+SHA1-Digest: icwMv5VaOShr1KrnFiwV8Zf0cQE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Collabor
+ ationHelperAdvice.class
+SHA1-Digest: W8vnBhDUSVj9eMtIJKpcYa4sMmQ=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/ICommandContext.clas
+ s
+SHA1-Digest: Omo8Xlc0NH5Ttg/f3fs/3X42Qdk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/DirectedRelatio
+ nshipEditHelper.class
+SHA1-Digest: BtzeMDvTgiycR2I5H68b+oWAfh0=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/ExecutionSpe
+ cificationHelperAdvice.class
+SHA1-Digest: iQeYj/h4Dvypq1WYbpCF0BavZSo=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/AssociationBaseEdit
+ Helper.class
+SHA1-Digest: b2UP6AHxEqPtk8z0Pp/ySbv4wxk=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/ConnectorEnd
+ HelperAdvice.class
+SHA1-Digest: La6acifPTd3zPTPbdfmZBhvItrE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/InterfaceReali
+ zationReorientCommand.class
+SHA1-Digest: TYfJUBqr544CbN34Fhzn73oL7VM=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ControlFlowReorien
+ tCommand.class
+SHA1-Digest: ukOvwRYowRQ6MkoMMl2NZ0+zh2w=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Executio
+ nSpecificationHelperAdvice.class
+SHA1-Digest: iQeYj/h4Dvypq1WYbpCF0BavZSo=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ClassEditHelper.cla
+ ss
+SHA1-Digest: m+AZtbzlNIbm35ybTKsr59nTqJE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/AssociationBase
+ EditHelper.class
+SHA1-Digest: b2UP6AHxEqPtk8z0Pp/ySbv4wxk=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Connecto
+ rEndHelperAdvice.class
+SHA1-Digest: La6acifPTd3zPTPbdfmZBhvItrE=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ElementEditHelper.c
+ lass
+SHA1-Digest: 6l9JEMYxDXMs6acX4b8SuH9I1ls=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/ControlFlowReo
+ rientCommand.class
+SHA1-Digest: ukOvwRYowRQ6MkoMMl2NZ0+zh2w=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ClassEditHelper
+ .class
+SHA1-Digest: m+AZtbzlNIbm35ybTKsr59nTqJE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ObjectNodeHelpe
+ r.class
+SHA1-Digest: oALx7DfDudefT6Q3KLtT79+FFzQ=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ElementEditHelp
+ er.class
+SHA1-Digest: 6l9JEMYxDXMs6acX4b8SuH9I1ls=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/SubstitutionRe
+ orientCommand.class
+SHA1-Digest: cup1fsr4A22JfJuaTfYD6id58bs=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageFoundRe
+ orientCommand.class
+SHA1-Digest: 2CI3mpJxbkQ1YLYF+429sg+4a7w=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/RefineEditHe
+ lperAdvice$1.class
+SHA1-Digest: 7xy/uSbL2gf1g631IU6GsKkyNDk=
+
+Name: org/eclipse/papyrus/uml/service/types/messages/Messages.class
+SHA1-Digest: e0DR2QcLqqJPiLF74RdRqRg73eo=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/ClassifierUtils.clas
+ s
+SHA1-Digest: lSH+nvIKXyOECYQRjf1pEuy46sc=
+
+Name: org/eclipse/papyrus/uml/service/types/filter/UmlElementCommandFi
+ lter.class
+SHA1-Digest: 5R2E2ih/DlhVDzpO3dhtARlTi1I=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/RefineEd
+ itHelperAdvice$1.class
+SHA1-Digest: 7xy/uSbL2gf1g631IU6GsKkyNDk=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/RequestParameterCons
+ tants.class
+SHA1-Digest: x20ubYgbQr05DvCQFFYnxyvjfHo=
+
+Name: org/eclipse/papyrus/uml/service/types/matcher/TraceMatcher.class
+SHA1-Digest: 5+Pu4ccOvh8HnkKjKizEk/LM6To=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/ElementUtil.clas
+ s
+SHA1-Digest: HLgEUaNGldJg28Wik3RxNZLOIf8=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/ClassifierUtils$AddO
+ wnedAttributeSwitch.class
+SHA1-Digest: CoKy9Oivydi+jPc3C/JTQZhtQr8=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/filter/UmlElementComma
+ ndFilter.class
+SHA1-Digest: 5R2E2ih/DlhVDzpO3dhtARlTi1I=
+
+Name: org/eclipse/papyrus/uml/service/types/command/MessageAbstractReo
+ rientCommand.class
+SHA1-Digest: jg0Fngre592xr7HTCvl24vBc4Ko=
+
+Name: org/eclipse/papyrus/uml/service/types/utils/NamedElementHelper.c
+ lass
+SHA1-Digest: FNPtBE8d7BhopRPJRwiZJlwTCtY=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/Encapsulated
+ ClassifierHelperAdvice.class
+SHA1-Digest: y+B1l0qz7gXBBrvFv0TlzbTe4bE=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/matcher/TraceMatcher.c
+ lass
+SHA1-Digest: 5+Pu4ccOvh8HnkKjKizEk/LM6To=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ComponentRealizatio
+ nEditHelper.class
+SHA1-Digest: jkmyYtCNlFJ1wcp8WiChhF9n6hc=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/command/MessageAbstrac
+ tReorientCommand.class
+SHA1-Digest: jg0Fngre592xr7HTCvl24vBc4Ko=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/DependencyEditHelpe
+ r.class
+SHA1-Digest: yVzHddRspB04/LX0HozbK2Tt4As=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/utils/NamedElementHelp
+ er.class
+SHA1-Digest: FNPtBE8d7BhopRPJRwiZJlwTCtY=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Encapsul
+ atedClassifierHelperAdvice.class
+SHA1-Digest: y+B1l0qz7gXBBrvFv0TlzbTe4bE=
+
+Name: org/eclipse/papyrus/uml/service/types/command/CreateEditBasedEle
+ mentCommand$2.class
+SHA1-Digest: aF9ET9BNz5YueM8jd+TpjHdu3AM=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/Collaboratio
+ nUseHelperAdvice.class
+SHA1-Digest: TYjuGfj8nmGghpj/8VXXpiCsiSw=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/ControlFlowEditHelp
+ er.class
+SHA1-Digest: hWEayJLuPETXjjClHZWAJZLaY8M=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/advice/Collabor
+ ationUseHelperAdvice.class
+SHA1-Digest: TYjuGfj8nmGghpj/8VXXpiCsiSw=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ControlFlowEdit
+ Helper.class
+SHA1-Digest: hWEayJLuPETXjjClHZWAJZLaY8M=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/DirectedRelatio
+ nshipEditHelper$1.class
+SHA1-Digest: dnlW6dZg0ZVsdDvyL72i6cFPCWg=
+
+Name: org/eclipse/papyrus/uml/service/types/command/ObjectFlowReorient
+ Command.class
+SHA1-Digest: 8DtrkfaAjiy/DbpuxdOP/xkzx0Q=
+
+Name: org/eclipse/papyrus/uml/service/types/helper/advice/PartDecompos
+ itionHelperAdvice.class
+SHA1-Digest: DifpcRtz0Gs9HS8hdX9zIrJk1cE=
+
+Name: org/eclipse/papyrus/uml/service/types/handlers/AbstractCommandHa
+ ndler.class
+SHA1-Digest: I0FwLCyvDsVhEo3Hhj5xG1n/024=
+
+Name: bin/org/eclipse/papyrus/uml/service/types/helper/ExceptionHandle
+ rEditHelper.class
+SHA1-Digest: kbUucEOCcL9p/gDPptD/t0wP8W4=
+

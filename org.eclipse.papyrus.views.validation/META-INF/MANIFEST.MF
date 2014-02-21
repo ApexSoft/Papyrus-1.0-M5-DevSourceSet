@@ -1,0 +1,170 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.views.validation;singleton:=t
+ rue
+Bundle-Activator: org.eclipse.papyrus.views.validation.internal.Activa
+ tor
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.ui,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.ser
+ vices.markerlistener;bundle-version="1.0.0",org.eclipse.emf.ecore;bun
+ dle-version="2.8.0",org.eclipse.papyrus.infra.core.log;bundle-version
+ ="1.0.0",org.eclipse.emf.edit.ui;bundle-version="2.8.0",org.eclipse.e
+ mf.transaction;bundle-version="1.4.0",org.eclipse.papyrus.infra.servi
+ ces.labelprovider;bundle-version="1.0.0",org.eclipse.papyrus.infra.wi
+ dgets;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.views.validation.internal
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Import-Package: com.google.common.base;version="10.0.1",com.google.com
+ mon.collect;version="10.0.1"
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/views/validation/internal/actions/DeleteMark
+ erAction.class
+SHA1-Digest: if8z2+xafIdgP6zqdBwvFA0oTZ8=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/ProblemC
+ ellLabelProvider.class
+SHA1-Digest: qb+/3+jF34RFRHdnPNPoasbA6GQ=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/ProblemL
+ abelProvider.class
+SHA1-Digest: YOvVTt7tQaNFc8lDroCXb/PzLmI=
+
+Name: org/eclipse/papyrus/views/validation/internal/ViewSettings$1.cla
+ ss
+SHA1-Digest: WxsN0BijrZkWFiI0Gf5cqn3lLqQ=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Severity
+ LabelProvider$1.class
+SHA1-Digest: xhAYKQYns141nwInHfEj2F3toKg=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/ElementL
+ abelProvider.class
+SHA1-Digest: ACtmqMgcknxLjvryRdH3Uo4UkgQ=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Descript
+ ionLabelProvider.class
+SHA1-Digest: 0EyxKNKxrN1ecaNdCWW40ArsgBM=
+
+Name: org/eclipse/papyrus/views/validation/internal/actions/CopyMarker
+ Action.class
+SHA1-Digest: CTR9q9xQXb+/YATqYy5uvlN5b1g=
+
+Name: plugin.properties
+SHA1-Digest: IZl33uObdNujdqk2ugWEdgtTios=
+
+Name: org/eclipse/papyrus/views/validation/internal/IValidationMarkerL
+ istener.class
+SHA1-Digest: kcAFo6oUFfy33rclJswxhrt4ECA=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationPag
+ e.class
+SHA1-Digest: 1NNb30MVuGMq7KWFBkwL6gcmGUE=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/PathLabe
+ lProvider.class
+SHA1-Digest: CIjxYJGynVefeZDOHCB4ICk74uc=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationVie
+ w$MessagePage.class
+SHA1-Digest: 6R8pKXd2HN9K6CMDO5+/vzNKZUY=
+
+Name: plugin.xml
+SHA1-Digest: qqojkZE2uz4ZcCVu0GeAfW8p2BM=
+
+Name: icons/full/elcl16/goto_marker.gif
+SHA1-Digest: wSWrpV4I6dFLNxokVl682wbvmGY=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/TypeLabe
+ lProvider.class
+SHA1-Digest: mZlx8oB83xfyi2960OuMiBAB7sU=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationPag
+ e$1.class
+SHA1-Digest: TyQyEwZ5XTfAgqMonjke137lTM8=
+
+Name: icons/full/view16/model_validation.gif
+SHA1-Digest: YiEtqjdpFBxEcxWtqTeMfz5x5qM=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationPag
+ e$2.class
+SHA1-Digest: iUoSuACngCXUm9B/t0gjeSoYYgE=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationPag
+ e$3.class
+SHA1-Digest: MmxxhWdQwKp2MCGl5NKRl5VYj0g=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationPag
+ e$4.class
+SHA1-Digest: xa6bC+1OUd6B0R6sE1b9Kuys7AQ=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationPag
+ e$5.class
+SHA1-Digest: NqHWn+PWjtop1xNI3I0jnI1YW38=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/LabelPro
+ viderSorter.class
+SHA1-Digest: +FRtPMwIrHj87U/LnI3xJjQDCEg=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/views/validation/internal/IValidationMarkerL
+ istener$MarkerChangeKind.class
+SHA1-Digest: rUL8TVUqPPgEnPv7aUdQJMpRAzE=
+
+Name: org/eclipse/papyrus/views/validation/internal/ModelValidationVie
+ w.class
+SHA1-Digest: gZqzywcVK47E4PvHvlNIdY3Nqrg=
+
+Name: org/eclipse/papyrus/views/validation/internal/ValidationMarkersS
+ ervice.class
+SHA1-Digest: FaFdO5YTAhu+rIEJp2+9bKH04Qg=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Problems
+ ContentProvider.class
+SHA1-Digest: Tq8+8WhAN+wrlBaVd8wbM87/yv4=
+
+Name: org/eclipse/papyrus/views/validation/internal/actions/SelectAllA
+ ction.class
+SHA1-Digest: 6iB7U91I2mynmTHBQxdHEpsqRB8=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/views/validation/internal/Activator.class
+SHA1-Digest: Mb05mDZYD1W0lqrfRNOKIyB+i3w=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Problems
+ ContentProvider$1.class
+SHA1-Digest: r2Rsa+nRc3Hx6+82rvRMdOkww1Y=
+
+Name: org/eclipse/papyrus/views/validation/internal/actions/AbstractMa
+ rkerAction.class
+SHA1-Digest: 7A3Zh88SflGt+TS7TuU+BtQ+WGM=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Problems
+ ContentProvider$2.class
+SHA1-Digest: rc7MaaTXJEwd3M3PRxBq4PuxEYY=
+
+Name: org/eclipse/papyrus/views/validation/internal/actions/GotoMarker
+ Action.class
+SHA1-Digest: 6BZN1vQXfZWL89s5jX9PVR2Wgt4=
+
+Name: org/eclipse/papyrus/views/validation/internal/ViewSettings.class
+SHA1-Digest: gldptlIs3CeaoyS9jgJyOIjWHoQ=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Severity
+ LabelProvider.class
+SHA1-Digest: Knxr15O9Zm+Yxngc549oq6kOrAA=
+
+Name: org/eclipse/papyrus/views/validation/internal/providers/Inverted
+ ViewerComparator.class
+SHA1-Digest: 7+J9CjAP2MUke8y/nmUMh7oy/FA=
+

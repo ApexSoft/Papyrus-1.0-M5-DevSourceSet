@@ -1,0 +1,212 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.sysml.nattable.menu;singleton
+ :=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.uml.nattable.menu;bundle-version="1.0.0",org.eclipse.gmf.runtim
+ e.emf.type.core,org.eclipse.papyrus.sysml.service.types;bundle-versio
+ n="1.0.0",org.eclipse.papyrus.infra.services.edit;bundle-version="1.0
+ .0",org.eclipse.papyrus.sysml.diagram.common;bundle-version="1.0.0",o
+ rg.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",org.
+ eclipse.papyrus.uml.tools.utils;bundle-version="1.0.0",org.eclipse.pa
+ pyrus.uml.service.types;bundle-version="1.0.0",org.eclipse.core.expre
+ ssions;bundle-version="3.4.500",org.eclipse.papyrus.infra.nattable;bu
+ ndle-version="1.0.0",org.eclipse.papyrus.infra.core.sasheditor;bundle
+ -version="1.0.0",org.eclipse.papyrus.infra.core;bundle-version="1.0.0
+ ",org.eclipse.papyrus.infra.nattable.model;bundle-version="1.0.0",org
+ .eclipse.nebula.widgets.nattable.core;bundle-version="1.0.0",org.ecli
+ pse.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.uml2.um
+ l;bundle-version="4.1.0",org.eclipse.papyrus.infra.tools;bundle-versi
+ on="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.sysml.nattable.menu.Activator
+Export-Package: org.eclipse.papyrus.sysml.nattable.menu.handlers
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/Activator.class
+SHA1-Digest: utX9rVNzoo26PiZ1/Y2B9cKJoY4=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationNone
+ Handler.class
+SHA1-Digest: GmAZh5szHPhUuxUimlygb0ulkEo=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationComp
+ ositeHandler.class
+SHA1-Digest: vIREQL727QU7Vhk+cwXcIDdDRuI=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ViewHandler.cla
+ ss
+SHA1-Digest: 9tlGE8zGvi5f0Hp/f7d0sl2bzXk=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/UnitHandler.cla
+ ss
+SHA1-Digest: KmvGYR0Wwpjr0HZl5oYu1sRelZg=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: ytdbWsorwP8FQ6N9zWM/A4D8EjU=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowPropertyHan
+ dler.class
+SHA1-Digest: ziPdoCAfe20xrdDu3PxBLIITgLQ=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ItemFlowHandler
+ .class
+SHA1-Digest: XGCqlo7QleUAlq8Itjju3hCXuzo=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowPort_OutHan
+ dler.class
+SHA1-Digest: ByInaDGsdo97ot1QbC/rOIKkI1g=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ConstraintBlock
+ Handler.class
+SHA1-Digest: MUzPmEMYfm/dLmku3+BNl3Z8KLI=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/DeriveReqtHandl
+ er.class
+SHA1-Digest: S/C3l6TcG3rC5MKMuhlINSs/NFY=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationShar
+ edDirectedHandler.class
+SHA1-Digest: 3vnDGWD2DZpYX/PJM73LHEg1DJU=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/BlockHandler.cl
+ ass
+SHA1-Digest: jf0xeq1uEWSYT9YDs1Lj55L4D0U=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ValueTypeHandle
+ r.class
+SHA1-Digest: T7HMZsOWzojrigdUCvb3Nm3T0tU=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ConstraintBlock
+ ParameterHandler.class
+SHA1-Digest: eNmrG0JjYhgclD6apk16B9io5ZI=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowPort_InOutH
+ andler.class
+SHA1-Digest: zglhB3WPZIwdh5KKJL7egCJ3E+U=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/SysmlNattableCr
+ eateMenu.class
+SHA1-Digest: nQQRKMF4C9wa/P8IRxUeeD0Zppk=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ValuePropertyHa
+ ndler.class
+SHA1-Digest: ALEIujX9X2p77fm0VlIwl4kJLKo=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/DimensionHandle
+ r.class
+SHA1-Digest: CyBHKiSItVRL+miqxZ+sg1+vyFs=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/RequirementHand
+ ler.class
+SHA1-Digest: W3rtaCyOSvtPPa6/lr27vQ3AQ0g=
+
+Name: plugin.xml
+SHA1-Digest: PHs5SpoYEYfn8vvxvD1LOt7ztdg=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationNone
+ DirectedHandler.class
+SHA1-Digest: oxmYYUnMQ4gvE7otWwRmqd4Eebs=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationHand
+ ler.class
+SHA1-Digest: Wjqo/MyFaa5eV8+4OVbzmU9i/J8=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowPortHandler
+ .class
+SHA1-Digest: jVS221H5VnvmWg5Qv53+607GywY=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationComp
+ ositeDirectedHandler.class
+SHA1-Digest: oFxqOLkIDg5aFKdkZbyorPYmBbo=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ActorPartProper
+ tyHandler.class
+SHA1-Digest: paxDLVnoalzarX7b0Iue6b+ieoI=
+
+Name: plugin.pdoc
+SHA1-Digest: /1hb6On9Lw5n9qe3nhWdzOXCtLM=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/PartPropertyHan
+ dler.class
+SHA1-Digest: B85Ok6HS5x1xhJ0iWv1DdB6h+FA=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/RationaleHandle
+ r.class
+SHA1-Digest: CQMCs8fHKiYtq6bjn+uanX1z+G4=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowSpecificati
+ onHandler.class
+SHA1-Digest: I1eSGvjR3AJe506Ls3uMI4QhOY4=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowPort_InHand
+ ler.class
+SHA1-Digest: l8GxvJyo/Y1Ort4Jpvgnie9DozA=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ValueType_Enume
+ rationHandler.class
+SHA1-Digest: uAdCj86MG9XpsKLK+HWgPHk1SRA=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AllocateHandler
+ .class
+SHA1-Digest: +S0pqzq5Nvbp5rUt8dY9toHo5jc=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ValueType_Primi
+ tiveTypeHandler.class
+SHA1-Digest: wtfkjm0N3XJO3VeKPNDZIH5uGtE=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ViewPointHandle
+ r.class
+SHA1-Digest: YmYMJzxaYKxnoNZ5bjRSzSYz80g=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/VerifyHandler.c
+ lass
+SHA1-Digest: g0TLhNAppH4VyllJoJxkXlBYXNs=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AbstractSysmlNa
+ ttableCreateCommandHandler.class
+SHA1-Digest: n1gID9KgELZW1/Nc/1gy9e/ds2E=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/CopyHandler.cla
+ ss
+SHA1-Digest: JG3oz4fQ0j1M126tPichxh0r1PY=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/AssociationShar
+ edHandler.class
+SHA1-Digest: i8EeknKBTBzUHaMKeOku9dzRKwE=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ConformHandler.
+ class
+SHA1-Digest: 5aG/1wDi7G9VdW9K6xcben2YrZg=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ConstraintPrope
+ rtyHandler.class
+SHA1-Digest: Dm9WJhXp44b7MM/BIjGhnOejq3o=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/SatisfyHandler.
+ class
+SHA1-Digest: vnUDwTECfTpYffoHZHwqAs/0RtY=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/FlowPort_NAHand
+ ler.class
+SHA1-Digest: Kb6SmWrCwV2sI+aGHB8kv2UJ9lM=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ReferenceProper
+ tyHandler.class
+SHA1-Digest: s3N7nFbzpcmZadzAXQzhc/tYpmc=
+
+Name: org/eclipse/papyrus/sysml/nattable/menu/handlers/ProblemHandler.
+ class
+SHA1-Digest: yunGeqQfEUJaK/QGQZq+VYYCgTQ=
+

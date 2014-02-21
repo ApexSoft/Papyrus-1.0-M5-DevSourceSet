@@ -1,0 +1,1043 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.uml.nattable.menu;singleton:=
+ true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.gm
+ f.runtime.emf.type.core,org.eclipse.papyrus.infra.services.edit;bundl
+ e-version="1.0.0",org.eclipse.gmf.runtime.common.core,org.eclipse.pap
+ yrus.uml.service.types;bundle-version="1.0.0",org.eclipse.papyrus.inf
+ ra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bun
+ dle-version="1.0.0",org.eclipse.papyrus.infra.emf;bundle-version="1.0
+ .0",org.eclipse.papyrus.infra.nattable.common;bundle-version="1.0.0",
+ org.eclipse.nebula.widgets.nattable.core;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",org.ecli
+ pse.papyrus.infra.nattable.model;bundle-version="1.0.0",org.eclipse.c
+ ore.expressions,org.eclipse.papyrus.infra.nattable;bundle-version="1.
+ 0.0",org.eclipse.uml2.uml,org.eclipse.papyrus.infra.tools;bundle-vers
+ ion="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.nattable.menu.Activator
+Export-Package: org.eclipse.papyrus.uml.nattable.menu,org.eclipse.papy
+ rus.uml.nattable.menu.handlers,org.eclipse.papyrus.uml.nattable.menu.
+ messages,org.eclipse.papyrus.uml.nattable.menu.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/nattable/menu/messages/Messages.class
+SHA1-Digest: 1vM7XR9fwJxNJRG1iroIXTCpnKY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PrimitiveTypeHand
+ ler.class
+SHA1-Digest: FiHH+6GDCMjCWzIGT9izKLUftcU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TemplateSignature
+ Handler.class
+SHA1-Digest: ABalHBXmPrGZ71nmQ+axU9Lc+yc=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/FinalNodeHandler.
+ class
+SHA1-Digest: aLKxeo8qyWbiJC5EzRmmL/VgF2g=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StructuredClassif
+ ierHandler.class
+SHA1-Digest: Owz+FazwB8/LETcPsbDkepY/XI8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityNodeHandl
+ er.class
+SHA1-Digest: 8wbFFvDBLLXH69ABSLIz3pz6Upg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/WriteStructuralFe
+ atureActionHandler.class
+SHA1-Digest: PH4CFL4WEROIISccwaQwK8QnOsE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RefineHandler.cla
+ ss
+SHA1-Digest: pOeCHoN+5TkpGDt/ZYnDkHNEwMU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AddStructuralFeat
+ ureValueActionHandler.class
+SHA1-Digest: N7Qkgv+F+3O2TB0S9Td4FHmScSQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InputPinHandler.c
+ lass
+SHA1-Digest: zizYcgjONbZ6/aCtR0V9FBuRMAY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TimeConstraintHan
+ dler.class
+SHA1-Digest: VT4HqlqKU+wki9ccd1ZqBQsKV5c=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TemplateBindingHa
+ ndler.class
+SHA1-Digest: ZiuIEBFEtd97v14wFkAYUsgDsK4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DataTypeHandler.c
+ lass
+SHA1-Digest: NnwDEXW/7XcvPNBFiUa/s0MyDVg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/GeneralizationSet
+ Handler.class
+SHA1-Digest: 0/hSRFe2t7GmTvjoBgT+L8sQpZw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RealizationHandle
+ r.class
+SHA1-Digest: JM47eUDpBmulrNTQvZv7Ol5Z98s=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/UsageHandler.clas
+ s
+SHA1-Digest: Kfg3B0NHnySDbDYB/P3dOJtnu00=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TimeObservationHa
+ ndler.class
+SHA1-Digest: uQX/PV5zvjLq35xWfx31DL/i6PE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/BroadcastSignalAc
+ tionHandler.class
+SHA1-Digest: 5gnYPrIHWcGRxwD65q7Y3UgpbkA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PackageableElemen
+ tHandler.class
+SHA1-Digest: p6RTzL1NPNRHToxrYAF2FShUb/4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TypeHandler.class
+SHA1-Digest: LYdq0PIIbXCZyj7srLmQEGCrwEU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConnectionPointRe
+ ferenceHandler.class
+SHA1-Digest: my/t+T7tIXD2QhnHLunpqMqQSDM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/NamespaceHandler.
+ class
+SHA1-Digest: DRGM+ar58kQh9k9deGPaZTJtgdU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CallActionHandler
+ .class
+SHA1-Digest: 2cvBwx3U2GpkraCrQZb9OdBpAxk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/MessageEventHandl
+ er.class
+SHA1-Digest: kgMb4liWs5PyzChuodBPG8hyjag=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TypedElementHandl
+ er.class
+SHA1-Digest: Cv9J9O6QDoz9qxzAs4qpL0O4MHY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InterfaceRealizat
+ ionHandler.class
+SHA1-Digest: +osVf/CFSzajz5bdSmmb/BFWcy8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityEdgeHandl
+ er.class
+SHA1-Digest: +IcFg/5q74dpCR5FEKwSS6VN1oY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/GateHandler.class
+SHA1-Digest: dk8BKlfsIA7vpZTwlRQp0EBIHKg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConditionalNodeHa
+ ndler.class
+SHA1-Digest: FEZxflxvVeewLElA6VHR3wGhp0Q=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/IncludeHandler.cl
+ ass
+SHA1-Digest: TTbfxdzvcYeAZaCLSGqgMAf41Vo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/VertexHandler.cla
+ ss
+SHA1-Digest: FW/7cfM8js8Y/R+BxdAZ1P7XRHo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ForkNodeHandler.c
+ lass
+SHA1-Digest: ECudkjH46Vm5yJBTSvZ0vbmIvMs=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AnyReceiveEventHa
+ ndler.class
+SHA1-Digest: VAadNbkoWxtQ+tZJQCBdI3aYmng=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActionInputPinHan
+ dler.class
+SHA1-Digest: 3PdzAuONo/LaiE+0pFAcllGwCq8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PortHandler.class
+SHA1-Digest: pciJ3i2hoEvHBKBVEzGZowpoL+4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SubstitutionHandl
+ er.class
+SHA1-Digest: 0bRdAfrp5oBuF0+3gXuxrTmANqQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/messages/messages.properti
+ es
+SHA1-Digest: n1vmXNHB9RPYt+HksmYRNNpYH2s=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CallEventHandler.
+ class
+SHA1-Digest: /tHcMe0zHHE6UHsTdesUseApkIY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExpressionHandler
+ .class
+SHA1-Digest: VNeKomq5/qTeudc0W/p6IsK6vVY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CentralBufferNode
+ Handler.class
+SHA1-Digest: H+haTu15RLYzc5XmDpbYf1pjVUY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CombinedFragmentH
+ andler.class
+SHA1-Digest: ISk4fmj4zIIMJjct6hUyVx8GZoo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralNullHandle
+ r.class
+SHA1-Digest: lU+QTxI9eNWsAe+9wvqIkHJwTXg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActorHandler.clas
+ s
+SHA1-Digest: hgEkxMawq5BjSMrKcikzg3lkPro=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClauseHandler.cla
+ ss
+SHA1-Digest: pJK5KHQHlMaHYjV+Bpdy3fiJZWI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClearAssociationA
+ ctionHandler.class
+SHA1-Digest: QFJk1q2nPpjkDtoHkzKuE7s8awM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/FlowFinalNodeHand
+ ler.class
+SHA1-Digest: QlAPG4f/8/4mUuS2FrgyGFSXhV4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LinkEndCreationDa
+ taHandler.class
+SHA1-Digest: qe79b0HkkL+Hx9LAi+/EDfUo3Eo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ProfileApplicatio
+ nHandler.class
+SHA1-Digest: 3QuMZWKzfgQgbyFXvl1d43LR38Y=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AcceptEventAction
+ Handler.class
+SHA1-Digest: NxZd1jTu9ADaWont+qqsG6hbp1Q=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/NodeHandler.class
+SHA1-Digest: 9EhWkz2ZPwf9kp9T5XEgnPp31gU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReduceActionHandl
+ er.class
+SHA1-Digest: 1cJrQ0LgFD3XnWD6OFjzUV1xBBY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DeploymentSpecifi
+ cationHandler.class
+SHA1-Digest: jf7UtXoyP1PSGT/crRkoBBhNqWc=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExecutionOccurren
+ ceSpecificationHandler.class
+SHA1-Digest: EPmUl897BKUh/SSOTA+x29JGTUQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ElementHandler.cl
+ ass
+SHA1-Digest: Zi4x0ko6wDUIZd2mqCNVmKt1FXY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InteractionUseHan
+ dler.class
+SHA1-Digest: c5ndMybFGmtR2AtjI4FT/PxjGqw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralUnlimitedN
+ aturalHandler.class
+SHA1-Digest: +VFVOzjH/yVBONdiUJ1RlvM7q4A=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AbstractUmlNattab
+ leCreateCommandHandler.class
+SHA1-Digest: bhtF0o9U5EaWhLN1B1a3fgClk9I=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OccurrenceSpecifi
+ cationHandler.class
+SHA1-Digest: Z+FEM5PkRqCLVbMNESx+XKqc8lg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/WriteVariableActi
+ onHandler.class
+SHA1-Digest: iMRW/fJXLthIBk0Lj5JWxRZdVbk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityGroupHand
+ ler.class
+SHA1-Digest: cl83pu5z+jyB6b/7lVjNnsDb/B0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExecutableNodeHan
+ dler.class
+SHA1-Digest: 7upSZDmRTtpHytSRT0ZCPmL6wyQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InstanceSpecifica
+ tionHandler.class
+SHA1-Digest: 2Oypqe6aLrOEGt2PWUEqDLKgD1Y=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RedefinableElemen
+ tHandler.class
+SHA1-Digest: YswIZp0sQGaGNstVCQnVOQwPjuE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExecutionSpecific
+ ationHandler.class
+SHA1-Digest: HQg9lpnVBoUld9p2bjXciAA7CLQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DependencyHandler
+ .class
+SHA1-Digest: WlDSkhkZPIdS6LoZuc93HQPX/+o=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConnectorHandler.
+ class
+SHA1-Digest: 5VSHQnapE9B3oGD8JGaSoSSbP48=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DestroyLinkAction
+ Handler.class
+SHA1-Digest: nTPdpm1kCcFoMZDZea1s//WU3qo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StartObjectBehavi
+ orActionHandler.class
+SHA1-Digest: j7Cl9JVOv6AftE6923IEqo/tY4M=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/EnumerationHandle
+ r.class
+SHA1-Digest: Vm43vIoaOL1HLOHgce58Q0smKB8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AbstractionHandle
+ r.class
+SHA1-Digest: +/SmgxblF+3t5wsnkzAqg27TFPg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DirectedRelations
+ hipHandler.class
+SHA1-Digest: 0OSy72gldGcoekgnrS0WeHURNu4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AssociationHandle
+ r.class
+SHA1-Digest: pUTMG2GMM4wJeqqDt0EGidM6MQY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/UnmarshallActionH
+ andler.class
+SHA1-Digest: qVcQJgCkbAZywtZUhErtjPTnAdE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CallOperationActi
+ onHandler.class
+SHA1-Digest: kB6SmpHA1oNcOwr8ES+N1FDr+cg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExceptionHandlerH
+ andler.class
+SHA1-Digest: J4icctWvJaThCMzIG40Iu/hj8so=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LinkEndDestructio
+ nDataHandler.class
+SHA1-Digest: ZMI/Z7Yrt4RP99TGB7wGOc7xZqQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExtendHandler.cla
+ ss
+SHA1-Digest: A8pBipDZKEzR9m672FpZvVLTjqE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralBooleanHan
+ dler.class
+SHA1-Digest: iEOOLDYfJT73JGFDqQvGXMe2mgk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadSelfActionHan
+ dler.class
+SHA1-Digest: 5l3MnfZ+1toZBAwEfDmNi1CLSZc=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AssociationClassH
+ andler.class
+SHA1-Digest: ujXmLrX+5t2oD5nyIXcxVdu9Aoc=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DurationHandler.c
+ lass
+SHA1-Digest: 6mL6fjNPu7E9uXnXVILUFknKmmo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/BehaviorHandler.c
+ lass
+SHA1-Digest: OYhUYcQDuiM1sn0viwBCZGIAr+s=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InteractionHandle
+ r.class
+SHA1-Digest: VOyvfLdUkmrX/z9Ggi/9Me7HeFA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StateInvariantHan
+ dler.class
+SHA1-Digest: tLxjP5QDr0QZhpQoyHcvU7L+aFg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/FunctionBehaviorH
+ andler.class
+SHA1-Digest: 8OjE+Fojq2i8h9hRWLeIrm+vOaU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ParameterHandler.
+ class
+SHA1-Digest: XOEdpm8nOzr7Ewe253GIds+1nR8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LoopNodeHandler.c
+ lass
+SHA1-Digest: 6Cwf4pnxVC179JSQRsbk8hWljbI=
+
+Name: plugin.pdoc
+SHA1-Digest: B90s++j0IRehS+tWYowHaHo2Aco=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/VariableHandler.c
+ lass
+SHA1-Digest: 5fXhwKvkCJWUJzSSuteCwgFFRQg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/Activator.class
+SHA1-Digest: 5duhXCk6Z6+chMOULxuwsMkLCCk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ImageHandler.clas
+ s
+SHA1-Digest: CsmjJRNlYMZ2Npy9Nv6nEOb4QlU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InformationFlowHa
+ ndler.class
+SHA1-Digest: sHQB2tufcZWQtomRa8OPIaWXiFE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TransitionHandler
+ .class
+SHA1-Digest: JdB7US+FDxE7YGD4y4n1YX5JVLQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/EncapsulatedClass
+ ifierHandler.class
+SHA1-Digest: F4RBSFIr4RbNpsv3XzTjNhkHK2Y=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/FeatureHandler.cl
+ ass
+SHA1-Digest: M+AUQpKZSEKinDJoM3P04UWv324=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TimeIntervalHandl
+ er.class
+SHA1-Digest: ZCuS+GcT10x7o3A3cMNkZcH1M24=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PseudostateHandle
+ r.class
+SHA1-Digest: H/XnUsnA3zbDDD9bNnzj/tk8oP8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LifelineHandler.c
+ lass
+SHA1-Digest: IFfIKihMWAGAB3jvpXZRpXT4CNg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ProtocolStateMach
+ ineHandler.class
+SHA1-Digest: TAs8b3AhD9DU815+plTPuFz91HQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TemplateParameter
+ Handler.class
+SHA1-Digest: xD4gzNSi8pyn+qYFqwNqJWYEVsw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CreateLinkObjectA
+ ctionHandler.class
+SHA1-Digest: tdtZByyG0t4Ce5QISdVmtsB1bmA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ObservationHandle
+ r.class
+SHA1-Digest: JMXE9CWlgLzsvvTzOPakrUFh574=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ValueSpecificatio
+ nActionHandler.class
+SHA1-Digest: Ky/48mj5fN8yPTLFv5C5QH8xMpk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ManifestationHand
+ ler.class
+SHA1-Digest: 7Rfop1hqrDyhMXwEJzqQmUlUyYs=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ControlNodeHandle
+ r.class
+SHA1-Digest: hqpfBy3GDpxrAyYHum2SDibefa8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AcceptCallActionH
+ andler.class
+SHA1-Digest: lPp2I5/haG5rX1Le93Xi575ZNFQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InstanceValueHand
+ ler.class
+SHA1-Digest: 3d779e2WuTAlQ14f0nUqs+2NurQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DurationIntervalH
+ andler.class
+SHA1-Digest: rEAKPz5nBzwNH7F5nqnZfsnzIrs=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ParameterSetHandl
+ er.class
+SHA1-Digest: WvTZD0F5e3iqq80OJxmvlpz7wD8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ParameterableElem
+ entHandler.class
+SHA1-Digest: dqQLiXgvZehrnf/p2NlynOgJ8IM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConnectableElemen
+ tHandler.class
+SHA1-Digest: huY7CaFULG0EfGSIdSnMEDF9Qrc=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DeviceHandler.cla
+ ss
+SHA1-Digest: hSMdLgKsUaZUcDfVrg7kub1pXqo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/JoinNodeHandler.c
+ lass
+SHA1-Digest: fIQ9eyANCUpsncNVS8fXrkKiwjE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StartClassifierBe
+ haviorActionHandler.class
+SHA1-Digest: KfhPfCCszW+fYA6PyRWcAYSDm3s=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ChangeEventHandle
+ r.class
+SHA1-Digest: qYW2coYGODXhAOKq9c8m3S/FiuI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadVariableActio
+ nHandler.class
+SHA1-Digest: 3pzCr7FP7hZICKD40zrZCjD02Cw=
+
+Name: plugin.xml
+SHA1-Digest: rNAj2jS1BnohzGRX/JKxtnc9kp0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ProfileHandler.cl
+ ass
+SHA1-Digest: CLRvWk1+u99p7wQ7G5oxftmJFQQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/QualifierValueHan
+ dler.class
+SHA1-Digest: EL4xzXvslqlQ/CMxrlVDY5VVe70=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TestIdentityActio
+ nHandler.class
+SHA1-Digest: SysaT0R50TvUOnZmkjwqjVMdrtk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CollaborationUseH
+ andler.class
+SHA1-Digest: y25aiypxjMoyvcVGxmreoOf1EF8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DecisionNodeHandl
+ er.class
+SHA1-Digest: 0Cu67rNv/m+5RynQvTjQaZeelWg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InformationItemHa
+ ndler.class
+SHA1-Digest: 1nN4Cbhtz8GtW1oftmCV5+pzFeU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConsiderIgnoreFra
+ gmentHandler.class
+SHA1-Digest: d/9MmfFWN3NSXGzvucZwbCFxk0g=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RelationshipHandl
+ er.class
+SHA1-Digest: Kui5aCT5jEe5VGuHHe8vWyCuZNM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActionHandler.cla
+ ss
+SHA1-Digest: Vivy8blidPnD1mh3sPcZRsdniak=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InterruptibleActi
+ vityRegionHandler.class
+SHA1-Digest: /SmsU3vKglhonc6HfQeStsI1MLE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RegionHandler.cla
+ ss
+SHA1-Digest: bwIY1C01h4MHJieV4gZ7JT4KKng=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PinHandler.class
+SHA1-Digest: DFGmv+xjfvbI729WYhN4XBLD4gA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/BehavioredClassif
+ ierHandler.class
+SHA1-Digest: NtP85S0iIWz0IawnUoMxdMOpNdI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/util/TableMenuUtils$1.clas
+ s
+SHA1-Digest: bP9nXq/nxrsbghoiFmj76cM9xR4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityHandler.c
+ lass
+SHA1-Digest: 9gIFGHEJlZNGCEIIlEdEH8SDh2U=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InteractionConstr
+ aintHandler.class
+SHA1-Digest: GHwnmePmqr5/io7IUh3dVALDuMY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TimeEventHandler.
+ class
+SHA1-Digest: 73gGA8bIlB/1SkbRBkGWVWALlek=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityFinalNode
+ Handler.class
+SHA1-Digest: aCz1s0wHCklQMiHKmUkfijkwfoo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/IntervalHandler.c
+ lass
+SHA1-Digest: GvXolor8dhFUDWODi7tLJESziLU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TraceHandler.clas
+ s
+SHA1-Digest: 2iTON39WXNjL41McNKcdMZsnchw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CollaborationHand
+ ler.class
+SHA1-Digest: 2e+yntxQqkTylik/6m44d2bbLaI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StructuredActivit
+ yNodeHandler.class
+SHA1-Digest: u+xPuXRKJJxhYaaCjqkZ9PJyo8M=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ElementImportHand
+ ler.class
+SHA1-Digest: zUEIWM+8UxmkXyYcO/YP/+IEnfM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/FinalStateHandler
+ .class
+SHA1-Digest: cYyLxP43fHta5qJp75TEEtJJKSA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/MultiplicityEleme
+ ntHandler.class
+SHA1-Digest: Eby/xrngSqI3K95xgKl9AWIR2zo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/BehavioralFeature
+ Handler.class
+SHA1-Digest: qtcBJImlzkSH944yBaaEmFU2uVI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InterfaceHandler.
+ class
+SHA1-Digest: Ni/rXx13WiwER7o9dbsEkfQGJV4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralSpecificat
+ ionHandler.class
+SHA1-Digest: 9LHadOlJErUDHVjiCqvyAXAAPqg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/MessageEndHandler
+ .class
+SHA1-Digest: Sx27JiJzuhzXLfWuQfg6b+hVaps=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PartDecomposition
+ Handler.class
+SHA1-Digest: mmxkf63/L5B7taUTwzqYRyQ4Xz0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ValueSpecificatio
+ nHandler.class
+SHA1-Digest: EuSJLtCNFLsJSWygscoJgz6WM3Q=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ArtifactHandler.c
+ lass
+SHA1-Digest: 30+fh5yHOP5dhoNg4uRBJoIAlm8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CreateObjectActio
+ nHandler.class
+SHA1-Digest: EFeRkgUfE8C4WD6sXr3BLfDR6yY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LinkActionHandler
+ .class
+SHA1-Digest: 9oMIZyVvlpDGAcgn7IfsbJxRERY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AddVariableValueA
+ ctionHandler.class
+SHA1-Digest: Rywsv8ZMJlpLlw63oL8efNjzR0U=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ControlFlowHandle
+ r.class
+SHA1-Digest: /S+JcioslubQ/KsrYSW+wPQSE2Q=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadLinkActionHan
+ dler.class
+SHA1-Digest: Ok71uPNn1MEUAHs5iIoi+LkJcpw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActionExecutionSp
+ ecificationHandler.class
+SHA1-Digest: jGCze+w+98iaWwvjZuQVTfXYufA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InteractionFragme
+ ntHandler.class
+SHA1-Digest: iot2/9AxnuoFB2CDIHDAb5HSDRI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/util/TableMenuUtils.class
+SHA1-Digest: DRiugLHUrm+ehZjXMnQOA6SFnTw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConstraintHandler
+ .class
+SHA1-Digest: t7EgXabIyeYBuQSb1526F+8TorA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExecutionEnvironm
+ entHandler.class
+SHA1-Digest: qukdUIgEsyJrKhHgyRem/94VWv4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityParameter
+ NodeHandler.class
+SHA1-Digest: aEEwDvhFPyMtgMzFYKSGiA5ojRo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TriggerHandler.cl
+ ass
+SHA1-Digest: RWau/Pf7+7PCqgcLxVlnhRC80u8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExpansionRegionHa
+ ndler.class
+SHA1-Digest: GvX5TbZB0jCr8LfTmbsC5z9Eswg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/AssociationBaseHa
+ ndler.class
+SHA1-Digest: wVqwDngJoMu9BHMIROYAJ0dbDVY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StateHandler.clas
+ s
+SHA1-Digest: m3udKlA2OumYZW+Y9Mp2MOfEvEw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralIntegerHan
+ dler.class
+SHA1-Digest: NT6bYbxYIvWESOhQZ2z7YAYqknU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/WriteLinkActionHa
+ ndler.class
+SHA1-Digest: MxKRFQMtgfSehraRZrDaHeTgOR4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReceptionHandler.
+ class
+SHA1-Digest: NaRMekjAzk3urcEWiKFqomf4aVY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReclassifyObjectA
+ ctionHandler.class
+SHA1-Digest: kKZAOl6ppvLCAEY0KnRCt2p93t8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CreateLinkActionH
+ andler.class
+SHA1-Digest: UCUoEMZ/rvRswNKaDcRsjEy2z+8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OperationTemplate
+ ParameterHandler.class
+SHA1-Digest: xncPLdsEHBv6ABt99p59juFfR/o=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TimeExpressionHan
+ dler.class
+SHA1-Digest: LJnDTgHRBHgQTnA7KLupcTYXDDY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RemoveVariableVal
+ ueActionHandler.class
+SHA1-Digest: cEXyb4fRsiqacbVLIJ2Y2kznDvw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DeploymentHandler
+ .class
+SHA1-Digest: koHzRx5+390q3QlKACv/wYdht6U=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/MessageHandler.cl
+ ass
+SHA1-Digest: 0sBtb6obwASPCLerZh1SEC3Ud1o=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DestructionOccurr
+ enceSpecificationHandler.class
+SHA1-Digest: 0h/oPKWvW0Xqktfj39uvBZetXmI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClearVariableActi
+ onHandler.class
+SHA1-Digest: 85SzcQNS6Aofy2Nj6k3grFvyv4A=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ContinuationHandl
+ er.class
+SHA1-Digest: P01FIcsfAmkwGeUyyPzfU1ZrCXU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OutputPinHandler.
+ class
+SHA1-Digest: h622Ydel8eUo/2tkDKlZTz7i/Rs=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/UmlNattableCreate
+ Menu.class
+SHA1-Digest: TP7RCP6DIFB2HAlxBroiiQHhGEE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StructuralFeature
+ ActionHandler.class
+SHA1-Digest: GTx4I8+4xUVTay97Iv8IhvxkIWo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RedefinableTempla
+ teSignatureHandler.class
+SHA1-Digest: EmuVTUggJ24ZgovRjORgkEMqsLk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DestroyObjectActi
+ onHandler.class
+SHA1-Digest: fcOEehLcn1Ij1PBkl+3k+vBWeHw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PackageHandler.cl
+ ass
+SHA1-Digest: ZYXBP2MKvAFXgIKYJIWhy/gfbhY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClassifierHandler
+ .class
+SHA1-Digest: +ZH5UMXKk03VJ6/0+TisjIFyoxk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExpansionNodeHand
+ ler.class
+SHA1-Digest: ZnxKHYhcK2uJG//7+541SiPRkuw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/GeneralizationHan
+ dler.class
+SHA1-Digest: JVkJnidPCiox5yDJMJ+oUOpNHns=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CommunicationPath
+ Handler.class
+SHA1-Digest: 2dA/2aZCc3XfvOjWmGteKP4Duhw=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StateMachineHandl
+ er.class
+SHA1-Digest: wHmNLNcLXMpkjA5CY6n1BFxCpmg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DurationObservati
+ onHandler.class
+SHA1-Digest: 8ZyAptf0yYPbeyEg1j1Amu5mhRE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExtensionPointHan
+ dler.class
+SHA1-Digest: 7QflOVocYGbkW8ziZObcVkg4DrM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LinkEndDataHandle
+ r.class
+SHA1-Digest: DcLXTHnHi/6T0mwizd+2EzpZonE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PackageImportHand
+ ler.class
+SHA1-Digest: 0TvHjpq7ihWWD+O898Avw/EZeBQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/EnumerationLitera
+ lHandler.class
+SHA1-Digest: ab7a0bvja173hi+aw6RMjqbyA+k=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CallBehaviorActio
+ nHandler.class
+SHA1-Digest: Cn1t/OtJfurMFwG+ijqsL1L/2+A=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InvocationActionH
+ andler.class
+SHA1-Digest: 9+kGk9hx5hWF0HFbpE2dO3hSf/Y=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/NamedElementHandl
+ er.class
+SHA1-Digest: Vg32f/X4RH9PA8YGmWdxE6QMyHk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClearStructuralFe
+ atureActionHandler.class
+SHA1-Digest: 2wA4rw4j1aryaJ1kZmXXPrVqcb4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadLinkObjectEnd
+ ActionHandler.class
+SHA1-Digest: 6j80AIJdlWIfcX29lti/ZzpQwzU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralStringHand
+ ler.class
+SHA1-Digest: MYCB5F7Q2cbI/edjxUE3rAzRi9w=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExtensionEndHandl
+ er.class
+SHA1-Digest: v85rB6TT7cDvxZkn5tOHcLWDfiM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/GeneralOrderingHa
+ ndler.class
+SHA1-Digest: d+tcpoSGKBlnv3zMaX7t8YzLhuI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/MergeNodeHandler.
+ class
+SHA1-Digest: VNCjauoIN24C1Kfr/8ydRfde46w=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadStructuralFea
+ tureActionHandler.class
+SHA1-Digest: KB23T77GP2R2ZUQXX9W9ssCvlXM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadLinkObjectEnd
+ QualifierActionHandler.class
+SHA1-Digest: JpolOMw6sBlE951joE9Q258K4yE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RemoveStructuralF
+ eatureValueActionHandler.class
+SHA1-Digest: ItNYeKWXQj0w5UcKbLvLDS19OXg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConnectorEndHandl
+ er.class
+SHA1-Digest: E/vYBshapNHbU/aomEfsqOQzl5U=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/LiteralRealHandle
+ r.class
+SHA1-Digest: 346Z2SZRlfbz/1ii1TxXIqP5XFw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/MessageOccurrence
+ SpecificationHandler.class
+SHA1-Digest: /qC9uhSEHKu0BINCrSnareg4MkM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadIsClassifiedO
+ bjectActionHandler.class
+SHA1-Digest: bOPUyfcgUVVu2Jujq7KnYprJMQk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ModelHandler.clas
+ s
+SHA1-Digest: zmm8C096sgF16xexDqPJOUTE5yo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OperationHandler.
+ class
+SHA1-Digest: Q+ayapQZnrlTOPUTygErH7zoWME=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SequenceNodeHandl
+ er.class
+SHA1-Digest: KURJnE/UXTBYQNJ4jUul/vcJ24Y=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/IntervalConstrain
+ tHandler.class
+SHA1-Digest: ZXTLirc/eP7xAtbS1+I/hSLbo58=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ObjectNodeHandler
+ .class
+SHA1-Digest: lRoCiFivBvtzThHtmrnicvPHRro=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReplyActionHandle
+ r.class
+SHA1-Digest: rq+dJgFWfHAeKrJsG36n+AvfO/Y=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ProtocolConforman
+ ceHandler.class
+SHA1-Digest: NrKV9GPWDl+FOVfqNX9Y0RMTT5s=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OpaqueExpressionH
+ andler.class
+SHA1-Digest: 6wkXXSKu17qaKuLD1clBo9iAC0s=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DeploymentTargetH
+ andler.class
+SHA1-Digest: vHCETHmcEqhm7VFiby/9KlU33E4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClassHandler.clas
+ s
+SHA1-Digest: Vs3vuJBM/UsaSZJswPflZlw9Ueg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ReadExtentActionH
+ andler.class
+SHA1-Digest: EdD+NTDGJEsog3hKYaqMsI5Cr9c=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ConnectableElemen
+ tTemplateParameterHandler.class
+SHA1-Digest: dxvhAC+DHbOkZoJ+cRek86LLA/4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OpaqueBehaviorHan
+ dler.class
+SHA1-Digest: fQtRYIvro17g5HB0QLxdCEzKaF0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TemplateParameter
+ SubstitutionHandler.class
+SHA1-Digest: HgACFdrySJxW3mmI0DISEP8yv2E=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StringExpressionH
+ andler.class
+SHA1-Digest: xXXiF0g+KBXyJbHmhm+wAj5dW34=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SignalHandler.cla
+ ss
+SHA1-Digest: 5GLBV8IxWx49NfFpVfA+bXFd/mY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SendSignalActionH
+ andler.class
+SHA1-Digest: UwWD72R6y/6VsraHfDKjliSuog0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ValuePinHandler.c
+ lass
+SHA1-Digest: 0YcS6Q8C1Zl46IIaDNZwg3/POnQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InitialNodeHandle
+ r.class
+SHA1-Digest: fgtK5u11plgsNde6kwzBev2OfiI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SendObjectActionH
+ andler.class
+SHA1-Digest: qoYch6E4rhGGoZoqkVK5CsZgzOM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/BehaviorExecution
+ SpecificationHandler.class
+SHA1-Digest: jVavCrN3MWAqf0KCNqvCh2ew2a0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ExtensionHandler.
+ class
+SHA1-Digest: 0T2J7YwhqNpHYx9XPQFANYkxELs=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: nJGxDcxtAWV28fZUyC/DTTNUDNg=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ComponentHandler.
+ class
+SHA1-Digest: 8Df4DmofyjFY2Jq5eqIzfSMSYkY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/EventHandler.clas
+ s
+SHA1-Digest: KTkAlcrndoV1SqOtxkNG04Gc0YU=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DataStoreNodeHand
+ ler.class
+SHA1-Digest: 7kuy7kIlzkEXsPtcX9MsNhgS8eQ=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/OpaqueActionHandl
+ er.class
+SHA1-Digest: QOkY9XL15q2Dn8k+RCyK4sE7KCM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/VariableActionHan
+ dler.class
+SHA1-Digest: NVFNXX0XHahrJ+S6G6pzP9WR1d8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PackageMergeHandl
+ er.class
+SHA1-Digest: cm7KXKFZ9slVDT8D8up83dDjt54=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SignalEventHandle
+ r.class
+SHA1-Digest: yIyX+sVvrrxABmOmcLWlv9+r/go=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/TemplateableEleme
+ ntHandler.class
+SHA1-Digest: dlG1tQGkJ/OdzpBGCAgdtfAvzBA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/SlotHandler.class
+SHA1-Digest: 60HlloCNWr6wJ8Jb3oCGj8QU9Fo=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/CommentHandler.cl
+ ass
+SHA1-Digest: im+Ih1zWyPCSUS+hM5Jh+AwPTsE=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ActivityPartition
+ Handler.class
+SHA1-Digest: 9+/GYNLC+VS+X34nw1W98ty/px8=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/RaiseExceptionAct
+ ionHandler.class
+SHA1-Digest: r7TAD8Paj+5nx+wm9cNikBciSRI=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DeployedArtifactH
+ andler.class
+SHA1-Digest: SLyscRocAOd4KfuaX14gMrNIMcM=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StructuralFeature
+ Handler.class
+SHA1-Digest: 8aYdlb/64TO9+Nlx1+qsGqvt5bY=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/InteractionOperan
+ dHandler.class
+SHA1-Digest: FEurpOS4QOn+jtoazj78c5I98wA=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/UseCaseHandler.cl
+ ass
+SHA1-Digest: zewnspGlY6chdALjvzotwQNTVrk=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/PropertyHandler.c
+ lass
+SHA1-Digest: /3+tlHIy5/A0qR4ezeKX4BVLAhs=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/StereotypeHandler
+ .class
+SHA1-Digest: f6O6e47tAgVmcPplh7udLNdPecw=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/DurationConstrain
+ tHandler.class
+SHA1-Digest: E/tul4p1u96U2EKlGmwLYJ+Ju80=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ObjectFlowHandler
+ .class
+SHA1-Digest: Wu9iyIS7/p2D3IxcD2WDcbqORt4=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ProtocolTransitio
+ nHandler.class
+SHA1-Digest: YxYivgh1fre7v0ZkUWI0f4kFSm0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ClassifierTemplat
+ eParameterHandler.class
+SHA1-Digest: +SU/lax4CcfjDJQ4CmcMTdYmQs0=
+
+Name: org/eclipse/papyrus/uml/nattable/menu/handlers/ComponentRealizat
+ ionHandler.class
+SHA1-Digest: 5/owchqHU/wJ/yO0Ph33MBgVQpA=
+

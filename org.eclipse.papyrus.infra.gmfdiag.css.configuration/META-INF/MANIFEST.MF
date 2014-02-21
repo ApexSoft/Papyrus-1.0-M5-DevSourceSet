@@ -1,0 +1,139 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.css.configurati
+ on;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .gmfdiag.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfd
+ iag.css.xtext;bundle-version="1.0.0",org.eclipse.gmf.runtime.notation
+ ;bundle-version="1.5.0",org.eclipse.gmf.runtime.draw2d.ui;bundle-vers
+ ion="1.5.0",org.eclipse.draw2d;bundle-version="3.8.0",org.eclipse.pap
+ yrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.widg
+ ets;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.css.prop
+ erties;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;bundle-ve
+ rsion="1.0.0",org.eclipse.papyrus.infra.gmfdiag.css.model;bundle-vers
+ ion="1.0.0",org.eclipse.papyrus.infra.gmfdiag.css;bundle-version="1.0
+ .0",org.eclipse.papyrus.infra.emf.appearance;bundle-version="1.0.0",o
+ rg.eclipse.emf.facet.infra.browser.uicore;bundle-version="0.2.0",org.
+ eclipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0",o
+ rg.eclipse.e4.ui.css.core;bundle-version="0.10.2"
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.css.configuration.
+ Activator
+Export-Package: org.eclipse.papyrus.infra.gmfdiag.css.configuration.ha
+ ndler
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: CSS Configuration (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Edit
+ StyleHandler.class
+SHA1-Digest: ZeBe472ewpBoIEs+VIXp/rScVVo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog.class
+SHA1-Digest: V+CZz7W+W/S9iqEwfhzmA1o2hfw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/GMFT
+ oCSSConverter.class
+SHA1-Digest: UU37vLZ69M4WUGBR4SbC9dbNmRQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Styl
+ eCreationDialog.class
+SHA1-Digest: a2fTHFSUeyqpxcexescIwqz+F3s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/Activator.cl
+ ass
+SHA1-Digest: Pwty8gtqHySUWMhoXc6sdKKMdk8=
+
+Name: icons/sourceEditor.gif
+SHA1-Digest: hgfaPYE2g2ags3P37ChbfzhezDY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$1.class
+SHA1-Digest: Z1zFC+ZDR1WB2LL4eqXTRNIVg4o=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$2.class
+SHA1-Digest: 3KvyNy+VWRwRcx/t2Vst04WLm8s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Styl
+ eCreationDialog$1.class
+SHA1-Digest: rMB6YuSBJxaWFcGcJHd3b2b8x4o=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$3.class
+SHA1-Digest: 2KP0XeYhcBqlAwzOok3F6HwvwAo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Styl
+ eCreationDialog$2.class
+SHA1-Digest: SxhxmhETDwgSIhWVDhQfLv4DO3Q=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$4.class
+SHA1-Digest: UQ/baKhgo6JtIzjjyw7In+HEqCE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Styl
+ eCreationDialog$3.class
+SHA1-Digest: 4z/rj/9e6kq5vWJWYPr85Fv6lM4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$5.class
+SHA1-Digest: JsU/tKywvCK1laQ7D3Hku/uHk78=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$6.class
+SHA1-Digest: BXK6gWlMDth4rV5squO1LAPZlMk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$7.class
+SHA1-Digest: oG7s6xdvt92llhrRuHhgabUUHCo=
+
+Name: plugin.xml
+SHA1-Digest: wyThrXKGH2wUHaEU13P0VW/5JK4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$8.class
+SHA1-Digest: iTpa2hefB4tDpGuawdhMRdFbnIs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleDialog$9.class
+SHA1-Digest: vgqnir4gzNxJkxWbwEtr3yZais8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/helper/Xtext
+ StylesheetHelper.class
+SHA1-Digest: tEHqX1oZ/NpMs766pwAXzC9z4ak=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Abst
+ ractStyleHandler.class
+SHA1-Digest: /4Ys7HeILSrcXo7ThT8v0x7jBOg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/providers/St
+ ylesheetLabelProvider.class
+SHA1-Digest: XFtDYX6J7K5GIaxLyzsdnmkJ9kE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/providers/Ex
+ istingStyleContentProvider.class
+SHA1-Digest: O2PpVFv3nGqFZybU8ZocXWA5aZA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/helper/Diagr
+ amTypeHelper.class
+SHA1-Digest: qXECRiSy6acwFbCiearqikmY6So=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Crea
+ teStyleHandler.class
+SHA1-Digest: 0862bLYRIJ5xc3q+ZXHIex6bTPQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/configuration/handler/Styl
+ eEditionDialog.class
+SHA1-Digest: viHcTQxd1ZceSgMeXZU1Fj81bfs=
+

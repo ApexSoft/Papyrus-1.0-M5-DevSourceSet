@@ -1,0 +1,125 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.markerlistener
+ ;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.core.resources;bu
+ ndle-version="3.7.0",org.eclipse.emf.transaction;bundle-version="1.4.
+ 0",org.eclipse.gmf.runtime.common.ui;bundle-version="1.5.0",org.eclip
+ se.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.emf.edit
+ .ui;bundle-version="2.7.0",org.eclipse.core.expressions;bundle-versio
+ n="3.4.0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.markerlistener.Ac
+ tivator
+Export-Package: org.eclipse.papyrus.infra.services.markerlistener,org.
+ eclipse.papyrus.infra.services.markerlistener.providers,org.eclipse.p
+ apyrus.infra.services.markerlistener.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Abst
+ ractMarkerMonitor.class
+SHA1-Digest: C+qFLAkUxNaj2SXV0p9WuZnc9xs=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Work
+ spaceMarkerProvider.class
+SHA1-Digest: huIUCeH4leogE73eGct7hiNfBoA=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/MarkersMonitor
+ Service.class
+SHA1-Digest: oTQVWXmUaZPme5n3hnKEpOpOlLI=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/PapyrusMarkerA
+ dapter.class
+SHA1-Digest: FZUnHxNQ+Pgd29aoKgFKvmDV76M=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/Activator.clas
+ s
+SHA1-Digest: FjaTvPz9dgYhiVKtKTchFJDnlX4=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Mark
+ erMonitorRegistry$MyRegistryReader.class
+SHA1-Digest: 9gB7JkcqzPSxbpmqr0fa90xUgL8=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Mark
+ erProviderRegistry$MyRegistryReader.class
+SHA1-Digest: nPlNOgn+OcqpnOdGMThYqCj8Ysw=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/IPapyrusMarker
+ .class
+SHA1-Digest: r7UG8i7Y2T0Ir6ZLEnsN6RN3bvI=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Abst
+ ractMarkerMonitor$1.class
+SHA1-Digest: U08YeyfHvX75F9uq1fux/+fDmOQ=
+
+Name: plugin.properties
+SHA1-Digest: v6i6o7nqGBFeeYeko/4oLxFsmb0=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Abst
+ ractMarkerMonitor$2.class
+SHA1-Digest: ema1g1g5SjMTZdSFdJZu0ogo1ZQ=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/MarkersMonitor
+ Service$1.class
+SHA1-Digest: eKSun/J+t/OEUUFp5TqwzTBS6S8=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/IMar
+ kerProvider.class
+SHA1-Digest: OLwt1uU0baXSORK8iV8mWPX5cts=
+
+Name: plugin.xml
+SHA1-Digest: lS5yI/TawKWvgRpkUFcjaeSqZ/Q=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Abst
+ ractMarkerProvider.class
+SHA1-Digest: L10JKL9eU8t7bgpE9tg6yJLADJA=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Mark
+ erMonitorRegistry.class
+SHA1-Digest: nRuT4UnK7HuPFTkQhySwejZ/0ws=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/IMar
+ kerProvider$1.class
+SHA1-Digest: SYH7riHPqyNXjY3fUKCQqmuoP5U=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/IMar
+ kerMonitor.class
+SHA1-Digest: iSas2N6g70zfVuoDQ/VdVOt+8qU=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Work
+ spaceMarkerMonitor$MarkerObserver.class
+SHA1-Digest: 3raWpCbB/sFro+B8I2ZxChXKlnU=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/IMarkerEventLi
+ stener.class
+SHA1-Digest: hq77i1b3ewq132+oJLXxRYKi9W8=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Mark
+ erProviderRegistry.class
+SHA1-Digest: UqYL7eJ2xW/144Ruikzig9QCZKA=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/util/MarkerLis
+ tenerUtils.class
+SHA1-Digest: ubQMufMZBOKk0mcMdoT4w1uTqrU=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Mark
+ erProviderRegistry$MyRegistryReader$Descriptor.class
+SHA1-Digest: KNg5k8sGJWS2sZMDA3KNp4HdgoM=
+
+Name: org/eclipse/papyrus/infra/services/markerlistener/providers/Work
+ spaceMarkerMonitor.class
+SHA1-Digest: JuTIsXnULmcoH1ZRfgXFjmVUQ38=
+

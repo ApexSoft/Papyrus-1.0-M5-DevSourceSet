@@ -1,0 +1,258 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.stereotype.editio
+ n;singleton:=true
+Require-Bundle: org.eclipse.gmf.runtime.diagram.ui,org.eclipse.papyrus
+ .uml.diagram.common;bundle-version="1.0.0",org.eclipse.papyrus.uml.to
+ ols.utils;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.co
+ mmon;bundle-version="1.0.0",org.eclipse.uml2.uml,org.eclipse.papyrus.
+ infra.core;bundle-version="1.0.0",org.eclipse.papyrus.uml.appearance;
+ bundle-version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-version="
+ 1.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0
+ .0",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.ecl
+ ipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0",org.
+ eclipse.papyrus.extensionpoints.editors;bundle-version="1.0.0",org.ec
+ lipse.papyrus.uml.profile;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.stereotype.edition.A
+ ctivator
+Export-Package: org.eclipse.papyrus.uml.diagram.stereotype.edition.com
+ mand,org.eclipse.papyrus.uml.diagram.stereotype.edition.editpart,org.
+ eclipse.papyrus.uml.diagram.stereotype.edition.editpolicies
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypesCommentLinkEditPart$AppliedStereotypesCommentLink.class
+SHA1-Digest: PDzRQ4KcC8gYhHCTRP1rMiGO6zc=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$MultilineCellEditorLocator.cla
+ ss
+SHA1-Digest: VU0oB1aPLlOd78mUvweTWE4RxBo=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/command/Creat
+ eAppliedStereotypeCommentViewCommand.class
+SHA1-Digest: dGbWuLjjvtZHuImRW7XdiB14arM=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$TextCellEditorLocator.class
+SHA1-Digest: 9wjOWwcs2RGd6/hDSTcLWpuaosI=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypesCommentEditPart.class
+SHA1-Digest: hY8QDkQ6yImiSmzHJA9fQ/wwZrc=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$PropertyFigureDescriptor.class
+SHA1-Digest: r+GeLJDSXHLV3GQz9+wVYc4j6oc=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$2.class
+SHA1-Digest: ZF0BqKPHCrXKcAfpRSBbyIySgF8=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$4.class
+SHA1-Digest: ZUUq8FviRCM8UwQ0DnO4zASWZ6A=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$1.class
+SHA1-Digest: Ci4UtVi0Bfq5vBu+K8Ory3vRrJY=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/command/Creat
+ eAppliedStereotypeViewCommand.class
+SHA1-Digest: GHvylwPjZKS5yYHFAStHrpYWE8Q=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$3.class
+SHA1-Digest: 7mqV1CJUgG1imZwTWX4NgcLALHw=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$2.class
+SHA1-Digest: I7JWLoCYstMpv4Ynow7HMuc6w3o=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$1$1.class
+SHA1-Digest: I5cH67RXoOxtqPkp/Mh7yDEM7Aw=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$2$1.class
+SHA1-Digest: S6CWyRGv6VukB4IdLVmnMND6H2U=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$2.class
+SHA1-Digest: Hct70VtH6x9n0QRPn2ZQZyuQXgU=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$4.class
+SHA1-Digest: dGanwVseRdsGvQGdvXdOWn4cB4U=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$3$1.class
+SHA1-Digest: vzSLDJ25XTedeKGYNc0dG1A89G0=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/provider/Ster
+ eotypePropertiesEditPartProvider.class
+SHA1-Digest: FSh3QJqYjLAIa9W2+fis+XPiW/M=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$4$1.class
+SHA1-Digest: 0ojcv0YBuItgmRJ0r7OenU313FE=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$1.class
+SHA1-Digest: Hgrf4d9K41GhsqyvsC4/F3G5jmM=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$4.class
+SHA1-Digest: 6sH3kIVJrTvgJN4ifdXdQpmF31Y=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$3.class
+SHA1-Digest: 7yt/jGXe30Ful49IgkIrCQgtWs8=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$5.class
+SHA1-Digest: 3Uu8U7xIvpNIieOJ6evOzUND55k=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypesCommentLinkEditPart.class
+SHA1-Digest: QgDW74QRi8UxXtwkhrkT5a2dTCY=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$1$1.class
+SHA1-Digest: 5/OaTdwksxXfjpYs/R2Eksr6z24=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$2$1.class
+SHA1-Digest: Jh1ZY1lUW1+s4+LeewmJTPCv1cQ=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$3$1.class
+SHA1-Digest: j3Hj1lVwLk1q0sRHag7mmjPr6Yk=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$2$1.class
+SHA1-Digest: f0vKAzgeJ0EisDwWFRfuNywsrZo=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$4$1.class
+SHA1-Digest: VxDQUQw5fVBEtqdYak+vmyI9NYg=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$1$1.class
+SHA1-Digest: CkkWvY+9w5otq8TuWhDUgoRhGIs=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$3$1.class
+SHA1-Digest: dj5AIb8QAsIEDl+VUHPxjRWDlAE=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$4$1.class
+SHA1-Digest: 0wE+GLOAxFnJ+5wsmlfjQ9LMvnw=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$1$1.class
+SHA1-Digest: 7Pv/7e0O+LTmTShDAja8wmQ8PWQ=
+
+Name: plugin.properties
+SHA1-Digest: 5GsEYKhyZJPmiZWYxpvi7/jpc0s=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeConpartmentEditPart.class
+SHA1-Digest: lI7BFnogMOlTAHcE2tghi2H9PN0=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy.class
+SHA1-Digest: RcoVjew5ALyJ9kyrlKbxcSeXk58=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/Activator.cla
+ ss
+SHA1-Digest: bD7/RR0H40+FhSJ+6vETK24x+dQ=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/command/Creat
+ eAppliedStereotypePropertyViewCommand.class
+SHA1-Digest: Xu8aCH4C/LfwB0ZfEzqmPgEzQ5w=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/provider/Cust
+ omEditPolicyProvider.class
+SHA1-Digest: SDq5e49uSeQGJipaAzH2TP+TlBU=
+
+Name: plugin.xml
+SHA1-Digest: Z9fzhBKPoz02bpnQWJjeFN7BmsY=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy.class
+SHA1-Digest: 46Qs08lkNod0PujLrvKWwlLj2BM=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy.class
+SHA1-Digest: QN0j98VaMbu2cE9zvfnCPmrn9H8=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$1.class
+SHA1-Digest: pT+kJoOxI6fP2HawfkSKKM+wHJw=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart.class
+SHA1-Digest: 2ubBXuprAt/WMbnjCgKPtcyoSoA=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentEditPolicy$3.class
+SHA1-Digest: 7U1mOwGKDsEPokH1FeQLV2PP1xg=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart.class
+SHA1-Digest: QFACBJB8f8ZrwCqeNiidCJyBP6Q=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCompartmentForCommentShapeEditPolicy.class
+SHA1-Digest: gxdwG3LXKtANMkNok/SkL9GVDGg=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$1.class
+SHA1-Digest: VboAhquoGzjExYD+iD9FtrgTc9A=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$2.class
+SHA1-Digest: 1qSlNr/FW6x/GXY9n2O51U/2fcE=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypePropertiesEditPolicy$4.class
+SHA1-Digest: M+AXPJOfGaSfHX9kfwAYEb0i+YE=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$1.class
+SHA1-Digest: 9AOubuAlKNjkQ0iOw8lEP/tKpX4=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpolicies/
+ AppliedStereotypeCommentCreationEditPolicy$3.class
+SHA1-Digest: seo9QS8bujDCgMNqzu2O3YpadpU=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$3.class
+SHA1-Digest: M2xDYcDGNudRb7lVIWksPbWeYdk=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$2.class
+SHA1-Digest: BvHrTGf4isaXekeSKamz1jzrkjw=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypeMultilinePropertyEditPart$5.class
+SHA1-Digest: 8TcYkoq6ftZpd0QB6cgTpVnqZu8=
+
+Name: org/eclipse/papyrus/uml/diagram/stereotype/edition/editpart/Appl
+ iedStereotypePropertyEditPart$4.class
+SHA1-Digest: 6/6m6EkSdGlCN8nIq2u7l966l+g=
+

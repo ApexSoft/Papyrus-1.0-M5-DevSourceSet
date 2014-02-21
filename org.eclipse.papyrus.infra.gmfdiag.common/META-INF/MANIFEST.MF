@@ -1,0 +1,829 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.common;singleto
+ n:=true
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.common.Activator
+Require-Bundle: org.eclipse.emf.edit.ui;bundle-version="2.5.0",org.ecl
+ ipse.emf.ecore.edit;bundle-version="2.5.0",org.eclipse.papyrus.infra.
+ core;bundle-version="1.0.0",org.eclipse.gmf.runtime.diagram.ui.resour
+ ces.editor;bundle-version="1.2.0";visibility:=reexport,org.eclipse.ge
+ f;bundle-version="3.7.1";visibility:=reexport,org.eclipse.emf.workspa
+ ce;bundle-version="1.4.0",org.eclipse.gmf.runtime.diagram.ui;bundle-v
+ ersion="1.5.0";visibility:=reexport,org.eclipse.papyrus.infra.emf.app
+ earance;bundle-version="1.0.0",org.eclipse.core.databinding;bundle-ve
+ rsion="1.4.1",org.eclipse.papyrus.infra.core.sasheditor;bundle-versio
+ n="1.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="
+ 1.0.0",org.eclipse.ui.ide;bundle-version="3.8.0",org.eclipse.papyrus.
+ infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;b
+ undle-version="1.0.0",org.eclipse.papyrus.infra.widgets;bundle-versio
+ n="1.0.0",org.eclipse.papyrus.infra.services.labelprovider;bundle-ver
+ sion="1.0.0",org.eclipse.emf.facet.infra.browser.uicore;bundle-versio
+ n="0.2.1",org.eclipse.papyrus.infra.services.edit;bundle-version="1.0
+ .0",com.google.guava;bundle-version="11.0.0",org.eclipse.papyrus.infr
+ a.tools;bundle-version="1.0.0",org.eclipse.emf.databinding;bundle-ver
+ sion="1.3.0",org.eclipse.core.databinding.property;bundle-version="1.
+ 4.200",org.eclipse.gmf.runtime.draw2d.ui.render;bundle-version="1.4.1
+ ",org.eclipse.core.expressions,org.eclipse.papyrus.uml.tools;bundle-v
+ ersion="1.0.0",org.apache.batik.util;bundle-version="[1.6.0,1.7.0)",o
+ rg.apache.batik.svggen;bundle-version="[1.6.0,1.7.0)",org.w3c.dom.svg
+ ;bundle-version="1.1.0",org.apache.batik.dom.svg;bundle-version="[1.6
+ .0,1.7.0)",org.apache.batik.dom;bundle-version="[1.6.0,1.7.0)",org.ap
+ ache.batik.xml;bundle-version="[1.6.0,1.7.0)",org.eclipse.gmf.tooling
+ .runtime,com.ibm.icu
+Export-Package: org.eclipse.papyrus.infra.gmfdiag.common,org.eclipse.p
+ apyrus.infra.gmfdiag.common.adapter,org.eclipse.papyrus.infra.gmfdiag
+ .common.commands,org.eclipse.papyrus.infra.gmfdiag.common.commands.re
+ quests,org.eclipse.papyrus.infra.gmfdiag.common.databinding.custom,or
+ g.eclipse.papyrus.infra.gmfdiag.common.editpart,org.eclipse.papyrus.i
+ nfra.gmfdiag.common.editpolicies,org.eclipse.papyrus.infra.gmfdiag.co
+ mmon.figure.edge,org.eclipse.papyrus.infra.gmfdiag.common.figure.node
+ ,org.eclipse.papyrus.infra.gmfdiag.common.handler,org.eclipse.papyrus
+ .infra.gmfdiag.common.helper,org.eclipse.papyrus.infra.gmfdiag.common
+ .listener,org.eclipse.papyrus.infra.gmfdiag.common.model,org.eclipse.
+ papyrus.infra.gmfdiag.common.preferences,org.eclipse.papyrus.infra.gm
+ fdiag.common.providers,org.eclipse.papyrus.infra.gmfdiag.common.servi
+ ce.shape,org.eclipse.papyrus.infra.gmfdiag.common.snap,org.eclipse.pa
+ pyrus.infra.gmfdiag.common.types,org.eclipse.papyrus.infra.gmfdiag.co
+ mmon.undocontext,org.eclipse.papyrus.infra.gmfdiag.common.utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/helper/SemanticElementH
+ elper.class
+SHA1-Digest: zB+H7K6hyWhIPJmijAPCza9mfeA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Abst
+ ractCustomStyleListValueCommand.class
+SHA1-Digest: LOBhetidsMxIfEybfghkhlQan5c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/IConflictingEd
+ itPartFilter$1.class
+SHA1-Digest: O0NgdQZdPCQwWujRWD43nO0mgyM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/OverlayVisibilityIcon.c
+ lass
+SHA1-Digest: f8XJytLAJ/V+w0hxPiY3FrY0dPc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$ResourceSetInfo$SynchronizerDelegate$1.class
+SHA1-Digest: jW7FYV4Wupr1AdFURA43bZnXT8c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/TargetingTool
+ $QueuedAutoexpose.class
+SHA1-Digest: Aa/WC0pVBELrdYvisTTr+8OgYXg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/UnitsConverterUti
+ ls.class
+SHA1-Digest: EwTCfzswqweWxdnRbWPKXTBnG4I=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/ShapeDecorato
+ r$OverlayLocator.class
+SHA1-Digest: +/vd6SZN/viMPn7Iq5MM/ZkshUU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/ModelManagerEditor$1.cl
+ ass
+SHA1-Digest: k2FXbWcL0nyH3SL9qcNbk9yR6WM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omEObjectStyleObservableList.class
+SHA1-Digest: /Ggxil9DCJ3+lw6AJJV93sMVurY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/preferences/ConnectionT
+ oolPreferences.class
+SHA1-Digest: dLZ3RruvtHklllpHOQ59EgU0zMs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/DiagramEditPartsU
+ til.class
+SHA1-Digest: m1douf5V+DS5MGIPFkQkMkITZbk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/PapyrusWrap
+ pingLabel.class
+SHA1-Digest: Nko7JJn5zuaIvwH6qNvUBjBV1dw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/edge/PapyrusEdge
+ Figure.class
+SHA1-Digest: obqQY4xAlqkz4ewwN85G41cPluU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/AbstractSh
+ owHideRelatedLinkEditPolicy.class
+SHA1-Digest: OKCjDJsGtuN+85sn/9mvvjncI+w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/requests/ShowH
+ ideRelatedLinkRequest.class
+SHA1-Digest: F1is2BO/TfYA/B7qWxhXBkyBEWI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/DelayedDirect
+ EditHelper$2.class
+SHA1-Digest: 5tMVw11CFIKwj6welc71G4j+zp8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/PapyrusRes
+ izableShapeEditPolicy.class
+SHA1-Digest: 9YGF9SCOotG7djd9JhIMCpLJ8Fo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/ViewDescriptorUti
+ l.class
+SHA1-Digest: lCfrTbJbfTP+MvvbV1eXqg8tXKs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/LineStyleLabe
+ lProvider.class
+SHA1-Digest: fkXOYk9Qy7siuy5I6iQifOL8i28=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$ResourceSetModificationListener.class
+SHA1-Digest: UNkU7G+F0cUJXzmH6XkiNuEPKpc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Abst
+ ractCustomStyleObservableValue$1.class
+SHA1-Digest: yj0aQ2b9v7jTcA/oeT+BZAXpxLI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/requests/ShowH
+ ideRelatedLinkRequest$ShowHideKind.class
+SHA1-Digest: s+VrPUxDjKzlgWhQI5Xekwl3Gyw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/ServiceUtilsForEd
+ itPart.class
+SHA1-Digest: mlMY4wTWMlFfe2ZYb214NHvz3vY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$ResourceSetInfo$SynchronizerDelegate.class
+SHA1-Digest: COIUK5MdU8cNG+LaV52Jch8nqeY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/ResizeableList
+ CompartmentEditPart.class
+SHA1-Digest: 8gMfeKN+bvS70ifPT52CA8/17PY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/PapyrusDragBorderN
+ odeEditPartTrackerEx.class
+SHA1-Digest: kSxy0yLiLtPenQaIKolDcH/BmJg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/SetNodeVisibil
+ ityCommand.class
+SHA1-Digest: 4u5TOluwGGUljBvT+k3jpkOv/h0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/GraphicalType
+ Registry.class
+SHA1-Digest: V4M1NXihMy47h4fPBoQdaje3xa0=
+
+Name: schema/svgPostProcessors.exsd
+SHA1-Digest: G8FolGLzBC+A9nE3bxknKMdQGDg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/Util.class
+SHA1-Digest: PHAHBnLU2rsOb2Q5KjWdLRPgriw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/SemanticAdapte
+ r.class
+SHA1-Digest: 73eLUHm3lPQ9ChARh6tBk/hao/k=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/DelayedDirect
+ EditHelper.class
+SHA1-Digest: ux8B/LCTb3DSNfxG7azvdFqZU3Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/messages/Messages.class
+SHA1-Digest: bw8y1phD1A2FaisqtIAdbkf+Q54=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/ShapeDecorato
+ r.class
+SHA1-Digest: lYkYeNKz9W4YvWYqOTAlJKAasQA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/model/NotationUtils$1.c
+ lass
+SHA1-Digest: hE3RWwkox+Tmg4y4uHjyQTR8KEI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/ShapeFlowLa
+ yout.class
+SHA1-Digest: wHjUisuxf/mJN/KUEpshL2rdJAI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/SynchronizableGmfDiagra
+ mEditor.class
+SHA1-Digest: kqiA5M31KYc36NCjB2ilAryJD18=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/IMaskManag
+ edLabelEditPolicy.class
+SHA1-Digest: /Plf7jVTWNZO4J3RCQOIR84pI2o=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omBooleanStyleObservableList.class
+SHA1-Digest: 0RD/zneOtAkarStiiA+gDnvBSU8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/preferences/Preferences
+ ConstantsHelper.class
+SHA1-Digest: ppyDG0iLU+dqroVrCjZsmwg+6Ik=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/ShapeCompa
+ rtmentEditPolicy$2.class
+SHA1-Digest: R0/v1158r6HfjsRJunnwUyNuutA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/DefaultCre
+ ationEditPolicy.class
+SHA1-Digest: JCCbdZ/2SbHxNubHc9BSmznN8fA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/SemanticFromGMFElement.
+ class
+SHA1-Digest: twpS8nSPKQeaErbXTbU2JDmfs6Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/advice/GMFDiagramDuplic
+ ateEditHelperAdvice.class
+SHA1-Digest: 6yNqHL6IXZqqm0F6HXEBSRc4XGU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/ShapeCompa
+ rtmentEditPolicy$2$1.class
+SHA1-Digest: XG92dO5QW0oCLTrQk59JDkLXA2k=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/handler/RefreshHandler.
+ class
+SHA1-Digest: mG2XKQMZXMhKJAciWwmtQuvMTSE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$ResourceSetInfo$SynchronizerDelegate$3.class
+SHA1-Digest: H7/WNIh7JnQpeDaQaOOt0a5OpFk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/CustomAbstrac
+ tViewProvider.class
+SHA1-Digest: 58DPCYcdVnJITgWEEXJrVQkjrWY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/SVGPostPr
+ ocessorImpl.class
+SHA1-Digest: 2ePSMSK7vDG5RcK7y7VPsSI3ihk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/AbstractSh
+ owHideRelatedLinkEditPolicy$LinkContentProvider.class
+SHA1-Digest: awaavIudJUlP6LnWc62KNd4tUqQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/CreatePro
+ viderNotificationManagersOperation.class
+SHA1-Digest: HPk7db/lCoE8whbw+tRjKusy09c=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/ShapeDisplayCo
+ mpartmentEditPart.class
+SHA1-Digest: lg0ClOBtxGoKXpxLcEOtztQ3r+Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/DragEditParts
+ TrackerEx.class
+SHA1-Digest: xXkkiUpcMPwL6zZnV/Q8V21ZJTc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/model/NotationUtils.cla
+ ss
+SHA1-Digest: tR0I43Ee45Xd0CgyR117stQflvY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/UnitsLabelPro
+ vider.class
+SHA1-Digest: HqixLVSRpPc2fNSvh0pE9c3dGZ4=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omStringStyleObservableList.class
+SHA1-Digest: RsEvounjgMs74VKUqmAcPTqD6OE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/StyleBasedSha
+ peProvider$1.class
+SHA1-Digest: eyS5FtW2A5TIePBR3sY9pk957uk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/EdgeWithNo
+ SemanticElementRepresentationImpl.class
+SHA1-Digest: XfU3a8wxSdfAerwdwJmynOyKsgw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Remo
+ veCustomStyleListValueCommand.class
+SHA1-Digest: x2fiU23p/83HB29lhZJwaPSMJrQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omBooleanStyleObservableValue.class
+SHA1-Digest: vylPwn8ou+aMiCCDWbIKvmvaC2Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/TargetingTool
+ .class
+SHA1-Digest: ZBeJGYSwo+KQe6soN5Eo7Wx/v6k=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/ShapeProv
+ iderConfiguration.class
+SHA1-Digest: 1Xj2JIX1BAONHdNq/ocy6HwmzXM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/AbstractPapyrusGmfCreat
+ eDiagramCommandHandler$1.class
+SHA1-Digest: 8CZzy4BI169lL2X5jMC7xIr9FIc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Abst
+ ractCustomStyleObservableValue.class
+SHA1-Digest: CTClMOP8DqyvI5EmcrmxM5ruPEg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omIntStyleObservableValue.class
+SHA1-Digest: gS/e3U3sI8lISq1cC1wDqfkjIJo=
+
+Name: .options
+SHA1-Digest: VoTQiBROOOsNccsCZ67UY52jaiA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/FollowSVGS
+ ymbolEditPolicy.class
+SHA1-Digest: JlJx2gVmgeEtMfgGliKZF5UKgis=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/BorderedSca
+ lableImageFigure.class
+SHA1-Digest: blreQ+zHz3SthcPy6DAF3GIp5T0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/ScalableCom
+ partmentFigure.class
+SHA1-Digest: 0AziPMY1g+i1MG5z43GiJ30I6R4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/preferences/ConnectionT
+ oolPreferencePage.class
+SHA1-Digest: Xo/RMVX2nOt5g+hTgz7KqIrm6R8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/GetShapeP
+ roviderByIdentifierOperation.class
+SHA1-Digest: t4m8d+9SPfSwu5slL6P+gXSY37o=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/ShapeFlowLa
+ yout$1.class
+SHA1-Digest: ZzH+S+jzgkvsv1VgB/lIbZG8FNs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfEditorFactory.class
+SHA1-Digest: yvWjecKZHbENbkA+f1fmc7wF/Rc=
+
+Name: icons/refresh.gif
+SHA1-Digest: VHUDPMiwiKJcwN0BG7ABhxxFfrA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/UnitsConstants.cl
+ ass
+SHA1-Digest: 5QDIl8nDwq76zpzlJvLf1acSUVk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/SubCompartm
+ entLayoutManager.class
+SHA1-Digest: yvPQEZk8pNeEI//2RTQRKrfuusA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$2.class
+SHA1-Digest: cP3EMwGod9DtW63BReSAk2JQgFM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/SelectAndExecu
+ teCommand$CommandLabelProvider.class
+SHA1-Digest: AfEewyabrBPMVcK6uswuUAaSYTQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/GetSVGDoc
+ umentForViewOperation.class
+SHA1-Digest: WWusfI/4+ZfzGXFMQJUqa4RfYoA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/UMLDiagramEditorUtil.cl
+ ass
+SHA1-Digest: zKRjIC/zxt63cdoiW79mPL5izjE=
+
+Name: plugin.properties
+SHA1-Digest: 7M/uFHa6GTFBw+pUzsUsjhkPPf0=
+
+Name: schema/initializeView.exsd
+SHA1-Digest: aUJiIU6pbnUP3aNPpSlzhGWDRxM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/ModelManagerEditor.clas
+ s
+SHA1-Digest: lBTyy2HjuSEgN4AZsVABL3i4MXw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/PapyrusAnch
+ orableWrappingLabel.class
+SHA1-Digest: bawmuLMMf1IzvABuMf3T2Qoi684=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Remo
+ veAllCustomStyleListValueCommand.class
+SHA1-Digest: GJBmkFQPAviJUjclEqAlYQKnFHU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/CustomDragEdi
+ tPartsTracker.class
+SHA1-Digest: XmQbLBP8YNAe1YQRdeikpmXBc6M=
+
+Name: plugin.xml
+SHA1-Digest: +AaPKN4toN4qOcOykxadvolKbqQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/AbstractViewP
+ rovider$ClassToCreationMethodMap.class
+SHA1-Digest: Q5tqPMdT5ZKb/UuRD6Pa5Bux/iU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/IThemeInitial
+ izer.class
+SHA1-Digest: 0SSS+25u75YEidKbPHG3H815afA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/IGraphicalTyp
+ eRegistry.class
+SHA1-Digest: Yc+6gDjg/Lwt2bPwMj3ZpSfyQ9k=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/DelayedDirect
+ EditHelper$1.class
+SHA1-Digest: EaxMF5hwFSBzORBZvAPF7ZScnGo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/SVGNodePlat
+ eFigure.class
+SHA1-Digest: 4D9gGASzr8N73fuWGdAOjVeYt2M=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/SelectAndExecu
+ teCommand$1.class
+SHA1-Digest: gkrE3UhzMHgHbWm53pFXRaejdwM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/AddC
+ ustomStyleListValueCommand.class
+SHA1-Digest: w0zeSHRQGsZ7dE7D3dEMVOUL2Nc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/AbstractSh
+ owHideRelatedLinkEditPolicy$1.class
+SHA1-Digest: ZJdP/qIle0gYgnV4qbrISitT6SQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/RestrictedAbs
+ tractEditPartProvider.class
+SHA1-Digest: zIkAqSR2RGjJChR+DufrNsAzCRs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/IDiagramIn
+ formationProviderEditPolicy.class
+SHA1-Digest: jo5sPhLkTpSgVOfz8ByILQwrFCM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider.class
+SHA1-Digest: NdOvIFD8nxEEatRtIMKfvCXyubw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/handler/IRefreshHandler
+ Part.class
+SHA1-Digest: 1bL2hwOxvwNf7kiR6MN+os/pfLc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/AbstractTool$
+ 1.class
+SHA1-Digest: v5XULEXis61KkSK2TUQy+ZFFy/E=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/helper/DiagramHelper.cl
+ ass
+SHA1-Digest: L+Q63P3HCmauZlXBfBuY/UhM1OM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/SelectEditPar
+ tTracker.class
+SHA1-Digest: YRN2i6PhIAgaqSXoRRIUp90ubW4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/Activator.class
+SHA1-Digest: 5unQNcLDoJXzC1GFeIWd/xAX2f0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/IShapePro
+ viderOperation.class
+SHA1-Digest: 6jUsD4oPC34r1Fs6ZirDyrUlLMg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/MaintainSy
+ mbolRatioEditPolicy.class
+SHA1-Digest: xrLpsCIJIeL3mKyPnGFfmgoOx78=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/advice/GMFDiagramDuplic
+ ateEditHelperAdvice$DiagramCopier.class
+SHA1-Digest: 3Tf+T0ZhCV4LMOnRBEfW4ZOYKIM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/undocontext/UndoContext
+ ServiceFactory.class
+SHA1-Digest: RVg8vDyi6iyKWLEKCL1qhp92f6Q=
+
+Name: messages.properties
+SHA1-Digest: L7/xqlYeAsoshv/e2GaEOxJwOq4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/model/NotationModel.cla
+ ss
+SHA1-Digest: IdM5t5Z9Zou3b1DqHtdy9iVt/lc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/types/NotationTypesMap.
+ class
+SHA1-Digest: nknnSltSrk+7wX2f8HBZx5+VM50=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/ICustomNode
+ Plate.class
+SHA1-Digest: ZPbKIX0fn1B2acCskUhtUNUhfz8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/ThemeInitiali
+ zerManager.class
+SHA1-Digest: 9MrTaMAwQYoAOPxg9RWrlF/SsZI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/ShapeServ
+ ice$ProviderDescriptor.class
+SHA1-Digest: yUpnrLqr15zOMYtu88ZIMt4rpvE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/ShapeDisplayCo
+ mpartmentEditPart$OneShapeLayoutManager.class
+SHA1-Digest: ukiB7aYm4w14LkL0b5NU4JqkNOk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/AbstractPapyrusGmfCreat
+ eDiagramCommandHandler.class
+SHA1-Digest: cMh59/dQYQspkKfoGo8+pHjbE9w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/DiagramsUtil.class
+SHA1-Digest: jvOdqAuvmU8SfQbTMLYdgSM62mc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/DefaultGraphicalEditorS
+ upport.class
+SHA1-Digest: 4NJBUErQnG36orsZ3aicSPXnUmg=
+
+Name: schema/shapeProvider.exsd
+SHA1-Digest: b74kwuqysDGHVZN/sPdil3s3qgY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/AbstractTool.
+ class
+SHA1-Digest: teZZvDJuyqzdLGOvuINxQ/fWxI4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/Notificat
+ ionManager.class
+SHA1-Digest: cxlw7kIqLK9s7sAhuuLMjgChaJw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/SemanticElemen
+ tAdapter.class
+SHA1-Digest: S0bM5Du8Gf0/eHXm79i8X1tbohs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omStyleObservableList.class
+SHA1-Digest: bufo0N3YLuwiE8Rm6CThRCvIYEc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/listener/CustomStyleLis
+ tener.class
+SHA1-Digest: cwAXEFq0y5s30FICLRUk4PqetjY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/BorderDisp
+ layEditPolicy.class
+SHA1-Digest: CYNwCmbBdw8T2Jnhu6ldN7MrJTs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/ProviderN
+ otificationManager.class
+SHA1-Digest: ywZmOCjvLZ4cPHx1LKKO2n4BHFk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/XYLayoutShapeC
+ ompartmentEditPart.class
+SHA1-Digest: un9XtL2rbJxwzU2H4rMXaY3epN8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/ShapeCompa
+ rtmentEditPolicy$1.class
+SHA1-Digest: TZRU/PdHz8oZNEfj+J+nMH0g4+w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/ShapeDisplayCo
+ mpartmentEditPart$ShapeCompartmentLayoutManager.class
+SHA1-Digest: ZxdlJ1Wt4NxHcfg8Ae5R/ajcZSk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/PapyrusConnectionE
+ ndpointTracker.class
+SHA1-Digest: SBanPBfZIg+B7L3VjMEY8AvqKfA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/CommandIds.class
+SHA1-Digest: N14lqt0AJ8RHXZqCQruMuxClr68=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/Messages.class
+SHA1-Digest: N1Nr/2sY3C8Wj2iGfkX7zpBJiok=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/PapyrusConnectionE
+ ndpointHandle.class
+SHA1-Digest: v10MTltfY6qIamF3P9EW87owZrw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omStyleValueCommand.class
+SHA1-Digest: 0MUYnmCrJW1GT9zKpyy+gDcsgPo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$ResourceSetInfo$SynchronizerDelegate$2.class
+SHA1-Digest: D09LLN1qMTNnoIHJZHrzs6avgAQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/SetC
+ ustomStyleListValueCommand.class
+SHA1-Digest: rtmiy1xrYzh7EdzAl86v9ekRh5Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/StyleBasedSha
+ peProvider.class
+SHA1-Digest: Gk80ZHNB2QDBrO7iLhCMDep/3Cg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/AbstractS
+ hapeProvider.class
+SHA1-Digest: KSq53pZ8mlPf7MHRhQ23djFz9LA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/PapyrusCompart
+ mentEditPart.class
+SHA1-Digest: zxsNeiY/PU5BlD4V/qFlcZtw+L4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/adapter/DiagramAdapterF
+ actory.class
+SHA1-Digest: ri8KMIv/mkyXBqAh44RhGnvrq9A=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/NotationLabel
+ Provider.class
+SHA1-Digest: xGbdgIZJ5RkgfdK8Fh2Gm5g289s=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/NoSemantic
+ ParserEditPolicy.class
+SHA1-Digest: lqJ3asdi2wwuXJB1hZGsyO7Ulik=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/DefaultSem
+ anticEditPolicy.class
+SHA1-Digest: K2anp2n9G1Ler6UwcSJg8BTKFTE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/AddA
+ llCustomStyleListValueCommand.class
+SHA1-Digest: DaPkDhr1XGysq9UE/rN+Qze1CRE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/GetShapes
+ ForViewOperation.class
+SHA1-Digest: R8A4YMk1htjK7CB1LGaJSzNegSg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/advice/GMFDiagramDuplic
+ ateEditHelperAdvice$DuplicateDiagramCommand.class
+SHA1-Digest: 7ZJmvV6Ok4ECISzQuXjVBZqSxiY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/preferences/ConnectionT
+ oolPreferenceInitializer.class
+SHA1-Digest: 9ZeaxaYG1yqGPBLr1WjlAbdKRIk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/XYLayoutWi
+ thConstrainedResizedEditPolicy.class
+SHA1-Digest: eg8bt4hcnHiHruX9fJn8bEgux4o=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/DelayedDirect
+ EditHelper$3.class
+SHA1-Digest: PmyMjahAhgLYY2EPRUM29koIaGE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/SVGNodePlat
+ eFigure$SvgToDraw2DTransform.class
+SHA1-Digest: WqfHqzdjGYFXD7JidNd0G6zP+WI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/IConflictingEd
+ itPartFilter.class
+SHA1-Digest: pQQWjsIquOuG1qndaZKufTz6sg8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omEObjectStyleObservableValue.class
+SHA1-Digest: awFR5MagQPa3xlzG3ySlaficZIU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/helper/NotationHelper.c
+ lass
+SHA1-Digest: iXgzLTu6fWzKfZ5b8r+oWwiKGAw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$1.class
+SHA1-Digest: 5lzfw+6OHkH/QRD3ZUj9JolSXjU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/IGraphicalEditorSupport
+ .class
+SHA1-Digest: yc7MPjJsWQKOT0k3VbxhA7tBHAA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/AbstractShape
+ CompartmentEditPartProvider.class
+SHA1-Digest: MoOf4rDS7o9rFjO1kjE+2qQCB/A=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/DefaultActionH
+ andler.class
+SHA1-Digest: iMp8+ozYmBfTEk8PhkAwHzC87do=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/ThemeInitiali
+ zerManager$DefaultThemeInitializer.class
+SHA1-Digest: nXsUmS7pbi29+Ou6AGGTz9yrm5A=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/ShapeDisplayCo
+ mpartmentEditPart$ShapeRefreshEditPolicy.class
+SHA1-Digest: PL8ePMOVCsUjJnMtrQiRDyyLvCo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omIntStyleObservableList.class
+SHA1-Digest: 16xWVU/v89VUerWGWeQRY4vWgJI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/ISemanticHintA
+ dapter.class
+SHA1-Digest: wSWhX9KFha97cxTdg5gX38Tz84E=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/AbstractShape
+ CompartmentViewProvider.class
+SHA1-Digest: 4U7asrDBDYsWeUijP5THtC0dPiE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/PapyrusDiagram
+ EditPart.class
+SHA1-Digest: 2n7z9goe5pqs8IBeKaWn3UZuzmM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/model/NotationUtils$2.c
+ lass
+SHA1-Digest: TlFyWpktPMXPCGhH51WVRPc0VhY=
+
+Name: schema/notationTypesMapping.exsd
+SHA1-Digest: ShU7db/GHio8qu7phDnW4aTh5LA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/AbstractTool$
+ Input.class
+SHA1-Digest: J9vHNFMWZwsBI8a4VwkL51N5uuQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/TargetingTool
+ $1.class
+SHA1-Digest: KxHmtHgVszFpqkrQTR9hpG/6s7Y=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/ShapeCompa
+ rtmentEditPolicy.class
+SHA1-Digest: 1ChOMBxNFwJVWnldRs46p/e13pM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/ShapeDecorato
+ rProvider.class
+SHA1-Digest: 0Kqu0p4TJhdkLH21Fknzwik1zNw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfEditorFactory$GMFEdi
+ torModel.class
+SHA1-Digest: 6MkfetMX77DTFsdsYu8r33wy1Ok=
+
+Name: icons/none_comp_vis.gif
+SHA1-Digest: JLxSuKiq+hzSDn6II5YpmvsPOj4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/PapyrusDragEditPar
+ tsTrackerEx.class
+SHA1-Digest: I13mDrU+lE1bF66vuYPTWyvuXZs=
+
+Name: schema/nestedEditor.exsd
+SHA1-Digest: n1xopOZszhgANZnh2V3CK+Rmg0E=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/PapyrusLabelEd
+ itPart.class
+SHA1-Digest: jIlmawMIQozrXUUoqcMBasgcbYE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/CreateViewComm
+ and.class
+SHA1-Digest: Jonr23ahiD7Hol5Oi7D7HoTO8Tk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/AbstractViewP
+ rovider.class
+SHA1-Digest: KtngHGTFoygkgwYT5+eY4OXN8nA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/NodeEditPart.c
+ lass
+SHA1-Digest: kK7pdraFTvIDKtQXcfGz7FmPAhI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/adapter/GMFMultiDiagram
+ AdapterFactory.class
+SHA1-Digest: n34jdcHGeFP6RzdGJEFZzQN6jeU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/IShapePro
+ vider.class
+SHA1-Digest: 2KX41KrcnRV0xSK4D1IEyUSv0mU=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/CreateShapeCom
+ partmentViewCommand.class
+SHA1-Digest: ny2kGTsNvmPB0IfY7QKCgUzXTZk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/figure/node/IPapyrusNod
+ eFigure.class
+SHA1-Digest: vrQ9rDfrDdN/mSzp9TAaMYHNDx4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/providers/NotationFilte
+ redLabelProvider.class
+SHA1-Digest: KdYX4zlEphXrTBfmW4iwhFySwKQ=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/SVGPostPr
+ ocessor.class
+SHA1-Digest: vYVcaCkWFw7bdjZ1bBjekU2ImZg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/ShapeServ
+ ice.class
+SHA1-Digest: ANYduct+5t0ESL/D7/p0wMBlKhY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/databinding/custom/Cust
+ omStringStyleObservableValue.class
+SHA1-Digest: +MyZLcGDtAFrATqtOfK/SERukPA=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/ConnectionEdit
+ Part.class
+SHA1-Digest: 6hjOob7N+8AHgL3F8UrnT/6lmhc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/IShapeCompartm
+ entEditPart.class
+SHA1-Digest: 9Lq9TIQTQkcgycHji3FgXZ3h3PM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/snap/copy/ConnectionEnd
+ pointTracker.class
+SHA1-Digest: 6Y29sxT3Pwk1ufwPkbmdMJjUqDc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/messages/messages.prope
+ rties
+SHA1-Digest: AzYawtp2VnV9j8cmsccxRgvL8zs=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/service/shape/GetAllSha
+ peProvidersOperation.class
+SHA1-Digest: Igdn19pIn3bzuRX0yjfOMxu3HgY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/commands/SelectAndExecu
+ teCommand.class
+SHA1-Digest: iRAiiF9gG2PmoAAwpM9n9+bfwrw=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/PapyrusCon
+ nectionEndEditPolicy.class
+SHA1-Digest: nQdnGCrYS0ZgKiSc0ejAyxbQVgg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpart/IPapyrusEditPa
+ rt.class
+SHA1-Digest: CE+gfI2zFMKA3ARDcAmnL7fSu/Q=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/GmfMultiDiagramDocument
+ Provider$ResourceSetInfo.class
+SHA1-Digest: D2RdcHWTegmFnr+t0U9xq5jewA4=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/editpolicies/NameDispla
+ yEditPolicy.class
+SHA1-Digest: cRT41OiyGZ6l7yeXzeX8tY3WcXo=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/common/utils/DiagramPropertyTe
+ ster.class
+SHA1-Digest: M9WuSEtbIDhotO/vP0HgiTjA7n8=
+

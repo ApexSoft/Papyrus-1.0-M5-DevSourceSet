@@ -1,0 +1,3323 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.timing;singleton:
+ =true
+Eclipse-LazyStart: true
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.timing.part.UMLDiagr
+ amEditorPlugin
+Require-Bundle: org.eclipse.emf.ecore,org.eclipse.core.runtime,org.ecl
+ ipse.core.resources,org.eclipse.core.expressions,org.eclipse.jface,or
+ g.eclipse.ui.ide,org.eclipse.ui.views,org.eclipse.ui.navigator,org.ec
+ lipse.ui.navigator.resources,org.eclipse.emf.ecore.xmi,org.eclipse.em
+ f.edit.ui,org.eclipse.gmf.runtime.emf.core,org.eclipse.gmf.runtime.em
+ f.commands.core,org.eclipse.gmf.runtime.emf.ui.properties,org.eclipse
+ .gmf.runtime.diagram.ui,org.eclipse.papyrus.uml.diagram.common;bundle
+ -version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.common;bundle-vers
+ ion="1.0.0",org.eclipse.papyrus.uml.service.types;bundle-version="1.0
+ .0",org.eclipse.papyrus.infra.widgets;bundle-version="1.0.0",org.ecli
+ pse.gmf.runtime.diagram.ui.properties,org.eclipse.gmf.runtime.diagram
+ .ui.providers,org.eclipse.gmf.runtime.diagram.ui.providers.ide,org.ec
+ lipse.gmf.runtime.diagram.ui.render,org.eclipse.gmf.runtime.diagram.u
+ i.resources.editor,org.eclipse.gmf.runtime.diagram.ui.resources.edito
+ r.ide,org.eclipse.gmf.runtime.draw2d.ui,org.eclipse.uml2.uml,org.ecli
+ pse.uml2.uml.edit,org.eclipse.emf.ecore.edit,org.eclipse.ocl.ecore,or
+ g.eclipse.emf.validation,org.eclipse.gef,org.eclipse.papyrus.infra.gm
+ fdiag.preferences;bundle-version="1.0.0",org.eclipse.papyrus.extensio
+ npoints.editors;bundle-version="1.0.0",org.eclipse.gmf.tooling.runtim
+ e;bundle-version="3.0.0",org.eclipse.draw2d,org.eclipse.papyrus.infra
+ .services.edit;bundle-version="1.0.0",org.eclipse.papyrus.infra.core;
+ bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bundle-vers
+ ion="1.0.0",org.eclipse.papyrus.infra.core.sasheditor;bundle-version=
+ "1.0.0",org.eclipse.papyrus.infra.extendedtypes;bundle-version="1.0.0
+ ",org.eclipse.papyrus.infra.gmfdiag.navigation;bundle-version="1.0.0"
+ ,org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",or
+ g.eclipse.papyrus.infra.widgets.toolbox;bundle-version="1.0.0"
+Bundle-Version: 1.0.0.v201401290914
+Export-Package: org.eclipse.papyrus.uml.diagram.timing.custom;x-friend
+ s:="org.eclipse.papyrus.uml.diagram.timing.tests",org.eclipse.papyrus
+ .uml.diagram.timing.custom.edit.commands;x-friends:="org.eclipse.papy
+ rus.uml.diagram.timing.tests,org.eclipse.papyrus.uml.diagram.interact
+ ionoverview",org.eclipse.papyrus.uml.diagram.timing.custom.edit.parts
+ ;x-friends:="org.eclipse.papyrus.uml.diagram.timing.tests,org.eclipse
+ .papyrus.uml.diagram.interactionoverview",org.eclipse.papyrus.uml.dia
+ gram.timing.custom.edit.policies;x-friends:="org.eclipse.papyrus.uml.
+ diagram.timing.tests",org.eclipse.papyrus.uml.diagram.timing.custom.f
+ igures;x-friends:="org.eclipse.papyrus.uml.diagram.timing.tests",org.
+ eclipse.papyrus.uml.diagram.timing.custom.layouts;x-friends:="org.ecl
+ ipse.papyrus.uml.diagram.timing.tests",org.eclipse.papyrus.uml.diagra
+ m.timing.custom.parsers;x-friends:="org.eclipse.papyrus.uml.diagram.t
+ iming.tests",org.eclipse.papyrus.uml.diagram.timing.custom.parts;x-fr
+ iends:="org.eclipse.papyrus.uml.diagram.timing.tests",org.eclipse.pap
+ yrus.uml.diagram.timing.custom.providers;x-friends:="org.eclipse.papy
+ rus.uml.diagram.timing.tests",org.eclipse.papyrus.uml.diagram.timing.
+ custom.utils;x-friends:="org.eclipse.papyrus.uml.diagram.timing.tests
+ ",org.eclipse.papyrus.uml.diagram.timing.edit.commands;x-friends:="or
+ g.eclipse.papyrus.uml.diagram.timing.tests",org.eclipse.papyrus.uml.d
+ iagram.timing.edit.helpers;x-friends:="org.eclipse.papyrus.uml.diagra
+ m.timing.tests",org.eclipse.papyrus.uml.diagram.timing.edit.parts;x-f
+ riends:="org.eclipse.papyrus.uml.diagram.timing.tests",org.eclipse.pa
+ pyrus.uml.diagram.timing.edit.policies;x-friends:="org.eclipse.papyru
+ s.uml.diagram.timing.tests",org.eclipse.papyrus.uml.diagram.timing.na
+ vigator;x-friends:="org.eclipse.papyrus.uml.diagram.timing.tests",org
+ .eclipse.papyrus.uml.diagram.timing.parsers;x-friends:="org.eclipse.p
+ apyrus.uml.diagram.timing.tests",org.eclipse.papyrus.uml.diagram.timi
+ ng.part;x-friends:="org.eclipse.papyrus.uml.diagram.timing.tests,org.
+ eclipse.papyrus.uml.diagram.interactionoverview",org.eclipse.papyrus.
+ uml.diagram.timing.preferences;x-friends:="org.eclipse.papyrus.uml.di
+ agram.timing.tests",org.eclipse.papyrus.uml.diagram.timing.providers;
+ x-friends:="org.eclipse.papyrus.uml.diagram.timing.tests",org.eclipse
+ .papyrus.uml.diagram.timing.sheet;x-friends:="org.eclipse.papyrus.uml
+ .diagram.timing.tests"
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLAbstractNavi
+ gatorItem$1.class
+SHA1-Digest: E/JL2J6xh3Yjz3z2sLxbqav0VzM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nEditPart$1.class
+SHA1-Digest: FcdhFChW1Ia14CCpZHi1mMcMNV0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart$1.class
+SHA1-Digest: d8Uz5R3ehhtYmvhefoj6dz9qUbw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/ViewUtils$1.
+ class
+SHA1-Digest: ynpZDiu8u3V1xMOTV8ADYTxKEMY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torContentProvider$3.class
+SHA1-Digest: ooTSprODj684TaVbExzJYNHy/Z4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/LifelineIte
+ mSemanticEditPolicy.class
+SHA1-Digest: k6kIcq1WW1lh0z2WNfOcfRaofow=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart$1.class
+SHA1-Digest: WyUsh+5KWbY6gauEqyGilV2whek=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLMatchingStrategy.
+ class
+SHA1-Digest: o2qmul6OYexjLs/+NbIX2NK3bxg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart$5.class
+SHA1-Digest: sxypJg/1rGTXHxD+osdrAvHSDFM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart$1.class
+SHA1-Digest: OGEpSjzKSOTy3DPg6PGmzjZrPPs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart$2.class
+SHA1-Digest: hphv6zbJJYmqEI5ZUkcWWJ3IaSg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart$3.class
+SHA1-Digest: 7ygAsismGDxKCEhyZUUGkAdXXJs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantEditPartCN.class
+SHA1-Digest: Xjp5I/vswN/pRqZLHAlq3YEEoEs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DiagramGenera
+ lPreferencePage.class
+SHA1-Digest: V35EpS3p728FM4jZOPTYxwkpeqg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$7.class
+SHA1-Digest: 6FrgPK00G5vNdllnE/rJb2WEjyU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/CutA
+ ndInsertOccurrenceSpecificationCompactLifelineCommand.class
+SHA1-Digest: aXKHAtXKZUqEBohDkMBFBs5ygLQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/TimeRulerUti
+ ls.class
+SHA1-Digest: urGWd8dY/RK8vydQ06ymPk7bzjA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart$3.class
+SHA1-Digest: fY2uwsjcLBve84Mxm/cW6JP1bU8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart$1$1.class
+SHA1-Digest: 05CG/upLbMr9nwRN3coFI/ASSDY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omMessageOccurrenceSpecificationItemSemanticEditPolicy.class
+SHA1-Digest: YCSpD1L7ePSuWu3JKlbdIJx8Slk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart.class
+SHA1-Digest: /kf30ouWl/S1+r5361hkeKdxA/A=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart$4.class
+SHA1-Digest: cVnOXgQ6lh+EAqgB1I8Oxask++I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart$1.class
+SHA1-Digest: W5s4Tpeqzw1HSnIp7E1kniyr9Js=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart$4.class
+SHA1-Digest: XdXkKD/IvRIpc4cgWylvr5aUL5o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/LifelineEdit
+ Helper.class
+SHA1-Digest: Qwps3LaoagQVFeNfZDXwcExTpeY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/Dimensioni
+ ngArrowFigure.class
+SHA1-Digest: 4JZ22QvMTpPzk2fH3xu+c2pYBPM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart$2.class
+SHA1-Digest: ejMV1b/rnJ5Kwjlq513njCUeqlc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart$1.class
+SHA1-Digest: ZemOTSBaJt84XctdmbsBMguWBcE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart.class
+SHA1-Digest: MUIV0C3WdtqJJitoa+hChDTcCKA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/LifelineFi
+ gure$1.class
+SHA1-Digest: Dw9MHif62n1m7H5rSE6Y0RwAi3k=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Timi
+ ngDiagramDragDropEditPolicy$2.class
+SHA1-Digest: QfTYsPiwS/x++0vBw+BXYqKQHTQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart$3.class
+SHA1-Digest: 7ajD0h7PDzqdEJtcIt5dVc7LuLg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLLinkDescriptor.cl
+ ass
+SHA1-Digest: 0dOkKvECrkIpbLT1yRyMhTjxibE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart$1$1.class
+SHA1-Digest: EZN9UH1H8szlN1Gi6u04I5+zBgM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/PackageEditH
+ elper.class
+SHA1-Digest: CPnCZqslFErYx9FWEAYjVkC1fb8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageCrea
+ teReorientCommand.class
+SHA1-Digest: 7TvSNqeG8DmeYcN10EUlsY3g/mU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eEditPartCN$1.class
+SHA1-Digest: 2hGnh5SKEcrIJH1fIrA6uJhbTs4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageLostE
+ ditHelper.class
+SHA1-Digest: J6IVgeY0vQ6lnazvhctBzOy9aa8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart.class
+SHA1-Digest: 3/VWl/UqoQaMyhotvOob3vxExvQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nEditPart$1.class
+SHA1-Digest: awn/uIaN6PjHXC1CbylMd3o9FCo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/ElementInitiali
+ zers.class
+SHA1-Digest: HDtL+ioIoYOWsIeeo2bQzSfFTeE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineEditPartCN$2.class
+SHA1-Digest: 0q53awM4JbsdrLApGzugN2Ha640=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Refr
+ eshCommandForUndo.class
+SHA1-Digest: dA+oXCY6HTagjW1HZ697Y/ALgbg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart$5.class
+SHA1-Digest: Gt/lEZ9kcJQ8g/6A7xXmQECU0xw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt$1.class
+SHA1-Digest: Vb3C4nFdXSmnvyH4xFJK0RKrFI0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart$1.class
+SHA1-Digest: GjPgSBCHo9R1ED9dduhLru4NRlU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/StateInvaria
+ ntUtils.class
+SHA1-Digest: wi3dpWzR4FaGhbhwAPMe1hp7DW4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/StateDefin
+ itionParser.class
+SHA1-Digest: tbg7hXEx/vrDuvnhl9BLtobLmy0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationEditPartCN$1$1.class
+SHA1-Digest: UA4ZABs+iA+UJWoC1zoSIa5Kkxk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/GeneralOrde
+ ringItemSemanticEditPolicy.class
+SHA1-Digest: cUpE37TdSfC5Um8BJOb6Z6k044c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Abst
+ ractTimelineLayoutPolicy$1.class
+SHA1-Digest: Y+KA6/heo/Lh2X1C01EgIznkE8Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart$2.class
+SHA1-Digest: FuXs8utEsHh2AQA51k6Mvuj0HYs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/DurationObs
+ ervationCreateCommandCN.class
+SHA1-Digest: Df01gFuCkQtawl3JDrEXaTQzibc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/Interaction
+ NodeItemSemanticEditPolicyTN.class
+SHA1-Digest: xqbWaRgwr5otG3+7cIpXjLqZAH4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorLab
+ elProvider.class
+SHA1-Digest: y8oX6snHUVQSkuZmm/EAKww4jSA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart$4.class
+SHA1-Digest: nuX7UYS6goY4NrkMmMadH86NQMI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCompartmentCreationEditPolicy$1.class
+SHA1-Digest: Ghq0dd8VUUC+SV9dlMrCshGeFns=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart$4.class
+SHA1-Digest: BRz/qWrw8GfUtgPIPEi2jSHfuOM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Abst
+ ractRefreshCommand.class
+SHA1-Digest: Ac/6gINU/0AU1+rsD0D/K3RP1Zk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimingDiagramE
+ ditPart$LinkLabelDragPolicy.class
+SHA1-Digest: NLRJa/p9u1LSIXVk/Pl1jBpW3kc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomD
+ estructionOccurrenceSpecificationEditPartCN.class
+SHA1-Digest: 7YJuJ49xId/lTnaTRmTwXuLukgI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/LifelineUtil
+ s$1.class
+SHA1-Digest: mr7lM1tgsFjqxIYSNB29+PKcyHY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart$1$1.class
+SHA1-Digest: k0BJRWQ7IhgNQjYU1I+ywk274MY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/InteractionE
+ ditHelper.class
+SHA1-Digest: mD5y/K9FpCAJ2yWevTFEFyqtvvQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart$5.class
+SHA1-Digest: 3DN/Ky8WOqz/nYqaEIsofb3kc2U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure.class
+SHA1-Digest: /BNBSNCEjjT17FoD+e741+IX1Gc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart$1.class
+SHA1-Digest: b7R9e8qNCWIos6ukC5FRI/1a4Qg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantEditPartCN$1$1.class
+SHA1-Digest: vJVdWNwSjNFi0D5u4NZL6BDAiAE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart$2.class
+SHA1-Digest: Ndcr8A6gsNAoeHJuCia86IhxKkM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/advice/Stat
+ eInvariantHelperAdvice.class
+SHA1-Digest: 9lCbHrS//GYIjfjJ111fL1n9hc8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/ModelValidat
+ ionUtils.class
+SHA1-Digest: 5MkKon7BpYSNi7WzXhM/SpuLuMU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineStateDefinitionCompartmentEditPartCN$1.class
+SHA1-Digest: LnDv4PntnwvQjSU/po1rgKgleGY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/TimingDiagr
+ amLinkMappingHelper$1.class
+SHA1-Digest: 1FvNHvIV8kGxqbmUN+mjSvcYgeA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart$1.class
+SHA1-Digest: d8h0SPOi+6LaMZRI7mYAiTDqyXA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactSta
+ teFigure.class
+SHA1-Digest: rgS7RZIk65B0+vO1ULKQzovfSwY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$5.class
+SHA1-Digest: J1JQdHN25YybyEuhCfUyXqmDQzY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineTimelineCompartmentEditPartCN.class
+SHA1-Digest: KKLp172U37PB4LKMkOt3QHN9xcQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationEditPartCN$1.class
+SHA1-Digest: awM+dtWRqW1BOzuohVDS7IF2Lsc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor$3.c
+ lass
+SHA1-Digest: 6W89oTmrC1VPd5unTsGXw6YHc0I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory$4.class
+SHA1-Digest: 2JGieqsUIWYidTEYYdR2yiOfiYQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/OccurrenceSp
+ ecificationEditHelper.class
+SHA1-Digest: FQrixYIhr8vQFD80hs308hgkq8k=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart.class
+SHA1-Digest: CrfdyyTyKxUgd3mHiSXxaHhBHvM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/CompactSta
+ teInvariantNameParser.class
+SHA1-Digest: E+IIqoKkyw5h1kxT8/Ktr2E4mi8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactLif
+ elineFigure$1.class
+SHA1-Digest: UZHxBwthIRB1ok8RmB+x0NPQQ0I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$Dr
+ opTimeConstraintAction.class
+SHA1-Digest: 5DvdAaiKUP8dWDDZfKzKjHthHZ0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart$1$1.class
+SHA1-Digest: QdB67ph5l6lOkJ9tLynr3nfYggo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart$5.class
+SHA1-Digest: FB/84m347fS0vTOi5nEmSvnoyCw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLEditPartProv
+ ider.class
+SHA1-Digest: 2XVD0yqExgPjnvom5MshQ80irJ0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Firs
+ tEventRefreshEditPolicy.class
+SHA1-Digest: q7NjpTpgOxZw09g1l810qB1jmkY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/CompactLife
+ lineCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: RjxdmBV/j6aIXpccXIGbC8j+xEc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/DestructionO
+ ccurrenceSpecificationCreationTool.class
+SHA1-Digest: pTHLGdcLAs9++MPUVRL6FIB63FQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomT
+ ickEditPart.class
+SHA1-Digest: MEOPh53UhSI4BSaPZcTg/hloZsA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantEditPartCN$1.class
+SHA1-Digest: 0EYC7pWS1t1invdEmhgpOL4ZYp0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCompartmentItemSemanticEditPolicy$2.class
+SHA1-Digest: uMXmA7LrcX9Ndv+J+mbSzUwwR7c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLTextNonR
+ esizableEditPolicy$2.class
+SHA1-Digest: zDDNtn7o6q8x2H9Zoqyl8yMmQks=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nEditPart.class
+SHA1-Digest: HB/Nefk1aQI4xXM1Iw7gJOpitpA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omTimeConstraintCreateCommand.class
+SHA1-Digest: NHv2/S4/1/MuxW/4WgxIo1eXTf0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/CreateTimingDiagra
+ mCommand.class
+SHA1-Digest: qLcg+VnbflNTRU6ppnulIgg/faA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLValidationPr
+ ovider$1.class
+SHA1-Digest: LmuIUHoDaU7STNpb7rHpsRGcEJQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/NoScrollNoBo
+ rderDragEditPartsTracker.class
+SHA1-Digest: v1Peqkcg4jBwLaj20XlWV7qiinM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart$4.class
+SHA1-Digest: EeDfLlqoRTMxqSKoHfS+2QQfEZ4=
+
+Name: icons/wizban/NewUMLWizard.gif
+SHA1-Digest: V9+GnTa2Eps/Z9j0Ylui5kDdHv0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart$1.class
+SHA1-Digest: UaIhb0iW+/yhC4LE9RsOZtT0yr8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/InteractionPr
+ eferencePage.class
+SHA1-Digest: eUbQzLCulqWPu18f2QJyhAJsBQQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart$3.class
+SHA1-Digest: qqHNO4M0tOvl57wPm7/Dt0YzB7s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/Occurrence
+ SpecificationNameParser.class
+SHA1-Digest: a40Ise+fUiajPlNLpBCep+6GUjQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DiagramConnec
+ tionsPreferencePage.class
+SHA1-Digest: aQIfEwN6kcP7GOywUd60v5qnTGU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/LinearTimingRu
+ lerEditPartCN$1.class
+SHA1-Digest: KBkgbDLGC8QIj/bkHDjba5okO08=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart$5.class
+SHA1-Digest: f2czy1347uDNDFE8RcbAvFCG9m0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/SmallSquar
+ eFigure.class
+SHA1-Digest: HG9ME5M6o4jOaRiDXsdRjtLrkVI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CustomInte
+ ractionRectangleFigure.class
+SHA1-Digest: o1MWjos6sIScOB1l1VRyowbowLQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/TimingDiagramCreat
+ ionCondition.class
+SHA1-Digest: YEPedx+KBuasWCOOpdM6Zka04bc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/Constraint
+ Parser.class
+SHA1-Digest: fPrNwqvslUR19yV4ZGtU2WENApo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart$3.class
+SHA1-Digest: n4XWjoYFAZ3gI2Ff/O60XzuMLHI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ EditPart.class
+SHA1-Digest: VlSa6NsbAMTmuFs4PCYKNtenCZM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageRep
+ lyFigure.class
+SHA1-Digest: sxZTWDY9BlEz/xWi0yLCyDTylRs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart$1.class
+SHA1-Digest: vrJ8E6YDEIYm9+FOSv0SQz00lnw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/advice/Defa
+ ultTypeHelperAdvice.class
+SHA1-Digest: 2VuaDLh3eFNTGZe8DZJEJ7hY/Ok=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/FreeTimingRul
+ erPreferencePage.class
+SHA1-Digest: xQzpuMYrMJwbM9E7f6+HzTsuJN0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/EditPartUtil
+ s.class
+SHA1-Digest: F0kGwfIXom7CJFclTCDFfzBkTVo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactLifelineEditPartCN$2.class
+SHA1-Digest: 7NldmxOmBtMvahHmgs7kH6ouZ1M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CrossFigur
+ e.class
+SHA1-Digest: +XrOyxuchan7KGXINh2SxNww4HU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationEditPartCN.class
+SHA1-Digest: Qx0fcUKspwLyFFfuHZtN/bU5HO0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/GeneralOrderi
+ ngPreferencePage.class
+SHA1-Digest: eRU/6X1saQ8IWZFmi8/DFIZsuYQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateE
+ ditPart.class
+SHA1-Digest: mCpB6E49e1FavWJoewwc2uP9Bg8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditorUtil
+ $1.class
+SHA1-Digest: LyIx2UeYEDO2pRgwIgsT/krWr6g=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart$5.class
+SHA1-Digest: bDMeck11vGx+orUVgX9NXwuGSCs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart$1.class
+SHA1-Digest: /eKnRYvWgH3Tyh69Cv9UgptbYKI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineStateDefinitionCompartmentEditPartCN.class
+SHA1-Digest: vyAJRuyNO8cO35EGyln50zvw7mg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/TimingDiagr
+ amLinkMappingHelper.class
+SHA1-Digest: OXKgpH8AJw8E8LoX2tnKD7HxcHI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomM
+ essageLostEditPart.class
+SHA1-Digest: 3+kSr7U3io+HsXORhuz+oyhqjYY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/OperationForbidden
+ Exception.class
+SHA1-Digest: gWAs9bE+2a/Tu+bF5ScNVcS/CFc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/VerticalMa
+ rkFigure.class
+SHA1-Digest: 2YfxXfhS1ufM6LV/JmMeVWBnZWM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLTextSele
+ ctionEditPolicy.class
+SHA1-Digest: +rlC5AAS20AnghuotpHetsHHpAk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart$4.class
+SHA1-Digest: xUWNsDDNGbc+62AGidIET/38rQ4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramUpdateComm
+ and.class
+SHA1-Digest: yh3Y+A8YimicA0RXEiNLDqSXN/I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart.class
+SHA1-Digest: ll8A6J49scMZKIMq2rX/tjZLnkw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditorPlug
+ in.class
+SHA1-Digest: 7OgD57lgcxZiRsAFsteCQJEPXSw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torContentProvider$1.class
+SHA1-Digest: bmUZ6q09/Kw1i86yhX9qaTaIfcI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omTimeObservationCreateCommand.class
+SHA1-Digest: 2B5tWOZQpYMO3Smbg2iUbWQJ3V0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorGro
+ up.class
+SHA1-Digest: FJhieLP5OSZ2AAFpTor9C8wA7/A=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/DurationObse
+ rvationEditHelper.class
+SHA1-Digest: lmwFmU5df7lj5IWzA5ih0HCIJSo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor$3$2
+ .class
+SHA1-Digest: RzSdtyBkuPYjE+BzjtOeGGybRHA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionEdi
+ tPartTN$1.class
+SHA1-Digest: iq52PtZA9ACLmbVNxZXjLhvxnwE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactLifelineCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: bNT6AlySvJkUjBVhdCivyeVrs2M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart$3.class
+SHA1-Digest: 3HPASxs5vam3cKgTu/yzjijxqLs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/CompactStat
+ eInvariantCreateCommandCN.class
+SHA1-Digest: O97mrXGsYEebd86Yiybju5nzQ1M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart$1.class
+SHA1-Digest: N0c9ihVggXLEWepZhqqMQXW841c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart$4.class
+SHA1-Digest: 9VWWTgrbsgehV0S0i4mfC9wLjSs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramActionBarC
+ ontributor.class
+SHA1-Digest: hdCOmvkiBIbCHLxBD0UEYfhhz0Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$5.class
+SHA1-Digest: Mm4wDUxuyxSm6dMsvozkkwuzxrQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart$4.class
+SHA1-Digest: 7+g8HO2k2Bug1vyRJoATaRvtNFw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$ID
+ ropLinkedNodeInLifelineAction.class
+SHA1-Digest: +HpE4H7Z1smWguVCRgo2mSuUokA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart$1.class
+SHA1-Digest: JYM1eNvHM/1C5m9eiwCT7QHRVpg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/Utils$1.clas
+ s
+SHA1-Digest: ofTifx+3Gh+dp/MTpVfLA6v7tXo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLCreationWizard.cl
+ ass
+SHA1-Digest: kaVNoEBRi7CR+BZ3mrJJcmK9rUk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ ResourceSetInfo.class
+SHA1-Digest: Y8JSuBzHAymLDMpXVjuoEtHMWzI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art$5.class
+SHA1-Digest: DJRKbG7RJIBGA84jnxhspy4JA9Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/TimeRulerCo
+ mpartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: zGUW6GrNVD54CgioGTW0lerOWLU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart$2.class
+SHA1-Digest: B3E3med7KQZrWjAzHWLZLio8t/Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart$2.class
+SHA1-Digest: fWhKGjr5HO7V/I/bPPazZr4NROk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart$1$1.class
+SHA1-Digest: qXjkgnDv48TqF82y3fBKUmed8RQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/PropertyDiag
+ ramUpdater.class
+SHA1-Digest: w+TNeu7yvSv5eUAAm3pUDiYFwMU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/GeneralOrde
+ ringCreateCommand.class
+SHA1-Digest: DXcWMqTwoEArsG/ipQDKAC0a8QY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ reeTimeRulerCompartmentEditPart.class
+SHA1-Digest: J7pxdZcYhH355vPvrZ1Ikjov4WE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageFou
+ ndFigure.class
+SHA1-Digest: DMQUqV6cuI5RmLpdl55H2eKqotE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart$1.class
+SHA1-Digest: ml/Ym2kcmtFNC2pCWXjsZJgeTFM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart$4.class
+SHA1-Digest: RPezEYyKs24PuEYlkb+c4DfiY4M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/locator/LabelInCom
+ partmentLocator.class
+SHA1-Digest: KDBwylRKdNU90mnBSal6PDgINvE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/Messages.class
+SHA1-Digest: jZixH/XmGBdGwrxsSextl+NoGfc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullStateI
+ nvariantVerticalLineFigure.class
+SHA1-Digest: o/QS0mZ6QkPicnB8w/gR4/584U0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart$4.class
+SHA1-Digest: 4ASndLjeVmswsoTVabCt84JrEEo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart$4.class
+SHA1-Digest: poHo4siVvt+Lhulut8PaQ5JIQUo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart$5.class
+SHA1-Digest: U6HKGPpmAccIaBzvQrRt2F1YGu4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart.class
+SHA1-Digest: +Qws0D1yxPFXxGex8SpFnXxWoHk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart$3.class
+SHA1-Digest: gMD2V2jaUSMDNl5VOHSkcitPM2U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorLin
+ kHelper.class
+SHA1-Digest: V4g7OaSRVz6xqsE2nIZjKV4xoBc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageReplyP
+ referencePage.class
+SHA1-Digest: fGehz76n/Mug0hVujlMsDC4o75Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageReply
+ EditHelper.class
+SHA1-Digest: UzhTQSzX3+gjcwDN/fyhyX9kgKA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/AddO
+ ccurrenceSpecificationInCompactLifelineCommand.class
+SHA1-Digest: X0rA+6eHtMwkLfSiNNfPjKMhSUo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncEdi
+ tPart.class
+SHA1-Digest: K2p6BcbpD6Sl64zlZrbJsZlhcrg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLValidationPr
+ ovider.class
+SHA1-Digest: f8w54KZ3zqjZZDpFp8WEikhv6wI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart$4.class
+SHA1-Digest: HQ50UztEbiLFsVXuSaKGdsl6VoI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ 1.class
+SHA1-Digest: zKcXaZsDsH3LiGruFSfO137txn8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/expressions/UMLAbstractEx
+ pression.class
+SHA1-Digest: 37u7WygLesvnho2mh5JPYALXFEE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart$5.class
+SHA1-Digest: Btu4Fa8cfmpIUBBxDRUhnaSy/0A=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart$4.class
+SHA1-Digest: xvDwRr2zYc7/dazc9DPrre+cStE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageCrea
+ teItemSemanticEditPolicy.class
+SHA1-Digest: JLYtWOt6bEI3M2bC+rdfokykgYk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart.class
+SHA1-Digest: IIy3Er9w09NES19aIe3Ukx6CEk0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart$2.class
+SHA1-Digest: ZwSqL5L3u11WRYB4LvA4fHpxNOo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintEditPartCN.class
+SHA1-Digest: EmGW/SYmwVN599XJaBA21We7TtA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/OccurrenceS
+ pecificationCreateCommandCN.class
+SHA1-Digest: wQEfekpY0qa92MwQ2ZJTlFdTOEY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/AbstractMe
+ ssageFigure.class
+SHA1-Digest: Sh8z3ikvSegXADtniVSDABRaokg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart$2.class
+SHA1-Digest: PloYNQya7l3309iPPYNUbb173HU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/GeneralOrder
+ ingUtils.class
+SHA1-Digest: j4RwDFGQxPoahNvdRbJdUB02Ozo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/layouts/FillLayout
+ .class
+SHA1-Digest: aL3QplBto8y/gc/b4F4WRXT180E=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/TimeObservati
+ onPreferencePage.class
+SHA1-Digest: Km9RJQbMjl2xvPxgParEVYQNuCQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/TickParser
+ .class
+SHA1-Digest: 61nb8sSBk+a3W1hoqSp8T2dvYPY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ reeTimingRulerEditPart.class
+SHA1-Digest: M2oHQcQxLZGzaRHE9RvXPYnt0j8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintEditPartCN$1.class
+SHA1-Digest: iuB3ybu8WwpG1F/qqZvEfCzM3fM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart$3.class
+SHA1-Digest: 08TPhcPzspO/GmVutbhnlFpfYbg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorAct
+ ionProvider.class
+SHA1-Digest: lLg7/CM5UNedPO1OzbFTJFaielc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/CompactLifeli
+ nePreferencePage.class
+SHA1-Digest: i4tmuhRf7sSlwRpc0yrlqLVQkE8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineEd
+ itPartCN$1.class
+SHA1-Digest: AS1DMY3sGrWWaMynrx4OYetIXVM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt$4.class
+SHA1-Digest: +atVk95iD3+5o0ML6D06CG6V0kw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart$4.class
+SHA1-Digest: HyD41/ZQgnxjmSbZs13s/bBBJLI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionCom
+ partmentEditPartTN.class
+SHA1-Digest: mhtbhcxrxI4AdvKxIv1l5Z03u9Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/FullLifelin
+ eStateDefinitionCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: UtEr4DtNWn35pRV4Gf+NnGQhUCM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/TimeObservat
+ ionEditHelper.class
+SHA1-Digest: GJT4xJIFClAj88RQeDTmj/UAuQo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageDele
+ teItemSemanticEditPolicy.class
+SHA1-Digest: 3cZaKloyZTBrz56eexBcxaOAVWo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$3.class
+SHA1-Digest: Sv+LtKGP9v/gy5pP1ChrHqvwKK8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorIte
+ m.class
+SHA1-Digest: Nl/h/AFqw+HJPUxlkyL3WUCnSqY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor$1.c
+ lass
+SHA1-Digest: LMn/xtn3qmvUe5NEVfp4tya8jmI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageAsyn
+ cCreateCommand.class
+SHA1-Digest: xqka9hdiNokLccVt8j4/hsyoffQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart$1$1.class
+SHA1-Digest: HNTUuS07HhIlJ7/0gCwijecu1aA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory$2.class
+SHA1-Digest: UEFrzdzpbj9nu1e7QF5qTpoFTpE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCompartmentCreationEditPolicy.class
+SHA1-Digest: ocf0hjuGOKddJjvqPnrCHixgiNE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLNewDiagramFileWiz
+ ard$DiagramRootElementSelectionPage.class
+SHA1-Digest: FpOI7yHs0ht884mcnjyH91PIllQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart$5.class
+SHA1-Digest: UAoDHWIGizleOBMHpmHn3J0wc44=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torItem.class
+SHA1-Digest: njNafdjim2U1JaF8KmM6IlJrHjk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DiagramPrefer
+ enceInitializer.class
+SHA1-Digest: 8997PynyTOodV+pdMvI6fA1vObo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart$3.class
+SHA1-Digest: HijC1iB20Cd4VlUEUQ32cetytRg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineEditPartCN.class
+SHA1-Digest: ExEF9Y2YlgPnuafNK/aJS6U+700=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/CompactSta
+ teInvariantNameParser$1.class
+SHA1-Digest: yrs/t8fF3mswVqWe7e+WZlBSnpo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageDelet
+ eEditHelper.class
+SHA1-Digest: /uSB3ZPhYxieGKJnI+fJHvgT5GY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart$1$1.class
+SHA1-Digest: x4S4Wj9QFMmZWTkZ2Fd5jpW22/8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart$4.class
+SHA1-Digest: N5dPoVDXUfPO4Ym5zo6Kt1cC9QE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/CompactStateI
+ nvariantPreferencePage.class
+SHA1-Digest: 1ka/JZbTBuhrd8Aaj+PScLAg44I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageLost
+ CreateCommand.class
+SHA1-Digest: LeKfWNKRLtlOURugz8FGyZkXoj0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/GeneralOrder
+ ingCreationTool.class
+SHA1-Digest: bCgUTBB+5qEhCRIsyELfGhf9jnk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart$5.class
+SHA1-Digest: X97FVOGf0eyowBl4h2/QJyvTcZY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$Dr
+ opTimeObservationAction.class
+SHA1-Digest: oGGyt//TOOtW2YzVnKGMrjMog7g=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/TimingDiagr
+ amEditPartFactoryItemSemanticEditPolicy$DuplicateAnythingCommand.clas
+ s
+SHA1-Digest: 4wYnwlyBGxI6Vw+9bc0n7JGUwEc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/ModelElementSelectio
+ nPage.class
+SHA1-Digest: JLxCQNqjSzWYDLkG0qFpJVSgTBU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart$4.class
+SHA1-Digest: jBp3nCHQEVn9q3ZssU94BHEwyJU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart.class
+SHA1-Digest: JfcWciHQ9J2f/qAEg/Q/diyf0Y0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantEditPartCN$1$1.class
+SHA1-Digest: nJ4xa82rK8JczbV5G8rAiBxUiSs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$8.class
+SHA1-Digest: eFccmClEbtcOSbFwxSeSMJZlQ30=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLNewDiagramFileWiz
+ ard.class
+SHA1-Digest: gMf91hk5PxqrtxRBGTCHpROAPdo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart$2.class
+SHA1-Digest: zDwD6MSzUMjJPdRUUsGEhP4YIOE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageFoundP
+ referencePage.class
+SHA1-Digest: HKF8dKXnNGOq4Gf9OIgeyagbHdg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart$1$1.class
+SHA1-Digest: /wm12ccMOoF4bol49/5xWyGY01A=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart$1.class
+SHA1-Digest: CTEpwnMfnN0sUo/XMLoqlGWv/eM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart.class
+SHA1-Digest: GaZU5glgQSnk1/mp9TuoVPNmvrQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomD
+ estructionOccurrenceSpecificationLabelEditPart.class
+SHA1-Digest: yFvXFPw11rnL63ZvkQ5LrruGmcI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart$3.class
+SHA1-Digest: Dk5i13QS9sjFFBiACIrbRvMIBbI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactLif
+ elineFigure$4.class
+SHA1-Digest: bfCcMhEdAUYWk9SnV+Ri56WFeI0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/UMLEditPartFac
+ tory.class
+SHA1-Digest: uACMeRhOUYZCmHqVfdDIG1hfxdE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/Occurrence
+ SpecificationNameParser$1.class
+SHA1-Digest: vcgRvaVJKbUNcAGYzeUmKJQSe+I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart.class
+SHA1-Digest: uyXfwemSMTDXvMdZejkjWSWVIl4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart$1.class
+SHA1-Digest: P/y2wezIS+HxV9nQIOBhWlq9lJ8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omMessageCreateCommand.class
+SHA1-Digest: 5wD+OEUvRmGiKGlb36ChjVRFNmY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageSyn
+ cFigure$1.class
+SHA1-Digest: 3iY4hmHSjTbk9sw81FyjWtLGVAM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eCompartmentEditPartCN.class
+SHA1-Digest: lc1lWb6ep0UY8lxn2XcURwcgE+U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart$1$1.class
+SHA1-Digest: PmxzpvOiqawgwuy4GFWrHhcCeTA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omFullLifelineStateDefinitionCompartmentLayoutEditPolicy.class
+SHA1-Digest: I/O1DE9K9tt4thNS/vuIA0TXlXc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageDel
+ eteFigure.class
+SHA1-Digest: +wJeJqGyLZ4qzfOnHe5O/JOef2Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorCon
+ tentProvider$3.class
+SHA1-Digest: P6/Z7dEcwVDEQ7rmDa7r595U848=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLTextNonR
+ esizableEditPolicy.class
+SHA1-Digest: quJAcs23IOYDwAfORuD3yJCgIEU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/ValidateAction.class
+SHA1-Digest: PWiN34JNVZXYT3agMPvTZGSxtYg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Timi
+ ngDiagramDragDropEditPolicy.class
+SHA1-Digest: YM7KiI2eUsYnpA5rQaUxaPuXfc8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/EllipseDec
+ oration.class
+SHA1-Digest: E1UwQoNaEEWspAi5KSIy9f0kxQg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLCreationWizard$2.
+ class
+SHA1-Digest: FOdnHnJZ+5WDv5y9N0Gu8zKSX/c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Crea
+ teTickCommand.class
+SHA1-Digest: qg0cSEM/yawruW9Vg+Glxt/JzS4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostEdi
+ tPart.class
+SHA1-Digest: cfbIKV8ZHNxF6xjBo+xu+B0l+V8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageAsyn
+ cReorientCommand.class
+SHA1-Digest: ZV7+0jHOwwqOByUp8fPJ+3WnvTA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramUpdater$1.
+ class
+SHA1-Digest: syfx1VOi5AtJA9n7/ta6fI7zSHE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart$4.class
+SHA1-Digest: enr/JS9B8JQnRZdRAMs2Xb0mXl4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomU
+ MLEditPartFactory.class
+SHA1-Digest: 8omEnkCMutTxWJms+sXLIiQ8tl0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DiagramAppear
+ ancePreferencePage.class
+SHA1-Digest: Kv47ZMJdQF/DI+77q4YL7bZRjlI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Togg
+ leTimeRulerVisibility.class
+SHA1-Digest: b0olHNmTS3LACmDXWoTLwK+O9fI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/StateDefin
+ itionFigure.class
+SHA1-Digest: 7h2oqS61iEiq87jJ/08N+Jc8MM8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/DurationCon
+ straintItemSemanticEditPolicyCN.class
+SHA1-Digest: XBNcYhsST4i79PBOmCThx4DLHiY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/TimingRule
+ rFigure.class
+SHA1-Digest: uahheC8g69/DqDVSzcvw0XCBxQI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art.class
+SHA1-Digest: 71FJDgNeRDKkYySdrvWW0pMNraI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactLifelineCompartmentLayoutEditPolicy$2.class
+SHA1-Digest: J1gp6s42noRvbWUoNCmjCbQuUtk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart$3.class
+SHA1-Digest: HV4MwkidTdep8yEh6Rt8vphm3X0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationEditPartCN$1.class
+SHA1-Digest: B0wkY5rtlzH1igBcF7lwyDdZWFk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omTimingDiagramCreationEditPolicy.class
+SHA1-Digest: Ras5zcbVXlHHMiwuCJK9dtosEEI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLMarkerNaviga
+ tionProvider.class
+SHA1-Digest: 4JGIjDRUNi2ZifkkWVdMFvo+Z+I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart$2.class
+SHA1-Digest: JDOds3rSUqfzCgktTlbq/8YCag0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageLost
+ ItemSemanticEditPolicy.class
+SHA1-Digest: gMwB0HNfUQMEN8YXNVJDfwufavI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintEditPartCN$1$1.class
+SHA1-Digest: 6ceKWPk5Itzv9A8K5oQnQwOIohI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageDel
+ eteFigure$1.class
+SHA1-Digest: m4IqosjHM7T9KucS0pNNeckEUiE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomO
+ ccurrenceSpecificationLabelEditPart.class
+SHA1-Digest: y7d2pv0kp+DzfK7fWPpwLl/4g0c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DurationObser
+ vationPreferencePage.class
+SHA1-Digest: 31QzSrxqHEpXO7vFXdqHEZMIyvI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart$4.class
+SHA1-Digest: MBCLMAPq1S33YXKNA0kUMHhdRjY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torContentProvider.class
+SHA1-Digest: 2VW5lyNxnm6n8TbcG2wCpjcfKcU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ EditPart$1$1.class
+SHA1-Digest: 8gZbuFD4ck2L2aqCUx8ZShmGlig=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Abst
+ ractTimelineLayoutPolicy.class
+SHA1-Digest: kPFJr6hzFW884/llGT16C8IqCCc=
+
+Name: icons/obj16/destruction.png
+SHA1-Digest: S6wK7Yu7RwsbvsYBzYSUScEiiQk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/CompactState
+ InvariantEditHelper.class
+SHA1-Digest: BFTsFoHe+8/6IRclLOtRGDDn7Ac=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationEditPartCN$1$1.class
+SHA1-Digest: wIkmk+Z8NEXPkypY0j3q+6+HXjo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/DiagramEditorContext
+ MenuProvider$1.class
+SHA1-Digest: Cu1W6fkFYNB0M/naign2QJvnvLg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart$1.class
+SHA1-Digest: PfRU52lwc8UChoJqMGEOWEaFBec=
+
+Name: messages.properties
+SHA1-Digest: 0j18xd421Jp8HKL2PsAaGkdZnmk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageRepl
+ yReorientCommand.class
+SHA1-Digest: RxUluznP4rSzhiv4TOyoUb50D+Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart$2.class
+SHA1-Digest: CUevOeQvEg0Mc3kcZ1NkJTTJ1ow=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantEditPartCN$1.class
+SHA1-Digest: m5eeMccRCNQQm/8RT0nVXHPGVQE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomS
+ tateDefinitionEditPart.class
+SHA1-Digest: XyjARoTb5rCDf4QVOfuX+pjMgAc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$3.class
+SHA1-Digest: iGnAl63w+NlExkBzc98UR7AYFH8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLParserProvid
+ er$HintAdapter.class
+SHA1-Digest: PfRvOGVLKgh10nhr7vHpTGufjW4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomT
+ imeRulerCompartmentEditPartCN.class
+SHA1-Digest: 9bgBveWl3OonDT89T91256dpts0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart$2.class
+SHA1-Digest: An2wp5ansseSLCd+3Kx6QA3+zZc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omTimelineCompartmentLayoutEditPolicy$2.class
+SHA1-Digest: a5izae7eZmcZC1qKk32mGQNeKzI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart$4.class
+SHA1-Digest: DdRZlKI3q8gB8R+bNwCB0SImG5w=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/OccurrenceSpe
+ cificationPreferencePage.class
+SHA1-Digest: CyBeN9BBRpMrOKxdskCL+vulcys=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art$3.class
+SHA1-Digest: Oi1lV/7KHUvP13JxS0I63JyCqBo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart$1$1.class
+SHA1-Digest: QWkM0aSiWmr3fvuQACfVYc/Vj4I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart$1$1.class
+SHA1-Digest: PRXKnicsMY14L4fZIED0Px111ro=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/ValidateAction$2.cla
+ ss
+SHA1-Digest: EbxPmyeeszuUtV3Ra1XrTb1hTuU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ ResourceSetInfo$SynchronizerDelegate$3.class
+SHA1-Digest: vJB63l7MU/Pq4kcfL3CzPwHt1W8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Vali
+ dateInteractionCommand$1.class
+SHA1-Digest: IQJS884gWMv539tn+UOChdkjSWc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactLifelineTimeRulerCompartmentEditPartCN.class
+SHA1-Digest: gAh10R7RtJulEBYdaRvfpO8zjy0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLAbstractNavi
+ gatorItem$2.class
+SHA1-Digest: 7kHkK66x+aEP+elBHB3nptGsDc8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart$2.class
+SHA1-Digest: Rq2V7p8LYLZxO9V/Na4hFSTZz/Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/ViewUtils$2.
+ class
+SHA1-Digest: uKtYCPqHflOxYJYiMDREn+KAh4w=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Sele
+ ctionOnlyLayoutEditPolicy.class
+SHA1-Digest: BFX4G78HyGpXn2abyIU8PnXzJVw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart$2.class
+SHA1-Digest: uIMFNi3fikd/4ltkf3FTOMf5oXI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLValidationDe
+ coratorProvider.class
+SHA1-Digest: wCniH32w5auIlRcTDVIqumb3ttU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart$2.class
+SHA1-Digest: F2DXxE8k9tE0EKadAMRPQIIfCtU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart$3.class
+SHA1-Digest: oR05yqmmo8+6SeOKjVFNjMfqWHg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageSync
+ ReorientCommand.class
+SHA1-Digest: NUR8nnOfMbs9ShPmb8Vr0c7ksU8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Togg
+ leTimeRulerVisibility$1.class
+SHA1-Digest: TY5zfOH+VOObfKdRMPetcuRBvnE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt.class
+SHA1-Digest: VnzAuznLu5ClNfV9O0emlUYjf+c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart$4.class
+SHA1-Digest: FgBOyuZA2Y9i3y50MptuRKoBuL8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart$1.class
+SHA1-Digest: S0eccWz6vI57/s6lV1X+ACy0M1E=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/GateItemSem
+ anticEditPolicy.class
+SHA1-Digest: G8tp5v6tcnMz65f+zDVKcihge1w=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Abst
+ ractRefreshCommand$1.class
+SHA1-Digest: kfDI8wYIRjC+12ty3EMSy1yHF90=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$8.class
+SHA1-Digest: rwMGjSsdebox8QblZrHuMIMNwws=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart$1$1.class
+SHA1-Digest: vfAULC70HJGea6JVH4xlGDXQz0o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart.class
+SHA1-Digest: 9mfX0tOhzUpNYiJqcxFpd8eQ70c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/FullLifeline
+ EditHelper.class
+SHA1-Digest: Mblb78ZjUl6zr+JEQJwRBeJind8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantVerticalLineEditPart$1.class
+SHA1-Digest: aC6cckcBYk+HjyyOgnfnxdM+uZ8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart$4.class
+SHA1-Digest: DjsgIDmniEqP/UCD9XswVUiStko=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineSt
+ ateDefinitionCompartmentEditPartCN.class
+SHA1-Digest: CJO1bSBVcu/pKCPATXylMcEmgrI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageOccu
+ rrenceSpecificationItemSemanticEditPolicyCN.class
+SHA1-Digest: tQ9cpu14wf+IhdkpBpEH7qqHbJM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart$5.class
+SHA1-Digest: wmH3hR+48qKsZb4td38elOE1mcs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickEditPart.c
+ lass
+SHA1-Digest: 13W8KiI2eByQ+VusdRpB0EzQqw0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart$2.class
+SHA1-Digest: KMReeG2cNfZJ1/m34XpT5w0ZRHU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart$5.class
+SHA1-Digest: WH9BtZ4zG1m0hEPt7PsD5ygVJ90=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageFoun
+ dCreateCommand.class
+SHA1-Digest: H+yyd/iOtP5H8SqrGnlNLh0xMRk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLTextSele
+ ctionEditPolicy$1.class
+SHA1-Digest: 5rAhH3y02YLLmhbkdAy4pWpgTSE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart.class
+SHA1-Digest: 7V2coJz1KwemWZCQCdisfR/KO+U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart$3.class
+SHA1-Digest: Yng+Akk/iehTnBOawvQJsoqyALQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/CompactLife
+ lineItemSemanticEditPolicyCN.class
+SHA1-Digest: +3AqZnn508CM2L3dWFcZfm3vwJk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart$2.class
+SHA1-Digest: 5AwKErYGAUJEV9uiP/qF+GOsK9U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/Interaction
+ CreateCommandTN.class
+SHA1-Digest: swlDzWBRib4ISJAGQSUiO2ORs00=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/DurationObs
+ ervationItemSemanticEditPolicyCN.class
+SHA1-Digest: cCd+FtjpaooXBYuh1nsjJNy0GQo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactStateInvariantItemSemanticEditPolicy.class
+SHA1-Digest: 7ilUOoai5A907qQJSA/LALGfVvc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart$4.class
+SHA1-Digest: KhtLMjqAWDTCb5KpPUwLuyCk7Oo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/sheet/UMLSheetLabelProvid
+ er.class
+SHA1-Digest: fMoIaAh0qt9DhRkroHxSaAodthA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomG
+ ateEditPart.class
+SHA1-Digest: fxiBITvLSi/+thHJGzVMGQzGJSU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/LifelineVe
+ rticalLabel.class
+SHA1-Digest: 4pJ0oqO56tHieiuYextQ8UKYZag=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/DurationCrea
+ tionTool.class
+SHA1-Digest: Ry9Fwty4/YxLq6IvkDMjf3/xvJg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/SwitchLifelineActi
+ on.class
+SHA1-Digest: yfIa/aPIkwatFk/IOIIgYu8/NQY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/LinearTimingR
+ ulerPreferencePage.class
+SHA1-Digest: GM37snWgsD2rnR+z+rFpQUMU+n4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart$1.class
+SHA1-Digest: i3yg4A26AMal8CwHsKXRHl4St/8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineTi
+ meRulerCompartmentEditPartCN.class
+SHA1-Digest: Dcb1Fag8n/Pugk/M0FViwzyy1qs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationEditPartCN$1$1.class
+SHA1-Digest: YQigavYntuVqKxVLejZlDv3J8nk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt$2.class
+SHA1-Digest: WijZ/22rJGMBRjocYJMYZEwCBGc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart$2.class
+SHA1-Digest: FSkcaZShKEiNEfDo2TTCMPapUjM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ ResourceSetInfo$SynchronizerDelegate.class
+SHA1-Digest: +sIT0FnHWDkYl5VWfcGX7tAsz10=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageOccu
+ rrenceSpecificationCreateCommandCN.class
+SHA1-Digest: z+tXtZE5NmGAsDVZ2sPqx7s8f2g=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$1.class
+SHA1-Digest: t6YpFx3ZarsOwqj5+PMr1KARIlY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomI
+ nteractionEditPartTN$1.class
+SHA1-Digest: cB+tR3Voh0WpxXPyx48sPJu9CSs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Vali
+ dateInteractionCommand.class
+SHA1-Digest: OQOLcaNWR8YvmQ9NYX73JG2Ffi8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageCreat
+ eEditHelper.class
+SHA1-Digest: NAfFAOPTmrwj9WilNIGEl/vz9Ds=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactLifelineEditPartCN.class
+SHA1-Digest: n4DF0VstU8SiWoZBPc4YJxJTdT8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart$1$1.class
+SHA1-Digest: g7akDYxUdT4PULsuBYPcVtDeaF0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/Constants.cl
+ ass
+SHA1-Digest: Zuf9VtqJgAaKS6QWtEhTV23WG50=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart.class
+SHA1-Digest: MgigiwebfYy9ueDMh08UFhePpJ4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/TickUtils.cl
+ ass
+SHA1-Digest: nDc66/ZCOzh8WjyZkfAFoGdtdfY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/LinearTimeRule
+ rCompartmentEditPart.class
+SHA1-Digest: v2wlCPdiphqVH9ssR9LltPhGNu8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/OccurrenceSp
+ ecificationCreationTool.class
+SHA1-Digest: ibBnxa4FMr4aABYjnu6Xlzn1iKI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart.class
+SHA1-Digest: 53aN6/HTzHI1g4jCDJfO+d8cAaA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Abst
+ ractTimelineLayoutPolicy$2.class
+SHA1-Digest: bIneAx96xPt8tCFAN23/sYdsIlM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart$3.class
+SHA1-Digest: +wANZotJ9TDKLeD4Kkr7IFChzss=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickEditPart$1
+ $1.class
+SHA1-Digest: dX1sEQTsPx1W/Z4iVOhBt7vFIAY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactLifelineCompartmentLayoutEditPolicy.class
+SHA1-Digest: mUCcGHO6r4E/dz+k5duz9Adw+YM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart$1.class
+SHA1-Digest: 8VGT49xS6rnRnow4GWZmucJStVA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart$5.class
+SHA1-Digest: H1VTiA+bBTWUR5KJ7xp/P0BnnXc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart$5.class
+SHA1-Digest: LRKckr6aCt3WjMMcv0XZVxEJwME=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLModelingAssi
+ stantProvider.class
+SHA1-Digest: oYDpMpv98FNqGPQkAxQD4a0mJZE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/MessageUtils
+ $1.class
+SHA1-Digest: RQhUOlYEoukPofYZVJAdh9U6Q8I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditorUtil
+ $LazyElement2ViewMap.class
+SHA1-Digest: 559o0OKzs0INpYtohWLxK9+QNLc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart.class
+SHA1-Digest: l9dVMEocMadtn48T8jzRXIcQ/cM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLBaseItem
+ SemanticEditPolicy.class
+SHA1-Digest: EtODw0iLOoagCYAWN1FJZld5kvM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ reeTimingRulerEditPart$1.class
+SHA1-Digest: yl9fPksO9n++cY12s3iBY+jqr60=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart$2.class
+SHA1-Digest: 7IWZ1u5kKUeMhrDNZ1XueJDTT8U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart$1$1.class
+SHA1-Digest: k0XPJLFpSdC0SF6YfLC7br9VjgE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomS
+ tateDefinitionEditPart$1.class
+SHA1-Digest: v2wh8EoNaauS1QMyUJMyzJCnOw4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart$3.class
+SHA1-Digest: G4itoMIusOY+n9NRKxSxfqVEq70=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart$1$1.class
+SHA1-Digest: ZWi1N8nyxOdDzYKJYedQnJWJ1zs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/TimingDiagr
+ amLinkMappingHelper$2.class
+SHA1-Digest: Pgldw+ehIgZUUHXmokNE6pWMz14=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart$2.class
+SHA1-Digest: Oc5PBcxwoxcdQZbJzWkOj/81tlI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$6.class
+SHA1-Digest: S0Gh42Wa7ZHVGVSbcjObzSVTlRE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$1.
+ class
+SHA1-Digest: Gk4eZrWh/x5+YfxsFapBAjF0O1M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor$4.c
+ lass
+SHA1-Digest: fQ5sHN+9Jjy5fYBZQvQTszg34Gw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart$1$1.class
+SHA1-Digest: QWANaBHWwa6cZtxQc2ZgFwKPIo0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart$1.class
+SHA1-Digest: fPZAxUCATb+NiJo9VJh3P0Yh4oQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand.class
+SHA1-Digest: 80ou7OJdMKNhEmnIZKjvLMskqT8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactLif
+ elineFigure$2.class
+SHA1-Digest: umYY/GzabuYCwhtPxXGyWZRb/xo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nEditPart.class
+SHA1-Digest: 4LkhkptmDTG0KvsDEem0jA847xM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimingDiagramE
+ ditPart.class
+SHA1-Digest: r0t3uGbB42G8Q04fyqpWYR9aaNE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart.class
+SHA1-Digest: VRYOzcnk6BawF7rY/K9VtMjT7JQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Gene
+ ricListCompartmentLayoutEditPolicy.class
+SHA1-Digest: SZceCfc33sVpaPnwqDRLbOKXZ08=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omFullStateInvariantItemSemanticEditPolicy.class
+SHA1-Digest: DitWQyPQ9sRlPYLQetSIFHmbkMg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorCon
+ tentProvider$1.class
+SHA1-Digest: Vn5jP91KVN7d5YRb4sY1Qiy+0KM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomM
+ essageOccurrenceSpecificationEditPartCN.class
+SHA1-Digest: pErbgcOxWQAo2cOnAVX69kKX+vA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactLifelineCompartmentEditPart.class
+SHA1-Digest: +x1iyXDTjRWl19rDhhskmADk7zE=
+
+Name: icons/obj16/Diagram_Timing.gif
+SHA1-Digest: 9eDZsIz+zU9yHA/c8kN+Bsvtguw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageOccur
+ renceSpecificationEditHelper.class
+SHA1-Digest: fO99FiapqJ4nmLUZE9fck5jAuCU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomO
+ ccurrenceSpecificationEditPartCN.class
+SHA1-Digest: xAq+cB59qGpaD/AxbwSswbtyilQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/AbstractTwoP
+ ointCreationTool$1.class
+SHA1-Digest: wgs4UrZtA+zJSWmlYSLMa2NVMj8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/FullLifelin
+ eTimelineCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: kUsd/S25XNqA0HCRa5H/nNScY4s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/StateDefin
+ itionParser$1.class
+SHA1-Digest: Lj268GZBCLHlq67vIr+rMCmWUSI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageLostPr
+ eferencePage.class
+SHA1-Digest: vSoI6wW7iDyKP0FfrOsr901ZZug=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/CompactLifel
+ ineEditHelper.class
+SHA1-Digest: S/8viWX0wayyVC9lVkN8210QGoA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart$5.class
+SHA1-Digest: 1lSVAQQuzDvu0lXxRgmB+Wfz0xY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart$2.class
+SHA1-Digest: uzeFvKgnE7pUtIM8rrwPc3xqP6Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLNewDiagramFileWiz
+ ard$1.class
+SHA1-Digest: u3tntrirLEObzZORlnXQjKFgpUA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/CutA
+ ndInsertOccurrenceSpecificationCommand.class
+SHA1-Digest: Kk5BeFZ3mzo6Dxe7GdG7fQip0ZQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart$4.class
+SHA1-Digest: jkVDbmjc1nYVlRuUwB8ud2sJhqg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart.class
+SHA1-Digest: QkA3r6JYKAhkpizdPJFnEMQQ07U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart.class
+SHA1-Digest: uTiQkQeem9KK8JgxtmQwLQ/pdbU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Time
+ RulerVisibilityRefreshEditPolicy.class
+SHA1-Digest: QvImBQYUEGUyFxBa5s9obNksTIQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCreationEditPolicy$1.class
+SHA1-Digest: 8eNuCEiw+23y6TBkgBtbwSiGtsE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart$1.class
+SHA1-Digest: yKSvX66W9MV4a0uki3EoM5dDcBg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart$4.class
+SHA1-Digest: RtCIGKnbQhv4lm/Nm1Tqsp/75Os=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CustomInte
+ ractionRectangleFigure$1.class
+SHA1-Digest: VYBXCR963+t0JlrdipcZ/oJQnig=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/TickPreferenc
+ ePage.class
+SHA1-Digest: ePRSvQXjm/sJ1f4uPpwBNmzYN7s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/GateCreateC
+ ommand.class
+SHA1-Digest: 9tVKkzfxDsAS4hwgQDR8xniCup4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart$2.class
+SHA1-Digest: z8S8YQ4X98NmeJ2VMw5bl+XvgJ0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageCre
+ ateFigure.class
+SHA1-Digest: sAiyp9TIb7qQUA/7ZP4rcGultuw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Gene
+ ricListCompartmentLayoutEditPolicy$InsertionPoint.class
+SHA1-Digest: YwDgXHYwbaEwy8f/kuPBrUlAu/g=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart.class
+SHA1-Digest: GMyw1/Bt5hevkWFSLWGSq4djMp0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/expressions/UMLOCLFactory
+ $Expression.class
+SHA1-Digest: pEZ6YyDuTcQ1qe9yGkR4RRtdO7k=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/sheet/UMLPropertySection.
+ class
+SHA1-Digest: IcOKR3L5brIgyT7zQd9TGgp7vlU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/layouts/TimeRulerL
+ ayout.class
+SHA1-Digest: gjJ+lMaUgq8rKb3fl9nbeWlNONM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Abst
+ ractChangeLifelineTypeCommand.class
+SHA1-Digest: onD6oGBAMi2E+E80FgnllgeHlms=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyEd
+ itPart.class
+SHA1-Digest: T4WvUWUb/CSVNrnng7XlDF3PCZ4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionEdi
+ tPartTN.class
+SHA1-Digest: guUiWgU1mJMDE9ItmT2sLAZe2EU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageAsyncP
+ referencePage.class
+SHA1-Digest: BkGKAhW5lmnLOLdM8bqM668Zk4o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart$1$1.class
+SHA1-Digest: D8ecY9keoF9GJBKV4jlCkoMK8Dg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DiagramPrinti
+ ngPreferencePage.class
+SHA1-Digest: pr7TBBvJPRBC5qkBSKe8Cb0DLGE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomT
+ imingDiagramEditPart.class
+SHA1-Digest: SYRK5ANSg1hgWg0bwFTXKKnzsWQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/parsers/AbstractParser.cl
+ ass
+SHA1-Digest: qf/MYp5Vvm8i3WLkCgpC4LsC7Y0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/LifelineEditPa
+ rt.class
+SHA1-Digest: T7fvaSGK9giL4ChDm7GlxUQ+f88=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Crea
+ teTickCommand$1.class
+SHA1-Digest: kGuZFnRyBFGlyT0wA1FJDLqejNw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncEd
+ itPart.class
+SHA1-Digest: pAaWluk7z1Zy/89F5UDmMWKalzU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/Messages.class
+SHA1-Digest: /RLxc+3texocHgkdx84qDjOZ6cE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditorUtil
+ .class
+SHA1-Digest: H6kXlyuB7oU33GfeCyLTjT4T89U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorCon
+ tentProvider.class
+SHA1-Digest: h9lEPLMyJuB+E3LzewPsHPlgHfo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/GatePreferenc
+ ePage.class
+SHA1-Digest: zBWHirRSZbZccKPVLPtxTxFfo4Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart.class
+SHA1-Digest: NtaUDTe6bf0q4JzsqBuXifyHiBY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/GateEditHelp
+ er.class
+SHA1-Digest: lBbyDCfOCSEqTWPvQcZ9LRqk5Yc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/TimeObserva
+ tionCreateCommand.class
+SHA1-Digest: Exx4W2UIX924cVtVWC7ebE1RyzU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomS
+ tateDefinitionLabelEditPart.class
+SHA1-Digest: Vv4r0A5pr/FtFjsOOiS7ldLT0kg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$1.class
+SHA1-Digest: SIbgORxLviHkz00TyEHCVqWx56o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/Utils.class
+SHA1-Digest: hDpKgbBWPVGOWymVh2k9b8aBozY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/TimeElementU
+ tils.class
+SHA1-Digest: bIrL+BC9oQcXgydZEU5QrhqAPow=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart$2.class
+SHA1-Digest: F2fJEAI3xpWFizRpnkuiPf2vdyk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art$1.class
+SHA1-Digest: aN+5zsNz53fQUtI2SrA92wcUWzE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider.
+ class
+SHA1-Digest: TnpWR/oc4PwZ/xtLdJHeODiRnHk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart$5.class
+SHA1-Digest: JgDbk4D4yP5O9O8239gQ6FOVZ+E=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorSor
+ ter.class
+SHA1-Digest: 2t9Sm7qyE8RkqEQXNo2KopcIDcw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLAbstractNavi
+ gatorItem.class
+SHA1-Digest: IcyAi/ZUhGPWrcy+3b0oZRwwvzo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ ResourceSetInfo$SynchronizerDelegate$1.class
+SHA1-Digest: uh7oipRSCA5TAxKbyEMQWgiWNaM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/OccurrenceS
+ pecificationItemSemanticEditPolicyCN.class
+SHA1-Digest: xx4an17axzXqzEFL66RyWkXEq3E=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactLif
+ elineFigure.class
+SHA1-Digest: qqgNAhO8MSw/GKiM0vpET0gdwmY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torContentProvider$2.class
+SHA1-Digest: ZVPsDLkLtEELc6GgmIdjsHKKEiQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLElementTypes
+ .class
+SHA1-Digest: 3LruIt5BSj6f+XjADuUtIVtDOnY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart$1$1.class
+SHA1-Digest: Jvd+ZpYlb3QfmAwla7AWnWD55x0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart.class
+SHA1-Digest: QNxRZkc/YuseLQi+lqAt9H8ga6U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory$4$1.class
+SHA1-Digest: 9mneaXQzGY5H9UkWH+ICau8b9jI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart$4.class
+SHA1-Digest: RLUNSW8Q01Y5xZrfDVmWFqwSRTM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart$1$1.class
+SHA1-Digest: Q31W4ZDi7xAHN6/HbgURD7+FUwg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart$1.class
+SHA1-Digest: NrhhGZhRmEJVRpxAkKY+EgcTnKo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart$2.class
+SHA1-Digest: SDf5pxTbLDul3DCRrKcUgXpJTEU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart$5.class
+SHA1-Digest: FnWl1AheKQzhOhkmwEbKB3/5CqQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$6.class
+SHA1-Digest: 4weMrcuM7E0uDY/qsl0TCLScIEs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart$5.class
+SHA1-Digest: gidDPdQJhcZmdBK7CLIMKunDaRs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomI
+ nteractionEditPartTN.class
+SHA1-Digest: JC8Dnj1JR7KRWWOmMWMUX+saA9I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart$2.class
+SHA1-Digest: +My+p1zp7EyZ4e4amq/FCsicCo0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor.cla
+ ss
+SHA1-Digest: Li4geqNQgIIqUyKaIbEve6O8znc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart$3.class
+SHA1-Digest: JwLRIwILyh9N/LyybJJ6L5yYxA4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart$1$1.class
+SHA1-Digest: VQsvdpI8zMr+rhFjNM9vXr0UdJo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomI
+ nteractionCompartmentEditPartTN$1.class
+SHA1-Digest: /TdGiRZUy522dTiVoPmZPx5qUMc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart$3.class
+SHA1-Digest: AJG2SSofg0rYpGYng5tBvGRRTmA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart$1.class
+SHA1-Digest: /qfXoFEHGzKT7wP4bayrvID97xA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart.class
+SHA1-Digest: dTkY9pYjMRAcwggylpkGaGtlprY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorIte
+ m$1.class
+SHA1-Digest: FDqRkYopm73cFhcNX6fxUAsCSe4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Timi
+ ngDiagramDragDropEditPolicy$1.class
+SHA1-Digest: RvqY7TFVxnAD1T+mDGjCTDwkVmo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart$2.class
+SHA1-Digest: r4XB0dA2+K+zYo30hxKazXnw8Pw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart$5.class
+SHA1-Digest: F8IxR40KF+325yRFeiruUt5iQ4o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omGateItemSemanticEditPolicy.class
+SHA1-Digest: kKbZm8c7MSjyXf+HugM6Xm6vn34=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gEditPart.class
+SHA1-Digest: kqbpEsKQkTyA8/ClCuX47dqafl8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/FloatingMess
+ ageAnchor.class
+SHA1-Digest: Se4VMlGiBvj380vimqvkkFQett8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart$5.class
+SHA1-Digest: EReDIYatPfU+ZtM8Eqq1r2qJPB4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullStateInvariantVerticalLineEditPart.class
+SHA1-Digest: 8WH1v5AA3kqPbQXnP9qh+Vz29N0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omTimelineCompartmentLayoutEditPolicy.class
+SHA1-Digest: ZcJyDvKv9uPctFeZtj1Ny9I3bq8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart$1$1.class
+SHA1-Digest: 60TnqOj2RAj2EEtRCfJjlvj+1hg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart$5.class
+SHA1-Digest: Nk2Gl4Fg3qwV65HLVGan5Ove3dk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineEditPartCN$1.class
+SHA1-Digest: Kt/Nc+1OxptSMn2whrSvrf3P7zA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart$4.class
+SHA1-Digest: pBWXYdZRVTD3q1+v5muBTkcCHu4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart.class
+SHA1-Digest: imc6/AQdkyV6k7N5crFROm7ohD0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart$1$1.class
+SHA1-Digest: hIYoYm2SYfBav27eIBpxYj33OgI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageOccurr
+ enceSpecificationPreferencePage.class
+SHA1-Digest: kFkkH/AJFOzZWoF9uMiQYyDAFgw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/messages.propertie
+ s
+SHA1-Digest: L6g897ghAJYHpxTTa7mhttmMu+8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart$5.class
+SHA1-Digest: kBVdOzqDIzWOI9QatFvyzy6kebc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLVisualIDRegistry.
+ class
+SHA1-Digest: p/5KPh6/BJRtJAVdtErKSwPn0cc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ 2.class
+SHA1-Digest: 6T/bIBNr0GHwPAyRbYL3/yQQgS8=
+
+Name: icons/obj16/tick.png
+SHA1-Digest: X0avro3bFVHqGjSCWFKl0i3AD9Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/FullLifelin
+ eCreateCommandCN.class
+SHA1-Digest: JW9yZg+kwaqz4FHxUcv2s0/f3G4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart$5.class
+SHA1-Digest: GO5X3oXuorxUKrUzdrQiw4BU4VU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageDele
+ teCreateCommand.class
+SHA1-Digest: 103UEuXfWuf+5tj/K3jTOLNRVFM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart$1.class
+SHA1-Digest: a7bOzoSoy6d59CHX0KsayrG+DBM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$Dr
+ opDurationObservationAction.class
+SHA1-Digest: 0qLgbUn/v91hvRH0wJz96a1Gy8U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omFullLifelineItemSemanticEditPolicyCN.class
+SHA1-Digest: 6c9AS8J790X26jnvq4pwobNqUK0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart$3.class
+SHA1-Digest: 98sw9HEuorRXYt39v61ikkjnv28=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart$3.class
+SHA1-Digest: m3RHBzTfsdxc2SQQ1xgOwXkzbt8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageLos
+ tFigure.class
+SHA1-Digest: qsFdwdG4TGfOhZVINIZ5psdzFJ8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FreeTimingRule
+ rEditPartCN.class
+SHA1-Digest: Qo1GzyCxrgrBQNSC4+9OqUaw15o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/FullLifelin
+ eItemSemanticEditPolicyCN.class
+SHA1-Digest: loX+BIo0YeXQT5yBgzEcu01KKRs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/VerticalLineS
+ tateInvariantPreferencePage.class
+SHA1-Digest: bqPxLegJSQElf+/3aiI0/Dl4R5s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart$4.class
+SHA1-Digest: OLy8qAlNRUC4zkKgkq3VL/tBLRk=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/FullLifelineP
+ referencePage.class
+SHA1-Digest: XwW83NObdwOZChEgHJRsszooFRI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeRulerCompa
+ rtmentEditPartCN.class
+SHA1-Digest: PwugJY759oUdmOV8Fvhh2iONKDY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart$1.class
+SHA1-Digest: qWaU43edLWHLNxgO3NDuehK9g7Q=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nEditPart$1$1.class
+SHA1-Digest: Mj1yjfxhIb+uNNIJ+prmLVclwbw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt$5.class
+SHA1-Digest: fZbAc1uME2FKJU1e2XFIIO1lwDA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart$5.class
+SHA1-Digest: nn57L4GpF62/rol3SIxTj6706Eo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$4.class
+SHA1-Digest: mto4ZjZDL0ekFcAz0hql0cgM2Ds=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/LifelineFi
+ gure.class
+SHA1-Digest: R0/qb2EPXyET3O3sc4OGJlTf2Is=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageFoun
+ dReorientCommand.class
+SHA1-Digest: c5GPJVksacEogZ2yGT5FZd1vesg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor$2.c
+ lass
+SHA1-Digest: JyleRX9y4P/hOWzNTE4WvujvwY8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/LifelineVerticalLa
+ belCellEditorLocator.class
+SHA1-Digest: qUAqk2vdsCY76pLgmZHM8Cklqyg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart$1$1.class
+SHA1-Digest: ntr/XeL5g/UJD3DJLFCefGxchSI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageAsync
+ EditHelper.class
+SHA1-Digest: 7ozVNroFg9i9dM+88LGrfzKDL+8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory$3.class
+SHA1-Digest: NZFP/hbjcXk1IAKiGPFQ2CnORUU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/LinearTimingRu
+ lerEditPartCN.class
+SHA1-Digest: XX6EJwkm6dQ8XQX/J3YEj04iZn8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomM
+ essageFoundEditPart.class
+SHA1-Digest: N2pzRPYw44YdazamsXsJz/h7lKE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/DurationCon
+ straintCreateCommandCN.class
+SHA1-Digest: V01f/lV+OgNjF93B3BlDi7v5zFg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Refr
+ eshCommandForDo.class
+SHA1-Digest: +Y872GIrDSN9byoF4KnjhP7pIvI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart$4.class
+SHA1-Digest: BrrqW8QQTdJVQ1g2fX/cOXZZ/uM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageSync
+ CreateCommand.class
+SHA1-Digest: jghwhzNxcjSy8YAkC9YPaoeAjz8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLParserProvid
+ er.class
+SHA1-Digest: dBeBQAYyqSd5+9n7ppYV2bZBGjU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineEd
+ itPartCN.class
+SHA1-Digest: 6SIC/WtEWvHb/1sNXCLyqs+JPek=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/Destruction
+ OccurrenceSpecificationItemSemanticEditPolicyCN.class
+SHA1-Digest: sGb8h/EnFwzP+if9hNNxBzAuaQ0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart.class
+SHA1-Digest: g+fPnq2hedIKcuuTKTr/0TlY4ZM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart.class
+SHA1-Digest: ylCqRNz4CMeGZi1KjWZc2HunmNk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramContentIni
+ tializer.class
+SHA1-Digest: qSMPq1unJceY6+lOEzfkSjk9Rpw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/FullStateInv
+ ariantEditHelper.class
+SHA1-Digest: JmodBGRGz1gqtUXeK8YG0ThWyS8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart$5.class
+SHA1-Digest: CV13pOChFDaEN1LxshweJsq72vY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ EditPart$1.class
+SHA1-Digest: 8Oy1w9I8wjWCI/zbUhQTWXDOb74=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCompartmentItemSemanticEditPolicy$1.class
+SHA1-Digest: 2uAzL597vfZHzvEsmN2VqvFVdnM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLTextNonR
+ esizableEditPolicy$1.class
+SHA1-Digest: dHRw5wj6/JKsQ+8ECvVsx3GNmEE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLIconProvider
+ .class
+SHA1-Digest: MYezFupr32OgPvKJ9kZ3H+ovueU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart$5.class
+SHA1-Digest: z+pVKc6FsxjJXoqW186Gy7pPllo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/ViewUtils.cl
+ ass
+SHA1-Digest: ky7y7fbW9buov9ahjst8lOFshdA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactLifelineCompartmentEditPart$1.class
+SHA1-Digest: yZG0Wy8Rf7WLYZCeakUCCqVPxVY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart$1$1.class
+SHA1-Digest: 3jUm8ffmvvqJbj5JL2UmLVuXY6o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageRepl
+ yItemSemanticEditPolicy.class
+SHA1-Digest: Ozchi2PpYujOE5hxUBf+WIA5vps=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageAsy
+ ncFigure.class
+SHA1-Digest: CfOEN0K1qlkQ7x9yUCNrVz2Alt0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/ModelElementSelectio
+ nPage$1.class
+SHA1-Digest: pWoQoOLZ/oU88vAj0NdvAEVNVrs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart$3.class
+SHA1-Digest: 1CuSMjIw30bexgFCWPgagygq6ck=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/parsers/AbstractParser$In
+ validValue.class
+SHA1-Digest: +5CmWCZQGGwdDPNjKS1D7+btDr8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageDelete
+ PreferencePage.class
+SHA1-Digest: pRvdLE9JTzjB4WHWDczY77GAWyk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart$2.class
+SHA1-Digest: VHCKg2rO+IiPyOT6eLKRFZEs8Tw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FreeTimeRulerC
+ ompartmentEditPart.class
+SHA1-Digest: 3LMfyoMeyQXZuFL7pt978Ayuj0c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory$3$1.class
+SHA1-Digest: 0JF6VaFtABwIFgyUgIxZK5b0O/k=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Layo
+ utEditPolicyForLabel.class
+SHA1-Digest: lgP11zeJzL8iKgD284kEvYcZXX8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ reeTimeRulerCompartmentEditPart$1.class
+SHA1-Digest: L9/XwkVUVsdw7xF8Ayv9fvCbHj4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart$4.class
+SHA1-Digest: lgAMrh8Llf17keKW4i444PCbRYk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomD
+ urationObservationEditPart.class
+SHA1-Digest: xLM07UEt1Y3FcvY0anjlEkwYSD8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactLif
+ elineFigure$5.class
+SHA1-Digest: rId6tn2VKU7nsLK2llwVNxtpYRE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageSyncE
+ ditHelper.class
+SHA1-Digest: Cbm7lRzQVPB4JtaSNOO87In4r2c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomT
+ imeConstraintEditPart.class
+SHA1-Digest: qAN0LCUU4NXwQDWwlondnETYHNY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eTimeRulerCompartmentEditPartCN.class
+SHA1-Digest: YzEWHJ0yQhuzIVINvMeMPKY0HaM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/CutA
+ ndInsertOccurrenceSpecificationCommand$1.class
+SHA1-Digest: C5SoEXDFNxLjofJZ+iHEVSwrcnM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/Destruction
+ OccurrenceSpecificationCreateCommandCN.class
+SHA1-Digest: K/gdEQ8riqmsyN8nUxAZnffs9tQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart$2.class
+SHA1-Digest: 0qepNFQTYbbcDDJtRQsYVvGs//o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageSync
+ ItemSemanticEditPolicy.class
+SHA1-Digest: GzszGoshElOF1W63Z3OnzBSvSj4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCompartmentItemSemanticEditPolicy.class
+SHA1-Digest: tCsW4h4lAvkw7tEi66aww1Q4GT8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart$1$1.class
+SHA1-Digest: InYh/GGGUhgXcFohHegnPoTWL70=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ ResourceSetModificationListener.class
+SHA1-Digest: 8n/7ANN4Fjh2g+SjYBoedCJy3yg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLUriEditorInputTes
+ ter.class
+SHA1-Digest: Zcc4J1ZWV9e39dmORCk5P6sDFvY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactStateInvariantEditPartCN$1.class
+SHA1-Digest: rHF3sIrmYMWKBU7+B2jUBk5EmJY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactLifelineEditPartCN$1.class
+SHA1-Digest: +1L4lTwA1nuWDa6BvKH9JcmYe2g=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart$5.class
+SHA1-Digest: BshExCxS9QVS/hlEW0pfIzHgfW4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/Constraint
+ Parser$MinMax.class
+SHA1-Digest: zgJReGMMXCtEv9KPv8Vsf0jmqKo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/MessageUtils
+ .class
+SHA1-Digest: H9AjzspbHqTHzrlBF0mzkZPxkcc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/advice/Occu
+ rrenceSpecificationHelperAdvice.class
+SHA1-Digest: GiWTk3dRShobhoMvTfErY1PJYmw=
+
+Name: icons/obj16/stateDefinition.png
+SHA1-Digest: uGdCLlwSuOh7prQh8twtmZnoE+4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/SpecificType
+ CreationTool.class
+SHA1-Digest: LHfMRJHoVcFE6/qIni8BiBGbKzQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/TimeConstrai
+ ntEditHelper.class
+SHA1-Digest: bEXmYWXcIE+xZWnkgJ4gtXm0f0s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gEditPart$1.class
+SHA1-Digest: emDF0N1YMJn463Pe8LQzJnqd5Ok=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationEditPartCN$1.class
+SHA1-Digest: Zq8Qv7jXJMqXfquEyBZjWcR65sI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/InteractionU
+ tils.class
+SHA1-Digest: mTs2/wDZBE9GWiuEDIM5GC9pVKM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torItem$1.class
+SHA1-Digest: TXEn7C0OXAyIQwsljpzQ3mZpgHk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateEditPart.c
+ lass
+SHA1-Digest: mamXd9B+zrQiccU9o91JpJq6OEg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/FullStateIn
+ variantItemSemanticEditPolicyCN.class
+SHA1-Digest: J67X+TXk8dpgUOzeMEPevbuDl6c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/LifelineCre
+ ateCommand.class
+SHA1-Digest: vLwLRLgrpztgRQyzW8rXjQGi610=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactLifelineCompartmentLayoutEditPolicy$3.class
+SHA1-Digest: Um9jMQvktKj8EX43H3OHcreEBiE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart$4.class
+SHA1-Digest: zGkqVglmdltVB+lM/vSXwinpXPA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omDestructionOccurrenceSpecificationItemSemanticEditPolicy.class
+SHA1-Digest: MwlV1Yshmxcjt3PSYSQNqIwtLOU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/CreateTimingDiagra
+ mWithNavigationHandler.class
+SHA1-Digest: 0zj5ACrQqLUE04DsccTeb0PGCSo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomI
+ nteractionCompartmentEditPartTN.class
+SHA1-Digest: mhqpllxEpXRRTCP7bMQT5WdOxEo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart$3.class
+SHA1-Digest: rwx0zX+3LGHMllv53+PSZuaazdU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/CompactLife
+ lineCreateCommandCN.class
+SHA1-Digest: 2X/yodhl6oEH165qT1MW+eaQ7IY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart$5.class
+SHA1-Digest: uMSA2YL3pgCIv1it+GkW2F94X7k=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt$1$1.class
+SHA1-Digest: sa9NSvc+zwjPX9hLHaaWoPVFY3g=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageSyncPr
+ eferencePage.class
+SHA1-Digest: LHAthWZoaQXK580NQS8BeDDXcZc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomT
+ imeObservationEditPart.class
+SHA1-Digest: EGrrswhIrwYqwdB3CPAEdjhdgHk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omLifelineCompartmentGraphicalNodeEditPolicy.class
+SHA1-Digest: DeOd1kXNxk+4pEj8ZuRSaLhTC/Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/TimeObserva
+ tionItemSemanticEditPolicy.class
+SHA1-Digest: YTLbZ7UExZ1/1/72EAjDbV/B918=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramEditor$3$1
+ .class
+SHA1-Digest: H/Hhk3MQ/DHhdKGPTmKpiqDcKnU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageAsyn
+ cItemSemanticEditPolicy.class
+SHA1-Digest: 9ZIQYBHKCbXH5KY6DDLjhGql+IA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantEditPartCN.class
+SHA1-Digest: h18IIjF55JHe/LSYnSJnYYLJYys=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart$2.class
+SHA1-Digest: 0t5YdoCtqn2agyMGI1ax2CaQT9s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/MessageSyn
+ cFigure.class
+SHA1-Digest: EujbkfS17J/EEftx0Q3Q5jaHOLA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLNodeDescriptor.cl
+ ass
+SHA1-Digest: fXuYB1hZ7VIzYzTq99PlTwPZ8lI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/MessageFoun
+ dItemSemanticEditPolicy.class
+SHA1-Digest: rHJlrHQPilVQtr1NEFmM7Um4ykY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCompartmentLayoutEditPolicy.class
+SHA1-Digest: 0mNKUXC2Coe4RN1dwj58uY0l43Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageCrea
+ teCreateCommand.class
+SHA1-Digest: AB9n6VLmLObLa0ciua2afJ48/Tc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/UMLEditPartFac
+ tory$MultilineCellEditorLocator.class
+SHA1-Digest: tJV1VGiGHh3GnyPp+LSvKFIVHNU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart$3.class
+SHA1-Digest: 64xW06/ZCN9HcFoZH4exZXLjSvU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart.class
+SHA1-Digest: ggv9ekVvYAf2t6iYQeiw1zup50M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantVerticalLineEditPart.class
+SHA1-Digest: b8uk/unzSWz+8F/c4gr13Q5ODoY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$4.class
+SHA1-Digest: fetP8GtMAuASlOytZGWMBfOe+RY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omFullLifelineStateDefinitionCompartmentCreationEditPolicy$1.class
+SHA1-Digest: R2fDALqF2lxo+BJDCmAlly4jUvQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart$3.class
+SHA1-Digest: RvkaSScnoqP/3nHMxznTNzmsO5M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart$5.class
+SHA1-Digest: CBFNhwROE4oCv56VJGyVUGi2MA4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art$4.class
+SHA1-Digest: biGeqKXnEng03dk5VozqY069KOo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Chan
+ geLifelineFromCompactToFull.class
+SHA1-Digest: gFXHoXkH73kQy2XFLUNpAz81Ots=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundNa
+ meLabelEditPart$1.class
+SHA1-Digest: ZPDPyyNSsoXN4VOaG7jE5kVnYWw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateEditPart$1
+ .class
+SHA1-Digest: +T2hITW5c7x9oDmYz1A6lcfd/lY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omFullLifelineTimelineCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: yc+nlm6mWnt5IsHsa8FOMJIxK2E=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationLabelEditPart$1.class
+SHA1-Digest: sZXVWCK6C6badGgbp7OanMWvm04=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageLost
+ ReorientCommand.class
+SHA1-Digest: ZiyyV367vBkEhGXNSHKPqfMmci8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/TimeRulerUti
+ ls$1.class
+SHA1-Digest: U1+c1mZ7AWcYYREhWf0ivQ71bxk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/expressions/UMLOCLFactory
+ .class
+SHA1-Digest: 4bjDE1rQ1Jq7RsKLWi7Wn9G+Am0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/ValidateAction$3.cla
+ ss
+SHA1-Digest: pJBRNEomNLwrx5+UDcD1QWdRyU4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/OccurrenceSp
+ ecificationUtils.class
+SHA1-Digest: +0QVbjaU5VrjxaX/aFjIu7gmOHA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/DiagramEditorContext
+ MenuProvider.class
+SHA1-Digest: +volGtS1KKukroWjCBnvPJIFhjs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/RequestUtils
+ .class
+SHA1-Digest: tDrQuR0r/RSHW4Bj94OBlcieNpE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/MessageFound
+ EditHelper.class
+SHA1-Digest: bPatqGViw2owWKhXQTXTJDpncAY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart$3.class
+SHA1-Digest: TcqKFg8A/GBrgq4Z5SXtzgUPMn4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart.class
+SHA1-Digest: FfCrfem0HoLegU7P3+CeulU9S5w=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omDurationObservationCreateCommand.class
+SHA1-Digest: 3YF64pSH4kYuMVTYxib9bXIqDjg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncApp
+ liedStereotypeEditPart$3.class
+SHA1-Digest: bx9oh6ChsOk+3kcgjlsuA0mgKiw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/UmlTimingDiagramFo
+ rMultiEditor.class
+SHA1-Digest: TdWtUySaanoV2/lNPxW9LKLohoY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart.class
+SHA1-Digest: iIFWHScFii0CREkUOFLHtyKV7hI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/FigureUtils.
+ class
+SHA1-Digest: XAL5q2TeineHfACLaPIYBdlaL4I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/MessageCreate
+ PreferencePage.class
+SHA1-Digest: +SCGPuM60Mb96ZsCMNf/wPblz8s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncAp
+ pliedStereotypeEditPart$3.class
+SHA1-Digest: Qwf9LAdSHG4wiyTnmi1x344kcl4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart$4.class
+SHA1-Digest: NIVbIyehFxi0A7EP7AUuPyQ7fOM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart$5.class
+SHA1-Digest: jA78T82Cp2G7JdEih46uOZ2dVdI=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullStateInvariantEditPartCN$1.class
+SHA1-Digest: JNAeHPP2YpWncr72tGvpvho7whY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationAppliedStereotypeEditPart$2.class
+SHA1-Digest: 7AXpeEgfYm66uKlvRY4VeVk/vHw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$9.class
+SHA1-Digest: hC+FvKIK4q9WVL/k5aoMO2QVF5U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/parsers/MessageFormatPars
+ er.class
+SHA1-Digest: mQy9ylp4aT68+X/RIO0oGUPIpmA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omGeneralOrderingCreateCommand.class
+SHA1-Digest: DvNb9I85xJcCDC6tmNxfwcVQieg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/VerticalLa
+ bel.class
+SHA1-Digest: J6KP6qgWBPnXeLpWvUFlRuV4JqA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FreeTimingRule
+ rEditPartCN$1.class
+SHA1-Digest: k9LfHZdF1VDuLMCsVXs2YMSvN5s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/FullLifelin
+ eTimeRulerCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: lhhI+Yhkw1gPA5zKVjzcFCL7ozo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/DestructionO
+ ccurrenceSpecificationEditHelper.class
+SHA1-Digest: cHUmaaZI3fCtwxu11c7iV7nBr0A=
+
+Name: .options
+SHA1-Digest: w55MDEp4Czxj5rGpDT75JfNym70=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart$5.class
+SHA1-Digest: uvXs51G5Zh2HSoVIpNYyqZiW3EY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$Dr
+ opGeneralOrderingAction.class
+SHA1-Digest: IZaooo3vtWdYbBTnu41cvKKhc9M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateDefinitio
+ nLabelEditPart$3.class
+SHA1-Digest: DS75T4CbBzlAHpWufZVKaVciQzM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLTextSele
+ ctionEditPolicy$2.class
+SHA1-Digest: 6JUWEz3m3ND2IG/PpTUKWpxb4Eg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/InteractionNam
+ eEditPart$4.class
+SHA1-Digest: AuoEWjrWavWoWEH3lZmfwWLOuYQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteA
+ ppliedStereotypeEditPart$3.class
+SHA1-Digest: 1NqYnfSK3VBhnPy1Hl2S1j18tt0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/CompactLife
+ lineTimeRulerCompartmentItemSemanticEditPolicyCN.class
+SHA1-Digest: ACpMpmA7GK1mO5lc7zvgdFwZLKA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/InvisibleR
+ ectangleFigure.class
+SHA1-Digest: eMeFfbRW9Je20IGmXfP/+vahX6I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/helper/advice/Gate
+ HelperAdvice.class
+SHA1-Digest: WxkssJi+01tP5PCIW0VLcNe7CKI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart$5.class
+SHA1-Digest: S3ItStsMRQ239fIi7S5FCjb37EI=
+
+Name: plugin.properties
+SHA1-Digest: /m0OmmvPzoLR8WG0ksw2eSmHm0o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/providers/CustomUM
+ LEditPartProvider.class
+SHA1-Digest: 9Tu5PcGg13Lr6r47OLyTzgCS+XE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineTi
+ melineCompartmentEditPartCN.class
+SHA1-Digest: 2Tefgmu5+mg383Ir3M2azWB+fw4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart$1.class
+SHA1-Digest: 7yISUE+KpCm9CHgs/gldHph11tc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLPaletteFactory.cl
+ ass
+SHA1-Digest: QFHX+PLJID2bLGfc2NJ9jF6ArYs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/GateFigure
+ .class
+SHA1-Digest: klT3r8PM3DzP1Sy+zoU5myyCfKU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nAppliedStereotypeEditPart$1.class
+SHA1-Digest: j+5CFRcMfOkFA9ux0BrBL3ZahsQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Dele
+ teStateDefinitionCommand.class
+SHA1-Digest: 1mCFKXd4XhYKuHMCtdKBb5Rko3Q=
+
+Name: plugin.xml
+SHA1-Digest: 9JhZnN5H9bFahoeallFAK4yeQkY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$Dr
+ opDurationConstraintAction.class
+SHA1-Digest: Xa/u84u5IRHa8+hPUhWyJlGUFPY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineTimeRulerCompartmentEditPartCN.class
+SHA1-Digest: jibmfgx/M2gmQQZlUFla3O6nYVo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart$2.class
+SHA1-Digest: H1sm4RlobL+uhnTMXVvNl7iPnMo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/providers/UMLViewProvider
+ .class
+SHA1-Digest: GkPii5h99MugKikCjhl1PbjhH4c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omMessageReorientCommand.class
+SHA1-Digest: TAaSm7+7uy6JRs2U3LHZOy6UTBk=
+
+Name: icons/obj16/event.png
+SHA1-Digest: 3c7ezkiE/G5sTTpCKUXpTiA7kAE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickNameEditPa
+ rt$3.class
+SHA1-Digest: Ia/1JJqMq2SEoxb6ugpJ6E1PorM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/EcoreUtils.c
+ lass
+SHA1-Digest: WLrOpGc2fa/XzUyJ+/rok67bi7o=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullLifelineNa
+ meEditPart$3.class
+SHA1-Digest: ribulxR8AcHc8ur6ujLWN7w2f2I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationEditPartCN$1$1.class
+SHA1-Digest: FFOOBVbPMDwws6uE983C/EPfuX4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory.class
+SHA1-Digest: IUSvkm5qWO3Gra0Y7axk8wYdxjM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$2.class
+SHA1-Digest: kVbemI0PN+HP4n5IjNb8HmDGLGY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomI
+ nteractionEditPartTN$2.class
+SHA1-Digest: Ine+4YKF0XOw2WnTt5Kac7KKKdE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/UMLBaseItem
+ SemanticEditPolicy$LinkConstraints.class
+SHA1-Digest: X2BStSPtBIazH5KMvsfyoE4fMwU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/CustomPalett
+ eFactory$1.class
+SHA1-Digest: qTGQT0pHtYYHPIcKhlLFi7p4BMI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart.class
+SHA1-Digest: V672J/BZRyiuG1V1ZtQOPe4dtd8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart.class
+SHA1-Digest: OyJljfjufZgVPqEKWhH08uZAGMQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart$4.class
+SHA1-Digest: 0ZGStU84Ak1/aOc+vLl0wmhgAQ8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ SpecificationEditPart.class
+SHA1-Digest: IK89eY90c24KUBsIceC+X+GeoEA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageDele
+ teReorientCommand.class
+SHA1-Digest: kXwYRSHHv+PN6BLEjRi3bwgadW0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omInteractionCreationEditPolicy.class
+SHA1-Digest: St2kPd98oO2Y99wcHlIJ0+tkpos=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/MessageRepl
+ yCreateCommand.class
+SHA1-Digest: B0qZx6Q+AveRkdSfuUzLmqI3lcs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundEd
+ itPart.class
+SHA1-Digest: bK4J7TQfZbYEdwsYrJh2NjSjLxg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart$2.class
+SHA1-Digest: wWLZot+GdytTTwUhb/UhCgWwxCs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Cust
+ omDurationConstraintCreateCommand.class
+SHA1-Digest: 1P1OtAOY52d/tRCjAHXGz0PoH0c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Chan
+ geLifelineFromFullToCompact.class
+SHA1-Digest: 6XuONYin1yPFbXzu4kJ46yBrFKs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLCreationWizardPag
+ e.class
+SHA1-Digest: izPFoVMvnhKZe5zP0yuexuD6wls=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomD
+ urationConstraintEditPart.class
+SHA1-Digest: ZBU50gcYjG8vF9t8dFB6BbfnswY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationEditPartCN.class
+SHA1-Digest: bbQpPvOAzk932EjW37SgwixRd7w=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomM
+ essageOccurrenceSpecificationLabelEditPart.class
+SHA1-Digest: DERhcXSFV63Z79YXJ/3afxh8+BY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parsers/Constraint
+ Parser$1.class
+SHA1-Digest: 7QNVkTSpV9eU3WkE4Lh0ABt3gUk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/FullStateInva
+ riantPreferencePage.class
+SHA1-Digest: k1ToRuA0PkFSPIbUhRuhCPzk9+Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactStateIn
+ variantNameEditPart$1$1.class
+SHA1-Digest: OiiWseU8DySrOi/sZM7qv+cYJjI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ reeTimingRulerEditPart$2.class
+SHA1-Digest: cbBFDgpNqW/uK7UptVVlg1SKXWs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart$3.class
+SHA1-Digest: eCeeB2XauEr0bNqWtJ0IunJPzMo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DestructionOc
+ currenceSpecificationPreferencePage.class
+SHA1-Digest: 04J2hEwwmhlzLqrshMITAUZB2ws=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationEditPartCN.class
+SHA1-Digest: 9wu5L8P16Iq5WFXPouAYvzAz6Ow=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/StateDefinit
+ ionUtils.class
+SHA1-Digest: UqYOCbvDGYm8IZeuhdaV0+vInOA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyAp
+ pliedStereotypeEditPart$4.class
+SHA1-Digest: eyQL1sx7URTyxL8j0gRvmfC7ULg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils.cl
+ ass
+SHA1-Digest: ONOJOH68ZBLDGshfT31LIgzz5gE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/GeneralOrd
+ eringHorizontalFigure.class
+SHA1-Digest: z/clwywuiZ0S6sHPz80VzvkEWFs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art$1$1.class
+SHA1-Digest: EYNkAaLKtLOu+f7jRJ/q5ZLN+yg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageAsyncNa
+ meLabelEditPart$3.class
+SHA1-Digest: HQuWOl8vrVgdz0FKtrhLAxa6ci4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomG
+ eneralOrderingEditPart.class
+SHA1-Digest: d0tUVBGwt0ugyABPOY8dbXUlfc8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullLifeli
+ neFigure$7.class
+SHA1-Digest: Js7XCj/i+sD/M3NiniZ0blMF4zY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/StateDefiniti
+ onPreferencePage.class
+SHA1-Digest: 4baCjXFjE54255wWvJeA9XwK1CU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/DropUtils$2.
+ class
+SHA1-Digest: oYbSGLWPprgbJJZRmQsUeebRHSg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/CompactStat
+ eInvariantItemSemanticEditPolicyCN.class
+SHA1-Digest: uHegipKqi9W419iSRiNfzqUXgbw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TickEditPart$1
+ .class
+SHA1-Digest: 02x1IhQCQTIBbLCFEHA7BrogSBI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart$1.class
+SHA1-Digest: 20Ae0678JyI6ED4PinDT5miJ3Nc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullLifelineTimelineCompartmentEditPartCN$1.class
+SHA1-Digest: U1v0cKaU+Wi3aImPYUcujj9+vvs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/TimeConstra
+ intCreateCommand.class
+SHA1-Digest: 28YJWYVxP++1sGxVVEMgS5Rm5v4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationAppliedStereotypeEditPart$2.class
+SHA1-Digest: fGUAVGhJ+rkRVC1Nh9QgsFIKkUY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/CompactLif
+ elineFigure$3.class
+SHA1-Digest: Rohfl0f7g2hRCue9KC9a09KAcJk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/FullStateF
+ igure.class
+SHA1-Digest: WxtSF1hdiD4zbf2CaLDbD7frfDM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageReplyNa
+ meLabelEditPart$1$1.class
+SHA1-Digest: vnL01qj2YQkxFc5sBpfO0nDgCLk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omFullLifelineStateDefinitionCompartmentCreationEditPolicy.class
+SHA1-Digest: 574i6lXFvY5gtCwp0P14Ek4Z8wg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Exte
+ rnalLabelPrimaryDragRoleEditPolicy.class
+SHA1-Digest: bMRvoe5w8vAEZmjXWmgs7wt8/2U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/FullStateInvar
+ iantAppliedStereotypeEditPart$1$1.class
+SHA1-Digest: o+t/Py/mTtuiXuj5EkGCVLdy9So=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorCon
+ tentProvider$2.class
+SHA1-Digest: KxMUauZ2eYPJ69wRFyGTdtUfGjs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DestructionOcc
+ urrenceSpecificationEditPartCN$1.class
+SHA1-Digest: 1R/AVYCRNmFne6/67maQ+sGyPHA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/AbstractTwoP
+ ointCreationTool.class
+SHA1-Digest: Uxd5o4FaQsLX0S65zwfX1nNO58k=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/CutA
+ ndInsertOccurrenceSpecificationCompactLifelineCommand$1.class
+SHA1-Digest: KA1baTFkD/JrnqNurPcV+u60fDs=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostApp
+ liedStereotypeEditPart$1$1.class
+SHA1-Digest: 91lywb0bbUGnfkGa21UYtljROUE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DiagramRulers
+ AndGridPreferencePage.class
+SHA1-Digest: M/jBA4USm/jRggXYbN+aNK4lVss=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/Utils$1$1.cl
+ ass
+SHA1-Digest: rPaFwsDDqyuzycFlX0Mv0xhptoQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactStateInvariantEditPartCN.class
+SHA1-Digest: 4BJKqlEeB+Nftf2jLCPnef2TaCM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLCreationWizard$1.
+ class
+SHA1-Digest: xzkISLHHhXoyASRIgHeBe7AiHeg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gNameEditPart.class
+SHA1-Digest: JfcnfeW1I1eJCmellvpf/wtGXCE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateEditPart$1
+ $1.class
+SHA1-Digest: soiEBExs6hK0f9GwgFnJKSERW9s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/parts/AbstractTwoP
+ ointCreationTool$2.class
+SHA1-Digest: 5morwjZScK+t98kyFDqYQ63kozk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLVisualIDRegistry$
+ 1.class
+SHA1-Digest: AMi2SH2qnMHTtk0tNiddf3Br580=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationLabelEditPart$3.class
+SHA1-Digest: KzL3X14Rjhr3cj2UscRGBE4y9ag=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeObservatio
+ nNameEditPart$5.class
+SHA1-Digest: vLbFWX6x87DmjtVfBXXZf4KoFbQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/LifelineUtil
+ s.class
+SHA1-Digest: 8e3TSQzSwE5yOdTSPAHsbqRxyeU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart$1$1.class
+SHA1-Digest: TBmWAEJyDPhA+0oiucBMkqHtvCY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimingDiagramE
+ ditPart$NodeLabelDragPolicy.class
+SHA1-Digest: q06Q0GwnoEvKPBnmHfv3PNizAJ0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/LifelineEditPa
+ rt$1.class
+SHA1-Digest: pMUyqxe9DzFAbywst1Aiax/osfg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/TimeConstrain
+ tPreferencePage.class
+SHA1-Digest: 3k+O6jzm180/ghDpebPQ1+f/gqc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationEditPartCN.class
+SHA1-Digest: 5dlhcX0Uq+R5nmWNtXwrKVBUHaI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomF
+ ullStateInvariantEditPartCN.class
+SHA1-Digest: XUT/UKDE+Rlr8fK88BbZpwR2iEE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/DurationConst
+ raintPreferencePage.class
+SHA1-Digest: G+9AjZVdV/oK+JR+jwFqcJtaQUA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/DurationCons
+ traintEditHelper.class
+SHA1-Digest: q14d1KHapH93i8pexlL7KW3q7gE=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/commands/FullStateIn
+ variantCreateCommandCN.class
+SHA1-Digest: Lo5trNrYinXwi2rESkF2XTHmrcI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactLifelineCompartmentLayoutEditPolicy$1.class
+SHA1-Digest: LmYfe8yckHJTPrNYqjQlpNmRTTo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageFoundAp
+ pliedStereotypeEditPart$1$1.class
+SHA1-Digest: oXNyOE3mKW0kIFZE5PLao7Lqksw=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/StateInvariant
+ AppliedStereotypeEditPart$2.class
+SHA1-Digest: M4CMqxx2uc2G8SGRYx2ZQOLkJCg=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eNameEditPart$5.class
+SHA1-Digest: 6ztSS8b44NvdeYANOgzsKxttuuA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/TimeConstra
+ intItemSemanticEditPolicy.class
+SHA1-Digest: mND1dxCGL6uf7Sy+f/K9OjQvq60=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageSyncNam
+ eLabelEditPart$1.class
+SHA1-Digest: AaSMTBJ0bFYUpAYzdLLMJhmjf8s=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/Interaction
+ CompartmentItemSemanticEditPolicyTN.class
+SHA1-Digest: QXYbCrfwfz7MW+Fl/F55dfiVzh0=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationConstr
+ aintSpecificationEditPart$3.class
+SHA1-Digest: YPgtjuInOrYNcEZFsGjYKjWLe34=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omCompactLifelineItemSemanticEditPolicyCN.class
+SHA1-Digest: mzdA0zNjZ/vdv70Km5H3T8TOmjU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageLostNam
+ eLabelEditPart.class
+SHA1-Digest: WliPk6w+tYDr/K2wQe3dCqPKPkk=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/TimingDiagramEdito
+ rFactory.class
+SHA1-Digest: DQS7j+g2bVg4cgcr17GPJ0lX9qI=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/parts/CustomC
+ ompactStateInvariantNameEditPart.class
+SHA1-Digest: KBtjM4av1uB6K75QBXBcJvZaeyU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/figures/TimeRulerF
+ igure.class
+SHA1-Digest: XVdL3WHgX8FGL0bWQPjmSO/Eils=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/preferences/LifelinePrefe
+ rencePage.class
+SHA1-Digest: tURGFQRsNPDVJb6QhIviHNtn1zY=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteE
+ ditPart.class
+SHA1-Digest: 21qJFTASpACO5FASzgM4Hx1wsMo=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omLifelineNameEditPolicy.class
+SHA1-Digest: hZjdGi959GkqhKZGXIbMHti2dbM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omOccurrenceSpecificationItemSemanticEditPolicy.class
+SHA1-Digest: sbuWBNKHrx2Rqc4xCvXxbT0OB+c=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/CompactLifelin
+ eEditPartCN.class
+SHA1-Digest: sioIGGmNsClB701mhgRJR9XKrrU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/GateUtils.cl
+ ass
+SHA1-Digest: nKpSaTGOA1n0v8jTc0Sh452f9Y8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/OccurrenceSpec
+ ificationAppliedStereotypeEditPart.class
+SHA1-Digest: GfSuQijwuiIqpONFpZObDFmTxcc=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageOccurre
+ nceSpecificationLabelEditPart$1$1.class
+SHA1-Digest: e9SW9TIuGjuY3el2w6qkLHaBy+I=
+
+Name: icons/obj16/UMLDiagramFile.gif
+SHA1-Digest: lWlO5N44xJ/ka7KNcvGQu0s8N5I=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/UMLBaseEditH
+ elper.class
+SHA1-Digest: WjOeuWVHdXJNANPIdirTScWCc3U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageDeleteN
+ ameLabelEditPart$1.class
+SHA1-Digest: hKbngDLkYeoElL3LLu2p9GVuUhM=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateA
+ ppliedStereotypeEditPart$1$1.class
+SHA1-Digest: csk3KcF+EpGhmbgHBWL9/ddcHwU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/policies/TimingDiagr
+ amEditPartFactoryItemSemanticEditPolicy.class
+SHA1-Digest: 6xsEqr2Po3gqW7BbySicv+Q1Oi8=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/commands/Swit
+ chLifelineCommand$2.class
+SHA1-Digest: ahNuViaNKwgSpav4iG9sZfcWaXU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/DurationObserv
+ ationNameEditPart$1.class
+SHA1-Digest: SZCA3h/qxIBkS7y1i/0pXlegDA4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLInitDiagramFileAc
+ tion.class
+SHA1-Digest: zgeipQPrUlNt+j20T+TCVlE1W6U=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/edit/policies/Cust
+ omTimelineCompartmentLayoutEditPolicy$1.class
+SHA1-Digest: t4hjXdp3hwcaKrXrqbxFFdr8UE4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/TimeConstraint
+ AppliedStereotypeEditPart$3.class
+SHA1-Digest: M6tpezGjz/laCEbf80/Xelolh/Y=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLNavigatorAct
+ ionProvider$OpenDiagramAction.class
+SHA1-Digest: tVRcd9BLgRLB7Jr3D6KlGiQQO9M=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GeneralOrderin
+ gEditPart$1$1.class
+SHA1-Digest: GzeaDrgg/HjDLJvR4JK/fdH+9lU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/GateLabelEditP
+ art$2.class
+SHA1-Digest: FiXlDgMULTDT7FqZshh/gILsaEQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/helpers/GeneralOrder
+ ingEditHelper.class
+SHA1-Digest: ozx2y8KT2bnRgluSUdKYdi+ahhQ=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/custom/utils/LifelineUtil
+ s$LifelineType.class
+SHA1-Digest: PUmw4KyrTIkhsUi5xdS3h6dmDLU=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/navigator/UMLDomainNaviga
+ torLabelProvider.class
+SHA1-Digest: 0MHeSM96OMfSoBQA1skRmheZa18=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/edit/parts/MessageCreateN
+ ameLabelEditPart$1$1.class
+SHA1-Digest: 8wy73729ndOHjISLTNsvqjWYYoA=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDiagramUpdater.cl
+ ass
+SHA1-Digest: LfB/EtrqXwfDzW6e2a2RzGczx/w=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/ValidateAction$1.cla
+ ss
+SHA1-Digest: vKhqHz1rO5Xo2pBwytDB5Kengg4=
+
+Name: org/eclipse/papyrus/uml/diagram/timing/part/UMLDocumentProvider$
+ ResourceSetInfo$SynchronizerDelegate$2.class
+SHA1-Digest: PPieM18FUTDJ46bGjS/JrH0UTKo=
+

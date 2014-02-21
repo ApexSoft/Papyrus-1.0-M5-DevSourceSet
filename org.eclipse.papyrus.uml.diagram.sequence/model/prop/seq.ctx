@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="ASCII"?>
+<contexts:Context xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:constraints="http://www.eclipse.org/papyrus/constraints/0.9" xmlns:contexts="http://www.eclipse.org/papyrus/properties/contexts/0.9" name="SequenceNotation">
+  <tabs label="Appearance" id="appearance" category="org.eclipse.papyrus" priority="75">
+    <sections name="CombinedFragmentTitle" sectionFile="ui/CombinedFragmentTitle.xwt">
+      <widget href="ui/CombinedFragmentTitle.xwt#/"/>
+    </sections>
+    <sections name="ConsiderIgnoreFragmentTitle" sectionFile="ui/ConsiderIgnoreFragmentTitle.xwt">
+      <widget href="ui/ConsiderIgnoreFragmentTitle.xwt#/"/>
+    </sections>
+    <sections name="MessageStyle" sectionFile="ui/MessageStyle.xwt">
+      <widget href="ui/MessageStyle.xwt#/"/>
+    </sections>
+    <sections name="InteractionOperandGuardVisibility" sectionFile="ui/InteractionOperandGuardVisibility.xwt">
+      <widget href="ui/InteractionOperandGuardVisibility.xwt#/"/>
+    </sections>
+    <sections name="LinkRoute" sectionFile="ui/LinkRoute.xwt">
+      <widget href="ui/LinkRoute.xwt#/"/>
+    </sections>
+    <sections name="GateNameSection" sectionFile="ui/GateNameSection.xwt">
+      <widget href="ui/GateNameSection.xwt#/"/>
+    </sections>
+    <sections name="DisplayBehaviorSection" sectionFile="ui/DisplayBehaviorSection.xwt">
+      <widget href="ui/DisplayBehaviorSection.xwt#/"/>
+    </sections>
+  </tabs>
+  <views name="CombinedFragmentTitle" sections="//@tabs.0/@sections.0" automaticContext="true">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleCombinedFragment">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.0"/>
+      <properties xsi:type="constraints:ValueProperty" name="umlClassName" value="CombinedFragment"/>
+    </constraints>
+  </views>
+  <views name="ConsiderIgnoreFragmentTitle" sections="//@tabs.0/@sections.1" automaticContext="true">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isSingleConsiderIgnoreFragment">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.0"/>
+      <properties xsi:type="constraints:ValueProperty" name="umlClassName" value="ConsiderIgnoreFragment"/>
+    </constraints>
+  </views>
+  <views name="MessageStyle" sections="//@tabs.0/@sections.2" automaticContext="true">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMessageStyle">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.infra.gmfdiag.properties/model/Environment.xmi#//@constraintTypes.3"/>
+      <properties xsi:type="constraints:ValueProperty" name="nsUri" value="http://www.eclipse.org/gmf/runtime/1.0.2/notation"/>
+      <properties xsi:type="constraints:ValueProperty" name="className" value="Edge"/>
+    </constraints>
+  </views>
+  <views name="InteractionOperandGuard" sections="//@tabs.0/@sections.3">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isInteractionOperand">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.0"/>
+      <properties xsi:type="constraints:ValueProperty" name="umlClassName" value="InteractionOperand"/>
+    </constraints>
+  </views>
+  <views name="LinkRoute" sections="//@tabs.0/@sections.4">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isMLinkRoute">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@constraintTypes.0"/>
+      <properties xsi:type="constraints:ValueProperty" name="sourcePart" value="org.eclipse.papyrus.uml.diagram.sequence.edit.parts.DurationConstraintEditPart"/>
+    </constraints>
+  </views>
+  <views name="GateName" sections="//@tabs.0/@sections.5">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isGate">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.0"/>
+      <properties xsi:type="constraints:ValueProperty" name="umlClassName" value="Gate"/>
+    </constraints>
+  </views>
+  <views name="DisplayBehavior" sections="//@tabs.0/@sections.6">
+    <constraints xsi:type="constraints:SimpleConstraint" name="isBehaviorExecutionSpecification">
+      <constraintType href="ppe:/environment/org.eclipse.papyrus.uml.properties/Model/Environment.xmi#//@constraintTypes.0"/>
+      <properties xsi:type="constraints:ValueProperty" name="umlClassName" value="BehaviorExecutionSpecification"/>
+    </constraints>
+  </views>
+  <dataContexts name="Preference" label="Preference">
+    <elements name="org.eclipse.papyrus.infra.gmfdiag.preferences">
+      <properties name="ELEMENT_PapyrusUMLSequenceDiagram_CombinedFragment_CombinedFragmentCompartment.compartment_name.visibility" label="Show name" type="Boolean" description="Show the Title in the diagram"/>
+      <properties name="ELEMENT_PapyrusUMLSequenceDiagram_ConsiderIgnoreFragment_CombinedFragmentCompartment.compartment_name.visibility" label="Show name" type="Boolean" description="Show the Title in the diagram"/>
+    </elements>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@modelElementFactories.1"/>
+  </dataContexts>
+  <dataContexts name="MessageStyle" label="MessageStyle">
+    <elements name="LineStyle">
+      <properties name="lineColor" type="Integer"/>
+      <properties name="lineWidth" type="Integer"/>
+    </elements>
+    <elements name="FontStyle">
+      <properties name="fontColor" type="Integer"/>
+      <properties name="fontName"/>
+      <properties name="fontHeight" type="Integer"/>
+      <properties name="bold" type="Boolean"/>
+      <properties name="italic" type="Boolean"/>
+      <properties name="underline" type="Boolean"/>
+      <properties name="strikeThrough" type="Boolean"/>
+    </elements>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@modelElementFactories.0"/>
+  </dataContexts>
+  <dataContexts name="InteractionOperand" label="Interaction Operand">
+    <elements name="Guard">
+      <properties name="visilibity" label="Show Guard" type="Boolean" description="Show or hide Guard for Interaction Operand&#xD;&#xA;"/>
+    </elements>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@modelElementFactories.2"/>
+  </dataContexts>
+  <dataContexts name="LinkRoute" label="Link Route">
+    <elements name="Routing">
+      <properties name="style"/>
+    </elements>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@modelElementFactories.4"/>
+  </dataContexts>
+  <dataContexts name="Gate" label="Gate">
+    <properties name="showName" label="Show Name" type="Boolean" description="Show name on diagram."/>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@modelElementFactories.3"/>
+  </dataContexts>
+  <dataContexts name="Behavior" label="Behavior">
+    <properties name="displayBehavior" label="Display" type="Boolean" description="Display Behavior Label."/>
+    <modelElementFactory href="ppe:/environment/org.eclipse.papyrus.uml.diagram.sequence/model/prop/Environment.xmi#//@modelElementFactories.5"/>
+  </dataContexts>
+</contexts:Context>

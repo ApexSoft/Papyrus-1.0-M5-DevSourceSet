@@ -1,0 +1,1146 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.nattable;singleton:=tru
+ e
+Require-Bundle: org.eclipse.papyrus.infra.widgets;bundle-version="1.0.
+ 0",org.eclipse.core.runtime,org.eclipse.emf.transaction,org.eclipse.e
+ mf.ecore,org.eclipse.gmf.runtime.emf.type.core;bundle-version="1.7.0"
+ ,org.eclipse.emf.edit,org.eclipse.papyrus.infra.core.log;bundle-versi
+ on="1.0.0",org.eclipse.swt,org.eclipse.papyrus.infra.emf;bundle-versi
+ on="1.0.0",org.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.
+ eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",org.ecl
+ ipse.papyrus.infra.nattable.model;bundle-version="1.0.0",org.eclipse.
+ emf.facet.infra.browser.uicore;bundle-version="0.2.1",org.eclipse.pap
+ yrus.infra.tools;bundle-version="1.0.0",org.eclipse.emf.edit.ui,org.e
+ clipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0",or
+ g.eclipse.nebula.widgets.nattable.core;bundle-version="1.0.0",org.ecl
+ ipse.core.expressions,org.eclipse.papyrus.infra.services.edit;bundle-
+ version="1.0.0",org.eclipse.papyrus.infra.widgets.toolbox;bundle-vers
+ ion="1.0.0",org.apache.commons.lang,com.google.guava;bundle-version="
+ 11.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.nattable.Activator
+Export-Package: org.eclipse.papyrus.infra.nattable,org.eclipse.papyrus
+ .infra.nattable.celleditor,org.eclipse.papyrus.infra.nattable.celledi
+ tor.config,org.eclipse.papyrus.infra.nattable.command,org.eclipse.pap
+ yrus.infra.nattable.configuration,org.eclipse.papyrus.infra.nattable.
+ dataprovider,org.eclipse.papyrus.infra.nattable.handler,org.eclipse.p
+ apyrus.infra.nattable.layerstack,org.eclipse.papyrus.infra.nattable.l
+ istener,org.eclipse.papyrus.infra.nattable.manager.axis,org.eclipse.p
+ apyrus.infra.nattable.manager.cell,org.eclipse.papyrus.infra.nattable
+ .manager.table,org.eclipse.papyrus.infra.nattable.messages,org.eclips
+ e.papyrus.infra.nattable.nattableconfiguration,org.eclipse.papyrus.in
+ fra.nattable.painter,org.eclipse.papyrus.infra.nattable.paste,org.ecl
+ ipse.papyrus.infra.nattable.preferences,org.eclipse.papyrus.infra.nat
+ table.provider,org.eclipse.papyrus.infra.nattable.reorder,org.eclipse
+ .papyrus.infra.nattable.tester,org.eclipse.papyrus.infra.nattable.uti
+ ls,org.eclipse.papyrus.infra.nattable.widget
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: icons/auto_resize_column.png
+SHA1-Digest: fq4mOCPvNq+aHqBPcdQKcMdeVzE=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusColumnRe
+ sizeBindingsConfiguration.class
+SHA1-Digest: 7mQF3pOIIQGuusjLc1nlDj+o4UM=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$4.class
+SHA1-Digest: Wof4/du1GwWMhe/3yQDodNe2roM=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/CornerConfigura
+ tion$1.class
+SHA1-Digest: du4OUXJ4CKcjV861KSgl0+b5LZw=
+
+Name: icons/not_NA.gif
+SHA1-Digest: wAIuTUkL1UqgdCJbrtn/ebXTKUw=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabeTextHan
+ dler.class
+SHA1-Digest: eYLgaxlBe1g4Sq3Ruarh4ADIi4c=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/DefaultSizeUtils.class
+SHA1-Digest: XYotxQ7wosZL5TOOjfVe4G8dHpw=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/FillingConfigurationUti
+ ls.class
+SHA1-Digest: QlIV1qu8RutSZpEAOtzX0xNf4JA=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/PasteSeparator.class
+SHA1-Digest: z5t7E31I4gFBlRfLecKLKwdH8V4=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportTableError
+ Page.class
+SHA1-Digest: SsAYthZIAs2iQtgdye05jjVLerU=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$2$1.class
+SHA1-Digest: 7a+VMDbQZ1oFdSlU6kMK+TWnihg=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/AbstractHeaderDa
+ taProvider.class
+SHA1-Digest: 0OcJAB5RfTltNN87UNKKgcy/JF0=
+
+Name: icons/remove_column.gif
+SHA1-Digest: cDSXLe5UCvKF6860PLF7XU1Ursc=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportCSVConfigu
+ rationPage$4.class
+SHA1-Digest: iHUGfI6Bjp+32n3cUlwuqgi7aPM=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$8$1.class
+SHA1-Digest: RxKa+dLK85kAtcVGzoFVmE+jdeI=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractDisconnectSla
+ veHandler.class
+SHA1-Digest: SqdhJiJ0eVXGakjhPC941Fegi0g=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusGridLaye
+ rConfiguration.class
+SHA1-Digest: HAm6DQs+f+46H7GLtv5G7sAZs/Q=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/LabelProviderCellContex
+ tElementWrapper.class
+SHA1-Digest: aj5ODT51YTODUkWO/i2Kz67xvZA=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/LoadCurrentAxisProvide
+ rsDialog$4.class
+SHA1-Digest: GSbA48pi+K0ZZvzA/BuBHvMB1F8=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SortRowsHandler.class
+SHA1-Digest: eHW0LCWU8piWtn6qbaKKekSuMXU=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PapyrusNatTableToolT
+ ipProvider.class
+SHA1-Digest: SZJ6FRV0hSCwuAK2KJGoAW/nRCg=
+
+Name: org/eclipse/papyrus/infra/nattable/layerstack/BodyLayerStack.cla
+ ss
+SHA1-Digest: BXq/g9oh1ARl8mZ1LR9oVCMsGVg=
+
+Name: org/eclipse/papyrus/infra/nattable/command/TableCommands.class
+SHA1-Digest: 3qag0V0UD3cfnevFAwJEmW3bEQ8=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/ButtonConfiguratio
+ n.class
+SHA1-Digest: 40xTpI4m7O1+j+IlGovEDvEjr8U=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/LoadColumnAxisProvide
+ rsHandler.class
+SHA1-Digest: eN3Qs3Fa3t9FuqPU0c2k0GiLOYQ=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager.class
+SHA1-Digest: 6Y8fpGVGyx9ecqOBmOGN27A6XVM=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/PastePostActionRegistry
+ .class
+SHA1-Digest: zd1TTm9whXQe/8ua54j5/MZqgUo=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/GenericCellLabelProv
+ ider.class
+SHA1-Digest: kOuiEJcLeA0Pt7Sj7MVyn3eNers=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$1.class
+SHA1-Digest: GHXwqzQJMvV3oOjUsKHATQ2drmo=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$11.class
+SHA1-Digest: ogbZshQk/kKLQPiXyNUMyFrnAuY=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusRowResiz
+ eBindingsConfiguration.class
+SHA1-Digest: Fd3Hak3O/qSYI9rInoMclbSrL0k=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$9.class
+SHA1-Digest: P6Bpkkv5TjwbnJHTM2LBPL7wmMc=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInNa
+ ttableCommandProvider$5.class
+SHA1-Digest: Tabp2xxiGCXFyeLsjeqtOfSx4ZI=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/AbstractAxisMana
+ ger$1.class
+SHA1-Digest: iSO2BglSL6SGo7A6W0g6+OtwU6E=
+
+Name: org/eclipse/papyrus/infra/nattable/preferences/TablePreferencesC
+ onstantsHelper.class
+SHA1-Digest: A8fIXpJ8aRGJmcWxwkdpvoWhyu4=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractSaveCurrentAx
+ isProvidersHandler.class
+SHA1-Digest: kbofgkXhLOk5RYv9cQhwhXXr53w=
+
+Name: icons/sort_columns_by_name_Z_to_A.gif
+SHA1-Digest: RIQIHB9877z2ITzBmmbivbZlVdk=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportCSVConfigu
+ rationPage$1.class
+SHA1-Digest: BXiHCFnSocqKfuQQ+0DA2UoByJE=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractChangeLabelCo
+ nfigurationValueHandler.class
+SHA1-Digest: 0NHN7RL+XmYMVEmW7nJ1uOX2ml4=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/ITableAxisEleme
+ ntProvider.class
+SHA1-Digest: Tt4ztVCnAXsX2mDv8drXioM9FDE=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/AbstractNattableCell
+ LabelProvider.class
+SHA1-Digest: rY4cA6jaa6B40tgOfp62Q8NWfYk=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/IndexHeaderLabelProv
+ ider.class
+SHA1-Digest: KbVih/bENIlewFRZEKaCNGHiOsA=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractChangeHeaderC
+ onfigurationHandler.class
+SHA1-Digest: dzZdomnAGDX1QCr+Zxv0IkkcFzE=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/TableGridRegion.class
+SHA1-Digest: 2uI7Hy61XEmqWaMAIe6l7pfvf6w=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/LoadCurrentAxisProvide
+ rsDialog$1.class
+SHA1-Digest: bltcnWFZEJ8/bfIi4nOjmGksdPI=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/TableStructuredSelec
+ tion.class
+SHA1-Digest: 0xSZLunvUDwyGTth/x54XysSTHc=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/AbstractHeaderDa
+ taProvider$2.class
+SHA1-Digest: qvH1DFqzKu/KXOShFUOBE6RjM9Q=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/cell/ICellManager.cla
+ ss
+SHA1-Digest: lNk6KDCsCgKJ/eZ89N/Fo0D1vCQ=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/Constants.class
+SHA1-Digest: TdMte3U19m4xD6Y7u/jublYSqWI=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/AbstractPapyrusSty
+ ledTextCellEditor.class
+SHA1-Digest: nDgoMWtq0pH61+qXMNO74zCukrM=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/AbstractStyledText
+ CellEditor.class
+SHA1-Digest: 6cI1E3Ou1jQHhHRHYi1x313YbAU=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/HeaderAxisConfiguration
+ ManagementUtils.class
+SHA1-Digest: y2pfThfESpJj6Vyfmm+CX/N2pNM=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayIndexHea
+ derHandler.class
+SHA1-Digest: mWdnXNFf4qhlQ5oHGO1kq/AW6bo=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInTa
+ bleCommandProvider$4.class
+SHA1-Digest: mOQXSgaGk/HjMM0AE/4SByWipbg=
+
+Name: icons/CreateDestroyRow.gif
+SHA1-Digest: NekBu6XEGQyR3V49E4xQsf/Nzhg=
+
+Name: org/eclipse/papyrus/infra/nattable/layerstack/RowHeaderLayerStac
+ k.class
+SHA1-Digest: b+EUlCTwPfKXp4X1u7QL86uxeBg=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/AddToResource$1.class
+SHA1-Digest: 3s+5r2IZZynl3MclsPLifHG/3t0=
+
+Name: icons/not_NA.png
+SHA1-Digest: ip3Yby5tpnpqPmaZDpYiYFF4vWY=
+
+Name: org/eclipse/papyrus/infra/nattable/export/PapyrusExcelExporter.c
+ lass
+SHA1-Digest: EGLyqoEJmTOdTuYPZc6wyem+J1E=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/config/CellEditorC
+ onfigurationFactory.class
+SHA1-Digest: VfZ/Jri0omvuQ5Kmt5wJ+AEg05Y=
+
+Name: org/eclipse/papyrus/infra/nattable/nattableconfiguration/Nattabl
+ eConfigurationRegistry.class
+SHA1-Digest: 7xRBrdmWV9yDjeWWO2kNvmIM2cc=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/INattableModelManagerUt
+ ils.class
+SHA1-Digest: QjyBC+YmRxq2/AUdHnXi/cEEPpM=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ResolvedProblemHandle
+ r$1.class
+SHA1-Digest: TXUMQ18srzp86o29cAA+KJ1xYko=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractLoadAxisProvi
+ dersHandler.class
+SHA1-Digest: lbjBzYOuQbGz2wY5q5LMWyvu9Vo=
+
+Name: org/eclipse/papyrus/infra/nattable/converter/GenericDisplayConve
+ rter.class
+SHA1-Digest: LI1TXUwOfk9xRMf+M8+VASb8FyI=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/cell/CellManagerFacto
+ ry.class
+SHA1-Digest: 6T4j/OHrGZSLxM1YS1Dygvm0xfE=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/RowIterator.class
+SHA1-Digest: M0ynEk8UMMkDba4xRUfyhrxGv4Q=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/DisplayedAxisSelectorD
+ ialog.class
+SHA1-Digest: BCtDLyPCk5OXFbG5Jcj7ytfSM+8=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/CreatableEObjectAxisUti
+ ls.class
+SHA1-Digest: oneRhafg+ZHGKP0i9Uat7kvPAEU=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/CompositeAxisMan
+ ager.class
+SHA1-Digest: QRSg3Kee7ajDZyfIqPnltNASC+c=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/ColumnHeaderData
+ Provider.class
+SHA1-Digest: S81qdGczuUnwMAYhRswxTWbhm64=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportCSVConfigu
+ rationPage.class
+SHA1-Digest: 1wvhO3fXy3LhWr3dnHPBgrXHLh8=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabelFeatur
+ eIsDerivedHandler.class
+SHA1-Digest: dCUW7D5fP+WRjdxdeSPgudN7pag=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$6.class
+SHA1-Digest: VUldpAn+SsyfQM7S6wyev6K2J94=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInNa
+ ttableCommandProvider$2.class
+SHA1-Digest: Tvm4cCs7y/i0TtS9YMddiH6enKM=
+
+Name: icons/remove_row.gif
+SHA1-Digest: Wh2hOOYPL63oVu5eS4Ih7T3mxjI=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/AbstractNattabl
+ eWidgetManager.class
+SHA1-Digest: qqNTOa1wUcHIJ1Up1Vw2PuwVu8k=
+
+Name: org/eclipse/papyrus/infra/nattable/helper/advice/TableContentsAd
+ viceHelper.class
+SHA1-Digest: 5qriRW+Ao9ngAZMNUc/IPEhowvM=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowMasterDisconnectCo
+ lumnSlaveHandler.class
+SHA1-Digest: bb1W+Rzu3v2C+RueWw2epa1rIN0=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/ImportTableWizard.clas
+ s
+SHA1-Digest: DpUCZRbLuXq3e7Ep/75V8JqeRXA=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/LocationValue.class
+SHA1-Digest: P69txln5Y7fW5PvG/abf8Wkm+hQ=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/AbstractNattabl
+ eWidgetManager$2.class
+SHA1-Digest: +rL065e6NkUjna2ALtLCrfW2BDs=
+
+Name: org/eclipse/papyrus/infra/nattable/painter/PapyrusSortableHeader
+ TextPainter$SortIconPainter.class
+SHA1-Digest: ZOKYfcQ64w2QbvNAeNI2F43qMyc=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayIndexHeader
+ Handler.class
+SHA1-Digest: sKmZeziEENxHi70mgK3ZcdIr7CI=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/CSVPasteHelper.class
+SHA1-Digest: Ikqa7kws57jccpEgGVMdPVGGEtQ=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/ILabelProviderCellConte
+ xtElementWrapper.class
+SHA1-Digest: Twm7lR0FCQolDw2kcOBT2TZJZVI=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusClickSor
+ tConfiguration.class
+SHA1-Digest: mFdj0SOWeClkruomcOuCKv61CCc=
+
+Name: plugin.pdoc
+SHA1-Digest: 8/wgXmShuDwqA0kX9IsyJtvkDpA=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInTa
+ bleCommandProvider$1.class
+SHA1-Digest: k2PcdLX7GTHJSvkK+2GRfL/GlLA=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/AbstractComboActio
+ n.class
+SHA1-Digest: Fn3n6scFhezcaGrkro4DOpfPnEU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/IValueSetter.class
+SHA1-Digest: 3QQwIHyzQKBrNFhzUzJe3XST1tw=
+
+Name: org/eclipse/papyrus/infra/nattable/formatter/PapyrusExportFormat
+ ter.class
+SHA1-Digest: FOmNbQyAfWxwo7ow/dtVKtCZvZk=
+
+Name: schema/org.eclipse.papyrus.infra.nattable.configuration.exsd
+SHA1-Digest: OTVrXrxIU5c7G3tvY5tBNITyiyE=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/AbstractPasteImportIn
+ NattableManager.class
+SHA1-Digest: dJyK7Y9KhF1JPHddO4TW+icN2Ok=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/config/AbstractCel
+ lEditorConfiguration.class
+SHA1-Digest: Pb3XqQeHDA5BychxgRHDtoopmdE=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/cell/AbstractCellMana
+ ger$1.class
+SHA1-Digest: LMNO6Uw6tMYZlfR6ts/THEiNGiQ=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/AbstractStyledText
+ CellEditor$1.class
+SHA1-Digest: XLTejm2wg4+2T+p9VC36qqJHsNs=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/CSVParser$Row.class
+SHA1-Digest: 8abFG5Mp7KOjn3BxWKeV3A38buM=
+
+Name: org/eclipse/papyrus/infra/nattable/layer/PapyrusGridLayer.class
+SHA1-Digest: pGpFf7ZuseOPqx+Kq6103l4z2Ow=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/AxisComparator.class
+SHA1-Digest: 9zKch1C73VjoWPR1WM6WAdBxHS8=
+
+Name: icons/tableColumnAction.gif
+SHA1-Digest: F6RiuAC0Hb3n4nFcBWZ842MzLhA=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/PasteEnablementStatus.c
+ lass
+SHA1-Digest: RtRi7E8Hz7MKF/oWH5N3BnuxlR0=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInNa
+ ttableCommandProvider.class
+SHA1-Digest: 75K5XeR9eOvHqC7W+zYwYf6uVQQ=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportFilePage$1
+ .class
+SHA1-Digest: R2yPbSJWRr7KAb6Kt+V2TY+OkoY=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnAutoResizeHandl
+ er.class
+SHA1-Digest: tEYh1/+MF35AXQQLVIgg1s3Fdyg=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/AbstractAxisMana
+ ger.class
+SHA1-Digest: gvxPZTUuM2K2l1VWW48DOSD7Y18=
+
+Name: icons/importTablePapyrusWizban.png
+SHA1-Digest: f4rRQFO3f5iNUENgc2beqAqw/Do=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/CellMapKey.class
+SHA1-Digest: bSNQm32XbzmKKlLL7CL4+p8n3UE=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$3.class
+SHA1-Digest: ZnRx0L1Wj/zKGjMVV31D1+ByW1I=
+
+Name: org/eclipse/papyrus/infra/nattable/export/papyrusExcelExportHead
+ er.txt
+SHA1-Digest: YtjQ8Jeley4fyFw0PGmjyRQiR8w=
+
+Name: org/eclipse/papyrus/infra/nattable/reorder/CustomColumnReorderDr
+ agMode.class
+SHA1-Digest: xuswG2/YCnijpRC+V5awH1wRe7M=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/TableSelectionProvid
+ er$1.class
+SHA1-Digest: 31KNfp65sziTeM+c1Pq+5sLyCsI=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SaveCurrentRowAxisPro
+ vidersHandler.class
+SHA1-Digest: iHZdBiQ7HQIPtGCsGpnizbJ0P7U=
+
+Name: org/eclipse/papyrus/infra/nattable/sort/IPapyrusSortModel.class
+SHA1-Digest: LJO//NVX3Uza4E5N0YiQrNaUKjM=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusHeaderMe
+ nuConfiguration.class
+SHA1-Digest: RcxCN3cyoNbuXFEk73UnFeI1v3g=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/CellHelper.class
+SHA1-Digest: UW3aVmELMFV9BKk+HfZ0izUDZew=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractColumnChangeH
+ eaderConfigurationHandler.class
+SHA1-Digest: d9DkX46rm1H0psdvTWPo/bzOy8g=
+
+Name: org/eclipse/papyrus/infra/nattable/accumulator/CustomRowOverride
+ LabelAccumulator.class
+SHA1-Digest: S9S4Mh2vSyjk+aXQM1nzGXjQL40=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/CompositeAxisMan
+ ager$1.class
+SHA1-Digest: Q7KaVtKyXVT/nDwrvrUVpaJ4xMM=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportCSVConfigu
+ rationPage$3.class
+SHA1-Digest: 0A/VurN6vW5OLHNS2/jzqpv63fY=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInTa
+ bleCommandProvider.class
+SHA1-Digest: 3zTuaUmR8ufspmPe3GO3BMFvETI=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/PrintTableHandler.cla
+ ss
+SHA1-Digest: fFgZ/hzdjrknE+JjQWR/97/836U=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractRowChangeHead
+ erConfigurationHandler.class
+SHA1-Digest: a5tHtKZ7RYzWte5AN0D5g9Pm1sU=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/ComboBoxWithButton
+ CellEditor.class
+SHA1-Digest: XEuUG7YA3piWSNYi31AihYONxIc=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/TableEditingDomainUtils
+ .class
+SHA1-Digest: pUFLLs0ds2iJG+uZCqFXcnAxM9M=
+
+Name: plugin.xml
+SHA1-Digest: bpXwVDxc/bjlllR4i3YZeVuV85A=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/ILabelProviderContextEl
+ ementWrapper.class
+SHA1-Digest: fioo9D3FpFjKEdGpno/7zrYIncQ=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/LoadCurrentAxisProvide
+ rsDialog$3.class
+SHA1-Digest: 1r94LJgSAH+iy8eKW7vlo0w/cuI=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/LabelProviderContextEle
+ mentWrapper.class
+SHA1-Digest: e+WMvngKoe3oh/qFJDX2/t0PaQU=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/CSVLexer.class
+SHA1-Digest: Nz1w65QsrnqyR3TI9FcI6jbFn2E=
+
+Name: org/eclipse/papyrus/infra/nattable/painter/CustomCheckBoxPainter
+ .class
+SHA1-Digest: mRFoVxh7m8Jmcb1Vo3BQvMHhly0=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractChangeIndexSt
+ yleHandler.class
+SHA1-Digest: dOo2qPaBFd6cLEyVeVXVeZxNQ1Y=
+
+Name: org/eclipse/papyrus/infra/nattable/copy/CopySelectionToClipboard
+ Action.class
+SHA1-Digest: bBSSCSub6QJxQkuFZZOvhkI+utY=
+
+Name: org/eclipse/papyrus/infra/nattable/layerstack/RowHeaderLayerStac
+ k$ReoderRowConfid.class
+SHA1-Digest: 1OAMHdzFdvh1JbCeNZGKy91iYpc=
+
+Name: icons/empty.gif
+SHA1-Digest: zjvFqWE0dZ6ZJNXmx9emWt2mIVA=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/NattableTopLabelProv
+ ider.class
+SHA1-Digest: Bf/tR4mZyFVyYyVNVQnh+TKmvTg=
+
+Name: icons/table.gif
+SHA1-Digest: 5sswQTiyRrUqbfxCKAM7S9QSEus=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SelectColumnsHandler.
+ class
+SHA1-Digest: t9bTMswR2ZiIUEFnGXQFksD5B4U=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowAutoResizeHandler.
+ class
+SHA1-Digest: EVdi1SxRMD8XoahjIYPugAIDrr0=
+
+Name: icons/import_wiz_16x16-papyrusColor.gif
+SHA1-Digest: lWdEZrKmMBLQeIpGp+Rhdq4Unko=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/AbstractNattabl
+ eWidgetManager$CellEditionConfiguration$1.class
+SHA1-Digest: 7V8oEvkKYP6DdW80x/dgKMGnG9g=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/PasteHelper.class
+SHA1-Digest: OuwdugQjUA1/eCD6vXL2DLYk1Ww=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusColumnHe
+ aderStyleConfiguration.class
+SHA1-Digest: VVutdF13Y1qPdTzkQnpGpn7K8WE=
+
+Name: icons/warning.gif
+SHA1-Digest: ephugAqnGSA1Bn2gdY4602d9uxw=
+
+Name: org/eclipse/papyrus/infra/nattable/listener/NatTableDropListener
+ .class
+SHA1-Digest: uR/kX+hu27COre7evYJVclBz7HE=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDestroyAxisElem
+ entHandler.class
+SHA1-Digest: X8k7RIEJhC9gjPqnaGvX9W221Wg=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$10.class
+SHA1-Digest: aAVBzIywjKT+399LxIxeec80j50=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/ReferenceValueSetter.cl
+ ass
+SHA1-Digest: e+qyEmVR920kRoAYIXLSV3gAteY=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelHea
+ derHandler.class
+SHA1-Digest: JEws73twuBq8/T8Icla375KmL0g=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelFea
+ tureMultiplicityHandler.class
+SHA1-Digest: Rwi4rnKHA5K4rgCumNvIxuSscVU=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusPopupMen
+ uAction.class
+SHA1-Digest: QgIgWPBJzE4geDMpNFLqJ+5g9lE=
+
+Name: org/eclipse/papyrus/infra/nattable/layerstack/ColumnHeaderLayerS
+ tack.class
+SHA1-Digest: 6n4QHW7okOJs0MbGLJHJSeldPAs=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/ImportAxisInNattableM
+ anager.class
+SHA1-Digest: Hc2FiXooiK12CEbPqQ5m00nTIC0=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ImportTableHandler.cl
+ ass
+SHA1-Digest: ErAQDrx2m2unoNZvNJE3slGOkrU=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/IIdAxisManager.c
+ lass
+SHA1-Digest: T5oIms5crdnDMKEwebAn7Xxg6xA=
+
+Name: org/eclipse/papyrus/infra/nattable/painter/PapyrusSortableHeader
+ TextPainter.class
+SHA1-Digest: gm03NcS4PAErwnLijwq7suQjKUI=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$8.class
+SHA1-Digest: 8QZM5B7LIpEYgJZcc4P1WOqRvT4=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInNa
+ ttableCommandProvider$4.class
+SHA1-Digest: EgvGm/GNuQXYZoTaXWWRetOI37Q=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/PasteImportStatusDialo
+ g.class
+SHA1-Digest: zGMFo3PbvgwbxMHcx3r37V06EuI=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/LoadCurrentAxisProvide
+ rsDialog.class
+SHA1-Digest: 8dPGcj50xaYlM7j1Zps43AkM8Ow=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$3$1.class
+SHA1-Digest: YaX8yfyLqXa8j3/CM1Aw1QUKm/M=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusPopupMen
+ uAction$1.class
+SHA1-Digest: Kj9VSwpjVa2VzGFAUrj0f4D6a+I=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$5$1.class
+SHA1-Digest: B+C1Nh8q/cZTF+/D/gw9IFAoCRg=
+
+Name: icons/CreateDestroyColumn.gif
+SHA1-Digest: ctzX0Gk1xJtUhv3R1C56A0yuXR4=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ChangeIndexRowStyleHa
+ ndler.class
+SHA1-Digest: UQ3HXpTNiv9CRny2ySm5eExG0Ps=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/AbstractHeaderDa
+ taProvider$1.class
+SHA1-Digest: xphMonSP9GxWqQG+cCcdijz3B9U=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/cell/AbstractCellMana
+ ger.class
+SHA1-Digest: ChFNZc9aqtlK6eAd0WDVinFtKqk=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/InvertAxisHandler.cla
+ ss
+SHA1-Digest: XB0YEPgcUZrc9AGuYf6YCCvRjtA=
+
+Name: org/eclipse/papyrus/infra/nattable/messages/Messages.class
+SHA1-Digest: 64j+X+CLsnallnXwOMIWpf6pc/Q=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInTa
+ bleCommandProvider$3.class
+SHA1-Digest: Dno979o17taBLu7BRbvkHfcDEf8=
+
+Name: org/eclipse/papyrus/infra/nattable/painter/CellPainterWithUnderl
+ inedError.class
+SHA1-Digest: gwaZsiTJONJ9V7QszVV6Xk6yTJE=
+
+Name: schema/org.eclipse.papyrus.infra.nattable.tester.exsd
+SHA1-Digest: DR1GRHAsDyvLJcaFXFPes4PdUjE=
+
+Name: icons/rowIndex.png
+SHA1-Digest: ErDsavX5DuKRAhjAKxFBzXBQdug=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelFea
+ tureTypeHandler.class
+SHA1-Digest: yh5RZRy6dBwoejuzFcNG2lK8m5k=
+
+Name: icons/rename.gif
+SHA1-Digest: mS/l+FYNG7YxINYiuATz3coUq3c=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/LoadRowAxisProvidersH
+ andler.class
+SHA1-Digest: FVGcyE+Tb8y4Hv5khAc0VOvlsFQ=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDestroyAxisHand
+ ler.class
+SHA1-Digest: a6QMDHimzbBdEWOvxT4t728WBcA=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDestroyAxisElement
+ Handler.class
+SHA1-Digest: zMpEV6sL/Qjjn11BvI5ee1RtzCk=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/ProblemLabelProvider
+ .class
+SHA1-Digest: SBnKqHw7DUglZwtQeRrqsAc/jQ0=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabelHeader
+ Handler.class
+SHA1-Digest: noioV2RVxJRiV/oeKnncdAnl6o8=
+
+Name: org/eclipse/papyrus/infra/nattable/tester/TableTesterRegistry.cl
+ ass
+SHA1-Digest: 9cfkpdAuPMP6wJX6relR1q6C9gM=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractTableHandler.
+ class
+SHA1-Digest: vyhqjdEaoZb2j82a2Sz+nfrC6T8=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$5.class
+SHA1-Digest: gFhknMg2dJFkOiSgDOWBfNT2qKs=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInNa
+ ttableCommandProvider$1.class
+SHA1-Digest: KLRCpPKOI5uJSMK7lrpERJTioGw=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabelImageH
+ andler.class
+SHA1-Digest: AorLoqwpDkyWjeJiEV+VhBUt+KE=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SaveCurrentColumnAxis
+ ProvidersHandler.class
+SHA1-Digest: Zv6wDMWOP8rzxPuY+a5eVj6Kx5M=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/INattableModelM
+ anager.class
+SHA1-Digest: MlX3hSFqzQw8NdQG+gLBzna8Uhs=
+
+Name: icons/delete_obj.gif
+SHA1-Digest: ORJe0sG1BDPf20zkd9DI+HUjfk8=
+
+Name: schema/org.eclipse.papyrus.infra.nattable.celleditor.configurati
+ on.exsd
+SHA1-Digest: eeHOunBZT9fXlPgB0PhyAGK156g=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabelFeatur
+ eMultiplicityHandler.class
+SHA1-Digest: qr5liljMQazWMAFi55252tdFpLM=
+
+Name: icons/sort_rows_by_name_A_to_Z.gif
+SHA1-Digest: ln0qUPLyDH1DYeAh9tfy9yFEyZ0=
+
+Name: icons/empty.png
+SHA1-Digest: mK1RtECBcQQ6w63CxgaJ7GSvTxo=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnEditAliasHeader
+ Handler.class
+SHA1-Digest: UNVQQFuLpjpHithfAhMcvEM8mrw=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelFea
+ tureIsDerivedHandler.class
+SHA1-Digest: LzxBNezNjjcUxrW5z3eQnGa9gFs=
+
+Name: icons/table.png
+SHA1-Digest: dBX/oav9UCvrwnEWOY2DukEVvco=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/AbstractNattabl
+ eWidgetManager$1.class
+SHA1-Digest: 5A9m+U0FNcJd7ze3iN4IIQPTN+c=
+
+Name: org/eclipse/papyrus/infra/nattable/advice/DeleteNatTableContextA
+ dvice.class
+SHA1-Digest: M4JciiAlw6oBm2LP2DScFbsaCHc=
+
+Name: org/eclipse/papyrus/infra/nattable/widget/NatComboButton.class
+SHA1-Digest: imoWAf+xY5eBm0deeJXhMw50itQ=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusDefaultE
+ ditBindings.class
+SHA1-Digest: 5R5zJlIT864lLFrgB6Yo52z7Hjo=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractSaveCurrentAx
+ isProvidersHandler$1.class
+SHA1-Digest: pIFNcUbGL13IpQM0QVdZ7eiQrt4=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ChangeIndexColumnStyl
+ eHandler.class
+SHA1-Digest: cRaxtJAJI5r7ufULnJ4yxvB2X6E=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ExportToXLSHandler.cl
+ ass
+SHA1-Digest: HUbTvIUakECldKv33r2yeir8D5Q=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/LoadCurrentAxisProvide
+ rsDialog$5.class
+SHA1-Digest: OytjShhONQj9gurfXg1SC5WLG3Y=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/AddToResource.class
+SHA1-Digest: Ma8TsWwWaBFevc9LDY1Yn+R2xeQ=
+
+Name: icons/columnIndex.png
+SHA1-Digest: RzjGn30LKTwFDUy50o9IuxGA45A=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelTex
+ tHandler.class
+SHA1-Digest: Bq0JBKTEmXmJV4f5110QoLcAttg=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/NattableWidgetPropertyT
+ ester.class
+SHA1-Digest: C1urtsz08Z8rvPEs/HnwrX4V55w=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/TableLabelProvider.c
+ lass
+SHA1-Digest: 2xSDb4lzG2OT92PEUuIwlFuvRAs=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ResolvedProblemHandle
+ r.class
+SHA1-Digest: 2SlPCVI9g0kUIoi7yh7C1efSflc=
+
+Name: org/eclipse/papyrus/infra/nattable/widget/NatComboButton$1.class
+SHA1-Digest: D7YyTCjwuDms1ddyawkon3YDG2M=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/TableSelectionWrapper.c
+ lass
+SHA1-Digest: yxRdvoB1Zq8khlgGGhsxUOY2dCc=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/config/IAxisCellEd
+ itorConfiguration.class
+SHA1-Digest: EtPQD0w3+PnTmSUVUmLmeknUflI=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: icons/tableRowAction.gif
+SHA1-Digest: sam6OWXYzs/PME3tWzp8xwcajTE=
+
+Name: schema/org.eclipse.papyrus.infra.nattable.axismanager.exsd
+SHA1-Digest: eW1bv3yNHeDUN3VU1harvk156X4=
+
+Name: org/eclipse/papyrus/infra/nattable/reorder/CustomCellDragModeFor
+ Column.class
+SHA1-Digest: PB5CSLU2wWzq9Ys0W7MRQIEaCaY=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabelFeatur
+ eTypeHandler.class
+SHA1-Digest: /lHOrd137yyDBZVlRXW27/evDsc=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDestroyAxisHandler
+ .class
+SHA1-Digest: khlSfmxrilX4fheNDSIASBk1pvY=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelFea
+ tureNameHandler.class
+SHA1-Digest: 85YK9ddzkq7B5ambqUXhm1XXJlg=
+
+Name: icons/label.png
+SHA1-Digest: rm6US26cW7CMQCTE5BEZwE1EhDg=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/AxisConfigurationUtils.
+ class
+SHA1-Digest: 2Vxo7MHCnOasrVL7/IDYjpKg2zE=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/CornerConfigura
+ tion.class
+SHA1-Digest: S+YoUfXBp5Y3clBaTNS9wjbJNxA=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/IPastePostAction.class
+SHA1-Digest: vF8tyW0RPCxNAu8vljoApst66II=
+
+Name: org/eclipse/papyrus/infra/nattable/export/PapyrusExportBindings.
+ class
+SHA1-Digest: n6kf7J9WqAsFCtTh5+qYI7U6ny0=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/StyleConfigurat
+ ion.class
+SHA1-Digest: jdPJ3YdTqfvxrKKeUcMkaJbvXfg=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/TableSelectionProvid
+ er.class
+SHA1-Digest: v+Znbtgfw3m4o7TdVJ5ycCQiDHI=
+
+Name: icons/invertAxis.gif
+SHA1-Digest: 4VQCgfOMD08f7UKphRF47qs4efk=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/PasteInTableHandler.c
+ lass
+SHA1-Digest: 4mwwyKtLwW+Hzn8+MjvaI6kiCY8=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SelectRowsHandler.cla
+ ss
+SHA1-Digest: kZn/Ao0SPcF0v8C0epk5B98uecw=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/ICompositeAxisMa
+ nager.class
+SHA1-Digest: LOuyJidQ0ue0qBARWPs1JgX5ckI=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$2.class
+SHA1-Digest: 08jBh/hI465w08t8pdTKSdMw0s0=
+
+Name: icons/arrow_down_end.png
+SHA1-Digest: +RAZir0YBbWykVhrLMLm1rJMqqk=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/NattableConfigAttribute
+ s.class
+SHA1-Digest: GGAN90cxMt1Bi8EhrwC5QhpkES0=
+
+Name: org/eclipse/papyrus/infra/nattable/layer/PapyrusSelectionLayer.c
+ lass
+SHA1-Digest: r76JiF1JcvXYGAchGukLG6QfSy8=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SortColumnsHandler.cl
+ ass
+SHA1-Digest: 8g2rg2UXrhDFoCH8JhQzR0NRTQQ=
+
+Name: org/eclipse/papyrus/infra/nattable/paste/TextDelimiter.class
+SHA1-Digest: WKwqcHQqFsrUt+Iqa4jXiwKik8Q=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportCSVConfigu
+ rationPage$2.class
+SHA1-Digest: i9Dw8uuWQuK1EvICzzJh3AxvRYw=
+
+Name: schema/org.eclipse.papyrus.infra.nattable.paste.postactions.exsd
+SHA1-Digest: ssv21rKbx+8Co1pZp1j7TqGaLTo=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/CSVParser.class
+SHA1-Digest: 6UUkQIo+ThWXvWrZm03ZI+U+V/4=
+
+Name: org/eclipse/papyrus/infra/nattable/dialog/LoadCurrentAxisProvide
+ rsDialog$2.class
+SHA1-Digest: djC8Ekb6lVqyS2/atiN4ac44m/c=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowEditAliasHeaderHan
+ dler.class
+SHA1-Digest: 4RN+VVPiViFPKqa620VbjojL7lw=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/AbstractHeaderDa
+ taProvider$3.class
+SHA1-Digest: Z9uOBkWjoeL4zjRqTw2FFuOOQgg=
+
+Name: icons/auto_resize_row.png
+SHA1-Digest: +//kS0LmB3gKQv056d3n/dZQ6Wg=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportInvertedTa
+ bleErrorPage.class
+SHA1-Digest: pjy8nXxRup9jsBpahWTsZIvXReo=
+
+Name: org/eclipse/papyrus/infra/nattable/comparator/AbstractAxisCompar
+ ator.class
+SHA1-Digest: IvI5uGlyLPZzIY7VB8hU5qq9ei0=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/EditConfigurati
+ on.class
+SHA1-Digest: KslqrC6r609PkcR65sCacyd+NJM=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnMasterDisconnec
+ tRowSlaveHandler.class
+SHA1-Digest: WCHz4WXJR/BMTLMPVfKrfZ8UL44=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/AbstractNattabl
+ eWidgetManager$CellEditionConfiguration.class
+SHA1-Digest: kLYF5xzIaliZ0naMuLFryGU8eAY=
+
+Name: org/eclipse/papyrus/infra/nattable/preferences/PapyrusTablePrefe
+ renceStore.class
+SHA1-Digest: KZUQjp1VwNL5+JQxkS7KQCMKtfc=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/SelectAllHandler.clas
+ s
+SHA1-Digest: Gu8Ri3Rx2x7sSaOsSOM7qNTSgKk=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/CellIterator.class
+SHA1-Digest: 121YcUuHjleXBcmfWP90q00qHt4=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/PasteModeEnumeration.cl
+ ass
+SHA1-Digest: S96Yoa+Y7fr+OE7sNTLXPFI08RM=
+
+Name: org/eclipse/papyrus/infra/nattable/configuration/PapyrusRowHeade
+ rStyleConfiguration.class
+SHA1-Digest: muEINf0AIygrvYOq5U7coODWHeE=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/TableHelper.class
+SHA1-Digest: nJBICzfFHE1nd+LZy2iSaTCL4AA=
+
+Name: org/eclipse/papyrus/infra/nattable/command/CommandIds.class
+SHA1-Digest: JOsOXN7meMrI1Rvjv2uO3vY89aM=
+
+Name: schema/org.eclipse.papyrus.infra.nattable.cellmanager.exsd
+SHA1-Digest: tpCW+dtgrJ6vUIDyXu2RnDxLKPM=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/config/AbstractCel
+ lEditorConfigurationFactory.class
+SHA1-Digest: vKZlnv2OhN69vK5pAFHVs54GlzU=
+
+Name: icons/sort_rows_by_name_Z_to_A.gif
+SHA1-Digest: z5m6lrP/b6QuD9j9bJJSKaAJ0G4=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/RewindableTextStream.
+ class
+SHA1-Digest: gA6upKiJPNxZ5Ed2l4xsgApw2c8=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/LabelConfigurationManag
+ ementUtils.class
+SHA1-Digest: JsoHXtjO1Q1jmz6Bxn/m64ydwfg=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/RowDisplayLabelFeatur
+ eNameHandler.class
+SHA1-Digest: +XqKK720HBFSUsRrAcJU7d47skQ=
+
+Name: org/eclipse/papyrus/infra/nattable/sort/ColumnSortModel.class
+SHA1-Digest: ZzeahAiNYugZa8JyWafuRVtrH5k=
+
+Name: org/eclipse/papyrus/infra/nattable/painter/CustomImagePainter.cl
+ ass
+SHA1-Digest: 17DJxjP+ldkqK8/gOi6TgsFsejM=
+
+Name: org/eclipse/papyrus/infra/nattable/tester/ITableTester.class
+SHA1-Digest: Pp4VLZhHGE5zZKMec2eA1HW2aL4=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: vtZNCueLyJ7FhwPSxYiT8r/WP1s=
+
+Name: org/eclipse/papyrus/infra/nattable/Activator.class
+SHA1-Digest: HrpsS7Jcm53SeBGbLliv8Nv1Zqw=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/table/NattableModelMa
+ nager$7.class
+SHA1-Digest: AOM+jJqEzPzRZwf7oYXuTC65x7s=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractColumnChangeL
+ abelConfigurationValueHandler.class
+SHA1-Digest: rDNfw/UvaFfaIm36ZabfOGWlw88=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInNa
+ ttableCommandProvider$3.class
+SHA1-Digest: OrBgEit5ReBz+hQDRiYCcUHePgs=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/AbstractRowChangeLabe
+ lConfigurationValueHandler.class
+SHA1-Digest: goKMecbbhp0hvafeJ5dN6foCTN4=
+
+Name: org/eclipse/papyrus/infra/nattable/celleditor/config/IAxisEStruc
+ turalFeatureCellEditorConfiguration.class
+SHA1-Digest: CR+GPuBKAQMNWwCEdF439W4zHhc=
+
+Name: org/eclipse/papyrus/infra/nattable/reorder/CustomDefaultColumnRe
+ orderBindings.class
+SHA1-Digest: i2MUqtYp6fy+5AIZIehcby/sDwA=
+
+Name: org/eclipse/papyrus/infra/nattable/comparator/RowComparator.clas
+ s
+SHA1-Digest: YvgeKXIuxJ1oMQRZRA+Bzk+1WBo=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/AxisManagerFacto
+ ry.class
+SHA1-Digest: C7/VN+dKETYd0jDRWhULqiVI1tc=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/axis/IAxisManager.cla
+ ss
+SHA1-Digest: J87LHa/RuJwsttmjKjbXuygk3nc=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/PasteConfigurationUtils
+ .class
+SHA1-Digest: dBsf+9YUb68IB0ldQwVcAViXAiA=
+
+Name: icons/sort_columns_by_name_A_to_Z.gif
+SHA1-Digest: CjkLWBpA+MO34O/C6zN2aIiDyVM=
+
+Name: org/eclipse/papyrus/infra/nattable/provider/PasteEObjectAxisInTa
+ bleCommandProvider$2.class
+SHA1-Digest: 9P4JtWnGn3WX+tF393x6x2Y6Nrs=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/AbstractDataProv
+ ider.class
+SHA1-Digest: 8C6BKFaj9hl+nUJZXJ2dbS9ePdY=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/BodyDataProvider
+ .class
+SHA1-Digest: oIJtGV13H0Zr3x+5n4hM4jjsLvY=
+
+Name: org/eclipse/papyrus/infra/nattable/layerstack/RowHeaderLayerStac
+ k$CustomConfig.class
+SHA1-Digest: BPXUgNjXOb86ovUTqxhhb06JYCo=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/AxisUtils.class
+SHA1-Digest: /026egQFEUHbdTbtrHJ4viQCZB0=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/StringComparator.class
+SHA1-Digest: a6EDfL/y6cGNRNNL5RZmk4RnBsk=
+
+Name: org/eclipse/papyrus/infra/nattable/messages/messages.properties
+SHA1-Digest: FA96Jx0+rXKztODnRoKfL3rzQzU=
+
+Name: org/eclipse/papyrus/infra/nattable/manager/PasteAxisInNattableMa
+ nager.class
+SHA1-Digest: k78mG+nfHRxOAfIK5XHorLdPYMI=
+
+Name: icons/select_columns_to_show.png
+SHA1-Digest: r82rcH15ZXdImHcOJunHaR02A1s=
+
+Name: org/eclipse/papyrus/infra/nattable/dataprovider/RowHeaderDataPro
+ vider.class
+SHA1-Digest: 680ARgQLv+OQ4b1Q5vr9oShspMc=
+
+Name: org/eclipse/papyrus/infra/nattable/helper/advice/DestroyTableAdv
+ iceHelper.class
+SHA1-Digest: EgyQ1iM2jcWmDDu/OYOOYBQIIb0=
+
+Name: org/eclipse/papyrus/infra/nattable/wizard/pages/ImportFilePage.c
+ lass
+SHA1-Digest: /ZiIiL0EDDXu/BVut6te1lqxjQs=
+
+Name: org/eclipse/papyrus/infra/nattable/parsers/CSVParser$Document.cl
+ ass
+SHA1-Digest: tL/R00vv5RpEHsvtagObAwbblXM=
+
+Name: org/eclipse/papyrus/infra/nattable/painter/CustomizedCellPainter
+ .class
+SHA1-Digest: D5lvvmVe+SBu8Dqh5YPIF8eZRc0=
+
+Name: org/eclipse/papyrus/infra/nattable/handler/ColumnDisplayLabelIma
+ geHandler.class
+SHA1-Digest: krvagMD24hQz0a7cVkl8OfLDSPw=
+
+Name: org/eclipse/papyrus/infra/nattable/utils/TableClipboardUtils.cla
+ ss
+SHA1-Digest: 1Qf3PsazR4daNJgNrqiIH2EGNpo=
+

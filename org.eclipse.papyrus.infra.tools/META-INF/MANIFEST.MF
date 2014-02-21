@@ -1,0 +1,148 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.tools
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.core.databind
+ ing;bundle-version="1.4.1",org.eclipse.emf.common;bundle-version="2.9
+ .0",org.eclipse.emf.ecore;bundle-version="2.9.0",org.eclipse.emf.ecor
+ e.xmi;bundle-version="2.9.0",org.eclipse.emf.edit;bundle-version="2.9
+ .0",org.eclipse.core.expressions;bundle-version="3.4.500"
+Bundle-Activator: org.eclipse.papyrus.infra.tools.Activator
+Export-Package: org.eclipse.papyrus.infra.tools.comparator,org.eclipse
+ .papyrus.infra.tools.converter,org.eclipse.papyrus.infra.tools.databi
+ nding,org.eclipse.papyrus.infra.tools.preferences,org.eclipse.papyrus
+ .infra.tools.preferences.ui.dialog,org.eclipse.papyrus.infra.tools.ut
+ il
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Eclipse-BuddyPolicy: dependent
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/tools/preferences/PapyrusScopedPrefere
+ nceStore.class
+SHA1-Digest: eVEoM+lvn/RoXAUDV+2io8Lgy98=
+
+Name: org/eclipse/papyrus/infra/tools/converter/MultiConvertedValueCon
+ tainer.class
+SHA1-Digest: p6j6UwLqDzrFwv97O/832iQNK9E=
+
+Name: org/eclipse/papyrus/infra/tools/databinding/AggregatedObservable
+ .class
+SHA1-Digest: w2ZVaIm2soTKR7ESbJDAVkNCYTQ=
+
+Name: org/eclipse/papyrus/infra/tools/converter/IStringValueConverter.
+ class
+SHA1-Digest: DFm3+tsS/aynfc56rcPLWgUaXzc=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: 04cFPwwR/e45KUhzqfRkKQzYkY8=
+
+Name: org/eclipse/papyrus/infra/tools/util/AbstractCreateMenuFromComma
+ ndCategory$1.class
+SHA1-Digest: cOpRnS20KSUN4UlgiOUNTvIuff0=
+
+Name: org/eclipse/papyrus/infra/tools/preferences/PapyrusScopedPrefere
+ nceStore$1.class
+SHA1-Digest: 8+7ow6gfxc+GuHfEW2GIseql60U=
+
+Name: org/eclipse/papyrus/infra/tools/util/TypesConstants.class
+SHA1-Digest: CO20I1Z1t0vPXNuPw6UvB4k7LPA=
+
+Name: org/eclipse/papyrus/infra/tools/preferences/PapyrusScopedPrefere
+ nceStore$2.class
+SHA1-Digest: rEMf6hJbQ+j2V0ux8DSaMJvVRGk=
+
+Name: org/eclipse/papyrus/infra/tools/preferences/PapyrusScopedPrefere
+ nceStore$3.class
+SHA1-Digest: GKVPwOjxZHIykKWyLLiUdsYDF7A=
+
+Name: org/eclipse/papyrus/infra/tools/messages/messages.properties
+SHA1-Digest: ZCTCY89+5Mm/lRC+R7JZ1x504bI=
+
+Name: org/eclipse/papyrus/infra/tools/util/BooleanHelper.class
+SHA1-Digest: SPisC2viObMxXUG4Z3fMHiWAVLI=
+
+Name: org/eclipse/papyrus/infra/tools/databinding/MultipleObservableVa
+ lue.class
+SHA1-Digest: wNUflOti8wG8KV2bdAdGkdomPaw=
+
+Name: org/eclipse/papyrus/infra/tools/util/ClassLoaderHelper.class
+SHA1-Digest: mp5c8iRxw3vmax/+Sxyf5UDfYpA=
+
+Name: org/eclipse/papyrus/infra/tools/util/StringHelper.class
+SHA1-Digest: EiztDIbsI4r0+WgRj/BA7d63V7k=
+
+Name: org/eclipse/papyrus/infra/tools/converter/AbstractStringValueCon
+ verter.class
+SHA1-Digest: IygMAX9iC43JNhl/Svwvw4GpjgQ=
+
+Name: org/eclipse/papyrus/infra/tools/converter/ConvertedValueContaine
+ r.class
+SHA1-Digest: JpVz8KleCHAs6EKwTTdUZCHPSP8=
+
+Name: org/eclipse/papyrus/infra/tools/Activator.class
+SHA1-Digest: JFXxPUam5wxrd0WeM5qyRRkZtHw=
+
+Name: org/eclipse/papyrus/infra/tools/databinding/MultipleObservableVa
+ lue$1.class
+SHA1-Digest: ZJH+XMTT2ncp7HsCjHrMcKwhSHQ=
+
+Name: org/eclipse/papyrus/infra/tools/util/ListHelper.class
+SHA1-Digest: Ns5mdsgy61NWpD6qW/l/7Njwzjo=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/tools/util/ReflectHelper.class
+SHA1-Digest: 5sxHtculkGjx5aYQ13pN6y0OZK4=
+
+Name: org/eclipse/papyrus/infra/tools/util/EclipseCommandUtils.class
+SHA1-Digest: 5fjFlBRLhVktaGh/HhCbEnFPJTk=
+
+Name: org/eclipse/papyrus/infra/tools/converter/StringValueConverterSt
+ atus.class
+SHA1-Digest: 6ZyIdFi12L0UVwOZ8G12f8FD/JY=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/tools/comparator/CompositeComparator.c
+ lass
+SHA1-Digest: LZ614F4cVS0hP1RT2SYWVSgj3lo=
+
+Name: org/eclipse/papyrus/infra/tools/preferences/ui/dialog/AbstractAp
+ plyValueOnPreferenceKeyDialog.class
+SHA1-Digest: qlnlAP5zeZRjaLTelKlDnxRyTDs=
+
+Name: org/eclipse/papyrus/infra/tools/preferences/AbstractPapyrusPrefe
+ renceStore.class
+SHA1-Digest: uQ3SKVsmNBhQlxfPMJ5gNu+OYuo=
+
+Name: org/eclipse/papyrus/infra/tools/preferences/ui/dialog/AbstractPr
+ eferenceKeyDialog.class
+SHA1-Digest: ZCaqLG5U4UKWC2IS3rNqUjnQVBw=
+
+Name: org/eclipse/papyrus/infra/tools/util/EditorHelper.class
+SHA1-Digest: /xsueyEZR5J7UhH03IsO4VWZW3c=
+
+Name: org/eclipse/papyrus/infra/tools/util/PlatformHelper.class
+SHA1-Digest: EgbBzT2v/obiDEEshE+AMFMiAdQ=
+
+Name: org/eclipse/papyrus/infra/tools/messages/Messages.class
+SHA1-Digest: dCZpcjox+hi9TruP8TSLe1cfAVE=
+
+Name: org/eclipse/papyrus/infra/tools/util/WorkbenchPartHelper.class
+SHA1-Digest: snLTUEBe6hs42X5eKz2iyV8gIOo=
+
+Name: org/eclipse/papyrus/infra/tools/util/IntegerAndSpreadsheetNumber
+ Converter.class
+SHA1-Digest: k+BfMc9AQDvoPuliQUhRHK6uCJA=
+
+Name: org/eclipse/papyrus/infra/tools/util/AbstractCreateMenuFromComma
+ ndCategory.class
+SHA1-Digest: z2RuUZET+KcBvbchNYVE35bPung=
+

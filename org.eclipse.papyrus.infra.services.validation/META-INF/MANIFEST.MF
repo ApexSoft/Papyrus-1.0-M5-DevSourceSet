@@ -1,0 +1,171 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.validation;sin
+ gleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.em
+ f;bundle-version="2.6.0",org.eclipse.emf.ecore;bundle-version="2.6.1"
+ ,org.eclipse.core.resources;bundle-version="3.6.0",org.apache.commons
+ .lang;bundle-version="2.3.0",org.eclipse.emf.edit.ui;bundle-version="
+ 2.6.0",org.eclipse.gmf.runtime.emf.commands.core;bundle-version="1.0.
+ 100",org.eclipse.emf.facet.infra.browser.uicore;bundle-version="0.1.0
+ ",org.eclipse.papyrus.infra.services.decoration;bundle-version="1.0.0
+ ",org.eclipse.papyrus.infra.widgets;bundle-version="1.0.0",org.eclips
+ e.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.i
+ nfra.gmfdiag.commands;bundle-version="1.0.0",org.eclipse.papyrus.infr
+ a.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;bundle-ve
+ rsion="1.0.0",org.eclipse.emf.facet.infra.facet;bundle-version="0.3.0
+ ",org.eclipse.papyrus.infra.services.markerlistener;bundle-version="1
+ .0.0",org.eclipse.uml2.uml;bundle-version="4.1.0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.validation.Activa
+ tor
+Export-Package: org.eclipse.papyrus.infra.services.validation,org.ecli
+ pse.papyrus.infra.services.validation.commands,org.eclipse.papyrus.in
+ fra.services.validation.handler,org.eclipse.papyrus.infra.services.va
+ lidation.preferences
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %pluginProvider
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/AbstractCo
+ mmandHandler.class
+SHA1-Digest: c2gLHHtLWS6BfePcEd8shcmQXe4=
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/ValidateSu
+ btreeHandler.class
+SHA1-Digest: kwpwkCR0jxBbmF56ZpMZUscXRHo=
+
+Name: org/eclipse/papyrus/infra/services/validation/preferences/Initia
+ lizer.class
+SHA1-Digest: /M5Ca8PoZLMOpEnKXGi41jVB1qY=
+
+Name: org/eclipse/papyrus/infra/services/validation/EcoreDiagnostician
+ .class
+SHA1-Digest: JOQ6G0s5PTBotycxsltEcPLKlKQ=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/SelectAnd
+ ValidateModelCommand.class
+SHA1-Digest: Awz7TKxSCNwsby0aJPQzJHoeQII=
+
+Name: org/eclipse/papyrus/infra/services/validation/ValidationTool.cla
+ ss
+SHA1-Digest: C5aewAqTcvKw/XWXROcGnarCqqU=
+
+Name: plugin.properties
+SHA1-Digest: At6U2q/2B1pbW2IcJO8teAA8IkI=
+
+Name: icons/etool16/validate.gif
+SHA1-Digest: YiEtqjdpFBxEcxWtqTeMfz5x5qM=
+
+Name: org/eclipse/papyrus/infra/services/validation/Activator.class
+SHA1-Digest: GV150PIpfeB1JPYM/7LDUm0ltpw=
+
+Name: icons/etool16/info_co.gif
+SHA1-Digest: xS9BZOUQ1qk0vZ976idpVWqpcVI=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/ValidateD
+ elMarkersFromModelCommand.class
+SHA1-Digest: OMu3zdh4hYzZyAPd0H4Eatmdnm8=
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/SelectAndV
+ alidateSubtreeHandler.class
+SHA1-Digest: Am3nmsrmuIPTEkMa2yiEmvs+VUI=
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/ValidateMo
+ delHandler.class
+SHA1-Digest: rNyuSyQoLt9VMgCnAjsDT2RIMqg=
+
+Name: org/eclipse/papyrus/infra/services/validation/preferences/Prefer
+ enceConstants.class
+SHA1-Digest: dTIlIiAAz6Kmngkhlgw44w7YFS0=
+
+Name: icons/etool16/validateSel.gif
+SHA1-Digest: 44ujaWK1CDf8rAIC2Hlsp4Weib0=
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/ValidateDe
+ lMarkersFromSubtreeHandler.class
+SHA1-Digest: HIRnnLKsgecCOQUIB9zWAIaRmDk=
+
+Name: org/eclipse/papyrus/infra/services/validation/preferences/Prefer
+ encePage.class
+SHA1-Digest: xmNq0W4StJopN1xmpx+OidqDS7g=
+
+Name: plugin.xml
+SHA1-Digest: HginzyqWAo5sTfu/sVeeqp8ixU4=
+
+Name: org/eclipse/papyrus/infra/services/validation/ValidationFunction
+ s.class
+SHA1-Digest: KoDrrfsIoXwvHhzAFVCSf5Swy58=
+
+Name: org/eclipse/papyrus/infra/services/validation/IPapyrusDiagnostic
+ ian.class
+SHA1-Digest: psz8B8m2GFvH+/9B32Cw7ADAT4g=
+
+Name: org/eclipse/papyrus/infra/services/validation/EValidatorAdapter.
+ class
+SHA1-Digest: QMbyVtqj50AwG640ngBNEeXVPzs=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/ValidateS
+ ubtreeCommand.class
+SHA1-Digest: wSipypdp1THLUx2Sm3NxXm9Q088=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/AbstractV
+ alidateCommand.class
+SHA1-Digest: DSNuCXCNLvX22+Z4VA9BWiOOiXs=
+
+Name: icons/etool16/warning_co.gif
+SHA1-Digest: 76fAklsFV/Jw7hyoXj0qFN8pgPQ=
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/SelectAndV
+ alidateModelHandler.class
+SHA1-Digest: zQtXJ+FsI4tt3kMR3HcNqDtQo98=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/services/validation/handler/ValidateDe
+ lMarkersFromModelHandler.class
+SHA1-Digest: EeDWHPBoeksfNDGMvFZbtSlcpFg=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/SelectAnd
+ ValidateSubtreeCommand.class
+SHA1-Digest: tTZtvujoUWVBIW2Z0FiBU3tD8os=
+
+Name: org/eclipse/papyrus/infra/services/validation/ValidationUtils.cl
+ ass
+SHA1-Digest: r0TbjA/W2sG/JFKC9wMZMBj8LUU=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/AbstractV
+ alidateCommand$1.class
+SHA1-Digest: bQisSFTa7ztV2tlYocOe/bWZEAU=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/AbstractV
+ alidateCommand$2.class
+SHA1-Digest: 8v+wiLGBKKFzVfWoHEUvnxhMpRk=
+
+Name: org/eclipse/papyrus/infra/services/validation/preferences/Prefer
+ enceUtils.class
+SHA1-Digest: VnecxdP4UHkWRyOIpM/kRWOhpuw=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/ValidateM
+ odelCommand.class
+SHA1-Digest: raMTnqKHpXTLZ4CP+Y8ZixGOQ6c=
+
+Name: org/eclipse/papyrus/infra/services/validation/PapyrusClientSelec
+ tor.class
+SHA1-Digest: GVSwTpI4bEI9eBtwJzTeJ6exmDo=
+
+Name: icons/etool16/error_co.gif
+SHA1-Digest: P6tABf1xezsyBapSVbypjgTECpo=
+
+Name: org/eclipse/papyrus/infra/services/validation/commands/ValidateD
+ elMarkersFromSubtreeCommand.class
+SHA1-Digest: SCu7WVvBziHHXpKQdoashPdSR6E=
+

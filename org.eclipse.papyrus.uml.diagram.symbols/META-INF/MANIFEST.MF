@@ -1,0 +1,110 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.symbols;singleton
+ :=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime;bundle-version
+ ="3.8.0",org.eclipse.papyrus.uml.extensionpoints;bundle-version="1.0.
+ 0",org.eclipse.papyrus.uml.profile;bundle-version="1.0.0",org.eclipse
+ .uml2.uml;bundle-version="4.0.0",org.eclipse.papyrus.uml.tools.utils;
+ bundle-version="1.0.0",org.eclipse.gmf.runtime.diagram.ui;bundle-vers
+ ion="1.6.0",org.eclipse.gmf.runtime.diagram.ui.providers;bundle-versi
+ on="1.5.0",org.eclipse.papyrus.sysml.diagram.common;bundle-version="1
+ .0.0",org.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.eclip
+ se.papyrus.uml.tools;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .gmfdiag.common;bundle-version="1.0.0",org.eclipse.gmf.runtime.diagra
+ m.ui.render;bundle-version="1.6.0",org.eclipse.gmf.runtime.draw2d.ui.
+ render;bundle-version="1.4.1",org.eclipse.papyrus.infra.core.log;bund
+ le-version="1.0.0",org.eclipse.papyrus.uml.diagram.common;bundle-vers
+ ion="1.0.0",org.eclipse.papyrus.uml.appearance;bundle-version="1.0.0"
+ ,org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.w3c.dom.svg
+ ;bundle-version="1.1.0"
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.symbols.Activator
+Export-Package: org.eclipse.papyrus.uml.diagram.symbols,org.eclipse.pa
+ pyrus.uml.diagram.symbols.provider
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/TypedElementSha
+ peProvider.class
+SHA1-Digest: khaUUD+ssL/qEXaO7NK+VbjwQ+8=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/LifelineShapePr
+ ovider.class
+SHA1-Digest: 66v9/jj3zKDZSBGNsnmYysshRl8=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/StereotypedElem
+ entShapeProvider$StereotypedElementShapeProviderNotificationManager.c
+ lass
+SHA1-Digest: d+YteWfA/gAOedyebxgfZxyK3Gk=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: hwV9kUgw/8S1iBHHiD5gmylDwAA=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/Activator.class
+SHA1-Digest: yCV63WMtvZFa0kW0r9wh/efoPBA=
+
+Name: resources/PapyrusInternal.profile.uml
+SHA1-Digest: DMe00cc5xXyCPqNIqt2ppuO8Krs=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/StereotypedElem
+ entShapeProvider.class
+SHA1-Digest: 5yZb3p6N1e2wRwmN7gnqrlkseRk=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: resources/PapyrusInternal.profile.notation
+SHA1-Digest: 4RTRDXcuiwuAjoPlQNCMV161nKE=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/ShapeCompartmen
+ tViewProvider$ShapeCompartmentGraphicalTypeRegistry.class
+SHA1-Digest: wklB+dYD0Cnlo9vaSzLZMrwVblA=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/ActorShapeProvi
+ der.class
+SHA1-Digest: 9D3OXEu4PfD4/zV9lFqiM/NLZp8=
+
+Name: resources/PapyrusInternal.profile.di
+SHA1-Digest: xy0YO28ITMzDwOujG0JLafm2cTs=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/ActorShapeProvi
+ der$ActorShapeProviderNotificationManager.class
+SHA1-Digest: FctqYxt6l1HD2vIhED8BacFXWbM=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/ShapeCompartmen
+ tEditPartProvider.class
+SHA1-Digest: yb7YrlcUQD5Ti53iFxHLbAaqv30=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/ShapeEditPolicy
+ Provider.class
+SHA1-Digest: fM4hYWFgEZWeuaIGRQTS5WvLDTo=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/IPapyrusInternalProfileC
+ onstants.class
+SHA1-Digest: wd6SOxDpa31PrfZ3Ji18V6gEP9s=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/TypedElementSha
+ peProvider$TypedElementShapeProviderNotificationManager.class
+SHA1-Digest: Cx3pJkDXATwMfoNXSo/dEO5k8hM=
+
+Name: org/eclipse/papyrus/uml/diagram/symbols/provider/ShapeCompartmen
+ tViewProvider.class
+SHA1-Digest: C80FVbnpptGybkeVhOcNAdNvwNA=
+
+Name: documentation.pdoc
+SHA1-Digest: feTfY/+A+OT4l3CQy96qtUAkxls=
+
+Name: icons/symbols.gif
+SHA1-Digest: 5CgQ5Qto1X3RfB9ujXTBxhbgHco=
+
+Name: plugin.xml
+SHA1-Digest: ReSFwQVhkKTHkv906plOAm7dmG8=
+

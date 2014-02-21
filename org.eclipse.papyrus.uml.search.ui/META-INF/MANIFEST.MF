@@ -1,0 +1,329 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.search.ui;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.se
+ arch;bundle-version="3.8.0",org.eclipse.papyrus.infra.core;bundle-ver
+ sion="1.0.0",org.eclipse.core.resources;bundle-version="3.8.1",org.ec
+ lipse.papyrus.editor;bundle-version="1.0.0",org.eclipse.papyrus.views
+ .search;bundle-version="1.0.0",org.eclipse.papyrus.infra.onefile;bund
+ le-version="1.0.0",org.eclipse.emf;bundle-version="2.6.0",org.eclipse
+ .ui.ide;bundle-version="3.8.100",org.eclipse.papyrus.infra.emf;bundle
+ -version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-version="1.0.0"
+ ,org.eclipse.uml2.uml;bundle-version="4.0.100",org.eclipse.papyrus.in
+ fra.services.viewersearch;bundle-version="1.0.0",org.eclipse.papyrus.
+ infra.services.openelement;bundle-version="1.0.0",org.eclipse.papyrus
+ .infra.core.log;bundle-version="1.0.0",org.eclipse.jface,org.eclipse.
+ emf.transaction,org.eclipse.papyrus.infra.services.labelprovider;bund
+ le-version="1.0.0",org.eclipse.ocl.examples.xtext.essentialocl;bundle
+ -version="3.3.0",org.eclipse.ocl.examples.xtext.essentialocl.ui;bundl
+ e-version="3.3.0",org.eclipse.ocl.examples.xtext.console,org.eclipse.
+ ltk.ui.refactoring;bundle-version="3.7.100"
+Bundle-Activator: org.eclipse.papyrus.uml.search.ui.Activator
+Export-Package: org.eclipse.papyrus.uml.search.ui.actions,org.eclipse.
+ papyrus.uml.search.ui.providers,org.eclipse.papyrus.uml.search.ui.que
+ ry,org.eclipse.papyrus.uml.search.ui.results,org.eclipse.papyrus.uml.
+ search.ui.validator
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %vendorName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/search/ui/query/CompositePapyrusQuery.cl
+ ass
+SHA1-Digest: 0SWCab6871r6wauX1N0wpe6hUBo=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/PapyrusOCLQuery$Evaluati
+ onRunnable.class
+SHA1-Digest: E31I3n+CuOUk8qfDToZ7qy3sMec=
+
+Name: org/eclipse/papyrus/uml/search/ui/dialogs/ReplaceDialog.class
+SHA1-Digest: T4+Lz+5+S61TYvqvQ+MJNz0igo8=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/CompositePapyrusQuery$Co
+ mpositeSearchResult.class
+SHA1-Digest: wcNNZwmyd8iN6Vcv0QPySR/xvnU=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/ResultLabelProvider.
+ class
+SHA1-Digest: 317nr3xI+xhqZKCq9DiTO5pXPIk=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/PapyrusOCLQuery.class
+SHA1-Digest: 6fA7A12F8+LQcm66nHSaOXs06+Y=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchResultPage.
+ class
+SHA1-Digest: D3BhkbQC7jbcFDHL4vcVBiyEbKE=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/ResultContentProvide
+ r.class
+SHA1-Digest: SdTsYuStF8+4/ixNVMkhTsH9pQU=
+
+Name: org/eclipse/papyrus/uml/search/ui/results/PapyrusSearchResult.cl
+ ass
+SHA1-Digest: VgoBNrYYdJp0IoIUkh+qlr0Dme8=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage.class
+SHA1-Digest: Q1Ar5hvvrhSLzzP6c5QltDzjQas=
+
+Name: org/eclipse/papyrus/uml/search/ui/dialogs/ReplaceDialog$1.class
+SHA1-Digest: E3c61vtR1ZdBgp9YbxzWndWiY6g=
+
+Name: org/eclipse/papyrus/uml/search/ui/filters/TypesMatchFilter.class
+SHA1-Digest: h+p81puEQqG17voUC2aZeS5GgsY=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$1.clas
+ s
+SHA1-Digest: o2Vtidgl4Ap3Lwn53P8JU5Strxc=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/AttributeMatchLabelP
+ rovider.class
+SHA1-Digest: WOKPgvmmYygZWcNMo0Gs5bVc6A4=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/AbstractPapyrusQuery.cla
+ ss
+SHA1-Digest: UIyfTjzjXu3XPDGxBmexqFyq05Y=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$3.clas
+ s
+SHA1-Digest: /8nDLcsbN6gC4U4pQ1xcg3tATSA=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$5.clas
+ s
+SHA1-Digest: OsVEGOBg4jOjAN+kAEZptlpxwQU=
+
+Name: org/eclipse/papyrus/uml/search/ui/dialogs/TypesFilterDialog.clas
+ s
+SHA1-Digest: HKGC0fvoOqudF8buVDDJpiDkBbI=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/search/ui/Activator.class
+SHA1-Digest: kct8zeVfo748cXRFj3GtKql6Lik=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$7.clas
+ s
+SHA1-Digest: SOZeGz8Y1UU7gpbUqQ1L43vTIgo=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$10.cla
+ ss
+SHA1-Digest: APohTdsmQBJIwI/4QxT1+mTsnNA=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$9.clas
+ s
+SHA1-Digest: WUA13MPnTMYNeauVb0UGhuCqaU0=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$12.cla
+ ss
+SHA1-Digest: UGjHz3xYvo9TPw0IdfL6ZpxPN1o=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$14.cla
+ ss
+SHA1-Digest: /6Hwb00MKCneM/0dGsbm25tY7FU=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$16.cla
+ ss
+SHA1-Digest: y2eFcb2LiJJu+P4zvdeFK7PaAOo=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$18.cla
+ ss
+SHA1-Digest: t2YABMJtX771Vjyg1nye5G2ul68=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/IPapyrusQueryProvider.cl
+ ass
+SHA1-Digest: QU/nxMUYhDcTyrstGfM7w+MZBH0=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/FilterTypeLabelProvi
+ der.class
+SHA1-Digest: 8xk5qg0RFF6j4G4zcBirjrsBdeY=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/IResultContentProvid
+ er.class
+SHA1-Digest: lkdBkpt/ul1z1JX+05qpk0eITLo=
+
+Name: org/eclipse/papyrus/uml/search/ui/validator/IParticipantValidato
+ r.class
+SHA1-Digest: HTVbAalqApwI4HVfuqj7PuUVcdk=
+
+Name: org/eclipse/papyrus/uml/search/ui/CheckBoxFilteredTree.class
+SHA1-Digest: jB9IiPhCuiNXGGxC8YQ2q+aH3NA=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/ParticipantTypeAttri
+ bute.class
+SHA1-Digest: 7vRaWK2m8yEtU6MlJxYGtLA28U4=
+
+Name: icons/PapyrusSearch.png
+SHA1-Digest: yRJpFUVPGEFDnZCq+n9pe+16v8g=
+
+Name: com/swtdesigner/ResourceManager.class
+SHA1-Digest: jHLcAa2t2HGKqXHOip3W5ZgeogQ=
+
+Name: org/eclipse/papyrus/uml/search/ui/actions/ReplaceAction.class
+SHA1-Digest: 5YQRoT5UyjhQ1sinvW6LJmWeDIU=
+
+Name: icons/filter.png
+SHA1-Digest: z8sbD0UA2KvokIrpqlqwgrjXoXA=
+
+Name: org/eclipse/papyrus/uml/search/ui/adapter/PapyrusSearchAdapterFa
+ ctory.class
+SHA1-Digest: 9AAQok1lqN7HmB2SsLxXWTC1UkM=
+
+Name: org/eclipse/papyrus/uml/search/ui/manager/PapyrusSearchTextManag
+ er.class
+SHA1-Digest: jZpffniBmjKwLST23NRcfKXDjVI=
+
+Name: org/eclipse/papyrus/uml/stereotypecollector/StereotypeCollector.
+ class
+SHA1-Digest: 3bbfevw8NPbaJ92R9XwnuYGuxDY=
+
+Name: plugin.properties
+SHA1-Digest: MNdIT+sBuD1CDQiaIvtTtYy0t4I=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/WorkspaceQueryProvider.c
+ lass
+SHA1-Digest: OeVnWREpqR7pkaLq/kcd3bM3gbg=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/CompositePapyrusQueryPro
+ vider.class
+SHA1-Digest: R7nHRprMorCHkJkQOSOVRApz/fk=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/CompositePapyrusQueryPro
+ vider$ProvidersReader.class
+SHA1-Digest: A+1U2WVNHEO3nmHKvwjUiQ8+rTM=
+
+Name: com/swtdesigner/ResourceManager$1.class
+SHA1-Digest: JrsykxEkn06Rue8PjJgBax1ir7s=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/PapyrusOCLQuery$1.class
+SHA1-Digest: 2fp8pXSyI9bsIjSDRudEgocXAI4=
+
+Name: com/swtdesigner/SWTResourceManager.class
+SHA1-Digest: 1ommDcBWaSoa9nhl5GOGW16H0+M=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchResultPage$
+ 1.class
+SHA1-Digest: buKB2SSGa18yanqR2lg1hT8F8G4=
+
+Name: plugin.xml
+SHA1-Digest: UD54nY2ygyE7W/EF0gDWe+f76dQ=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/PapyrusAdvancedQuery.cla
+ ss
+SHA1-Digest: z2c+R6o89sXAd2xFerZ5MB0xMbM=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/QueryInfo.class
+SHA1-Digest: zjFAiJBAIZXMxUGIHwTTsYgh02E=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/PapyrusQuery.class
+SHA1-Digest: CiLwc9APwYZtnsXOtThhIS0CCEE=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$2.clas
+ s
+SHA1-Digest: ZvX0Tmv6NCbdwBl5EmpHRfz/RTM=
+
+Name: org/eclipse/papyrus/uml/search/ui/validator/ParticipantValidator
+ .class
+SHA1-Digest: sFIs+S0txNa6YWoyJ2BZTxv0/uQ=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$4.clas
+ s
+SHA1-Digest: gmZ0O75xICd0USwsnshSsbi9baw=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/ParticipantTypeEleme
+ nt.class
+SHA1-Digest: stvUCx2ioVT3Wx5bsZ6VgaHZDqY=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/CompositePapyrusQueryPro
+ vider$PriorityQueryProvider.class
+SHA1-Digest: 0EX6lp7EtDX6WjR65IZe1rMB1t0=
+
+Name: com/swtdesigner/ResourceManager$PluginResourceProvider.class
+SHA1-Digest: i80My+U07oQ6GAL5NGQwf2IQ8Ls=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$6.clas
+ s
+SHA1-Digest: d7uBj0uHQqPlEvENxu0CJ6lkoxA=
+
+Name: org/eclipse/papyrus/uml/search/ui/adapter/PapyrusSearchPageScore
+ Computer.class
+SHA1-Digest: esXlh2C2yoYTAD94Lxa8qlqyqtg=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$8.clas
+ s
+SHA1-Digest: rTcD42ovy6sniBF4rz6gI3WrLCU=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$11.cla
+ ss
+SHA1-Digest: qMy3RkB//18dQinX5nI3kTnCPsI=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/PapyrusOCLQuery$Cancelab
+ leEvaluationVisitor.class
+SHA1-Digest: x3ZxMZiicIg+Be7pu9cgG/yxG5I=
+
+Name: org/eclipse/papyrus/uml/search/ui/query/AbstractPapyrusQuery$Emp
+ ty.class
+SHA1-Digest: hcRGamF6n9c/ivi+TCHDKLXQA/Q=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$13.cla
+ ss
+SHA1-Digest: pOoCpeJ1Eylu0XpHpEMmMG5wbqY=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/ParticipantTypeLabel
+ Provider.class
+SHA1-Digest: tEJ3v2nvWGbm8qpogeA74Xdx+gw=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$15.cla
+ ss
+SHA1-Digest: LjmFr/ZZdFhVC9teD5KTRocTTng=
+
+Name: about.html
+SHA1-Digest: 2D3bb4QkwRTOjVP0deohSdlSr2Y=
+
+Name: org/eclipse/papyrus/uml/search/ui/pages/PapyrusSearchPage$17.cla
+ ss
+SHA1-Digest: 6z9lvnybqL0kNkEdC+38njy0dlo=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/ParticipantTypeConte
+ ntProvider.class
+SHA1-Digest: 98Ir3miINvEAgLZ6BrWMXkNfKgk=
+
+Name: org/eclipse/papyrus/uml/stereotypecollector/UMLResourceVisitor.c
+ lass
+SHA1-Digest: PTVAmdpszI/mK8pLCYMJMzZ3lww=
+
+Name: org/eclipse/papyrus/uml/stereotypecollector/Messages.class
+SHA1-Digest: KfGaDzHmHSHb4Mk1kgpuUk/Ee9E=
+
+Name: org/eclipse/papyrus/uml/search/ui/Messages.class
+SHA1-Digest: eBr+05A4eHhrIUNkyNk86RT4ByY=
+
+Name: org/eclipse/papyrus/uml/search/ui/actions/FilterTypesAction.clas
+ s
+SHA1-Digest: NYDOXnQm3PruUIs5eInZEfo0CCY=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/OCLContextContentPro
+ vider.class
+SHA1-Digest: zZ/1XrIej8GeEhiOYZBg4iVX8WA=
+
+Name: org/eclipse/papyrus/uml/stereotypecollector/IStereotypeCollector
+ .class
+SHA1-Digest: Wn5zB/dIZgj3Fq6ZVQHHz0lcJ20=
+
+Name: org/eclipse/papyrus/uml/stereotypecollector/messages.properties
+SHA1-Digest: RcBq5URIyZagr8WjsMYMiI+82dM=
+
+Name: org/eclipse/papyrus/uml/search/ui/messages.properties
+SHA1-Digest: iEjpEtnm77/Q18wagF4BFjmQim8=
+
+Name: org/eclipse/papyrus/uml/search/ui/providers/FilterTypeContentPro
+ vider.class
+SHA1-Digest: nT1m2poptll+nfdC9O4jdJN0ryc=
+
+Name: org/eclipse/papyrus/uml/search/ui/handlers/SearchCommandHandler.
+ class
+SHA1-Digest: sKtjz+MO5OggkWQ9NPJCnoD0wnk=
+

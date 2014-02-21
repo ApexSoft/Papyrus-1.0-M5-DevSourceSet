@@ -1,0 +1,57 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: CSS Documentation (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.css.doc;singlet
+ on:=true
+Require-Bundle: org.eclipse.help;bundle-version="3.6.0",org.eclipse.pa
+ pyrus.infra.doc;bundle-version="1.0.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: resource/css-toc.xml
+SHA1-Digest: 4LKd/zzlWz5aVRQRh7ow5W0C3cw=
+
+Name: resource/Papyrus_CSS_export_style.png
+SHA1-Digest: cbQ4nnlRuiOzFabpLSMZ0BcmIJA=
+
+Name: resource/css.mediawiki
+SHA1-Digest: da9xgyOvVg8sUBkISUDW/wjG5OU=
+
+Name: resource/Papyrus_CSS_default_style.png
+SHA1-Digest: J3CQX+zAIYkwArvXFmJjeyjA5lU=
+
+Name: resource/css-main-toc.xml
+SHA1-Digest: 03xN7arrkTs+DD49rbompDXUX68=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: resource/Papyrus_CSS_no_theme.png
+SHA1-Digest: zYLpydn51d4L7z1QRD7GBLyiR0o=
+
+Name: resource/Papyrus_CSS_customStyle.png
+SHA1-Digest: VJJhgnyZKLqMtPodV9VJ9zLY/0o=
+
+Name: resource/css.html
+SHA1-Digest: SuftsFWXFDeUKXpP2u9ru19wiGk=
+
+Name: resource/Papyrus_CSS_tooltip.png
+SHA1-Digest: rxYSkxxqHHbeE18j1MYKobYBqqU=
+
+Name: resource/Papyrus_CSS_installation.png
+SHA1-Digest: Z6MUEmg1o+nNFEKZQr5+rNbS/kU=
+
+Name: plugin.xml
+SHA1-Digest: Pwsn/7M+LaQMMbIEI0JpqCzJg/E=
+
+Name: resource/Papyrus_CSS_import_stylesheet.png
+SHA1-Digest: XjAtpZZSp05kkqGu+bkZgjf13Uw=
+
+Name: resource/Papyrus_CSS_theme.png
+SHA1-Digest: pAti1Wj5Fuuj7+a7Z78n68ct3IQ=
+

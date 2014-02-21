@@ -1,0 +1,1304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+<!-- SysML ElementTypes declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/uml2/4.0.0/UML">
+	
+	<!-- Declaration of IElementTypes -->
+	
+	<!-- ISpecializationType ActorPartProperty of UML::Property -->
+	<specializationType id="org.eclipse.papyrus.sysml.ActorPartProperty" name="SysML::ActorPartProperty"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ActorPartPropertyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ActorPartProperty"/>
+		<specializes id="org.eclipse.papyrus.uml.Property" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ActorPartPropertyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Allocate of UML::Abstraction -->
+	<specializationType id="org.eclipse.papyrus.sysml.Allocate" name="SysML::Allocate"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.AllocateEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Allocate"/>
+		<specializes id="org.eclipse.papyrus.uml.Abstraction" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.AllocateMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association (Association with SysML nature) -->
+	<specializationType id="org.eclipse.papyrus.sysml.Association" name="SysML::Association"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Association"/>
+		<specializes id="org.eclipse.papyrus.uml.AssociationBase" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.AssociationMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association with "aggregation = composition" (for creation purpose only) -->
+	<specializationType id="org.eclipse.papyrus.sysml.AssociationComposite" name="SysML::AssociationComposite"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationCompositeEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::AssociationComposite"/>
+		<specializes id="org.eclipse.papyrus.sysml.Association" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association with "aggregation = composite" and navigable in one-way (for creation purpose only) -->
+	<specializationType id="org.eclipse.papyrus.sysml.AssociationCompositeDirected" name="SysML::AssociationCompositeDirected"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationCompositeDirectedEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::AssociationCompositeDirected"/>
+		<specializes id="org.eclipse.papyrus.sysml.Association" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association with "aggregation = none" (for creation purpose only) -->
+	<specializationType id="org.eclipse.papyrus.sysml.AssociationNone" name="SysML::AssociationNone"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationNoneEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::AssociationNone"/>
+		<specializes id="org.eclipse.papyrus.sysml.Association" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association with "aggregation = none" and navigable in one-way (for creation purpose only) -->
+	<specializationType id="org.eclipse.papyrus.sysml.AssociationNoneDirected" name="SysML::AssociationNoneDirected"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationNoneDirectedEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::AssociationNoneDirected"/>
+		<specializes id="org.eclipse.papyrus.sysml.Association" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association with "aggregation = shared" (for creation purpose only) -->
+	<specializationType id="org.eclipse.papyrus.sysml.AssociationShared" name="SysML::AssociationShared"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationSharedEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::AssociationShared"/>
+		<specializes id="org.eclipse.papyrus.sysml.Association" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType for SysML Association with "aggregation = shared" and navigable in one-way (for creation purpose only) -->
+	<specializationType id="org.eclipse.papyrus.sysml.AssociationSharedDirected" name="SysML::AssociationSharedDirected"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.advice.AssociationSharedDirectedEditHelperAdvice"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::AssociationSharedDirected"/>
+		<specializes id="org.eclipse.papyrus.sysml.Association" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.NoMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Block of UML::Class -->
+	<specializationType id="org.eclipse.papyrus.sysml.Block" name="SysML::Block"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.BlockEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Block.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Block"/>
+		<specializes id="org.eclipse.papyrus.uml.Class" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.BlockMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Conform of UML::Dependency -->
+	<specializationType id="org.eclipse.papyrus.sysml.Conform" name="SysML::Conform"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ConformEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Conform.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Conform"/>
+		<specializes id="org.eclipse.papyrus.uml.Dependency" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ConformMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ConstraintBlock of UML::Class -->
+	<specializationType id="org.eclipse.papyrus.sysml.ConstraintBlock" name="SysML::ConstraintBlock"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ConstraintBlockEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/constraints/ConstraintBlock.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ConstraintBlock"/>
+		<specializes id="org.eclipse.papyrus.uml.Class" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ConstraintBlockMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ConstraintProperty of UML::Property -->
+	<specializationType id="org.eclipse.papyrus.sysml.ConstraintProperty" name="SysML::ConstraintProperty"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ConstraintPropertyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/constraints/ConstraintProperty.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ConstraintProperty"/>
+		<specializes id="org.eclipse.papyrus.uml.Property" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ConstraintPropertyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Copy of UML::Abstraction -->
+	<specializationType id="org.eclipse.papyrus.sysml.Copy" name="SysML::Copy"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.CopyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Copy.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Copy"/>
+		<specializes id="org.eclipse.papyrus.uml.Abstraction" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.CopyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType DeriveReqt of UML::Abstraction -->
+	<specializationType id="org.eclipse.papyrus.sysml.DeriveReqt" name="SysML::DeriveReqt"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.DeriveReqtEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/DeriveReqt.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::DeriveReqt"/>
+		<specializes id="org.eclipse.papyrus.uml.Abstraction" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.DeriveReqtMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Dimension of UML::InstanceSpecification -->
+	<specializationType id="org.eclipse.papyrus.sysml.Dimension" name="SysML::Dimension"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.DimensionEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Dimension.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Dimension"/>
+		<specializes id="org.eclipse.papyrus.uml.InstanceSpecification" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.DimensionMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowPort of UML::Port -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowPort" name="SysML::FlowPort"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowPortEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowPort"/>
+		<specializes id="org.eclipse.papyrus.uml.Port" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowPort_InOut of SysML::FlowPort -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowPort_InOut" name="SysML::FlowPort_InOut"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowPortInOutEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowPort_InOut"/>
+		<specializes id="org.eclipse.papyrus.sysml.FlowPort" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortInOutMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowPort_In of SysML::FlowPort -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowPort_In" name="SysML::FlowPort_In"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowPortInEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowPort_In"/>
+		<specializes id="org.eclipse.papyrus.sysml.FlowPort" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortInMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowPort_Out of SysML::FlowPort -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowPort_Out" name="SysML::FlowPort_Out"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowPortOutEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowPort_Out"/>
+		<specializes id="org.eclipse.papyrus.sysml.FlowPort" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortOutMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowPort_NA of SysML::FlowPort -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowPort_NA" name="SysML::FlowPort_NA"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowPortNAEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_NA.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowPort_NA"/>
+		<specializes id="org.eclipse.papyrus.sysml.FlowPort" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowPortNAMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowProperty of UML::Property -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowProperty" name="SysML::FlowProperty"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowPropertyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowProperty.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowProperty"/>
+		<specializes id="org.eclipse.papyrus.uml.Property" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowPropertyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType FlowSpecification of UML::Interface -->
+	<specializationType id="org.eclipse.papyrus.sysml.FlowSpecification" name="SysML::FlowSpecification"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.FlowSpecificationEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowSpecification.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::FlowSpecification"/>
+		<specializes id="org.eclipse.papyrus.uml.Interface" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.FlowSpecificationMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ItemFlow of UML::InformationFlow -->
+	<specializationType id="org.eclipse.papyrus.sysml.ItemFlow" name="SysML::ItemFlow"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ItemFlowEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/ItemFlow.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ItemFlow"/>
+		<specializes id="org.eclipse.papyrus.uml.InformationFlow" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ItemFlowMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType PartProperty of UML::Property -->
+	<specializationType id="org.eclipse.papyrus.sysml.PartProperty" name="SysML::PartProperty"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.PartPropertyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::PartProperty"/>
+		<specializes id="org.eclipse.papyrus.uml.Property" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.PartPropertyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Problem of UML::Comment -->
+	<specializationType id="org.eclipse.papyrus.sysml.Problem" name="SysML::Problem"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ProblemEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Problem.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Problem"/>
+		<specializes id="org.eclipse.papyrus.uml.Comment" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ProblemMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Rationale of UML::Comment -->
+	<specializationType id="org.eclipse.papyrus.sysml.Rationale" name="SysML::Rationale"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.RationaleEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Rationale.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Rationale"/>
+		<specializes id="org.eclipse.papyrus.uml.Comment" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.RationaleMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ReferenceProperty of UML::Property -->
+	<specializationType id="org.eclipse.papyrus.sysml.ReferenceProperty" name="SysML::ReferenceProperty"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ReferencePropertyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ReferenceProperty"/>
+		<specializes id="org.eclipse.papyrus.uml.Property" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ReferencePropertyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Requirement of UML::Class -->
+	<specializationType id="org.eclipse.papyrus.sysml.Requirement" name="SysML::Requirement"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.RequirementEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Requirement.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Requirement"/>
+		<specializes id="org.eclipse.papyrus.uml.Class" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.RequirementMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Satisfy of UML::Abstraction -->
+	<specializationType id="org.eclipse.papyrus.sysml.Satisfy" name="SysML::Satisfy"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.SatisfyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Satisfy.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Satisfy"/>
+		<specializes id="org.eclipse.papyrus.uml.Abstraction" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.SatisfyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Unit of UML::InstanceSpecification -->
+	<specializationType id="org.eclipse.papyrus.sysml.Unit" name="SysML::Unit"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.UnitEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Unit.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Unit"/>
+		<specializes id="org.eclipse.papyrus.uml.InstanceSpecification" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.UnitMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ValueProperty of UML::Property -->
+	<specializationType id="org.eclipse.papyrus.sysml.ValueProperty" name="SysML::ValueProperty"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ValuePropertyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ValueProperty"/>
+		<specializes id="org.eclipse.papyrus.uml.Property" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ValuePropertyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ValueType of UML::DataType -->
+	<specializationType id="org.eclipse.papyrus.sysml.ValueType" name="SysML::ValueType"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/ValueType.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ValueType"/>
+		<specializes id="org.eclipse.papyrus.uml.DataType" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypeMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ValueType_Enumeration of UML::Enumeration -->
+	<specializationType id="org.eclipse.papyrus.sysml.ValueType_Enumeration" name="SysML::ValueType_Enumeration"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/ValueType.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ValueType_Enumeration"/>
+		<specializes id="org.eclipse.papyrus.uml.Enumeration" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypeEnumerationMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ValueType_PrimitiveType of UML::PrimitiveType -->
+	<specializationType id="org.eclipse.papyrus.sysml.ValueType_PrimitiveType" name="SysML::ValueType_PrimitiveType"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ValueTypeEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/ValueType.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ValueType_PrimitiveType"/>
+		<specializes id="org.eclipse.papyrus.uml.PrimitiveType" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ValueTypePrimitiveTypeMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType Verify of UML::Abstraction -->
+	<specializationType id="org.eclipse.papyrus.sysml.Verify" name="SysML::Verify"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.VerifyEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Verify.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Verify"/>
+		<specializes id="org.eclipse.papyrus.uml.Abstraction" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.VerifyMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType View of UML::Package -->
+	<specializationType id="org.eclipse.papyrus.sysml.View" name="SysML::View"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ViewEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/View.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::View"/>
+		<specializes id="org.eclipse.papyrus.uml.Package" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ViewMatcher" />
+	</specializationType>
+	
+	<!-- ISpecializationType ViewPoint of UML::Class -->
+	<specializationType id="org.eclipse.papyrus.sysml.ViewPoint" name="SysML::ViewPoint"
+		edithelperadvice="org.eclipse.papyrus.sysml.service.types.helper.ViewPointEditHelperAdvice"
+		icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Viewpoint.gif"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::ViewPoint"/>
+		<specializes id="org.eclipse.papyrus.uml.Class" />
+		<matcher class ="org.eclipse.papyrus.sysml.service.types.matcher.ViewPointMatcher" />
+	</specializationType>
+	
+	</metamodel>
+</extension>
+
+<!-- Helper advice declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/uml2/4.0.0/UML">
+	
+	<!-- Helper advice for Property created in the context of a ConstraintBlock -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.ConstraintBlockPropertyHelperAdvice"
+		class="org.eclipse.papyrus.sysml.service.types.helper.ConstraintBlockPropertyEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.uml.Property">
+	</adviceBinding>
+	
+	<!-- Helper advice for Classifier (Manage SysML association refactor during move) -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.Classifier"
+		class="org.eclipse.papyrus.sysml.service.types.helper.advice.ClassifierEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.uml.Classifier">
+	</adviceBinding>
+	
+	<!-- Helper advice for Block (To deal with owned SysML Connector = Connector owned by a Block) -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.BlockConnector"
+		class="org.eclipse.papyrus.sysml.service.types.helper.advice.BlockConnectorEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.sysml.Block">
+	</adviceBinding>
+		
+	<!-- Helper advice for Connector (SysML Connector = Connector owned by a Block) -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.Connector"
+		class="org.eclipse.papyrus.sysml.service.types.helper.advice.ConnectorEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.uml.Connector">
+	</adviceBinding>
+	
+	<!-- Helper advice for Property (Manage SysML association refactor during set type) -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.Property"
+		class="org.eclipse.papyrus.sysml.service.types.helper.advice.PropertyEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.uml.Property">
+	</adviceBinding>
+
+	<!-- Helper advice for Package (Manage SysML association creation: do not target association, actor if not directed association, etc) -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.Package"
+		class="org.eclipse.papyrus.sysml.service.types.helper.advice.PackageEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.uml.Package">
+	</adviceBinding>
+	
+	<!-- Helper advice for Actor (Manage SysML association creation: do not get out of an actor -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.advice.Actor"
+		class="org.eclipse.papyrus.sysml.service.types.helper.advice.ActorEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.uml.Actor">
+	</adviceBinding>	
+		
+	</metamodel>
+</extension>
+
+<!-- SysML ModelElements package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/ModelElements">
+	
+	<!-- Declaration of IElementTypes -->
+	
+	<!-- IMetamodelType for Conform (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Conform" name="SysML::Stereotype::Conform"
+		eclass="Conform"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Conform"/>
+	</metamodelType>
+
+	<!-- IMetamodelType for View (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.View" name="SysML::Stereotype::View"
+		eclass="View"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::View"/>
+	</metamodelType>
+	
+		<!-- IMetamodelType for ViewPoint (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ViewPoint" name="SysML::Stereotype::ViewPoint"
+		eclass="ViewPoint"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ViewPoint"/>
+	</metamodelType>
+	
+		<!-- IMetamodelType for Rationale (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Rationale" name="SysML::Stereotype::Rationale"
+		eclass="Rationale"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Rationale"/>
+	</metamodelType>
+	
+		<!-- IMetamodelType for Problem (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Problem" name="SysML::Stereotype::Problem"
+		eclass="Problem"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Problem"/>
+	</metamodelType>	
+	
+	</metamodel>
+</extension>
+	
+<!-- SysML Blocks package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks">
+	
+	<!-- Declaration of IElementTypes -->
+		
+	<!-- IMetamodelType for Block (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Block" name="SysML::Stereotype::Block"
+		eclass="Block"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Block"/>
+	</metamodelType>
+
+	<!-- IMetamodelType for DistributedProperty (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.DistributedProperty" name="SysML::Stereotype::DistributedProperty"
+		eclass="DistributedProperty"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::DistributedProperty"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Dimension (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Dimension" name="SysML::Stereotype::Dimension"
+		eclass="Dimension"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Dimension"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Unit (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Unit" name="SysML::Stereotype::Unit"
+		eclass="Unit"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Unit"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for ValueType (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ValueType" name="SysML::Stereotype::ValueType"
+		eclass="ValueType"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ValueType"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for NestedConnectorEnd (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.NestedConnectorEnd" name="SysML::Stereotype::NestedConnectorEnd"
+		eclass="NestedConnectorEnd"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::NestedConnectorEnd"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for ParticipantProperty (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ParticipantProperty" name="SysML::Stereotype::ParticipantProperty"
+		eclass="ParticipantProperty"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ParticipantProperty"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for ConnectorProperty (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ConnectorProperty" name="SysML::Stereotype::ConnectorProperty"
+		eclass="ConnectorProperty"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ConnectorProperty"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for BindingConnector (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.BindingConnector" name="SysML::Stereotype::BindingConnector"
+		eclass="BindingConnector"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::BindingConnector"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for PropertySpecificType (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.PropertySpecificType" name="SysML::Stereotype::PropertySpecificType"
+		eclass="PropertySpecificType"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::PropertySpecificType"/>
+	</metamodelType>	
+	
+	</metamodel>
+</extension>
+
+<!-- SysML PortAndFlows package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/PortAndFlows">
+	
+	<!-- Declaration of IElementTypes -->
+		
+	<!-- IMetamodelType for FlowPort (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.FlowPort" name="SysML::Stereotype::FlowPort"
+		eclass="FlowPort"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::FlowPort"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for FlowProperty (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.FlowProperty" name="SysML::Stereotype::FlowProperty"
+		eclass="FlowProperty"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::FlowProperty"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for FlowSpecification (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.FlowSpecification" name="SysML::Stereotype::FlowSpecification"
+		eclass="FlowSpecification"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::FlowSpecification"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for ItemFlow (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ItemFlow" name="SysML::Stereotype::ItemFlow"
+		eclass="ItemFlow"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ItemFlow"/>
+	</metamodelType>
+			
+	</metamodel>
+</extension>
+
+<!-- SysML Constraints package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/Constraints">
+	
+	<!-- Declaration of IElementTypes -->
+		
+	<!-- IMetamodelType for ConstraintBlock (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ConstraintBlock" name="SysML::Stereotype::ConstraintBlock"
+		eclass="ConstraintBlock"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ConstraintBlock"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for ConstraintProperty (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ConstraintProperty" name="SysML::Stereotype::ConstraintProperty"
+		eclass="ConstraintProperty"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ConstraintProperty"/>
+	</metamodelType>
+				
+	</metamodel>
+</extension>
+
+<!-- SysML Activities package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/Activities">
+	
+	<!-- Declaration of IElementTypes -->
+		
+	<!-- IMetamodelType for Optional (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Optional" name="SysML::Stereotype::Optional"
+		eclass="Optional"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Optional"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Rate (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Rate" name="SysML::Stereotype::Rate"
+		eclass="Rate"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Rate"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Probability (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Probability" name="SysML::Stereotype::Probability"
+		eclass="Probability"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Probability"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Continuous (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Continuous" name="SysML::Stereotype::Continuous"
+		eclass="Continuous"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Continuous"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Discrete (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Discrete" name="SysML::Stereotype::Discrete"
+		eclass="Discrete"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Discrete"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for ControlOperator (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.ControlOperator" name="SysML::Stereotype::ControlOperator"
+		eclass="ControlOperator"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::ControlOperator"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for NoBuffer (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.NoBuffer" name="SysML::Stereotype::NoBuffer"
+		eclass="NoBuffer"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::NoBuffer"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Overwrite (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Overwrite" name="SysML::Stereotype::Overwrite"
+		eclass="Overwrite"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Overwrite"/>
+	</metamodelType>
+			
+	</metamodel>
+</extension>
+
+<!-- SysML Allocations package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/Allocations">
+	
+	<!-- Declaration of IElementTypes -->
+		
+	<!-- IMetamodelType for Allocate (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Allocate" name="SysML::Stereotype::Allocate"
+		eclass="Allocate"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Allocate"/>
+	</metamodelType>
+
+	<!-- IMetamodelType for Allocated (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Allocated" name="SysML::Stereotype::Allocated"
+		eclass="Allocated"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Allocated"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for AllocateActivityPartition (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.AllocateActivityPartition" name="SysML::Stereotype::AllocateActivityPartition"
+		eclass="AllocateActivityPartition"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::AllocateActivityPartition"/>
+	</metamodelType>
+			
+	</metamodel>
+</extension>
+
+<!-- SysML Requirements package stereotype declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/Requirements">
+	
+	<!-- Declaration of IElementTypes -->
+		
+	<!-- IMetamodelType for DeriveReqt (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.DeriveReqt" name="SysML::Stereotype::DeriveReqt"
+		eclass="DeriveReqt"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::DeriveReqt"/>
+	</metamodelType>
+
+	<!-- IMetamodelType for Verify (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Verify" name="SysML::Stereotype::Verify"
+		eclass="Verify"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Verify"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Copy (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Copy" name="SysML::Stereotype::Copy"
+		eclass="Copy"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Copy"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Satisfy (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Satisfy" name="SysML::Stereotype::Satisfy"
+		eclass="Satisfy"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Satisfy"/>
+	</metamodelType>
+
+	<!-- IMetamodelType for TestCase (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.TestCase" name="SysML::Stereotype::TestCase"
+		eclass="TestCase"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::TestCase"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for Requirement (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.Requirement" name="SysML::Stereotype::Requirement"
+		eclass="Requirement"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::Requirement"/>
+	</metamodelType>
+	
+	<!-- IMetamodelType for RequirementRelated (Stereotype application) -->
+	<metamodelType id="org.eclipse.papyrus.sysml.stereotype.RequirementRelated" name="SysML::Stereotype::RequirementRelated"
+		eclass="RequirementRelated"
+		edithelper="org.eclipse.papyrus.uml.service.types.helper.DefaultEditHelper"
+		kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType" >
+			<param name="semanticHint" value="SysML::Stereotype::RequirementRelated"/>
+	</metamodelType>
+
+	</metamodel>
+</extension>
+
+<!-- Helper advice declarations -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+
+	<metamodel nsURI="http://www.eclipse.org/papyrus/0.7.0/SysML/Blocks">
+		
+	<!-- Helper advice for Block (Stereotype application) -->
+	<adviceBinding id="org.eclipse.papyrus.sysml.stereotype.advice.Block"
+		class="org.eclipse.papyrus.sysml.service.types.stereotype.helper.advice.BlockEditHelperAdvice"
+		inheritance="all" typeId="org.eclipse.papyrus.sysml.stereotype.Block">
+	</adviceBinding>	
+
+	</metamodel>
+</extension>
+
+<!-- SysML ElementType bindings to Papyrus shared IClientContext -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+
+	<!-- Bindings declaration -->
+	<binding context="org.eclipse.papyrus.infra.services.edit.TypeContext">
+
+		<!-- Stereotype application declaration -->
+		
+			<!-- ModelElements -->			
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Conform" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.View" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ViewPoint" />	
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Rationale" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Problem" />		
+
+			<!-- Blocks -->
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Block" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.DistributedProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Dimension" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Unit" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ValueType" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.NestedConnectorEnd" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ParticipantProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ConnectorProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.BindingConnector" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.PropertySpecificType" />
+			
+			<!-- PortAndFlows -->
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.FlowPort" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.FlowProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.FlowSpecification" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ItemFlow" />
+
+			<!-- Constraints -->				
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ConstraintBlock" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ConstraintProperty" />
+		
+			<!-- Activities -->				
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Optional" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Rate" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Probability" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Continuous" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Discrete" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.ControlOperator" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.NoBuffer" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Overwrite" />
+				
+			<!-- Allocations -->	
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Allocate" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Allocated" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.AllocateActivityPartition" />						
+			
+			<!-- Requirements -->
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.DeriveReqt" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Verify" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Copy" />	
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Satisfy" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.TestCase" />
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.Requirement" />				
+		<elementType ref="org.eclipse.papyrus.sysml.stereotype.RequirementRelated" />					
+					
+		<!-- SysML declaration -->
+		<elementType ref="org.eclipse.papyrus.sysml.ActorPartProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.Allocate" />
+		<elementType ref="org.eclipse.papyrus.sysml.Association" />
+		<elementType ref="org.eclipse.papyrus.sysml.AssociationComposite" />
+		<elementType ref="org.eclipse.papyrus.sysml.AssociationCompositeDirected" />
+		<elementType ref="org.eclipse.papyrus.sysml.AssociationNone" />
+		<elementType ref="org.eclipse.papyrus.sysml.AssociationNoneDirected" />
+		<elementType ref="org.eclipse.papyrus.sysml.AssociationShared" />
+		<elementType ref="org.eclipse.papyrus.sysml.AssociationSharedDirected" />
+		<elementType ref="org.eclipse.papyrus.sysml.Block" />
+		<elementType ref="org.eclipse.papyrus.sysml.Conform" />
+		<elementType ref="org.eclipse.papyrus.sysml.ConstraintBlock" />
+		<elementType ref="org.eclipse.papyrus.sysml.ConstraintProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.Copy" />
+		<elementType ref="org.eclipse.papyrus.sysml.DeriveReqt" />
+		<elementType ref="org.eclipse.papyrus.sysml.Dimension" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowPort" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowPort_InOut" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowPort_In" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowPort_Out" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowPort_NA" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.FlowSpecification" />
+		<elementType ref="org.eclipse.papyrus.sysml.ItemFlow" />
+		<elementType ref="org.eclipse.papyrus.sysml.PartProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.Problem" />
+		<elementType ref="org.eclipse.papyrus.sysml.Rationale" />
+		<elementType ref="org.eclipse.papyrus.sysml.ReferenceProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.Requirement" />
+		<elementType ref="org.eclipse.papyrus.sysml.Satisfy" />
+		<elementType ref="org.eclipse.papyrus.sysml.Unit" />
+		<elementType ref="org.eclipse.papyrus.sysml.ValueProperty" />
+		<elementType ref="org.eclipse.papyrus.sysml.ValueType" />
+		<elementType ref="org.eclipse.papyrus.sysml.ValueType_Enumeration" />
+		<elementType ref="org.eclipse.papyrus.sysml.ValueType_PrimitiveType" />
+		<elementType ref="org.eclipse.papyrus.sysml.Verify" />
+		<elementType ref="org.eclipse.papyrus.sysml.View" />
+		<elementType ref="org.eclipse.papyrus.sysml.ViewPoint" />
+		
+		<!-- Advice bindings declaration -->
+		<advice ref="org.eclipse.papyrus.sysml.advice.ConstraintBlockPropertyHelperAdvice" />
+		<advice ref="org.eclipse.papyrus.sysml.advice.Classifier" />
+		<advice ref="org.eclipse.papyrus.sysml.advice.BlockConnector" />
+		<advice ref="org.eclipse.papyrus.sysml.advice.Connector" />		
+		<advice ref="org.eclipse.papyrus.sysml.advice.Property" />
+		<advice ref="org.eclipse.papyrus.sysml.advice.Package" />
+		<advice ref="org.eclipse.papyrus.sysml.advice.Actor" />
+		<advice ref="org.eclipse.papyrus.sysml.stereotype.advice.Block" />	
+
+	</binding>
+	
+</extension>
+<extension point="org.eclipse.ui.commands">
+
+	<!-- Creation command for ActorPart -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ActorPart" id="org.eclipse.papyrus.sysml.service.types.ActorPartCreateCommand" name="Create a new ActorPart">
+	</command>
+	
+	<!-- Creation command for Allocate -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Allocate" id="org.eclipse.papyrus.sysml.service.types.AllocateCreateCommand" name="Create a new Allocate">
+	</command>
+	
+	<!-- Creation command for Association -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Association" id="org.eclipse.papyrus.sysml.service.types.AssociationCreateCommand" name="Create a new Association">
+	</command>
+	
+	<!-- Creation command for AssociationComposite -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new AssociationComposite" id="org.eclipse.papyrus.sysml.service.types.AssociationCompositeCreateCommand" name="Create a new AssociationComposite">
+	</command>
+	
+	<!-- Creation command for AssociationCompositeDirected -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new AssociationCompositeDirected" id="org.eclipse.papyrus.sysml.service.types.AssociationCompositeDirectedCreateCommand" name="Create a new AssociationCompositeDirected">
+	</command>
+	
+	<!-- Creation command for AssociationNone -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new AssociationNone" id="org.eclipse.papyrus.sysml.service.types.AssociationNoneCreateCommand" name="Create a new AssociationNone">
+	</command>
+	
+	<!-- Creation command for AssociationNoneDirected -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new AssociationNoneDirected" id="org.eclipse.papyrus.sysml.service.types.AssociationNoneDirectedCreateCommand" name="Create a new AssociationNoneDirected">
+	</command>
+	
+	<!-- Creation command for AssociationShared -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new AssociationShared" id="org.eclipse.papyrus.sysml.service.types.AssociationSharedCreateCommand" name="Create a new AssociationShared">
+	</command>
+	
+	<!-- Creation command for AssociationSharedDirected -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new AssociationSharedDirected" id="org.eclipse.papyrus.sysml.service.types.AssociationSharedDirectedCreateCommand" name="Create a new AssociationSharedDirected">
+	</command>
+	
+	<!-- Creation command for Block -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Block" id="org.eclipse.papyrus.sysml.service.types.BlockCreateCommand" name="Create a new Block">
+	</command>
+	
+	<!-- Creation command for Conform -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Conform" id="org.eclipse.papyrus.sysml.service.types.ConformCreateCommand" name="Create a new Conform">
+	</command>
+		
+	<!-- Creation command for ConstraintBlock -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ConstraintBlock" id="org.eclipse.papyrus.sysml.service.types.ConstraintBlockCreateCommand" name="Create a new ConstraintBlock">
+	</command>
+
+	<!-- Creation command for ConstraintBlockParameter -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Parameter" id="org.eclipse.papyrus.sysml.service.types.ConstraintBlockParameterCreateCommand" name="Create a new Parameter">
+	</command>
+
+	<!-- Creation command for ConstraintProperty -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ConstraintProperty" id="org.eclipse.papyrus.sysml.service.types.ConstraintPropertyCreateCommand" name="Create a new ConstraintProperty">
+	</command>
+	
+	<!-- Creation command for Copy -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Copy" id="org.eclipse.papyrus.sysml.service.types.CopyCreateCommand" name="Create a new Copy">
+	</command>
+	
+	<!-- Creation command for DeriveReqt -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new DeriveReqt" id="org.eclipse.papyrus.sysml.service.types.DeriveReqtCreateCommand" name="Create a new DeriveReqt">
+	</command>
+	
+	<!-- Creation command for Dimension -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Dimension" id="org.eclipse.papyrus.sysml.service.types.DimensionCreateCommand" name="Create a new Dimension">
+	</command>
+	
+	<!-- Creation command for FlowPort -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowPort" id="org.eclipse.papyrus.sysml.service.types.FlowPortCreateCommand" name="Create a new FlowPort">
+	</command>
+	  
+	<!-- Creation command for FlowPort_InOut -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowPort_InOut" id="org.eclipse.papyrus.sysml.service.types.FlowPort_InOutCreateCommand" name="Create a new FlowPort_InOut">
+	</command>
+	
+	<!-- Creation command for FlowPort_In -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowPort_In" id="org.eclipse.papyrus.sysml.service.types.FlowPort_InCreateCommand" name="Create a new FlowPort_In">
+	</command>
+	
+	<!-- Creation command for FlowPort_Out -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowPort_Out" id="org.eclipse.papyrus.sysml.service.types.FlowPort_OutCreateCommand" name="Create a new FlowPort_Out">
+	</command>
+
+	<!-- Creation command for FlowPort_NA -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowPort (non atomic)" id="org.eclipse.papyrus.sysml.service.types.FlowPort_NACreateCommand" name="Create a new FlowPort (non atomic)">
+	</command>
+
+	<!-- Creation command for FlowProperty -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowProperty" id="org.eclipse.papyrus.sysml.service.types.FlowPropertyCreateCommand" name="Create a new FlowProperty">
+	</command>
+	
+	<!-- Creation command for FlowSpecification -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new FlowSpecification" id="org.eclipse.papyrus.sysml.service.types.FlowSpecificationCreateCommand" name="Create a new FlowSpecification">
+	</command>
+	
+	<!-- Creation command for ItemFlow -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ItemFlow" id="org.eclipse.papyrus.sysml.service.types.ItemFlowCreateCommand" name="Create a new ItemFlow">
+	</command>
+
+	<!-- Creation command for PartProperty -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new PartProperty" id="org.eclipse.papyrus.sysml.service.types.PartPropertyCreateCommand" name="Create a new PartProperty">
+	</command>
+		
+	<!-- Creation command for Problem -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Problem" id="org.eclipse.papyrus.sysml.service.types.ProblemCreateCommand" name="Create a new Problem">
+	</command>
+	
+	<!-- Creation command for Rationale -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Rationale" id="org.eclipse.papyrus.sysml.service.types.RationaleCreateCommand" name="Create a new Rationale">
+	</command>
+	
+	<!-- Creation command for ReferenceProperty -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ReferenceProperty" id="org.eclipse.papyrus.sysml.service.types.ReferencePropertyCreateCommand" name="Create a new ReferenceProperty">
+	</command>
+	
+	<!-- Creation command for Requirement -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Requirement" id="org.eclipse.papyrus.sysml.service.types.RequirementCreateCommand" name="Create a new Requirement">
+	</command>
+	
+	<!-- Creation command for Satisfy -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Satisfy" id="org.eclipse.papyrus.sysml.service.types.SatisfyCreateCommand" name="Create a new Satisfy">
+	</command>
+	
+	<!-- Creation command for Unit -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Unit" id="org.eclipse.papyrus.sysml.service.types.UnitCreateCommand" name="Create a new Unit">
+	</command>
+	
+	<!-- Creation command for ValueProperty -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ValueProperty" id="org.eclipse.papyrus.sysml.service.types.ValuePropertyCreateCommand" name="Create a new ValueProperty">
+	</command>
+	
+	<!-- Creation command for ValueType -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ValueType" id="org.eclipse.papyrus.sysml.service.types.ValueTypeCreateCommand" name="Create a new ValueType">
+	</command>
+	
+	<!-- Creation command for ValueType_Enumeration -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ValueType_Enumeration" id="org.eclipse.papyrus.sysml.service.types.ValueType_EnumerationCreateCommand" name="Create a new ValueType_Enumeration">
+	</command>
+	
+	<!-- Creation command for ValueType_PrimitiveType -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ValueType_PrimitiveType" id="org.eclipse.papyrus.sysml.service.types.ValueType_PrimitiveTypeCreateCommand" name="Create a new ValueType_PrimitiveType">
+	</command>
+	
+	<!-- Creation command for Verify -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new Verify" id="org.eclipse.papyrus.sysml.service.types.VerifyCreateCommand" name="Create a new Verify">
+	</command>
+	
+	<!-- Creation command for View -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new View" id="org.eclipse.papyrus.sysml.service.types.ViewCreateCommand" name="Create a new View">
+	</command>
+	
+	<!-- Creation command for ViewPoint -->
+	<command categoryId="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands" description="Create a new ViewPoint" id="org.eclipse.papyrus.sysml.service.types.ViewPointCreateCommand" name="Create a new ViewPoint">
+	</command>
+	
+	<!-- Category for the creation of Sysml elements-->
+	
+</extension>
+<extension
+      point="org.eclipse.ui.commands">
+   <category
+         id="org.eclipse.papyrus.sysml.service.types.sysmlElementCreationCommands"
+         name="Commands for the creation of Sysml elements">
+   </category>
+</extension>
+<extension
+      point="org.eclipse.ui.commandImages">
+   
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ActorPartCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+
+		</image>
+
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AllocateCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Abstraction.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationCompositeCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationCompositeDirectedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationNoneCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationNoneDirectedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationSharedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.AssociationSharedDirectedCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Association.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.BlockCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Block.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ConformCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Conform.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ConstraintBlockCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/constraints/ConstraintBlock.gif">
+
+		</image>
+
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ConstraintBlockParameterCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+
+		</image>
+
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ConstraintPropertyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/constraints/ConstraintProperty.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.CopyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Copy.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.DeriveReqtCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/DeriveReqt.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.DimensionCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Dimension.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowPortCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort.gif">
+
+		</image>
+		  
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowPort_InOutCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_INOUT.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowPort_InCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_IN.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowPort_OutCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_OUT.gif">
+
+		</image>
+
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowPort_NACreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowPort_NA.gif">
+
+		</image>
+
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowPropertyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowProperty.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.FlowSpecificationCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/FlowSpecification.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ItemFlowCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/portandflows/ItemFlow.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.PartPropertyCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+
+		</image>
+				
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ProblemCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Problem.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.RationaleCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Rationale.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ReferencePropertyCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+
+		</image>
+				
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.RequirementCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Requirement.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.SatisfyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Satisfy.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.UnitCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Unit.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ValuePropertyCreateCommand" icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+
+		</image>
+				
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ValueTypeCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/ValueType.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ValueType_EnumerationCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/ValueType.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ValueType_PrimitiveTypeCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/ValueType.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.VerifyCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/requirements/Verify.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ViewCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/View.gif">
+
+		</image>
+		
+		
+		<image commandId="org.eclipse.papyrus.sysml.service.types.ViewPointCreateCommand" icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/modelelements/Viewpoint.gif">
+
+		</image>
+</extension>
+</plugin>
+

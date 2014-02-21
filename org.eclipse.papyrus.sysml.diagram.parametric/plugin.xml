@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+<extension point="org.eclipse.ui.contexts" id="ui-context">
+  <?gmfgen generated="true"?>
+  <context
+     description="%context.description"
+     id="org.eclipse.papyrus.sysml.diagram.parametric.ui.diagramContext"
+     name="%context.name"
+     parentId="org.eclipse.gmf.runtime.diagram.ui.diagramContext">
+  </context>
+</extension>
+   
+<!-- Diagram declaration -->
+<extension point="org.eclipse.papyrus.infra.core.papyrusDiagram">
+	<creationCommand
+		creationCommandClass="org.eclipse.papyrus.sysml.diagram.parametric.ParametricDiagramCreateCommand"
+		icon="icons/obj16/Diagram_Parametric.png"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.CreateCommand"
+		language="sysml"
+		label="SysML Parametric Diagram"/>
+	<editorDiagram
+		actionBarContributorId="org.eclipse.papyrus.uml.diagram.common.part.UMLDiagramActionBarContributor"
+		factoryClass="org.eclipse.papyrus.sysml.diagram.parametric.ParametricDiagramEditorFactory"
+		icon="icons/obj16/Diagram_Parametric.png" />
+</extension>
+
+<!-- Diagram creation command and handler -->
+<extension point="org.eclipse.ui.commands">
+	<command id="org.eclipse.papyrus.sysml.diagram.parametric.CreateCommand"
+		name="Create a new Parametric Diagram"
+		description="Create a new Parametric Diagram"
+		categoryId="org.eclipse.papyrus.editor.category"/>
+    <command
+		categoryId="org.eclipse.papyrus.editor.category"
+		description="Switch ConstraintProperty Representation"
+		defaultHandler="org.eclipse.papyrus.sysml.diagram.parametric.commands.switchrepresentation.SwitchConstraintPropertyRepresentationCommandHandler"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.custom.switchConstraintProperty"
+		name="Switch ConstraintProperty Representation"/>
+    <command
+		categoryId="org.eclipse.papyrus.editor.category"
+		description="Show/Hide ConstraintExpression"
+		defaultHandler="org.eclipse.papyrus.sysml.diagram.parametric.commands.switchrepresentation.ShowHideConstraintExpressionCommandHandler"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.custom.showHideConstraintExpression"
+		name="Show/Hide Constraint expression"/>
+</extension>
+
+<extension point="org.eclipse.ui.handlers">
+	<handler
+		class="org.eclipse.papyrus.sysml.diagram.parametric.CreateParametricDiagramWithNavigationHandler"
+		commandId="org.eclipse.papyrus.sysml.diagram.parametric.CreateCommand">
+		<activeWhen>
+			<with variable="activeEditorId">
+				<equals value="org.eclipse.papyrus.infra.core.papyrusEditor" />
+			</with>
+		</activeWhen>
+	</handler>
+</extension>
+
+<!-- Diagram creation command registration in menu and toolbar -->
+<extension point="org.eclipse.ui.menus">
+
+	<menuContribution locationURI="menu:org.eclipse.papyrus.ui.menu">
+	<menu id="org.eclipse.papyrus.uml.diagram.ui.menu.diagrams" label="Diagrams">
+		<command commandId="org.eclipse.papyrus.sysml.diagram.parametric.CreateCommand"
+			icon="icons/obj16/Diagram_Parametric.png" label="Create a new Parametric Diagram"
+			style="push" tooltip="Create a new Parametric Diagram">
+			<visibleWhen>
+				<reference definitionId="org.eclipse.papyrus.sysml.diagram.common.IsPapyrusActiveWithSysML"/>
+			</visibleWhen>
+					
+		</command>
+	</menu>
+	</menuContribution>
+	
+	<menuContribution locationURI="toolbar:org.eclipse.ui.main.toolbar">
+	<toolbar id="org.eclipse.papyrus.uml.diagram.ui.toolbar">
+		<command commandId="org.eclipse.papyrus.sysml.diagram.parametric.CreateCommand"
+			icon="icons/obj16/Diagram_Parametric.png" label="Create a new Parametric Diagram"
+			style="push" tooltip="Create a new Parametric Diagram">
+			<visibleWhen>
+				<reference definitionId="org.eclipse.papyrus.sysml.diagram.common.IsPapyrusActiveWithSysML"/>
+			</visibleWhen>
+				
+		</command>
+	</toolbar>
+	</menuContribution>
+	
+	<menuContribution locationURI="popup:org.eclipse.papyrus.views.modelexplorer.popupmenu.creatediagram">
+		<command commandId="org.eclipse.papyrus.sysml.diagram.parametric.CreateCommand"
+			icon="icons/obj16/Diagram_Parametric.png"
+			label="Create a new Parametric Diagram"
+			style="push"
+			tooltip="Create a new Parametric Diagram">
+			<visibleWhen>
+				<reference definitionId="org.eclipse.papyrus.sysml.diagram.common.IsPapyrusActiveWithSysML"/>
+			</visibleWhen>
+			
+		</command>
+	</menuContribution>
+
+  	<menuContribution locationURI="popup:org.eclipse.papyrus.uml.diagram.ui.popupmenu.format">
+      <menu
+            label="Representation"
+            tooltip="Representation">
+   	    <command
+	        commandId="org.eclipse.papyrus.sysml.diagram.parametric.custom.switchConstraintProperty"
+	        label="Switch ConstraintProperty representation"
+	        style="push"
+	        tooltip="Switch ConstraintProperty representation">
+	        <visibleWhen>
+            <and>
+               <iterate>
+                  <instanceof
+                        value="org.eclipse.papyrus.sysml.diagram.parametric.edit.part.CustomConstraintBlockPropertyCompositeEditPart">
+                  </instanceof>
+               </iterate>
+               <with
+                     variable="selection">
+                  <not>
+                     <count
+                           value="0">
+                     </count>
+                  </not>
+               </with>
+            </and>
+         </visibleWhen>
+	    </command>
+	  </menu>
+	  <separator
+            name="org.eclipse.papyrus.uml.diagram.menu.popup.separatorRepresentation"
+            visible="true">
+      </separator>
+  	</menuContribution>       
+
+  	<menuContribution locationURI="popup:org.eclipse.papyrus.uml.diagram.ui.popupmenu.filters">
+	    <command
+	        commandId="org.eclipse.papyrus.sysml.diagram.parametric.custom.showHideConstraintExpression"
+    		icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Constraint.gif"
+	        label="Show/Hide Constraint expression"
+	        style="push"
+	        tooltip="Show/Hide Constraint expression">
+	        <visibleWhen>
+            <and>
+               <iterate>
+                  <instanceof
+                        value="org.eclipse.papyrus.sysml.diagram.parametric.edit.part.CustomConstraintBlockPropertyCompositeEditPart">
+                  </instanceof>
+               </iterate>
+               <with
+                     variable="selection">
+                  <not>
+                     <count
+                           value="0">
+                     </count>
+                  </not>
+               </with>
+            </and>
+         </visibleWhen>
+	    </command>
+  	</menuContribution>       
+</extension>
+
+
+<extension
+      id="update-cmd-binding"
+      point="org.eclipse.ui.bindings">
+   <key
+         commandId="org.eclipse.papyrus.sysml.diagram.parametric.custom.switchConstraintProperty"
+         contextId="org.eclipse.gmf.runtime.diagram.ui.diagramContext"
+         schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+         sequence="CTRL+R">
+   </key>
+</extension>
+
+<!-- Handler for Show/Hide content on Part or Ref. -->
+<extension point="org.eclipse.ui.handlers">
+	<handler class="org.eclipse.papyrus.sysml.diagram.parametric.handler.ShowHideRelatedContentsHandler" commandId="org.eclipse.papyrus.uml.diagram.menu.commands.ShowHideContentsCommand">
+		<activeWhen>
+		<and>
+			<with variable="activeEditor">
+				<test property="org.eclipse.papyrus.uml.diagram.common.diagram.tester.diagramType" value="Parametric" forcePluginActivation="true"></test>
+			</with>	
+			<with variable="showHideRelatedContents">
+				<equals value="enabled"></equals>
+			</with>
+			<with variable="selection">
+				<iterate ifEmpty="false" operator="and">
+					<instanceof value="org.eclipse.papyrus.sysml.diagram.common.edit.part.ConstraintBlockPropertyCompositeEditPart"></instanceof>
+				</iterate>
+			</with>
+		</and>
+		
+		</activeWhen>
+	</handler>
+	<handler class="org.eclipse.papyrus.sysml.diagram.parametric.handler.ShowHideRelatedContentsHandler" commandId="org.eclipse.papyrus.uml.diagram.menu.commands.ShowHideContentsCommand">
+		<activeWhen>
+		<and>
+			<with variable="activeEditor">
+				<test property="org.eclipse.papyrus.uml.diagram.common.diagram.tester.diagramType" value="Parametric" forcePluginActivation="true"></test>
+			</with>	
+			<with variable="showHideRelatedContents">
+				<equals value="enabled"></equals>
+			</with>
+			<with variable="selection">
+				<iterate ifEmpty="false" operator="and">
+					<instanceof value="org.eclipse.papyrus.sysml.diagram.parametric.edit.part.CustomBlockCompositeEditPartTN"></instanceof>
+				</iterate>
+			</with>
+		</and>
+		
+		</activeWhen>
+	</handler>
+	<handler class="org.eclipse.papyrus.sysml.diagram.parametric.handler.ShowHideRelatedContentsHandler" commandId="org.eclipse.papyrus.uml.diagram.menu.commands.ShowHideContentsCommand">
+		<activeWhen>
+		<and>
+			<with variable="activeEditor">
+				<test property="org.eclipse.papyrus.uml.diagram.common.diagram.tester.diagramType" value="Parametric" forcePluginActivation="true"></test>
+			</with>	
+			<with variable="showHideRelatedContents">
+				<equals value="enabled"></equals>
+			</with>
+			<with variable="selection">
+				<iterate ifEmpty="false" operator="and">
+					<instanceof value="org.eclipse.papyrus.sysml.diagram.common.edit.part.BlockPropertyCompositeEditPart"></instanceof>
+				</iterate>
+			</with>
+		</and>
+		
+		</activeWhen>
+	</handler>
+</extension>
+
+<!-- Palette tool definition (defines tools possibly used by the palette(s)) -->
+<extension point="org.eclipse.gmf.runtime.diagram.ui.paletteProviders"
+	name="SYSML_Parametric_Predefined_Entries"
+	id="org.eclipse.papyrus.sysml.diagram.blockdefinition.palettedefinition"> 
+		
+	<paletteProvider class="org.eclipse.gmf.runtime.diagram.ui.providers.DefaultPaletteProvider">
+	<Priority name="Lowest"/> <!-- Lower priority than Palette tool declaration -->
+	
+	<!-- SysML Parametric Diagram specific tool definition -->
+	<contribution
+		factoryClass="org.eclipse.papyrus.sysml.diagram.parametric.factory.DiagramPaletteFactory">
+			
+		<!-- parametric.tool.constraintblockpropertycomposite -->
+		<entry
+			defineOnly="true"
+			description="Create a ConstraintBlockProperty"
+			id="parametric.tool.constraintblockpropertycomposite"
+			kind="tool"
+			label="ConstraintProperty"
+			large_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Block.gif"
+			small_icon="platform:/plugin/org.eclipse.papyrus.sysml/icons/blocks/Block.gif">
+		</entry>
+	
+		<!-- parametric.tool.parameter -->
+		<entry
+			defineOnly="true"
+			description="Create a Parameter"
+			id="parametric.tool.parameter"
+			kind="tool"
+			label="ConstraintParameter"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Port.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Port.gif">
+		</entry>
+		
+		<!-- parametric.tool.blockpropertycomposite -->
+		<entry
+			defineOnly="true"
+			description="Create a Part"
+			id="parametric.tool.blockpropertycomposite"
+			kind="tool"
+			label="Part"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+		</entry>
+		
+		<!-- parametric.tool.reference -->
+		<entry
+			defineOnly="true"
+			description="Create a Reference"
+			id="parametric.tool.reference"
+			kind="tool"
+			label="Reference"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+		</entry>
+					
+		<!-- parametric.tool.value -->
+		<entry
+			defineOnly="true"
+			description="Create a Value"
+			id="parametric.tool.value"
+			kind="tool"
+			label="Value"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Property.gif">
+		</entry>
+					
+		<!-- Start of user code Custom node button entry
+		-->
+		
+		<!-- End of user code  -->
+		
+			
+		<!-- parametric.tool.connector -->
+		<entry
+			defineOnly="true"
+			description="Create a Connector"
+			id="parametric.tool.connector"
+			kind="tool"
+			label="Connector"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Connector.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Connector.gif">
+		</entry>
+			
+		<!-- parametric.tool.dependency -->
+		<entry
+			defineOnly="true"
+			description="Create a Dependency"
+			id="parametric.tool.dependency"
+			kind="tool"
+			label="Dependency"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Dependency.gif">
+		</entry>
+		<!-- Start of user code Custom edge button entry -->
+		<!-- parametric.tool.comment -->
+		<entry 
+			defineOnly="true"
+			description="Create a Comment"
+			id="parametric.tool.comment"
+			kind="tool" 
+			label="Comment"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Comment.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Comment.gif">
+		</entry>
+		
+		<!-- parametric.tool.constraint -->
+		<entry defineOnly="true"
+			description="Create a Constraint"
+			id="parametric.tool.constraint"
+			kind="tool"
+			label="Constraint"
+			large_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Constraint.gif"
+			small_icon="platform:/plugin/org.eclipse.uml2.uml.edit/icons/full/obj16/Constraint.gif">
+		</entry>
+
+		<entry
+			defineOnly="true"
+			description="CommentAnnotatedElement"
+			id="parametric.tool.comment_constraint_link"
+			kind="tool"
+			label="CommentAnnotatedElement"
+			large_icon="icons/obj16/Link.gif"
+			small_icon="icons/obj16/Link.gif">
+		</entry>
+
+		<entry
+			defineOnly="true"
+			description="Create a ContextLink"
+			id="parametric.tool.context_link"
+			kind="tool"
+			label="Constraint link"
+			large_icon="icons/obj16/Link.gif"
+			small_icon="icons/obj16/Link.gif">
+		</entry>
+			
+		<!-- End of user code  -->
+			
+	</contribution>
+	
+	<!-- Specify diagram this palette tools relate to -->				
+	<editor id="org.eclipse.papyrus.sysml.diagram.parametric"/>
+	
+	</paletteProvider>	
+</extension>
+
+<!-- Palette tool declaration (declares the real palette containment) -->
+<extension point="org.eclipse.papyrus.uml.diagram.common.paletteDefinition"
+	name="SYSML_Parametric">
+	
+	<paletteDefinition ID="SYSML_Parametric"
+		class="org.eclipse.papyrus.uml.diagram.common.service.PluginPaletteProvider"
+		name="SYSML_Parametric" icon="platform:/plugin/org.eclipse.gmf.runtime.diagram.ui/icons/group.gif" 
+		path="palettes/parametric.palette.xml"
+		provider="CEA LIST">
+		<Priority name="Low"/>
+		
+		<!-- Specify diagram this palette tools relate to -->						
+		<editor id="org.eclipse.papyrus.sysml.diagram.parametric"/>
+	</paletteDefinition>
+</extension>
+
+
+<!-- Diagram view providers declaration -->
+<extension point="org.eclipse.gmf.runtime.diagram.core.viewProviders">
+	<!-- Diagram view provider -->
+	<viewProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.ParametricDiagramViewProvider">
+		<Priority name="Low"/>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Diagram" semanticHints="Parametric"/>
+	</viewProvider>
+	
+	<!-- Custom graphical types view provider -->
+	<viewProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.CustomViewProvider">
+		<Priority name="Medium"/>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="UML::Property, UML::Port, SysML::ReferenceProperty, SysML::FlowPort, SysML::FlowPort_Out, SysML::Block, SysML::FlowPort_In, SysML::FlowPort_InOut, SysML::PartProperty, SysML::ConstraintProperty"/>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="shape_sysml_flowport_as_affixed, shape_uml_port_as_affixed, shape_sysml_block_as_composite, shape_sysml_blockproperty_as_composite, shape_sysml_constraintblockproperty_as_composite"/>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="UML::Connector, UML::Dependency"/>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="link_uml_dependency, link_uml_connector"/>
+		
+		<!-- Additional descriptors provided in case the semantic hint is is not provided -->	
+		
+		<!-- "uml.Class" -->
+		<object id="uml.Class" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Class"/>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="uml.Class"/>			
+		
+		<!-- "uml.Port" -->
+		<object id="uml.Port" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Port"/>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="uml.Port"/>			
+		
+		<!-- "uml.Property" -->
+		<object id="uml.Property" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Property"/>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="uml.Property"/>			
+		
+		<!-- "uml.Connector" -->
+		<object id="uml.Connector" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Connector"/>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="uml.Connector"/>			
+		
+		<!-- "uml.Dependency" -->
+		<object id="uml.Dependency" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Dependency"/>
+		</object>
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="uml.Dependency"/>			
+		<object id="elementtype.node"
+          class="org.eclipse.papyrus.gmf.diagram.common.commands.ISemanticHintAdapter(org.eclipse.papyrus.sysml.diagram.common)">
+       
+     		<method
+           		name="getSemanticHint()"
+           		value="UML::Property, SysML::ActorPartProperty, SysML::ValueProperty, SysML::ReferenceProperty, SysML::FlowPort_In, UML::Port, SysML::FlowPort_Out, SysML::PartProperty, SysML::FlowPort_InOut, SysML::FlowPort, SysML::Block, SysML::FlowPort_NA">
+     		</method>
+  		</object>
+  		<context
+        	elements="elementtype.node"
+        	viewClass="org.eclipse.gmf.runtime.notation.Node">
+  		</context>
+  		<object id="elementtype.edge"
+        	class="org.eclipse.papyrus.gmf.diagram.common.commands.ISemanticHintAdapter(org.eclipse.papyrus.sysml.diagram.common)">
+    	 	<method
+        		name="getSemanticHint()"
+           		value="UML::Dependency, UML::Connector">
+     		</method>
+	  	</object>
+	  	<context
+	        elements="elementtype.edge"
+	        viewClass="org.eclipse.gmf.runtime.notation.Edge">
+	  	</context>			
+		
+	</viewProvider>	
+
+	<!-- ViewProvider for inherited elements (from CompositeDiagram ViewProvider) -->
+	<viewProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.InheritedCompositeDiagramViewProvider">
+		<Priority name="Low"></Priority>
+		
+		<!-- Load the ViewProvider on following SemanticHint related to IElementType(s) used in the palette (also used for legacy elements) -->
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="UML::Comment, UML::Constraint"></context>
+		
+		<!-- 
+			"2109" = COMMENT
+			"3097" = COMMENT_CN
+			"2114" = CONSTRAINT								
+			"3120" = CONSTRAINT_CN
+		  -->			
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" semanticHints="2109, 3097, 2114, 3120"></context>
+		
+		<!-- 
+			"4002" = COMMENT_ANNOTATED_ELEMENT
+			"4003" = CONSTRAINT_CONSTRAINED_ELEMENT
+		  -->
+		<context viewClass="org.eclipse.gmf.runtime.notation.Edge" semanticHints="4002, 4003"></context>
+        
+		<!-- Additional descriptors provided in case the semantic hint is is not provided -->	
+		
+        <!-- "uml.Comment" -->
+		<object id="uml.Comment" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Comment"></method>
+		</object>
+
+        <!-- "uml.Constraint" -->
+		<object id="uml.Constraint" class="org.eclipse.gmf.runtime.emf.core.util.IProxyEObject(org.eclipse.gmf.runtime.emf.core)">
+			<method name="getProxyClassID()" value="uml.Constraint"></method>
+		</object>
+
+		<!-- Additional activation contexts for nodes semantic objects -->
+		<context viewClass="org.eclipse.gmf.runtime.notation.Node" elements="uml.Comment, uml.Constraint"></context>
+			
+	</viewProvider>
+</extension>
+
+<!-- Diagram edit part providers declaration -->
+<extension point="org.eclipse.gmf.runtime.diagram.ui.editpartProviders">	
+	<!-- Diagram edit part provider -->
+	<editpartProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.ParametricDiagramEditPartProvider">
+		<Priority name="Low"/>
+		<object 
+			id="org.eclipse.papyrus.sysml.diagram.parametric.Diagram"
+			class="org.eclipse.gmf.runtime.notation.Diagram">
+			<method name="getType()" value="Parametric"/>
+		</object>
+		<context views="org.eclipse.papyrus.sysml.diagram.parametric.Diagram"/>	
+	</editpartProvider>
+	
+	<!-- Custom graphical types edit part provider -->
+	<editpartProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.CustomEditPartProvider">
+		<Priority name="Medium"/>
+	
+		<object
+			class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)"
+			id="org.eclipse.papyrus.sysml.diagram.parametric.CustomNodeGraphicalTypes">
+			<method name="getType()" value="shape_sysml_flowport_as_affixed, shape_uml_port_as_affixed, shape_sysml_block_as_composite, shape_sysml_blockproperty_as_composite, shape_sysml_constraintblockproperty_as_composite"/>
+		</object>
+		
+		<object
+			class="org.eclipse.gmf.runtime.notation.Node(org.eclipse.gmf.runtime.notation)"
+			id="org.eclipse.papyrus.sysml.diagram.parametric.CustomGraphicalTypes_Decorations">
+			<method name="getType()" value="linklabel_uml_connector_source_multiplicity, compartment_sysml_blockproperty_structure, linklabel_uml_connector_target_multiplicity, affixedlabel_sysml_flowport_label, compartment_sysml_structure, affixedlabel_uml_port_label, label_sysml_block_name, linklabel_uml_appliedstereotype, linklabel_uml_namedelement_name, linklabel_uml_connector_label, label_uml_property_label, shape_uml_constraint_as_label, affixedlabel_uml_appliedstereotype"/>
+		</object>
+		
+		<context views="org.eclipse.papyrus.sysml.diagram.parametric.CustomNodeGraphicalTypes"/>
+		<context views="org.eclipse.papyrus.sysml.diagram.parametric.CustomGraphicalTypes_Decorations"/>
+	
+		<object
+			class="org.eclipse.gmf.runtime.notation.Edge(org.eclipse.gmf.runtime.notation)"
+			id="org.eclipse.papyrus.sysml.diagram.parametric.CustomEdgeGraphicalTypes">
+			<method name="getType()" value="link_uml_dependency, link_uml_connector"/>
+		</object>
+		
+		<context views="org.eclipse.papyrus.sysml.diagram.parametric.CustomEdgeGraphicalTypes"/>
+		
+	</editpartProvider>
+	
+	<!-- EditPartProvider for inherited elements (from CompositeDiagram) -->
+	<editpartProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.InheritedCompositeDiagramEditPartProvider">
+		<Priority name="Low"></Priority>
+		
+		<!-- 
+			The semantic hints given here are used in case the provider is not already loaded.
+			As soon as the provider is loaded its provides method is used.
+			"2109" = COMMENT
+			"5192" = COMMENT_LABEL_BODY_HINT
+			"3097" = COMMENT_CN
+			"5150" = COMMENT_CN_LABEL_BODY_HINT
+			"2114" = CONSTRAINT
+			"5197" = CONSTRAINT_LABEL_NAME_HINT
+			"6039" = CONSTRAINT_LABEL_SPECIFICATION_HINT
+			"3120" = CONSTRAINT_CN
+			"6048" = CONSTRAINT_CN_LABEL_NAME_HINT
+			"6049" = CONSTRAINT_CN_LABEL_SPECIFICATION_HINT
+		 -->			
+		<object id="COMMENT" class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="2109, 5192"></method>
+		</object>
+		<object id="COMMENT_CN" class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="3097, 5150"></method>
+		</object>
+		<object id="CONSTRAINT" class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="2114, 5197, 6039"></method>
+		</object>
+		<object id="CONSTRAINT_CN" class="org.eclipse.gmf.runtime.notation.Node">
+			<method name="getType()" value="3120, 6048, 6049"></method>
+		</object>
+
+		<!-- 	
+			"4002" = COMMENT_ANNOTATED_ELEMENT
+			"4003" = CONSTRAINT_CONSTRAINED_ELEMENT
+		  -->
+		<object id="COMMENT_ANNOTATED_ELEMENT" class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="4002"></method>
+		</object>
+		<object id="CONSTRAINT_CONSTRAINED_ELEMENT" class="org.eclipse.gmf.runtime.notation.Edge">
+			<method name="getType()" value="4003"></method>
+		</object>
+
+		<context views="COMMENT, COMMENT_CN, CONSTRAINT, CONSTRAINT_CN"></context>
+		<context views="COMMENT_ANNOTATED_ELEMENT, CONSTRAINT_CONSTRAINED_ELEMENT"></context>
+		
+	</editpartProvider>
+	
+</extension>
+
+<!-- Diagram edit policy provider -->	
+<extension
+	point="org.eclipse.gmf.runtime.diagram.ui.editpolicyProviders">
+	<editpolicyProvider
+		class="org.eclipse.papyrus.sysml.diagram.parametric.provider.CustomEditPolicyProvider">
+		<Priority name="Low"/>
+	</editpolicyProvider>
+</extension>
+
+<!-- Preference pages declaration -->
+<extension point="org.eclipse.ui.preferencePages" id="prefpages">
+
+	<!-- Diagram Preference pages declaration -->
+	<page
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		name="Parametric Diagram"
+		category="org.eclipse.papyrus.infra.gmfdiag.preferences.diagrams"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.ParametricDiagramGeneralPreferencePage">
+	</page>
+
+	<!-- Element Preference pages declaration -->
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.ConstraintPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.ConstraintPreferencePage"
+		name="Constraint">
+	</page>
+	
+	
+	
+	
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CommentPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CommentPreferencePage"
+		name="Comment">
+	</page>
+	
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CommentAnnotatedElementPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CommentAnnotatedElementPreferencePage"
+		name="CommentAnnotatedElement">
+	</page>
+	
+	
+
+
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.BlockCompositePreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.BlockCompositePreferencePage"
+		name="BlockComposite">
+	</page>
+		
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CustomBlockPropertyCompositePreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CustomBlockPropertyCompositePreferencePage"
+		name="BlockPropertyComposite">
+	</page>
+		
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CustomConstraintPropertyCompositePreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.CustomConstraintPropertyCompositePreferencePage"
+		name="ConstraintPropertyComposite">
+	</page>
+		
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.FlowPortPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.FlowPortPreferencePage"
+		name="FlowPort">
+	</page>
+		
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.PortPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.PortPreferencePage"
+		name="Port">
+	</page>
+		
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.ConnectorPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.ConnectorPreferencePage"
+		name="Connector">
+	</page>
+		
+	<page  	category="org.eclipse.papyrus.sysml.diagram.parametric.preferences"
+		class="org.eclipse.papyrus.sysml.diagram.parametric.preferences.DependencyPreferencePage"
+		id="org.eclipse.papyrus.sysml.diagram.parametric.preferences.DependencyPreferencePage"
+		name="Dependency">
+	</page>
+		
+
+</extension>
+
+<!-- // Start of user code custom extensions 
+  -->
+<!-- Parser provider declaration -->
+<extension point="org.eclipse.gmf.runtime.common.ui.services.parserProviders">
+	<ParserProvider class="org.eclipse.papyrus.sysml.diagram.parametric.provider.ParserProvider">
+		<Priority name="Low"></Priority>
+	</ParserProvider>
+</extension>
+
+	<!-- Diagram specific advices -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+	<metamodel nsURI="http://www.eclipse.org/uml2/4.0.0/UML">
+		<!-- specific advices (pop up on creation) -->		
+		<adviceBinding id="org.eclipse.papyrus.sysml.service.types.helper.ConstraintParameterEditHelperAdvice" 
+			class="org.eclipse.papyrus.sysml.service.types.helper.ConstraintParameterEditHelperAdvice" 
+			inheritance="none" 
+			typeId="org.eclipse.papyrus.uml.Property"/>
+	</metamodel>
+</extension>
+
+<!-- UML ElementType bindings to Papyrus shared IClientContext -->
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypeBindings">
+	<!-- Bindings declaration to shared IClientContext -->
+	<binding context="org.eclipse.papyrus.infra.services.edit.TypeContext">	
+		<elementType ref="org.eclipse.papyrus.sysml.service.types.helper.ConstraintParameterEditHelperAdvice"/>
+	</binding>
+</extension>
+
+<extension point="org.eclipse.gmf.runtime.emf.type.core.elementTypes">
+   <metamodel nsURI="http://www.eclipse.org/uml2/4.0.0/UML">
+      <specializationType
+            id="org.eclipse.papyrus.uml.diagram.parametric.ContextLink"
+            name="ContextLink"
+            kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="8500"/>
+      </specializationType>
+   </metamodel>
+   <metamodel nsURI="http://www.eclipse.org/uml2/4.0.0/UML">
+      <specializationType
+            id="org.eclipse.papyrus.uml.diagram.parametric.ContextLinkAppliedStereotype"
+            name="ContextLinkAppliedStereotype"
+            kind="org.eclipse.gmf.runtime.emf.type.core.IHintedType">
+            <specializes id="org.eclipse.gmf.runtime.emf.type.core.null"/>
+            <param name="semanticHint" value="8501"/>
+      </specializationType>
+   </metamodel>
+</extension>  
+<!-- // End of user code 
+  -->
+
+</plugin>

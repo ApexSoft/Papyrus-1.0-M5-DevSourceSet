@@ -1,0 +1,127 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.constraints.edit;single
+ ton:=true
+Bundle-Activator: org.eclipse.papyrus.infra.constraints.provider.Const
+ raintsEditPlugin$Implementation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.papyrus.infra.con
+ straints;bundle-version="1.0.0";visibility:=reexport,org.eclipse.emf.
+ edit;visibility:=reexport
+Export-Package: org.eclipse.papyrus.infra.constraints.environment.prov
+ ider,org.eclipse.papyrus.infra.constraints.provider
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: icons/full/ctool16/CreateDisplayUnit_constraints_CompositeConstr
+ aint.gif
+SHA1-Digest: MIBli+vGsURy6zPVNshy2keG93Q=
+
+Name: icons/full/obj16/SimpleConstraint.gif
+SHA1-Digest: Sk87peqtjGOl7ixDme+ldSvxyvY=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ConstraintsEditPl
+ ugin.class
+SHA1-Digest: BgFBPTqhQMr9YoDEu6iM5IjfYCc=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/provider/Const
+ raintTypeItemProvider.class
+SHA1-Digest: poY+o7NHgpOx6apsWUbPJO8nlys=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/provider/Const
+ raintEnvironmentItemProvider.class
+SHA1-Digest: j7HZ+2gOyt6qJByAeCfm1FvLL6A=
+
+Name: icons/full/ctool16/CreateSimpleConstraint_properties_ValueProper
+ ty.gif
+SHA1-Digest: Zvnju8tPhfIN9a8tR9a4FKxYRZg=
+
+Name: icons/full/obj16/ConstraintType.gif
+SHA1-Digest: hkJ/Ly9VuzhlYKKoibkfrlXZeyE=
+
+Name: plugin.properties
+SHA1-Digest: jKXMw8Ofg2bXdKNY6zMo8n100xE=
+
+Name: icons/full/obj16/ConstraintEnvironment.gif
+SHA1-Digest: zZKriD2tvFNl9gXo4VTok78u59w=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ReferenceProperty
+ ItemProvider.class
+SHA1-Digest: HIrbmq0aZOkWAdHFhp4s2Zvvj3o=
+
+Name: icons/full/obj16/ReferenceProperty.gif
+SHA1-Digest: 4zQ+1E/DeKGAdyOfzirdzc3srCw=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/CompositeConstrai
+ ntItemProvider.class
+SHA1-Digest: DxVqORTEPEssdybCYWl3bBNWMrA=
+
+Name: plugin.xml
+SHA1-Digest: pyT0a5dteqqziPuoH8yYuRF3GM8=
+
+Name: icons/full/obj16/CompositeConstraint.gif
+SHA1-Digest: lWmo7ZrF8xnTWBuI04DT2NWotWo=
+
+Name: icons/full/ctool16/CreateDisplayUnit_constraints_SimpleConstrain
+ t.gif
+SHA1-Digest: bYQNVEH5dWqm/zM2XtULSHziCHQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: icons/full/ctool16/CreateSimpleConstraint_properties_ReferencePr
+ operty.gif
+SHA1-Digest: jZa24V6Ds9SHwAMry46bkihDMbw=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ConstraintsItemPr
+ oviderAdapterFactory.class
+SHA1-Digest: TpAb3sqAxJdhkBImcrecA7nBAEk=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ConstraintsEditPl
+ ugin$Implementation.class
+SHA1-Digest: grnxwp/+170DHyY/sTO7dZSIeFY=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: icons/full/ctool16/CreateConstraintEnvironment_constraintTypes_C
+ onstraintType.gif
+SHA1-Digest: 5bJu5MGsfBMvgC3g28tLGojx2QQ=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ConstraintDescrip
+ torItemProvider.class
+SHA1-Digest: 1yI9rD3R1m7RxykiXY9ab4nq47Y=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/SimpleConstraintI
+ temProvider.class
+SHA1-Digest: vPnTS5lL66QK13O/Qb/Zfs20tWo=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/DisplayUnitItemPr
+ ovider.class
+SHA1-Digest: brp0BveFORjpaqYUViEcUBThzB0=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ValuePropertyItem
+ Provider.class
+SHA1-Digest: fKesQrqtgJdCqx4ObEjZOxEFvfI=
+
+Name: icons/full/obj16/ValueProperty.gif
+SHA1-Digest: anDrqczTKuP24CH3saEL4lXNjT4=
+
+Name: org/eclipse/papyrus/infra/constraints/environment/provider/Envir
+ onmentItemProviderAdapterFactory.class
+SHA1-Digest: s4cWJcJDpYtLHIMzvMufHaC44eU=
+
+Name: org/eclipse/papyrus/infra/constraints/provider/ConfigPropertyIte
+ mProvider.class
+SHA1-Digest: 3kxjXgZvsCSCujwHo7JnIFaJrE0=
+
+Name: icons/full/ctool16/CreateCompositeConstraint_constraints_SimpleC
+ onstraint.gif
+SHA1-Digest: bYQNVEH5dWqm/zM2XtULSHziCHQ=
+

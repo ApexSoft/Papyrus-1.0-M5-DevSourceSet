@@ -1,0 +1,50 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.viewlabelprovi
+ der;singleton:=true
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.papyrus.infra.ser
+ vices.labelprovider;bundle-version="1.0.0",org.eclipse.ui;bundle-vers
+ ion="3.105.0",org.eclipse.papyrus.infra.core;bundle-version="1.0.0",o
+ rg.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.
+ papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.gmf.runtime.nota
+ tion;bundle-version="1.5.0",org.eclipse.emf.ecore;bundle-version="2.9
+ .0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.viewlabelprovider
+ .Activator
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %vendorName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/viewlabelprovider/messages.pr
+ operties
+SHA1-Digest: OXMDTKUj0SQ1UedueX6LI/sA35Y=
+
+Name: org/eclipse/papyrus/infra/services/viewlabelprovider/provider/Vi
+ ewLabelProvider.class
+SHA1-Digest: vEXPKbVFlRfNwhid39/QFgk0ocE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/viewlabelprovider/Activator.c
+ lass
+SHA1-Digest: egLbHaX59aO1kRp04cD+hJhqeaE=
+
+Name: org/eclipse/papyrus/infra/services/viewlabelprovider/Messages.cl
+ ass
+SHA1-Digest: 9C5a3o5Ej/2xeuJpxPYOeMehL9s=
+
+Name: plugin.xml
+SHA1-Digest: 6pBSui5sC6HOVLTlloy0d6S4ORg=
+
+Name: about.html
+SHA1-Digest: 2D3bb4QkwRTOjVP0deohSdlSr2Y=
+
+Name: plugin.properties
+SHA1-Digest: yOpkXQRPHYNcY1YRHedfPtIF3ks=
+

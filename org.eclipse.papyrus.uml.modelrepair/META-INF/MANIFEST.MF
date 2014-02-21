@@ -1,0 +1,124 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.modelrepair;singleton:=tr
+ ue
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.uml.exten
+ sionpoints;bundle-version="1.0.0",org.eclipse.emf.ecore;bundle-versio
+ n="2.9.0",org.eclipse.core.resources;bundle-version="3.8.100",org.ecl
+ ipse.papyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.papyru
+ s.infra.emf.readonly;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .emf;bundle-version="1.0.0",org.eclipse.emf.edit;bundle-version="2.9.
+ 0",org.eclipse.emf.transaction;bundle-version="1.4.0",com.google.guav
+ a;bundle-version="11.0.0",org.eclipse.uml2.uml;bundle-version="4.1.0"
+ ,org.eclipse.papyrus.uml.tools;bundle-version="1.0.0",org.eclipse.pap
+ yrus.infra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.infra.s
+ ervices.labelprovider;bundle-version="1.0.0",org.eclipse.core.databin
+ ding;bundle-version="1.4.1",org.eclipse.papyrus.uml.profile;bundle-ve
+ rsion="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.modelrepair.Activator
+Export-Package: org.eclipse.papyrus.uml.modelrepair,org.eclipse.papyru
+ s.uml.modelrepair.handler,org.eclipse.papyrus.uml.modelrepair.ui,org.
+ eclipse.papyrus.uml.modelrepair.ui.providers
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: Model Repair (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/modelrepair/handler/SwitchProfileHandler
+ .class
+SHA1-Digest: tNbhHRaFY9Y2y+Pkv8JNU+Td27k=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/providers/ResourceLinksCo
+ ntentProvider.class
+SHA1-Digest: KKSSWguqbUdQRRV3nT+MQxJeJBc=
+
+Name: org/eclipse/papyrus/uml/modelrepair/handler/SwitchProfileHandler
+ $1.class
+SHA1-Digest: tm8A93rtjUd7pruADhM5Pd/3AG8=
+
+Name: org/eclipse/papyrus/uml/modelrepair/handler/SwitchProfileHandler
+ $2.class
+SHA1-Digest: xEbY2ElfOuCWpVU6swYasqSpARs=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/providers/ResourceLabelPr
+ ovider.class
+SHA1-Digest: xWoPuAGJFlyBLqv3VjUEkq01q4I=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$Profi
+ leColumnsLabelProvider.class
+SHA1-Digest: B2YWfg6ezp6OhM1AThFi3Dh0YrI=
+
+Name: plugin.xml
+SHA1-Digest: S2VQPphx4j+VUZivZCXWNLLQ0ZA=
+
+Name: icons/papyrus.png
+SHA1-Digest: qRVOaQq19Qq/T2+hjrQ+xwWOo8k=
+
+Name: org/eclipse/papyrus/uml/modelrepair/handler/ModelRepairHandler.c
+ lass
+SHA1-Digest: 4RvWrRFT5fvbZWpS99orj0Mdsmk=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog.class
+SHA1-Digest: dqtprHhKBxQnuBbLk4mPiJQWGaM=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/ModelRepairDialog.class
+SHA1-Digest: b9wwa+JaemDUgZMCvLsW2+946kA=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$1.cla
+ ss
+SHA1-Digest: 9HG3oHAYr4Ypw2oNrtF2hBcY9rY=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/ModelRepairDialog$1.class
+SHA1-Digest: EN30XmGNpouSwq6o4dm9QkbcUyM=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$2.cla
+ ss
+SHA1-Digest: qxV9FN+137YA0ExNJeSEksWPS5M=
+
+Name: icons/Add_32x32.gif
+SHA1-Digest: BQtX/ggfRf+DKUT2lnPNmreMPLQ=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/ModelRepairDialog$2.class
+SHA1-Digest: cIe+fBSRuPy9fwJDkPEp8VnrZlE=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$3.cla
+ ss
+SHA1-Digest: xp+8leq9gxSPSE3i98Fu7TmDWuU=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/ModelRepairDialog$3.class
+SHA1-Digest: Lg3Gc1XKXr9mvkfRpEfIeWjprrg=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$4.cla
+ ss
+SHA1-Digest: NEezeNxDOtjA47+3Qi/36oiKIC4=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/ModelRepairDialog$4.class
+SHA1-Digest: VmGdXKYzZEACW0mokgww26JIKv0=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$5.cla
+ ss
+SHA1-Digest: 0GGFDitm9e4CunAGQLF7OS5Z2hQ=
+
+Name: icons/AddReg.gif
+SHA1-Digest: FT+yMU/XrBGk25OwgZC0vvpreSk=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/ModelRepairDialog$5.class
+SHA1-Digest: 3dyw7vE4VPTb4tDphL9ZF2iONy8=
+
+Name: org/eclipse/papyrus/uml/modelrepair/ui/SwitchProfileDialog$6.cla
+ ss
+SHA1-Digest: /9MCfo3aV8JGTP+oH4+42P/FWtM=
+
+Name: org/eclipse/papyrus/uml/modelrepair/Activator.class
+SHA1-Digest: KB5UX0d/C2XEPzdY+xvXymKqWxU=
+

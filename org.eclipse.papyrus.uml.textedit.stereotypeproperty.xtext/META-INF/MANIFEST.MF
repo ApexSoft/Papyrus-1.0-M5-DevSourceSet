@@ -1,0 +1,246 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.textedit.stereotypeproper
+ ty.xtext;singleton:=true
+Require-Bundle: org.eclipse.xtext;bundle-version="2.1.0";visibility:=r
+ eexport,org.eclipse.xtext.xbase;bundle-version="2.1.0";resolution:=op
+ tional;visibility:=reexport,org.apache.log4j;bundle-version="1.2.15";
+ visibility:=reexport,org.apache.commons.logging;bundle-version="1.0.4
+ ";resolution:=optional;visibility:=reexport,org.eclipse.xtext.generat
+ or;resolution:=optional,org.eclipse.emf.codegen.ecore;resolution:=opt
+ ional,org.eclipse.emf.mwe.utils;resolution:=optional,org.eclipse.emf.
+ mwe2.launch;resolution:=optional,org.eclipse.xtext.util,org.eclipse.e
+ mf.ecore,org.eclipse.emf.common,org.antlr.runtime,org.eclipse.uml2.co
+ degen.ecore;bundle-version="1.6.0",org.eclipse.uml2.uml;bundle-versio
+ n="3.1.1",org.eclipse.jface,org.eclipse.ui.ide,org.eclipse.papyrus.in
+ fra.gmfdiag.xtext.glue;bundle-version="1.0.0",org.eclipse.papyrus.uml
+ .profile;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-
+ version="1.0.0",org.eclipse.papyrus.uml.tools.utils;bundle-version="1
+ .0.0",org.eclipse.papyrus.uml.alf;bundle-version="1.0.0",org.eclipse.
+ papyrus.infra.core;bundle-version="1.0.0",org.eclipse.gmf.runtime.dia
+ gram.ui;bundle-version="1.6.0",org.eclipse.papyrus.infra.widgets;bund
+ le-version="1.0.0",org.eclipse.papyrus.uml.xtext.integration.core;bun
+ dle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.uml.textedit.stereotypeproperty.xt
+ ext,org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.applied
+ StereotypeProperty,org.eclipse.papyrus.uml.textedit.stereotypepropert
+ y.xtext.appliedStereotypeProperty.impl,org.eclipse.papyrus.uml.texted
+ it.stereotypeproperty.xtext.appliedStereotypeProperty.util,org.eclips
+ e.papyrus.uml.textedit.stereotypeproperty.xtext.formatting;uses:="org
+ .eclipse.xtext.formatting.impl",org.eclipse.papyrus.uml.textedit.ster
+ eotypeproperty.xtext.generator;uses:="org.eclipse.emf.ecore.resource,
+ org.eclipse.xtext.generator",org.eclipse.papyrus.uml.textedit.stereot
+ ypeproperty.xtext.parser.antlr,org.eclipse.papyrus.uml.textedit.stere
+ otypeproperty.xtext.parser.antlr.internal,org.eclipse.papyrus.uml.tex
+ tedit.stereotypeproperty.xtext.scoping;uses:="org.eclipse.papyrus.alf
+ .scoping",org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.s
+ erializer,org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.s
+ ervices,org.eclipse.papyrus.uml.textedit.stereotypeproperty.xtext.val
+ idation
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Import-Package: org.apache.log4j,org.eclipse.xtext.xbase.lib
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/servic
+ es/AppliedStereotypePropertyGrammarAccess.class
+SHA1-Digest: qRCw7JUpQ4wS/gpLQqtMXsEc2SA=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypePropertyStandaloneSetupGenerated.class
+SHA1-Digest: 8yR0wStjgfwhJMlD7Q80+LVDToM=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/util/AppliedStereotypePropertyAdapterFactory.clas
+ s
+SHA1-Digest: jo98D9n1lOzIAew15Tw2W7ilTyY=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Abstra
+ ctAppliedStereotypePropertyRuntimeModule.class
+SHA1-Digest: 8LUD1/PqXbuG21PgI8LL7T3Xtx8=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/impl/AppliedStereotypePropertyPackageImpl.class
+SHA1-Digest: jU5jQd0QMQFNT0RAArz7JEFZNGg=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/AppliedStereotypePropertyAntlrTokenFileProvider.class
+SHA1-Digest: 0NZzOcwWQ+VapOhjZleleMxIlV0=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/AppliedStereotypePropertyPackage.class
+SHA1-Digest: aISncy6eHW8U/Ps1qB4M++Y2+nU=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypeProperty.xtext
+SHA1-Digest: Jb15P5dMz+Z3Z0sXbn/yxtVZPJQ=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/util/AppliedStereotypePropertyResourceImpl.class
+SHA1-Digest: U2pCTao99Hi/8DloRaQ4TraBADc=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypePropertyEditorUtil.class
+SHA1-Digest: 6+r7igU6ZwUWh96wy+fQGTJ2bd4=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/valida
+ tion/SemanticValidator.class
+SHA1-Digest: 4bP5WMfWRTbW7HwvG7GC0wrBryY=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/internal/InternalAppliedStereotypeProperty.tokens
+SHA1-Digest: xegABMlHG/4X4QUxWRJvZ+DUJso=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/serial
+ izer/AppliedStereotypePropertySyntacticSequencer.class
+SHA1-Digest: Gchsrnfz9TkKuCpyi+tVUKxfXOM=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/AppliedStereotypePropertyPackage$Literals.class
+SHA1-Digest: HvqzqFlv7H4xpNZrepZxExO2aFY=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/impl/AppliedStereotypePropertyRuleImpl.class
+SHA1-Digest: 1ibXEYcgb2x9z4QZBFmiTYiMhd0=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/servic
+ es/AppliedStereotypePropertyGrammarAccess$ExpressionValueRuleElements
+ .class
+SHA1-Digest: oqh8015QRjrLD+obzUYYQPzBTSE=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/valida
+ tion/AppliedStereotypePropertyJavaValidator.class
+SHA1-Digest: rkpvwyn103GqAfTBceXiDWwq5B8=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypeProperty.xtextbin
+SHA1-Digest: Zrz9+cEhS/bFu+RpnirOgb3vL3s=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/ExpressionValueRule.class
+SHA1-Digest: GCIovjUdda2LgmHWYpeJpRuC+NU=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/format
+ ting/AppliedStereotypePropertyFormatter.class
+SHA1-Digest: m+7X2W3ocfnPvUnZp1COeCQ0Yeo=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/AppliedStereotypePropertyParser.class
+SHA1-Digest: /hAxHoQQu4HcZC+MeMZzkcSTlC4=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/AppliedStereotypePropertyRule.class
+SHA1-Digest: VH04KhaW6k1Ktvg62Gf3qYqWPJo=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/util/AppliedStereotypePropertySwitch.class
+SHA1-Digest: rEly/3C53jsmj5QDjzC4zmYqTco=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/util/AppliedStereotypePropertyResourceFactoryImpl
+ .class
+SHA1-Digest: Lur2UJOUwQxFykN2A33Tl+Lhx8I=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypeProperty.genmodel
+SHA1-Digest: s4PRLgRVLrM0oPrkvYoiis4ste8=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/util/AppliedStereotypePropertyXMLProcessor.class
+SHA1-Digest: fgn4X0/8l6rWYgbMjavQH+XNXns=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/scopin
+ g/AppliedStereotypePropertyScopeProvider.class
+SHA1-Digest: 3jPEkhX9O+72qw7HnGH+6Sj8DjM=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypePropertyRuntimeModule.class
+SHA1-Digest: 1iS0A98nga9eQtQvJSzmDJ/tQQQ=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/serial
+ izer/AppliedStereotypePropertySemanticSequencer.class
+SHA1-Digest: kxIhsfAU9YXf4tvvDLDXZoQY7TE=
+
+Name: plugin.properties
+SHA1-Digest: WH4yE1FKVwLVVk93U3C0kFRmUII=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/internal/InternalAppliedStereotypePropertyLexer.class
+SHA1-Digest: ZSYTuIez5F9wUqACpQfZ2yRGFGY=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/impl/AppliedStereotypePropertyFactoryImpl.class
+SHA1-Digest: lVM7UuvkhboSCZ9YRVTpqA/NOs4=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/util/AppliedStereotypePropertyAdapterFactory$1.cl
+ ass
+SHA1-Digest: lbLmLldE4CE01TZAgKrejFaZyTE=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Genera
+ teAppliedStereotypeProperty.mwe2
+SHA1-Digest: g5ppYHTmeyWeEaEdUn+AE8R0Uf0=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/impl/ExpressionValueRuleImpl.class
+SHA1-Digest: rroZSdbC6JRahhw7GEbzomvwk74=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/applie
+ dStereotypeProperty/AppliedStereotypePropertyFactory.class
+SHA1-Digest: LL0ey9zN05iBY2LC0ymmdD9FJcE=
+
+Name: plugin.xml
+SHA1-Digest: tSiGHRpjfeOj5EU27KumQSg1RuM=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/genera
+ tor/AppliedStereotypePropertyGenerator.xtend
+SHA1-Digest: rbJJhRaO93k6MuXhbQXkWrxaN14=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypePropertyStandaloneSetup.class
+SHA1-Digest: sS7qmK028yIG+ki2TabNZYwX7Og=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/internal/InternalAppliedStereotypeProperty.g
+SHA1-Digest: kq0XrId6F/3GfLBirBh1hW+TtGk=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/internal/InternalAppliedStereotypePropertyLexer$DFA24.class
+SHA1-Digest: cwg1AloZskwPcOCLvdFY9DClCY8=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/valida
+ tion/AbstractAppliedStereotypePropertyJavaValidator.class
+SHA1-Digest: GKxfWATOmttD/Ld9qUdC3tUug6c=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/internal/InternalAppliedStereotypePropertyParser$DFA37.class
+SHA1-Digest: U6AbUku/B2pvEFQrO+DRrDvJJQA=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/parser
+ /antlr/internal/InternalAppliedStereotypePropertyParser.class
+SHA1-Digest: vIzIlVG68/s23OMXEcr9aTqhezg=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/servic
+ es/AppliedStereotypePropertyGrammarAccess$AppliedStereotypePropertyRu
+ leElements.class
+SHA1-Digest: Q/vUCadN9zlanT36+bkwzE/hjyU=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/genera
+ tor/AppliedStereotypePropertyGenerator.class
+SHA1-Digest: se67BVu7rKe0RntvnTbaCxJAURM=
+
+Name: org/eclipse/papyrus/uml/textedit/stereotypeproperty/xtext/Applie
+ dStereotypeProperty.ecore
+SHA1-Digest: tp4yBptDRsWt5xuwpyMAgxEIgTA=
+

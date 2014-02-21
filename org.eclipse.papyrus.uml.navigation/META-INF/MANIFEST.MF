@@ -1,0 +1,45 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-Name: UML Navigation (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.uml.navigation;singleton:=tru
+ e
+Bundle-Activator: org.eclipse.papyrus.uml.navigation.Activator
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.services.navigation;bundle-version="1.0.0",org.eclipse.um
+ l2.uml;bundle-version="4.1.0",org.eclipse.papyrus.infra.emf;bundle-ve
+ rsion="1.0.0",org.eclipse.papyrus.infra.core;bundle-version="1.0.0",o
+ rg.eclipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0
+ ",org.eclipse.papyrus.uml.tools.utils;bundle-version="1.0.0",org.ecli
+ pse.papyrus.infra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.
+ infra.core.log;bundle-version="1.0.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/navigation/contributor/OperationTypeNavi
+ gableElement.class
+SHA1-Digest: fJSkybc+pLxSOZB4luMpl/5SqKA=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/navigation/contributor/TypedElementNavig
+ ationContributor.class
+SHA1-Digest: bJItvFqaZIcYiriFsHFvndlDR1Y=
+
+Name: org/eclipse/papyrus/uml/navigation/Activator.class
+SHA1-Digest: P9O6alJ8EMoU01hblV3MQz3VLqg=
+
+Name: plugin.xml
+SHA1-Digest: 7uXh0epG3+yXG8reVT49QP6XVhA=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/uml/navigation/contributor/TypedNavigableEle
+ ment.class
+SHA1-Digest: rLa8B7tUbLPjHMcBgwhwavcp2hs=
+

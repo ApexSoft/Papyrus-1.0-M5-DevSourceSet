@@ -1,0 +1,135 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.css.properties;
+ singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.views.properties;bundle-version="1.0.0",org.eclipse.papyrus.vie
+ ws.properties.model;bundle-version="1.0.0",org.eclipse.papyrus.infra.
+ core.log;bundle-version="1.0.0",org.eclipse.emf.edit;bundle-version="
+ 2.8.0",org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclip
+ se.core.databinding;bundle-version="1.4.1",org.eclipse.papyrus.infra.
+ widgets;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-v
+ ersion="1.0.0",org.eclipse.papyrus.infra.services.edit;bundle-version
+ ="1.0.0",org.eclipse.gmf.runtime.emf.type.core;bundle-version="1.4.0"
+ ,org.eclipse.papyrus.infra.gmfdiag.css;bundle-version="1.0.0",org.ecl
+ ipse.emf.databinding;bundle-version="1.2.0",org.eclipse.gmf.runtime.n
+ otation;bundle-version="1.5.0",org.eclipse.papyrus.infra.gmfdiag.comm
+ on;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.propertie
+ s;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.css.model;
+ bundle-version="1.0.0",org.eclipse.papyrus.infra.core;bundle-version=
+ "1.0.0",org.eclipse.emf.facet.infra.browser.uicore;bundle-version="0.
+ 2.0",org.eclipse.papyrus.infra.services.labelprovider;bundle-version=
+ "1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.gmfdiag.css.properties.Act
+ ivator
+Export-Package: org.eclipse.papyrus.infra.gmfdiag.css.properties.creat
+ ion,org.eclipse.papyrus.infra.gmfdiag.css.properties.databinding,org.
+ eclipse.papyrus.infra.gmfdiag.css.properties.provider
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: CSS Properties (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/modelelement/CS
+ SModelElement.class
+SHA1-Digest: IED/bUa2ozCYQErN2SQD2lT6+OA=
+
+Name: model/properties/css.ctx
+SHA1-Digest: j7Z7P92tX0PRb7pJ7GgCP8XYOz0=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/modelelement/CS
+ SPreferencesModelElement.class
+SHA1-Digest: SJ2HSRu0bC674J7vuS1Qh3HBeok=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/databinding/Add
+ CSSStyleSheetCommand.class
+SHA1-Digest: F0Rc7pN/lK0e4MjjtEmLGWxLaZ8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/databinding/Set
+ CSSStyleSheetCommand.class
+SHA1-Digest: kbDJoaAULejOqfWUCj6jpUDRhj8=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/modelelement/CS
+ SPreferencesModelElementFactory.class
+SHA1-Digest: w3Zg9f706wfGmFAepe9+WlqA+EM=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/widgets/ResetSt
+ yleWidget.class
+SHA1-Digest: ThoQL27kpi313c6yr5HZ3YzmJvs=
+
+Name: icons/sourceEditor.gif
+SHA1-Digest: hgfaPYE2g2ags3P37ChbfzhezDY=
+
+Name: model/properties/ui/SingleStyleSheetReference.xwt
+SHA1-Digest: yAZmIBAPxrVnnrdpk30lInspZEY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/databinding/Dia
+ gramStyleSheetObservableList.class
+SHA1-Digest: KLGknur+A6Aw/JXPNKZaOLoQeZY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/modelelement/CS
+ SModelElementFactory.class
+SHA1-Digest: X7LmqSxX9zIWnzzAXPNjX+lIGRY=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/provider/CSSSty
+ leSheetLabelProvider.class
+SHA1-Digest: mcOGy0mXXYMa4WwR319dI6jYYWc=
+
+Name: plugin.xml
+SHA1-Digest: 0aD9BXTOCOl8L+PNRw39AFuFgYk=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/Activator.class
+SHA1-Digest: GyTxhqn0nCIoJ8p6QfCYsr1eMfI=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/provider/CSSSty
+ leSheetContentProvider.class
+SHA1-Digest: AFxfVAGsxPx7qpFr7ey5kImg5Zs=
+
+Name: model/properties/ui/MultipleStylableElement.xwt
+SHA1-Digest: HtQuaTAQpzaaZhkq75GKp8VbWCU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: model/properties/ui/SingleStylableElement.xwt
+SHA1-Digest: wz1yPWZg/w588kW30GRua0wWmv4=
+
+Name: model/properties/ui/SingleEmbeddedStyleSheet.xwt
+SHA1-Digest: nxQqCSftdXq2soAe++ykoLqFyxc=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/provider/CSSThe
+ meLabelProvider.class
+SHA1-Digest: 1ZEe/Iqx/f3Gg6L9bko1FexpOWE=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/databinding/Rem
+ oveAllCSSStyleSheetValueCommand.class
+SHA1-Digest: nNv9usQ/1Y2rFGFF7bw8OLN4oVg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/provider/CSSSty
+ leSheetContentProvider$1.class
+SHA1-Digest: NDqA/vxcIk2Y+s/Y5w94PvejqJ8=
+
+Name: model/properties/ui/SingleDiagram.xwt
+SHA1-Digest: uhyRqSOqvdhEUAIGleBM9tGzW7I=
+
+Name: model/Environment.xmi
+SHA1-Digest: YkrFrQEMyFbDRqHtH+5V4PN/sFg=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/creation/StyleS
+ heetFactory.class
+SHA1-Digest: DkK9CjJt/5MAop5o0SbU+mjj7xE=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/databinding/Add
+ AllCSSStyleSheetCommand.class
+SHA1-Digest: XrB6EPpvqr8A0tOqEgNd/SVp/3w=
+
+Name: org/eclipse/papyrus/infra/gmfdiag/css/properties/databinding/Rem
+ oveCSSStyleSheetCommand.class
+SHA1-Digest: Tcua07PMe4IvLbMz2Jui4UD0rC8=
+

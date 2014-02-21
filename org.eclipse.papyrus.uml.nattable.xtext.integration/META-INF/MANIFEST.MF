@@ -1,0 +1,54 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.uml.nattable.xtext.integratio
+ n
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .nattable.common;bundle-version="1.0.0",org.eclipse.emf.ecore,org.ecl
+ ipse.papyrus.infra.nattable;bundle-version="1.0.0",org.eclipse.papyru
+ s.infra.nattable.model;bundle-version="1.0.0",org.eclipse.papyrus.uml
+ .xtext.integration.ui;bundle-version="1.0.0",org.eclipse.xtext;bundle
+ -version="2.4.2",org.eclipse.nebula.widgets.nattable.core;bundle-vers
+ ion="1.0.0",org.eclipse.gmf.runtime.common.core,org.eclipse.gmf.runti
+ me.common.ui.services
+Bundle-Activator: org.eclipse.papyrus.uml.nattable.xtext.integration.A
+ ctivator
+Export-Package: org.eclipse.papyrus.uml.nattable.xtext.integration,org
+ .eclipse.papyrus.uml.nattable.xtext.integration.celleditor,org.eclips
+ e.papyrus.uml.nattable.xtext.integration.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: plugin.pdoc
+SHA1-Digest: CmaQFFzvfjc1d3dbMRl/s1VV17A=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: zjcbYA9OfoNOMLax4G5kHHD5DEw=
+
+Name: org/eclipse/papyrus/uml/nattable/xtext/integration/util/XTextEdi
+ torResultWrapper.class
+SHA1-Digest: xMmCyHqWIV6VtjPpL2Ta9Mls1R8=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: org/eclipse/papyrus/uml/nattable/xtext/integration/celleditor/Ab
+ stractNatTableXTextCellEditor$1.class
+SHA1-Digest: vHu0KYDrr8M+UD1mxiYlEdDLbGA=
+
+Name: org/eclipse/papyrus/uml/nattable/xtext/integration/celleditor/Ab
+ stractNatTableXTextCellEditor.class
+SHA1-Digest: Ug2ntGYi0hcZqZzpV92tH0VvfP4=
+
+Name: org/eclipse/papyrus/uml/nattable/xtext/integration/Activator.cla
+ ss
+SHA1-Digest: +e/wlhRD8oYCTsiyhD4B0TgO9+E=
+

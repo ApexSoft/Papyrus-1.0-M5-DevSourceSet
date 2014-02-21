@@ -1,0 +1,131 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.views.search;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.views.search.Activator
+Require-Bundle: org.eclipse.ui;bundle-version="3.105.0",org.eclipse.co
+ re.runtime,org.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.
+ eclipse.emf;bundle-version="2.6.0",org.eclipse.core.resources;bundle-
+ version="3.8.100",org.eclipse.emf.common;bundle-version="2.9.0",org.e
+ clipse.emf.ecore;bundle-version="2.9.0",org.eclipse.search;bundle-ver
+ sion="3.8.100",org.eclipse.papyrus.infra.onefile;bundle-version="1.0.
+ 0",org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.u
+ i.ide,org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",org.e
+ clipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0",or
+ g.eclipse.papyrus.infra.services.openelement;bundle-version="1.0.0"
+Export-Package: org.eclipse.papyrus.views.search.regex,org.eclipse.pap
+ yrus.views.search.results,org.eclipse.papyrus.views.search.scope,org.
+ eclipse.papyrus.views.search.utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %vendorName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Import-Package: org.eclipse.uml2.uml
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/views/search/Activator.class
+SHA1-Digest: VKk1n+5ZBfC5IO/KvG43oVOt16w=
+
+Name: org/eclipse/papyrus/views/search/regex/PatternHelper.class
+SHA1-Digest: B7QXqzG+WpO3lTEHi+UE7Hrjeyw=
+
+Name: org/eclipse/papyrus/views/search/utils/DefaultServiceRegistryTra
+ cker$1.class
+SHA1-Digest: k/3Ld/USDrc9V5ByiJDhm4iQXH4=
+
+Name: org/eclipse/papyrus/views/search/utils/DefaultServiceRegistryTra
+ cker$2.class
+SHA1-Digest: adZxZfw5XX0a8wcgpwGUScszsUU=
+
+Name: org/eclipse/papyrus/views/search/results/ModelElementMatch.class
+SHA1-Digest: tonS7mv4oFLjFZSjHcA8CkbXeQs=
+
+Name: org/eclipse/papyrus/views/search/utils/ModelUtils.class
+SHA1-Digest: 2EOFfFPtwjS7L3cP/pH8DoZEouE=
+
+Name: plugin.properties
+SHA1-Digest: f66k4XvfvgTwhex8EVuSth117Rs=
+
+Name: org/eclipse/papyrus/views/search/scope/WorkspaceScopeProvider.cl
+ ass
+SHA1-Digest: PXoa3UGNZ3Lg29WkwQScjkXbfzY=
+
+Name: org/eclipse/papyrus/views/search/scope/IScopeCollector.class
+SHA1-Digest: En5sYkVvLHiM8LnQvYjR1MyapoY=
+
+Name: org/eclipse/papyrus/views/search/scope/ScopeCollector.class
+SHA1-Digest: axRdnAjcuaWrsy2idXzNOcnVHIA=
+
+Name: org/eclipse/papyrus/views/search/scope/ScopeCollector$ProvidersR
+ eader.class
+SHA1-Digest: PGfkebFmu1w/fLNZIWkMy7m0ork=
+
+Name: org/eclipse/papyrus/views/search/validator/IParticipantValidator
+ .class
+SHA1-Digest: MXMwa71NSThQg7gmHfhy7YRlZTM=
+
+Name: org/eclipse/papyrus/views/search/messages.properties
+SHA1-Digest: eiOqmgR1Atu/odKUbBUvq3EgjXQ=
+
+Name: plugin.xml
+SHA1-Digest: kGhydwb6vU2Wxmf54exoUNvXo4o=
+
+Name: org/eclipse/papyrus/views/search/validator/ParticipantValidator.
+ class
+SHA1-Digest: w1sowJ++LMYKmM4M1l+daPo5kAM=
+
+Name: org/eclipse/papyrus/views/search/utils/IServiceRegistryTracker.c
+ lass
+SHA1-Digest: WNMbgaNWTvERMYecXlyLHHw0rho=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/views/search/results/AttributeMatch.class
+SHA1-Digest: tiOtHH1R98tAoqijSOLhroaARQk=
+
+Name: org/eclipse/papyrus/views/search/results/ViewerMatch.class
+SHA1-Digest: kRf6EglVflbPurxb9rp1UvxQPxQ=
+
+Name: org/eclipse/papyrus/views/search/results/AbstractResultEntry.cla
+ ss
+SHA1-Digest: GkG0sTiLoAGQBYIOxSfMDjgLBlo=
+
+Name: about.html
+SHA1-Digest: 2D3bb4QkwRTOjVP0deohSdlSr2Y=
+
+Name: org/eclipse/papyrus/views/search/results/ResultEntry.class
+SHA1-Digest: a2d43mKsgFAChFX59ykhwnMZ7ZM=
+
+Name: org/eclipse/papyrus/views/search/utils/MatchUtils.class
+SHA1-Digest: ueWFB9171nlgz0t+1O0XkfmqG5c=
+
+Name: org/eclipse/papyrus/views/search/Messages.class
+SHA1-Digest: E/GYVJ3vZU2nzK+0F/XneWxKG7g=
+
+Name: org/eclipse/papyrus/views/search/utils/DefaultServiceRegistryTra
+ cker$TrackerReference.class
+SHA1-Digest: X/1+z12ndqEMqSfx1IgLWsQJEmk=
+
+Name: org/eclipse/papyrus/views/search/scope/ResourceVisitor.class
+SHA1-Digest: TWXJyHGglODEquQnZt03ZKUce8Y=
+
+Name: org/eclipse/papyrus/views/search/scope/ScopeCollector$PrioritySc
+ opeProvider.class
+SHA1-Digest: FKwpAnau53xCNbg5Zz4ec1bc1e0=
+
+Name: org/eclipse/papyrus/views/search/results/ModelMatch.class
+SHA1-Digest: RwVD74c2iDkktTEx2xM2Cu2ygCQ=
+
+Name: org/eclipse/papyrus/views/search/utils/DefaultServiceRegistryTra
+ cker.class
+SHA1-Digest: xErJMrAMor8SVolS4HCsnQqqHiI=
+
+Name: org/eclipse/papyrus/views/search/scope/IScopeProvider.class
+SHA1-Digest: B4okVHhdLYviO63Hj4w8bdNwZPA=
+
+Name: org/eclipse/papyrus/views/search/scope/ScopeEntry.class
+SHA1-Digest: pnF+dPEnwowWfNnuyTQKgJU35Jo=
+

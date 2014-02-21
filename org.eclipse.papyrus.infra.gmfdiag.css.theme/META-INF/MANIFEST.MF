@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: Papyrus Theme (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.infra.gmfdiag.css.theme;singl
+ eton:=true
+Require-Bundle: org.eclipse.papyrus.infra.gmfdiag.css;bundle-version="
+ 1.0.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: plugin.xml
+SHA1-Digest: ymj41EG5JWUoKryT9zFsW5Z4YXM=
+
+Name: icons/papyrus.png
+SHA1-Digest: qRVOaQq19Qq/T2+hjrQ+xwWOo8k=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: theme/papyrus_theme.css
+SHA1-Digest: 92IQlIfjNjFmUaSEqD+oA2sbPEc=
+

@@ -1,0 +1,112 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.dnd;singleton:=tr
+ ue
+Require-Bundle: org.eclipse.ui,org.eclipse.papyrus.infra.gmfdiag.dnd;b
+ undle-version="1.0.0",org.eclipse.gmf.runtime.diagram.ui;bundle-versi
+ on="1.5.0",org.eclipse.papyrus.infra.core.log;bundle-version="1.0.0",
+ org.eclipse.uml2.uml;bundle-version="4.0.0",org.eclipse.papyrus.uml.d
+ iagram.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;bu
+ ndle-version="1.0.0",org.eclipse.papyrus.infra.widgets;bundle-version
+ ="1.0.0",org.eclipse.papyrus.uml.tools;bundle-version="1.0.0",org.ecl
+ ipse.papyrus.uml.diagram.clazz;bundle-version="1.0.0",org.eclipse.emf
+ .facet.infra.browser.uicore;bundle-version="0.2.0",org.eclipse.papyru
+ s.infra.services.labelprovider;bundle-version="1.0.0",org.eclipse.pap
+ yrus.uml.diagram.composite;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.dnd.Activator
+Export-Package: org.eclipse.papyrus.uml.diagram.dnd,org.eclipse.papyru
+ s.uml.diagram.dnd.strategy.instancespecification,org.eclipse.papyrus.
+ uml.diagram.dnd.strategy.instancespecification.command,org.eclipse.pa
+ pyrus.uml.diagram.dnd.strategy.instancespecification.ui
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: UML Drag and Drop (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/instancespecificati
+ on/ClassifierToSlotsDropStrategy.class
+SHA1-Digest: GsJ1JSO6vRk7FFSpbcdALe0i92A=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/MoveInnerClassDropS
+ trategy.class
+SHA1-Digest: 7D4Q156YDlPrdz0C8qvmk/g2o/g=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/classifier/Classifi
+ erAsClassifierToStructureCompartmentDropStrategy.class
+SHA1-Digest: z0GHlOWOk6QXAzl2+18fYIA9lfo=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/instancespecificati
+ on/ui/ClassifierPropertiesLabelProvider.class
+SHA1-Digest: k69r6zMMfFuNxgAMJBduOShLC9A=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/Activator.class
+SHA1-Digest: rjUa93yPBALEyswfHZn9tHsakXY=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/lifeline/ClassifierToInterac
+ tionDropStrategy$1.class
+SHA1-Digest: CMvVjIhf4jKE/RKlPPun1+7+SIQ=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/instancespecificati
+ on/ui/SlotSelectionDialog.class
+SHA1-Digest: XUGqqODwoecoNJW2zRGOfCSgswQ=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/instancespecificati
+ on/ui/ClassifierPropertiesContentProvider.class
+SHA1-Digest: c4vx8LePa9of/XOFsZ9syPguhSk=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/state/AbstractBehav
+ iorToStateDropStrategy.class
+SHA1-Digest: Od71GCQDM4674rLjEODYPnC9gcM=
+
+Name: about.html
+SHA1-Digest: INBopOQiELASMNzeqt0bQiHmDZk=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/lifeline/ClassifierToLifelin
+ eDropStrategy$1.class
+SHA1-Digest: IDIsayeEpRFJW7kjbtmfvZI0ivk=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/lifeline/ClassifierToLifelin
+ eDropStrategy$2.class
+SHA1-Digest: ZzVbLvc6cLb07FWCwKIkWfKKsNs=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/instancespecificati
+ on/command/SelectAndCreateSlotsCommand.class
+SHA1-Digest: xfXph1XPmSCVcbjTjbfAYqdsGKE=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/state/BehaviorToEnt
+ ryDropStrategy.class
+SHA1-Digest: EIUWTS2mQvpUlmsOzHuCJQi7l7k=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/state/BehaviorToDoA
+ ctivityDropStrategy.class
+SHA1-Digest: Un+gKUMMpTQP+iVbxIe2tUyhBY0=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/instancespecificati
+ on/ui/SlotSelectionDialog$1.class
+SHA1-Digest: 55k4f055x0KkrNsk1FCrl5Zb68E=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/state/BehaviorToExi
+ tDropStrategy.class
+SHA1-Digest: ZfMTczZ381ckSSK8vC+zrE5fCE8=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/strategy/state/AbstractBehav
+ iorToStateDropStrategy$1.class
+SHA1-Digest: zoW+KbQ9QD4q6HbOy892u9jbkq0=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/lifeline/ClassifierToInterac
+ tionDropStrategy.class
+SHA1-Digest: J7+RfZTxabP5nvPMGWH+3q60uF0=
+
+Name: plugin.xml
+SHA1-Digest: PW5Ku9BM++2vs8yOxDV7Jg/loM0=
+
+Name: org/eclipse/papyrus/uml/diagram/dnd/lifeline/ClassifierToLifelin
+ eDropStrategy.class
+SHA1-Digest: eIF7svtoLRhK+r8vQAWCQ4z8mCg=
+

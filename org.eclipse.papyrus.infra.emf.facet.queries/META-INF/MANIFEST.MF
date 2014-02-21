@@ -1,0 +1,119 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.emf.facet.queries;singl
+ eton:=true
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.facet.infra.q
+ uery;bundle-version="0.2.0",org.eclipse.emf.facet.infra.query.core;bu
+ ndle-version="0.2.0",org.eclipse.emf.edit
+Bundle-Activator: org.eclipse.papyrus.infra.emf.facet.queries.Activato
+ r
+Export-Package: org.eclipse.papyrus.infra.emf.facet.queries,org.eclips
+ e.papyrus.infra.emf.facet.queries.factory,org.eclipse.papyrus.infra.e
+ mf.facet.queries.parametric,org.eclipse.papyrus.infra.emf.facet.queri
+ es.parametricquery,org.eclipse.papyrus.infra.emf.facet.queries.parame
+ tricquery.impl,org.eclipse.papyrus.infra.emf.facet.queries.parametric
+ query.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/Activator.class
+SHA1-Digest: oyHt6Ga9dsXVNy8rxA+WTAVJMaA=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/util
+ /ParametricqueryAdapterFactory.class
+SHA1-Digest: eV/NV1qWh8MZ0W24EgjyE6UulZA=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: ltADmFQnyH233PedALmFqj53bzc=
+
+Name: plugin.properties
+SHA1-Digest: bZTbP6x5kzP9QYKzbWQ7Bhy6fKw=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/EStr
+ ucturalFeatureArgument.class
+SHA1-Digest: VjfX2nfI5y2+4anbo1YjtZQBkCs=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/Para
+ metricqueryPackage$Literals.class
+SHA1-Digest: Nh4ip1CX9G3ECxJ3+hUiZdOd//A=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/util
+ /ParametricqueryAdapterFactory$1.class
+SHA1-Digest: skx7N1zCwGmdlP87dr//zWDbV9c=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/impl
+ /ParametricqueryPackageImpl.class
+SHA1-Digest: vNaQR8N9lTbeIgDfBYaS8N0Czug=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/impl
+ /StringArgumentImpl.class
+SHA1-Digest: c1tldfpUC/J5dy/jvrDtdzZSmhI=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/impl
+ /ParametricqueryFactoryImpl.class
+SHA1-Digest: lzCRWYJdgi24FPmywLpGuJUGHhY=
+
+Name: plugin.xml
+SHA1-Digest: 3zDDuienOHU9qLwbooPPgVqN8Xg=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/impl
+ /ArgumentImpl.class
+SHA1-Digest: yQ/wGP+Sp1SywwCo6CAHZxHc8JQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/impl
+ /ParametricQueryImpl.class
+SHA1-Digest: RYYiTjEp5tvqA0KZPQBw59WEEAE=
+
+Name: model/ParametricQuery.ecore
+SHA1-Digest: tFbLBfRuLCml5UUnorbBbeB7siQ=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/Para
+ metricqueryPackage.class
+SHA1-Digest: EDfNtwlizq6DOXwIs/sbzuVn3lM=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/Stri
+ ngArgument.class
+SHA1-Digest: DqUKc2NjewkE07Q4p9bByU/Decc=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametric/FacetPara
+ metricQuery.class
+SHA1-Digest: N+KQi6AhiQaFHH2wC+BTRICdqAw=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/Para
+ metricQuery.class
+SHA1-Digest: IFvV8CUVErF5JI13n/37lCcXLxs=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/Para
+ metricqueryFactory.class
+SHA1-Digest: DIopPONKG7DS2ax9iGrX6Ej1DQ8=
+
+Name: model/ParametricQuery.genmodel
+SHA1-Digest: ScqY5lK2onWAymGqOOnPZAsqKxo=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/impl
+ /EStructuralFeatureArgumentImpl.class
+SHA1-Digest: Z3GvgFk6/FDPknWjnGVB/knM8Yg=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/Argu
+ ment.class
+SHA1-Digest: qXa+fYf+jgGe9qwNHfJiBwkfGdA=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/parametricquery/util
+ /ParametricquerySwitch.class
+SHA1-Digest: Efnl7P1u7AfrjPnTf83Cv/bQf04=
+
+Name: org/eclipse/papyrus/infra/emf/facet/queries/factory/ParametricQu
+ eryFactory.class
+SHA1-Digest: UMmtBpT5lRfE7qldClsBoId34jM=
+

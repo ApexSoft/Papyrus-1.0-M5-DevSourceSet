@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+<extension-point id="templates" name="UML2 Model Templates" schema="schema/templates.exsd"/>
+<extension-point id="newModelStorageProviders" name="New Model Storage Providers" schema="schema/newModelStorageProviders.exsd"/>
+
+<extension point="org.eclipse.ui.newWizards">
+	<category 
+		id="org.eclipse.papyrus.wizards.category"
+    	name="Papyrus">
+	</category>
+	<wizard
+         category="org.eclipse.papyrus.wizards.category"
+         class="org.eclipse.papyrus.uml.diagram.wizards.NewPapyrusProjectWizard"
+         finalPerspective="org.eclipse.papyrus.infra.core.perspective"         
+         icon="icons/papyrus/new_papyrus_project.gif"
+         id="org.eclipse.papyrus.uml.diagram.wizards.1createproject"
+         name="Papyrus Project"
+         project="true">
+      <description>
+         %NewWizards.project.description
+      </description>
+	</wizard>
+    <wizard
+         category="org.eclipse.papyrus.wizards.category"
+         class="org.eclipse.papyrus.uml.diagram.wizards.InitModelWizard"
+         finalPerspective="org.eclipse.papyrus.infra.core.perspective"
+         icon="icons/papyrus/new_papyrus_model.gif"
+         id="org.eclipse.papyrus.uml.diagram.wizards.createmodel"
+         name="Papyrus Model">
+   </wizard>
+</extension>
+
+<extension
+      point="org.eclipse.papyrus.uml.diagram.wizards.newModelStorageProviders">
+   <provider
+         class="org.eclipse.papyrus.uml.diagram.wizards.WorkspaceNewModelStorageProvider"
+         name="In the workspace">
+      <enablement>
+         <iterate>
+             <adapt
+                   type="org.eclipse.core.resources.IResource">
+             </adapt>
+         </iterate>
+      </enablement>
+   </provider>
+</extension>
+
+</plugin>

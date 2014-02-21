@@ -1,0 +1,31 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.core.log
+Require-Bundle: org.eclipse.core.runtime
+Bundle-Activator: org.eclipse.papyrus.infra.core.log.internal.Activato
+ r
+Export-Package: org.eclipse.papyrus.infra.core.log
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/core/log/LogHelper.class
+SHA1-Digest: RWyahkhqyxEv9rrWF+VmiAt22LM=
+
+Name: about.html
+SHA1-Digest: INBopOQiELASMNzeqt0bQiHmDZk=
+
+Name: org/eclipse/papyrus/infra/core/log/internal/Activator.class
+SHA1-Digest: IHgyeeNIm6QRLNxzR+ffm6Y9nAQ=
+
+Name: plugin.properties
+SHA1-Digest: 8deEShNDZxqRisLQrIIAqZlrIiM=
+

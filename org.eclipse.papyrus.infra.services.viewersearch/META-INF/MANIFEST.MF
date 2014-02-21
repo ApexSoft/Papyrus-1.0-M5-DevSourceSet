@@ -1,0 +1,58 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.viewersearch;s
+ ingleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.cor
+ e.log;bundle-version="1.0.0",org.eclipse.emf.ecore;bundle-version="2.
+ 9.0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.viewersearch.Acti
+ vator
+Export-Package: org.eclipse.papyrus.infra.services.viewersearch,org.ec
+ lipse.papyrus.infra.services.viewersearch.impl
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %vendorName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/viewersearch/Activator.class
+SHA1-Digest: mBKDZQirnRtAkTFWhXGHtm7FF6c=
+
+Name: org/eclipse/papyrus/infra/services/viewersearch/impl/AbstractVie
+ werSearcher.class
+SHA1-Digest: oKQJnlBhq/0RxVNxuB0merNonsw=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/viewersearch/impl/ViewerSearc
+ hService.class
+SHA1-Digest: aYuaMM5u1IMv2UITolSHm3XrTvw=
+
+Name: org/eclipse/papyrus/infra/services/viewersearch/Messages.class
+SHA1-Digest: d7IA8FtAK8wp6NWzVzufRzuwEYY=
+
+Name: org/eclipse/papyrus/infra/services/viewersearch/messages.propert
+ ies
+SHA1-Digest: n3ksKTo2d223Y/1lTr5nZcY1EIY=
+
+Name: org/eclipse/papyrus/infra/services/viewersearch/IViewerSearcher.
+ class
+SHA1-Digest: HLPDDtL/NQ1QR0N70eaKcFj9Guo=
+
+Name: plugin.xml
+SHA1-Digest: 2Uz/CAmYxc1UxhN4usZIF4dlR2Q=
+
+Name: about.html
+SHA1-Digest: 2D3bb4QkwRTOjVP0deohSdlSr2Y=
+
+Name: schema/viewerSearcher.exsd
+SHA1-Digest: xxlM+gNdiYV5ABTUxPahCX6Mps4=
+
+Name: plugin.properties
+SHA1-Digest: GXwLF6hGHvWtKZ3CpaJYgezQHTw=
+

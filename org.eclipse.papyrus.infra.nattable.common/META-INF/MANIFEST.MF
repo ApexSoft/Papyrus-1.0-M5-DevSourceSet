@@ -1,0 +1,205 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-SymbolicName: org.eclipse.papyrus.infra.nattable.common;singlet
+ on:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra
+ .nattable;bundle-version="1.0.0",org.eclipse.papyrus.infra.nattable.m
+ odel;bundle-version="1.0.0",org.eclipse.emf.edit,org.eclipse.papyrus.
+ infra.core;bundle-version="1.0.0",org.eclipse.emf.transaction,org.ecl
+ ipse.nebula.widgets.nattable.core;bundle-version="1.0.0",org.eclipse.
+ papyrus.infra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.infr
+ a.emf;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.common
+ ;bundle-version="1.0.0",org.eclipse.e4.ui.workbench,org.eclipse.e4.co
+ re.contexts,org.eclipse.core.expressions,org.eclipse.emf.edit.ui
+Bundle-Activator: org.eclipse.papyrus.infra.nattable.common.Activator
+Export-Package: org.eclipse.papyrus.infra.nattable.common,org.eclipse.
+ papyrus.infra.nattable.common.editor,org.eclipse.papyrus.infra.nattab
+ le.common.factory,org.eclipse.papyrus.infra.nattable.common.handlers,
+ org.eclipse.papyrus.infra.nattable.common.modelresource,org.eclipse.p
+ apyrus.infra.nattable.common.utils,org.eclipse.papyrus.infra.nattable
+ .common.wizards
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %Bundle-Vendor
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %Bundle-Name
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/CreateNatTabl
+ eEditorHandler.class
+SHA1-Digest: jKtrZQPBEKOPb8e4gCc7EOME0kY=
+
+Name: icons/checked.gif
+SHA1-Digest: o/fHjvAnJ9equ+iuqtuHHS5NsRw=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: IiwGQbmTkTDCtKPbKh8tStLJKmU=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$1.class
+SHA1-Digest: 794IjqCSjX++vdanJslGRPP0RdA=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$2.class
+SHA1-Digest: ro/CYy9Bj7cbfldHIu2jnxvK3dM=
+
+Name: org/eclipse/papyrus/infra/nattable/common/messages/Messages.clas
+ s
+SHA1-Digest: 20uJAII4+N/A0ZJDc8+BDPSIlOc=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$3.class
+SHA1-Digest: xwfLDUR7G9O5gfA1yfJoZnfShGs=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$4.class
+SHA1-Digest: e2Iw8n7qS1GCmR/8NhK155DDbJA=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$5.class
+SHA1-Digest: dasGYrCMu8m4C0Zz8y28uf/4fOA=
+
+Name: icons/unchecked.gif
+SHA1-Digest: 6+/pxfjA9xPwzsQtMk1hcDJhSCE=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$6.class
+SHA1-Digest: 6u6rOUrvXl8sWzar3fJE5lOkRC0=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$7.class
+SHA1-Digest: dRVFQXKXpglP24f7MPCjvrLpGJQ=
+
+Name: org/eclipse/papyrus/infra/nattable/common/factory/AbstractNattab
+ leEditorFactory$NattableEditorModel.class
+SHA1-Digest: am2U8QZEYTY9EtIy3+tMTItYekM=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$8.class
+SHA1-Digest: LOSyoESVbjB4d+wO9RztcYBDOp4=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$9.class
+SHA1-Digest: oobpesax5KdWCh8jebPqoBRun1I=
+
+Name: org/eclipse/papyrus/infra/nattable/common/factory/NattableEditor
+ Factory$NattableEditorModel.class
+SHA1-Digest: 51Lc9vX/a4qNU1oT9eTkd9V3gb8=
+
+Name: icons/table.png
+SHA1-Digest: dBX/oav9UCvrwnEWOY2DukEVvco=
+
+Name: org/eclipse/papyrus/infra/nattable/common/modelresource/PapyrusN
+ attableModel.class
+SHA1-Digest: BlxwJjk+KsOkHIZckWYmFkY8AKo=
+
+Name: plugin.xml
+SHA1-Digest: O4UAZ6dE21PeBlVXgyQZhPDoGDo=
+
+Name: org/eclipse/papyrus/infra/nattable/common/editor/SynchronizedTab
+ leEditor.class
+SHA1-Digest: A8y+Q3zGILy4J9cM4eCVzM+10f0=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage$6$1.class
+SHA1-Digest: IzpUzoDkXyVZeHbCWXgOYUkF5WY=
+
+Name: icons/old/tableCatalog.png
+SHA1-Digest: GCH4gbW8jggXfp9+tYSIoMbAK5c=
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/AbstractCreat
+ eNattableEditorHandler.class
+SHA1-Digest: W4aXrK37SFun6eFy4LvB+mvm1Ds=
+
+Name: org/eclipse/papyrus/infra/nattable/common/utils/TableEditorInput
+ .class
+SHA1-Digest: P4KKGOImiVnJzcIT66n/iKSDG6Q=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/nattable/common/factory/AbstractNattab
+ leEditorFactory.class
+SHA1-Digest: DpWgs3sAQdFvzys/K8jE9AvYup4=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/CreateNattable
+ FromCatalogWizard.class
+SHA1-Digest: QhSDT9YDjoae3XXpAks5wVYBbg4=
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/CreateNatTabl
+ eFromCatalogHandler.class
+SHA1-Digest: OyN8N7mJiTkQu9u6nbe2mAvNGz4=
+
+Name: org/eclipse/papyrus/infra/nattable/common/factory/NattableEditor
+ Factory.class
+SHA1-Digest: I0OB0y2tt6zCo9+EIrwumUyk5HQ=
+
+Name: org/eclipse/papyrus/infra/nattable/common/editor/AbstractEMFNatt
+ ableEditor.class
+SHA1-Digest: Jenc1J/cdedreyver/Qik4eXPZU=
+
+Name: about.html
+SHA1-Digest: XX9QNRrVnHKSlwVc2mDJkamI7cs=
+
+Name: org/eclipse/papyrus/infra/nattable/common/editor/AbstractEMFNatt
+ ableEditor$PartNameSynchronizer.class
+SHA1-Digest: sQ57SYl4rYmyiDjzMNv60QD//vg=
+
+Name: icons/table.gif
+SHA1-Digest: 5sswQTiyRrUqbfxCKAM7S9QSEus=
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/AbstractCreat
+ eNattableEditorHandler$1.class
+SHA1-Digest: +XWjEOr0Up8noVH50DuLx14FZbY=
+
+Name: org/eclipse/papyrus/infra/nattable/common/helper/advice/NatTable
+ DuplicateEditHelperAdvice$TableCopier.class
+SHA1-Digest: RosC6eatYjEh3OZS1wJYpHbNyvE=
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/AbstractCreat
+ eNattableEditorHandler$2.class
+SHA1-Digest: 9Almd2+mM5NhhsKSkzPUgpYu6cU=
+
+Name: org/eclipse/papyrus/infra/nattable/common/Activator.class
+SHA1-Digest: c4MLvGH2b6zy7Ezc7NMWm7NPMGM=
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/CreateNatTabl
+ eEditorWithoutDialogHandler.class
+SHA1-Digest: Ovvo0DmA56F4unK2autxn8teF74=
+
+Name: org/eclipse/papyrus/infra/nattable/common/helper/advice/NatTable
+ DuplicateEditHelperAdvice.class
+SHA1-Digest: 1sxBw6IQKD67sPaJotZONTHhmTA=
+
+Name: org/eclipse/papyrus/infra/nattable/common/helper/advice/NatTable
+ DuplicateEditHelperAdvice$DuplicateTableCommand.class
+SHA1-Digest: uL+6nDXhafiCTSSZVbezczDzDEo=
+
+Name: org/eclipse/papyrus/infra/nattable/common/editor/NatTableEditor.
+ class
+SHA1-Digest: kV01VM3nY2Li1DCSoDbme3x28Uc=
+
+Name: org/eclipse/papyrus/infra/nattable/common/editor/AbstractEMFNatt
+ ableEditor$PartNameSynchronizer$1.class
+SHA1-Digest: UWmm0xe52EqrQBeHVMB8Dke/zk8=
+
+Name: icons/tableCatalog.png
+SHA1-Digest: aPKKg9JnjVwYZK1qYm5+NZoJTMA=
+
+Name: org/eclipse/papyrus/infra/nattable/common/handlers/RenameTableHa
+ ndler.class
+SHA1-Digest: e/jjdhliOeqYf0Cre7GUYHwKJMs=
+
+Name: org/eclipse/papyrus/infra/nattable/common/wizards/ChooseNattable
+ ConfigWizardPage.class
+SHA1-Digest: z33ElsIJJeTlQWWSiCGD15NFyiY=
+
+Name: icons/old/tableCatalog.gif
+SHA1-Digest: FI7ah+a561hzY+ik5Xa4Q0hNVo0=
+
+Name: org/eclipse/papyrus/infra/nattable/common/messages/messages.prop
+ erties
+SHA1-Digest: vl3SZDC2BrRTLtRsxCd7J+fBkdg=
+

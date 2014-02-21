@@ -1,0 +1,373 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.tools;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.um
+ l2.uml;bundle-version="4.1.0";visibility:=reexport,org.eclipse.papyru
+ s.infra.core.log;bundle-version="1.0.0",org.eclipse.papyrus.infra.wid
+ gets;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;bundle-vers
+ ion="1.0.0",org.eclipse.core.databinding;bundle-version="1.4.1",org.e
+ clipse.emf.databinding;bundle-version="1.2.0",org.eclipse.core.databi
+ nding.property;bundle-version="1.4.0",org.eclipse.papyrus.infra.tools
+ ;bundle-version="1.0.0",org.eclipse.emf.facet.infra.browser.uicore;bu
+ ndle-version="0.2.0",org.eclipse.papyrus.infra.core;bundle-version="1
+ .0.0",org.eclipse.papyrus.infra.services.edit;bundle-version="1.0.0",
+ org.eclipse.papyrus.uml.tools.utils;bundle-version="1.0.0",org.eclips
+ e.uml2.common.edit;bundle-version="1.6.0",org.eclipse.uml2.uml.edit;b
+ undle-version="4.0.0",org.eclipse.papyrus.infra.services.validation;b
+ undle-version="1.0.0",org.eclipse.gmf.runtime.emf.type.core;bundle-ve
+ rsion="1.4.0",org.eclipse.papyrus.infra.services.labelprovider;bundle
+ -version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-ve
+ rsion="1.0.0",org.eclipse.core.expressions;bundle-version="3.4.0",org
+ .eclipse.uml2.uml
+Bundle-Activator: org.eclipse.papyrus.uml.tools.Activator
+Export-Package: org.eclipse.papyrus.uml.tools,org.eclipse.papyrus.uml.
+ tools.adapters,org.eclipse.papyrus.uml.tools.commands,org.eclipse.pap
+ yrus.uml.tools.databinding,org.eclipse.papyrus.uml.tools.helper,org.e
+ clipse.papyrus.uml.tools.importsources,org.eclipse.papyrus.uml.tools.
+ listeners,org.eclipse.papyrus.uml.tools.model,org.eclipse.papyrus.uml
+ .tools.namereferences,org.eclipse.papyrus.uml.tools.providers,org.ecl
+ ipse.papyrus.uml.tools.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: UML Tools (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/tools/providers/InstanceValueContentProv
+ ider.class
+SHA1-Digest: eTCCvJJBRwY13FNqTuy7y4HUvA4=
+
+Name: org/eclipse/papyrus/uml/tools/model/UmlModel.class
+SHA1-Digest: WAwSiNXLRtVlce5z2xIw/f82Q7s=
+
+Name: org/eclipse/papyrus/uml/tools/commands/SetMultiplicityCommand.cl
+ ass
+SHA1-Digest: d+I589QwZGNRbJhCY+RVo/fGyEQ=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ImageExpressionObserva
+ bleValue$1.class
+SHA1-Digest: Rc3uUyIlG5PwI5xbk31z9UNr7Oc=
+
+Name: org/eclipse/papyrus/uml/tools/namereferences/NameReferencesHelpe
+ r$ChangeDispatcher.class
+SHA1-Digest: vH49Yr+74z9nSYWqx51TH9LCLS0=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ImageKindObservableVal
+ ue$1.class
+SHA1-Digest: WTqjrVhitAO3q0LNxveIz69n5P4=
+
+Name: org/eclipse/papyrus/uml/tools/providers/ServiceEditFilteredConte
+ ntProvider.class
+SHA1-Digest: gOoSsQN95JAI2UViY8F7I7jqauc=
+
+Name: org/eclipse/papyrus/uml/tools/providers/ConstrainedElementConten
+ tProvider.class
+SHA1-Digest: O/uEXdjOfMaKItjteZXyCPZgLKg=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLContentProvider.class
+SHA1-Digest: UXNuRafxa4dXJSD4W/cRCH21th8=
+
+Name: org/eclipse/papyrus/uml/tools/model/UmlUtils.class
+SHA1-Digest: Sq8MGmpumEAlEShZyawQhI2VZZY=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/PackageImportSourceR
+ egistry$NullImportSource.class
+SHA1-Digest: pzd5jU06HQtiqIQbcyOkhkor+3Q=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/CompositePackageImpo
+ rtSource$WrapperLabelProvider.class
+SHA1-Digest: O3DMQ7AK2+jHCj7y1DaTUwZTXwo=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ExtensionEndMultiplici
+ tyObservableValue.class
+SHA1-Digest: ION+iHDISr89YFUf0QB9+GBTw/o=
+
+Name: org/eclipse/papyrus/uml/tools/commands/ApplyProfileCommand.class
+SHA1-Digest: npe/fAhuZodj8j8GUVqGLDF4rlk=
+
+Name: org/eclipse/papyrus/uml/tools/util/ProfileHelper.class
+SHA1-Digest: dvz487QAOtGaMcAgfa7Jq0X2L4o=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/CompositePackageImpo
+ rtSource$WrapperContentProvider.class
+SHA1-Digest: xirzm6okhSP/AUxcu2Cp4vLuWOQ=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProvidedInterfaceObser
+ vableList.class
+SHA1-Digest: aLNacDuU9+chthVxmRczuFEtYo8=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/OwnerObservableValue.c
+ lass
+SHA1-Digest: JkM+gW/GG7uwSsgeaEvYPJWBS5M=
+
+Name: org/eclipse/papyrus/uml/tools/commands/UnapplyProfileCommand.cla
+ ss
+SHA1-Digest: oL4W9yT71OrUJtvcfQqdgLbwIzE=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/NavigationObservableVa
+ lue.class
+SHA1-Digest: WmbQmiA6jPYquTo//wKifU7ZrfE=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/MultiplicityObservable
+ Value$1.class
+SHA1-Digest: qjlgkVWXZHhxf15eAVnZDQMh6ng=
+
+Name: org/eclipse/papyrus/uml/tools/model/ExtendedUmlModel.class
+SHA1-Digest: 0TThsY6veGjrg1wfCQ/zE9i88JQ=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/PackageImportSourceD
+ ialog$MyReferenceSelector.class
+SHA1-Digest: /4Ovy2ZVxcxHVg8S2QPU75J12us=
+
+Name: org/eclipse/papyrus/uml/tools/adapters/StructuredClassifierDeriv
+ edSubsetAdapter.class
+SHA1-Digest: HEsr8IPdfycqqeIQWrLSJ6RtAEo=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/IPackageImportSource
+ .class
+SHA1-Digest: wSOCchpZN6hiUHMgfNJH5PXVbgU=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLContainerContentProvi
+ der.class
+SHA1-Digest: BSO+IPydFvMkwevxWXWQ8AP1cEM=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLStereotypePropertyCon
+ tentProvider.class
+SHA1-Digest: JC94XXbYgsvn6lVTzetRXU5PBdI=
+
+Name: org/eclipse/papyrus/uml/tools/commands/ApplyStereotypeCommand.cl
+ ass
+SHA1-Digest: eRHeiezVosqoFVNi7rr1L5Gmvcs=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/AbstractStereotypeList
+ ener.class
+SHA1-Digest: mVYgoGuyCdoNkL5fEvd+5EPznQY=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ImageNameObservableVal
+ ue.class
+SHA1-Digest: 1UsKOdH0wqYi46n/30vpfAsUp4M=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/PackageImportSourceR
+ egistry$1.class
+SHA1-Digest: a6xjys0lDPrJyCA9Xn2iZAZFOa4=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/CommandBasedObservable
+ .class
+SHA1-Digest: +ZzbnzJbNMCEQSRxZ8e+rtjP+EE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/tools/Activator.class
+SHA1-Digest: zqUCn9VhMRQJ6y6h22fpQlPmHak=
+
+Name: org/eclipse/papyrus/uml/tools/adapters/PapyrusUMLDerivedSubsetAd
+ apter.class
+SHA1-Digest: aAV2SYaO0lUVpoG4FOwzEjqSGeY=
+
+Name: org/eclipse/papyrus/uml/tools/providers/IIgnoreStereotypeBasePro
+ pertyContentProvider.class
+SHA1-Digest: APp+gSkjt+qpR/SRTXh0UBnnpMU=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ExtensionRequiredObser
+ vableValue.class
+SHA1-Digest: UP5HrkDO1O2qynJsXI66HAgbDHU=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLFilteredLabelProvider
+ .class
+SHA1-Digest: EdpblAVdBmQEcuZsZ2M0LZOO5T8=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLContainmentBrowseStra
+ tegy.class
+SHA1-Digest: 7jo8ZcweCik9D27Fq6hX2XNLfVk=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ImageNameObservableVal
+ ue$1.class
+SHA1-Digest: sJWiz4/cInGjvq/zugEC0GkA424=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList$2.class
+SHA1-Digest: eginr9mU6lDRYMuczLuiYagGgjw=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLEClassLabelProvider.c
+ lass
+SHA1-Digest: PUReKjayVgulcrFanqvcrbFjb1Q=
+
+Name: org/eclipse/papyrus/uml/tools/adapters/PackageDerivedSubsetAdapt
+ er.class
+SHA1-Digest: LHNhuSX63nANUzekWnnPJpy+Wjo=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/PackageImportSourceR
+ egistry$Descriptor.class
+SHA1-Digest: EbR/CK7tkZ3Quwp0AD1a5zuoMrA=
+
+Name: org/eclipse/papyrus/uml/tools/model/UmlSnippet.class
+SHA1-Digest: Yr/njJFuv4iXbPYEu4I7qx5K4Xo=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ImageExpressionObserva
+ bleValue.class
+SHA1-Digest: xioD/4qHsS+2CkHEKU9eqLK8nEY=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ExtensionRequiredObser
+ vableValue$1.class
+SHA1-Digest: kMhdi5DgNv3dYMP1GYk+mhdE1E4=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/AggregatedPapyrusObser
+ vableValue.class
+SHA1-Digest: +kxX2Hvpm8OMPaY2+ZO2opMZtTc=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/AbstractPackageImpor
+ tSource.class
+SHA1-Digest: ydqPjVh/30fUv3Hrv/nn/e4DuSA=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ImageKindObservableVal
+ ue.class
+SHA1-Digest: +iX27lOmRgroo68dDCoA0Ek8U3g=
+
+Name: org/eclipse/papyrus/uml/tools/util/MultiplicityParser.class
+SHA1-Digest: VdXZ/XYZe/B0qHDw72OB3j6kpUk=
+
+Name: org/eclipse/papyrus/uml/tools/commands/UnapplyStereotypeCommand.
+ class
+SHA1-Digest: fW6xhEnVSxxkMZEoZHrurp68Iqs=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList$1$1.class
+SHA1-Digest: Xa9YERnZab5KsAseJ8YXXb0e+N8=
+
+Name: org/eclipse/papyrus/uml/tools/providers/GenericDataTypeLabelProv
+ ider.class
+SHA1-Digest: au+f3vFb04iidxqCnBFfWxUcJ+A=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/WorkspacePackageImpo
+ rtSource$1.class
+SHA1-Digest: RUO+S7la6OuzHeAH0QMFHAi0UBk=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/CompositePackageImpo
+ rtSource.class
+SHA1-Digest: CBNy5Ymd06fIOT/M/2GB2/xhnHc=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/CommandBasedObservable
+ Value.class
+SHA1-Digest: HLy3Tf5zcEAjbVbNh2hvbOwt3v8=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLLabelProvider.class
+SHA1-Digest: 3VyJ2y02X6F0mUC6w9mBzOAhDOM=
+
+Name: org/eclipse/papyrus/uml/tools/helper/UMLDatabindingHelper.class
+SHA1-Digest: Il7KlVZgAeQ0dvxSeqJlTgOch8c=
+
+Name: org/eclipse/papyrus/uml/tools/providers/InteractionOperatorConte
+ ntProvider.class
+SHA1-Digest: baIg5BMdObgDBR41oTzdsfR2KaI=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLMetaclassLabelProvide
+ r.class
+SHA1-Digest: 4giKZo4XSycz5x4nrpRlB1Mptho=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList$1$1$1.class
+SHA1-Digest: R1AnEzbTaRb+deyXZiA2n1DlJZI=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList$1$2$1.class
+SHA1-Digest: kta7HU4L2Cz/86lUVHF2OBK1ja4=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/MultiplicityObservable
+ Value.class
+SHA1-Digest: Y51EBkRW2kvRolbr1jsZgotFYoI=
+
+Name: org/eclipse/papyrus/uml/tools/util/UMLProviderHelper.class
+SHA1-Digest: YOLqws4xUseQk7+uwAa3s6NvDZ8=
+
+Name: org/eclipse/papyrus/uml/tools/listeners/PapyrusStereotypeListene
+ r$StereotypeCustomNotification.class
+SHA1-Digest: q7cL2AkhLnHYsStB2zasTZTVvZg=
+
+Name: org/eclipse/papyrus/uml/tools/adapters/ClassifierDerivedSubSetAd
+ apter.class
+SHA1-Digest: vhGaAeAlz8Nv6NTHPKKPCszPI+0=
+
+Name: org/eclipse/papyrus/uml/tools/namereferences/NameReferencesHelpe
+ r.class
+SHA1-Digest: 6yqcZYVMheGuKp43CEXuouqQdiw=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLMetaclassContentProvi
+ der.class
+SHA1-Digest: sn/5MeVgDy7Mo40Q0qCqcJbBno0=
+
+Name: org/eclipse/papyrus/uml/tools/providers/ProfileLabelProvider.cla
+ ss
+SHA1-Digest: E1IeBERKXc3s56J7vWjMvHyoLFM=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/CompositePackageImpo
+ rtSource$Wrapper.class
+SHA1-Digest: ukSp7EdJpkLg2rRQq0pc9EgLEOI=
+
+Name: org/eclipse/papyrus/uml/tools/providers/UMLLabelProvider$1.class
+SHA1-Digest: jUK7d9kvEX/cPuuGKZyD8fIeI+Q=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/AbstractUMLAggregatedO
+ bservableValue.class
+SHA1-Digest: lrMngB0n6BRJ3dO49/uCt6wyYS0=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/PapyrusObservableValue
+ .class
+SHA1-Digest: iogoG+ORQsoO0w/8pN6CWjZF87o=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/PapyrusObservableList.
+ class
+SHA1-Digest: fEZesM30yPBcQsy6/K2WSoRTD+o=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/PackageImportSourceR
+ egistry.class
+SHA1-Digest: mSplz4uhambdpEK8Xmxy708dPdc=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/RequiredInterfaceObser
+ vableList.class
+SHA1-Digest: /f/DSZC7/vH5HJVNSvh3oGWjyF8=
+
+Name: plugin.xml
+SHA1-Digest: N+Nk6i57mC1G4QDnhkVYEOUYp+w=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/PackageImportSourceD
+ ialog.class
+SHA1-Digest: PPzUnrfvLALz1fZoK7RwVsSa5n4=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList.class
+SHA1-Digest: OrJEg1LL78AZHRUUooaTGRFvVLA=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/uml/tools/providers/SemanticUMLContentProvid
+ er.class
+SHA1-Digest: NkQ86A1YRqisZMhYSt0xmoe+2oc=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList$1.class
+SHA1-Digest: t6Fq+0wbWG3YF2LrqegZiHNmvOk=
+
+Name: org/eclipse/papyrus/uml/tools/importsources/WorkspacePackageImpo
+ rtSource.class
+SHA1-Digest: vhgK0u3ThggwdCa0E6eLPXhQYJg=
+
+Name: org/eclipse/papyrus/uml/tools/providers/EditServiceValidator.cla
+ ss
+SHA1-Digest: FAhyCdGSl70GN/BHdxra6YyH9i4=
+
+Name: org/eclipse/papyrus/uml/tools/providers/ApplicableStereotypeCont
+ entProvider.class
+SHA1-Digest: rL17bkX9ZZtgt7dtAc+VXvB1xSM=
+
+Name: org/eclipse/papyrus/uml/tools/listeners/PapyrusStereotypeListene
+ r.class
+SHA1-Digest: D9j0xz5VMYvhdBhHbHaKFU+IEo4=
+
+Name: org/eclipse/papyrus/uml/tools/databinding/ProfileApplicationObse
+ rvableList$1$2.class
+SHA1-Digest: +oI1w6tCUYhqo5/vEN7oqkWF1cY=
+

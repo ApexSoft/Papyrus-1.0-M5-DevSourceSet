@@ -1,0 +1,232 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.sysml.modelexplorer;singleton
+ :=true
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.facet.infra.c
+ ommon.core,org.eclipse.emf.facet.infra.query.core,org.eclipse.uml2.um
+ l,org.eclipse.papyrus.sysml;bundle-version="1.0.0",org.eclipse.swt,or
+ g.eclipse.papyrus.uml.diagram.common;bundle-version="1.0.0",org.eclip
+ se.papyrus.infra.services.edit;bundle-version="1.0.0",org.eclipse.pap
+ yrus.sysml.service.types;bundle-version="1.0.0",org.eclipse.papyrus.u
+ ml.service.types;bundle-version="1.0.0",org.eclipse.papyrus.views.mod
+ elexplorer;bundle-version="1.0.0",org.eclipse.ui.navigator;bundle-ver
+ sion="3.5.0",org.eclipse.papyrus.sysml.diagram.common;bundle-version=
+ "1.0.0",org.eclipse.emf.facet.infra.browser.uicore;bundle-version="0.
+ 1.0",org.eclipse.ui.views.properties.tabbed;bundle-version="3.5.200",
+ org.eclipse.gmf.runtime.emf.type.core;bundle-version="1.4.0",org.ecli
+ pse.ui.ide;bundle-version="3.8.0",org.eclipse.papyrus.infra.core.log;
+ bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.commands;bun
+ dle-version="1.0.0",org.eclipse.papyrus.uml.tools;bundle-version="1.0
+ .0",org.eclipse.papyrus.uml.tools.utils;bundle-version="1.0.0",org.ec
+ lipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.i
+ nfra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.infra.emf;bun
+ dle-version="1.0.0",org.eclipse.papyrus.uml.modelexplorer;bundle-vers
+ ion="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.sysml.modelexplorer.Activator
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .,bin
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/CopyHandler.clas
+ s
+SHA1-Digest: 1t8ihYS8zFPIf87G3irXeFu8LPs=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ConstraintProper
+ tyHandler.class
+SHA1-Digest: Z/rx5T2S0JvQnmVwqBebDUON6+s=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/DimensionHandler
+ .class
+SHA1-Digest: HMTkWqmxwWIFJxFGUVxw7dXxNdQ=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/Activator.class
+SHA1-Digest: orbPUeaBgwOt239tU8/59yxYd3A=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ValuePropertyHan
+ dler.class
+SHA1-Digest: 1mHWGTBhrtea3znM4MZdNUXr1zQ=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/RequirementHandl
+ er.class
+SHA1-Digest: 7iyOpJN4rzcfI0/3dNhaMR/uvS8=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationHandl
+ er.class
+SHA1-Digest: VcFHlUSiipHCy/vJ+Yi1tjyZHo8=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationCompo
+ siteHandler.class
+SHA1-Digest: asNOQW4W/P9Be/+hfA7ezPbc/4U=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/query/HasImageQuery.clas
+ s
+SHA1-Digest: C/OLIxoPfJB27TlXkB3KqkIIvaw=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowPropertyHand
+ ler.class
+SHA1-Digest: YOE14Iagcw0ACLSCDUHI++khkAM=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/query/GetLabelQuery.clas
+ s
+SHA1-Digest: QNaz7cOb/Wugcwh3gvnn78Gcw78=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ItemFlowHandler.
+ class
+SHA1-Digest: H2TUSLvQ6RUY/kH5URNKLZsA/RA=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/RationaleHandler
+ .class
+SHA1-Digest: yv0Swe49Ux2oclJOyVtQOXmrgis=
+
+Name: resources/SysMLDefaultExplorerCustomization.uiCustom
+SHA1-Digest: e9YFSXZ3J/UNmeH4q1JkiDkqOic=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ConstraintBlockP
+ arameterHandler.class
+SHA1-Digest: 04Gs2mQUy3OurIpMgwhrvOzcZBk=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ViewPointHandler
+ .class
+SHA1-Digest: 3n076v2m8CT+E74ttRtrgf+RuVs=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationShare
+ dHandler.class
+SHA1-Digest: 8AJT+ZY+ZAjNAAwIY0VIUUMxvlQ=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationCompo
+ siteDirectedHandler.class
+SHA1-Digest: WZi+OeXc/TrljiDnl68+g90HCwM=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/filter/CommandFilter.cla
+ ss
+SHA1-Digest: ix5QirA77ibKEjdKqb2MIsOAF/c=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowPort_NAHandl
+ er.class
+SHA1-Digest: a3qmOwCMDFsQlYd6lA4Th3Ivr9Y=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ProblemHandler.c
+ lass
+SHA1-Digest: 3Z2KqkCF8X0RptCerrLks6rjIuQ=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationNoneH
+ andler.class
+SHA1-Digest: +EF+ApGF9MCOhawIH/3OF+nin9M=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AllocateHandler.
+ class
+SHA1-Digest: +9XHgsJiLhvAt/pbp3TUlIg33qI=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AbstractSysmlMod
+ elExplorerCreateCommandHandler.class
+SHA1-Digest: bf9+cu+OKwTfgffpug4zmODXMS8=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ConstraintBlockH
+ andler.class
+SHA1-Digest: P2IA9CfQb2KEn5ihpyANhcbZXd0=
+
+Name: resources/SysMLDefaultExplorerQueries.querySet
+SHA1-Digest: VAem+JMkpQdCCB2/o/WUPHj67GU=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/VerifyHandler.cl
+ ass
+SHA1-Digest: Jk5bSFi8XcTSgYRMtBom7g168Vk=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationShare
+ dDirectedHandler.class
+SHA1-Digest: Gl/jJslQhpTC31m/dwKmEnPJBGI=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/BlockHandler.cla
+ ss
+SHA1-Digest: D58cNnpGNzoRwl1OcobjyumilyE=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ValueTypeHandler
+ .class
+SHA1-Digest: eSVvb8ZmZFpJ8m/otClXxp8PpZU=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/AssociationNoneD
+ irectedHandler.class
+SHA1-Digest: nCE7NZKZrZWvsoDXR9r7jZEV28A=
+
+Name: plugin.properties
+SHA1-Digest: Qh83qepA8QaGw0yQKMI5p5IZgtA=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/query/GetImageQuery.clas
+ s
+SHA1-Digest: YHZ/RyjsgSU8UHkfjXHpoEI6Jzc=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ActorPartPropert
+ yHandler.class
+SHA1-Digest: z6puxmSBmyVqY0zO6b3WsXKDBFM=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ViewHandler.clas
+ s
+SHA1-Digest: GtVyQNh0w8qFqz3xg2i0d3XrDsc=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/UnitHandler.clas
+ s
+SHA1-Digest: F9uFGNnFvvN1ZcKa2ZeDoLMt7ns=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowPort_InHandl
+ er.class
+SHA1-Digest: NVO1L/SSPFI5pvGzxMTATMEU7yA=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowSpecificatio
+ nHandler.class
+SHA1-Digest: sc4Z3wbXFDB4VDMVUn4VPb8/H5U=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowPort_OutHand
+ ler.class
+SHA1-Digest: yDiSUEw2m/wetULrWPSyAoCJkYc=
+
+Name: plugin.xml
+SHA1-Digest: JNOmYnREjKLSvO5PRUyWbL2G+pQ=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/DeriveReqtHandle
+ r.class
+SHA1-Digest: e63lwI/tU51XOGYpGvyH5byi1II=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ValueType_Enumer
+ ationHandler.class
+SHA1-Digest: PqSck/smKmEMr8UxJ8inglrsZ9U=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowPort_InOutHa
+ ndler.class
+SHA1-Digest: tbsAyKG5tCZj3aS4UYUfqsMZK3k=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ValueType_Primit
+ iveTypeHandler.class
+SHA1-Digest: 0TksJUVvg3xp7Jd8o52eM7+Mq8U=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ConformHandler.c
+ lass
+SHA1-Digest: qJ620iZqc5DQbKAZN2GOfo68+hY=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/FlowPortHandler.
+ class
+SHA1-Digest: Tphqn9Iw/JWiXxi9bcev0fnoR5E=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/SatisfyHandler.c
+ lass
+SHA1-Digest: ZazFLbP3j3I0HhHESGwQ3Hzh5q0=
+
+Name: about.html
+SHA1-Digest: mLkmRLtG3amkcY0I7KSYZX6qKhs=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/ReferencePropert
+ yHandler.class
+SHA1-Digest: R+4KqB5ke+AHQXEW8HAGcCkZQWk=
+
+Name: org/eclipse/papyrus/sysml/modelexplorer/handler/PartPropertyHand
+ ler.class
+SHA1-Digest: lQqCJC30oF0DVr8QKNMLi+iOiBc=
+

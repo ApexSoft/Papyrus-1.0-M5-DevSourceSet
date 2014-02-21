@@ -1,0 +1,175 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.paletteconfigurat
+ ion.edit;singleton:=true
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.paletteconfiguration
+ .edit.provider.PaletteConfigurationEditPlugin$Implementation
+Require-Bundle: org.eclipse.core.runtime,org.eclipse.papyrus.uml.diagr
+ am.paletteconfiguration;bundle-version="1.0.0";visibility:=reexport,o
+ rg.eclipse.emf.edit;visibility:=reexport,org.eclipse.papyrus.infra.qu
+ eries.core.configuration;bundle-version="1.0.0";visibility:=reexport,
+ org.eclipse.papyrus.infra.queries.core.configuration.edit;bundle-vers
+ ion="1.0.0";visibility:=reexport,org.eclipse.emf.ecore;visibility:=re
+ export,org.eclipse.emf.ecore.edit;visibility:=reexport,org.eclipse.em
+ f.facet.infra.query;visibility:=reexport,org.eclipse.emf.facet.infra.
+ query.edit;visibility:=reexport,org.eclipse.uml2.uml,org.eclipse.uml2
+ .uml.edit
+Export-Package: org.eclipse.papyrus.uml.diagram.paletteconfiguration.e
+ dit.provider
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-ClassPath: .
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: icons/full/obj16/stack.gif
+SHA1-Digest: J08i2rueFvxIsJ1Z9BgktWZSpEE=
+
+Name: icons/full/ctool16/CreateToolConfiguration_elementDescriptors_El
+ ementDescriptor.gif
+SHA1-Digest: jl2Ol81rF1N6p8URC5kWwzIkjyo=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/ToolConfigurationItemProvider.class
+SHA1-Digest: PATIsjSchaEwcU1eKrJUuTF8aUw=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/DrawerConfigurationItemProvider.class
+SHA1-Digest: VQokKupNqVw5jxRSzNzQGxrVb90=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/PaletteConfigurationEditPlugin.class
+SHA1-Digest: nkLOzNQaV3fuKfqwEBMqyV2HswE=
+
+Name: icons/full/obj16/tool.gif
+SHA1-Digest: /cDYtgpMpwE6CalF4KLRGKMP6IM=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/PaletteconfigurationItemProviderAdapterFactory.class
+SHA1-Digest: LBqPoxQ5PVVbM8KMN3Xqj2IsMPU=
+
+Name: plugin.properties
+SHA1-Digest: 4YF51CgGIEBB9ArsigdcrC6srYc=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/ElementDescriptorItemProvider.class
+SHA1-Digest: HLlrMuG6S//nA0nJ9ebrH+jMMqo=
+
+Name: icons/full/obj16/PaletteConfiguration.gif
+SHA1-Digest: M2wugloeji7i8CFSnJIyxktlpgg=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/ChildConfigurationItemProvider.class
+SHA1-Digest: NzGT0+RP7bSfXvw3hR7Z2fnV98o=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/PaletteConfigurationItemProvider.class
+SHA1-Digest: kkuDQk7X9ohIKXfTeJNd6dymflY=
+
+Name: icons/full/obj16/ToolConfiguration.gif
+SHA1-Digest: /cDYtgpMpwE6CalF4KLRGKMP6IM=
+
+Name: icons/full/ctool16/IconDescriptor.gif
+SHA1-Digest: d3AaZ35fG43f+eJYpJDVIPId8Ek=
+
+Name: icons/full/ctool16/ToolConfiguration.gif
+SHA1-Digest: /cDYtgpMpwE6CalF4KLRGKMP6IM=
+
+Name: plugin.xml
+SHA1-Digest: WikJ9ykYn3zQ7u0i7gPtG3W10o8=
+
+Name: icons/full/ctool16/CreateStackConfiguration_ownedConfigurations_
+ ToolConfiguration.gif
+SHA1-Digest: 7OVEWZ0+Css3TCsEAjIX4ZGaGRY=
+
+Name: icons/full/obj16/IconDescriptor.gif
+SHA1-Digest: d3AaZ35fG43f+eJYpJDVIPId8Ek=
+
+Name: icons/full/obj16/palette_view.gif
+SHA1-Digest: M2wugloeji7i8CFSnJIyxktlpgg=
+
+Name: icons/full/obj16/DrawerConfiguration.gif
+SHA1-Digest: 5TF7ftfUsp4Z3KdTaSlgyQoFpuk=
+
+Name: icons/full/ctool16/StackConfiguration.gif
+SHA1-Digest: J08i2rueFvxIsJ1Z9BgktWZSpEE=
+
+Name: icons/full/ctool16/CreateStackConfiguration_ownedConfigurations_
+ SeparatorConfiguration.gif
+SHA1-Digest: PXM6co5OJ1WC7GUXVxGhZtQUMwg=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/IconDescriptorItemProvider.class
+SHA1-Digest: 0xU8Sg7J9gwB7ywo1hK1IbItXwo=
+
+Name: icons/full/ctool16/new_drawer.gif
+SHA1-Digest: UJ9nAklqg9UDmmodF7ph1bDQRQY=
+
+Name: icons/full/obj16/StackConfiguration.gif
+SHA1-Digest: J08i2rueFvxIsJ1Z9BgktWZSpEE=
+
+Name: icons/full/obj16/ElementDescriptor.gif
+SHA1-Digest: nsQeX0sVxi8Bjr0kI6lPjKF9zSI=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: icons/full/ctool16/CreateStackConfiguration_toolConfigurations_T
+ oolConfiguration.gif
+SHA1-Digest: /cDYtgpMpwE6CalF4KLRGKMP6IM=
+
+Name: icons/full/ctool16/CreateConfiguration_icon_IconDescriptor.gif
+SHA1-Digest: d3AaZ35fG43f+eJYpJDVIPId8Ek=
+
+Name: icons/full/obj16/SeparatorConfiguration.gif
+SHA1-Digest: l+rWncEcySSnAJKwblPaMrihzcw=
+
+Name: icons/full/obj16/drawer.gif
+SHA1-Digest: 5TF7ftfUsp4Z3KdTaSlgyQoFpuk=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/StackConfigurationItemProvider.class
+SHA1-Digest: s+/In3ExbjR6D4AGv/CAiO2zH3g=
+
+Name: icons/full/ctool16/CreateDrawerConfiguration_ownedConfigurations
+ _ToolConfiguration.gif
+SHA1-Digest: /cDYtgpMpwE6CalF4KLRGKMP6IM=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/SeparatorConfigurationItemProvider.class
+SHA1-Digest: PMXSuAoQ6winj398oi72RthQ5xM=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: icons/full/ctool16/CreateDrawerConfiguration_ownedConfigurations
+ _StackConfiguration.gif
+SHA1-Digest: J08i2rueFvxIsJ1Z9BgktWZSpEE=
+
+Name: icons/full/obj16/Image.gif
+SHA1-Digest: d3AaZ35fG43f+eJYpJDVIPId8Ek=
+
+Name: icons/full/ctool16/CreateDrawerConfiguration_ownedConfigurations
+ _SeparatorConfiguration.gif
+SHA1-Digest: DB3UbV1k9BFSIJTc9FN/7Rb14lw=
+
+Name: icons/full/ctool16/CreatePaletteConfiguration_drawerConfiguratio
+ ns_DrawerConfiguration.gif
+SHA1-Digest: UJ9nAklqg9UDmmodF7ph1bDQRQY=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/ConfigurationItemProvider.class
+SHA1-Digest: OKPfDLVFXF1ACAtAPLpOFm3jeiU=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/LeafConfigurationItemProvider.class
+SHA1-Digest: rTYL3q6R7uuONoeZsiwqYwkjL4U=
+
+Name: org/eclipse/papyrus/uml/diagram/paletteconfiguration/edit/provid
+ er/PaletteConfigurationEditPlugin$Implementation.class
+SHA1-Digest: MEBs3AZzQEuFvIZiFJ4gzdP3Sbc=
+

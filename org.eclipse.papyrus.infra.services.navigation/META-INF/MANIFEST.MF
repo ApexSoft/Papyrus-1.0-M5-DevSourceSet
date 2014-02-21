@@ -1,0 +1,77 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.navigation;sin
+ gleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.cor
+ e.log;bundle-version="1.0.0",org.eclipse.papyrus.infra.widgets;bundle
+ -version="1.0.0",org.eclipse.jface
+Bundle-Activator: org.eclipse.papyrus.infra.services.navigation.Activa
+ tor
+Export-Package: org.eclipse.papyrus.infra.services.navigation,org.ecli
+ pse.papyrus.infra.services.navigation.provider,org.eclipse.papyrus.in
+ fra.services.navigation.service
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: Navigation Service (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/Navigation
+ Contributor.class
+SHA1-Digest: GBDUFrpVNOuluKZZORjTaXaHEh0=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/navigation/preferences/Naviga
+ tionServicePreferencesPage$1.class
+SHA1-Digest: Lj7gIrrq8LfAyPNHM7WfufZv/gc=
+
+Name: org/eclipse/papyrus/infra/services/navigation/provider/Navigatio
+ nTargetProvider.class
+SHA1-Digest: jv0jHqfQpYZbm69drjhbU+2n8gM=
+
+Name: org/eclipse/papyrus/infra/services/navigation/Activator.class
+SHA1-Digest: aALHhIm9WbTgz3sgZ3t8XE7cUXQ=
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/impl/Navig
+ ationServiceImpl.class
+SHA1-Digest: +euOtuNbsI6c3oCITcE133yIjuw=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/impl/Navig
+ ationServiceImpl$NavigationTargetProviderDescriptor.class
+SHA1-Digest: jjihxFeo86HIZ3BaPfW96UnWp7s=
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/impl/Navig
+ ationServiceImpl$1.class
+SHA1-Digest: LfVFQ0ZRshAsEhQa4oy0EuR4ePw=
+
+Name: org/eclipse/papyrus/infra/services/navigation/provider/impl/Acti
+ veEditorNavigationTargetProvider.class
+SHA1-Digest: 4K5f95xMkwmGs3/bt2F1jCkCm+0=
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/NavigableE
+ lement.class
+SHA1-Digest: SD0ZGe/MmSXDGNaek4hv1qPmgs4=
+
+Name: plugin.xml
+SHA1-Digest: /aoAb7XQJ+w0bG6a+6UuVfeD3U8=
+
+Name: org/eclipse/papyrus/infra/services/navigation/preferences/Naviga
+ tionServicePreferencesPage.class
+SHA1-Digest: K0n+rsIYLufNgegp2aRTw/zp9d0=
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/Navigation
+ Service.class
+SHA1-Digest: 4T0wl/Rfx4e/7+WV6/efRwr1FUs=
+
+Name: org/eclipse/papyrus/infra/services/navigation/service/impl/Navig
+ ationServiceImpl$NavigationContributorDescriptor.class
+SHA1-Digest: hO8EQsyVpZNjuUk+dzk5ENSoSPs=
+

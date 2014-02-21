@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.openelement;si
+ ngleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core;bundle-version="1.0.0",org.eclipse.emf.ecore;bundle-
+ version="2.9.0",org.eclipse.ui.ide;bundle-version="3.8.100",org.eclip
+ se.core.resources;bundle-version="3.8.100",org.eclipse.papyrus.infra.
+ widgets;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bun
+ dle-version="1.0.0",org.eclipse.emf.transaction;bundle-version="1.4.0
+ ",org.eclipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.pa
+ pyrus.infra.services.navigation;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.openelement.Activ
+ ator
+Export-Package: org.eclipse.papyrus.infra.services.openelement,org.ecl
+ ipse.papyrus.infra.services.openelement.service,org.eclipse.papyrus.i
+ nfra.services.openelement.service.impl
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-ActivationPolicy: lazy
+Bundle-Name: OpenElement Service (Incubation)
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/openelement/service/OpenEleme
+ ntService.class
+SHA1-Digest: h0pWWEO2fp1FrpKXNf29QUl+Jaw=
+
+Name: org/eclipse/papyrus/infra/services/openelement/service/impl/Open
+ ElementServiceImpl$1.class
+SHA1-Digest: oadv6wfA8jaZ5j32B/V7fRoGht0=
+
+Name: org/eclipse/papyrus/infra/services/openelement/Activator.class
+SHA1-Digest: SPDdAJoDXhyBq9Zii68O8PrxMFo=
+
+Name: plugin.xml
+SHA1-Digest: E+1a4x95otEKcLQQdPIrZyUnSjw=
+
+Name: about.html
+SHA1-Digest: a2Fk5/pDnCvlEfl7QwDZj/FCgFc=
+
+Name: org/eclipse/papyrus/infra/services/openelement/service/impl/Open
+ ElementServiceImpl$2.class
+SHA1-Digest: xGDucrlm/31ShcDB1gaWJftewPs=
+
+Name: org/eclipse/papyrus/infra/services/openelement/service/impl/Open
+ ElementServiceImpl$3.class
+SHA1-Digest: q9e9xI6e+z/pRT1ThVU9z/Iz9OU=
+
+Name: org/eclipse/papyrus/infra/services/openelement/service/impl/Open
+ ElementServiceImpl.class
+SHA1-Digest: G5eqdjXY606kyMtto3EletCVUtw=
+
+Name: org/eclipse/papyrus/infra/services/openelement/service/impl/Open
+ ElementServiceImpl$4.class
+SHA1-Digest: uxDejUVPhrf7sot8WWwx+9n1xOA=
+

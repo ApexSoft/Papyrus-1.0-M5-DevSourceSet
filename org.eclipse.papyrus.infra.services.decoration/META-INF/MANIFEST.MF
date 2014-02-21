@@ -1,0 +1,86 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.infra.services.decoration;sin
+ gleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.infra.core.log;bundle-version="1.0.0",org.apache.commons.lang;b
+ undle-version="2.4.0",org.eclipse.emf.facet.infra.browser.uicore;bund
+ le-version="0.2.0",org.eclipse.emf.ecore;bundle-version="2.8.0",org.e
+ clipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.core.res
+ ources;bundle-version="3.7.0",org.eclipse.papyrus.infra.services.mark
+ erlistener;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.infra.services.decoration.Activa
+ tor
+Export-Package: org.eclipse.papyrus.infra.services.decoration,org.ecli
+ pse.papyrus.infra.services.decoration.util
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/infra/services/decoration/util/Decoration$Pr
+ eferedPosition.class
+SHA1-Digest: kf7VLZLsoh9Phw6YdUcM/3DzwkY=
+
+Name: org/eclipse/papyrus/infra/services/decoration/DecorationChange.c
+ lass
+SHA1-Digest: qLv0kfTyVwSwyhfw7mlh/cGCips=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/infra/services/decoration/Activator.class
+SHA1-Digest: FXevhqM/AxhqYhZoXu6JEucXvSc=
+
+Name: schema/decorationSpecificFunctions.exsd
+SHA1-Digest: wRBBY4OCohzMNIx9D9Y3lo5DhAU=
+
+Name: org/eclipse/papyrus/infra/services/decoration/DecorationChange$D
+ ecorationChangeKind.class
+SHA1-Digest: A58anhaiOI5G/hB6F0e/klpxUc4=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: plugin.properties
+SHA1-Digest: f9zkxCXnGZSe9KM4hVfDxgyv+RE=
+
+Name: org/eclipse/papyrus/infra/services/decoration/util/Decoration.cl
+ ass
+SHA1-Digest: qYAyVlfjEx8XMrprzO9VrZ5XAHI=
+
+Name: org/eclipse/papyrus/infra/services/decoration/util/DecorationSpe
+ cificFunctions.class
+SHA1-Digest: rh3EuPHCDFwejuhXr1YX8XTQuBM=
+
+Name: org/eclipse/papyrus/infra/services/decoration/IDecorationSpecifi
+ cFunctions$MarkChildren.class
+SHA1-Digest: Tl1jGzb5yrXQvYi3ayLH3CcrH+Q=
+
+Name: org/eclipse/papyrus/infra/services/decoration/IDecorationSpecifi
+ cFunctions.class
+SHA1-Digest: KICZqM3MCZyYyX4ObMFt97X/L20=
+
+Name: org/eclipse/papyrus/infra/services/decoration/DecorationService.
+ class
+SHA1-Digest: VcRhdC/KzJ+ohOjefkg7VRnOb8o=
+
+Name: org/eclipse/papyrus/infra/services/decoration/util/DecorationUti
+ ls.class
+SHA1-Digest: sFwmAzBEo0rzH/qnPJszW2JCSsA=
+
+Name: org/eclipse/papyrus/infra/services/decoration/util/IPapyrusDecor
+ ation.class
+SHA1-Digest: VyoJbmcFqzOFwEH3c8FIBd2sURI=
+
+Name: plugin.xml
+SHA1-Digest: gxfXrF9TeGtmZ+3m8cWfTGhQEG4=
+
+Name: org/eclipse/papyrus/infra/services/decoration/IDecorationService
+ .class
+SHA1-Digest: M4NAjwGRIrimJ9M5cW6Y6z0a1aM=
+

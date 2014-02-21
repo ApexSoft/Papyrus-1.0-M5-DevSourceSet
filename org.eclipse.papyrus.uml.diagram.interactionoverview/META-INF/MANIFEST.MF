@@ -1,0 +1,524 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.interactionovervi
+ ew;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.papyrus.uml.diagram.common;
+ bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.common;bundl
+ e-version="1.0.0",org.eclipse.gmf.runtime.diagram.ui.providers,org.ec
+ lipse.gmf.runtime.diagram.ui.resources.editor,org.eclipse.papyrus.inf
+ ra.core;bundle-version="1.0.0",org.eclipse.papyrus.uml.diagram.activi
+ ty;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.preferenc
+ es;bundle-version="1.0.0",org.eclipse.gmf.runtime.notation;bundle-ver
+ sion="1.5.0",org.eclipse.gmf.runtime.diagram.core;bundle-version="1.4
+ .1",org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",org.ecl
+ ipse.uml2.uml;bundle-version="4.0.0",org.eclipse.papyrus.infra.core.l
+ og;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.sasheditor;b
+ undle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.navigation;bu
+ ndle-version="1.0.0",org.eclipse.ui.ide;bundle-version="3.8.0",org.ec
+ lipse.emf.common.ui;bundle-version="2.7.0",org.eclipse.papyrus.infra.
+ gmfdiag.commands;bundle-version="1.0.0",org.eclipse.papyrus.uml.tools
+ ;bundle-version="1.0.0",org.eclipse.papyrus.infra.widgets;bundle-vers
+ ion="1.0.0",org.eclipse.papyrus.infra.services.edit;bundle-version="1
+ .0.0",org.eclipse.papyrus.uml.diagram.timing;bundle-version="1.0.0",o
+ rg.eclipse.ui.navigator;bundle-version="3.5.200",org.eclipse.papyrus.
+ infra.extendedtypes;bundle-version="1.0.0",com.google.guava;bundle-ve
+ rsion="11.0.0",org.eclipse.papyrus.sysml.diagram.common;bundle-versio
+ n="1.0.0",org.eclipse.papyrus.infra.widgets.toolbox;bundle-version="1
+ .0.0",org.eclipse.gmf.runtime.diagram.ui.render;bundle-version="1.6.0
+ ",org.eclipse.papyrus.uml.diagram.sequence;bundle-version="1.0.0";res
+ olution:=optional,org.eclipse.papyrus.uml.diagram.stereotype.edition;
+ bundle-version="1.0.0",org.eclipse.gmf.tooling.runtime;bundle-version
+ ="3.1.0",org.eclipse.gmf.runtime.draw2d.ui.render;bundle-version="1.4
+ .1",org.eclipse.papyrus.uml.tools.utils;bundle-version="1.0.0",org.ec
+ lipse.papyrus.infra.emf;bundle-version="1.0.0",org.eclipse.papyrus.um
+ l.diagram.modelexplorer;bundle-version="1.0.0",org.eclipse.emf.facet.
+ infra.browser.uicore;bundle-version="0.3.0",org.eclipse.papyrus.infra
+ .services.labelprovider;bundle-version="1.0.0",org.eclipse.papyrus.um
+ l.diagram.communication;bundle-version="1.0.0",org.eclipse.papyrus.in
+ fra.hyperlink;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdia
+ g.dnd;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.interactionoverview.
+ Activator
+Export-Package: org.eclipse.papyrus.uml.diagram.interactionoverview,or
+ g.eclipse.papyrus.uml.diagram.interactionoverview.edit.advices,org.ec
+ lipse.papyrus.uml.diagram.interactionoverview.edit.commands,org.eclip
+ se.papyrus.uml.diagram.interactionoverview.edit.dialogs,org.eclipse.p
+ apyrus.uml.diagram.interactionoverview.edit.part,org.eclipse.papyrus.
+ uml.diagram.interactionoverview.edit.policies,org.eclipse.papyrus.uml
+ .diagram.interactionoverview.edit.policy,org.eclipse.papyrus.uml.diag
+ ram.interactionoverview.factory,org.eclipse.papyrus.uml.diagram.inter
+ actionoverview.figures,org.eclipse.papyrus.uml.diagram.interactionove
+ rview.parser,org.eclipse.papyrus.uml.diagram.interactionoverview.part
+ ,org.eclipse.papyrus.uml.diagram.interactionoverview.preferences,org.
+ eclipse.papyrus.uml.diagram.interactionoverview.provider,org.eclipse.
+ papyrus.uml.diagram.interactionoverview.utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policy/
+ DiagramSemanticEditPolicy.class
+SHA1-Digest: PzOlteokzAO1yUOv+cnOypwuyhg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Inh
+ eritedActivityDiagramViewProvider.class
+SHA1-Digest: i+tut7tqjiEXOJ/U4vIk5G0DcZE=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Ca
+ llBehaviorActionAsInteractionEditPart.class
+SHA1-Digest: gjJZeR5pnPpFajEBDhmg1Mynx9M=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Acti
+ vityAsInteractionFigure$ActivityLayoutManager.class
+SHA1-Digest: 4QT8rYDtef5Et9lO4deiToTVBCY=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Inte
+ ractionUseFigure.class
+SHA1-Digest: OWAlkuiiy90o9b0tF5XC/6PfOFg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomStructuredActivityNodeStructuredActivityNodeContentCompartmen
+ tItemSemanticEditPolicy.class
+SHA1-Digest: IleRGLxruANvkGLKkGSAKbo1SFo=
+
+Name: messages.properties
+SHA1-Digest: HPLzuUTeZYjfO4kLQ/J18jOfPnQ=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Cu
+ stomInteractionUseEditPartCN.class
+SHA1-Digest: fAxJYXgkLts2PdJ6hOArT5j9+QI=
+
+Name: palettes/interactionoverviewdiagram.palette.gen.xml
+SHA1-Digest: jxuWadWqyEjwP+bNbMCveTs7LCU=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/factory/Inte
+ ractionOverviewDiagramViewFactory.class
+SHA1-Digest: axlKmRrYi5VDIqtO8zshC8dem5s=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomExpansionRegionStructuredActivityNodeContentCompartmentItemSe
+ manticEditPolicy.class
+SHA1-Digest: wjnMIgTaN0R0WHjuv+iiOAeVI1I=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Gra
+ phicalTypeRegistry.class
+SHA1-Digest: Xw2YYOh+W4tvtu6xtM7Txc89Y4Q=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Cu
+ stomActivityEditPartTN.class
+SHA1-Digest: 1OW+QaOSmbrbIqJZNMjp/BYeV68=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Interac
+ tionOverviewDiagramEditor$1.class
+SHA1-Digest: Bx557gdX03tCXaL3zfs38fktorg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ActivityPreferencePage.class
+SHA1-Digest: 1JWa/WmGZa916L7cWAxqcG4qDDA=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/UML
+ ElementTypes.class
+SHA1-Digest: 14yYNH5bvqIwEAmIyAXtsxfR4Go=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/AbstractChangeInteractionTypeCommand.class
+SHA1-Digest: kqCF+YYvrUxXv/3lBfxtGT53GMY=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/AddHyperlinkDiagram.class
+SHA1-Digest: Q9YYD6oPhs3qw53e1sfQnFgndBE=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Interac
+ tionOverviewDiagramEditor$2$1.class
+SHA1-Digest: aQk09oYSC5zWeY40QnZ9J+7yu58=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policy/
+ InteractionOverviewDiagramDragDropEditPolicy.class
+SHA1-Digest: g1dl80FDFZFNFvK97B7y0Q2cHWg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ InteractionOverviewPreferenceConstants.class
+SHA1-Digest: EjLzMeIH2Aryd/PBsHR3bpO+lXg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ CallBehaviorActionPreferencePage.class
+SHA1-Digest: JlH9oahgO2VWZBYiHFtPxmjnV5M=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomInteractionOverviewDiagramDragAndDropEditPolicy.class
+SHA1-Digest: pauwuDVNnfODFh+5Xr8MbcGo9FM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/utils/CallBe
+ haviorUtil.class
+SHA1-Digest: a9jtgBXw4ZTFDabz10YGDpUALR4=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/UMLVisu
+ alIDRegistry.class
+SHA1-Digest: 4PrDEOgS97vtRE4L5AYVmo/u6Jk=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Acti
+ vityAsInteractionFigure$1.class
+SHA1-Digest: dbZZNrKB5YDZnis6NeszM5+yguo=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/CreateSnapshotForInteractionFromViewDescriptorCommand.class
+SHA1-Digest: cTVGUs8+UTvYGiFB9WG8o4WMzC8=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/ActivityContentCompartmentCreationEditPolicy.class
+SHA1-Digest: r0NYpPRVZd9pWEtloUmQ7Ta2MgQ=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Cu
+ stomUMLInteractionOverviewEditPartFactory.class
+SHA1-Digest: GcVBUZJMkpxyLE2vyvaEFwUBQEw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/CustomI
+ ODPaletteFactory.class
+SHA1-Digest: R7RmyShr8MTFgeK73t/7Tic9USg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/ChangeInteractionUseToInteraction.class
+SHA1-Digest: m8482I5KPcBCnJzTlf7UTxXk5v8=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/CallBehaviorActionToInteractionDropStrategy.class
+SHA1-Digest: aqhluXphL5x0vVkGQnK6TxB88/4=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/Activator.cl
+ ass
+SHA1-Digest: j26aEfxQbJC/arhh77hkWsc/RGw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ LoopNodePreferencePage.class
+SHA1-Digest: hIWBxHq3thxHmkIRbvGwYTQkq3A=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ CommentAnnotatedElementPreferencePage.class
+SHA1-Digest: OK9PLfSk2f4/IrLlHXrCM0IlVpA=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/CreateSnapshotFromContextMenuCommand.class
+SHA1-Digest: 6HvJ6XlZEnMneEPCAf9MlLiL7/k=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ActivityFinalNodePreferencePage.class
+SHA1-Digest: sYRdz3zatkxLJ8HJkO6CINAh3VQ=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Cus
+ tomEditPartProvider.class
+SHA1-Digest: GxnXHwPPo0qPq3qxJ0c2V1RYBao=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/advices
+ /CallBehaviorActionAsInteractionEditHelperAdvice.class
+SHA1-Digest: +5njCeS0+zqcRPr6YIYf8LYlXFI=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Interac
+ tionOverviewDiagramEditor$2.class
+SHA1-Digest: mvVLkICDCCITwqFWLGpt51UJYCQ=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Inte
+ ractionWithSnapshotFigure.class
+SHA1-Digest: J9lCt33Q17XfuNttbdbpMuH3BVk=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/dialogs
+ /CreateInteractionUseDialog.class
+SHA1-Digest: HNpvPD5BgrLwuzGDz2B4zy+jse0=
+
+Name: icons/obj16/interactionOverviewDiagram.gif
+SHA1-Digest: xvjn11y2pUfn2i5Gcb/c0PbrGOM=
+
+Name: about.html
+SHA1-Digest: mLkmRLtG3amkcY0I7KSYZX6qKhs=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/ChangeInteractionToInteractionUseCommand.class
+SHA1-Digest: ouO6+jgfnCbZs2+0Cdt0rGuRPuQ=
+
+Name: icons/obj16/Diagram_InteractionOverview.gif
+SHA1-Digest: xvjn11y2pUfn2i5Gcb/c0PbrGOM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/utils/Diagra
+ mUtils.class
+SHA1-Digest: F9NWusO/EuvwvgqxWpwQgDFU+Vs=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ConstraintPreferencePage.class
+SHA1-Digest: XuyoJbtJkYb0GjDRbT8zhcOxhN8=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Interac
+ tionOverviewDiagramEditor$2$2.class
+SHA1-Digest: mh/0EvYkUQFMjLFLjQ7lrAOZaSc=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ SequenceNodePreferencePage.class
+SHA1-Digest: cKp6cY3UEYgyFji3+8Fzc72PGlo=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/InteractionO
+ verviewDiagramForMultiEditor.class
+SHA1-Digest: 1c/fjUGc2u920OksaRzQve2YNoc=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ForkNodePreferencePage.class
+SHA1-Digest: ndQWQLOJ8+hmkr0EGFHuLUhj0uc=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ InitialNodePreferencePage.class
+SHA1-Digest: rBX6yWfiENn6rK/sOMuWb80HEkw=
+
+Name: META-INF/MANIFEST.gen.MF
+SHA1-Digest: ZEroik2LIhVs7MDW42+2enyVAR8=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/IGr
+ aphicalTypeRegistry.class
+SHA1-Digest: pykhE2gnstQOMon2NRmXFiHUI7A=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Inte
+ ractionWithSnapshotFigure$InteractionLayoutManager.class
+SHA1-Digest: 7To46AOC4L5qfnnK8LRKdJvZMgk=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Cus
+ tomUMLParserProvider.class
+SHA1-Digest: 3oQzrcgZoWtGJ6f6QqA+t8Z1JCg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomInterruptibleActivityRegionInterruptibleActivityRegionContent
+ CompartmentItemSemanticEditPolicy.class
+SHA1-Digest: 9RjcGAAl2csfJ6trWRp1Xk+0Ycw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/CreateIntera
+ ctionOverviewDiagramWithNavigationHandler.class
+SHA1-Digest: 8wPv3jLpYLqprHidIUrQyZSU/Ck=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Ca
+ llBehaviorActionAsInteractionEditPart$1.class
+SHA1-Digest: uR0pgmbRHtzdtf9ekH8eMcJUENg=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ DecisionNodePreferencePage.class
+SHA1-Digest: m+7AyIj3j126t649HZuJ7TsEn2o=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ NamedElementPreferencePage.class
+SHA1-Digest: iYu9XDJdzzGs9bY5sxxOuSClQew=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Int
+ eractionOverviewDiagramEditPolicyProvider.class
+SHA1-Digest: dJfLDvqDAPsmUigmsvav9quQhY4=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Cu
+ stomInteractionUseNameEditPart.class
+SHA1-Digest: WKeIjAnqszTe8ArNZSBU1DC0pxc=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/InteractionO
+ verviewDiagramEditorFactory.class
+SHA1-Digest: nJrAZ+vf+7QtpCWsK9y51OjUzDI=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ FlowFinalNodePreferencePage.class
+SHA1-Digest: sg7GpNgJ9L7//p+HWe2Omcfrye0=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Interac
+ tionOverviewDiagramEditor$3.class
+SHA1-Digest: uDKfltf5Px76AphdtyPpUQIdReo=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/parser/Custo
+ mCallBehaviorActionParser.class
+SHA1-Digest: 6ij9wfjgREiUGq2MT33cYDIrQp4=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Message
+ s.class
+SHA1-Digest: KnCY3Hv19E+2RJDUVN4iqGDNK58=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomConditionalNodeStructuredActivityNodeContentCompartmentItemSe
+ manticEditPolicy.class
+SHA1-Digest: SD2aa27A4Xez7MLL5bnzU/OjUQA=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/dialogs
+ /CreateInteractionWithSnapshotDialog.class
+SHA1-Digest: M4srMvfdTKpLmKNS43jrZr+GY5M=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomLoopNodeStructuredActivityNodeContentCompartmentItemSemanticE
+ ditPolicy.class
+SHA1-Digest: 7kbfqYjdH61CVq/UEYa2wHvECIo=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/utils/URIUti
+ ls.class
+SHA1-Digest: wVb2Ulw4H8PnWsSnkUy33HtUwbE=
+
+Name: palettes/interactionoverviewdiagram.palette.xml
+SHA1-Digest: sF3g2+MkjVs98u6nxZIPw/vmpKc=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/CreateSnapshotForInteractionFromRefreshCommand.class
+SHA1-Digest: iDcN8FQGn7HYPm7POF7MRhowVgE=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ InteractionOverviewDiagramGeneralPreferencePage.class
+SHA1-Digest: 0eOYxSG7xy8skRR137A4N4J0tyA=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/utils/CallBe
+ haviorUtil$CallBehaviorActionType.class
+SHA1-Digest: CLDe4iEzY3RTCAvysQnSZTWGHmU=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ConditionalNodePreferencePage.class
+SHA1-Digest: PAfSI48wsS/gu9Aqmo7B74k4AXM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Ele
+ mentTypes.class
+SHA1-Digest: STSWVpboK0EU6sFGWW6VZXBZLO8=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ParameterPreferencePage.class
+SHA1-Digest: YKUP4sJhRT629RIoHaf0HOTtyMk=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Ele
+ mentInitializers.class
+SHA1-Digest: Rtwd7KvB2jhBERCbq2agIU52PpI=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ ControlFlowPreferencePage.class
+SHA1-Digest: 7tcplCKGbYaj9jAO0ZNgWxSqg20=
+
+Name: plugin.properties
+SHA1-Digest: JMbD0idqQlWMNqVjVZlrw6ytW6g=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomSequenceNodeStructuredActivityNodeContentCompartmentItemSeman
+ ticEditPolicy.class
+SHA1-Digest: z4hjjvS1BJDF2dN2ZR1H0EbwlSs=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/Ca
+ llBehaviorActionAsInteractionEditPart$2.class
+SHA1-Digest: Z+MJZzP7YxAIQI7Bvyld45a+dJM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Inte
+ ractionUseFigure$InteractionUseLayoutManager.class
+SHA1-Digest: Yo4amqkEqonZFqvvIpMrPFiIjdk=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/part/Interac
+ tionOverviewDiagramEditor.class
+SHA1-Digest: 529VXfPfafNzVtvoBqrv3yVdHQE=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ InteractionOverviewDiagramLinkPreferencePage.class
+SHA1-Digest: 6WnXRslEROAv9HeM8xS7Jxj9NHw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Int
+ eractionOverviewDiagramEditPartProvider.class
+SHA1-Digest: X1B8gM1ZRaya+Qqwu9udrTvLgcI=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Inte
+ ractionUseFigure$1.class
+SHA1-Digest: cASrz0LtxRmOSQst0sst8Ucc8TM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Dia
+ gramContentProvider.class
+SHA1-Digest: SKGjg3GA3Qid+YOdmo8JPmbMcqk=
+
+Name: plugin.xml
+SHA1-Digest: 578vfKD3G0J2zqklPACpfEED02o=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ InteractionOverviewDiagramNodePreferencePage.class
+SHA1-Digest: QdliI6JNPdqmBX7+2YUdBkTAH74=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ JoinNodePreferencePage.class
+SHA1-Digest: WAq7nYu4gkCxqRs2Kf/hPqHEOyU=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Int
+ eractionOverviewDiagramViewProvider.class
+SHA1-Digest: jFyrnMrZkBODl+oo70vqYsrFm8I=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Cus
+ tomEditPolicyProvider.class
+SHA1-Digest: 0B1ZjpC3vGvYTKn533c3ZmmcFng=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/SwitchInteractionFormCommandHandler.class
+SHA1-Digest: GPzVxz84Pe97VRKEG4xk3Yy9Efw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/CallBehaviorActionAsInteractionUseCreateCommand.class
+SHA1-Digest: SxZ4YbchLlyPGYlDPCYCRwXqk0g=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomActivityCNContentCompartmentItemSemanticEditPolicy.class
+SHA1-Digest: zuYeE3mrPaJLU7dtK9/Mw46jbO8=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/ActivityContentCompartmentItemSemanticEditPolicy.class
+SHA1-Digest: JiHYNoescvq6s62p5R4R6cg71+4=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Cus
+ tomViewProvider.class
+SHA1-Digest: Rj8TzWvLp6Vu3I1rrLvkfCaKG+Y=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomActivityPartitionActivityPartitionContentCompartmentItemSeman
+ ticEditPolicy.class
+SHA1-Digest: 6c36CjTslN0UzHFKB92tvSx1yZQ=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/InteractionO
+ verviewDiagramCreateCommand.class
+SHA1-Digest: wC08DToSOvMe7GdyyQr8FzmxBiM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ InteractionOverviewDiagramPreferenceInitializer.class
+SHA1-Digest: 8xbUN5craZp6NmwefdTZrB887kA=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/part/In
+ teractionOverviewDiagramEditPart.class
+SHA1-Digest: u2FyYbPiTaibohF4deSXR6+C4ag=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ MergeNodePreferencePage.class
+SHA1-Digest: Plt4UKq7soPFj24sgvBvL/DOfYw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/DropInteractionWithSnapshotCommand.class
+SHA1-Digest: f+Og2HM+IfR07kxYVHo0pFcHchU=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/utils/Create
+ DiagramImage.class
+SHA1-Digest: WdJq1NeJnfVZcI22/1GhnbaBtxM=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/command
+ s/UpdateDiagramInSnapshotCommandHandler.class
+SHA1-Digest: lAT1sU6zp5V33nmWjH0AjsBCmS4=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/preferences/
+ CommentPreferencePage.class
+SHA1-Digest: 1f6b8+Ekw3U4YHqcgWaThicXyLw=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/InteractionO
+ verviewDiagramCreationCondition.class
+SHA1-Digest: Ag9lQpK2FrGbgLUR2VBW9rKGhVE=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/figures/Acti
+ vityAsInteractionFigure.class
+SHA1-Digest: vsaq+SMRhZcNAhloe/78dq9EqCI=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/provider/Inh
+ eritedActivityDiagramEditPartProvider.class
+SHA1-Digest: 62XXKLRnjwqluvEai+1If+8KOOk=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/advices
+ /CallBehaviorActionAsInteractionUseEditHelperAdvice.class
+SHA1-Digest: R82/J8fdKONPudKNZevzKnAiFFQ=
+
+Name: org/eclipse/papyrus/uml/diagram/interactionoverview/edit/policie
+ s/CustomInteractionOverviewDiagramCreationEditPolicy.class
+SHA1-Digest: eyhtOfX355aWPLsvuubsPuFpLdM=
+

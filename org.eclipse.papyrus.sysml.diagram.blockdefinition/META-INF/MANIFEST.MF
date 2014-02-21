@@ -1,0 +1,660 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.sysml.diagram.blockdefinition
+ ;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.sysml;bundle-version="1.0.0",org.eclipse.papyrus.uml.diagram.co
+ mmon;bundle-version="1.0.0",org.eclipse.papyrus.infra.gmfdiag.common;
+ bundle-version="1.0.0",org.eclipse.emf.common.ui;bundle-version="2.5.
+ 0",org.eclipse.gmf.runtime.diagram.ui.resources.editor;bundle-version
+ ="1.2.0",org.eclipse.papyrus.uml.diagram.clazz;bundle-version="1.0.0"
+ ,org.eclipse.gmf.runtime.diagram.ui.providers;bundle-version="1.3.0",
+ org.eclipse.core.expressions;bundle-version="3.4.100",org.eclipse.pap
+ yrus.infra.gmfdiag.preferences;bundle-version="1.0.0",org.eclipse.pap
+ yrus.infra.widgets;bundle-version="1.0.0",org.eclipse.papyrus.sysml.d
+ iagram.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.servic
+ es.edit;bundle-version="1.0.0",org.eclipse.papyrus.uml.service.types;
+ bundle-version="1.0.0",org.eclipse.papyrus.sysml.service.types;bundle
+ -version="1.0.0",org.eclipse.papyrus.infra.widgets.toolbox;bundle-ver
+ sion="1.0.0",org.eclipse.gmf.runtime.notation;bundle-version="1.5.0",
+ org.eclipse.gmf.runtime.diagram.core;bundle-version="1.4.1",org.eclip
+ se.draw2d;bundle-version="3.7.1",org.eclipse.gef;bundle-version="3.7.
+ 1",org.eclipse.gmf.runtime.diagram.ui;bundle-version="1.5.0",org.ecli
+ pse.papyrus.uml.tools;bundle-version="1.0.0",org.eclipse.papyrus.infr
+ a.core;bundle-version="1.0.0",org.eclipse.papyrus.infra.core.log;bund
+ le-version="1.0.0",org.eclipse.papyrus.infra.core.sasheditor;bundle-v
+ ersion="1.0.0",org.eclipse.papyrus.uml.tools.utils;bundle-version="1.
+ 0.0",org.eclipse.papyrus.infra.gmfdiag.navigation;bundle-version="1.0
+ .0",org.eclipse.ui.ide;bundle-version="3.8.0",org.eclipse.papyrus.inf
+ ra.emf;bundle-version="1.0.0",org.eclipse.uml2.uml;bundle-version="4.
+ 0.0",org.eclipse.emf.facet.infra.browser.uicore;bundle-version="0.2.0
+ ",org.eclipse.papyrus.infra.gmfdiag.commands;bundle-version="1.0.0",o
+ rg.eclipse.papyrus.infra.services.labelprovider;bundle-version="1.0.0
+ ",org.eclipse.gmf.tooling.runtime;bundle-version="3.1.0"
+Bundle-Activator: org.eclipse.papyrus.sysml.diagram.blockdefinition.Ac
+ tivator
+Export-Package: org.eclipse.papyrus.sysml.diagram.blockdefinition,org.
+ eclipse.papyrus.sysml.diagram.blockdefinition.command,org.eclipse.pap
+ yrus.sysml.diagram.blockdefinition.dnd.helper,org.eclipse.papyrus.sys
+ ml.diagram.blockdefinition.edit.part,org.eclipse.papyrus.sysml.diagra
+ m.blockdefinition.edit.policy,org.eclipse.papyrus.sysml.diagram.block
+ definition.factory,org.eclipse.papyrus.sysml.diagram.blockdefinition.
+ handler,org.eclipse.papyrus.sysml.diagram.blockdefinition.helper.advi
+ ce,org.eclipse.papyrus.sysml.diagram.blockdefinition.messages,org.ecl
+ ipse.papyrus.sysml.diagram.blockdefinition.part,org.eclipse.papyrus.s
+ ysml.diagram.blockdefinition.preferences,org.eclipse.papyrus.sysml.di
+ agram.blockdefinition.provider,org.eclipse.papyrus.sysml.diagram.bloc
+ kdefinition.ui,org.eclipse.papyrus.sysml.diagram.blockdefinition.util
+ s
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: palettes/blockdefinition.palette.gen.xml
+SHA1-Digest: A/veJYGg51eofkHG0dO0PGrgRDQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Ge
+ neralizationPreferencePage.class
+SHA1-Digest: /F8oOXb5l3YDzrP7asCJ1ZbDpeE=
+
+Name: icons/obj16/Diagram_BlockDefinition.gif
+SHA1-Digest: aY6zpD438LzH1Qw9mxHehWF3pg0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Pr
+ imitiveTypePreferencePage.class
+SHA1-Digest: Yoen0o3qEEHcGsVmjk+gFE8+DM4=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPropertyPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: q5v1nUdR4GQY2yYLKtsZXs50Ob8=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ DeleteViewDuringValueEditHelperAdvice.class
+SHA1-Digest: 8FcbvfcCf/njn+D3YfpN4Fp0dbU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/BlockDefi
+ nitionDiagramEditor.class
+SHA1-Digest: 5h+eI1iP8FoGoVQ+5h0WXVAcZ7E=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Va
+ lueTypePreferencePage.class
+SHA1-Digest: oHTDZOTJdV5d+2Tq6biVsm4A1rY=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Re
+ ferencePreferencePage.class
+SHA1-Digest: AyfB5bXVEatqdo8UbUVaanGwQuE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Cu
+ stomAssociationPreferencePage$TargetMultAppearenceSelectionListener.c
+ lass
+SHA1-Digest: ssNKG7fm2svfdeWm8bdUPgg+4FE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Bl
+ ockDefinitionDiagramLinkPreferencePage.class
+SHA1-Digest: RFSQ6lVT1HpCp/xVwK7jBW7/0gk=
+
+Name: messages.properties
+SHA1-Digest: qi6MAJjsyHK8pd1eLBzPE/Fddws=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/SysMLDiag
+ ramUpdater$1.class
+SHA1-Digest: 10W7tsr8cO0yZKt+ZcGzjg0Q5sA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Valid
+ ationProvider.class
+SHA1-Digest: gbrhQD5bdiE3INavI/HK6/0DPG8=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Valid
+ ationDecoratorProvider.class
+SHA1-Digest: sipzYzS8+UFd+U/MaTx7VMCIi5Y=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Sh
+ owHideRelatedLinkEditPolicy.class
+SHA1-Digest: gxIXDjKEgTQRM1vO8aK1ckGknxs=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Bl
+ ockDefinitionDiagramNodePreferencePage.class
+SHA1-Digest: vjuDF/pvDUkJrsMVrIsyQ88lKfE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/factory/BlockD
+ efinitionDiagramViewFactory.class
+SHA1-Digest: UJ8N/sO4jGMmOxBW75lLewCxBV4=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Custo
+ mGraphicalTypeRegistry.class
+SHA1-Digest: iY1FLPFBjms6J+yXNgWJ5gMGQ3g=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPortAsCompartmentItemPreferencePage.class
+SHA1-Digest: dbJGll3LqQvkW8dqu0w43jXQ+Es=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Op
+ erationPreferencePage.class
+SHA1-Digest: cTFEyq2J2y2Z3jWFWcmIzNdyiIw=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Eleme
+ ntTypes.class
+SHA1-Digest: lQz4FnjgG8SP89N281/YpmhaTFE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Si
+ gnalPreferencePage.class
+SHA1-Digest: TcopDmACYG5ijHa5x8F1GW+7Kkg=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Re
+ ceptionPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: A/P6Sr9Qzjp0yazGEbgk+p4WbXI=
+
+Name: palettes/blockdefinition.palette.portandflows.xml
+SHA1-Digest: RCK3aJJfnqZdNaaAK1lBp1c4Mac=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/In
+ stanceSpecificationPreferencePage.class
+SHA1-Digest: yHQs9HXpWrcAJwaSR4ZYT4B+ScE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$2.class
+SHA1-Digest: JDslKczP5OuL02SN9Vw2Xx68SgU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Po
+ rtAsCompartmentItemPreferencePage.class
+SHA1-Digest: SqqMiH2fmM6i217qDdewvNi41XU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Pr
+ opertyPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: tzk+1XZCs3mIOjIbbrbASjH9Eww=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/dnd/helper/Cus
+ tomLinkMappingHelper$2.class
+SHA1-Digest: 1C3bHmxQrhcVyoGb+jZ/4qWzbbc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Pa
+ rtPreferencePage.class
+SHA1-Digest: OtCMZle7RAz5s1Zr3a5/SurWB48=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Ac
+ torPreferencePage.class
+SHA1-Digest: AJYdv3FMoSb5sIfR+NfOlGGZjJo=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owSpecificationPreferencePage.class
+SHA1-Digest: MdlhE14kHCZvSJ9etxDpiWSF/zU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/CreateUmlEl
+ ementDialog$CustomCreateElementCommand.class
+SHA1-Digest: tZ5WMOUyOoSH0Mt2VW7xkfwBkUM=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Parse
+ rProvider.class
+SHA1-Digest: 86Q+Y5o01Fo3Ivt57hZi5JGYrnM=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Cu
+ stomAssociationPreferencePage$SourceRoleAppearenceSelectionListener.c
+ lass
+SHA1-Digest: 6Wtec2gY6bNpJpQZfj6YQbO91iw=
+
+Name: palettes/blockdefinition.palette.datatypes.xml
+SHA1-Digest: JWu47BpQp7M9/w5KULuGizY7POc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPortAsCompartmentItemPreferencePage$AppearenceSelectionListener.cla
+ ss
+SHA1-Digest: Tp09RPObBoyiEhJP9p80NjVvJSQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/Activator.clas
+ s
+SHA1-Digest: cy0OGvCfeM88+JFY0nh5fMfQEL0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Un
+ itPreferencePage.class
+SHA1-Digest: qe4R8U9Mwejmp/sflCU1g1csTjI=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Pa
+ ckagePreferencePage.class
+SHA1-Digest: eAglH/5Vdpb6Gr72lFLfKoSxXSI=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Cu
+ stomBlockCompositeSemanticEditPolicy.class
+SHA1-Digest: tTk50peF+xw6WW1SUIX06zBYgP4=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Da
+ taTypePreferencePage.class
+SHA1-Digest: V9Py7NE479ohIMQySmGcSuTJSU0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/SysMLDiag
+ ramUpdater.class
+SHA1-Digest: L1GJ+P+Ob7WxmsVSarHrw0V8BRo=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/En
+ umerationPreferencePage.class
+SHA1-Digest: SkVk+PWFJznG9hK9p2BhDNh1JFk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Block
+ DefinitionDiagramEditPolicyProvider.class
+SHA1-Digest: k9bpo/Qd9nOzigToLdFG53sdJ8Q=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Graph
+ icalTypeRegistry.class
+SHA1-Digest: ZJyBs3JQqyFqLNILblSrRvtyVsM=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Va
+ luePreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: JOLzclKWiCKVU3tqsEUPwbXaHU8=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Po
+ rtAsCompartmentItemPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: gRlbHVZ1bxTGVuoSjAECGLvU7y0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/In
+ terfaceRealizationPreferencePage.class
+SHA1-Digest: LJuKE8rsd1SgeXyqeDP3y67Mehw=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ GeneralizationUtil.class
+SHA1-Digest: 01INRycfof0vstX0VgmOnOzWSjI=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/BlockDefi
+ nitionDiagramEditor$1.class
+SHA1-Digest: /MUN+iFEDhbLfmovtPi74oFLUNA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ DeleteViewDuringMoveHelperAdvice.class
+SHA1-Digest: /rLtX8XiisXe+gF8kxwEW6vubE8=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Co
+ nstraintPreferencePage.class
+SHA1-Digest: vEn0NjwVEOdwoQaf3nHd4eFfj1A=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Valid
+ ationProvider$1.class
+SHA1-Digest: Lj6T2U1XWe9fVCIze1vO328KRgc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Un
+ itPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: q0JsY6e7JNtbBo3qUyzSOYGEPDs=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPortAsBorderItemPreferencePage.class
+SHA1-Digest: gbvl521TvUmulCm/I8Lr9kQK25Y=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog.class
+SHA1-Digest: x3P5XjdAQVU+cebis+SEvSO0+8o=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/BlockDefi
+ nitionDiagramEditor$2$1.class
+SHA1-Digest: uO4/86qdoE8aex0JwlXWZ56DKvA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPropertyPreferencePage.class
+SHA1-Digest: 3IgWgAnm1+unPH9GsSx/VqagnLE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/part/Bloc
+ kDefinitionDiagramEditPart.class
+SHA1-Digest: AC9n6ToGHlC+DtzUb5pmoqHCTTc=
+
+Name: about.html
+SHA1-Digest: mLkmRLtG3amkcY0I7KSYZX6qKhs=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Mo
+ delPreferencePage.class
+SHA1-Digest: k101lIUBOL6G3svE0Tj3gdHOGsc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Di
+ agramSemanticEditPolicy.class
+SHA1-Digest: BCOt8LrDFG1iw6wBA8pIuA2ni/4=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/En
+ umerationLiteralPreferencePage.class
+SHA1-Digest: uiJF9stVznxFuXaMfHbizMBpiUE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/handler/Manage
+ ProvidedInterfacesHandler.class
+SHA1-Digest: iRPnsctMrEAXxl37tvPxisCE5zQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPortAsBorderItemPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: 7SS3L+eyZFE+A2XPmGLtKyh9BGA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/As
+ sociationPreferencePage.class
+SHA1-Digest: hVxMx0V0CVdZKpltU+wycKNY1jc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ DeleteViewDuringBlockDeleteHelperAdvice.class
+SHA1-Digest: CncRRJehpn9N7kxDr2aranCgNr0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Cu
+ stomAssociationPreferencePage$TargetRoleAppearenceSelectionListener.c
+ lass
+SHA1-Digest: 98hiOUcSF0ZaVuj1hJEDkDiUq/s=
+
+Name: palettes/blockdefinition.palette.incubation.xml
+SHA1-Digest: B8xH4jjoDJDEHiQgsIlkfJEfpHA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/SysMLVisu
+ alIDRegistry.class
+SHA1-Digest: L2SG0dnvBte94S/PXYK3n0DO2aw=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Custo
+ mEditPartProvider.class
+SHA1-Digest: XRx3gQPicv0P8sCXrn5tYc6egaU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Block
+ DefinitionDiagramEditPartProvider.class
+SHA1-Digest: LYLtZKjE+YpyOn1hBbq/1kWJHu4=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Re
+ ceptionPreferencePage.class
+SHA1-Digest: YxSF0FW+694xGVvOopXe9fF65uk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Cu
+ stomAssociationPreferencePage.class
+SHA1-Digest: IeBgkIfOovjZ6wuARpxkWSUzquM=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Fl
+ owPortPreferencePage.class
+SHA1-Digest: MoC6o8Ji29rWOqy5DQY/fw+zib8=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Custo
+ mViewProvider.class
+SHA1-Digest: f5DgfqyKlSQs4LgkqUJpFkPvG5w=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$CreateElementLabelProvider.class
+SHA1-Digest: sSIDqd31mqSUGEhBnUJfJCf1fX4=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Block
+ DefinitionDiagramViewProvider.class
+SHA1-Digest: 1ZADziKDqYNk6MvA9fvqIaPDbac=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Po
+ rtAsBorderItemPreferencePage.class
+SHA1-Digest: UqYyCgrBREZaWL2MOChZRSlKi98=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/utils/FixPorts
+ LocationOnOpening.class
+SHA1-Digest: J59cP8D3CL9YZP3G6gV9UhCUF1U=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Pr
+ opertyPreferencePage.class
+SHA1-Digest: Yw3R8h1xECMWTCjCocOOXW/9jlk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/BlockDefinitio
+ nDiagramEditorFactory.class
+SHA1-Digest: dQSyrczKSEZ78fl02ik8zQbn/Wg=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/BlockDefi
+ nitionDiagramEditor$2.class
+SHA1-Digest: nPo1nqb1qAuKX8X1lvJHrBXq2TE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/command/Custom
+ DeleteCommand.class
+SHA1-Digest: BoXcsSpgv6IOedgr7gIbmCmLs5w=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ GeneralizationHelperAdvice.class
+SHA1-Digest: MKAHfshfNWV5nI7/0iRshpy2nLc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/messages/Messa
+ ges.class
+SHA1-Digest: dQ59w5Dqk4tLAlrPF0p2zuuDnLA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/utils/FixPorts
+ LocationOnOpening$FixLocationCommand.class
+SHA1-Digest: hZCzrWKRen1aF1mQlQP8g6TScWo=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ DeleteViewDuringDataTypeDeleteHelperAdvice.class
+SHA1-Digest: IZHZfCOQJGdAaSDnJfJUpTjxqgU=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/BlockDefi
+ nitionDiagramEditor$2$2.class
+SHA1-Digest: dgw4MFPX5CXZnPFPONj6Jm77LHc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Di
+ agramSemanticEditPolicy$DuplicateAnythingCommand.class
+SHA1-Digest: FkVkJfnzxHe3b6khsZRhE/I7img=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Di
+ mensionPreferencePage.class
+SHA1-Digest: TkhvyJWJL+WpKJD88tQRnUJU/08=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Re
+ ferencePreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: +evHAUs8aB99BcSdiEvg+gJ+X28=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Cu
+ stomDefaultSemanticEditPolicy.class
+SHA1-Digest: c7UZfyoo3lWoSYE+SsB/9JUJo/M=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/factory/Diagra
+ mPaletteFactory.class
+SHA1-Digest: bcGAIa09aDnjmMepSAda9qxnzxo=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ DeleteViewDuringPartEditHelperAdvice.class
+SHA1-Digest: DelZHxbLw1cRu5ax4hTSO5q5X3w=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Cu
+ stomPreferenceInitializer.class
+SHA1-Digest: aKt1cYeqafZ0Eyro2ZZHrwjOycE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$CreateButtonListener.class
+SHA1-Digest: BZV6PKrnjes72aA8EQFuYGYTn+o=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Po
+ rtAsBorderItemPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: HvyC8AK0MTQ234+VnhZNNNfwVd8=
+
+Name: palettes/blockdefinition.palette.associations.xml
+SHA1-Digest: qRKhVdPwKvlOXKY5DPRIVso2K0w=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Co
+ nstraintBlockPreferencePage.class
+SHA1-Digest: YRjlYtr1BTvwt3CpFUl/fC3vEbw=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$ParentInterfaceValidator.class
+SHA1-Digest: 2ttSZIZXYP5MBVqqCzZAvRy09DY=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Va
+ luePreferencePage.class
+SHA1-Digest: RSdHyQgIhNM9Ved90/jWh6IYWRc=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/BlockDefinitio
+ nDiagramForMultiEditor.class
+SHA1-Digest: obcWjkv/ajpDXsCr4gUjdlR49yU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Bl
+ ockDefinitionDiagramGeneralPreferencePage.class
+SHA1-Digest: XjwziJH8lYUiyGfSznoWY6CnNUk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Cu
+ stomDiagramDragDropEditPolicy.class
+SHA1-Digest: GsP7MObSEWfeb3nr+xIea2ROP+g=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/factory/Diagra
+ mPaletteFactory$1.class
+SHA1-Digest: a36L3o5/EC6EaWFnsmXh+O/rbcU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Sl
+ otPreferencePage.class
+SHA1-Digest: TaBq+HXQ6omK+HaKdrniGrWrJmo=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Cu
+ stomAssociationPreferencePage$SourceMultAppearenceSelectionListener.c
+ lass
+SHA1-Digest: 9KUj8EpnHYrCx9De+6X5+K6erwk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$CreateInterfaceRealizationCommand.class
+SHA1-Digest: Q5SQn75sQ0923lLnTNSeC6lwfsY=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Po
+ rtPreferencePage.class
+SHA1-Digest: x3vwgmr/stErBLjsUxrpm7x47cs=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Op
+ erationPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: wmL3W622VS2LKX6KFOQxfWDgq9w=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$SelectorLabelProvider.class
+SHA1-Digest: D07AnoOkvgPxTm0hwpiMv9bX2O0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Inher
+ itedClassDiagramEditPartProvider.class
+SHA1-Digest: 5vs7GqLzO2zaWBNcGEAE3tQPKXA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Custo
+ mEditPolicyProvider.class
+SHA1-Digest: lzNe4TFYhWvg7UAiYfQ7Bp04NKQ=
+
+Name: plugin.properties
+SHA1-Digest: pZf2t1otDlvnC5ReIz99p7t/kmk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Bl
+ ockPreferencePage.class
+SHA1-Digest: Z9eqTt6yYT56u9ORO+HETdgl3Wk=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/De
+ pendencyPreferencePage.class
+SHA1-Digest: xOum2kIXX9l5FV0B+J6FBD9mBnI=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/provider/Inher
+ itedClassDiagramViewProvider.class
+SHA1-Digest: 68Amr79wzMZ2IQ7Gzj3XxxYIIeQ=
+
+Name: palettes/blockdefinition.palette.modelelements.xml
+SHA1-Digest: VfUao5mxiVRmgV4oB2M4tJLverU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/CreateBlockDef
+ initionDiagramWithNavigationHandler.class
+SHA1-Digest: lghJeShehG2C4E41ynm9hKrClFE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Pa
+ rtPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: yVZqIyCUYwLzDSMdnm/4GxJz400=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$CreateUsageCommand.class
+SHA1-Digest: CeSMNy2C/ulZHBlJm9qEUwosaQE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/CreateUmlEl
+ ementDialog.class
+SHA1-Digest: mipY5XE/ipagpQ0jE8WksdJwcJI=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Co
+ nstraintPropertyPreferencePage.class
+SHA1-Digest: oRuz9l+4XoLLn0teKBeM7E13Pj8=
+
+Name: icons/obj16/Link.gif
+SHA1-Digest: rIUuhQQqp8zE33keUz/P2wicZaU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/BlockDefinitio
+ nDiagramCondition.class
+SHA1-Digest: S8kOma3kzfrRtLesgq+1gpDmIMM=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/SysMLVisu
+ alIDRegistry$1.class
+SHA1-Digest: gpUiQF/rCbYgV2/6AbO1UgMtz4k=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/part/BlockDefi
+ nitionDiagramEditor$3.class
+SHA1-Digest: RwJ5zmLUZEtXUBY6Ng8YJqGcU+w=
+
+Name: plugin.xml
+SHA1-Digest: lzEYZjDXTwFnqx++X0uAdRKuMdE=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$DestroyDependencyWithoutSupplierCommand.class
+SHA1-Digest: H7vS/5qErf0ayB+iPXinXhTLKZ0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/CreateUmlEl
+ ementDialog$SetNameCommand.class
+SHA1-Digest: WeP4QwghWSNsVvXFAh0U2zfg2zI=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Pa
+ ckageSemanticEditPolicy.class
+SHA1-Digest: QPrtzklCqr2ySNmv+7YSCizYe+c=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Co
+ mmentPreferencePage.class
+SHA1-Digest: W0wXQPixZ/mMDoSZkK7H/Fpwxpw=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Us
+ agePreferencePage.class
+SHA1-Digest: aIU+G05UGY40D6dvAjnydKIteLU=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/helper/advice/
+ DeleteViewDuringReferenceEditHelperAdvice.class
+SHA1-Digest: QorDzzZiypeN0e4qxsc8Nz2Rq6Q=
+
+Name: palettes/blockdefinition.palette.constraints.xml
+SHA1-Digest: 4wulDqnBbqNHNeDChNCf9fFrnC0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/dnd/helper/Cus
+ tomLinkMappingHelper.class
+SHA1-Digest: 5waXBm7OmeKKm/+FJiisAfzLMb8=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/BlockDefinitio
+ nDiagramCreateCommand.class
+SHA1-Digest: lPzCtltHG9vj0prSfErxPcZ3l6E=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Bl
+ ockDefinitionDiagramPreferenceInitializer.class
+SHA1-Digest: 5iCBCvd/FCiXqJTDVDNabalsHr0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Bl
+ ockDefinitionDiagramDragDropEditPolicy.class
+SHA1-Digest: KrntkuJ1sYgkH/O5zASHO3ubSkA=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Co
+ nstraintPropertyPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: K9DnPLiWlSWKDpBI8qI/3AJnBzg=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/NewElementR
+ epresentation.class
+SHA1-Digest: ZhP1dd6nGlNlVbAMd/dPieop0uo=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$1.class
+SHA1-Digest: em9IoayGADcpYnZYt7lZfvsrOPg=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/handler/Manage
+ ProvidedInterfacesHandler$ManageProvidedInterfaceAction.class
+SHA1-Digest: +/UuLK/xp3l+iFfIq7n6l+hibas=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/dnd/helper/Cus
+ tomLinkMappingHelper$1.class
+SHA1-Digest: ax4iD6XjBpOXT8SUD6xK5GXYC9g=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/edit/policy/Pa
+ ckageCreationEditPolicy.class
+SHA1-Digest: GYXv1PTqajc+V8xb9zxh26Z4PgQ=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/factory/Diagra
+ mPaletteFactory$2.class
+SHA1-Digest: sdGh6tnfHwgiatEf1k+od+nLbDg=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/ui/InterfaceMa
+ nagerDialog$CustomContentProvider.class
+SHA1-Digest: EZINOQMWuflIR0oLb6TOlFAL0p0=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/In
+ terfacePreferencePage.class
+SHA1-Digest: o/Oc0vSKa3VnPEbRmk0MT4VsH24=
+
+Name: org/eclipse/papyrus/sysml/diagram/blockdefinition/preferences/Co
+ nstraintPreferencePage$AppearenceSelectionListener.class
+SHA1-Digest: krdmZc1Lh6cptHExWV7lsR6Ll3E=
+

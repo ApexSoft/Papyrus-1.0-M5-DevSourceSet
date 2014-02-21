@@ -1,0 +1,122 @@
+Manifest-Version: 1.0
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.common.palette.cu
+ stomaction;singleton:=true
+Require-Bundle: org.eclipse.ui,org.eclipse.core.runtime,org.eclipse.pa
+ pyrus.uml.diagram.common;bundle-version="1.0.0",org.eclipse.gmf.runti
+ me.notation;bundle-version="1.5.0",org.eclipse.ui.forms;bundle-versio
+ n="3.5.100",com.google.guava;bundle-version="11.0.0",org.eclipse.emf.
+ ecore;bundle-version="2.8.0",org.eclipse.gef;bundle-version="3.8.0",o
+ rg.eclipse.papyrus.infra.core;bundle-version="1.0.0",org.eclipse.emf.
+ transaction;bundle-version="1.4.0",org.eclipse.uml2.uml;bundle-versio
+ n="4.0.0",org.eclipse.gmf.runtime.common.core;bundle-version="1.4.1",
+ org.eclipse.emf.edit.ui;bundle-version="2.8.0",org.eclipse.papyrus.in
+ fra.gmfdiag.common;bundle-version="1.0.0",org.eclipse.papyrus.infra.c
+ ore.log;bundle-version="1.0.0"
+Bundle-Activator: org.eclipse.papyrus.uml.diagram.common.palette.custo
+ maction.Activator
+Export-Package: org.eclipse.papyrus.uml.diagram.common.palette.customa
+ ction.providers,org.eclipse.papyrus.uml.diagram.common.palette.custom
+ action.swt,org.eclipse.papyrus.uml.diagram.common.palette.customactio
+ n.toolbox,org.eclipse.papyrus.uml.diagram.common.palette.customaction
+ .utils
+Bundle-Version: 1.0.0.v201401290914
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: %providerName
+Bundle-ActivationPolicy: lazy
+Bundle-Name: %pluginName
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/ToolAspectActionProvider.class
+SHA1-Digest: Jd6ie17SVMjihOttvEnTCc2ovH4=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/cont
+ rol/ToolSelectionComposite.class
+SHA1-Digest: aPrIoDBjQgv2RUZaYeM7YaMODlw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/Tool.class
+SHA1-Digest: otKYkbrOrFXpSMynXLSrePLA1fc=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/util
+ s/ICallback.class
+SHA1-Digest: YoTLnR26Xj/t+M1rNRFHs5u//Ko=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/tool
+ box/AbstractToolWizard$1.class
+SHA1-Digest: FSLv0AiHDt4XWsQZ66MEkEktAEY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/ITool.class
+SHA1-Digest: NWxAF0Ursw/DvCz1wohMe5AscQY=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/swt/
+ SWTResourceManager.class
+SHA1-Digest: Lez0Xv4YwljyAiXmwndvuPy+3ao=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/tool
+ box/AbstractToolWizard$2.class
+SHA1-Digest: GIyOL65MwVFunCHLr6J5enm8EYo=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/Acti
+ vator.class
+SHA1-Digest: GP6bcqBsEASuXhqS6PGYKHeqPi8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/ICreator.class
+SHA1-Digest: A5G28iOVrLIs1zy5KWTLDILJzHE=
+
+Name: plugin.properties
+SHA1-Digest: Kkzsq1hNvb+pGo293aaPqEZ4Jzc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/util
+ s/ProviderUtil.class
+SHA1-Digest: OPQ//bq1gQHG6tTHwCxTSa3FYnE=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/cont
+ rol/ToolSelectionComposite$1.class
+SHA1-Digest: fGkVLTsXGcMtdSquHvJClgzl6Kw=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/ToolAspectAction.class
+SHA1-Digest: j+sHy6f2ybxKmFqCQb/LK+KtbQ8=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/util
+ s/ConditionalElementListDialog$ICondition.class
+SHA1-Digest: 7bfE0oY7QKPBl9fMfFzz+yTq5Xs=
+
+Name: resources/wiz.gif
+SHA1-Digest: 62szjlzGiBkqaWIZZpwuF4RviW0=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/util
+ s/ConditionalElementListDialog.class
+SHA1-Digest: en3hg6kNECzo3d438hk9Zvsw2rQ=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/tool
+ box/AbstractToolWizard$2$1.class
+SHA1-Digest: IlJi7wXgisME84jNlndU6rsKTv8=
+
+Name: plugin.xml
+SHA1-Digest: eXvRg18mbaZ/hgklb0nmvXPPfXc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/ToolAspectAction$1.class
+SHA1-Digest: ruoQfwPUTJ/qq3zc5EOjCVePqfc=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/tool
+ box/AbstractToolWizard.class
+SHA1-Digest: MWGRJYhjn/lALw0fVHMBYQi0UAs=
+
+Name: org/eclipse/papyrus/uml/diagram/common/palette/customaction/prov
+ iders/ToolAspectAction$2.class
+SHA1-Digest: uQVqBHdr9BvjA/LNQz4Iy1EueG8=
+

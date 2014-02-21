@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension-point id="navigationContributor" name="navigationContributor" schema="schema/navigationContributor.exsd"/>
+   <extension
+         point="org.eclipse.papyrus.infra.core.service">
+      <service
+            classname="org.eclipse.papyrus.infra.services.navigation.service.impl.NavigationServiceImpl"
+            id="org.eclipse.papyrus.infra.services.navigation.service.NavigationService"
+            priority="1"
+            startKind="lazy">
+      </service>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.eclipse.papyrus.infra.core.sasheditor.preferences.generalcategory"
+            class="org.eclipse.papyrus.infra.services.navigation.preferences.NavigationServicePreferencesPage"
+            id="org.eclipse.papyrus.infra.services.navigation.preferences"
+            name="Navigation Service">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.papyrus.infra.services.navigation.navigationContributor">
+      <target
+            description="Display elements in the current active editor"
+            id="org.eclipse.papyrus.infra.services.navigation.target.activeEditor"
+            label="Show in the active editor"
+            navigationTargetProvider="org.eclipse.papyrus.infra.services.navigation.provider.impl.ActiveEditorNavigationTargetProvider"
+            order="10">
+      </target>
+   </extension>
+
+</plugin>

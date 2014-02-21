@@ -1,0 +1,186 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Bundle-Vendor: Eclipse Modeling Project
+Bundle-Name: Profile Documentation (Incubation)
+Bundle-SymbolicName: org.eclipse.papyrus.uml.diagram.profile.doc;singl
+ eton:=true
+Require-Bundle: org.eclipse.papyrus.infra.doc;bundle-version="1.0.0",o
+ rg.eclipse.help;bundle-version="3.6.0"
+Created-By: 1.6.0_21-b06 (Sun Microsystems Inc.)
+Bundle-Version: 1.0.0.v201401290914
+Bundle-ManifestVersion: 2
+
+Name: resource/images/applyStereotype.png
+SHA1-Digest: 1kWeBo29mqBpdbpsMhCtk09HOps=
+
+Name: resource/images/selectIcon.png
+SHA1-Digest: cbKnZ3Fsdv19QWmcxaTQrYCAoyc=
+
+Name: resource/images/arrow_left.gif
+SHA1-Digest: qx89HZcOfCNP8URrsbXsnJSbNro=
+
+Name: resource/images/importProfile.png
+SHA1-Digest: Cn2pcPSwI2TTx4Kj9Tuf6ACKBPA=
+
+Name: resource/images/selectProfileModel.png
+SHA1-Digest: qMu/BvSKpTiJq/f12YQXMrj0+bs=
+
+Name: resource/images/subProfiles.png
+SHA1-Digest: 0gy6OPV8aS4r8AJ+7LyApc8HiyQ=
+
+Name: resource/images/resultProfile.png
+SHA1-Digest: VyLLnmUl6gEvshl8cBvRJmt4gaA=
+
+Name: resource/images/high.png
+SHA1-Digest: cb31E07Mf26aRhJJuV+xUien15g=
+
+Name: resource/images/low.png
+SHA1-Digest: eHfbse6VXo4JWMm1SILcSdp89Gc=
+
+Name: resource/images/importMetaclassDialog.png
+SHA1-Digest: Ii0/ZSNECstbFYNak2Nu+XZ2Iq8=
+
+Name: resource/images/iconKind.png
+SHA1-Digest: DYEBYFgRXoCtzkDklnyK4GkS7JY=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: 09gN05tobgS/MdtqyTNQhOhB73M=
+
+Name: resource/images/Generalization.gif
+SHA1-Digest: DQp/nAyasQrCy0bd83ZCTBt2AL4=
+
+Name: resource/images/profileDefinitionErrors.png
+SHA1-Digest: xR+06hszefphki0dZ05yvwGNLkw=
+
+Name: resource/images/stereotypePalette.png
+SHA1-Digest: 1NX0I+Ot6pzRSSL64DPgx8l8kZU=
+
+Name: resource/images/generalizeStereotype.png
+SHA1-Digest: mG8rKxZ9JgZVLl2opehXrM5mgFg=
+
+Name: resource/profile.html
+SHA1-Digest: TX4uM1cBqULKGQRs03tb+84YeP8=
+
+Name: resource/images/importedMetaclass.png
+SHA1-Digest: Jgpf42n+Xk2bm5Zc9EfEs3pTdLw=
+
+Name: resource/images/stereotypeDisplays.png
+SHA1-Digest: CZogb70/utc3+hTPs8r7wtM+g9Q=
+
+Name: resource/images/profileEditor.png
+SHA1-Digest: w3FDifeXPAUfrYGesS26v7GAk2Q=
+
+Name: resource/images/change_display.gif
+SHA1-Digest: zUZzXRRtecdO63atvZ4XveqZ878=
+
+Name: resource/images/stereotypeDisplayOptions.png
+SHA1-Digest: OFT60x1+TIr8yIeU9BDOLOufp5Q=
+
+Name: resource/images/arrow_right.gif
+SHA1-Digest: SUSocWQGQBuR4g6KB7Ttf3f3Kss=
+
+Name: resource/images/profileDefinition1.png
+SHA1-Digest: fy4YgCaPfj4uF31jh9L10zoTk64=
+
+Name: resource/images/profileDefinition2.png
+SHA1-Digest: j0iToYUU/lrov0TDjB4elb3TJ0s=
+
+Name: resource/profile-toc.xml
+SHA1-Digest: vj8aE8IqRZXGSm0EKm+7FLKy9jY=
+
+Name: resource/images/appliedProfiles.png
+SHA1-Digest: f7pa26ICIHlZSb6y6X3x0+4uYfM=
+
+Name: resource/images/applyProfile.png
+SHA1-Digest: vljX2/iDgtW+buV8H5KlUEgn8Y4=
+
+Name: resource/profile.mediawiki
+SHA1-Digest: F5WGuZShy3GEt7u0ubTpUbjWzEM=
+
+Name: resource/images/stereotypeName.png
+SHA1-Digest: z4fWnSRDiyMeXrpRwZVszDBI9+4=
+
+Name: resource/images/iconsForStereotype.png
+SHA1-Digest: rX+/ZyqafqUseQLODMi3TqPgSOA=
+
+Name: resource/images/selectProfile.png
+SHA1-Digest: sZhVm8xQG4AYT5Mggi8md8eZV4M=
+
+Name: resource/images/appliedStereotype.png
+SHA1-Digest: Byxm0l6lF6qRGl6aDNGC/9nOYbU=
+
+Name: resource/images/Delete.gif
+SHA1-Digest: Nj/v8Qq1SwweGplanUGyZ7MVmd0=
+
+Name: resource/images/newProfile.png
+SHA1-Digest: SVLriOjPon9TIugcht+ha9/tSIU=
+
+Name: resource/images/stereotypePropertyEdition.png
+SHA1-Digest: yas1TgnHzfYMPSjK1STGeOU/sgY=
+
+Name: plugin.xml
+SHA1-Digest: nAqP+hDNZaUPieJCm4zTsjuhRF8=
+
+Name: resource/images/metaclassExtension.png
+SHA1-Digest: NVxBwfSNAYxY9htvqT90St9NVyE=
+
+Name: resource/images/Add.gif
+SHA1-Digest: l2FeR1nAFLoH4bRO9d5WXbvDFo8=
+
+Name: resource/profile-main-toc.xml
+SHA1-Digest: pggGcPwLDeMehwq+1ZhLFstHxk8=
+
+Name: resource/images/applyStereotype2.png
+SHA1-Digest: zAYJDQwOMRBUMAP0qKlSXGUdlVA=
+
+Name: resource/images/applyStereotype3.png
+SHA1-Digest: alZWASR03LcKZdke0dLq3HzgnIo=
+
+Name: resource/images/applyStereotype4.png
+SHA1-Digest: UEL0iDQuOsH+qM0J8ChqNg+G+iU=
+
+Name: resource/images/applyStereotype5.png
+SHA1-Digest: I8ESwDamMTro9yvrlSZzVyhOzhY=
+
+Name: resource/images/medium.png
+SHA1-Digest: mL/1bS/35EyKhmEG2iKm+fSldUY=
+
+Name: resource/images/iconExpressions.png
+SHA1-Digest: r2AAKxXCmGOMFyNFnOfNFCxdDNg=
+
+Name: resource/images/Profile.gif
+SHA1-Digest: 2BrPAL4VTeHCF1D6WzqNb55JVzE=
+
+Name: about.html
+SHA1-Digest: y0N4Xo0SWk7dkT2S3XYFPomfO1U=
+
+Name: resource/images/manyStereotypeIcons.png
+SHA1-Digest: Px2PROps4q3HQJ5bXzUjexll6fw=
+
+Name: resource/images/newProfileDiagram.png
+SHA1-Digest: j9ZCak4CPu/Al6/29Q95h2k2rlw=
+
+Name: resource/images/dropStereotype.png
+SHA1-Digest: 7vAwuLP6riLOF8YKPIvC0rNjp8c=
+
+Name: resource/images/stereotypeProperties.png
+SHA1-Digest: jezPI5huwuMnez7NJO+YjCCQeS4=
+
+Name: resource/images/selectProfiles.png
+SHA1-Digest: +hf+/tivKf48OdMvcxyVDKZrEpU=
+
+Name: resource/images/ConsoleViewQN.gif
+SHA1-Digest: aT1p1a8/RjN1xduoKJe08F6lxgk=
+
+Name: resource/images/highReqIcon.png
+SHA1-Digest: uLtaOzYq0jyMmz3j+X4qZkya+l8=
+
+Name: resource/images/applyProfile2.png
+SHA1-Digest: PTOTNc9EzQRASyfMPpY7KTFNsf8=
+
+Name: resource/images/applyProfile3.png
+SHA1-Digest: wL4nbB22Qav41PKC31wJpRtm6pI=
+
+Name: resource/images/Extension.gif
+SHA1-Digest: 7qOune4vUu1CWe0+GDVq/pCwUF0=
+
