@@ -203,3 +203,12 @@ Empty directory is basically not added by `git add`. So we need to add meaningle
 Add below to the [core] of repository config file
 
 > git config core.autocrlf false
+
+## Filename Too long error for Windows
+
+7 files are notified as error when execute `git add .`
+
+There is no clue to this problem. Neither MSygGit nor Cygwin can avoid this error.
+
+Just do `git add .` in Linux, that's it.
+
