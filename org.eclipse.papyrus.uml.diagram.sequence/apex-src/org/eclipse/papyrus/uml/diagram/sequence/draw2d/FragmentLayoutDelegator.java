@@ -21,6 +21,7 @@ import org.eclipse.gmf.runtime.gef.ui.figures.DefaultSizeNodeFigure;
 import org.eclipse.papyrus.uml.diagram.sequence.edit.parts.InteractionOperandEditPart.CustomInteractionOperandFigure;
 import org.eclipse.papyrus.uml.diagram.sequence.figures.LifelineFigure;
 import org.eclipse.papyrus.uml.diagram.sequence.util.ConstraintEntry;
+import org.eclipse.papyrus.uml.diagram.sequence.util.ConstraintRegistry;
 import org.eclipse.papyrus.uml.diagram.sequence.util.InteractionOperandCoveredHelper;
 import org.eclipse.uml2.uml.CombinedFragment;
 import org.eclipse.uml2.uml.ExecutionOccurrenceSpecification;
@@ -76,6 +77,7 @@ public class FragmentLayoutDelegator {
 				Point parentLocation = getOrigin(figure.getParent());
 				bounds = bounds.getTranslated(offset);
 				bounds = bounds.getTranslated(parentLocation.getNegated());
+				ConstraintRegistry.INSTANCE.setConstraint(figure, bounds);
 			}
 			figure.setBounds(bounds);
 		}
