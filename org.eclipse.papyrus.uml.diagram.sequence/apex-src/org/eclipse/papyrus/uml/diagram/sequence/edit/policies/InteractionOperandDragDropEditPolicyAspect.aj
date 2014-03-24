@@ -1,6 +1,5 @@
-package org.eclipse.papyrus.uml.diagram.sequence.aspect;
+package org.eclipse.papyrus.uml.diagram.sequence.edit.policies;
 
-import org.eclipse.draw2d.IFigure;
 import org.eclipse.draw2d.PositionConstants;
 import org.eclipse.draw2d.geometry.Dimension;
 import org.eclipse.draw2d.geometry.Rectangle;
@@ -18,25 +17,21 @@ import org.eclipse.papyrus.uml.diagram.sequence.util.OperandBoundsComputeHelper;
 
 public aspect InteractionOperandDragDropEditPolicyAspect {
 
-	pointcut calledGetResizeCommand() : execution(* InteractionOperandDragDropEditPolicy.getResizeCommand(ChangeBoundsRequest));
-	
 	Command around(InteractionOperandDragDropEditPolicy editPolicy, ChangeBoundsRequest request) :
-		calledGetResizeCommand() && this(editPolicy) && args(request) {
+		execution(* InteractionOperandDragDropEditPolicy.getResizeCommand(ChangeBoundsRequest)) &&
+		this(editPolicy) && args(request) {
 		EditPart host = editPolicy.getHost();
 		if((request.getResizeDirection() & PositionConstants.EAST_WEST) != 0) {
 			EditPart parent = host.getParent().getParent();
 			return parent.getCommand(request);
 		} else {
-			if(host instanceof InteractionOperandEditPart && host.getParent() instanceof CombinedFragmentCombinedFragmentCompartmentEditPart) {
+			if(host instanceof InteractionOperandEditPart && host.getParent()
+					instanceof CombinedFragmentCombinedFragmentCompartmentEditPart) {
 				InteractionOperandEditPart currentIOEP = (InteractionOperandEditPart)host;
-				CombinedFragmentCombinedFragmentCompartmentEditPart compartEP = (CombinedFragmentCombinedFragmentCompartmentEditPart)host.getParent();
-				// if first interaction operand and resize direction is NORTH
-				if(host == OperandBoundsComputeHelper.findFirstIOEP(compartEP)) {
-					return host.getParent().getParent().getCommand(request);
-				} else {
-					int heightDelta = request.getSizeDelta().height();
-					return createIOEPResizeCommand(currentIOEP, heightDelta, compartEP, request);
-				}
+				CombinedFragmentCombinedFragmentCompartmentEditPart compartEP =
+						(CombinedFragmentCombinedFragmentCompartmentEditPart)host.getParent();
+				int heightDelta = request.getSizeDelta().height();
+				return createIOEPResizeCommand(currentIOEP, heightDelta, compartEP, request);
 			}
 		}
 		return null;
@@ -47,7 +42,7 @@ public aspect InteractionOperandDragDropEditPolicyAspect {
 		CompositeCommand compositeCommand = new CompositeCommand("Resize Operand");
 		
 		int direction = request.getResizeDirection();
-		boolean isSnap = request.isSnapToEnabled();
+		boolean isSnap = request.isSnapToEnabled();	// ALT key
 		boolean isParentResize = false;
 		
 		InteractionOperandEditPart previousIOEP = null;
@@ -61,16 +56,14 @@ public aspect InteractionOperandDragDropEditPolicyAspect {
 		}
 		
 		if (previousIOEP == null || latterIPEP == null) {
-			// sibling IOEP is not exist in resize direction
-			IFigure f = currentIOEP.getFigure();
-			Rectangle bounds = f.getClientArea();
-			bounds.height += heightDelta;
-			ICommand updateBoundsCommand = OperandBoundsComputeHelper.createUpdateEditPartBoundsCommand(currentIOEP, bounds);
+			Rectangle rect = currentIOEP.getFigure().getClientArea();
+			rect.height += heightDelta;
+			ICommand updateBoundsCommand = OperandBoundsComputeHelper.createUpdateEditPartBoundsCommand(currentIOEP, rect);
 			if (updateBoundsCommand != null) {
 				compositeCommand.add(updateBoundsCommand);
 			}
 			
-			isParentResize = currentIOEP == OperandBoundsComputeHelper.findLastIOEP(compartEP);
+//			isParentResize = currentIOEP == OperandBoundsComputeHelper.findLastIOEP(compartEP);
 		} else {
 			if ((direction & PositionConstants.NORTH) != 0) {
 				heightDelta = -heightDelta;

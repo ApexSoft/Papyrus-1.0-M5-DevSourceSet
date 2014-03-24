@@ -1,4 +1,4 @@
-package org.eclipse.papyrus.uml.diagram.sequence.aspect;
+package org.eclipse.papyrus.uml.diagram.sequence.util;
 
 import java.util.Iterator;
 
@@ -15,7 +15,7 @@ import org.eclipse.gmf.runtime.notation.View;
 import org.eclipse.papyrus.uml.diagram.sequence.edit.parts.InteractionOperandEditPart;
 import org.eclipse.papyrus.uml.diagram.sequence.util.FixInteractionOperandsOnOpening;
 
-public aspect FixOnOpeningAspect {
+public aspect FixInteractionOperandsOnOpeningAspect {
 
 	void around(FixInteractionOperandsOnOpening util, Diagram diagram) :
 		execution(* fix(Diagram)) && target(util) && args(diagram) {

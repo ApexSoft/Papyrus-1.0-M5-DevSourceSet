@@ -1,4 +1,4 @@
-package org.eclipse.papyrus.uml.diagram.sequence.aspect;
+package org.eclipse.papyrus.uml.diagram.sequence.edit.parts;
 
 import java.util.Iterator;
 
@@ -8,7 +8,7 @@ import org.eclipse.papyrus.uml.diagram.sequence.draw2d.OperandXYLayout;
 import org.eclipse.papyrus.uml.diagram.sequence.edit.parts.CustomInteractionOperandEditPart;
 import org.eclipse.papyrus.uml.diagram.sequence.edit.parts.InteractionOperandEditPart.CustomInteractionOperandFigure;
 
-public aspect FragmentAutoLayoutInOperand {
+public aspect CustomInteractionOperandEditPartAspect {
 
 	after(CustomInteractionOperandEditPart editPart) returning(IFigure retVal) :
 		execution(protected * CustomInteractionOperandEditPart.createNodeShape()) &&
