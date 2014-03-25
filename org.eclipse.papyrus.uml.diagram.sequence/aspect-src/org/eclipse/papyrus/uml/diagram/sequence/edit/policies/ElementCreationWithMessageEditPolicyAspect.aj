@@ -20,16 +20,17 @@ import org.eclipse.uml2.uml.Lifeline;
 
 public privileged aspect ElementCreationWithMessageEditPolicyAspect {
 	
-	after(ElementCreationWithMessageEditPolicy editPolicy, CreateConnectionRequest request) returning(Command command) :
+	Command around(ElementCreationWithMessageEditPolicy editPolicy, CreateConnectionRequest request) :
 		execution(* ElementCreationWithMessageEditPolicy.getConnectionCompleteCommand(..)) &&
 		args(request) && this(editPolicy) {
+		Command command = proceed(editPolicy, request);
 		if (command == null || !command.canExecute()) {
-			return;
+			return command;
 		}
 		if (command instanceof ICommandProxy) {
 			ICommand iCmd = ((ICommandProxy) command).getICommand();
 			if (iCmd instanceof PromptCreateElementAndNodeCommand) {
-				return;
+				return command;
 			}
 		}
 		
@@ -56,6 +57,7 @@ public privileged aspect ElementCreationWithMessageEditPolicyAspect {
 				}
 			}
 		}
+		return command;
 	}
 	
 	private String getAsyncMessageHint() {
